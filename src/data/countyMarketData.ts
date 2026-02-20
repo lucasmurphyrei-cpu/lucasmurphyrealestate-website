@@ -28,7 +28,6 @@ const countyMarketData: Record<string, CountyMarketData> = {
       { label: "Months' Supply", value: "2.9 months", change: "+16.5% YoY", direction: "up" },
       { label: "Inventory", value: "451 homes", change: "+3.2% YoY", direction: "up" },
       { label: "New Listings", value: "264", change: "+10.9% YoY", direction: "up" },
-      { label: "Closed Sales", value: "155", change: "-11.4% YoY", direction: "down" },
     ],
   },
 
@@ -41,7 +40,6 @@ const countyMarketData: Record<string, CountyMarketData> = {
       { label: "Months' Supply", value: "—", change: "—", direction: "flat" },
       { label: "Inventory", value: "—", change: "—", direction: "flat" },
       { label: "New Listings", value: "—", change: "—", direction: "flat" },
-      { label: "Closed Sales", value: "—", change: "—", direction: "flat" },
     ],
   },
 
@@ -54,7 +52,6 @@ const countyMarketData: Record<string, CountyMarketData> = {
       { label: "Months' Supply", value: "—", change: "—", direction: "flat" },
       { label: "Inventory", value: "—", change: "—", direction: "flat" },
       { label: "New Listings", value: "—", change: "—", direction: "flat" },
-      { label: "Closed Sales", value: "—", change: "—", direction: "flat" },
     ],
   },
 
@@ -67,7 +64,6 @@ const countyMarketData: Record<string, CountyMarketData> = {
       { label: "Months' Supply", value: "—", change: "—", direction: "flat" },
       { label: "Inventory", value: "—", change: "—", direction: "flat" },
       { label: "New Listings", value: "—", change: "—", direction: "flat" },
-      { label: "Closed Sales", value: "—", change: "—", direction: "flat" },
     ],
   },
 };

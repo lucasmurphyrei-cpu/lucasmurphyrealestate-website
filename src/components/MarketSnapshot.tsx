@@ -5,7 +5,6 @@ import {
   CalendarDays,
   ClipboardList,
   PlusCircle,
-  CheckCircle2,
   TrendingUp,
   TrendingDown,
   Minus,
@@ -19,7 +18,6 @@ const iconMap: Record<string, React.ElementType> = {
   "Months' Supply": CalendarDays,
   "Inventory": ClipboardList,
   "New Listings": PlusCircle,
-  "Closed Sales": CheckCircle2,
 };
 
 const directionIcon = (dir: "up" | "down" | "flat") => {
