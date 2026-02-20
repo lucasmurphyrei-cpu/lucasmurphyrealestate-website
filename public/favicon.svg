@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#1a2744"/>
+  <!-- House -->
+  <path d="M32 12 L12 28 L18 28 L18 48 L28 48 L28 36 L36 36 L36 48 L46 48 L46 28 L52 28 Z" fill="none" stroke="#f5c518" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Key hole -->
+  <circle cx="32" cy="30" r="4" fill="#f5c518"/>
+  <rect x="30.5" y="33" width="3" height="7" rx="1" fill="#f5c518"/>
+</svg>
