@@ -18,13 +18,14 @@ const HeroSection = () => {
     setIsSubmitting(true);
 
     try {
-      const { error } = await supabase.from("leads").insert({
-        full_name: fullName.trim(),
-        email: email.trim(),
-        timeline: timeline || null,
-      });
-
-      if (error) throw error;
+      if (supabase) {
+        const { error } = await supabase.from("leads").insert({
+          full_name: fullName.trim(),
+          email: email.trim(),
+          timeline: timeline || null,
+        });
+        if (error) throw error;
+      }
 
       // Trigger PDF download
       const link = document.createElement("a");
