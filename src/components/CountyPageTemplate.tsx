@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { MapPin, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import MarketSnapshot from "@/components/MarketSnapshot";
+import countyMarketData from "@/data/countyMarketData";
 
 interface CountyPageProps {
   name: string;
@@ -11,6 +13,7 @@ interface CountyPageProps {
 
 const CountyPage = ({ name, description, municipalities }: CountyPageProps) => {
   const sorted = [...municipalities].sort();
+  const marketData = countyMarketData[name];
 
   return (
     <main className="container py-16">
@@ -25,6 +28,10 @@ const CountyPage = ({ name, description, municipalities }: CountyPageProps) => {
         <h1 className="font-display text-4xl font-bold md:text-5xl">{name}</h1>
       </div>
       <p className="max-w-2xl text-lg text-muted-foreground">{description}</p>
+
+      {marketData && (
+        <MarketSnapshot countyName={name} data={marketData} />
+      )}
 
       <h2 className="mt-12 font-display text-2xl font-bold">Municipalities & Neighborhoods</h2>
       <p className="mt-2 text-muted-foreground">Click on a municipality to view its market report.</p>
