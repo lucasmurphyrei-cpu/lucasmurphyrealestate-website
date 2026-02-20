@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 215 50% 13%;
+    --foreground: 0 0% 95%;
+
+    --card: 215 48% 16%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 215 48% 16%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 45 100% 50%;
+    --primary-foreground: 215 50% 13%;
+
+    --secondary: 215 45% 20%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 215 40% 22%;
+    --muted-foreground: 210 15% 60%;
+
+    --accent: 200 74% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 40% 22%;
+    --input: 215 40% 22%;
+    --ring: 45 100% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 215 50% 13%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 45 100% 50%;
+    --sidebar-primary-foreground: 215 50% 13%;
+    --sidebar-accent: 215 45% 20%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 215 40% 22%;
+    --sidebar-ring: 45 100% 50%;
+
+    --gold-gradient: linear-gradient(135deg, hsl(45 100% 50%), hsl(48 100% 50%));
+    --shadow-gold: 0 4px 30px -8px hsl(45 100% 50% / 0.25);
+
+    /* Brand colors used by landing pages */
+    --navy: 216 48% 13%;
+    --navy-deep: 216 55% 8%;
+    --navy-light: 216 40% 22%;
+    --light-blue: 200 72% 58%;
+    --light-blue-hover: 200 72% 50%;
+    --gold: 44 100% 53%;
+    --yellow: 48 100% 50%;
+    --cream: 210 20% 97%;
+  }
+
+  /* Landing page scoped theme — light background with navy primary */
+  .landing-page {
+    --background: 0 0% 100%;
+    --foreground: 216 48% 13%;
+    --card: 0 0% 100%;
+    --card-foreground: 216 48% 13%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 216 48% 13%;
+    --primary: 216 48% 13%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 20% 95%;
+    --secondary-foreground: 216 48% 13%;
+    --muted: 210 20% 95%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 200 72% 58%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 216 48% 13%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}

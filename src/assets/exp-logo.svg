@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 140" fill="currentColor">
+  <!-- e -->
+  <path d="M8,72 C8,36 30,8 62,8 C94,8 112,36 112,66 L112,76 L40,76 C42,96 56,108 74,108 C88,108 100,100 106,88 L112,94 C104,110 90,118 70,118 C36,118 8,96 8,72 Z M40,64 L84,64 C82,44 74,28 62,28 C48,28 42,44 40,64 Z"/>
+  <!-- X (the distinctive overlapping X) -->
+  <path d="M108,12 L138,12 L162,52 L186,12 L216,12 L178,68 L218,118 L188,118 L162,78 L136,118 L106,118 L146,68 Z"/>
+  <!-- p -->
+  <path d="M220,42 L244,42 L244,52 C250,44 262,38 276,38 C296,38 310,56 310,80 C310,104 296,118 276,118 C262,118 252,112 244,104 L244,148 L220,148 Z M244,68 L244,96 C250,104 260,108 272,108 C286,108 294,96 294,80 C294,64 286,52 272,52 C260,52 250,58 244,68 Z"/>
+  <!-- REALTY text -->
+  <text x="162" y="142" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="26" letter-spacing="12" text-anchor="middle" fill="currentColor">REALTY</text>
+</svg>
