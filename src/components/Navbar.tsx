@@ -93,7 +93,7 @@ const Navbar = () => {
             Contact
           </Link>
           <Button asChild size="sm" className="ml-2">
-            <Link to="/contact">Schedule a Consultation</Link>
+            <a href="https://calendly.com/lucasmurphyrei" target="_blank" rel="noopener noreferrer">Schedule a Consultation</a>
           </Button>
         </div>
 
@@ -130,7 +130,7 @@ const Navbar = () => {
           ))}
           <Link to="/contact" onClick={() => setMobileOpen(false)} className="block py-3 text-sm font-medium text-foreground hover:text-primary">Contact</Link>
           <Button asChild className="mt-2 w-full">
-            <Link to="/contact" onClick={() => setMobileOpen(false)}>Schedule a Consultation</Link>
+            <a href="https://calendly.com/lucasmurphyrei" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>Schedule a Consultation</a>
           </Button>
         </div>
       )}

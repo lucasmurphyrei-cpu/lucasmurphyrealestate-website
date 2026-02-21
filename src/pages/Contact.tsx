@@ -6,19 +6,56 @@ import { Label } from "@/components/ui/label";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
+const GOOGLE_SHEETS_URL = import.meta.env.VITE_GOOGLE_SHEETS_URL;
+
 const Contact = () => {
   const { toast } = useToast();
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate submission
-    setTimeout(() => {
-      setLoading(false);
+
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    const data = {
+      name: formData.get("name") as string,
+      email: formData.get("email") as string,
+      phone: formData.get("phone") as string,
+      message: formData.get("message") as string,
+      timestamp: new Date().toISOString(),
+    };
+
+    try {
+      if (!GOOGLE_SHEETS_URL) {
+        throw new Error("Form endpoint not configured");
+      }
+
+      // Send as form-encoded data (CORS-safe, no preflight needed)
+      const params = new URLSearchParams();
+      params.append("name", data.name);
+      params.append("email", data.email);
+      params.append("phone", data.phone);
+      params.append("message", data.message);
+      params.append("timestamp", data.timestamp);
+
+      await fetch(GOOGLE_SHEETS_URL, {
+        method: "POST",
+        mode: "no-cors",
+        body: params,
+      });
+
       toast({ title: "Message sent!", description: "We'll get back to you shortly." });
-      (e.target as HTMLFormElement).reset();
-    }, 1000);
+      form.reset();
+    } catch {
+      toast({
+        title: "Something went wrong",
+        description: "Please try again or call us directly at (414) 458-1952.",
+        variant: "destructive",
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
