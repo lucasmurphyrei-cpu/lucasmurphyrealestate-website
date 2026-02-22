@@ -1,4 +1,7 @@
 {
+  "redirects": [
+    { "source": "/guide/first-time-homebuyer-metro-milwaukee", "destination": "https://lucasmurphyrealestate-main.vercel.app/guide/first-time-homebuyer-metro-milwaukee", "permanent": false }
+  ],
   "rewrites": [
     { "source": "/((?!assets|favicon|robots|sitemap|Your_First).*)", "destination": "/index.html" }
   ]
