@@ -5,15 +5,16 @@ import expLogo from "@/assets/exp-logo.png";
 const Footer = () => (
   <footer className="border-t border-border bg-secondary/50">
     <div className="container py-12">
-      <div className="grid items-start gap-8 md:grid-cols-4">
+      <div className="grid items-start gap-x-12 gap-y-8 md:grid-cols-[2fr_1fr_1fr_1fr]">
         <div>
-          <h3 className="font-display text-base font-bold text-foreground whitespace-nowrap">eXp Realty — Provision Properties Core Team</h3>
+          <p className="font-display text-xl font-bold text-foreground">Lucas Murphy</p>
+          <h3 className="mt-1 text-sm font-medium text-muted-foreground whitespace-nowrap">eXp Realty — Provision Properties Core Team</h3>
           <p className="mt-4 text-sm text-muted-foreground">Serving Milwaukee, Waukesha, Washington & Ozaukee Counties with expert real estate guidance.</p>
         </div>
         <div>
           <h4 className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">Guides</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><Link to="/guides/first-time-home-buyers" className="hover:text-primary transition-colors">First-Time Home Buyers</Link></li>
+            <li><a href="https://www.lucasmurphyrealestate.com/guide/first-time-homebuyer-metro-milwaukee" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">First-Time Home Buyers</a></li>
             <li><Link to="/guides/first-time-condo-buyers" className="hover:text-primary transition-colors">First-Time Condo Buyers</Link></li>
             <li><Link to="/guides/relocation" className="hover:text-primary transition-colors">Relocation Guide</Link></li>
             <li><Link to="/guides/house-hacking" className="hover:text-primary transition-colors">House Hacking</Link></li>
