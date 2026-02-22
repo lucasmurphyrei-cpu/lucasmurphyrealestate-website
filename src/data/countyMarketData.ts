@@ -34,12 +34,12 @@ const countyMarketData: Record<string, CountyMarketData> = {
   "Milwaukee County": {
     dataMonth: "January 2026",
     stats: [
-      { label: "Median Price", value: "—", change: "—", direction: "flat" },
-      { label: "Days on Market", value: "—", change: "—", direction: "flat" },
-      { label: "Sale-to-List Ratio", value: "—", change: "—", direction: "flat" },
-      { label: "Months' Supply", value: "—", change: "—", direction: "flat" },
-      { label: "Inventory", value: "—", change: "—", direction: "flat" },
-      { label: "New Listings", value: "—", change: "—", direction: "flat" },
+      { label: "Median Price", value: "$282,000", change: "+10.6% YoY", direction: "up" },
+      { label: "Days on Market", value: "31 days", change: "-6.1% YoY", direction: "down" },
+      { label: "Sale-to-List Ratio", value: "97.2%", change: "-0.4% YoY", direction: "down" },
+      { label: "Months' Supply", value: "2.8 months", change: "+25.1% YoY", direction: "up" },
+      { label: "Inventory", value: "809 homes", change: "-1.0% YoY", direction: "down" },
+      { label: "New Listings", value: "512", change: "-1.5% YoY", direction: "down" },
     ],
   },
 

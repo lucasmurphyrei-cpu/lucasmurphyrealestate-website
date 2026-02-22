@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import LayoutRoute from "@/components/LayoutRoute";
+import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 import Contact from "./pages/Contact";
 import FirstTimeHomeBuyers from "./pages/guides/FirstTimeHomeBuyers";
@@ -36,6 +37,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             {/* Standalone landing page — no main site navbar/footer */}
             <Route path="/first-time-homebuyers-guide" element={<FirstTimeHomeBuyersGuide />} />

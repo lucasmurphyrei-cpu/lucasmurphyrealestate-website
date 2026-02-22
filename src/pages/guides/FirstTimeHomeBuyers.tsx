@@ -17,7 +17,7 @@ const FirstTimeHomeBuyers = () => (
           Everything you need to know about buying your first home in Metro Milwaukee — read the full guide on our website.
         </p>
         <Button asChild size="lg" className="gap-2">
-          <a href="https://lucasmurphyrealestate.com/guide/first-time-homebuyer-metro-milwaukee" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.lucasmurphyrealestate.com/guide/first-time-homebuyer-metro-milwaukee" target="_blank" rel="noopener noreferrer">
             Read the Full Guide <ExternalLink className="h-4 w-4" />
           </a>
         </Button>

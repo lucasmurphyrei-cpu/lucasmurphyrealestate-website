@@ -7,7 +7,7 @@ const Footer = () => (
     <div className="container py-12">
       <div className="grid items-start gap-8 md:grid-cols-4">
         <div>
-          <h3 className="font-display text-base font-bold text-foreground">eXp Realty — Provision Properties Core Team</h3>
+          <h3 className="font-display text-base font-bold text-foreground whitespace-nowrap">eXp Realty — Provision Properties Core Team</h3>
           <p className="mt-4 text-sm text-muted-foreground">Serving Milwaukee, Waukesha, Washington & Ozaukee Counties with expert real estate guidance.</p>
         </div>
         <div>
@@ -33,7 +33,7 @@ const Footer = () => (
           <h4 className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">Contact</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li><Link to="/contact" className="hover:text-primary transition-colors">Get In Touch</Link></li>
-            <li><Link to="/contact" className="hover:text-primary transition-colors">Schedule a Consultation</Link></li>
+            <li><a href="https://calendly.com/lucasmurphyrei" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Schedule a Consultation</a></li>
           </ul>
         </div>
       </div>
