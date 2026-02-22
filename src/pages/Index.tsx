@@ -101,7 +101,7 @@ const Index = () => {
               <a href="https://calendly.com/lucasmurphyrei" target="_blank" rel="noopener noreferrer">Schedule a Consultation</a>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link to="/guides/first-time-home-buyers">Explore Guides</Link>
+              <a href="https://www.lucasmurphyrealestate.com/guide/first-time-homebuyer-metro-milwaukee" target="_blank" rel="noopener noreferrer">Explore Guides</a>
             </Button>
           </motion.div>
         </div>
