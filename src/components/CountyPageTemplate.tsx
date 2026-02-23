@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { MapPin, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import MarketSnapshot from "@/components/MarketSnapshot";
+import NeighborhoodQuizSection from "@/components/quiz/NeighborhoodQuizSection";
 import countyMarketData from "@/data/countyMarketData";
 
 interface CountyPageProps {
@@ -14,9 +16,17 @@ interface CountyPageProps {
 const CountyPage = ({ name, description, municipalities }: CountyPageProps) => {
   const sorted = [...municipalities].sort();
   const marketData = countyMarketData[name];
+  const countyKey = name.toLowerCase().replace(" county", "").replace(/\s+/g, "-");
+  const countySlug = name.toLowerCase().replace(/\s+/g, "-");
 
   return (
     <main className="container py-16">
+      <Helmet>
+        <title>{name} | Municipality Profiles & Market Data | Lucas Murphy Real Estate</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={`https://www.lucasmurphyrealestate.com/areas/${countySlug}`} />
+      </Helmet>
+
       <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
         <Link to="/" className="hover:text-primary">Home</Link>
         <span>/</span>
@@ -52,6 +62,8 @@ const CountyPage = ({ name, description, municipalities }: CountyPageProps) => {
           );
         })}
       </div>
+
+      <NeighborhoodQuizSection mode="county" contextCounty={countyKey} />
 
       <div className="mt-12">
         <Button asChild>

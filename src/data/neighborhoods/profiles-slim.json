@@ -1,0 +1,2213 @@
+{
+  "meta": {
+    "exported_at": "2026-02-22T19:47:10.766091",
+    "source": "County Neighborhood Profiles",
+    "version": "1.0",
+    "counties": 4,
+    "total_municipalities": 42
+  },
+  "municipalities": [
+    {
+      "id": "mequon",
+      "display_name": "Mequon",
+      "county": "ozaukee",
+      "quick_snapshot": {
+        "population": "25,259 (2023 est.)",
+        "median_age": "46.7 years",
+        "median_household_income": "$147,391",
+        "median_home_price": "$624,668 (Zillow Home Value Index, +2.1% YoY)",
+        "average_rent": "$1,725/month",
+        "typical_home_style": "Colonial, contemporary ranch, estate-style on large lots",
+        "school_district": "Mequon-Thiensville School District -- Niche grade A+, ranked #4 in Wisconsin; Homestead High School ranked #7 public high school in the state and #1 in Ozaukee County"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$582,900 median; -5.2% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "66 days (down 10 days YoY) (Redfin)",
+        "price_per_sqft": "$199 (-14.9% YoY) (Redfin)",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 0.989. 13 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#UpscaleSuburban",
+        "#TopSchools",
+        "#NatureLover",
+        "#ExecutiveRelocator",
+        "#LakeMichiganLiving"
+      ],
+      "lifestyle_summary": "If you value space, privacy, and access to some of the best public schools in Wisconsin, Mequon is built for you. If your ideal weekend involves hiking nature preserves, browsing a curated public market, and retreating to a home on a sprawling lot, this community delivers. If you are relocating for an executive role in the Milwaukee metro and want a prestigious address without sacrificing a reasonable commute, Mequon checks every box. If you want Lake Michigan access in your backyard while living in a low-crime, high-income suburb, look no further.",
+      "api_data": {
+        "census": {
+          "population": 25259,
+          "median_age": 46.7,
+          "median_household_income": 147391,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 624668.4150770155,
+          "zhvi_yoy_pct": 2.1,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 582900.0,
+          "median_sale_price_yoy": -5.2,
+          "median_dom": 66.0,
+          "median_dom_yoy": -10.0,
+          "median_ppsf": 198.569218871,
+          "median_ppsf_yoy": -14.9,
+          "sale_to_list": 0.9894286662,
+          "homes_sold": 13.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "cedarburg",
+      "display_name": "Cedarburg",
+      "county": "ozaukee",
+      "quick_snapshot": {
+        "population": "12,317 (2023 est.)",
+        "median_age": "42.1 years",
+        "median_household_income": "$82,110",
+        "median_home_price": "$528,227 (Zillow Home Value Index, +2.6% YoY)",
+        "average_rent": "$1,489/month",
+        "typical_home_style": "Historic Cream City brick, Victorian, craftsman bungalows in the downtown core; newer colonials and ranch homes in surrounding subdivisions",
+        "school_district": "Cedarburg School District -- Niche grade A+, ranked #6 in Wisconsin; Cedarburg High School ranked #10 public high school in the state; 73% math proficiency, 67% reading proficiency"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$702,000 median; -8.4% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "44 days (down 34 days YoY) (Redfin)",
+        "price_per_sqft": "$244 (-11.4% YoY) (Redfin)",
+        "market_competitiveness": "Competitive (Redfin). Average sale-to-list ratio: 1.010. 7 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#HistoricCharm",
+        "#WalkableDowntown",
+        "#FamilyFriendly",
+        "#ArtsAndCulture",
+        "#SmallTownVibes"
+      ],
+      "lifestyle_summary": "If you dream of living in a picture-postcard downtown where you can walk to a local winery, browse antique shops, and grab brunch at a cozy cafe, Cedarburg was made for you. If you want your children in one of Wisconsin's top-ten school districts while still being under 30 minutes from Milwaukee, this is the sweet spot. If you value community festivals, historic architecture, and a small-town pace of life without sacrificing access to the metro, Cedarburg delivers a lifestyle that is hard to replicate anywhere else in southeastern Wisconsin.",
+      "api_data": {
+        "census": {
+          "population": 12317,
+          "median_age": 42.1,
+          "median_household_income": 82110,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 528227.4473493933,
+          "zhvi_yoy_pct": 2.6,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 702000.0,
+          "median_sale_price_yoy": -8.4,
+          "median_dom": 44.0,
+          "median_dom_yoy": -34.0,
+          "median_ppsf": 244.161358811,
+          "median_ppsf_yoy": -11.4,
+          "sale_to_list": 1.009930866,
+          "homes_sold": 7.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "grafton",
+      "display_name": "Grafton",
+      "county": "ozaukee",
+      "quick_snapshot": {
+        "population": "12,274 (2023 est.)",
+        "median_age": "43.5 years",
+        "median_household_income": "$88,634",
+        "median_home_price": "$433,023 (Zillow Home Value Index, +4.5% YoY)",
+        "average_rent": "$2,050/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Mid-century ranch, split-level, newer construction colonials and two-story homes in planned subdivisions",
+        "school_district": "Grafton School District -- Niche grade A, ranked #11 in Wisconsin; A+ for teachers; Grafton High School ranked #3 in Ozaukee County"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$610,000 median; +40.1% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "90 days (up 39 days YoY) (Redfin)",
+        "price_per_sqft": "$240 (+4.7% YoY) (Redfin)",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 1.000. 11 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#BestValue",
+        "#FamilyFirst",
+        "#CraftBeerCulture",
+        "#NatureAccess",
+        "#FirstTimeBuyer"
+      ],
+      "lifestyle_summary": "If you want the benefits of Ozaukee County schools and safety without the top-tier price tag, Grafton is your best entry point. If you enjoy Lake Michigan bluffs, local craft breweries, and a community that feels welcoming without pretense, this village delivers real value. If you are a first-time buyer or a young family making the move from Milwaukee to the suburbs, Grafton offers the most competitive prices in the county while still keeping your commute under 30 minutes.",
+      "api_data": {
+        "census": {
+          "population": 12274,
+          "median_age": 43.5,
+          "median_household_income": 88634,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 433023.2752373588,
+          "zhvi_yoy_pct": 4.5,
+          "zori": 2050.0,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 610000.0,
+          "median_sale_price_yoy": 40.1,
+          "median_dom": 90.0,
+          "median_dom_yoy": 39.0,
+          "median_ppsf": 239.717055279,
+          "median_ppsf_yoy": 4.7,
+          "sale_to_list": 0.9999493107,
+          "homes_sold": 11.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "port_washington",
+      "display_name": "Port Washington",
+      "county": "ozaukee",
+      "quick_snapshot": {
+        "population": "12,569 (2023 est.)",
+        "median_age": "39.6 years",
+        "median_household_income": "$81,582",
+        "median_home_price": "$366,117 (Zillow Home Value Index, +5.5% YoY)",
+        "average_rent": "$1,028/month",
+        "typical_home_style": "Victorian and Craftsman in the historic district; newer ranch and colonial in surrounding neighborhoods; lakefront condos and townhomes near the marina",
+        "school_district": "Port Washington-Saukville School District -- Niche grade A, ranked #24 in Wisconsin; 2,478 students; 13:1 student-teacher ratio"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$500,000 median; +50.7% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "44 days (Redfin)",
+        "price_per_sqft": "$261 (+17.2% YoY) (Redfin)",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 0.984. 7 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#LakefrontLiving",
+        "#HarborTown",
+        "#AffordableLakeside",
+        "#MaritimeCulture",
+        "#FestivalCommunity"
+      ],
+      "lifestyle_summary": "If you have always wanted to live in a harbor town where you can walk to the lighthouse, grab fresh fish at a waterfront restaurant, and watch sailboats from your porch, Port Washington is the real thing. If you are looking for Lake Michigan living without the premium prices of the North Shore, this is one of the most affordable lakefront communities in the Milwaukee metro. If you want your kids in solid schools, a downtown with genuine character, and festivals that bring the whole community together, Port Washington is an underrated gem.",
+      "api_data": {
+        "census": {
+          "population": 12569,
+          "median_age": 39.6,
+          "median_household_income": 81582,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 366117.248036419,
+          "zhvi_yoy_pct": 5.5,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 500000.0,
+          "median_sale_price_yoy": 50.7,
+          "median_dom": 44.0,
+          "median_dom_yoy": 0.0,
+          "median_ppsf": 260.942760943,
+          "median_ppsf_yoy": 17.2,
+          "sale_to_list": 0.9842293424,
+          "homes_sold": 7.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "thiensville",
+      "display_name": "Thiensville",
+      "county": "ozaukee",
+      "quick_snapshot": {
+        "population": "3,277 (2023 est.)",
+        "median_age": "47.1 years",
+        "median_household_income": "$93,208",
+        "median_home_price": "$397,211 (Zillow Home Value Index, +4.3% YoY)",
+        "average_rent": "$1,090-$1,298/month (1-2 BR); higher averages skewed by newer luxury units",
+        "typical_home_style": "Cape Cod, ranch, and split-level from the 1950s-70s; newer infill development with contemporary townhomes",
+        "school_district": "Mequon-Thiensville School District -- Niche grade A+, ranked #4 in Wisconsin (shared with Mequon)"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$212,500 median; -13.3% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "148 days (up 64 days YoY) (Redfin)",
+        "price_per_sqft": "$184 (-6.6% YoY) (Redfin)",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 0.991. 1 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#VillageCharm",
+        "#FoodieDestination",
+        "#Downsizer",
+        "#RiversideLiving",
+        "#TopSchoolDistrict"
+      ],
+      "lifestyle_summary": "If you want the prestige of the Mequon-Thiensville School District in a cozier, more walkable setting, Thiensville gives you the best of both worlds. If your idea of a perfect evening involves walking to a world-class fish fry along the Milwaukee River, this tiny village delivers dining that rivals communities ten times its size. If you are downsizing from a larger home but refuse to compromise on school quality or community character, Thiensville is the answer. If you value a tight-knit neighborhood where you know your neighbors by name, this is the place.",
+      "api_data": {
+        "census": {
+          "population": 3277,
+          "median_age": 47.1,
+          "median_household_income": 93208,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 397211.4822384395,
+          "zhvi_yoy_pct": 4.3,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 212500.0,
+          "median_sale_price_yoy": -13.3,
+          "median_dom": 148.0,
+          "median_dom_yoy": 64.0,
+          "median_ppsf": 183.823529412,
+          "median_ppsf_yoy": -6.6,
+          "sale_to_list": 0.9906759907,
+          "homes_sold": 1.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "saukville",
+      "display_name": "Saukville",
+      "county": "ozaukee",
+      "quick_snapshot": {
+        "population": "4,268 (2023 est.)",
+        "median_age": "38.6 years",
+        "median_household_income": "$79,148",
+        "median_home_price": "$383,679 (Zillow Home Value Index, +5.2% YoY)",
+        "average_rent": "$2,050/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Ranch, bi-level, and Cape Cod from the 1960s-80s; newer construction in planned subdivisions on the village edges",
+        "school_district": "Port Washington-Saukville School District -- Niche grade A, ranked #24 in Wisconsin (shared with Port Washington)"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$372,500 median; +23.3% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "62 days (up 32 days YoY) (Redfin)",
+        "price_per_sqft": "$214 (-2.4% YoY) (Redfin)",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 0.994. 6 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#BudgetFriendly",
+        "#OutdoorAdventurer",
+        "#QuietCountryLiving",
+        "#NatureSanctuary",
+        "#HiddenGem"
+      ],
+      "lifestyle_summary": "If you want to live in Ozaukee County but need to keep your budget in check, Saukville offers the most affordable entry point with access to the same excellent school district as Port Washington. If you are an outdoor enthusiast who wants to kayak the Milwaukee River, hike through a glacial bog, and play a round on an Arnold Palmer course all within minutes of home, this is your community. If you appreciate small-town character without tourist traffic, Saukville offers the real thing -- quiet, affordable, and genuinely rooted.",
+      "api_data": {
+        "census": {
+          "population": 4268,
+          "median_age": 38.6,
+          "median_household_income": 79148,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 383678.7169073958,
+          "zhvi_yoy_pct": 5.2,
+          "zori": 2050.0,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 372500.0,
+          "median_sale_price_yoy": 23.3,
+          "median_dom": 62.0,
+          "median_dom_yoy": 32.0,
+          "median_ppsf": 214.421269581,
+          "median_ppsf_yoy": -2.4,
+          "sale_to_list": 0.9944142962,
+          "homes_sold": 6.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "belgium",
+      "display_name": "Belgium",
+      "county": "ozaukee",
+      "quick_snapshot": {
+        "population": "2,648 (2023 est.)",
+        "median_age": "47.1 years",
+        "median_household_income": "$79,271",
+        "median_home_price": "$386,089 (Zillow Home Value Index, +3.1% YoY)",
+        "average_rent": "$900-$1,150/month (limited rental inventory; estimates vary widely)",
+        "typical_home_style": "Ranch, farmhouse, and Cape Cod on larger lots; newer suburban construction in limited subdivisions",
+        "school_district": "Northern Ozaukee School District -- \"Exceeds Expectations\" on Wisconsin State Report Card; ranked 57th of 367 districts statewide (top 16%); Northern Ozaukee High School Niche grade B"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$374,900 median; -0.6% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "49 days (up 10 days YoY) (Redfin)",
+        "price_per_sqft": "$178 (+11.1% YoY) (Redfin)",
+        "market_competitiveness": "Competitive (Redfin). Average sale-to-list ratio: 1.012. 3 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#RuralRetreat",
+        "#SmallTownPeace",
+        "#StateParkLife",
+        "#AgricultureRoots",
+        "#MaximumPrivacy"
+      ],
+      "lifestyle_summary": "If you are looking for the most rural, peaceful setting in Ozaukee County while still being able to commute to Milwaukee, Belgium is your retreat. If you want a Harrington Beach State Park pass to be your most-used possession and open farmland views from your kitchen window, this is the place. If you prefer a small school where teachers know every student by name and a community where neighbors still wave from their porches, Belgium offers a lifestyle that larger suburbs simply cannot replicate. If maximum value for your dollar in a safe, quiet setting is your priority, Belgium delivers.",
+      "api_data": {
+        "census": {
+          "population": 2648,
+          "median_age": 47.1,
+          "median_household_income": 79271,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 386088.8958533456,
+          "zhvi_yoy_pct": 3.1,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 374900.0,
+          "median_sale_price_yoy": -0.6,
+          "median_dom": 49.0,
+          "median_dom_yoy": 10.0,
+          "median_ppsf": 178.076770875,
+          "median_ppsf_yoy": 11.1,
+          "sale_to_list": 1.011669908,
+          "homes_sold": 3.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "milwaukee",
+      "display_name": "Milwaukee (City Proper)",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "569,756 (2023 est.)",
+        "median_age": "32.2 years",
+        "median_household_income": "$51,888",
+        "median_home_price": "$211,874 (Zillow Home Value Index, +3.9% YoY)",
+        "average_rent": "$1,366/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Milwaukee bungalows, Polish flats, Victorian-era duplexes, Cream City brick rowhouses, modern downtown condos and lofts",
+        "school_district": "Milwaukee Public Schools -- Niche Grade: C, 154 schools, 66,864 students"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$229,000 median; +9.0% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "61 days (up 7 days YoY) (Redfin)",
+        "price_per_sqft": "$140 (-0.5% YoY) (Redfin)",
+        "market_competitiveness": "First-time homebuyers, investors, young professionals; moderately competitive market with homes receiving ~1 offer on average"
+      },
+      "quiz_tags": [
+        "#UrbanLiving",
+        "#AffordableCity",
+        "#CraftBeerCapital",
+        "#LakefrontLifestyle",
+        "#CulturalHub"
+      ],
+      "lifestyle_summary": "If you want the energy of a real city without the price tag of Chicago, Milwaukee is your answer. You can walk from a James Beard-nominated restaurant to a Bucks game to a lakefront sunset in the same evening. If you thrive on neighborhood pride, ethnic festivals, and finding the best Friday fish fry, this city will feel like home. You will trade some suburban polish for authentic, gritty character and jaw-dropping affordability.",
+      "api_data": {
+        "census": {
+          "population": 569756,
+          "median_age": 32.2,
+          "median_household_income": 51888,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 211873.68941692193,
+          "zhvi_yoy_pct": 3.9,
+          "zori": 1365.5565565565566,
+          "zori_yoy_pct": 3.9
+        },
+        "redfin": {
+          "median_sale_price": 229000.0,
+          "median_sale_price_yoy": 9.0,
+          "median_dom": 61.0,
+          "median_dom_yoy": 7.0,
+          "median_ppsf": 140.28658355,
+          "median_ppsf_yoy": -0.5,
+          "sale_to_list": 0.9805442214,
+          "homes_sold": 269.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "wauwatosa",
+      "display_name": "Wauwatosa",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "47,718 (2023 est.)",
+        "median_age": "38.7 years",
+        "median_household_income": "$93,859",
+        "median_home_price": "$393,243 (Zillow Home Value Index, +4.2% YoY)",
+        "average_rent": "$1,631/month (Zillow Observed Rent Index)",
+        "typical_home_style": "1920s-1940s Colonials and Tudors, Craftsman bungalows, Cape Cods, mid-century ranches, newer construction near Mayfair",
+        "school_district": "Wauwatosa School District -- Niche Grade: A+, ranked top 10 in Wisconsin, 6 schools, 4,577 students"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$352,000 median; +3.4% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "72 days (up 27 days YoY) (Redfin)",
+        "price_per_sqft": "$207 (+7.6% YoY) (Redfin)",
+        "market_competitiveness": "Young families, move-up buyers; very competitive market -- 72% of homes sold over asking in June 2025"
+      },
+      "quiz_tags": [
+        "#FamilyFriendly",
+        "#TopSchools",
+        "#VillageCharm",
+        "#SuburbanConvenience",
+        "#TosaProud"
+      ],
+      "lifestyle_summary": "If you are looking for a community where your kids walk to an A+ rated school, you can grab a pastry at a French bakery on Saturday morning, and still be downtown for a Bucks game by tip-off, Wauwatosa is your place. You will appreciate the village-center charm, the tree canopy, and the fact that everyone in town knows the best spot for Friday fish fry. If \"having it all\" appeals to you, start your search in Tosa.",
+      "api_data": {
+        "census": {
+          "population": 47718,
+          "median_age": 38.7,
+          "median_household_income": 93859,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 393242.7913967024,
+          "zhvi_yoy_pct": 4.2,
+          "zori": 1631.1638176638178,
+          "zori_yoy_pct": 3.4
+        },
+        "redfin": {
+          "median_sale_price": 352000.0,
+          "median_sale_price_yoy": 3.4,
+          "median_dom": 72.0,
+          "median_dom_yoy": 27.0,
+          "median_ppsf": 207.097881996,
+          "median_ppsf_yoy": 7.6,
+          "sale_to_list": 0.9762783992,
+          "homes_sold": 30.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "west_allis",
+      "display_name": "West Allis",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "59,588 (2023 est.)",
+        "median_age": "39.0 years",
+        "median_household_income": "$69,685",
+        "median_home_price": "$256,272 (Zillow Home Value Index, +3.1% YoY)",
+        "average_rent": "$1,395/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Post-war Cape Cods, bungalows, modest ranches, worker cottages, duplexes; newer infill construction near State Fair Park",
+        "school_district": "West Allis-West Milwaukee School District -- Niche Grade: B, practical and career-oriented programming"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$260,000 median; +11.1% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "53 days (Redfin)",
+        "price_per_sqft": "$184 (+5.5% YoY) (Redfin)",
+        "market_competitiveness": "First-time buyers, investors; competitive market -- 56% of homes sold over asking in Dec 2024"
+      },
+      "quiz_tags": [
+        "#AffordableSuburb",
+        "#BlueCollarCharm",
+        "#StateFairCountry",
+        "#FirstTimeBuyer",
+        "#ValuePlay"
+      ],
+      "lifestyle_summary": "If you want an honest, unpretentious community where your dollar stretches further than almost anywhere else in the metro area, West Allis delivers. You can walk to the Farmers Market on Saturday, enjoy a cream puff at the State Fair in August, and still have money left over for a down payment. If you value character over polish and community over status, Stallis is calling.",
+      "api_data": {
+        "census": {
+          "population": 59588,
+          "median_age": 39.0,
+          "median_household_income": 69685,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 256272.37649552393,
+          "zhvi_yoy_pct": 3.1,
+          "zori": 1395.3148148148148,
+          "zori_yoy_pct": 3.8
+        },
+        "redfin": {
+          "median_sale_price": 260000.0,
+          "median_sale_price_yoy": 11.1,
+          "median_dom": 53.0,
+          "median_dom_yoy": 0.0,
+          "median_ppsf": 184.237461617,
+          "median_ppsf_yoy": 5.5,
+          "sale_to_list": 0.9926664793,
+          "homes_sold": 32.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "shorewood",
+      "display_name": "Shorewood",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "13,682 (2023 est.)",
+        "median_age": "38.0 years",
+        "median_household_income": "$89,135",
+        "median_home_price": "$518,889 (Zillow Home Value Index, +6.3% YoY)",
+        "average_rent": "$1,329/month (Zillow Observed Rent Index)",
+        "typical_home_style": "1920s Colonials, Tudor Revivals, Craftsman bungalows, Art Deco apartment buildings, some mid-century ranches",
+        "school_district": "Shorewood School District -- Niche Grade: A, ranked #7 Best Public High Schools in Milwaukee Area"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$390,000 median; -25.7% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "73 days (up 38 days YoY) (Redfin)",
+        "price_per_sqft": "$258 (-8.9% YoY) (Redfin)",
+        "market_competitiveness": "Professionals, academics, dual-income couples; competitive market with limited inventory due to small geographic size"
+      },
+      "quiz_tags": [
+        "#WalkableVillage",
+        "#CulturalHub",
+        "#LakefrontAccess",
+        "#IndependentSpirit",
+        "#UrbanSuburb"
+      ],
+      "lifestyle_summary": "If you would rather walk to a French bistro than drive to a strip mall, Shorewood is your village. You will love the density -- everything from a world-class deli to a lakefront sunset is within a 10-minute walk. If you value intellectual energy, independent businesses, and a village that feels more East Coast than Midwest, this compact gem delivers outsized character.",
+      "api_data": {
+        "census": {
+          "population": 13682,
+          "median_age": 38.0,
+          "median_household_income": 89135,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 518889.137619769,
+          "zhvi_yoy_pct": 6.3,
+          "zori": 1328.6666666666667,
+          "zori_yoy_pct": -4.8
+        },
+        "redfin": {
+          "median_sale_price": 390000.0,
+          "median_sale_price_yoy": -25.7,
+          "median_dom": 73.0,
+          "median_dom_yoy": 38.0,
+          "median_ppsf": 258.150365935,
+          "median_ppsf_yoy": -8.9,
+          "sale_to_list": 0.9870393044,
+          "homes_sold": 5.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "whitefish_bay",
+      "display_name": "Whitefish Bay",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "14,750 (2023 est.)",
+        "median_age": "40.3 years",
+        "median_household_income": "$154,255",
+        "median_home_price": "$603,488 (Zillow Home Value Index, +4.1% YoY)",
+        "average_rent": "$2,819/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Tudor Revivals, Georgian Colonials, Cape Cods, Dutch Colonials, some new-construction luxury homes; predominantly brick and stone",
+        "school_district": "Whitefish Bay School District -- Niche Grade: A+, 4 schools, 2,860 students; one of the top-ranked districts in Wisconsin"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$562,500 median; +8.5% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "56 days (up 22 days YoY) (Redfin)",
+        "price_per_sqft": "$315 (-3.7% YoY) (Redfin)",
+        "market_competitiveness": "Move-up families from Milwaukee and Shorewood, executives; highly competitive market with strong demand and limited inventory"
+      },
+      "quiz_tags": [
+        "#NorthShoreElite",
+        "#TopSchools",
+        "#FamilyFirst",
+        "#LakefrontLiving",
+        "#VillageLife"
+      ],
+      "lifestyle_summary": "If your Saturday morning includes a jog along Lake Michigan, a stop at the village toy shop, and brunch at a farm-to-table restaurant while your kids are in one of the state's best school systems, Whitefish Bay is the place. You will pay a premium for the address, but you are buying into an A+ school district, lakefront parks, and a tight-knit community that takes care of its own.",
+      "api_data": {
+        "census": {
+          "population": 14750,
+          "median_age": 40.3,
+          "median_household_income": 154255,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 603488.0836888469,
+          "zhvi_yoy_pct": 4.1,
+          "zori": 2819.0,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 562500.0,
+          "median_sale_price_yoy": 8.5,
+          "median_dom": 56.0,
+          "median_dom_yoy": 22.0,
+          "median_ppsf": 314.817379599,
+          "median_ppsf_yoy": -3.7,
+          "sale_to_list": 1.004450173,
+          "homes_sold": 8.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "bay_view",
+      "display_name": "Bay View (within Milwaukee)",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "~16,284 (2023 ACS, broader neighborhood definition)",
+        "median_age": "37 years",
+        "median_household_income": "~$55,000 (neighborhood estimate, part of Milwaukee)",
+        "median_home_price": "$348,000",
+        "average_rent": "$1,350/month (neighborhood estimate within Milwaukee)",
+        "typical_home_style": "Worker cottages, Milwaukee bungalows, Cream City brick duplexes, Arts & Crafts homes, some mid-century ranches",
+        "school_district": "Milwaukee Public Schools -- Niche Grade: C; Bay View High School is a neighborhood anchor"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "+2.1% (Jan 2026 vs. Jan 2025)",
+        "avg_days_on_market": "52 days",
+        "price_per_sqft": "$238",
+        "market_competitiveness": "Millennials, creative professionals, young couples; competitive market with rising prices but still accessible compared to Shorewood and Whitefish Bay"
+      },
+      "quiz_tags": [
+        "#CreativeClass",
+        "#FoodieParadise",
+        "#LakefrontVibe",
+        "#NeighborhoodCulture",
+        "#MillennialFavorite"
+      ],
+      "lifestyle_summary": "If you are the kind of person who judges a neighborhood by its coffee roasters, record shops, and taco trucks rather than its school rankings and lawn care, Bay View is your spiritual home. You will spend summer evenings at the lakefront beer garden, Saturday mornings at the farmers market, and weekday lunches at the best small-plates restaurant in the city. If you are ready for Milwaukee's most dynamic neighborhood, get in before prices catch up to the hype."
+    },
+    {
+      "id": "glendale",
+      "display_name": "Glendale",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "13,134 (2023 est.)",
+        "median_age": "44.5 years",
+        "median_household_income": "$77,096",
+        "median_home_price": "$330,627 (Zillow Home Value Index, +4.4% YoY)",
+        "average_rent": "$1,636/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Mid-century ranches, split-levels, raised ranches from the 1950s-1970s, newer townhomes and condos near Bayshore",
+        "school_district": "Glendale-River Hills School District -- Niche Grade: B+; feeds into Nicolet High School (Niche Grade: A)"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$375,000 median; +15.0% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "38 days (down 38 days YoY) (Redfin)",
+        "price_per_sqft": "$163 (-15.2% YoY) (Redfin)",
+        "market_competitiveness": "Empty nesters, first-time buyers attracted by moderate pricing, young professionals near Bayshore; growing demand driven by Bayshore redevelopment"
+      },
+      "quiz_tags": [
+        "#NorthShoreValue",
+        "#BayshoreLiving",
+        "#MidCenturyHomes",
+        "#RiverfrontAccess",
+        "#EmptyNesterFriendly"
+      ],
+      "lifestyle_summary": "If you want the convenience of a walkable town center with shops and restaurants, plus easy highway access and river-adjacent parks, Glendale offers a practical middle ground on the North Shore. You will appreciate the revitalized Bayshore development, the proximity to the Milwaukee River, and the fact that you can buy a solid mid-century home for less than neighboring Whitefish Bay. If you are drawn to communities in transition, Glendale has upside.",
+      "api_data": {
+        "census": {
+          "population": 13134,
+          "median_age": 44.5,
+          "median_household_income": 77096,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 330627.0774452894,
+          "zhvi_yoy_pct": 4.4,
+          "zori": 1636.1222222222225,
+          "zori_yoy_pct": -0.4
+        },
+        "redfin": {
+          "median_sale_price": 375000.0,
+          "median_sale_price_yoy": 15.0,
+          "median_dom": 38.0,
+          "median_dom_yoy": -38.0,
+          "median_ppsf": 162.8001628,
+          "median_ppsf_yoy": -15.2,
+          "sale_to_list": 0.9687777373,
+          "homes_sold": 9.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "greenfield",
+      "display_name": "Greenfield",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "37,361 (2023 est.)",
+        "median_age": "43.0 years",
+        "median_household_income": "$69,016",
+        "median_home_price": "$308,735 (Zillow Home Value Index, +4.7% YoY)",
+        "average_rent": "$1,250/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Post-war ranches, split-levels, Cape Cods from the 1950s-1970s, newer construction subdivisions on the south end",
+        "school_district": "Greenfield School District -- Niche Grade: B+, ranked #95 in Wisconsin"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$317,500 median; +11.5% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "44 days (down 19 days YoY) (Redfin)",
+        "price_per_sqft": "$205 (+15.6% YoY) (Redfin)",
+        "market_competitiveness": "First-time buyers, downsizers, moderate-income families; competitive market with homes selling near list price"
+      },
+      "quiz_tags": [
+        "#QuietSuburb",
+        "#AffordableFamily",
+        "#MidwestValues",
+        "#GoodValue",
+        "#CentralLocation"
+      ],
+      "lifestyle_summary": "If you are looking for the suburban sweet spot -- affordable, safe, and centrally located without pretension -- Greenfield checks every box. You will find honest, well-built homes from the 1960s on quiet streets, a short drive to everything, and neighbors who still bring over a casserole when you move in. If you want a no-drama, good-value home base in Milwaukee County, Greenfield is as reliable as they come.",
+      "api_data": {
+        "census": {
+          "population": 37361,
+          "median_age": 43.0,
+          "median_household_income": 69016,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 308734.72936528386,
+          "zhvi_yoy_pct": 4.7,
+          "zori": 1250.0,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 317500.0,
+          "median_sale_price_yoy": 11.5,
+          "median_dom": 44.0,
+          "median_dom_yoy": -19.0,
+          "median_ppsf": 204.809850109,
+          "median_ppsf_yoy": 15.6,
+          "sale_to_list": 1.012707785,
+          "homes_sold": 16.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "greendale",
+      "display_name": "Greendale",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "14,656 (2023 est.)",
+        "median_age": "41.1 years",
+        "median_household_income": "$95,015",
+        "median_home_price": "$364,140 (Zillow Home Value Index, +5.2% YoY)",
+        "average_rent": "$1,225/month",
+        "typical_home_style": "Original 1930s Greenbelt-era Colonials, Cape Cods, garden-style homes; mid-century ranches in outer areas; newer construction on the village periphery",
+        "school_district": "Greendale School District -- Niche Grade: A, ranked #18 in Wisconsin"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$352,500 median; +9.0% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "63 days (up 34 days YoY) (Redfin)",
+        "price_per_sqft": "$205 (+3.4% YoY) (Redfin)",
+        "market_competitiveness": "Families seeking walkable village living, history enthusiasts, move-up buyers; strong demand with limited inventory driving significant price appreciation"
+      },
+      "quiz_tags": [
+        "#HistoricVillage",
+        "#WalkableDowntown",
+        "#CommunityFirst",
+        "#FamilyValues",
+        "#NewDealCharm"
+      ],
+      "lifestyle_summary": "If you have ever dreamed of living in a neighborhood that feels like a Hallmark movie set -- walkable streets, a village green, independent shops where the owners know your name -- Greendale is that dream realized. You will raise your kids in an A-rated school district, stroll to the farmers market on Saturday, and live in a National Historic Landmark. If community and character matter more to you than square footage, start here.",
+      "api_data": {
+        "census": {
+          "population": 14656,
+          "median_age": 41.1,
+          "median_household_income": 95015,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 364139.72601898975,
+          "zhvi_yoy_pct": 5.2,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 352500.0,
+          "median_sale_price_yoy": 9.0,
+          "median_dom": 63.0,
+          "median_dom_yoy": 34.0,
+          "median_ppsf": 204.780381931,
+          "median_ppsf_yoy": 3.4,
+          "sale_to_list": 0.9744360856,
+          "homes_sold": 6.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "franklin",
+      "display_name": "Franklin",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "35,751 (2023 est.)",
+        "median_age": "43.2 years",
+        "median_household_income": "$108,342",
+        "median_home_price": "$416,529 (Zillow Home Value Index, +3.9% YoY)",
+        "average_rent": "$1,729/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Newer construction subdivisions (2000s-present), executive colonials, contemporary homes, some rural/estate properties on larger lots",
+        "school_district": "Franklin Public Schools / Oak Creek-Franklin Joint School District -- Niche Grade: A, ranked #15 in Wisconsin"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$305,000 median; -23.5% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "68 days (Redfin)",
+        "price_per_sqft": "$204 (-9.1% YoY) (Redfin)",
+        "market_competitiveness": "Move-up families, corporate professionals; strong demand for newer construction and the Ballpark Commons lifestyle"
+      },
+      "quiz_tags": [
+        "#NewConstruction",
+        "#SportsLifestyle",
+        "#FamilySuburb",
+        "#ModernLiving",
+        "#GrowingCommunity"
+      ],
+      "lifestyle_summary": "If you want a house built in this millennium with an open floor plan, a three-car garage, and a neighborhood that still smells like fresh lumber, Franklin is your suburb. You will take the kids to Ballpark Commons on weekends, hike Whitnall Park trails in the fall, and enjoy the fact that your commute is a straight shot down I-94. If newer is better in your book, Franklin delivers.",
+      "api_data": {
+        "census": {
+          "population": 35751,
+          "median_age": 43.2,
+          "median_household_income": 108342,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 416529.3504435368,
+          "zhvi_yoy_pct": 3.9,
+          "zori": 1728.75,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 305000.0,
+          "median_sale_price_yoy": -23.5,
+          "median_dom": 68.0,
+          "median_dom_yoy": 0.0,
+          "median_ppsf": 204.022988506,
+          "median_ppsf_yoy": -9.1,
+          "sale_to_list": 0.9835004962,
+          "homes_sold": 25.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "oak_creek",
+      "display_name": "Oak Creek",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "36,473 (2023 est.)",
+        "median_age": "38.9 years",
+        "median_household_income": "$93,120",
+        "median_home_price": "$388,877 (Zillow Home Value Index, +5.9% YoY)",
+        "average_rent": "$1,766/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Mix of 1960s-1980s ranches and split-levels, newer subdivision colonials and contemporaries, townhome developments",
+        "school_district": "Oak Creek-Franklin Joint School District -- Niche Grade: A-, ranked #42 in Wisconsin"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$400,000 median; +26.3% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "53 days (down 18 days YoY) (Redfin)",
+        "price_per_sqft": "$216 (+1.6% YoY) (Redfin)",
+        "market_competitiveness": "Young families, first-time and move-up buyers; one of the top 10 most competitive cities in Wisconsin"
+      },
+      "quiz_tags": [
+        "#TownSquareLiving",
+        "#DiverseCommunity",
+        "#LakefrontAccess",
+        "#GrowingSuburb",
+        "#ModernFamilyLife"
+      ],
+      "lifestyle_summary": "If you love the idea of a town square where you can grab tacos, watch the kids play in the splash pad, and walk to the library -- but also want a modern home with a real yard -- Oak Creek delivers that vision. You will appreciate the diversity, the lakefront park that nobody outside Milwaukee knows about, and the fact that your airport is 10 minutes away. If you want a suburb that is building its future rather than resting on its past, Oak Creek is the play.",
+      "api_data": {
+        "census": {
+          "population": 36473,
+          "median_age": 38.9,
+          "median_household_income": 93120,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 388877.1203746085,
+          "zhvi_yoy_pct": 5.9,
+          "zori": 1765.7222222222224,
+          "zori_yoy_pct": 4.1
+        },
+        "redfin": {
+          "median_sale_price": 400000.0,
+          "median_sale_price_yoy": 26.3,
+          "median_dom": 53.0,
+          "median_dom_yoy": -18.0,
+          "median_ppsf": 215.810995002,
+          "median_ppsf_yoy": 1.6,
+          "sale_to_list": 0.9992917651,
+          "homes_sold": 11.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "south_milwaukee",
+      "display_name": "South Milwaukee",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "20,547 (2023 est.)",
+        "median_age": "40.9 years",
+        "median_household_income": "$70,146",
+        "median_home_price": "$287,978 (Zillow Home Value Index, +2.9% YoY)",
+        "average_rent": "$1,150/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Worker cottages, Cape Cods, post-war bungalows, modest ranches from the 1940s-1970s; some lakefront properties",
+        "school_district": "South Milwaukee School District -- Niche Grade: B, 2,783 students, 13:1 student-teacher ratio"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$287,400 median; -4.8% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "55 days (down 2 days YoY) (Redfin)",
+        "price_per_sqft": "$206 (+17.7% YoY) (Redfin)",
+        "market_competitiveness": "First-time buyers, outdoor enthusiasts; Chicago-area buyers searching for affordable lakefront living"
+      },
+      "quiz_tags": [
+        "#HiddenGem",
+        "#LakefrontTrails",
+        "#AffordableLakefront",
+        "#OutdoorLifestyle",
+        "#WorkingClassCharm"
+      ],
+      "lifestyle_summary": "If your ideal Saturday involves hiking a trail through stone bridges and old-growth woodland, then cooling off at a lakefront beach -- all for a mortgage under $300K -- South Milwaukee is your hidden gem. You will fall in love with Grant Park before you fall in love with the house, and that is exactly the point. If you value nature and authenticity over polish and prestige, this is the most underrated community in Milwaukee County.",
+      "api_data": {
+        "census": {
+          "population": 20547,
+          "median_age": 40.9,
+          "median_household_income": 70146,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 287978.40826514165,
+          "zhvi_yoy_pct": 2.9,
+          "zori": 1150.0,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 287400.0,
+          "median_sale_price_yoy": -4.8,
+          "median_dom": 55.0,
+          "median_dom_yoy": -2.0,
+          "median_ppsf": 206.0,
+          "median_ppsf_yoy": 17.7,
+          "sale_to_list": 1.024282107,
+          "homes_sold": 14.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "st_francis",
+      "display_name": "St. Francis",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "9,318 (2023 est.)",
+        "median_age": "53.6 years",
+        "median_household_income": "$58,490",
+        "median_home_price": "$270,758 (Zillow Home Value Index, -2.1% YoY)",
+        "average_rent": "$1,745/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Small post-war bungalows, modest ranches, lakefront condos and apartments; some new luxury lakefront development",
+        "school_district": "St. Francis School District -- Niche Grade: B-, 1,097 students, 15:1 student-teacher ratio"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$224,500 median; -6.5% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "92 days (up 54 days YoY) (Redfin)",
+        "price_per_sqft": "$202 (-5.0% YoY) (Redfin)",
+        "market_competitiveness": "First-time buyers, retirees, investors; mixed market with 43% sold under asking, 29% at asking, 29% over asking"
+      },
+      "quiz_tags": [
+        "#SleeperPick",
+        "#LakefrontBudget",
+        "#QuietLiving",
+        "#RetireesFriendly",
+        "#SmallTownCharm"
+      ],
+      "lifestyle_summary": "If you want lakefront living on a landlocked budget, St. Francis is the answer nobody is talking about. You will sip a Mexican coffee at La Finca, enjoy a Friday fish fry overlooking the bay, and walk to the lakefront on a Tuesday because you can. If you are looking for a quiet, unpretentious community where the lake is the amenity, St. Francis is your sleeper pick.",
+      "api_data": {
+        "census": {
+          "population": 9318,
+          "median_age": 53.6,
+          "median_household_income": 58490,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 270758.20601427316,
+          "zhvi_yoy_pct": -2.1,
+          "zori": 1744.6666666666667,
+          "zori_yoy_pct": 6.6
+        },
+        "redfin": {
+          "median_sale_price": 224500.0,
+          "median_sale_price_yoy": -6.5,
+          "median_dom": 92.0,
+          "median_dom_yoy": 54.0,
+          "median_ppsf": 202.419938848,
+          "median_ppsf_yoy": -5.0,
+          "sale_to_list": 0.9711684837,
+          "homes_sold": 4.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "brown_deer",
+      "display_name": "Brown Deer",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "12,615 (2023 est.)",
+        "median_age": "40.1 years",
+        "median_household_income": "$91,567",
+        "median_home_price": "$272,239 (Zillow Home Value Index, +1.8% YoY)",
+        "average_rent": "$1,726/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Mid-century ranches, split-levels, and raised ranches from the 1960s-1970s; some newer townhome developments",
+        "school_district": "Brown Deer School District -- Niche Grade: B-, 1,647 students, 14:1 student-teacher ratio"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$289,900 median; +163.5% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "62 days (up 22 days YoY) (Redfin)",
+        "price_per_sqft": "$170 (+59.4% YoY) (Redfin)",
+        "market_competitiveness": "First-time buyers, diverse families seeking affordable housing with good parks; competitive market with steady appreciation"
+      },
+      "quiz_tags": [
+        "#DiverseCommunity",
+        "#AffordableNorthSide",
+        "#SculptureGarden",
+        "#FamilyParks",
+        "#CulturallyRich"
+      ],
+      "lifestyle_summary": "If you want a diverse, welcoming community where your dollar goes further than almost anywhere on the north side, Brown Deer deserves your attention. You will let the kids play at the pond in summer, explore world-class sculpture in a 40-acre garden, and discover that the best Mexican restaurant in the county is on your block. If you value diversity, affordability, and genuine community spirit, Brown Deer is the real deal.",
+      "api_data": {
+        "census": {
+          "population": 12615,
+          "median_age": 40.1,
+          "median_household_income": 91567,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 272238.95037051884,
+          "zhvi_yoy_pct": 1.8,
+          "zori": 1726.4,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 289900.0,
+          "median_sale_price_yoy": 163.5,
+          "median_dom": 62.0,
+          "median_dom_yoy": 22.0,
+          "median_ppsf": 170.086393089,
+          "median_ppsf_yoy": 59.4,
+          "sale_to_list": 1.001748693,
+          "homes_sold": 15.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "river_hills",
+      "display_name": "River Hills",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "1,639 (2023 est.)",
+        "median_age": "48.6 years",
+        "median_household_income": "$198,750",
+        "median_home_price": "$894,944 (Zillow Home Value Index, +6.9% YoY)",
+        "average_rent": "N/A (very limited rental market; nearly all homes are owner-occupied estates)",
+        "typical_home_style": "Estate homes on 1-5+ acre lots, Colonial Revivals, custom-built contemporaries, French country, and Tudor estates; many with Milwaukee River frontage",
+        "school_district": "Glendale-River Hills School District -- Niche Grade: B+; feeds into Nicolet High School (Niche Grade: A)"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$435,000 median; -69.5% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "49 days (down 88 days YoY) (Redfin)",
+        "price_per_sqft": "$255 (+8.5% YoY) (Redfin)",
+        "market_competitiveness": "High-net-worth individuals, executives relocating to Milwaukee metro; very low transaction volume (typically 10-20 sales per year)"
+      },
+      "quiz_tags": [
+        "#EstateLiving",
+        "#UltraExclusive",
+        "#RiverfrontPrivacy",
+        "#LuxuryEnclave",
+        "#NatureRetreat"
+      ],
+      "lifestyle_summary": "If your idea of suburban living involves waking up to deer in your backyard, kayaking the Milwaukee River before work, and never seeing your neighbors unless you want to, River Hills is your sanctuary. You will pay a premium for the privacy and the address, but in return you get multi-acre estate living 15 minutes from a world-class city. If exclusivity and nature are your non-negotiables, this is the pinnacle of Milwaukee County real estate.",
+      "api_data": {
+        "census": {
+          "population": 1639,
+          "median_age": 48.6,
+          "median_household_income": 198750,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 894943.5114489947,
+          "zhvi_yoy_pct": 6.9,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 435000.0,
+          "median_sale_price_yoy": -69.5,
+          "median_dom": 49.0,
+          "median_dom_yoy": -88.0,
+          "median_ppsf": 254.833040422,
+          "median_ppsf_yoy": 8.5,
+          "sale_to_list": 0.9666666667,
+          "homes_sold": 1.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "fox_point",
+      "display_name": "Fox Point",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "6,746 (2023 est.)",
+        "median_age": "43.5 years",
+        "median_household_income": "$140,818",
+        "median_home_price": "$514,621 (Zillow Home Value Index, +3.8% YoY)",
+        "average_rent": "$1,800/month (limited rental market; primarily owner-occupied)",
+        "typical_home_style": "1940s-1960s Colonials, ranches, and Cape Cods on generous lots; some lakefront estates and newer custom builds",
+        "school_district": "Fox Point-Bayside School District (K-8) -- 73% math proficiency, 70% reading proficiency; feeds into Nicolet High School (Niche Grade: A)"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$445,000 median; -18.3% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "52 days (Redfin)",
+        "price_per_sqft": "$213 (-4.0% YoY) (Redfin)",
+        "market_competitiveness": "Move-up families from Glendale and Shorewood, North Shore loyalists; very competitive market scoring 78/100 on Redfin Compete Score"
+      },
+      "quiz_tags": [
+        "#NorthShoreElegance",
+        "#LakefrontBluffs",
+        "#TopSchools",
+        "#QuietPrestige",
+        "#EstablishedFamilies"
+      ],
+      "lifestyle_summary": "If you want the prestige of the North Shore without the intensity of Whitefish Bay, Fox Point offers the best of both worlds -- lakefront parks, top schools, and generous lots on quiet, tree-lined streets. You will hike the bluffs at Doctors Park, send your kids to one of the best school systems in the state, and enjoy the kind of privacy that only comes with half-acre lots and mature oaks. If understated elegance speaks to you, Fox Point is your place.",
+      "api_data": {
+        "census": {
+          "population": 6746,
+          "median_age": 43.5,
+          "median_household_income": 140818,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 514621.3193963375,
+          "zhvi_yoy_pct": 3.8,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 445000.0,
+          "median_sale_price_yoy": -18.3,
+          "median_dom": 52.0,
+          "median_dom_yoy": 0.0,
+          "median_ppsf": 213.347921225,
+          "median_ppsf_yoy": -4.0,
+          "sale_to_list": 0.9952693864,
+          "homes_sold": 7.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "germantown",
+      "display_name": "Germantown",
+      "county": "washington",
+      "quick_snapshot": {
+        "population": "20,940 (2023 est.)",
+        "median_age": "42.3 years",
+        "median_household_income": "$104,337",
+        "median_home_price": "$435,844 (Zillow Home Value Index, +6.1% YoY)",
+        "average_rent": "$1,561/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Colonial, split-level, and newer suburban construction; mix of 1980s-2000s subdivisions with some newer development",
+        "school_district": "Germantown School District -- Niche grade A-; ranked #26 of 367 districts in WI; Germantown High School rated 9/10 on GreatSchools; 52% math proficiency, 47% reading proficiency; 15:1 student-teacher ratio"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$451,000 median; +23.4% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "53 days (down 20 days YoY) (Redfin)",
+        "price_per_sqft": "$226 (+24.3% YoY) (Redfin)",
+        "market_competitiveness": "Competitive (Redfin). Average sale-to-list ratio: 1.002. 11 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#Suburban",
+        "#FamilyFriendly",
+        "#TopSchools",
+        "#CommuteFriendly",
+        "#HistoricCharm"
+      ],
+      "lifestyle_summary": "If you are looking for a well-established suburban community with strong schools and a household income that supports a $400K+ home, Germantown delivers the full package. If you appreciate German heritage festivals, local wineries, and historic parks but also want easy freeway access to Milwaukee in under 30 minutes, this village checks every box. If you are a move-up buyer seeking a colonial or split-level in a safe, family-focused neighborhood where homes hold their value, Germantown's stable market and community pride make it a confident long-term investment.",
+      "api_data": {
+        "census": {
+          "population": 20940,
+          "median_age": 42.3,
+          "median_household_income": 104337,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 435844.2629932621,
+          "zhvi_yoy_pct": 6.1,
+          "zori": 1560.5833333333337,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 451000.0,
+          "median_sale_price_yoy": 23.4,
+          "median_dom": 53.0,
+          "median_dom_yoy": -20.0,
+          "median_ppsf": 225.5,
+          "median_ppsf_yoy": 24.3,
+          "sale_to_list": 1.001849195,
+          "homes_sold": 11.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "west_bend",
+      "display_name": "West Bend",
+      "county": "washington",
+      "quick_snapshot": {
+        "population": "31,722 (2023 est.)",
+        "median_age": "39.9 years",
+        "median_household_income": "$75,043",
+        "median_home_price": "$335,360 (Zillow Home Value Index, +5.6% YoY)",
+        "average_rent": "$1,317/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Mix of historic craftsman and bungalow homes downtown, mid-century ranches, and newer subdivisions on the outskirts; condo and townhouse options near the Riverwalk",
+        "school_district": "West Bend School District -- Niche grade B+; ranked #3 in Washington County; 5,591 students; 15:1 student-teacher ratio; 53% math proficiency, 45% reading proficiency"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$365,000 median; +31.5% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "67 days (up 14 days YoY) (Redfin)",
+        "price_per_sqft": "$188 (+9.6% YoY) (Redfin)",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 0.982. 21 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#FirstTimeBuyer",
+        "#ArtsAndCulture",
+        "#SmallTownVibe",
+        "#BudgetConscious",
+        "#ParksAndRec"
+      ],
+      "lifestyle_summary": "If you want the best value in Washington County with access to arts, outdoor recreation, and a genuine downtown, West Bend is your match. If you are a first-time buyer looking at homes under $350K with real character -- think craftsman bungalows near the Riverwalk or newer builds on the edge of town -- this market offers options that southern suburbs cannot. If you value farmers markets over malls, wildlife zoos over chain entertainment, and a creative community with an emerging food scene, West Bend rewards you with affordability and authenticity.",
+      "api_data": {
+        "census": {
+          "population": 31722,
+          "median_age": 39.9,
+          "median_household_income": 75043,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 335359.7943672749,
+          "zhvi_yoy_pct": 5.6,
+          "zori": 1316.6666666666667,
+          "zori_yoy_pct": -0.1
+        },
+        "redfin": {
+          "median_sale_price": 365000.0,
+          "median_sale_price_yoy": 31.5,
+          "median_dom": 67.0,
+          "median_dom_yoy": 14.0,
+          "median_ppsf": 187.5,
+          "median_ppsf_yoy": 9.6,
+          "sale_to_list": 0.9818913492,
+          "homes_sold": 21.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "hartford",
+      "display_name": "Hartford",
+      "county": "washington",
+      "quick_snapshot": {
+        "population": "15,761 (2023 est.)",
+        "median_age": "38.6 years",
+        "median_household_income": "$74,252",
+        "median_home_price": "$361,845 (Zillow Home Value Index, +4.5% YoY)",
+        "average_rent": "$1,100/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Classic Wisconsin ranches and bungalows in established neighborhoods; newer suburban subdivisions on the outskirts; some Victorian-era homes in the historic downtown; two-story colonials in family developments",
+        "school_district": "Hartford J1 School District -- Niche grade B; Hartford Union High School District serves grades 9-12; 1,429 students in K-8; 3.8-star Niche user rating; average academic performance compared to state"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$312,325 median; -19.9% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "53 days (up 7 days YoY) (Redfin)",
+        "price_per_sqft": "$197 (+4.3% YoY) (Redfin)",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 0.985. 8 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#ParksAndRec",
+        "#SmallTownVibe",
+        "#BudgetConscious",
+        "#FamilyFriendly",
+        "#CountryLiving"
+      ],
+      "lifestyle_summary": "If you crave four-season outdoor recreation and want to live where the Kettle Moraine State Forest is practically in your backyard, Hartford is calling. If you are a family looking for a home under $400K in a safe community with its own ski hill, state park, and the largest tubing complex in the country, this is hard to beat. If your idea of the perfect weekend involves hiking the Ice Age Trail, catching a show at the Schauer Arts Center, and grabbing dinner at the Mineshaft, Hartford offers a lifestyle that Milwaukee suburbs simply cannot replicate.",
+      "api_data": {
+        "census": {
+          "population": 15761,
+          "median_age": 38.6,
+          "median_household_income": 74252,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 361844.5657417276,
+          "zhvi_yoy_pct": 4.5,
+          "zori": 1100.0,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 312325.0,
+          "median_sale_price_yoy": -19.9,
+          "median_dom": 53.0,
+          "median_dom_yoy": 7.0,
+          "median_ppsf": 197.176452716,
+          "median_ppsf_yoy": 4.3,
+          "sale_to_list": 0.9845943905,
+          "homes_sold": 8.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "jackson",
+      "display_name": "Jackson",
+      "county": "washington",
+      "quick_snapshot": {
+        "population": "7,882 (2023 est.)",
+        "median_age": "41.5 years",
+        "median_household_income": "$95,960",
+        "median_home_price": "$404,294 (Zillow Home Value Index, +4.6% YoY)",
+        "average_rent": "$1,170/mo (2023 median gross rent)",
+        "typical_home_style": "Newer suburban construction (2000s-2020s), two-story colonials, ranch-style homes on larger lots, and scattered rural acreage properties; newer subdivisions with contemporary floor plans",
+        "school_district": "Served by West Bend School District -- Niche grade B+; some areas in the Germantown district; Jackson Elementary ranked in the top 15% of WI elementary schools for math proficiency"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$430,000 median; +5.5% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "51 days (down 51 days YoY) (Redfin)",
+        "price_per_sqft": "$220 (+10.1% YoY) (Redfin)",
+        "market_competitiveness": "Competitive (Redfin). Average sale-to-list ratio: 1.001. 5 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#NewerHomes",
+        "#FamilyFriendly",
+        "#CommuteFriendly",
+        "#Quiet",
+        "#Suburban"
+      ],
+      "lifestyle_summary": "If you are a growing family that wants a newer home with a two-car garage on a quiet cul-de-sac -- without paying Germantown prices -- Jackson is your sweet spot. If you need to split the commute between Milwaukee and West Bend and want to live in the fastest-growing community in Washington County, this village offers upward trajectory and community investment. If you value safety above all else (A+ crime grade), enjoy nature preserves and community events in the park, and want to buy into a community on the rise, Jackson is worth serious consideration.",
+      "api_data": {
+        "census": {
+          "population": 7882,
+          "median_age": 41.5,
+          "median_household_income": 95960,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 404293.5309717349,
+          "zhvi_yoy_pct": 4.6,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 430000.0,
+          "median_sale_price_yoy": 5.5,
+          "median_dom": 51.0,
+          "median_dom_yoy": -51.0,
+          "median_ppsf": 220.361509835,
+          "median_ppsf_yoy": 10.1,
+          "sale_to_list": 1.000785767,
+          "homes_sold": 5.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "slinger",
+      "display_name": "Slinger",
+      "county": "washington",
+      "quick_snapshot": {
+        "population": "6,173 (2023 est.)",
+        "median_age": "39.5 years",
+        "median_household_income": "$99,457",
+        "median_home_price": "$448,275 (Zillow Home Value Index, +6.1% YoY)",
+        "average_rent": "$1,419/mo",
+        "typical_home_style": "Mix of newer subdivision homes (2000s-2020s), traditional ranch and colonial styles, some rural properties on acreage; homes tend to be larger and newer than West Bend or Hartford stock",
+        "school_district": "Slinger School District -- Niche top-rated; 3,271 students; 17:1 student-teacher ratio; 65% math proficiency, 62% reading proficiency (well above state averages); 5 schools K-12"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$585,000 median; +27.6% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "66 days (down 10 days YoY) (Redfin)",
+        "price_per_sqft": "$211 (+26.5% YoY) (Redfin)",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 0.991. 3 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#TopSchools",
+        "#SmallTownVibe",
+        "#FamilyFriendly",
+        "#Community",
+        "#CountryLiving"
+      ],
+      "lifestyle_summary": "If you are a family that puts school quality at the top of your priority list, Slinger's top-rated district with 65% math proficiency makes it one of the strongest choices in Washington County. If your weekends involve cheering at the Speedway, hiking the Ice Age Trail, or catching a community theater production, this village offers a uniquely diverse recreation mix. If you want a home in the low $400Ks in a safe, tight-knit community with I-41 access and genuine small-town pride, Slinger delivers an authentic Wisconsin lifestyle that larger suburbs cannot match.",
+      "api_data": {
+        "census": {
+          "population": 6173,
+          "median_age": 39.5,
+          "median_household_income": 99457,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 448275.19090722007,
+          "zhvi_yoy_pct": 6.1,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 585000.0,
+          "median_sale_price_yoy": 27.6,
+          "median_dom": 66.0,
+          "median_dom_yoy": -10.0,
+          "median_ppsf": 210.886806056,
+          "median_ppsf_yoy": 26.5,
+          "sale_to_list": 0.9913793103,
+          "homes_sold": 3.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "kewaskum",
+      "display_name": "Kewaskum",
+      "county": "washington",
+      "quick_snapshot": {
+        "population": "4,367 (2023 est.)",
+        "median_age": "38.4 years",
+        "median_household_income": "$103,472",
+        "median_home_price": "$348,885 (Zillow Home Value Index, +4.2% YoY)",
+        "average_rent": "$1,003/mo (2023 median gross rent)",
+        "typical_home_style": "Traditional ranch and two-story homes on generous lots; some newer construction; rural properties with acreage on the village outskirts; older craftsman-style homes near the village center",
+        "school_district": "Kewaskum School District -- Niche above-average rating; 1,822 students; 16:1 student-teacher ratio; 56% math proficiency, 54% reading proficiency; Farmington Elementary and Kewaskum Middle School among highest-rated in the district"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$320,000 median; +8.5% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "77 days (down 19 days YoY) (Redfin)",
+        "price_per_sqft": "$214 (+14.2% YoY) (Redfin)",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 0.997. 7 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#CountryLiving",
+        "#Rural",
+        "#ParksAndRec",
+        "#Quiet",
+        "#Private"
+      ],
+      "lifestyle_summary": "If you dream of living where the Kettle Moraine State Forest is your backyard and a kayak launch is a five-minute drive from your front door, Kewaskum offers a lifestyle most communities only advertise. If you are a remote worker or semi-retired buyer with $350K-$380K to spend on a home with genuine space and privacy, this village delivers acreage and nature access that suburban communities cannot touch. If you want above-average schools, a Wine Walk through town, and the quiet confidence of a community that chose character over growth, Kewaskum is the hidden gem of Washington County.",
+      "api_data": {
+        "census": {
+          "population": 4367,
+          "median_age": 38.4,
+          "median_household_income": 103472,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 348884.55957443576,
+          "zhvi_yoy_pct": 4.2,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 320000.0,
+          "median_sale_price_yoy": 8.5,
+          "median_dom": 77.0,
+          "median_dom_yoy": -19.0,
+          "median_ppsf": 214.477211796,
+          "median_ppsf_yoy": 14.2,
+          "sale_to_list": 0.9966433778,
+          "homes_sold": 7.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "richfield",
+      "display_name": "Richfield",
+      "county": "washington",
+      "quick_snapshot": {
+        "population": "11,806 (2023 est.)",
+        "median_age": "49.7 years",
+        "median_household_income": "$135,774",
+        "median_home_price": "$534,062 (Zillow Home Value Index, +3.9% YoY)",
+        "average_rent": "$1,257-$1,460/mo",
+        "typical_home_style": "Executive-level colonials, custom-built ranch homes on 1-5+ acre lots, craftsman-style estates, newer luxury construction; 97.4% homeownership rate; homes range from $300K starter properties to $1M+ estates",
+        "school_district": "Served by multiple districts: Holy Hill Area School District (Niche grade B+, 476 students), Germantown School District (Niche grade A-), and Hartford Union High School District; strong academic options across the board"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$708,500 median; +102.4% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "70 days (up 22 days YoY) (Redfin)",
+        "price_per_sqft": "$256 (+39.0% YoY) (Redfin)",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 0.985. 8 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#Luxury",
+        "#Private",
+        "#Rural",
+        "#Exclusive",
+        "#CountryLiving"
+      ],
+      "lifestyle_summary": "If you have built substantial equity and are ready for a home on acreage with genuine privacy, Richfield is Washington County's premier address. If you want a custom-built colonial or ranch on two-to-five acres where your nearest neighbor is a field away and Holy Hill rises on the horizon, this community delivers an exclusive rural lifestyle just 28 minutes from downtown Milwaukee. If you value safety above all else -- with crime rates lower than 87% of American communities -- and can invest $500K or more in your forever home, Richfield offers the kind of quiet, private, estate-like living that simply does not exist closer to the city.",
+      "api_data": {
+        "census": {
+          "population": 11806,
+          "median_age": 49.7,
+          "median_household_income": 135774,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 534061.6661937238,
+          "zhvi_yoy_pct": 3.9,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 708500.0,
+          "median_sale_price_yoy": 102.4,
+          "median_dom": 70.0,
+          "median_dom_yoy": 22.0,
+          "median_ppsf": 255.986895745,
+          "median_ppsf_yoy": 39.0,
+          "sale_to_list": 0.9850822684,
+          "homes_sold": 8.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "waukesha",
+      "display_name": "City of Waukesha",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "70,779 (2023 est.)",
+        "median_age": "36.4 years",
+        "median_household_income": "$81,651",
+        "median_home_price": "$396,720 (Zillow Home Value Index, +4.9% YoY)",
+        "average_rent": "$1,390/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Cape Cods, ranch homes, split-levels, newer subdivisions, and historic downtown properties",
+        "school_district": "School District of Waukesha -- Niche Grade: B+; 11,318 students; 14:1 student-teacher ratio"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "+8.5%",
+        "avg_days_on_market": "70 days (up 16 days YoY) (Redfin)",
+        "price_per_sqft": "$211 (up 3.9% YoY)",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 0.989. 39 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#DowntownVibes",
+        "#FirstTimeBuyer",
+        "#RiverfrontLiving",
+        "#AffordableSuburb",
+        "#FamilyFriendly"
+      ],
+      "lifestyle_summary": "If you want the energy of a real downtown -- restaurants, live music, farmers markets -- without Milwaukee prices, Waukesha is your sweet spot. If you are a first-time buyer or young professional who values walkable evening entertainment and a vibrant community calendar, you will feel right at home along the Fox River. If you appreciate historic architecture mixed with new development, Waukesha offers both ends of the spectrum within a 10-minute drive.",
+      "api_data": {
+        "census": {
+          "population": 70779,
+          "median_age": 36.4,
+          "median_household_income": 81651,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 396719.93097280926,
+          "zhvi_yoy_pct": 4.9,
+          "zori": 1390.111111111111,
+          "zori_yoy_pct": 7.3
+        },
+        "redfin": {
+          "median_sale_price": 371000.0,
+          "median_sale_price_yoy": 14.2,
+          "median_dom": 70.0,
+          "median_dom_yoy": 16.0,
+          "median_ppsf": 194.42532691,
+          "median_ppsf_yoy": -1.7,
+          "sale_to_list": 0.9887164496,
+          "homes_sold": 39.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "brookfield",
+      "display_name": "Brookfield (City)",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "41,592 (2023 est.)",
+        "median_age": "43.6 years",
+        "median_household_income": "$124,026",
+        "median_home_price": "$496,570 (Zillow Home Value Index, +5.5% YoY)",
+        "average_rent": "$2,155/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Executive colonials, newer construction, luxury condos, estate properties",
+        "school_district": "Elmbrook School District -- Niche Grade: A+; Ranked #1 in Waukesha County"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "+6.6%",
+        "avg_days_on_market": "66 days (up 2 days YoY) (Redfin)",
+        "price_per_sqft": "$206 (down 2.4% YoY)",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 0.986. 12 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#TopSchools",
+        "#UpscaleSuburb",
+        "#CorporateCommuter",
+        "#ShoppingAndDining",
+        "#ExecutiveLiving"
+      ],
+      "lifestyle_summary": "If you want the best public schools in the county paired with upscale shopping and dining, Brookfield checks every box. If your weekends involve boutique browsing at The Corners followed by dinner at a Bartolotta restaurant, this is your neighborhood. If you are relocating for a corporate position along the I-94 corridor and need a fast commute to Milwaukee, Brookfield offers a seamless daily drive.",
+      "api_data": {
+        "census": {
+          "population": 41592,
+          "median_age": 43.6,
+          "median_household_income": 124026,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 496569.8752179756,
+          "zhvi_yoy_pct": 5.5,
+          "zori": 2154.9999999999995,
+          "zori_yoy_pct": 0.2
+        },
+        "redfin": {
+          "median_sale_price": 458500.0,
+          "median_sale_price_yoy": 6.6,
+          "median_dom": 66.0,
+          "median_dom_yoy": 2.0,
+          "median_ppsf": 206.964796795,
+          "median_ppsf_yoy": -2.5,
+          "sale_to_list": 0.9863452049,
+          "homes_sold": 12.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "new_berlin",
+      "display_name": "New Berlin",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "40,384 (2023 est.)",
+        "median_age": "45.9 years",
+        "median_household_income": "$97,414",
+        "median_home_price": "$425,645 (Zillow Home Value Index, +4.1% YoY)",
+        "average_rent": "$1,443/month",
+        "typical_home_style": "Ranch homes, split-levels, bi-levels from the 1970s-90s, newer subdivision construction",
+        "school_district": "New Berlin School District -- Niche Grade: A; Ranked #5 in Waukesha County; 66 reviews averaging 4 stars"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "+0.8% to +14% (varies by period)",
+        "avg_days_on_market": "42 days (down 9 days YoY) (Redfin)",
+        "price_per_sqft": "~$200-$220",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 0.994. 25 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#SpaceToGrow",
+        "#FamilyFirst",
+        "#NatureTrails",
+        "#QuietSuburb",
+        "#ValueBuy"
+      ],
+      "lifestyle_summary": "If you are looking for a spacious lot and a neighborly atmosphere without the premium price tag of Brookfield, New Berlin delivers. If you enjoy weekend hikes through nature preserves and bringing the kids to the local trampoline park, you will find plenty to do. If you want a solid school district, a safe community, and easy access to both Milwaukee and Waukesha, New Berlin is your practical, family-first pick.",
+      "api_data": {
+        "census": {
+          "population": 40384,
+          "median_age": 45.9,
+          "median_household_income": 97414,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 425645.10019256966,
+          "zhvi_yoy_pct": 4.1,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 375000.0,
+          "median_sale_price_yoy": -3.8,
+          "median_dom": 42.0,
+          "median_dom_yoy": -9.0,
+          "median_ppsf": 226.039783002,
+          "median_ppsf_yoy": 1.4,
+          "sale_to_list": 0.994118535,
+          "homes_sold": 25.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "menomonee_falls",
+      "display_name": "Menomonee Falls",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "38,963 (2023 est.)",
+        "median_age": "42.0 years",
+        "median_household_income": "$98,460",
+        "median_home_price": "$414,382 (Zillow Home Value Index, +5.5% YoY)",
+        "average_rent": "$1,198/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Mid-century ranches, colonials, newer subdivisions, townhomes near commercial corridors",
+        "school_district": "Menomonee Falls School District -- Niche Grade: A; 3,928 students; Menomonee Falls High School ranked #28 in Wisconsin"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "+0.2%",
+        "avg_days_on_market": "73 days (up 8 days YoY) (Redfin)",
+        "price_per_sqft": "$230 (up 13.8% YoY)",
+        "market_competitiveness": "Competitive (Redfin). Average sale-to-list ratio: 1.002. 22 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#SmallTownCharm",
+        "#TrailLife",
+        "#CommunityEvents",
+        "#CorporateConvenience",
+        "#VillageVibes"
+      ],
+      "lifestyle_summary": "If you want a community that feels like a small town but has everything you need within a 10-minute drive, Menomonee Falls fits the bill. If you work at Kohl's HQ or anywhere along the I-41 corridor, your commute will be painless. If Saturday mornings at the farmers market and summer evenings watching free outdoor movies in the park sound like your ideal weekend, this village was made for you.",
+      "api_data": {
+        "census": {
+          "population": 38963,
+          "median_age": 42.0,
+          "median_household_income": 98460,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 414381.86868687946,
+          "zhvi_yoy_pct": 5.5,
+          "zori": 1198.2222222222224,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 391500.0,
+          "median_sale_price_yoy": -5.7,
+          "median_dom": 73.0,
+          "median_dom_yoy": 8.0,
+          "median_ppsf": 233.950455166,
+          "median_ppsf_yoy": -1.6,
+          "sale_to_list": 1.00219975,
+          "homes_sold": 22.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "pewaukee",
+      "display_name": "Pewaukee (City/Village)",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "16,002 (2023 est.)",
+        "median_age": "43.5 years",
+        "median_household_income": "$112,093",
+        "median_home_price": "$542,452 (Zillow Home Value Index, +5.8% YoY)",
+        "average_rent": "$1,357 - $1,497/month",
+        "typical_home_style": "Lakefront properties, newer suburban homes, luxury condos, ranch homes on larger lots",
+        "school_district": "Pewaukee School District -- Niche Grade: A+; Ranked #3 in Waukesha County"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "+26.7% (Feb 2025 vs. prior year)",
+        "avg_days_on_market": "79 days (up 25 days YoY) (Redfin)",
+        "price_per_sqft": "$243 (up 0.6% YoY)",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 0.987. 9 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#LakeLife",
+        "#WaterfrontDining",
+        "#OutdoorRecreation",
+        "#TopSchools",
+        "#ResortLiving"
+      ],
+      "lifestyle_summary": "If your ideal evening involves watching the sunset from a waterfront deck while fishing boats cruise by, Pewaukee is your place. If you want your kids in a top-3 county school district and your weekends filled with paddleboarding and live lakefront music, this community delivers. If you are willing to invest in the lake lifestyle, the return -- both financially and in quality of life -- is hard to beat.",
+      "api_data": {
+        "census": {
+          "population": 16002,
+          "median_age": 43.5,
+          "median_household_income": 112093,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 542451.6997966954,
+          "zhvi_yoy_pct": 5.8,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 524900.0,
+          "median_sale_price_yoy": -9.5,
+          "median_dom": 79.0,
+          "median_dom_yoy": 25.0,
+          "median_ppsf": 252.598652551,
+          "median_ppsf_yoy": 3.1,
+          "sale_to_list": 0.9874702528,
+          "homes_sold": 9.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "oconomowoc",
+      "display_name": "Oconomowoc",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "18,385 (2023 est.)",
+        "median_age": "43.1 years",
+        "median_household_income": "$105,833",
+        "median_home_price": "$519,154 (Zillow Home Value Index, +5.9% YoY)",
+        "average_rent": "$1,537/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Historic lakefront estates, newer subdivisions, luxury condos, charming downtown apartments",
+        "school_district": "Oconomowoc Area School District -- Niche Grade: A; Ranked #7 in Waukesha County; 49 reviews averaging 3.9 stars"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "+6.6%",
+        "avg_days_on_market": "66 days (down 8 days YoY) (Redfin)",
+        "price_per_sqft": "$259 (up 11.9% YoY)",
+        "market_competitiveness": "Competitive (Redfin). Average sale-to-list ratio: 1.003. 25 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#LakefrontCharm",
+        "#WalkableDowntown",
+        "#ResortTownFeel",
+        "#BoutiqueLifestyle",
+        "#HistoricCharacter"
+      ],
+      "lifestyle_summary": "If you dream of strolling a charming downtown with a lake view at every turn, Oconomowoc is unlike anything else in the county. If you want the feel of a vacation town with year-round substance -- real restaurants, real community, real history -- this is it. If you do not mind a slightly longer commute to Milwaukee in exchange for a daily quality of life that feels like a getaway, you will love calling Oconomowoc home.",
+      "api_data": {
+        "census": {
+          "population": 18385,
+          "median_age": 43.1,
+          "median_household_income": 105833,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 519154.41456266,
+          "zhvi_yoy_pct": 5.9,
+          "zori": 1537.0,
+          "zori_yoy_pct": 2.7
+        },
+        "redfin": {
+          "median_sale_price": 538000.0,
+          "median_sale_price_yoy": 8.6,
+          "median_dom": 66.0,
+          "median_dom_yoy": -8.0,
+          "median_ppsf": 279.166666667,
+          "median_ppsf_yoy": 24.3,
+          "sale_to_list": 1.002650789,
+          "homes_sold": 25.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "muskego",
+      "display_name": "Muskego",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "25,156 (2023 est.)",
+        "median_age": "45.8 years",
+        "median_household_income": "$116,361",
+        "median_home_price": "$496,222 (Zillow Home Value Index, +6.0% YoY)",
+        "average_rent": "$1,300 - $1,500/month (estimated)",
+        "typical_home_style": "Larger-lot single-family homes, newer construction, lakefront properties, ranch and colonial styles",
+        "school_district": "Muskego-Norway School District -- Niche Grade: A+; Ranked #2 in Waukesha County and #5 in Wisconsin; 122 reviews averaging 4.5 stars"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "+5.6% to +7% (trailing 12 months)",
+        "avg_days_on_market": "79 days (up 22 days YoY) (Redfin)",
+        "price_per_sqft": "$252 (up 4.6% YoY)",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 0.990. 8 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#TopSchools",
+        "#LakeAccess",
+        "#BigYards",
+        "#FamilyFirst",
+        "#RuralSuburban"
+      ],
+      "lifestyle_summary": "If the #2-ranked school district in the county is your top priority, Muskego should be at the top of your list. If your ideal home has a big yard, maybe a lake view, and space for your kids to roam, you will find it here. If you enjoy a four-season outdoor lifestyle -- boating in summer, ice fishing in winter -- and want that wrapped in a safe, family-first community, Muskego is calling your name.",
+      "api_data": {
+        "census": {
+          "population": 25156,
+          "median_age": 45.8,
+          "median_household_income": 116361,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 496222.2063702719,
+          "zhvi_yoy_pct": 6.0,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 416000.0,
+          "median_sale_price_yoy": -29.7,
+          "median_dom": 79.0,
+          "median_dom_yoy": 22.0,
+          "median_ppsf": 215.327717413,
+          "median_ppsf_yoy": -12.4,
+          "sale_to_list": 0.990270643,
+          "homes_sold": 8.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "delafield",
+      "display_name": "Delafield",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "7,192 (2023 est.)",
+        "median_age": "47.2 years",
+        "median_household_income": "$101,482",
+        "median_home_price": "$721,841 (Zillow Home Value Index, +5.7% YoY)",
+        "average_rent": "$1,702/month",
+        "typical_home_style": "Historic estates, lakefront luxury, newer executive homes, upscale condos",
+        "school_district": "Kettle Moraine School District -- Niche Grade: A; Ranked #20 in Wisconsin; 3,421 students"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "Highly variable; +70.3% reported by Redfin (skewed by luxury sales)",
+        "avg_days_on_market": "54 days (down 29 days YoY) (Redfin)",
+        "price_per_sqft": "$224 (down 24.8% YoY, reflecting mix shift)",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 0.999. 7 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#NatureLovers",
+        "#KettleMoraine",
+        "#LuxuryLiving",
+        "#HistoricCharm",
+        "#TrailAccess"
+      ],
+      "lifestyle_summary": "If you want to live at the doorstep of the Kettle Moraine State Forest and hike the Ice Age Trail before breakfast, Delafield is paradise. If you appreciate a charming downtown with boutique shopping and craft breweries, but also want the serenity of a lakefront sunset, this small city delivers both. If you are looking for an upscale, nature-forward lifestyle and do not mind a slightly longer commute, Delafield rewards you every single day.",
+      "api_data": {
+        "census": {
+          "population": 7192,
+          "median_age": 47.2,
+          "median_household_income": 101482,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 721841.3673266312,
+          "zhvi_yoy_pct": 5.7,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 668000.0,
+          "median_sale_price_yoy": 82.3,
+          "median_dom": 54.0,
+          "median_dom_yoy": -29.0,
+          "median_ppsf": 256.192738378,
+          "median_ppsf_yoy": -3.8,
+          "sale_to_list": 0.9992875001,
+          "homes_sold": 7.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "hartland",
+      "display_name": "Hartland",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "9,716 (2023 est.)",
+        "median_age": "41.5 years",
+        "median_household_income": "$87,297",
+        "median_home_price": "$633,645 (Zillow Home Value Index, +5.7% YoY)",
+        "average_rent": "$1,529/month",
+        "typical_home_style": "Traditional colonials, cape cods, ranch homes, townhomes, and newer subdivision construction",
+        "school_district": "Arrowhead Union High School District (Niche Grade: A; Arrowhead HS ranked #11 in WI) / Hartland-Lakeside Elementary (Niche Grade: A)"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "+2.5% (Zillow); variable by source",
+        "avg_days_on_market": "66 days (up 3 days YoY) (Redfin)",
+        "price_per_sqft": "$261 (up 11.1% YoY)",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 0.981. 5 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#VillageLife",
+        "#ArrowheadSchools",
+        "#TrailConnected",
+        "#LakeCountry",
+        "#GrowingDowntown"
+      ],
+      "lifestyle_summary": "If you want your kids at Arrowhead High School without the Delafield price tag, Hartland is your smartest move. If you enjoy biking the Lake Country Recreation Trail on Saturday morning and grabbing brunch on Cottonwood Avenue afterward, you have found your weekend routine. If a tight-knit village with a growing downtown and trail-connected parks sounds ideal, Hartland delivers community and convenience in equal measure.",
+      "api_data": {
+        "census": {
+          "population": 9716,
+          "median_age": 41.5,
+          "median_household_income": 87297,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 633644.8722139067,
+          "zhvi_yoy_pct": 5.7,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 710000.0,
+          "median_sale_price_yoy": 13.6,
+          "median_dom": 66.0,
+          "median_dom_yoy": 3.0,
+          "median_ppsf": 230.807086614,
+          "median_ppsf_yoy": 6.0,
+          "sale_to_list": 0.9812243939,
+          "homes_sold": 5.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "mukwonago",
+      "display_name": "Mukwonago",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "8,411 (2023 est.)",
+        "median_age": "39.0 years",
+        "median_household_income": "$96,096",
+        "median_home_price": "$470,807 (Zillow Home Value Index, +5.8% YoY)",
+        "average_rent": "$1,245/month",
+        "typical_home_style": "Single-family ranch homes, colonials, newer construction, hobby farm properties on the village periphery",
+        "school_district": "Mukwonago Area School District -- Niche Grade: A; Ranked #41 in Wisconsin; 4,918 students; 60% math proficiency, 59% reading proficiency"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "+7% (trailing 12 months)",
+        "avg_days_on_market": "96 days (up 54 days YoY) (Redfin)",
+        "price_per_sqft": "$208 (down 16.5% YoY)",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 0.981. 7 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#SmallTownLiving",
+        "#AffordableEntry",
+        "#BigLots",
+        "#OutdoorPlayground",
+        "#HiddenGem"
+      ],
+      "lifestyle_summary": "If you want the most affordable entry into Waukesha County with a genuine small-town atmosphere, Mukwonago is your hidden gem. If you have dreamed of a bigger lot -- maybe even a hobby farm -- without driving an hour from Milwaukee, this is where that dream becomes real. If you value strong schools, a 355-acre park in your backyard, and community festivals where everyone knows your name, Mukwonago is the real deal.",
+      "api_data": {
+        "census": {
+          "population": 8411,
+          "median_age": 39.0,
+          "median_household_income": 96096,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 470806.9080993997,
+          "zhvi_yoy_pct": 5.8,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 545000.0,
+          "median_sale_price_yoy": 15.1,
+          "median_dom": 96.0,
+          "median_dom_yoy": 54.0,
+          "median_ppsf": 239.803625378,
+          "median_ppsf_yoy": -0.1,
+          "sale_to_list": 0.9812174818,
+          "homes_sold": 7.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "sussex",
+      "display_name": "Sussex",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "11,795 (2023 est.)",
+        "median_age": "38.9 years",
+        "median_household_income": "$112,031",
+        "median_home_price": "$489,292 (Zillow Home Value Index, +5.8% YoY)",
+        "average_rent": "$1,460 - $1,475/month",
+        "typical_home_style": "Newer construction single-family homes, executive subdivisions, townhomes, and some established ranch homes",
+        "school_district": "Hamilton School District -- Niche Grade: A; Ranked #17 in Wisconsin; 5,119 students; 63 reviews averaging 4.2 stars"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "+5% to +7.2%",
+        "avg_days_on_market": "51 days (down 20 days YoY) (Redfin)",
+        "price_per_sqft": "$247 (down 3.3% YoY)",
+        "market_competitiveness": "Competitive (Redfin). Average sale-to-list ratio: 1.006. 6 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#NewerConstruction",
+        "#GrowingCommunity",
+        "#FamilyParks",
+        "#TrailAccess",
+        "#SmartValue"
+      ],
+      "lifestyle_summary": "If you want newer construction and modern parks without the premium of Brookfield or Pewaukee, Sussex offers outstanding value. If your kids will thrive in the Hamilton School District and you want them splashing in a brand-new splash pad after school, this village has you covered. If you are building the next chapter of your family's story and want a community growing right alongside you, Sussex is a smart bet.",
+      "api_data": {
+        "census": {
+          "population": 11795,
+          "median_age": 38.9,
+          "median_household_income": 112031,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 489291.9031063033,
+          "zhvi_yoy_pct": 5.8,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 465100.0,
+          "median_sale_price_yoy": -21.8,
+          "median_dom": 51.0,
+          "median_dom_yoy": -20.0,
+          "median_ppsf": 282.653324647,
+          "median_ppsf_yoy": 15.7,
+          "sale_to_list": 1.005975938,
+          "homes_sold": 6.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "elm_grove",
+      "display_name": "Elm Grove",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "6,428 (2023 est.)",
+        "median_age": "44.6 years",
+        "median_household_income": "$133,304",
+        "median_home_price": "$640,826 (Zillow Home Value Index, +5.9% YoY)",
+        "average_rent": "$3,810/month (Zillow Observed Rent Index)",
+        "typical_home_style": "Classic colonials, Tudors, cape cods on tree-lined streets; established homes from the 1940s-1970s with renovations; some estate-level properties",
+        "school_district": "Elmbrook School District -- Niche Grade: A+; Ranked #1 in Waukesha County (shared with Brookfield)"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "-3% (trailing 12 months); volatile due to small sample size",
+        "avg_days_on_market": "91 days (up 52 days YoY) (Redfin)",
+        "price_per_sqft": "~$250-$280",
+        "market_competitiveness": "Not very competitive (Redfin). Average sale-to-list ratio: 0.972. 5 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#VillagePrestige",
+        "#TopSchools",
+        "#TreeLinedStreets",
+        "#ShortCommute",
+        "#TightKnitCommunity",
+        "#2"
+      ],
+      "lifestyle_summary": "If you want the #1-ranked school district in Waukesha County with a village so charming it feels like a movie set, Elm Grove is the pinnacle. If you value a tight-knit community where the 78-acre village park is your backyard and your commute to Milwaukee is under 20 minutes, nothing else in the county compares. If you can afford the premium, Elm Grove offers a lifestyle that is equal parts prestige and genuine warmth.",
+      "api_data": {
+        "census": {
+          "population": 6428,
+          "median_age": 44.6,
+          "median_household_income": 133304,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 640826.4758285008,
+          "zhvi_yoy_pct": 5.9,
+          "zori": 3810.0,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 356500.0,
+          "median_sale_price_yoy": 1.9,
+          "median_dom": 91.0,
+          "median_dom_yoy": 52.0,
+          "median_ppsf": 200.845070423,
+          "median_ppsf_yoy": 12.2,
+          "sale_to_list": 0.9723944566,
+          "homes_sold": 5.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "meta": {
+    "version": "1.0",
+    "created": "2026-02-22",
+    "description": "Neighborhood Fit Quiz question bank with weighted attribute boosts for southeastern Wisconsin",
+    "total_questions": 13,
+    "scoring_note": "Total Score = sum of (area_attribute_score * answer_attribute_boost * question_weight). Normalize so top area = 100."
+  },
+  "questions": [
+    {
+      "id": "q1_budget",
+      "question_text": "What's your home budget?",
+      "weight": 5,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Under $275,000",
+          "attribute_boosts": { "budget_fit": 5, "price_psf": 3, "investor_friendly": 2 }
+        },
+        {
+          "label": "B",
+          "text": "$275,000 - $400,000",
+          "attribute_boosts": { "budget_fit": 3, "price_psf": 2 }
+        },
+        {
+          "label": "C",
+          "text": "$400,000 - $600,000",
+          "attribute_boosts": { "budget_fit": 1, "school_strength": 2 }
+        },
+        {
+          "label": "D",
+          "text": "$600,000+",
+          "attribute_boosts": { "budget_fit": 0, "yard_space": 2, "school_strength": 2 }
+        }
+      ]
+    },
+    {
+      "id": "q2_home_type",
+      "question_text": "What type of home are you looking for?",
+      "weight": 3,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Single-family home with a yard",
+          "attribute_boosts": { "yard_space": 5, "family_friendly": 3 }
+        },
+        {
+          "label": "B",
+          "text": "Condo or townhome (low maintenance)",
+          "attribute_boosts": { "hoa_condo_friendly": 5, "walkability": 3 }
+        },
+        {
+          "label": "C",
+          "text": "Historic or character home",
+          "attribute_boosts": { "historic_charm": 5, "yard_space": 2 }
+        },
+        {
+          "label": "D",
+          "text": "Newer construction or new build",
+          "attribute_boosts": { "new_construction": 5, "yard_space": 2 }
+        }
+      ]
+    },
+    {
+      "id": "q3_bedrooms",
+      "question_text": "How many bedrooms do you need?",
+      "weight": 2,
+      "choices": [
+        {
+          "label": "A",
+          "text": "1-2 bedrooms",
+          "attribute_boosts": { "hoa_condo_friendly": 3, "walkability": 2 }
+        },
+        {
+          "label": "B",
+          "text": "3 bedrooms",
+          "attribute_boosts": { "home_type_fit": 3, "family_friendly": 2 }
+        },
+        {
+          "label": "C",
+          "text": "4+ bedrooms",
+          "attribute_boosts": { "yard_space": 3, "family_friendly": 3, "school_strength": 2 }
+        }
+      ]
+    },
+    {
+      "id": "q4_schools",
+      "question_text": "How important are top-rated schools?",
+      "weight": 5,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Very important — it's a top priority",
+          "attribute_boosts": { "school_strength": 5, "family_friendly": 3, "safety_reputation": 2 }
+        },
+        {
+          "label": "B",
+          "text": "Somewhat important",
+          "attribute_boosts": { "school_strength": 3, "family_friendly": 2 }
+        },
+        {
+          "label": "C",
+          "text": "Not a factor — no school-age kids",
+          "attribute_boosts": { "school_strength": 0, "nightlife": 2, "walkability": 2 }
+        }
+      ]
+    },
+    {
+      "id": "q5_commute",
+      "question_text": "What's your ideal commute to downtown Milwaukee?",
+      "weight": 5,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Under 15 minutes — I want to be close",
+          "attribute_boosts": { "commute_downtown": 5, "walkability": 3, "nightlife": 2 }
+        },
+        {
+          "label": "B",
+          "text": "15-30 minutes is fine",
+          "attribute_boosts": { "commute_downtown": 3, "family_friendly": 2 }
+        },
+        {
+          "label": "C",
+          "text": "30-45 minutes — I'll trade commute for space",
+          "attribute_boosts": { "commute_downtown": 1, "yard_space": 3, "budget_fit": 2 }
+        },
+        {
+          "label": "D",
+          "text": "I work remote — commute doesn't matter",
+          "attribute_boosts": { "commute_downtown": 0, "yard_space": 2, "lake_access": 2, "budget_fit": 2 }
+        }
+      ]
+    },
+    {
+      "id": "q6_vibe",
+      "question_text": "What lifestyle vibe fits you best?",
+      "weight": 4,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Urban energy — restaurants, bars, walkable streets",
+          "attribute_boosts": { "walkability": 5, "nightlife": 5, "hoa_condo_friendly": 2 }
+        },
+        {
+          "label": "B",
+          "text": "Suburban comfort — safe, spacious, family-focused",
+          "attribute_boosts": { "family_friendly": 5, "yard_space": 4, "safety_reputation": 3 }
+        },
+        {
+          "label": "C",
+          "text": "Small-town charm — walkable downtown, tight community",
+          "attribute_boosts": { "historic_charm": 4, "walkability": 3, "family_friendly": 3, "safety_reputation": 2 }
+        },
+        {
+          "label": "D",
+          "text": "Luxury / privacy — upscale, exclusive, space",
+          "attribute_boosts": { "yard_space": 5, "safety_reputation": 4, "school_strength": 2 }
+        }
+      ]
+    },
+    {
+      "id": "q7_historic_vs_new",
+      "question_text": "Do you prefer historic character or modern construction?",
+      "weight": 3,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Give me the charm — I love older homes with character",
+          "attribute_boosts": { "historic_charm": 5, "walkability": 2 }
+        },
+        {
+          "label": "B",
+          "text": "Modern and updated — I want move-in ready and efficient",
+          "attribute_boosts": { "new_construction": 5, "hoa_condo_friendly": 2 }
+        },
+        {
+          "label": "C",
+          "text": "No preference — layout and location matter more",
+          "attribute_boosts": { "home_type_fit": 3, "commute_downtown": 2 }
+        }
+      ]
+    },
+    {
+      "id": "q8_lake",
+      "question_text": "How important is proximity to Lake Michigan?",
+      "weight": 4,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Must-have — lakefront or very close",
+          "attribute_boosts": { "lake_access": 5, "walkability": 2 }
+        },
+        {
+          "label": "B",
+          "text": "Nice to have — within a short drive",
+          "attribute_boosts": { "lake_access": 3 }
+        },
+        {
+          "label": "C",
+          "text": "Doesn't matter — inland is fine",
+          "attribute_boosts": { "lake_access": 0, "yard_space": 2, "budget_fit": 2 }
+        }
+      ]
+    },
+    {
+      "id": "q9_nightlife",
+      "question_text": "How important is nightlife, dining, and entertainment?",
+      "weight": 3,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Very — I want walkable restaurants and bars nearby",
+          "attribute_boosts": { "nightlife": 5, "walkability": 4 }
+        },
+        {
+          "label": "B",
+          "text": "I like having some options within a short drive",
+          "attribute_boosts": { "nightlife": 3, "walkability": 2 }
+        },
+        {
+          "label": "C",
+          "text": "I prefer quiet — I'll drive into the city when I want to go out",
+          "attribute_boosts": { "nightlife": 0, "yard_space": 3, "safety_reputation": 2 }
+        }
+      ]
+    },
+    {
+      "id": "q10_yard_garage",
+      "question_text": "How much do you value outdoor space (yard, garage, lot size)?",
+      "weight": 3,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Big yard is a must — I want space for kids, pets, or gardening",
+          "attribute_boosts": { "yard_space": 5, "family_friendly": 3 }
+        },
+        {
+          "label": "B",
+          "text": "Small yard is fine — I just want a patio or deck",
+          "attribute_boosts": { "yard_space": 2, "walkability": 2 }
+        },
+        {
+          "label": "C",
+          "text": "I'd rather skip yard work entirely",
+          "attribute_boosts": { "yard_space": 0, "hoa_condo_friendly": 4, "walkability": 3 }
+        }
+      ]
+    },
+    {
+      "id": "q11_hoa",
+      "question_text": "Are you open to an HOA or condo association?",
+      "weight": 2,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Yes — I like the low-maintenance lifestyle",
+          "attribute_boosts": { "hoa_condo_friendly": 5, "new_construction": 2 }
+        },
+        {
+          "label": "B",
+          "text": "Maybe — depends on the fees and rules",
+          "attribute_boosts": { "hoa_condo_friendly": 2, "home_type_fit": 2 }
+        },
+        {
+          "label": "C",
+          "text": "No way — I want full control of my property",
+          "attribute_boosts": { "hoa_condo_friendly": 0, "yard_space": 3 }
+        }
+      ]
+    },
+    {
+      "id": "q12_safety",
+      "question_text": "How important is a low-crime, safe neighborhood?",
+      "weight": 4,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Top priority — safety is non-negotiable",
+          "attribute_boosts": { "safety_reputation": 5, "family_friendly": 3 }
+        },
+        {
+          "label": "B",
+          "text": "Important but I'm flexible for the right location",
+          "attribute_boosts": { "safety_reputation": 3, "walkability": 2, "nightlife": 2 }
+        },
+        {
+          "label": "C",
+          "text": "I'm comfortable in most areas — I focus on value",
+          "attribute_boosts": { "safety_reputation": 1, "budget_fit": 3, "investor_friendly": 3 }
+        }
+      ]
+    },
+    {
+      "id": "q13_purpose",
+      "question_text": "What's the primary purpose of this home?",
+      "weight": 3,
+      "choices": [
+        {
+          "label": "A",
+          "text": "Primary residence — I'm moving my family here",
+          "attribute_boosts": { "family_friendly": 4, "school_strength": 3, "safety_reputation": 2 }
+        },
+        {
+          "label": "B",
+          "text": "Investment property / rental income",
+          "attribute_boosts": { "investor_friendly": 5, "budget_fit": 4, "price_psf": 3 }
+        },
+        {
+          "label": "C",
+          "text": "Downsizing or retirement",
+          "attribute_boosts": { "hoa_condo_friendly": 4, "walkability": 3, "safety_reputation": 3 }
+        },
+        {
+          "label": "D",
+          "text": "First home — getting started",
+          "attribute_boosts": { "budget_fit": 5, "price_psf": 3, "commute_downtown": 2 }
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "method": "For each area, compute: sum of (area_attribute_score * answer_attribute_boost * question_weight) across all answered questions. Normalize the top score to 100.",
+    "tie_break_priority": ["budget_fit", "school_strength", "commute_downtown"],
+    "guardrails": [
+      {
+        "rule": "budget_downrank",
+        "description": "If buyer budget is more than 20% below the area's median sale price, downrank by 8 points",
+        "penalty": -8
+      },
+      {
+        "rule": "condo_uprank",
+        "description": "If buyer selected 'condo/low-maintenance', uprank condo-friendly areas by 6 points",
+        "bonus": 6,
+        "trigger_question": "q2_home_type",
+        "trigger_choice": "B"
+      },
+      {
+        "rule": "lake_must_have",
+        "description": "If buyer answered 'must-have' for lake proximity, exclude areas with lake_access < 2 unless no other matches",
+        "trigger_question": "q8_lake",
+        "trigger_choice": "A",
+        "exclude_below": 2,
+        "attribute": "lake_access"
+      }
+    ],
+    "output_count": 3,
+    "output_note": "Return top 3 matches with score, short blurb, and cross-suggestion"
+  },
+  "crm_tagging": {
+    "format": "Relocation|{County}County|TopMatch_{Neighborhood}|Budget_{BudgetRange}|{LifestyleTag}",
+    "example": "Relocation|MilwaukeeCounty|TopMatch_Wauwatosa|Budget_275-400K|FamilySuburb"
+  }
+}

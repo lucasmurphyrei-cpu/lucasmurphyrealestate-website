@@ -95,4 +95,70 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+
+  <!-- Milwaukee County Municipalities -->
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/bayside</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/brown-deer</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/cudahy</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/fox-point</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/franklin</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/glendale</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/greendale</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/greenfield</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/hales-corners</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/milwaukee</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/oak-creek</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/river-hills</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/shorewood</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/south-milwaukee</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/st-francis</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/wauwatosa</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/west-allis</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/west-milwaukee</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/whitefish-bay</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Ozaukee County Municipalities -->
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/ozaukee-county/belgium</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/ozaukee-county/cedarburg</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/ozaukee-county/fredonia</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/ozaukee-county/grafton</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/ozaukee-county/mequon</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/ozaukee-county/port-washington</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/ozaukee-county/saukville</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/ozaukee-county/thiensville</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Waukesha County Municipalities -->
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/big-bend</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/brookfield</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/butler</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/chenequa</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/delafield</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/dousman</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/eagle</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/elm-grove</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/hartland</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/lac-la-belle</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/lannon</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/menomonee-falls</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/merton</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/mukwonago</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/muskego</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/nashotah</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/new-berlin</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/north-prairie</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/oconomowoc</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/pewaukee</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/sussex</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/wales</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/waukesha</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Washington County Municipalities -->
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/washington-county/germantown</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/washington-county/hartford</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/washington-county/jackson</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/washington-county/kewaskum</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/washington-county/newburg</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/washington-county/richfield</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/washington-county/slinger</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.lucasmurphyrealestate.com/areas/washington-county/west-bend</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
