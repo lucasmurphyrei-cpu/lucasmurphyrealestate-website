@@ -4,7 +4,12 @@
     "created": "2026-02-22",
     "description": "Neighborhood Fit Quiz attribute model — 0-5 scores per municipality across 16 lifestyle and market attributes",
     "scale": "0 = lowest / not applicable, 5 = highest / strongest fit",
-    "counties_covered": ["milwaukee", "waukesha", "ozaukee", "washington"]
+    "counties_covered": [
+      "milwaukee",
+      "waukesha",
+      "ozaukee",
+      "washington"
+    ]
   },
   "attribute_definitions": {
     "budget_fit": "How affordable is the area for a typical buyer? 5 = very affordable entry point, 0 = premium pricing",
@@ -47,7 +52,13 @@
         "family_friendly": 2,
         "investor_friendly": 5
       },
-      "tags": ["#UrbanLiving", "#AffordableCity", "#CraftBeerCapital", "#LakefrontLifestyle", "#CulturalHub"]
+      "tags": [
+        "#UrbanLiving",
+        "#AffordableCity",
+        "#CraftBeerCapital",
+        "#LakefrontLifestyle",
+        "#CulturalHub"
+      ]
     },
     "wauwatosa": {
       "display_name": "Wauwatosa",
@@ -71,7 +82,13 @@
         "family_friendly": 5,
         "investor_friendly": 3
       },
-      "tags": ["#FamilyFriendly", "#TopSchools", "#VillageCharm", "#SuburbanConvenience", "#TosaProud"]
+      "tags": [
+        "#FamilyFriendly",
+        "#TopSchools",
+        "#VillageCharm",
+        "#SuburbanConvenience",
+        "#TosaProud"
+      ]
     },
     "west_allis": {
       "display_name": "West Allis",
@@ -95,7 +112,13 @@
         "family_friendly": 3,
         "investor_friendly": 4
       },
-      "tags": ["#AffordableSuburb", "#BlueCollarCharm", "#StateFairCountry", "#FirstTimeBuyer", "#ValuePlay"]
+      "tags": [
+        "#AffordableSuburb",
+        "#BlueCollarCharm",
+        "#StateFairCountry",
+        "#FirstTimeBuyer",
+        "#ValuePlay"
+      ]
     },
     "shorewood": {
       "display_name": "Shorewood",
@@ -119,7 +142,13 @@
         "family_friendly": 3,
         "investor_friendly": 3
       },
-      "tags": ["#WalkableVillage", "#CulturalHub", "#LakefrontAccess", "#IndependentSpirit", "#UrbanSuburb"]
+      "tags": [
+        "#WalkableVillage",
+        "#CulturalHub",
+        "#LakefrontAccess",
+        "#IndependentSpirit",
+        "#UrbanSuburb"
+      ]
     },
     "whitefish_bay": {
       "display_name": "Whitefish Bay",
@@ -143,7 +172,13 @@
         "family_friendly": 5,
         "investor_friendly": 1
       },
-      "tags": ["#NorthShoreElite", "#TopSchools", "#FamilyFirst", "#LakefrontLiving", "#VillageLife"]
+      "tags": [
+        "#NorthShoreElite",
+        "#TopSchools",
+        "#FamilyFirst",
+        "#LakefrontLiving",
+        "#VillageLife"
+      ]
     },
     "bay_view": {
       "display_name": "Bay View (within Milwaukee)",
@@ -167,7 +202,13 @@
         "family_friendly": 2,
         "investor_friendly": 4
       },
-      "tags": ["#CreativeClass", "#FoodieParadise", "#LakefrontVibe", "#NeighborhoodCulture", "#MillennialFavorite"]
+      "tags": [
+        "#CreativeClass",
+        "#FoodieParadise",
+        "#LakefrontVibe",
+        "#NeighborhoodCulture",
+        "#MillennialFavorite"
+      ]
     },
     "glendale": {
       "display_name": "Glendale",
@@ -191,7 +232,13 @@
         "family_friendly": 3,
         "investor_friendly": 3
       },
-      "tags": ["#NorthShoreValue", "#BayshoreLiving", "#MidCenturyHomes", "#RiverfrontAccess", "#EmptyNesterFriendly"]
+      "tags": [
+        "#NorthShoreValue",
+        "#BayshoreLiving",
+        "#MidCenturyHomes",
+        "#RiverfrontAccess",
+        "#EmptyNesterFriendly"
+      ]
     },
     "greenfield": {
       "display_name": "Greenfield",
@@ -215,7 +262,13 @@
         "family_friendly": 4,
         "investor_friendly": 3
       },
-      "tags": ["#QuietSuburb", "#AffordableFamily", "#MidwestValues", "#GoodValue", "#CentralLocation"]
+      "tags": [
+        "#QuietSuburb",
+        "#AffordableFamily",
+        "#MidwestValues",
+        "#GoodValue",
+        "#CentralLocation"
+      ]
     },
     "greendale": {
       "display_name": "Greendale",
@@ -239,7 +292,13 @@
         "family_friendly": 5,
         "investor_friendly": 1
       },
-      "tags": ["#HistoricVillage", "#WalkableDowntown", "#CommunityFirst", "#FamilyValues", "#NewDealCharm"]
+      "tags": [
+        "#HistoricVillage",
+        "#WalkableDowntown",
+        "#CommunityFirst",
+        "#FamilyValues",
+        "#NewDealCharm"
+      ]
     },
     "franklin": {
       "display_name": "Franklin",
@@ -263,7 +322,13 @@
         "family_friendly": 5,
         "investor_friendly": 2
       },
-      "tags": ["#NewConstruction", "#SportsLifestyle", "#FamilySuburb", "#ModernLiving", "#GrowingCommunity"]
+      "tags": [
+        "#NewConstruction",
+        "#SportsLifestyle",
+        "#FamilySuburb",
+        "#ModernLiving",
+        "#GrowingCommunity"
+      ]
     },
     "oak_creek": {
       "display_name": "Oak Creek",
@@ -287,7 +352,13 @@
         "family_friendly": 4,
         "investor_friendly": 3
       },
-      "tags": ["#TownSquareLiving", "#DiverseCommunity", "#LakefrontAccess", "#GrowingSuburb", "#ModernFamilyLife"]
+      "tags": [
+        "#TownSquareLiving",
+        "#DiverseCommunity",
+        "#LakefrontAccess",
+        "#GrowingSuburb",
+        "#ModernFamilyLife"
+      ]
     },
     "south_milwaukee": {
       "display_name": "South Milwaukee",
@@ -311,7 +382,13 @@
         "family_friendly": 3,
         "investor_friendly": 4
       },
-      "tags": ["#HiddenGem", "#LakefrontTrails", "#AffordableLakefront", "#OutdoorLifestyle", "#WorkingClassCharm"]
+      "tags": [
+        "#HiddenGem",
+        "#LakefrontTrails",
+        "#AffordableLakefront",
+        "#OutdoorLifestyle",
+        "#WorkingClassCharm"
+      ]
     },
     "st_francis": {
       "display_name": "St. Francis",
@@ -335,7 +412,13 @@
         "family_friendly": 2,
         "investor_friendly": 4
       },
-      "tags": ["#SleeperPick", "#LakefrontBudget", "#QuietLiving", "#RetireesFriendly", "#SmallTownCharm"]
+      "tags": [
+        "#SleeperPick",
+        "#LakefrontBudget",
+        "#QuietLiving",
+        "#RetireesFriendly",
+        "#SmallTownCharm"
+      ]
     },
     "brown_deer": {
       "display_name": "Brown Deer",
@@ -359,7 +442,13 @@
         "family_friendly": 3,
         "investor_friendly": 3
       },
-      "tags": ["#DiverseCommunity", "#AffordableNorthSide", "#SculptureGarden", "#FamilyParks", "#CulturallyRich"]
+      "tags": [
+        "#DiverseCommunity",
+        "#AffordableNorthSide",
+        "#SculptureGarden",
+        "#FamilyParks",
+        "#CulturallyRich"
+      ]
     },
     "river_hills": {
       "display_name": "River Hills",
@@ -383,7 +472,13 @@
         "family_friendly": 3,
         "investor_friendly": 0
       },
-      "tags": ["#EstateLiving", "#UltraExclusive", "#RiverfrontPrivacy", "#LuxuryEnclave", "#NatureRetreat"]
+      "tags": [
+        "#EstateLiving",
+        "#UltraExclusive",
+        "#RiverfrontPrivacy",
+        "#LuxuryEnclave",
+        "#NatureRetreat"
+      ]
     },
     "fox_point": {
       "display_name": "Fox Point",
@@ -407,9 +502,14 @@
         "family_friendly": 5,
         "investor_friendly": 0
       },
-      "tags": ["#NorthShoreElegance", "#LakefrontBluffs", "#TopSchools", "#QuietPrestige", "#EstablishedFamilies"]
+      "tags": [
+        "#NorthShoreElegance",
+        "#LakefrontBluffs",
+        "#TopSchools",
+        "#QuietPrestige",
+        "#EstablishedFamilies"
+      ]
     },
-
     "waukesha": {
       "display_name": "City of Waukesha",
       "county": "waukesha",
@@ -432,7 +532,13 @@
         "family_friendly": 4,
         "investor_friendly": 3
       },
-      "tags": ["#DowntownVibes", "#FirstTimeBuyer", "#RiverfrontLiving", "#AffordableSuburb", "#FamilyFriendly"]
+      "tags": [
+        "#DowntownVibes",
+        "#FirstTimeBuyer",
+        "#RiverfrontLiving",
+        "#AffordableSuburb",
+        "#FamilyFriendly"
+      ]
     },
     "brookfield": {
       "display_name": "Brookfield (City)",
@@ -456,7 +562,13 @@
         "family_friendly": 5,
         "investor_friendly": 1
       },
-      "tags": ["#TopSchools", "#UpscaleSuburb", "#CorporateCommuter", "#ShoppingAndDining", "#ExecutiveLiving"]
+      "tags": [
+        "#TopSchools",
+        "#UpscaleSuburb",
+        "#CorporateCommuter",
+        "#ShoppingAndDining",
+        "#ExecutiveLiving"
+      ]
     },
     "new_berlin": {
       "display_name": "New Berlin",
@@ -480,7 +592,13 @@
         "family_friendly": 5,
         "investor_friendly": 1
       },
-      "tags": ["#SpaceToGrow", "#FamilyFirst", "#NatureTrails", "#QuietSuburb", "#ValueBuy"]
+      "tags": [
+        "#SpaceToGrow",
+        "#FamilyFirst",
+        "#NatureTrails",
+        "#QuietSuburb",
+        "#ValueBuy"
+      ]
     },
     "menomonee_falls": {
       "display_name": "Menomonee Falls",
@@ -504,7 +622,13 @@
         "family_friendly": 4,
         "investor_friendly": 2
       },
-      "tags": ["#SmallTownCharm", "#TrailLife", "#CommunityEvents", "#CorporateConvenience", "#VillageVibes"]
+      "tags": [
+        "#SmallTownCharm",
+        "#TrailLife",
+        "#CommunityEvents",
+        "#CorporateConvenience",
+        "#VillageVibes"
+      ]
     },
     "pewaukee": {
       "display_name": "Pewaukee (City/Village)",
@@ -528,7 +652,13 @@
         "family_friendly": 4,
         "investor_friendly": 2
       },
-      "tags": ["#LakeLife", "#WaterfrontDining", "#OutdoorRecreation", "#TopSchools", "#ResortLiving"]
+      "tags": [
+        "#LakeLife",
+        "#WaterfrontDining",
+        "#OutdoorRecreation",
+        "#TopSchools",
+        "#ResortLiving"
+      ]
     },
     "oconomowoc": {
       "display_name": "Oconomowoc",
@@ -552,7 +682,13 @@
         "family_friendly": 4,
         "investor_friendly": 1
       },
-      "tags": ["#LakefrontCharm", "#WalkableDowntown", "#ResortTownFeel", "#BoutiqueLifestyle", "#HistoricCharacter"]
+      "tags": [
+        "#LakefrontCharm",
+        "#WalkableDowntown",
+        "#ResortTownFeel",
+        "#BoutiqueLifestyle",
+        "#HistoricCharacter"
+      ]
     },
     "muskego": {
       "display_name": "Muskego",
@@ -576,7 +712,13 @@
         "family_friendly": 5,
         "investor_friendly": 1
       },
-      "tags": ["#TopSchools", "#LakeAccess", "#BigYards", "#FamilyFirst", "#RuralSuburban"]
+      "tags": [
+        "#TopSchools",
+        "#LakeAccess",
+        "#BigYards",
+        "#FamilyFirst",
+        "#RuralSuburban"
+      ]
     },
     "delafield": {
       "display_name": "Delafield",
@@ -600,7 +742,13 @@
         "family_friendly": 4,
         "investor_friendly": 0
       },
-      "tags": ["#NatureLovers", "#KettleMoraine", "#LuxuryLiving", "#HistoricCharm", "#TrailAccess"]
+      "tags": [
+        "#NatureLovers",
+        "#KettleMoraine",
+        "#LuxuryLiving",
+        "#HistoricCharm",
+        "#TrailAccess"
+      ]
     },
     "hartland": {
       "display_name": "Hartland",
@@ -624,7 +772,13 @@
         "family_friendly": 5,
         "investor_friendly": 1
       },
-      "tags": ["#VillageLife", "#ArrowheadSchools", "#TrailConnected", "#LakeCountry", "#GrowingDowntown"]
+      "tags": [
+        "#VillageLife",
+        "#ArrowheadSchools",
+        "#TrailConnected",
+        "#LakeCountry",
+        "#GrowingDowntown"
+      ]
     },
     "mukwonago": {
       "display_name": "Mukwonago",
@@ -648,7 +802,13 @@
         "family_friendly": 4,
         "investor_friendly": 1
       },
-      "tags": ["#SmallTownLiving", "#AffordableEntry", "#BigLots", "#OutdoorPlayground", "#HiddenGem"]
+      "tags": [
+        "#SmallTownLiving",
+        "#AffordableEntry",
+        "#BigLots",
+        "#OutdoorPlayground",
+        "#HiddenGem"
+      ]
     },
     "sussex": {
       "display_name": "Sussex",
@@ -672,7 +832,13 @@
         "family_friendly": 4,
         "investor_friendly": 1
       },
-      "tags": ["#NewerConstruction", "#GrowingCommunity", "#FamilyParks", "#TrailAccess", "#SmartValue"]
+      "tags": [
+        "#NewerConstruction",
+        "#GrowingCommunity",
+        "#FamilyParks",
+        "#TrailAccess",
+        "#SmartValue"
+      ]
     },
     "elm_grove": {
       "display_name": "Elm Grove",
@@ -696,9 +862,14 @@
         "family_friendly": 5,
         "investor_friendly": 0
       },
-      "tags": ["#VillagePrestige", "#TopSchools", "#TreeLinedStreets", "#ShortCommute", "#TightKnitCommunity"]
+      "tags": [
+        "#VillagePrestige",
+        "#TopSchools",
+        "#TreeLinedStreets",
+        "#ShortCommute",
+        "#TightKnitCommunity"
+      ]
     },
-
     "mequon": {
       "display_name": "Mequon",
       "county": "ozaukee",
@@ -721,7 +892,13 @@
         "family_friendly": 5,
         "investor_friendly": 0
       },
-      "tags": ["#UpscaleSuburban", "#TopSchools", "#NatureLover", "#ExecutiveRelocator", "#LakeMichiganLiving"]
+      "tags": [
+        "#UpscaleSuburban",
+        "#TopSchools",
+        "#NatureLover",
+        "#ExecutiveRelocator",
+        "#LakeMichiganLiving"
+      ]
     },
     "cedarburg": {
       "display_name": "Cedarburg",
@@ -745,7 +922,13 @@
         "family_friendly": 5,
         "investor_friendly": 1
       },
-      "tags": ["#HistoricCharm", "#WalkableDowntown", "#FamilyFriendly", "#ArtsAndCulture", "#SmallTownVibes"]
+      "tags": [
+        "#HistoricCharm",
+        "#WalkableDowntown",
+        "#FamilyFriendly",
+        "#ArtsAndCulture",
+        "#SmallTownVibes"
+      ]
     },
     "grafton": {
       "display_name": "Grafton",
@@ -769,7 +952,13 @@
         "family_friendly": 4,
         "investor_friendly": 2
       },
-      "tags": ["#BestValue", "#FamilyFirst", "#CraftBeerCulture", "#NatureAccess", "#FirstTimeBuyer"]
+      "tags": [
+        "#BestValue",
+        "#FamilyFirst",
+        "#CraftBeerCulture",
+        "#NatureAccess",
+        "#FirstTimeBuyer"
+      ]
     },
     "port_washington": {
       "display_name": "Port Washington",
@@ -793,7 +982,13 @@
         "family_friendly": 4,
         "investor_friendly": 2
       },
-      "tags": ["#LakefrontLiving", "#HarborTown", "#AffordableLakeside", "#MaritimeCulture", "#FestivalCommunity"]
+      "tags": [
+        "#LakefrontLiving",
+        "#HarborTown",
+        "#AffordableLakeside",
+        "#MaritimeCulture",
+        "#FestivalCommunity"
+      ]
     },
     "thiensville": {
       "display_name": "Thiensville",
@@ -817,7 +1012,13 @@
         "family_friendly": 3,
         "investor_friendly": 2
       },
-      "tags": ["#VillageCharm", "#FoodieDestination", "#Downsizer", "#RiversideLiving", "#TopSchoolDistrict"]
+      "tags": [
+        "#VillageCharm",
+        "#FoodieDestination",
+        "#Downsizer",
+        "#RiversideLiving",
+        "#TopSchoolDistrict"
+      ]
     },
     "saukville": {
       "display_name": "Saukville",
@@ -841,7 +1042,13 @@
         "family_friendly": 3,
         "investor_friendly": 2
       },
-      "tags": ["#BudgetFriendly", "#OutdoorAdventurer", "#QuietCountryLiving", "#NatureSanctuary", "#HiddenGem"]
+      "tags": [
+        "#BudgetFriendly",
+        "#OutdoorAdventurer",
+        "#QuietCountryLiving",
+        "#NatureSanctuary",
+        "#HiddenGem"
+      ]
     },
     "belgium": {
       "display_name": "Belgium",
@@ -865,9 +1072,14 @@
         "family_friendly": 3,
         "investor_friendly": 1
       },
-      "tags": ["#RuralRetreat", "#SmallTownPeace", "#StateParkLife", "#AgricultureRoots", "#MaximumPrivacy"]
+      "tags": [
+        "#RuralRetreat",
+        "#SmallTownPeace",
+        "#StateParkLife",
+        "#AgricultureRoots",
+        "#MaximumPrivacy"
+      ]
     },
-
     "germantown": {
       "display_name": "Germantown",
       "county": "washington",
@@ -890,7 +1102,13 @@
         "family_friendly": 5,
         "investor_friendly": 1
       },
-      "tags": ["#Suburban", "#FamilyFriendly", "#TopSchools", "#CommuteFriendly", "#HistoricCharm"]
+      "tags": [
+        "#Suburban",
+        "#FamilyFriendly",
+        "#TopSchools",
+        "#CommuteFriendly",
+        "#HistoricCharm"
+      ]
     },
     "west_bend": {
       "display_name": "West Bend",
@@ -914,7 +1132,13 @@
         "family_friendly": 4,
         "investor_friendly": 3
       },
-      "tags": ["#FirstTimeBuyer", "#ArtsAndCulture", "#SmallTownVibe", "#BudgetConscious", "#ParksAndRec"]
+      "tags": [
+        "#FirstTimeBuyer",
+        "#ArtsAndCulture",
+        "#SmallTownVibe",
+        "#BudgetConscious",
+        "#ParksAndRec"
+      ]
     },
     "hartford": {
       "display_name": "Hartford",
@@ -938,7 +1162,13 @@
         "family_friendly": 4,
         "investor_friendly": 3
       },
-      "tags": ["#ParksAndRec", "#SmallTownVibe", "#BudgetConscious", "#FamilyFriendly", "#CountryLiving"]
+      "tags": [
+        "#ParksAndRec",
+        "#SmallTownVibe",
+        "#BudgetConscious",
+        "#FamilyFriendly",
+        "#CountryLiving"
+      ]
     },
     "jackson": {
       "display_name": "Jackson",
@@ -962,7 +1192,13 @@
         "family_friendly": 5,
         "investor_friendly": 1
       },
-      "tags": ["#NewerHomes", "#FamilyFriendly", "#CommuteFriendly", "#Quiet", "#Suburban"]
+      "tags": [
+        "#NewerHomes",
+        "#FamilyFriendly",
+        "#CommuteFriendly",
+        "#Quiet",
+        "#Suburban"
+      ]
     },
     "slinger": {
       "display_name": "Slinger",
@@ -986,7 +1222,13 @@
         "family_friendly": 4,
         "investor_friendly": 1
       },
-      "tags": ["#TopSchools", "#SmallTownVibe", "#FamilyFriendly", "#Community", "#CountryLiving"]
+      "tags": [
+        "#TopSchools",
+        "#SmallTownVibe",
+        "#FamilyFriendly",
+        "#Community",
+        "#CountryLiving"
+      ]
     },
     "kewaskum": {
       "display_name": "Kewaskum",
@@ -1010,7 +1252,13 @@
         "family_friendly": 3,
         "investor_friendly": 1
       },
-      "tags": ["#CountryLiving", "#Rural", "#ParksAndRec", "#Quiet", "#Private"]
+      "tags": [
+        "#CountryLiving",
+        "#Rural",
+        "#ParksAndRec",
+        "#Quiet",
+        "#Private"
+      ]
     },
     "richfield": {
       "display_name": "Richfield",
@@ -1034,7 +1282,343 @@
         "family_friendly": 4,
         "investor_friendly": 0
       },
-      "tags": ["#Luxury", "#Private", "#Rural", "#Exclusive", "#CountryLiving"]
+      "tags": [
+        "#Luxury",
+        "#Private",
+        "#Rural",
+        "#Exclusive",
+        "#CountryLiving"
+      ]
+    },
+    "bayside": {
+      "display_name": "Bayside",
+      "county": "milwaukee",
+      "median_sale_price": 445000,
+      "attributes": {
+        "budget_fit": 2,
+        "home_type_fit": 2,
+        "school_strength": 5,
+        "walkability": 2,
+        "nightlife": 1,
+        "yard_space": 4,
+        "historic_charm": 3,
+        "new_construction": 2,
+        "commute_downtown": 5,
+        "lake_access": 5,
+        "safety_reputation": 5,
+        "price_psf": 2,
+        "tax_sensitivity": 2,
+        "hoa_condo_friendly": 1,
+        "family_friendly": 5,
+        "investor_friendly": 1
+      },
+      "tags": [
+        "#NorthShoreExclusive",
+        "#TopRatedSchools",
+        "#LakeMichiganLiving",
+        "#NatureLover",
+        "#UpscaleSuburban"
+      ]
+    },
+    "west_milwaukee": {
+      "display_name": "West Milwaukee",
+      "county": "milwaukee",
+      "median_sale_price": 268000,
+      "attributes": {
+        "budget_fit": 5,
+        "home_type_fit": 3,
+        "school_strength": 2,
+        "walkability": 3,
+        "nightlife": 3,
+        "yard_space": 2,
+        "historic_charm": 2,
+        "new_construction": 1,
+        "commute_downtown": 5,
+        "lake_access": 1,
+        "safety_reputation": 3,
+        "price_psf": 5,
+        "tax_sensitivity": 2,
+        "hoa_condo_friendly": 2,
+        "family_friendly": 2,
+        "investor_friendly": 4
+      },
+      "tags": [
+        "#AffordableEntry",
+        "#UrbanSuburbanMix",
+        "#BrewersFanZone",
+        "#FirstTimeBuyer",
+        "#CommuterFriendly"
+      ]
+    },
+    "fredonia": {
+      "display_name": "Fredonia",
+      "county": "ozaukee",
+      "median_sale_price": 395000,
+      "attributes": {
+        "budget_fit": 3,
+        "home_type_fit": 2,
+        "school_strength": 3,
+        "walkability": 1,
+        "nightlife": 1,
+        "yard_space": 5,
+        "historic_charm": 4,
+        "new_construction": 2,
+        "commute_downtown": 2,
+        "lake_access": 2,
+        "safety_reputation": 5,
+        "price_psf": 3,
+        "tax_sensitivity": 3,
+        "hoa_condo_friendly": 0,
+        "family_friendly": 4,
+        "investor_friendly": 1
+      },
+      "tags": [
+        "#SmallTownLiving",
+        "#RuralCharm",
+        "#FamilyFriendly",
+        "#HistoricHeritage",
+        "#CountryAcreage"
+      ]
+    },
+    "butler": {
+      "display_name": "Butler",
+      "county": "waukesha",
+      "median_sale_price": 275000,
+      "attributes": {
+        "budget_fit": 5,
+        "home_type_fit": 2,
+        "school_strength": 4,
+        "walkability": 1,
+        "nightlife": 1,
+        "yard_space": 2,
+        "historic_charm": 1,
+        "new_construction": 1,
+        "commute_downtown": 4,
+        "lake_access": 1,
+        "safety_reputation": 4,
+        "price_psf": 5,
+        "tax_sensitivity": 3,
+        "hoa_condo_friendly": 1,
+        "family_friendly": 3,
+        "investor_friendly": 3
+      },
+      "tags": [
+        "#AffordableSuburb",
+        "#BlueCollarCharm",
+        "#FirstTimeBuyer",
+        "#ShortCommute",
+        "#SmallTownGrit"
+      ]
+    },
+    "chenequa": {
+      "display_name": "Chenequa",
+      "county": "waukesha",
+      "median_sale_price": 2600000,
+      "attributes": {
+        "budget_fit": 0,
+        "home_type_fit": 1,
+        "school_strength": 5,
+        "walkability": 0,
+        "nightlife": 0,
+        "yard_space": 5,
+        "historic_charm": 4,
+        "new_construction": 2,
+        "commute_downtown": 2,
+        "lake_access": 5,
+        "safety_reputation": 5,
+        "price_psf": 0,
+        "tax_sensitivity": 1,
+        "hoa_condo_friendly": 0,
+        "family_friendly": 3,
+        "investor_friendly": 0
+      },
+      "tags": [
+        "#LakefrontEstate",
+        "#UltraLuxury",
+        "#PineLakePrestige",
+        "#OldMoneyElegance",
+        "#PrivateParadise"
+      ]
+    },
+    "dousman": {
+      "display_name": "Dousman",
+      "county": "waukesha",
+      "median_sale_price": 500000,
+      "attributes": {
+        "budget_fit": 2,
+        "home_type_fit": 2,
+        "school_strength": 5,
+        "walkability": 1,
+        "nightlife": 0,
+        "yard_space": 4,
+        "historic_charm": 2,
+        "new_construction": 2,
+        "commute_downtown": 1,
+        "lake_access": 2,
+        "safety_reputation": 4,
+        "price_psf": 2,
+        "tax_sensitivity": 3,
+        "hoa_condo_friendly": 0,
+        "family_friendly": 4,
+        "investor_friendly": 1
+      },
+      "tags": [
+        "#TrailTown",
+        "#BlueRibbonSchools",
+        "#RuralCharm",
+        "#KettleMoraineLife",
+        "#SmallTownLiving"
+      ]
+    },
+    "eagle": {
+      "display_name": "Eagle",
+      "county": "waukesha",
+      "median_sale_price": 405000,
+      "attributes": {
+        "budget_fit": 3,
+        "home_type_fit": 2,
+        "school_strength": 3,
+        "walkability": 0,
+        "nightlife": 0,
+        "yard_space": 5,
+        "historic_charm": 4,
+        "new_construction": 2,
+        "commute_downtown": 1,
+        "lake_access": 2,
+        "safety_reputation": 5,
+        "price_psf": 3,
+        "tax_sensitivity": 3,
+        "hoa_condo_friendly": 1,
+        "family_friendly": 3,
+        "investor_friendly": 1
+      },
+      "tags": [
+        "#KettleMoraineLife",
+        "#OutdoorAdventurer",
+        "#HistoricWisconsin",
+        "#ForestLiving",
+        "#RuralEscape"
+      ]
+    },
+    "lac_la_belle": {
+      "display_name": "Lac La Belle",
+      "county": "waukesha",
+      "median_sale_price": 2100000,
+      "attributes": {
+        "budget_fit": 0,
+        "home_type_fit": 1,
+        "school_strength": 4,
+        "walkability": 0,
+        "nightlife": 0,
+        "yard_space": 4,
+        "historic_charm": 4,
+        "new_construction": 2,
+        "commute_downtown": 2,
+        "lake_access": 5,
+        "safety_reputation": 5,
+        "price_psf": 0,
+        "tax_sensitivity": 1,
+        "hoa_condo_friendly": 0,
+        "family_friendly": 3,
+        "investor_friendly": 0
+      },
+      "tags": [
+        "#LakefrontLiving",
+        "#HiddenGem",
+        "#LuxuryLakehouse",
+        "#BoatToBreakfast",
+        "#LakeCountryElite"
+      ]
+    },
+    "lannon": {
+      "display_name": "Lannon",
+      "county": "waukesha",
+      "median_sale_price": 314000,
+      "attributes": {
+        "budget_fit": 3,
+        "home_type_fit": 2,
+        "school_strength": 4,
+        "walkability": 1,
+        "nightlife": 0,
+        "yard_space": 3,
+        "historic_charm": 3,
+        "new_construction": 4,
+        "commute_downtown": 3,
+        "lake_access": 1,
+        "safety_reputation": 4,
+        "price_psf": 3,
+        "tax_sensitivity": 3,
+        "hoa_condo_friendly": 1,
+        "family_friendly": 4,
+        "investor_friendly": 2
+      },
+      "tags": [
+        "#QuarryCountry",
+        "#FastestGrowing",
+        "#BuglineTrail",
+        "#StoneHeritage",
+        "#SuburbanRuralMix"
+      ]
+    },
+    "north_prairie": {
+      "display_name": "North Prairie",
+      "county": "waukesha",
+      "median_sale_price": 515000,
+      "attributes": {
+        "budget_fit": 2,
+        "home_type_fit": 1,
+        "school_strength": 4,
+        "walkability": 0,
+        "nightlife": 0,
+        "yard_space": 5,
+        "historic_charm": 2,
+        "new_construction": 3,
+        "commute_downtown": 2,
+        "lake_access": 1,
+        "safety_reputation": 5,
+        "price_psf": 3,
+        "tax_sensitivity": 3,
+        "hoa_condo_friendly": 0,
+        "family_friendly": 5,
+        "investor_friendly": 1
+      },
+      "tags": [
+        "#FamilyFirst",
+        "#UpscaleRural",
+        "#TopSchools",
+        "#SafeHaven",
+        "#GolfAndTrails"
+      ]
+    },
+    "newburg": {
+      "display_name": "Newburg",
+      "county": "washington",
+      "median_sale_price": 342000,
+      "attributes": {
+        "budget_fit": 3,
+        "home_type_fit": 2,
+        "school_strength": 3,
+        "walkability": 1,
+        "nightlife": 0,
+        "yard_space": 3,
+        "historic_charm": 3,
+        "new_construction": 2,
+        "commute_downtown": 1,
+        "lake_access": 1,
+        "safety_reputation": 5,
+        "price_psf": 3,
+        "tax_sensitivity": 3,
+        "hoa_condo_friendly": 1,
+        "family_friendly": 3,
+        "investor_friendly": 2
+      },
+      "tags": [
+        "#RiversideVillage",
+        "#NatureLovers",
+        "#SmallTownLiving",
+        "#AffordableEntry",
+        "#CommunitySpirit"
+      ]
     }
   }
 }

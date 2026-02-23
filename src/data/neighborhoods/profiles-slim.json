@@ -4,7 +4,7 @@
     "source": "County Neighborhood Profiles",
     "version": "1.0",
     "counties": 4,
-    "total_municipalities": 42
+    "total_municipalities": 53
   },
   "municipalities": [
     {
@@ -48,14 +48,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 582900.0,
+          "median_sale_price": 582900,
           "median_sale_price_yoy": -5.2,
-          "median_dom": 66.0,
-          "median_dom_yoy": -10.0,
+          "median_dom": 66,
+          "median_dom_yoy": -10,
           "median_ppsf": 198.569218871,
           "median_ppsf_yoy": -14.9,
           "sale_to_list": 0.9894286662,
-          "homes_sold": 13.0,
+          "homes_sold": 13,
           "latest_period": "2026-01-31"
         }
       }
@@ -101,14 +101,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 702000.0,
+          "median_sale_price": 702000,
           "median_sale_price_yoy": -8.4,
-          "median_dom": 44.0,
-          "median_dom_yoy": -34.0,
+          "median_dom": 44,
+          "median_dom_yoy": -34,
           "median_ppsf": 244.161358811,
           "median_ppsf_yoy": -11.4,
           "sale_to_list": 1.009930866,
-          "homes_sold": 7.0,
+          "homes_sold": 7,
           "latest_period": "2026-01-31"
         }
       }
@@ -150,18 +150,18 @@
         "zillow": {
           "zhvi": 433023.2752373588,
           "zhvi_yoy_pct": 4.5,
-          "zori": 2050.0,
+          "zori": 2050,
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 610000.0,
+          "median_sale_price": 610000,
           "median_sale_price_yoy": 40.1,
-          "median_dom": 90.0,
-          "median_dom_yoy": 39.0,
+          "median_dom": 90,
+          "median_dom_yoy": 39,
           "median_ppsf": 239.717055279,
           "median_ppsf_yoy": 4.7,
           "sale_to_list": 0.9999493107,
-          "homes_sold": 11.0,
+          "homes_sold": 11,
           "latest_period": "2026-01-31"
         }
       }
@@ -207,14 +207,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 500000.0,
+          "median_sale_price": 500000,
           "median_sale_price_yoy": 50.7,
-          "median_dom": 44.0,
-          "median_dom_yoy": 0.0,
+          "median_dom": 44,
+          "median_dom_yoy": 0,
           "median_ppsf": 260.942760943,
           "median_ppsf_yoy": 17.2,
           "sale_to_list": 0.9842293424,
-          "homes_sold": 7.0,
+          "homes_sold": 7,
           "latest_period": "2026-01-31"
         }
       }
@@ -260,14 +260,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 212500.0,
+          "median_sale_price": 212500,
           "median_sale_price_yoy": -13.3,
-          "median_dom": 148.0,
-          "median_dom_yoy": 64.0,
+          "median_dom": 148,
+          "median_dom_yoy": 64,
           "median_ppsf": 183.823529412,
           "median_ppsf_yoy": -6.6,
           "sale_to_list": 0.9906759907,
-          "homes_sold": 1.0,
+          "homes_sold": 1,
           "latest_period": "2026-01-31"
         }
       }
@@ -309,18 +309,18 @@
         "zillow": {
           "zhvi": 383678.7169073958,
           "zhvi_yoy_pct": 5.2,
-          "zori": 2050.0,
+          "zori": 2050,
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 372500.0,
+          "median_sale_price": 372500,
           "median_sale_price_yoy": 23.3,
-          "median_dom": 62.0,
-          "median_dom_yoy": 32.0,
+          "median_dom": 62,
+          "median_dom_yoy": 32,
           "median_ppsf": 214.421269581,
           "median_ppsf_yoy": -2.4,
           "sale_to_list": 0.9944142962,
-          "homes_sold": 6.0,
+          "homes_sold": 6,
           "latest_period": "2026-01-31"
         }
       }
@@ -366,14 +366,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 374900.0,
+          "median_sale_price": 374900,
           "median_sale_price_yoy": -0.6,
-          "median_dom": 49.0,
-          "median_dom_yoy": 10.0,
+          "median_dom": 49,
+          "median_dom_yoy": 10,
           "median_ppsf": 178.076770875,
           "median_ppsf_yoy": 11.1,
           "sale_to_list": 1.011669908,
-          "homes_sold": 3.0,
+          "homes_sold": 3,
           "latest_period": "2026-01-31"
         }
       }
@@ -419,14 +419,14 @@
           "zori_yoy_pct": 3.9
         },
         "redfin": {
-          "median_sale_price": 229000.0,
-          "median_sale_price_yoy": 9.0,
-          "median_dom": 61.0,
-          "median_dom_yoy": 7.0,
+          "median_sale_price": 229000,
+          "median_sale_price_yoy": 9,
+          "median_dom": 61,
+          "median_dom_yoy": 7,
           "median_ppsf": 140.28658355,
           "median_ppsf_yoy": -0.5,
           "sale_to_list": 0.9805442214,
-          "homes_sold": 269.0,
+          "homes_sold": 269,
           "latest_period": "2026-01-31"
         }
       }
@@ -472,14 +472,14 @@
           "zori_yoy_pct": 3.4
         },
         "redfin": {
-          "median_sale_price": 352000.0,
+          "median_sale_price": 352000,
           "median_sale_price_yoy": 3.4,
-          "median_dom": 72.0,
-          "median_dom_yoy": 27.0,
+          "median_dom": 72,
+          "median_dom_yoy": 27,
           "median_ppsf": 207.097881996,
           "median_ppsf_yoy": 7.6,
           "sale_to_list": 0.9762783992,
-          "homes_sold": 30.0,
+          "homes_sold": 30,
           "latest_period": "2026-01-31"
         }
       }
@@ -514,7 +514,7 @@
       "api_data": {
         "census": {
           "population": 59588,
-          "median_age": 39.0,
+          "median_age": 39,
           "median_household_income": 69685,
           "source_year": "2023"
         },
@@ -525,14 +525,14 @@
           "zori_yoy_pct": 3.8
         },
         "redfin": {
-          "median_sale_price": 260000.0,
+          "median_sale_price": 260000,
           "median_sale_price_yoy": 11.1,
-          "median_dom": 53.0,
-          "median_dom_yoy": 0.0,
+          "median_dom": 53,
+          "median_dom_yoy": 0,
           "median_ppsf": 184.237461617,
           "median_ppsf_yoy": 5.5,
           "sale_to_list": 0.9926664793,
-          "homes_sold": 32.0,
+          "homes_sold": 32,
           "latest_period": "2026-01-31"
         }
       }
@@ -567,7 +567,7 @@
       "api_data": {
         "census": {
           "population": 13682,
-          "median_age": 38.0,
+          "median_age": 38,
           "median_household_income": 89135,
           "source_year": "2023"
         },
@@ -578,14 +578,14 @@
           "zori_yoy_pct": -4.8
         },
         "redfin": {
-          "median_sale_price": 390000.0,
+          "median_sale_price": 390000,
           "median_sale_price_yoy": -25.7,
-          "median_dom": 73.0,
-          "median_dom_yoy": 38.0,
+          "median_dom": 73,
+          "median_dom_yoy": 38,
           "median_ppsf": 258.150365935,
           "median_ppsf_yoy": -8.9,
           "sale_to_list": 0.9870393044,
-          "homes_sold": 5.0,
+          "homes_sold": 5,
           "latest_period": "2026-01-31"
         }
       }
@@ -627,18 +627,18 @@
         "zillow": {
           "zhvi": 603488.0836888469,
           "zhvi_yoy_pct": 4.1,
-          "zori": 2819.0,
+          "zori": 2819,
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 562500.0,
+          "median_sale_price": 562500,
           "median_sale_price_yoy": 8.5,
-          "median_dom": 56.0,
-          "median_dom_yoy": 22.0,
+          "median_dom": 56,
+          "median_dom_yoy": 22,
           "median_ppsf": 314.817379599,
           "median_ppsf_yoy": -3.7,
           "sale_to_list": 1.004450173,
-          "homes_sold": 8.0,
+          "homes_sold": 8,
           "latest_period": "2026-01-31"
         }
       }
@@ -712,14 +712,14 @@
           "zori_yoy_pct": -0.4
         },
         "redfin": {
-          "median_sale_price": 375000.0,
-          "median_sale_price_yoy": 15.0,
-          "median_dom": 38.0,
-          "median_dom_yoy": -38.0,
+          "median_sale_price": 375000,
+          "median_sale_price_yoy": 15,
+          "median_dom": 38,
+          "median_dom_yoy": -38,
           "median_ppsf": 162.8001628,
           "median_ppsf_yoy": -15.2,
           "sale_to_list": 0.9687777373,
-          "homes_sold": 9.0,
+          "homes_sold": 9,
           "latest_period": "2026-01-31"
         }
       }
@@ -754,25 +754,25 @@
       "api_data": {
         "census": {
           "population": 37361,
-          "median_age": 43.0,
+          "median_age": 43,
           "median_household_income": 69016,
           "source_year": "2023"
         },
         "zillow": {
           "zhvi": 308734.72936528386,
           "zhvi_yoy_pct": 4.7,
-          "zori": 1250.0,
+          "zori": 1250,
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 317500.0,
+          "median_sale_price": 317500,
           "median_sale_price_yoy": 11.5,
-          "median_dom": 44.0,
-          "median_dom_yoy": -19.0,
+          "median_dom": 44,
+          "median_dom_yoy": -19,
           "median_ppsf": 204.809850109,
           "median_ppsf_yoy": 15.6,
           "sale_to_list": 1.012707785,
-          "homes_sold": 16.0,
+          "homes_sold": 16,
           "latest_period": "2026-01-31"
         }
       }
@@ -818,14 +818,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 352500.0,
-          "median_sale_price_yoy": 9.0,
-          "median_dom": 63.0,
-          "median_dom_yoy": 34.0,
+          "median_sale_price": 352500,
+          "median_sale_price_yoy": 9,
+          "median_dom": 63,
+          "median_dom_yoy": 34,
           "median_ppsf": 204.780381931,
           "median_ppsf_yoy": 3.4,
           "sale_to_list": 0.9744360856,
-          "homes_sold": 6.0,
+          "homes_sold": 6,
           "latest_period": "2026-01-31"
         }
       }
@@ -871,14 +871,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 305000.0,
+          "median_sale_price": 305000,
           "median_sale_price_yoy": -23.5,
-          "median_dom": 68.0,
-          "median_dom_yoy": 0.0,
+          "median_dom": 68,
+          "median_dom_yoy": 0,
           "median_ppsf": 204.022988506,
           "median_ppsf_yoy": -9.1,
           "sale_to_list": 0.9835004962,
-          "homes_sold": 25.0,
+          "homes_sold": 25,
           "latest_period": "2026-01-31"
         }
       }
@@ -924,14 +924,14 @@
           "zori_yoy_pct": 4.1
         },
         "redfin": {
-          "median_sale_price": 400000.0,
+          "median_sale_price": 400000,
           "median_sale_price_yoy": 26.3,
-          "median_dom": 53.0,
-          "median_dom_yoy": -18.0,
+          "median_dom": 53,
+          "median_dom_yoy": -18,
           "median_ppsf": 215.810995002,
           "median_ppsf_yoy": 1.6,
           "sale_to_list": 0.9992917651,
-          "homes_sold": 11.0,
+          "homes_sold": 11,
           "latest_period": "2026-01-31"
         }
       }
@@ -973,18 +973,18 @@
         "zillow": {
           "zhvi": 287978.40826514165,
           "zhvi_yoy_pct": 2.9,
-          "zori": 1150.0,
+          "zori": 1150,
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 287400.0,
+          "median_sale_price": 287400,
           "median_sale_price_yoy": -4.8,
-          "median_dom": 55.0,
-          "median_dom_yoy": -2.0,
-          "median_ppsf": 206.0,
+          "median_dom": 55,
+          "median_dom_yoy": -2,
+          "median_ppsf": 206,
           "median_ppsf_yoy": 17.7,
           "sale_to_list": 1.024282107,
-          "homes_sold": 14.0,
+          "homes_sold": 14,
           "latest_period": "2026-01-31"
         }
       }
@@ -1030,14 +1030,14 @@
           "zori_yoy_pct": 6.6
         },
         "redfin": {
-          "median_sale_price": 224500.0,
+          "median_sale_price": 224500,
           "median_sale_price_yoy": -6.5,
-          "median_dom": 92.0,
-          "median_dom_yoy": 54.0,
+          "median_dom": 92,
+          "median_dom_yoy": 54,
           "median_ppsf": 202.419938848,
-          "median_ppsf_yoy": -5.0,
+          "median_ppsf_yoy": -5,
           "sale_to_list": 0.9711684837,
-          "homes_sold": 4.0,
+          "homes_sold": 4,
           "latest_period": "2026-01-31"
         }
       }
@@ -1083,14 +1083,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 289900.0,
+          "median_sale_price": 289900,
           "median_sale_price_yoy": 163.5,
-          "median_dom": 62.0,
-          "median_dom_yoy": 22.0,
+          "median_dom": 62,
+          "median_dom_yoy": 22,
           "median_ppsf": 170.086393089,
           "median_ppsf_yoy": 59.4,
           "sale_to_list": 1.001748693,
-          "homes_sold": 15.0,
+          "homes_sold": 15,
           "latest_period": "2026-01-31"
         }
       }
@@ -1136,14 +1136,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 435000.0,
+          "median_sale_price": 435000,
           "median_sale_price_yoy": -69.5,
-          "median_dom": 49.0,
-          "median_dom_yoy": -88.0,
+          "median_dom": 49,
+          "median_dom_yoy": -88,
           "median_ppsf": 254.833040422,
           "median_ppsf_yoy": 8.5,
           "sale_to_list": 0.9666666667,
-          "homes_sold": 1.0,
+          "homes_sold": 1,
           "latest_period": "2026-01-31"
         }
       }
@@ -1189,14 +1189,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 445000.0,
+          "median_sale_price": 445000,
           "median_sale_price_yoy": -18.3,
-          "median_dom": 52.0,
-          "median_dom_yoy": 0.0,
+          "median_dom": 52,
+          "median_dom_yoy": 0,
           "median_ppsf": 213.347921225,
-          "median_ppsf_yoy": -4.0,
+          "median_ppsf_yoy": -4,
           "sale_to_list": 0.9952693864,
-          "homes_sold": 7.0,
+          "homes_sold": 7,
           "latest_period": "2026-01-31"
         }
       }
@@ -1242,14 +1242,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 451000.0,
+          "median_sale_price": 451000,
           "median_sale_price_yoy": 23.4,
-          "median_dom": 53.0,
-          "median_dom_yoy": -20.0,
+          "median_dom": 53,
+          "median_dom_yoy": -20,
           "median_ppsf": 225.5,
           "median_ppsf_yoy": 24.3,
           "sale_to_list": 1.001849195,
-          "homes_sold": 11.0,
+          "homes_sold": 11,
           "latest_period": "2026-01-31"
         }
       }
@@ -1295,14 +1295,14 @@
           "zori_yoy_pct": -0.1
         },
         "redfin": {
-          "median_sale_price": 365000.0,
+          "median_sale_price": 365000,
           "median_sale_price_yoy": 31.5,
-          "median_dom": 67.0,
-          "median_dom_yoy": 14.0,
+          "median_dom": 67,
+          "median_dom_yoy": 14,
           "median_ppsf": 187.5,
           "median_ppsf_yoy": 9.6,
           "sale_to_list": 0.9818913492,
-          "homes_sold": 21.0,
+          "homes_sold": 21,
           "latest_period": "2026-01-31"
         }
       }
@@ -1344,18 +1344,18 @@
         "zillow": {
           "zhvi": 361844.5657417276,
           "zhvi_yoy_pct": 4.5,
-          "zori": 1100.0,
+          "zori": 1100,
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 312325.0,
+          "median_sale_price": 312325,
           "median_sale_price_yoy": -19.9,
-          "median_dom": 53.0,
-          "median_dom_yoy": 7.0,
+          "median_dom": 53,
+          "median_dom_yoy": 7,
           "median_ppsf": 197.176452716,
           "median_ppsf_yoy": 4.3,
           "sale_to_list": 0.9845943905,
-          "homes_sold": 8.0,
+          "homes_sold": 8,
           "latest_period": "2026-01-31"
         }
       }
@@ -1401,14 +1401,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 430000.0,
+          "median_sale_price": 430000,
           "median_sale_price_yoy": 5.5,
-          "median_dom": 51.0,
-          "median_dom_yoy": -51.0,
+          "median_dom": 51,
+          "median_dom_yoy": -51,
           "median_ppsf": 220.361509835,
           "median_ppsf_yoy": 10.1,
           "sale_to_list": 1.000785767,
-          "homes_sold": 5.0,
+          "homes_sold": 5,
           "latest_period": "2026-01-31"
         }
       }
@@ -1454,14 +1454,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 585000.0,
+          "median_sale_price": 585000,
           "median_sale_price_yoy": 27.6,
-          "median_dom": 66.0,
-          "median_dom_yoy": -10.0,
+          "median_dom": 66,
+          "median_dom_yoy": -10,
           "median_ppsf": 210.886806056,
           "median_ppsf_yoy": 26.5,
           "sale_to_list": 0.9913793103,
-          "homes_sold": 3.0,
+          "homes_sold": 3,
           "latest_period": "2026-01-31"
         }
       }
@@ -1507,14 +1507,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 320000.0,
+          "median_sale_price": 320000,
           "median_sale_price_yoy": 8.5,
-          "median_dom": 77.0,
-          "median_dom_yoy": -19.0,
+          "median_dom": 77,
+          "median_dom_yoy": -19,
           "median_ppsf": 214.477211796,
           "median_ppsf_yoy": 14.2,
           "sale_to_list": 0.9966433778,
-          "homes_sold": 7.0,
+          "homes_sold": 7,
           "latest_period": "2026-01-31"
         }
       }
@@ -1560,14 +1560,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 708500.0,
+          "median_sale_price": 708500,
           "median_sale_price_yoy": 102.4,
-          "median_dom": 70.0,
-          "median_dom_yoy": 22.0,
+          "median_dom": 70,
+          "median_dom_yoy": 22,
           "median_ppsf": 255.986895745,
-          "median_ppsf_yoy": 39.0,
+          "median_ppsf_yoy": 39,
           "sale_to_list": 0.9850822684,
-          "homes_sold": 8.0,
+          "homes_sold": 8,
           "latest_period": "2026-01-31"
         }
       }
@@ -1613,14 +1613,14 @@
           "zori_yoy_pct": 7.3
         },
         "redfin": {
-          "median_sale_price": 371000.0,
+          "median_sale_price": 371000,
           "median_sale_price_yoy": 14.2,
-          "median_dom": 70.0,
-          "median_dom_yoy": 16.0,
+          "median_dom": 70,
+          "median_dom_yoy": 16,
           "median_ppsf": 194.42532691,
           "median_ppsf_yoy": -1.7,
           "sale_to_list": 0.9887164496,
-          "homes_sold": 39.0,
+          "homes_sold": 39,
           "latest_period": "2026-01-31"
         }
       }
@@ -1666,14 +1666,14 @@
           "zori_yoy_pct": 0.2
         },
         "redfin": {
-          "median_sale_price": 458500.0,
+          "median_sale_price": 458500,
           "median_sale_price_yoy": 6.6,
-          "median_dom": 66.0,
-          "median_dom_yoy": 2.0,
+          "median_dom": 66,
+          "median_dom_yoy": 2,
           "median_ppsf": 206.964796795,
           "median_ppsf_yoy": -2.5,
           "sale_to_list": 0.9863452049,
-          "homes_sold": 12.0,
+          "homes_sold": 12,
           "latest_period": "2026-01-31"
         }
       }
@@ -1719,14 +1719,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 375000.0,
+          "median_sale_price": 375000,
           "median_sale_price_yoy": -3.8,
-          "median_dom": 42.0,
-          "median_dom_yoy": -9.0,
+          "median_dom": 42,
+          "median_dom_yoy": -9,
           "median_ppsf": 226.039783002,
           "median_ppsf_yoy": 1.4,
           "sale_to_list": 0.994118535,
-          "homes_sold": 25.0,
+          "homes_sold": 25,
           "latest_period": "2026-01-31"
         }
       }
@@ -1761,7 +1761,7 @@
       "api_data": {
         "census": {
           "population": 38963,
-          "median_age": 42.0,
+          "median_age": 42,
           "median_household_income": 98460,
           "source_year": "2023"
         },
@@ -1772,14 +1772,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 391500.0,
+          "median_sale_price": 391500,
           "median_sale_price_yoy": -5.7,
-          "median_dom": 73.0,
-          "median_dom_yoy": 8.0,
+          "median_dom": 73,
+          "median_dom_yoy": 8,
           "median_ppsf": 233.950455166,
           "median_ppsf_yoy": -1.6,
           "sale_to_list": 1.00219975,
-          "homes_sold": 22.0,
+          "homes_sold": 22,
           "latest_period": "2026-01-31"
         }
       }
@@ -1825,14 +1825,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 524900.0,
+          "median_sale_price": 524900,
           "median_sale_price_yoy": -9.5,
-          "median_dom": 79.0,
-          "median_dom_yoy": 25.0,
+          "median_dom": 79,
+          "median_dom_yoy": 25,
           "median_ppsf": 252.598652551,
           "median_ppsf_yoy": 3.1,
           "sale_to_list": 0.9874702528,
-          "homes_sold": 9.0,
+          "homes_sold": 9,
           "latest_period": "2026-01-31"
         }
       }
@@ -1874,18 +1874,18 @@
         "zillow": {
           "zhvi": 519154.41456266,
           "zhvi_yoy_pct": 5.9,
-          "zori": 1537.0,
+          "zori": 1537,
           "zori_yoy_pct": 2.7
         },
         "redfin": {
-          "median_sale_price": 538000.0,
+          "median_sale_price": 538000,
           "median_sale_price_yoy": 8.6,
-          "median_dom": 66.0,
-          "median_dom_yoy": -8.0,
+          "median_dom": 66,
+          "median_dom_yoy": -8,
           "median_ppsf": 279.166666667,
           "median_ppsf_yoy": 24.3,
           "sale_to_list": 1.002650789,
-          "homes_sold": 25.0,
+          "homes_sold": 25,
           "latest_period": "2026-01-31"
         }
       }
@@ -1926,19 +1926,19 @@
         },
         "zillow": {
           "zhvi": 496222.2063702719,
-          "zhvi_yoy_pct": 6.0,
+          "zhvi_yoy_pct": 6,
           "zori": null,
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 416000.0,
+          "median_sale_price": 416000,
           "median_sale_price_yoy": -29.7,
-          "median_dom": 79.0,
-          "median_dom_yoy": 22.0,
+          "median_dom": 79,
+          "median_dom_yoy": 22,
           "median_ppsf": 215.327717413,
           "median_ppsf_yoy": -12.4,
           "sale_to_list": 0.990270643,
-          "homes_sold": 8.0,
+          "homes_sold": 8,
           "latest_period": "2026-01-31"
         }
       }
@@ -1984,14 +1984,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 668000.0,
+          "median_sale_price": 668000,
           "median_sale_price_yoy": 82.3,
-          "median_dom": 54.0,
-          "median_dom_yoy": -29.0,
+          "median_dom": 54,
+          "median_dom_yoy": -29,
           "median_ppsf": 256.192738378,
           "median_ppsf_yoy": -3.8,
           "sale_to_list": 0.9992875001,
-          "homes_sold": 7.0,
+          "homes_sold": 7,
           "latest_period": "2026-01-31"
         }
       }
@@ -2037,14 +2037,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 710000.0,
+          "median_sale_price": 710000,
           "median_sale_price_yoy": 13.6,
-          "median_dom": 66.0,
-          "median_dom_yoy": 3.0,
+          "median_dom": 66,
+          "median_dom_yoy": 3,
           "median_ppsf": 230.807086614,
-          "median_ppsf_yoy": 6.0,
+          "median_ppsf_yoy": 6,
           "sale_to_list": 0.9812243939,
-          "homes_sold": 5.0,
+          "homes_sold": 5,
           "latest_period": "2026-01-31"
         }
       }
@@ -2079,7 +2079,7 @@
       "api_data": {
         "census": {
           "population": 8411,
-          "median_age": 39.0,
+          "median_age": 39,
           "median_household_income": 96096,
           "source_year": "2023"
         },
@@ -2090,14 +2090,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 545000.0,
+          "median_sale_price": 545000,
           "median_sale_price_yoy": 15.1,
-          "median_dom": 96.0,
-          "median_dom_yoy": 54.0,
+          "median_dom": 96,
+          "median_dom_yoy": 54,
           "median_ppsf": 239.803625378,
           "median_ppsf_yoy": -0.1,
           "sale_to_list": 0.9812174818,
-          "homes_sold": 7.0,
+          "homes_sold": 7,
           "latest_period": "2026-01-31"
         }
       }
@@ -2143,14 +2143,14 @@
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 465100.0,
+          "median_sale_price": 465100,
           "median_sale_price_yoy": -21.8,
-          "median_dom": 51.0,
-          "median_dom_yoy": -20.0,
+          "median_dom": 51,
+          "median_dom_yoy": -20,
           "median_ppsf": 282.653324647,
           "median_ppsf_yoy": 15.7,
           "sale_to_list": 1.005975938,
-          "homes_sold": 6.0,
+          "homes_sold": 6,
           "latest_period": "2026-01-31"
         }
       }
@@ -2193,19 +2193,602 @@
         "zillow": {
           "zhvi": 640826.4758285008,
           "zhvi_yoy_pct": 5.9,
-          "zori": 3810.0,
+          "zori": 3810,
           "zori_yoy_pct": null
         },
         "redfin": {
-          "median_sale_price": 356500.0,
+          "median_sale_price": 356500,
           "median_sale_price_yoy": 1.9,
-          "median_dom": 91.0,
-          "median_dom_yoy": 52.0,
+          "median_dom": 91,
+          "median_dom_yoy": 52,
           "median_ppsf": 200.845070423,
           "median_ppsf_yoy": 12.2,
           "sale_to_list": 0.9723944566,
-          "homes_sold": 5.0,
+          "homes_sold": 5,
           "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "bayside",
+      "display_name": "Bayside",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "4,398 (2023 est.)",
+        "median_age": "44.8 years",
+        "median_household_income": "$144,500",
+        "median_home_price": "$519,881 (Zillow Home Value Index, +4.5% YoY)",
+        "average_rent": "$1,175/month",
+        "typical_home_style": "Mid-century ranch, split-level, Colonial Revival, Cape Cod, contemporary; generous lots with mature trees; lakefront estates on the bluff",
+        "school_district": "Maple Dale-Indian Hill School District (K-8) -- ranked #1 public middle school in Wisconsin by Niche; Nicolet Union High School (9-12) -- Niche grade A, 97% graduation rate"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$445,000 median; -31.5% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "52 days (down 34 days YoY) (Redfin)",
+        "price_per_sqft": "$231 (-0.6% YoY) (Redfin)",
+        "market_competitiveness": "Competitive (Redfin). Average sale-to-list ratio: 1.002. 4 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#NorthShoreExclusive",
+        "#TopRatedSchools",
+        "#LakeMichiganLiving",
+        "#NatureLover",
+        "#UpscaleSuburban"
+      ],
+      "lifestyle_summary": "If you want an upscale, nature-wrapped retreat on Milwaukee's North Shore with top-rated schools and a quick commute downtown, Bayside is your address. If lazy Sunday mornings hiking the Schlitz Audubon trails and evenings on a spacious lot beneath mature oaks sound like your idea of home, you will thrive here. If you value community without pretension -- Fourth of July parades, fall festivals, and neighbors who actually know each other -- Bayside delivers. If you are a family or professional seeking the best public education in southeastern Wisconsin paired with Lake Michigan proximity, this village checks every box.",
+      "api_data": {
+        "census": {
+          "population": 4398,
+          "median_age": 44.8,
+          "median_household_income": 144500,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 519881.2241703438,
+          "zhvi_yoy_pct": 4.5,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 445000,
+          "median_sale_price_yoy": -31.5,
+          "median_dom": 52,
+          "median_dom_yoy": -34,
+          "median_ppsf": 230.709574505,
+          "median_ppsf_yoy": -0.6,
+          "sale_to_list": 1.001898526,
+          "homes_sold": 4,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "west_milwaukee",
+      "display_name": "West Milwaukee",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "4,064 (2023 est.)",
+        "median_age": "36.4 years",
+        "median_household_income": "$48,976",
+        "median_home_price": "$241,457 (Zillow Home Value Index, +0.9% YoY)",
+        "average_rent": "$711/month",
+        "typical_home_style": "Milwaukee-style bungalows, Tudor homes, Colonial Revival, Cape Cod, small ramblers; compact lots reflecting working-class industrial origins",
+        "school_district": "West Allis-West Milwaukee School District -- Niche grade C+; Meets Expectations on Wisconsin accountability; 6th most diverse district in Wisconsin; Dottke High School 97.4% graduation rate"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$267,700 median; +24.5% YoY; (Redfin, period ending 2025-12-31)",
+        "avg_days_on_market": "53 days (up 50 days YoY) (Redfin)",
+        "price_per_sqft": "$167 (-6.6% YoY) (Redfin)",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 0.990. 4 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#AffordableEntry",
+        "#UrbanSuburbanMix",
+        "#BrewersFanZone",
+        "#FirstTimeBuyer",
+        "#CommuterFriendly"
+      ],
+      "lifestyle_summary": "If you are looking for an affordable, no-nonsense village where you can own a charming bungalow, walk to a dozen restaurants, and be at your downtown Milwaukee desk in 10 minutes, West Milwaukee delivers. If you love baseball, the roar of the crowd at American Family Field is practically in your backyard, and the State Fair is a short walk away. If you value diversity, convenience, and an honest working-class community that has reinvented itself from smokestacks to storefronts, you will feel right at home. If you are a first-time buyer or investor seeking real value in Milwaukee County with excellent highway access and transit options, this village is hard to beat.",
+      "api_data": {
+        "census": {
+          "population": 4064,
+          "median_age": 36.4,
+          "median_household_income": 48976,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 241457.21606647025,
+          "zhvi_yoy_pct": 0.9,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 267700,
+          "median_sale_price_yoy": 24.5,
+          "median_dom": 53,
+          "median_dom_yoy": 50,
+          "median_ppsf": 167.494280809,
+          "median_ppsf_yoy": -6.6,
+          "sale_to_list": 0.9902532072,
+          "homes_sold": 4,
+          "latest_period": "2025-12-31"
+        }
+      }
+    },
+    {
+      "id": "fredonia",
+      "display_name": "Fredonia",
+      "county": "ozaukee",
+      "quick_snapshot": {
+        "population": "2,382 (2023 est.)",
+        "median_age": "36.4 years",
+        "median_household_income": "$86,442",
+        "median_home_price": "$390,328 (Zillow Home Value Index, +5.1% YoY)",
+        "average_rent": "$1,617/month",
+        "typical_home_style": "Historic 19th-century settler homes, midcentury ranch, Cape Cod, Colonial; newer subdivisions with custom builds; some properties include hobby-farm or equestrian acreage",
+        "school_district": "Northern Ozaukee School District -- above-average rating; average testing ranking 8/10 (top 30% in Wisconsin); 90-94% graduation rate; Ozaukee High School"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$395,000 median; +33.9% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "47 days (up 13 days YoY) (Redfin)",
+        "price_per_sqft": "$231 (+24.8% YoY) (Redfin)",
+        "market_competitiveness": "Low volume market (Redfin). Average sale-to-list ratio: 0.990. 1 home sold in latest period"
+      },
+      "quiz_tags": [
+        "#SmallTownLiving",
+        "#RuralCharm",
+        "#FamilyFriendly",
+        "#HistoricHeritage",
+        "#CountryAcreage"
+      ],
+      "lifestyle_summary": "If you want a safe, family-rooted village where your kids attend above-average schools and your backyard might border open farmland, Fredonia delivers that rural Ozaukee County lifestyle without sacrificing access to Milwaukee. If you appreciate historic character -- this is literally the birthplace of Flag Day -- and a community where neighbors wave from their porches and festivals bring everyone to Main Street, you will feel right at home. If a 35-minute I-43 commute is a fair trade for affordable acreage, low crime, and a close-knit community built on Luxembourger and German heritage, Fredonia is worth a serious look. If you have been searching for a place that balances small-town charm with modern convenience, this village checks every box.",
+      "api_data": {
+        "census": {
+          "population": 2382,
+          "median_age": 36.4,
+          "median_household_income": 86442,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 390328.21528522816,
+          "zhvi_yoy_pct": 5.1,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 395000,
+          "median_sale_price_yoy": 33.9,
+          "median_dom": 47,
+          "median_dom_yoy": 13,
+          "median_ppsf": 231.129315389,
+          "median_ppsf_yoy": 24.8,
+          "sale_to_list": 0.9899749373,
+          "homes_sold": 1,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "butler",
+      "display_name": "Butler",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "2,003 (2023 est.)",
+        "median_age": "45.0 years",
+        "median_household_income": "$55,577",
+        "median_home_price": "$271,531 (Zillow Home Value Index, +1.0% YoY)",
+        "average_rent": "$1,069/month",
+        "typical_home_style": "Mid-century ranch, Cape Cod, split-level from the 1950s-1970s; modest, affordable housing stock reflecting working-class roots",
+        "school_district": "Hamilton School District -- Niche grade A, ranked #12 Best School Districts in Wisconsin; 5,119 students; 16:1 student-teacher ratio"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$275,000 median; +25.0% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "23 days (down 5 days YoY) (Redfin)",
+        "price_per_sqft": "$163 (-4.5% YoY) (Redfin)",
+        "market_competitiveness": "Competitive (Redfin). Average sale-to-list ratio: 1.100. 1 home sold in latest period"
+      },
+      "quiz_tags": [
+        "#AffordableSuburb",
+        "#BlueCollarCharm",
+        "#FirstTimeBuyer",
+        "#ShortCommute",
+        "#SmallTownGrit"
+      ],
+      "lifestyle_summary": "If you want affordable Waukesha County living with access to a top-rated school district, Butler delivers without the premium price tag. You will enjoy a tight-knit, unpretentious community where neighbors know each other and Friday fish fry at the Butler Inn is a weekly tradition. Your commute to Milwaukee or Brookfield is among the shortest in the county, and Frontier Park along the Menomonee River is your backyard retreat. Butler is proof that you do not need a six-figure income to enjoy suburban Wisconsin living at its most genuine.",
+      "api_data": {
+        "census": {
+          "population": 2003,
+          "median_age": 45,
+          "median_household_income": 55577,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 271530.7752330397,
+          "zhvi_yoy_pct": 1,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 275000,
+          "median_sale_price_yoy": 25,
+          "median_dom": 23,
+          "median_dom_yoy": -5,
+          "median_ppsf": 162.529550827,
+          "median_ppsf_yoy": -4.5,
+          "sale_to_list": 1.1,
+          "homes_sold": 1,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "chenequa",
+      "display_name": "Chenequa",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "817 (2023 est.)",
+        "median_age": "58.8 years",
+        "median_household_income": "$250,001+",
+        "median_home_price": "~$2,600,000 (estimated; no Zillow ZHVI available for this market)",
+        "average_rent": "N/A (no rental market; exclusively owner-occupied single-family homes)",
+        "typical_home_style": "Lakefront estates, custom-built luxury homes, historic mansions from Milwaukee and Chicago industrialists; Colonial Revival, Craftsman lake homes, modern custom builds on multi-acre wooded lots",
+        "school_district": "Arrowhead Union High School District (Hartland) -- Niche grade A, ranked #11 Best Public High School in Wisconsin; 3rd of 426 districts statewide by SchoolDigger"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$1,285,000 median; +670.8% YoY (low volume / single sale); (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "17 days (up 13 days YoY) (Redfin)",
+        "price_per_sqft": "$1,027 (Redfin)",
+        "market_competitiveness": "Ultra-low volume market (Redfin). Average sale-to-list ratio: 1.000. 1 home sold in latest period"
+      },
+      "quiz_tags": [
+        "#LakefrontEstate",
+        "#UltraLuxury",
+        "#PineLakePrestige",
+        "#OldMoneyElegance",
+        "#PrivateParadise"
+      ],
+      "lifestyle_summary": "If you have earned a place among Wisconsin's elite and desire a lakefront estate surrounded by centuries-old trees and pristine water, Chenequa is your sanctuary. You will wake to the morning mist rising off Pine Lake, send your children to Arrowhead -- one of the top high schools in the state -- and enjoy absolute privacy on your own terms. This is not a place of commercial bustle; it is a community built on land stewardship, generational legacy, and the quiet confidence that comes with owning one of the most coveted addresses in the Midwest. If Pine Lake living is the dream, Chenequa is the only address.",
+      "api_data": {
+        "census": {
+          "population": 817,
+          "median_age": 58.8,
+          "median_household_income": 250001,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": null,
+          "zhvi_yoy_pct": null,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 1285000,
+          "median_sale_price_yoy": 670.8,
+          "median_dom": 17,
+          "median_dom_yoy": 13,
+          "median_ppsf": 1027.178257394,
+          "median_ppsf_yoy": 571,
+          "sale_to_list": 1,
+          "homes_sold": 1,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "dousman",
+      "display_name": "Dousman",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "2,043 (2023 est.)",
+        "median_age": "44.3 years",
+        "median_household_income": "$87,011",
+        "median_home_price": "$467,196 (Zillow Home Value Index, +6.0% YoY)",
+        "average_rent": "$1,485/month",
+        "typical_home_style": "Updated family homes, three-bedroom ranches, historic homesteads, newer construction in subdivisions; waterfront properties with upscale amenities along nearby lakes",
+        "school_district": "Kettle Moraine School District -- Niche grade A; Kettle Moraine High School recognized as National Blue Ribbon School; KM Middle School GreatSchools 10/10; innovative personalized learning approach"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$500,000 median; +35.1% YoY (low volume); (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "133 days (up 113 days YoY) (Redfin)",
+        "price_per_sqft": "$435 (+52.8% YoY) (Redfin)",
+        "market_competitiveness": "Low volume market (Redfin). Average sale-to-list ratio: 1.000. 1 home sold in latest period"
+      },
+      "quiz_tags": [
+        "#TrailTown",
+        "#BlueRibbonSchools",
+        "#RuralCharm",
+        "#KettleMoraineLife",
+        "#SmallTownLiving"
+      ],
+      "lifestyle_summary": "If you want your children in one of Wisconsin's best school districts while living in a village where the annual frog-jumping competition is the social event of the summer, Dousman is your kind of place. You will bike the Glacial Drumlin Trail from your front door, hike Lapham Peak on weekends, and enjoy farm-to-table dinners at a converted bank building on Main Street. This is rural Waukesha County at its most authentic -- no pretense, just good schools, great trails, and a community that still waves from the front porch. If you want Lake Country access without Lake Country prices, Dousman delivers.",
+      "api_data": {
+        "census": {
+          "population": 2043,
+          "median_age": 44.3,
+          "median_household_income": 87011,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 467195.9281027515,
+          "zhvi_yoy_pct": 6,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 500000,
+          "median_sale_price_yoy": 35.1,
+          "median_dom": 133,
+          "median_dom_yoy": 113,
+          "median_ppsf": 434.782608696,
+          "median_ppsf_yoy": 52.8,
+          "sale_to_list": 1,
+          "homes_sold": 1,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "eagle",
+      "display_name": "Eagle",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "2,016 (2023 est.)",
+        "median_age": "41.0 years",
+        "median_household_income": "$109,545",
+        "median_home_price": "$508,559 (Zillow Home Value Index, +6.6% YoY)",
+        "average_rent": "$736/month",
+        "typical_home_style": "Contemporary builds, rustic country homes, custom homes on wooded lots adjoining Kettle Moraine State Forest; condos in the $300,000s; larger acreage properties",
+        "school_district": "Palmyra-Eagle Area School District -- Niche grade B; 543 students (PK-12); 10:1 student-teacher ratio. Some residents have access to Kettle Moraine School District (Niche grade A)"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$405,000 median; -5.8% YoY; (Redfin, period ending 2025-12-31)",
+        "avg_days_on_market": "28 days (down 19 days YoY) (Redfin)",
+        "price_per_sqft": "$209 (+1.7% YoY) (Redfin)",
+        "market_competitiveness": "Low volume market (Redfin). Average sale-to-list ratio: 1.026. 1 home sold in latest period"
+      },
+      "quiz_tags": [
+        "#KettleMoraineLife",
+        "#OutdoorAdventurer",
+        "#HistoricWisconsin",
+        "#ForestLiving",
+        "#RuralEscape"
+      ],
+      "lifestyle_summary": "If you want to live where the forest meets your front yard and Wisconsin history comes alive on your Saturday morning visit to Old World Wisconsin, Eagle is your haven. You will hike and ride horses through nearly 30,000 acres of Kettle Moraine trails, attend Kettle Moraine Days every June, and enjoy a cost of living that keeps more money in your pocket. Eagle is for the buyer who measures quality of life in trail miles, not traffic lights. If you crave wilderness access paired with the charm of a small Wisconsin village, look no further.",
+      "api_data": {
+        "census": {
+          "population": 2016,
+          "median_age": 41,
+          "median_household_income": 109545,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 508559.3237066024,
+          "zhvi_yoy_pct": 6.6,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 405000,
+          "median_sale_price_yoy": -5.8,
+          "median_dom": 28,
+          "median_dom_yoy": -19,
+          "median_ppsf": 209.302325581,
+          "median_ppsf_yoy": 1.7,
+          "sale_to_list": 1.025576095,
+          "homes_sold": 1,
+          "latest_period": "2025-12-31"
+        }
+      }
+    },
+    {
+      "id": "lac_la_belle",
+      "display_name": "Lac La Belle",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "277 (2023 est.)",
+        "median_age": "54.8 years",
+        "median_household_income": "$206,250",
+        "median_home_price": "~$2,100,000 (estimated; no Zillow ZHVI available for this market)",
+        "average_rent": "N/A (no rental market; exclusively owner-occupied single-family homes)",
+        "typical_home_style": "Historic Victorian mansions from the 1870s lakefront resort era, custom-built luxury homes, contemporary architectural residences; single-family only (no multi-family zoning); minimum lot sizes enforced",
+        "school_district": "Oconomowoc Area School District -- Niche grade A-, ranked #21 Best School Districts in Wisconsin; 4,951 students; 13:1 student-teacher ratio"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$849,999 median; -58.9% YoY (ultra-low volume); (Redfin, period ending 2025-10-31)",
+        "avg_days_on_market": "38 days (down 2 days YoY) (Redfin)",
+        "price_per_sqft": "$304 (-60.0% YoY) (Redfin)",
+        "market_competitiveness": "Ultra-low volume market (Redfin). Average sale-to-list ratio: 1.000. 1 home sold in latest period"
+      },
+      "quiz_tags": [
+        "#LakefrontLiving",
+        "#HiddenGem",
+        "#LuxuryLakehouse",
+        "#BoatToBreakfast",
+        "#LakeCountryElite"
+      ],
+      "lifestyle_summary": "If your ideal Saturday involves waking up lakeside, kayaking across crystal-clear water, then boating to downtown Oconomowoc for brunch, Lac La Belle is the life you have been imagining. You will own one of fewer than 300 homes in a community so exclusive that most Wisconsinites do not even know it exists, yet you are only 40 minutes from Milwaukee and your children attend excellent Oconomowoc schools. This is Lake Country living at its most intimate -- where sea planes occasionally land on your lake and the fireworks over the summer boat parade are your private show. If you have been searching for lakefront luxury with a resort-town soul, Lac La Belle is the answer.",
+      "api_data": {
+        "census": {
+          "population": 277,
+          "median_age": 54.8,
+          "median_household_income": 206250,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": null,
+          "zhvi_yoy_pct": null,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 849999,
+          "median_sale_price_yoy": -58.9,
+          "median_dom": 38,
+          "median_dom_yoy": -2,
+          "median_ppsf": 303.571071429,
+          "median_ppsf_yoy": -60,
+          "sale_to_list": 1,
+          "homes_sold": 1,
+          "latest_period": "2025-10-31"
+        }
+      }
+    },
+    {
+      "id": "lannon",
+      "display_name": "Lannon",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "1,475 (2023 est.)",
+        "median_age": "41.9 years",
+        "median_household_income": "$79,191",
+        "median_home_price": "$489,604 (Zillow Home Value Index, -2.3% YoY)",
+        "average_rent": "N/A (limited rental inventory)",
+        "typical_home_style": "Mid-century ranches, bi-levels, newer construction in subdivisions like Bella Vista Estates; many homes feature Lannon Stone (locally quarried dolomite limestone); fastest-growing municipality in Wisconsin (62% growth in four years)",
+        "school_district": "Menomonee Falls School District -- Niche grade A, ranked #29 Best School Districts in Wisconsin; 3,928 students (PK-12); 15:1 student-teacher ratio"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$313,500 median; +23.0% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "97 days (up 31 days YoY) (Redfin)",
+        "price_per_sqft": "$203 (-11.9% YoY) (Redfin)",
+        "market_competitiveness": "Somewhat competitive (Redfin). Average sale-to-list ratio: 0.984. 3 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#QuarryCountry",
+        "#FastestGrowing",
+        "#BuglineTrail",
+        "#StoneHeritage",
+        "#SuburbanRuralMix"
+      ],
+      "lifestyle_summary": "If you want to live in one of Wisconsin's fastest-growing villages, walk the Bugline Trail through historic quarry country, and own a home built from the same stone that built Milwaukee, Lannon has a character you will not find anywhere else. You will send your kids to top-rated Menomonee Falls schools, kayak a quarry lake surrounded by maple woods, and be downtown Milwaukee in under 30 minutes. Lannon is where blue-collar heritage meets new-construction ambition in a village that is writing its next chapter right now. If you want to be part of a community on the rise, Lannon is the place.",
+      "api_data": {
+        "census": {
+          "population": 1475,
+          "median_age": 41.9,
+          "median_household_income": 79191,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 489604.3368566001,
+          "zhvi_yoy_pct": -2.3,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 313500,
+          "median_sale_price_yoy": 23,
+          "median_dom": 97,
+          "median_dom_yoy": 31,
+          "median_ppsf": 203.333333333,
+          "median_ppsf_yoy": -11.9,
+          "sale_to_list": 0.9839061499,
+          "homes_sold": 3,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "north_prairie",
+      "display_name": "North Prairie",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "2,514 (2023 est.)",
+        "median_age": "40.6 years",
+        "median_household_income": "$148,780",
+        "median_home_price": "$464,272 (Zillow Home Value Index, +6.9% YoY)",
+        "average_rent": "N/A (very limited rental market; overwhelmingly owner-occupied single-family homes)",
+        "typical_home_style": "Midcentury ranch-style, early-1900s bungalows, upscale newer subdivisions with spacious lots; custom-built Craftsman-style homes on multi-acre parcels with natural fireplaces, open-concept floor plans, and high ceilings",
+        "school_district": "Mukwonago Area School District -- Niche grade A, ranked #41 in Wisconsin; 4,918 students (PK-12); 15:1 student-teacher ratio; 97% graduation rate. Some portions also access Kettle Moraine School District (Niche grade A)"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$515,000 median; +9.2% YoY; (Redfin, period ending 2025-12-31)",
+        "avg_days_on_market": "52 days (down 66 days YoY) (Redfin)",
+        "price_per_sqft": "$206 (+17.4% YoY) (Redfin)",
+        "market_competitiveness": "Competitive (Redfin). Average sale-to-list ratio: 1.019. 3 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#FamilyFirst",
+        "#UpscaleRural",
+        "#TopSchools",
+        "#SafeHaven",
+        "#GolfAndTrails"
+      ],
+      "lifestyle_summary": "If you want to raise your family in a village that ranks safer than 98.8% of Wisconsin communities, with a 97% high school graduation rate and an 18-hole golf course down the road, North Prairie is the quiet achiever of Waukesha County. You will live on acreage where deer cross your yard at dusk, your kids will play youth sports at Village Park, and your neighbors will show up to HarvestFest with homemade pies. North Prairie does not advertise itself, but the families who find it rarely leave. If you value space, safety, and schools above all else, this is your village.",
+      "api_data": {
+        "census": {
+          "population": 2514,
+          "median_age": 40.6,
+          "median_household_income": 148780,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 464271.9578546454,
+          "zhvi_yoy_pct": 6.9,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 515000,
+          "median_sale_price_yoy": 9.2,
+          "median_dom": 52,
+          "median_dom_yoy": -66,
+          "median_ppsf": 205.547300644,
+          "median_ppsf_yoy": 17.4,
+          "sale_to_list": 1.018527969,
+          "homes_sold": 3,
+          "latest_period": "2025-12-31"
+        }
+      }
+    },
+    {
+      "id": "newburg",
+      "display_name": "Newburg",
+      "county": "washington",
+      "quick_snapshot": {
+        "population": "1,285 (2023 est.)",
+        "median_age": "39.3 years",
+        "median_household_income": "$71,786",
+        "median_home_price": "$330,155 (Zillow Home Value Index, +1.1% YoY)",
+        "average_rent": "$1,089/month",
+        "typical_home_style": "Older homes with historic character from 1840s settlement era, midcentury ranches, newer Craftsman-style construction; new-build subdivisions; side-by-side condominiums for lower-maintenance living",
+        "school_district": "West Bend School District -- Niche grade B+, ranked #3 in Washington County; 5,591 students; 15:1 student-teacher ratio; math proficiency 53%, reading proficiency 45%"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$342,411 median; -13.3% YoY; (Redfin, period ending 2025-12-31)",
+        "avg_days_on_market": "60 days (up 19 days YoY) (Redfin)",
+        "price_per_sqft": "$231 (-6.5% YoY) (Redfin)",
+        "market_competitiveness": "Low volume market (Redfin). Average sale-to-list ratio: 0.988. 2 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#RiversideVillage",
+        "#NatureLovers",
+        "#SmallTownLiving",
+        "#AffordableEntry",
+        "#CommunitySpirit"
+      ],
+      "lifestyle_summary": "If you are drawn to a small riverside village where the Milwaukee River is your backyard playground and 485 acres of nature trails at Riveredge are practically next door, Newburg offers a lifestyle that larger suburbs simply cannot replicate. If you value a volunteer-driven community where the annual Firemen's Picnic is the social event of the year and everyone knows your name at the local Speakeasy, this is your kind of town. If you need access to solid schools and steady employment in West Bend's manufacturing and healthcare sectors while keeping your cost of entry below Ozaukee County prices, Newburg strikes that balance. If escaping the noise for a place where your morning view is river mist rising through the trees sounds like home, put Newburg on your short list.",
+      "api_data": {
+        "census": {
+          "population": 1285,
+          "median_age": 39.3,
+          "median_household_income": 71786,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 330155.087992931,
+          "zhvi_yoy_pct": 1.1,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 342411,
+          "median_sale_price_yoy": -13.3,
+          "median_dom": 60,
+          "median_dom_yoy": 19,
+          "median_ppsf": 230.759744085,
+          "median_ppsf_yoy": -6.5,
+          "sale_to_list": 0.988181408,
+          "homes_sold": 2,
+          "latest_period": "2025-12-31"
         }
       }
     }
