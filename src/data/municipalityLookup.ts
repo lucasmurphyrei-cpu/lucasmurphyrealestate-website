@@ -29,9 +29,9 @@ const COUNTY_SLUG_TO_KEY: Record<string, string> = {
 // Key = "county-slug/simple-slug", Value = profile id to look up
 const SLUG_ALIASES: Record<string, string> = {
   "milwaukee-county/milwaukee": "milwaukee",           // display_name: "Milwaukee (City Proper)"
-  "waukesha-county/brookfield": "brookfield_city",     // display_name: "Brookfield (City)"
+  "waukesha-county/brookfield": "brookfield",          // display_name: "Brookfield (City)"
   "waukesha-county/pewaukee": "pewaukee",               // display_name: "Pewaukee (City/Village)"
-  "waukesha-county/waukesha": "city_of_waukesha",      // display_name: "City of Waukesha"
+  "waukesha-county/waukesha": "waukesha",              // display_name: "City of Waukesha"
 };
 
 // Pre-build lookup maps at module load
