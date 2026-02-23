@@ -1,10 +1,10 @@
 {
   "meta": {
-    "exported_at": "2026-02-22T19:47:10.766091",
+    "exported_at": "2026-02-23T13:34:47.619464",
     "source": "County Neighborhood Profiles",
     "version": "1.0",
     "counties": 4,
-    "total_municipalities": 53
+    "total_municipalities": 59
   },
   "municipalities": [
     {
@@ -2789,6 +2789,324 @@
           "sale_to_list": 0.988181408,
           "homes_sold": 2,
           "latest_period": "2025-12-31"
+        }
+      }
+    },
+    {
+      "id": "cudahy",
+      "display_name": "Cudahy",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "17,964 (2023 est.)",
+        "median_age": "42.3 years",
+        "median_household_income": "$66,717",
+        "median_home_price": "$269,405 (Zillow Home Value Index, +5.1% YoY)",
+        "average_rent": "$1,260/month",
+        "typical_home_style": "Pre-war bungalows, midcentury ranch, Colonial Revival, duplexes; compact lots on gridded sidewalk-lined streets reflecting early-20th-century company-town origins; lakefront properties on the bluff command premiums",
+        "school_district": "Cudahy School District -- Niche grade B-; 7 schools serving ~2,150 students; 13:1 student-teacher ratio; Cudahy High School is the sole public high school"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$246,200 median; -6.0% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "31 days (down 18 days YoY) (Redfin)",
+        "price_per_sqft": "$190 (+15.4% YoY) (Redfin)",
+        "market_competitiveness": "Competitive (Redfin). Average sale-to-list ratio: 1.029. 8 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#LakefrontValue",
+        "#FirstTimeBuyer",
+        "#BlueCollarPride",
+        "#ShortCommute",
+        "#HiddenGem"
+      ],
+      "lifestyle_summary": "If you want Lake Michigan living at a fraction of what North Shore communities charge -- 132 acres of blufftop parkland, beach access, and the Oak Leaf Trail outside your door -- Cudahy is the best-kept secret on Milwaukee's south side. You will commute to downtown in 15 minutes, grab pizza at a neighborhood institution that has been serving since 1982, and walk your dog along bluffs with panoramic lake views. This is a genuine company town built by meatpackers that still works for a living, where your dollar stretches further and the community pride is real. If you are a first-time buyer, investor, or anyone who values lakefront access without the lakefront price tag, Cudahy delivers.",
+      "api_data": {
+        "census": {
+          "population": 17964,
+          "median_age": 42.3,
+          "median_household_income": 66717,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 269405.2867426919,
+          "zhvi_yoy_pct": 5.1,
+          "zori": 1260.0,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 246200.0,
+          "median_sale_price_yoy": -6.0,
+          "median_dom": 31.0,
+          "median_dom_yoy": -18.0,
+          "median_ppsf": 189.758064516,
+          "median_ppsf_yoy": 15.4,
+          "sale_to_list": 1.029203342,
+          "homes_sold": 8.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "hales_corners",
+      "display_name": "Hales Corners",
+      "county": "milwaukee",
+      "quick_snapshot": {
+        "population": "7,627 (2023 est.)",
+        "median_age": "38.0 years",
+        "median_household_income": "$88,068",
+        "median_home_price": "$379,166 (Zillow Home Value Index, +7.6% YoY)",
+        "average_rent": "N/A (limited rental inventory; predominantly owner-occupied single-family homes)",
+        "typical_home_style": "1950s ranch (most prevalent), Cape Cod, Colonial Revival, bi-level; generous lots with mature trees; some newer construction in infill subdivisions",
+        "school_district": "Whitnall School District -- Niche grade B+; ranked #90 in Wisconsin; Whitnall High School ranked #12 in Milwaukee County public high schools; private option: St. Mary Parish School (K-8)"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$380,500 median; +8.9% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "51 days (down 7 days YoY) (Redfin)",
+        "price_per_sqft": "$204 (+6.9% YoY) (Redfin)",
+        "market_competitiveness": "Competitive (Redfin). Average sale-to-list ratio: 1.017. 4 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#NatureRich",
+        "#BotanicalBeauty",
+        "#FamilySuburb",
+        "#ParkLifestyle",
+        "#AffordableSuburb"
+      ],
+      "lifestyle_summary": "If you want a safe, nature-rich Milwaukee suburb where the county's largest park is your backyard and a world-class botanical garden hosts one of the region's most spectacular fall festivals, Hales Corners is your village. You will walk trails through 220 acres of prairies and wetlands at Wehr Nature Center, golf a historic course beneath towering oaks, and be downtown Milwaukee in 15 minutes. The Fourth of July celebration here is an all-day affair with two parades, bed races, and fireworks, and Friday fish fry at Clifford's has been a tradition since 1959. If you are priced out of Waukesha County but want the suburban feel, the nature access, and the genuine community spirit, Hales Corners delivers all of it at Milwaukee County prices.",
+      "api_data": {
+        "census": {
+          "population": 7627,
+          "median_age": 38.0,
+          "median_household_income": 88068,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 379165.9401732024,
+          "zhvi_yoy_pct": 7.6,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 380500.0,
+          "median_sale_price_yoy": 8.9,
+          "median_dom": 51.0,
+          "median_dom_yoy": -7.0,
+          "median_ppsf": 203.843910359,
+          "median_ppsf_yoy": 6.9,
+          "sale_to_list": 1.017196375,
+          "homes_sold": 4.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "big_bend",
+      "display_name": "Big Bend",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "1,311 (2023 est.)",
+        "median_age": "43.1 years",
+        "median_household_income": "$136,042",
+        "median_home_price": "$378,471 (Zillow Home Value Index, +5.3% YoY)",
+        "average_rent": "N/A (very limited rental market; predominantly owner-occupied single-family homes)",
+        "typical_home_style": "Ranch-style homes (most common), updated two-story homes in newer subdivisions, larger-lot properties maintaining rural character; modest village core with historic buildings dating to 1837 settlement",
+        "school_district": "Mukwonago Area School District -- Niche grade A-; ranked #41 in Wisconsin; Big Bend Elementary rated A- (#112 in WI); Mukwonago High School Niche grade B+; 60% proficient in math, 59% in reading"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$515,000 median; +82.0% YoY (low volume / single sale); (Redfin, period ending 2025-10-31)",
+        "avg_days_on_market": "57 days (down 26 days YoY) (Redfin)",
+        "price_per_sqft": "$322 (+61.6% YoY) (Redfin)",
+        "market_competitiveness": "Ultra-low volume market (Redfin). Average sale-to-list ratio: 0.981. 1 home sold in latest period"
+      },
+      "quiz_tags": [
+        "#RiverVillage",
+        "#SmallTownAuthentic",
+        "#FoxRiverLife",
+        "#RuralCharm",
+        "#OutdoorAdventurer"
+      ],
+      "lifestyle_summary": "If you want to live in a village where the Fox River bends through your backyard, the annual truck and tractor pull is the social event of the summer, and the world's largest powersports dealer is your neighbor, Big Bend is the real Waukesha County -- no subdivisions, no stoplights, no pretense. Your kids will attend highly rated Mukwonago schools, you will kayak the Fabulous Fox Water Trail from the village park boat launch, and Friday fish fry at the Blue Heron supper club will become your weekly tradition. Big Bend is for buyers who measure quality of life in river miles, not shopping malls. If you crave authentic small-town Wisconsin with easy highway access to Milwaukee, this village has been waiting for you.",
+      "api_data": {
+        "census": {
+          "population": 1311,
+          "median_age": 43.1,
+          "median_household_income": 136042,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 378471.1648605788,
+          "zhvi_yoy_pct": 5.3,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 515000.0,
+          "median_sale_price_yoy": 82.0,
+          "median_dom": 57.0,
+          "median_dom_yoy": -26.0,
+          "median_ppsf": 321.875,
+          "median_ppsf_yoy": 61.6,
+          "sale_to_list": 0.9811392646,
+          "homes_sold": 1.0,
+          "latest_period": "2025-10-31"
+        }
+      }
+    },
+    {
+      "id": "merton",
+      "display_name": "Merton",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "3,495 (2023 est.)",
+        "median_age": "40.4 years",
+        "median_household_income": "$168,661",
+        "median_home_price": "~$595,000 (Redfin median sale; no Zillow ZHVI available for this market)",
+        "average_rent": "N/A (very limited rental market; ~98% owner-occupied single-family homes)",
+        "typical_home_style": "Colonial Revival, New Traditional, custom-built contemporary homes on large wooded lots; midcentury ranch; older farmhouses and cottages along Main Street and lakefronts; median build year 1999",
+        "school_district": "Merton Community School District (K-8) -- Niche grade A; 69% proficient in math, 70% in reading. Arrowhead Union High School (9-12) -- Niche grade A, ranked #10 Best Public High School in Wisconsin, #1 Best High School for Athletes in America"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$595,000 median; +164.4% YoY (low volume); (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "58 days (down 32 days YoY) (Redfin)",
+        "price_per_sqft": "$251 (+73.2% YoY) (Redfin)",
+        "market_competitiveness": "Low volume market (Redfin). Average sale-to-list ratio: 1.020. 2 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#LakeCountryHeart",
+        "#TopSchools",
+        "#BuglineTrail",
+        "#BirdersParadise",
+        "#QuietLuxury"
+      ],
+      "lifestyle_summary": "If you want your children in an A-rated school system that feeds into Arrowhead -- one of the top 10 public high schools in Wisconsin -- while living in a Lake Country village where 136 bird species visit the mill pond and the Bugline Trail runs past your front door, Merton is the quiet center of it all. You will kayak North Lake on Saturday mornings, grab smash burgers at The Millstone on Friday nights, and hike Nashotah Park's 444 glacial acres on Sunday afternoons. Merton does not chase development; it preserves its 19th-century Main Street character while newer custom homes nestle into wooded lots. If you want Lake Country living with top schools and without the commercial build-up, Merton delivers the authentic version.",
+      "api_data": {
+        "census": {
+          "population": 3495,
+          "median_age": 40.4,
+          "median_household_income": 168661,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": null,
+          "zhvi_yoy_pct": null,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 595000.0,
+          "median_sale_price_yoy": 164.4,
+          "median_dom": 58.0,
+          "median_dom_yoy": -32.0,
+          "median_ppsf": 251.465936558,
+          "median_ppsf_yoy": 73.2,
+          "sale_to_list": 1.020456334,
+          "homes_sold": 2.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "nashotah",
+      "display_name": "Nashotah",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "1,272 (2023 est.)",
+        "median_age": "44.0 years",
+        "median_household_income": "$143,750",
+        "median_home_price": "$691,225 (Zillow Home Value Index, +3.2% YoY)",
+        "average_rent": "N/A (very limited rental market; ~84% owner-occupied single-family homes)",
+        "typical_home_style": "Traditional colonials, ranch homes on large wooded lots, custom-built lakefront estates, newer custom construction on 1-3 acre parcels; no dense subdivisions or commercial strips; wide price range from modest ranches to luxury lakefront properties",
+        "school_district": "Lake Country School District (K-8) -- Niche ranked #1 Best Public K-8 School in Wisconsin and #32 in America; 80% proficient in math, 72% in reading. Arrowhead Union High School (9-12) -- Niche grade A, ranked #10 in Wisconsin"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$502,450 median; +6.0% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "46 days (down 41 days YoY) (Redfin)",
+        "price_per_sqft": "$202 (+5.6% YoY) (Redfin)",
+        "market_competitiveness": "Low volume market (Redfin). Average sale-to-list ratio: 0.991. 2 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#LakeCountryHeritage",
+        "#TopSchools",
+        "#SeminaryVillage",
+        "#NatureRetreat",
+        "#HistoricWisconsin"
+      ],
+      "lifestyle_summary": "If you want your children in the #1-ranked K-8 school in Wisconsin, feeding into a top-10 high school, while living where a 180-year-old seminary sits on 365 lakeside acres and Wisconsin's oldest restaurant has been pouring drinks since 1848, Nashotah is a place where heritage and quality of life converge. You will kayak the chain of Nashotah and Nemahbin Lakes, hike 444 acres of glacial parkland in your backyard, and dine at the Red Circle Inn where travelers have gathered for nearly two centuries. This is Lake Country at its most contemplative -- no commercial strips, no big-box stores, just lakes, woodlands, and a community that has deliberately preserved its character since before Wisconsin was a state.",
+      "api_data": {
+        "census": {
+          "population": 1272,
+          "median_age": 44.0,
+          "median_household_income": 143750,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 691224.5733855391,
+          "zhvi_yoy_pct": 3.2,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 502450.0,
+          "median_sale_price_yoy": 6.0,
+          "median_dom": 46.0,
+          "median_dom_yoy": -41.0,
+          "median_ppsf": 202.014061208,
+          "median_ppsf_yoy": 5.6,
+          "sale_to_list": 0.9905732974,
+          "homes_sold": 2.0,
+          "latest_period": "2026-01-31"
+        }
+      }
+    },
+    {
+      "id": "wales",
+      "display_name": "Wales",
+      "county": "waukesha",
+      "quick_snapshot": {
+        "population": "2,915 (2023 est.)",
+        "median_age": "41.9 years",
+        "median_household_income": "$110,804",
+        "median_home_price": "$532,132 (Zillow Home Value Index, +3.4% YoY)",
+        "average_rent": "N/A (very limited rental market; overwhelmingly owner-occupied single-family homes)",
+        "typical_home_style": "Colonial Revival, contemporary/New Traditional builds, ranch and split-level from the 1970s-1980s, custom estate homes in The Legend at Brandybrook; generous lots with rolling terrain and mature trees",
+        "school_district": "Kettle Moraine School District -- Niche grade A, ranked #20 in Wisconsin; innovative charter school model including High School of Health Sciences (Niche grade A+, #1 Charter High School in WI), KM Perform (Arts & Performance), and KM Global (STEM); 59% proficient in math/reading"
+      },
+      "real_estate_trends": {
+        "median_sale_price_yoy": "$509,500 median; -4.8% YoY; (Redfin, period ending 2026-01-31)",
+        "avg_days_on_market": "81 days (down 25 days YoY) (Redfin)",
+        "price_per_sqft": "$270 (+20.2% YoY) (Redfin)",
+        "market_competitiveness": "Moderate (Redfin). Average sale-to-list ratio: 0.964. 6 homes sold in latest period"
+      },
+      "quiz_tags": [
+        "#KettleMoraineGateway",
+        "#TrailConvergence",
+        "#InnovativeSchools",
+        "#WelshHeritage",
+        "#GolfAndNature"
+      ],
+      "lifestyle_summary": "If you want to live where the Glacial Drumlin Trail and the Ice Age Trail converge, Lapham Peak's observation tower offers 360-degree views of glacial Wisconsin, and your children attend a school district with specialized charter options in health sciences, arts, and STEM, Wales is the Kettle Moraine gateway you have been looking for. You will bike 52 miles of paved trail from your front door, attend an art fair that has raised $80,000 for local nonprofits, and live in a Welsh-heritage village where the flag still flies the red dragon. Wales is for buyers who want forest access, trail culture, and innovative schools without sacrificing the 30-minute commute to Milwaukee.",
+      "api_data": {
+        "census": {
+          "population": 2915,
+          "median_age": 41.9,
+          "median_household_income": 110804,
+          "source_year": "2023"
+        },
+        "zillow": {
+          "zhvi": 532132.2698807112,
+          "zhvi_yoy_pct": 3.4,
+          "zori": null,
+          "zori_yoy_pct": null
+        },
+        "redfin": {
+          "median_sale_price": 509500.0,
+          "median_sale_price_yoy": -4.8,
+          "median_dom": 81.0,
+          "median_dom_yoy": -25.0,
+          "median_ppsf": 270.40622111,
+          "median_ppsf_yoy": 20.2,
+          "sale_to_list": 0.9636822075,
+          "homes_sold": 6.0,
+          "latest_period": "2026-01-31"
         }
       }
     }

@@ -1,10 +1,10 @@
 {
   "meta": {
-    "exported_at": "2026-02-22T19:47:10.766091",
+    "exported_at": "2026-02-23T13:34:47.607065",
     "source": "County Neighborhood Profiles",
     "version": "1.0",
     "counties": 4,
-    "total_municipalities": 53
+    "total_municipalities": 59
   },
   "counties": {
     "ozaukee": {
@@ -563,7 +563,7 @@
       "slug": "milwaukee",
       "name": "Milwaukee County",
       "overview": "Milwaukee County is the most densely populated county in Wisconsin and the cultural, economic, and entertainment hub of the southeastern part of the state. Situated on the western shore of Lake Michigan, the county encompasses the City of Milwaukee and 18 surrounding suburbs, offering a diverse range of lifestyles from dense urban living to quiet, wooded estates.\n| Metric | Value |\n|---|---|\n| **Population** | 927,656 (2023 ACS) |\n| **Median Household Income** | $62,118 (2023) |\n| **County Seat** | Milwaukee |\n| **Area** | 242 square miles |\n| **Racial Composition** | White 48.6%, Black 25.6%, Hispanic 11.5%, Asian 4.7%, Two or More Races 6.3% |\n| **Poverty Rate** | 17.5% |\n| **CrimeGrade Overall** | D+ (25th percentile for safety) |\nMilwaukee County is home to a powerful concentration of Fortune 500 companies and major employers across healthcare, finance, manufacturing, and technology:\n- **Northwestern Mutual** -- Financial services headquarters, 7,000+ local employees\n- **Advocate Aurora Health** -- One of the nation's 10 largest nonprofit health systems, 70,000+ employees regionwide\n- **Johnson Controls** -- Global building technology and solutions\n- **Rockwell Automation** -- Industrial automation headquarters\n- **Kohl's Corporation** -- Retail headquarters (Menomonee Falls)\n- **Fiserv** -- Financial technology (Brookfield)\n- **GE Healthcare** -- Medical technology\n- **ManpowerGroup** -- Global staffing and workforce solutions\n- **WEC Energy Group** -- Regional utility\n- **Harley-Davidson** -- Iconic motorcycle manufacturer\n- **Milwaukee Tool** -- Power tools and equipment\n- **Froedtert Health** -- Academic medical center\nMilwaukee County is served by the Milwaukee County Transit System (MCTS), Milwaukee Mitchell International Airport (MKE), Amtrak Hiawatha service to Chicago, and a growing network of bike lanes and the 125-mile Oak Leaf Trail system. Major freeways include I-94, I-43, and I-894/US-45.",
-      "municipality_count": 18,
+      "municipality_count": 20,
       "municipalities": [
         {
           "id": "milwaukee",
@@ -1731,6 +1731,142 @@
               "latest_period": "2025-12-31"
             }
           }
+        },
+        {
+          "id": "cudahy",
+          "display_name": "Cudahy",
+          "county": "milwaukee",
+          "section_number": 19,
+          "quick_snapshot": {
+            "population": "17,964 (2023 est.)",
+            "median_age": "42.3 years",
+            "median_household_income": "$66,717",
+            "median_home_price": "$269,405 (Zillow Home Value Index, +5.1% YoY)",
+            "average_rent": "$1,260/month",
+            "typical_home_style": "Pre-war bungalows, midcentury ranch, Colonial Revival, duplexes; compact lots on gridded sidewalk-lined streets reflecting early-20th-century company-town origins; lakefront properties on the bluff command premiums",
+            "school_district": "Cudahy School District -- Niche grade B-; 7 schools serving ~2,150 students; 13:1 student-teacher ratio; Cudahy High School is the sole public high school"
+          },
+          "buyer_lifestyle_fit": {
+            "ideal_buyer": "First-time homebuyers and young families seeking affordable Milwaukee County homeownership with Lake Michigan access. Blue-collar workers employed locally at Smithfield Foods or in south-side manufacturing. Budget-conscious commuters wanting a 15-minute drive to downtown Milwaukee. Investors drawn to solid rental demand and entry-level pricing.",
+            "commute_to_downtown": "Approximately 15 minutes via I-794 / Lake Parkway (~6 miles south of downtown Milwaukee). One of the shortest commutes of any Milwaukee suburb.",
+            "walkability_transportation": "Walk Score approximately 49 (car-dependent, but some errands on foot along Packard and Layton Avenues). Served by MCTS bus Routes 15 (high frequency -- every 15 minutes weekday daytime) and 55. The Oak Leaf Trail runs along the lakefront through Sheridan Park for biking and walking. Gridded streets with sidewalks throughout.",
+            "crime_safety": "Working-class community with crime rates below national averages. Violent crime is 1.84x lower than the national average; property crime is 1.95x lower than the national average. Residents describe Cudahy as safe and close-knit."
+          },
+          "amenities_character": {
+            "community_vibe": "Proud, unpretentious, working-class lakefront community with deep roots in Milwaukee's meatpacking history. Neighbors know each other by name, front porches get used, and local taverns serve as gathering spots. It has the feel of a small town despite sitting just 6 miles from downtown Milwaukee -- with 132 acres of lakefront parkland few suburbs at this price point can match.",
+            "notable_events": "- **Cudahy Classic** (July) -- Wisconsin's longest-running race event (63+ years), held along the scenic Oak Leaf Trail\n- **National Night Out** (August) -- Organized by Cudahy Police Department; over 50 organizations participate with food, activities, and community engagement at the Cudahy Family Library",
+            "proximity_lake_employers": "Direct Lake Michigan frontage -- Sheridan Park provides 132 acres of blufftop lakefront with beach access, panoramic views, and the Oak Leaf Trail. One of the most undervalued lakefront locations in the Milwaukee metro.",
+            "major_employers": "Patrick Cudahy / Smithfield Foods (~1,900 employees, Milwaukee's last meatpacking center), Roadrunner Transportation Systems (headquarters -- trucking and logistics), Lucas-Milhaupt (brazing and metal joining), Superior Health Linens, ACE World Wide (moving and relocation).",
+            "parks_attractions": "**Sheridan Park** -- 132 acres on the Lake Michigan bluff with over a mile of lakefront; hiking/biking trails, playground, swimming pool, fishing pond, picnic pavilions, native plant garden, Oak Leaf Trail access, and beach access via bluff path; donated by the Patrick Cudahy family in 1911\n**Pulaski Park** -- Baseball/softball diamonds, ADA-accessible playground (upgraded 2022), splash pad, and picnic area\n**Kosciuszko Park** -- Features a 1905 sculpture honoring General Thaddeus Kosciuszko, reflecting the city's Polish heritage\n**Oak Leaf Trail** -- 120-mile Milwaukee County multi-use trail system running through Cudahy's lakefront",
+            "restaurants_dining": "- **Papa Luigi's Pizza** (3475 E Layton Ave) -- Cudahy landmark since 1982; traditional Italian cuisine consistently rated among Milwaukee area's best\n- **The Packing House** -- Upscale supper-club-style dining with live jazz; known for Friday perch fish fry and ribeye steaks\n- **Cudahy's Pancake House** -- Beloved breakfast/brunch spot famous for silver dollar pancakes\n- **Cafe 94 Indian Fusion** -- Authentic Indian and fusion cuisine including South Indian specialties\n- **Twisted Plants** -- Plant-based burgers and cauliflower bites"
+          },
+          "real_estate_trends": {
+            "median_sale_price_yoy": "$246,200 median; -6.0% YoY; (Redfin, period ending 2026-01-31)",
+            "avg_days_on_market": "31 days (down 18 days YoY) (Redfin)",
+            "price_per_sqft": "$190 (+15.4% YoY) (Redfin)",
+            "market_competitiveness": "Competitive (Redfin). Average sale-to-list ratio: 1.029. 8 homes sold in latest period"
+          },
+          "lifestyle_summary": "If you want Lake Michigan living at a fraction of what North Shore communities charge -- 132 acres of blufftop parkland, beach access, and the Oak Leaf Trail outside your door -- Cudahy is the best-kept secret on Milwaukee's south side. You will commute to downtown in 15 minutes, grab pizza at a neighborhood institution that has been serving since 1982, and walk your dog along bluffs with panoramic lake views. This is a genuine company town built by meatpackers that still works for a living, where your dollar stretches further and the community pride is real. If you are a first-time buyer, investor, or anyone who values lakefront access without the lakefront price tag, Cudahy delivers.",
+          "quiz_tags": [
+            "#LakefrontValue",
+            "#FirstTimeBuyer",
+            "#BlueCollarPride",
+            "#ShortCommute",
+            "#HiddenGem"
+          ],
+          "api_data": {
+            "census": {
+              "population": 17964,
+              "median_age": 42.3,
+              "median_household_income": 66717,
+              "source_year": "2023"
+            },
+            "zillow": {
+              "zhvi": 269405.2867426919,
+              "zhvi_yoy_pct": 5.1,
+              "zori": 1260.0,
+              "zori_yoy_pct": null
+            },
+            "redfin": {
+              "median_sale_price": 246200.0,
+              "median_sale_price_yoy": -6.0,
+              "median_dom": 31.0,
+              "median_dom_yoy": -18.0,
+              "median_ppsf": 189.758064516,
+              "median_ppsf_yoy": 15.4,
+              "sale_to_list": 1.029203342,
+              "homes_sold": 8.0,
+              "latest_period": "2026-01-31"
+            }
+          }
+        },
+        {
+          "id": "hales_corners",
+          "display_name": "Hales Corners",
+          "county": "milwaukee",
+          "section_number": 20,
+          "quick_snapshot": {
+            "population": "7,627 (2023 est.)",
+            "median_age": "38.0 years",
+            "median_household_income": "$88,068",
+            "median_home_price": "$379,166 (Zillow Home Value Index, +7.6% YoY)",
+            "average_rent": "N/A (limited rental inventory; predominantly owner-occupied single-family homes)",
+            "typical_home_style": "1950s ranch (most prevalent), Cape Cod, Colonial Revival, bi-level; generous lots with mature trees; some newer construction in infill subdivisions",
+            "school_district": "Whitnall School District -- Niche grade B+; ranked #90 in Wisconsin; Whitnall High School ranked #12 in Milwaukee County public high schools; private option: St. Mary Parish School (K-8)"
+          },
+          "buyer_lifestyle_fit": {
+            "ideal_buyer": "Young families seeking a safe, nature-rich suburb with good schools at prices below Waukesha County alternatives. First-time buyers priced out of Brookfield or New Berlin who want a suburban feel with Whitnall Park as their backyard. Nature lovers drawn to Boerner Botanical Gardens, Wehr Nature Center, and the Oak Leaf Trail. Empty nesters and retirees wanting an established neighborhood with community events and low crime.",
+            "commute_to_downtown": "Approximately 15-20 minutes via I-43 North (~14 miles northeast of downtown Milwaukee). The Route 44U UBUS provides express commuter service from the Hales Corners Park & Ride at Highway 100 and Layton Ave.",
+            "walkability_transportation": "Walk Score approximately 30 (car-dependent). The S. 108th Street commercial corridor provides some walkable amenities. MCTS bus service via Route 44U (UBUS express to downtown) and local Routes 28 and 54. The Oak Leaf Trail runs through Whitnall Park connecting to the Root River Parkway and New Berlin Recreation Trail for cycling.",
+            "crime_safety": "Strong safety reputation. Crime index 5x lower than the U.S. average. Violent crime rate is 10.6 vs. the national average of 22.7. Zero reported homicides in the most recent reporting year. Residents describe the village as safe, family-friendly, and well-patrolled."
+          },
+          "amenities_character": {
+            "community_vibe": "A tight-knit village of 7,600 where neighbors recognize each other and local merchants actively support community programs. Hales Corners offers a dense suburban feel with a genuine small-town heart -- families gather for Fourth of July parades, golfers play the historic Whitnall Park course, and nature lovers walk the trails at Wehr Nature Center year-round. Few suburbs of this size can claim a 220-acre nature preserve, a world-class botanical garden, and a historic 18-hole golf course all within their borders.",
+            "notable_events": "- **Fourth of July Celebration** -- Full-day event at Hales Corners Park: Firecracker Four 4-mile run, Children's Parade (9:30 AM), The Big Parade (4:00 PM), bed races, hot dog eating contest, patriotic pet costume contest, live entertainment, and fireworks at dusk\n- **China Lights Festival** (September-November) -- 40+ larger-than-life Chinese lantern displays at Boerner Botanical Gardens with live entertainment, marketplace, and food; one of Milwaukee's most popular fall attractions\n- **Holz Motors Car Show** (July 4) -- Benefits the Hales Corners Lions Club",
+            "proximity_lake_employers": "Not lakefront. Approximately 15 miles inland from Lake Michigan. South Shore Park and Bay View lakefront are 20-25 minutes east via I-894/I-94.",
+            "major_employers": "Holz Motors (family-owned Chevy dealership since 1914, Wisconsin's #1 Chevrolet dealer for 30 consecutive years), Whitnall School District, Milwaukee County Parks (Whitnall Park, Boerner Botanical Gardens, Wehr Nature Center operations). Proximity to employment in downtown Milwaukee (14 mi), Brookfield/New Berlin (10 mi west), and Franklin/Oak Creek (5-10 mi).",
+            "parks_attractions": "**Whitnall Park** -- The largest park in the Milwaukee County Parks system; trails, picnic areas, and extensive green space; home to Boerner Botanical Gardens, Wehr Nature Center, and Whitnall Park Golf Course\n**Boerner Botanical Gardens** -- Oldest nationally recognized public garden in the Great Lakes region (designed 1930s); 12 formal gardens including Rose, Peony, Rock, and Herb gardens; 2-acre Margie's Garden for children; host of the China Lights Festival\n**Wehr Nature Center** -- 220-acre nature preserve with 5 miles of trails through woodland, wetland, prairie, oak savanna, and around Mallard Lake; popular birding destination\n**Whitnall Park Golf Course** -- Historic 18-hole, par-71 course (opened 1932); 6,373 yards with wooded fairways and elevation changes\n**Oak Leaf Trail** -- 125-mile Milwaukee County multi-use trail connecting to the Root River Parkway",
+            "restaurants_dining": "- **Clifford's Supper Club** -- Hales Corners institution since 1959; classic Wisconsin supper club known for Friday Fish Fry\n- **Ann's Italian Restaurant** -- Long-standing local favorite with extensive Italian menu\n- **The Hale House Restaurant Bar & Grill** -- Original Wisconsin-styled food with craft beers and fine wine\n- **Tanpopo Ramen & Sushi** -- Japanese restaurant with ramen and sushi\n- **El Dorado Mexican Street Tacos** -- Mexican cuisine"
+          },
+          "real_estate_trends": {
+            "median_sale_price_yoy": "$380,500 median; +8.9% YoY; (Redfin, period ending 2026-01-31)",
+            "avg_days_on_market": "51 days (down 7 days YoY) (Redfin)",
+            "price_per_sqft": "$204 (+6.9% YoY) (Redfin)",
+            "market_competitiveness": "Competitive (Redfin). Average sale-to-list ratio: 1.017. 4 homes sold in latest period"
+          },
+          "lifestyle_summary": "If you want a safe, nature-rich Milwaukee suburb where the county's largest park is your backyard and a world-class botanical garden hosts one of the region's most spectacular fall festivals, Hales Corners is your village. You will walk trails through 220 acres of prairies and wetlands at Wehr Nature Center, golf a historic course beneath towering oaks, and be downtown Milwaukee in 15 minutes. The Fourth of July celebration here is an all-day affair with two parades, bed races, and fireworks, and Friday fish fry at Clifford's has been a tradition since 1959. If you are priced out of Waukesha County but want the suburban feel, the nature access, and the genuine community spirit, Hales Corners delivers all of it at Milwaukee County prices.",
+          "quiz_tags": [
+            "#NatureRich",
+            "#BotanicalBeauty",
+            "#FamilySuburb",
+            "#ParkLifestyle",
+            "#AffordableSuburb"
+          ],
+          "api_data": {
+            "census": {
+              "population": 7627,
+              "median_age": 38.0,
+              "median_household_income": 88068,
+              "source_year": "2023"
+            },
+            "zillow": {
+              "zhvi": 379165.9401732024,
+              "zhvi_yoy_pct": 7.6,
+              "zori": null,
+              "zori_yoy_pct": null
+            },
+            "redfin": {
+              "median_sale_price": 380500.0,
+              "median_sale_price_yoy": 8.9,
+              "median_dom": 51.0,
+              "median_dom_yoy": -7.0,
+              "median_ppsf": 203.843910359,
+              "median_ppsf_yoy": 6.9,
+              "sale_to_list": 1.017196375,
+              "homes_sold": 4.0,
+              "latest_period": "2026-01-31"
+            }
+          }
         }
       ]
     },
@@ -2277,7 +2413,7 @@
       "slug": "waukesha",
       "name": "Waukesha County",
       "overview": "Waukesha County sits immediately west of Milwaukee County in southeastern Wisconsin and is one of the most desirable residential corridors in the state. With a countywide population exceeding 410,000, the county blends suburban convenience with access to lakes, trails, and highly rated school districts. Waukesha County earns an \"A\" safety grade from CrimeGrade, ranking in the 89th percentile nationally for overall safety and the 93rd percentile for low violent crime. Major employers in the county include Generac, GE HealthCare, Kohl's (headquartered in Menomonee Falls), Johnson Controls, and Rockwell Automation. While the county does not directly border Lake Michigan, residents are approximately 20-35 miles from Milwaukee's lakefront, making day trips and commutes to the shoreline convenient.\nThe county's real estate market remains a seller's market as of late 2025, with a countywide median sale price of $495,000 (up 11.5% year-over-year) and average days on market around 44-49 days.",
-      "municipality_count": 19,
+      "municipality_count": 23,
       "municipalities": [
         {
           "id": "waukesha",
@@ -3554,6 +3690,278 @@
               "sale_to_list": 1.018527969,
               "homes_sold": 3,
               "latest_period": "2025-12-31"
+            }
+          }
+        },
+        {
+          "id": "big_bend",
+          "display_name": "Big Bend",
+          "county": "waukesha",
+          "section_number": 20,
+          "quick_snapshot": {
+            "population": "1,311 (2023 est.)",
+            "median_age": "43.1 years",
+            "median_household_income": "$136,042",
+            "median_home_price": "$378,471 (Zillow Home Value Index, +5.3% YoY)",
+            "average_rent": "N/A (very limited rental market; predominantly owner-occupied single-family homes)",
+            "typical_home_style": "Ranch-style homes (most common), updated two-story homes in newer subdivisions, larger-lot properties maintaining rural character; modest village core with historic buildings dating to 1837 settlement",
+            "school_district": "Mukwonago Area School District -- Niche grade A-; ranked #41 in Wisconsin; Big Bend Elementary rated A- (#112 in WI); Mukwonago High School Niche grade B+; 60% proficient in math, 59% in reading"
+          },
+          "buyer_lifestyle_fit": {
+            "ideal_buyer": "Outdoor enthusiasts drawn to the Fox River for kayaking, canoeing, and fishing. Families seeking top-rated Mukwonago schools with a rural small-town feel. Move-up buyers wanting larger lots and more space than denser suburbs offer. Buyers who value authenticity -- no stoplights, no chain restaurants, just a genuine Wisconsin river village.",
+            "commute_to_downtown": "Approximately 30-35 minutes via WIS 164 North to I-43 North (~22-25 miles southwest of Milwaukee).",
+            "walkability_transportation": "Walk Score 12 (car-dependent). No local bus service. The Fox River Park trail system and access to the Fabulous Fox Water Trail provide recreational connectivity. Daily errands require a vehicle.",
+            "crime_safety": "Very safe. Crime index 4.4x lower than the U.S. average. Violent crime rate of zero per 1,000 residents. Crime fell 45% between 2020 and 2022. The village has maintained its own police department since 1941."
+          },
+          "amenities_character": {
+            "community_vibe": "A tight-knit river village of roughly 1,300 residents nestled at a dramatic bend in the Fox River. Big Bend retains a genuinely rural feel -- farmland, large lots, wooded river corridors -- while sitting just 25 miles from downtown Milwaukee. No stoplights, no chain restaurants, and a population that has hovered around 1,300 for decades. This is Waukesha County before suburbanization.",
+            "notable_events": "- **Rumble by the River** (mid-July) -- Annual truck and tractor pull at Big Bend Village Park; gates at 4pm, pulling at 6pm, live music at 8pm; free and open to all ages\n- **St. Joseph Big Bend FunFest** (mid-July) -- Three-day parish festival with fish fry, chicken dinners, games, bingo, live entertainment, and tractor pulls\n- **Big Bend Super Pull** (early October) -- MTTPA-sanctioned truck and tractor pull; fundraiser for the Big Bend Fire Department",
+            "proximity_lake_employers": "Not lakefront but the Fox River defines the village. The village sits at a dramatic bend where the Fox River shifts course. Big Bend Village Park provides a public boat launch on the Fabulous Fox Water Trail (80 access sites from Waukesha County to Illinois). Fox River Park (257 acres) offers river frontage.",
+            "major_employers": "Road Track and Trail (world's largest pre-owned powersports dealership, headquartered in Big Bend -- 500+ motorcycles, ATVs, and snowmobiles on the floor). Most residents commute to Mukwonago, New Berlin, Waukesha, and Milwaukee/Brookfield (15-30 minutes).",
+            "parks_attractions": "**Big Bend Village Park** -- Main park on the Fox River with playground, boat launch, baseball diamond, picnic shelters, and camping facilities\n**Fox River Park** (Waukesha County) -- 257 acres with paved trails, river frontage, wetlands, oak-hickory woodlands, open meadows; excellent birding and wildflower viewing\n**Cherry Street Park** -- Soccer field and recreation area\n**Hygeia Spring** -- Historic mineral spring connected to the 1893 World's Columbian Exposition in Chicago; still flows today\n**Sibyll Yug Memorial Museum** -- Local history museum with Big Bend and Vernon photographs and artifacts",
+            "restaurants_dining": "- **Blue Heron** -- Iconic Wisconsin supper club known for all-you-can-eat fish fry and family-style fried chicken; a local institution\n- **Kelly's Bleachers Big Bend** -- Sports bar and grill with softball fields, volleyball courts, and a lively atmosphere\n- **Chubby's Cafe** -- Local favorite for casual dining\n- **Crossroads Pizza & Subs** -- Neighborhood pizza and sub shop"
+          },
+          "real_estate_trends": {
+            "median_sale_price_yoy": "$515,000 median; +82.0% YoY (low volume / single sale); (Redfin, period ending 2025-10-31)",
+            "avg_days_on_market": "57 days (down 26 days YoY) (Redfin)",
+            "price_per_sqft": "$322 (+61.6% YoY) (Redfin)",
+            "market_competitiveness": "Ultra-low volume market (Redfin). Average sale-to-list ratio: 0.981. 1 home sold in latest period"
+          },
+          "lifestyle_summary": "If you want to live in a village where the Fox River bends through your backyard, the annual truck and tractor pull is the social event of the summer, and the world's largest powersports dealer is your neighbor, Big Bend is the real Waukesha County -- no subdivisions, no stoplights, no pretense. Your kids will attend highly rated Mukwonago schools, you will kayak the Fabulous Fox Water Trail from the village park boat launch, and Friday fish fry at the Blue Heron supper club will become your weekly tradition. Big Bend is for buyers who measure quality of life in river miles, not shopping malls. If you crave authentic small-town Wisconsin with easy highway access to Milwaukee, this village has been waiting for you.",
+          "quiz_tags": [
+            "#RiverVillage",
+            "#SmallTownAuthentic",
+            "#FoxRiverLife",
+            "#RuralCharm",
+            "#OutdoorAdventurer"
+          ],
+          "api_data": {
+            "census": {
+              "population": 1311,
+              "median_age": 43.1,
+              "median_household_income": 136042,
+              "source_year": "2023"
+            },
+            "zillow": {
+              "zhvi": 378471.1648605788,
+              "zhvi_yoy_pct": 5.3,
+              "zori": null,
+              "zori_yoy_pct": null
+            },
+            "redfin": {
+              "median_sale_price": 515000.0,
+              "median_sale_price_yoy": 82.0,
+              "median_dom": 57.0,
+              "median_dom_yoy": -26.0,
+              "median_ppsf": 321.875,
+              "median_ppsf_yoy": 61.6,
+              "sale_to_list": 0.9811392646,
+              "homes_sold": 1.0,
+              "latest_period": "2025-10-31"
+            }
+          }
+        },
+        {
+          "id": "merton",
+          "display_name": "Merton",
+          "county": "waukesha",
+          "section_number": 21,
+          "quick_snapshot": {
+            "population": "3,495 (2023 est.)",
+            "median_age": "40.4 years",
+            "median_household_income": "$168,661",
+            "median_home_price": "~$595,000 (Redfin median sale; no Zillow ZHVI available for this market)",
+            "average_rent": "N/A (very limited rental market; ~98% owner-occupied single-family homes)",
+            "typical_home_style": "Colonial Revival, New Traditional, custom-built contemporary homes on large wooded lots; midcentury ranch; older farmhouses and cottages along Main Street and lakefronts; median build year 1999",
+            "school_district": "Merton Community School District (K-8) -- Niche grade A; 69% proficient in math, 70% in reading. Arrowhead Union High School (9-12) -- Niche grade A, ranked #10 Best Public High School in Wisconsin, #1 Best High School for Athletes in America"
+          },
+          "buyer_lifestyle_fit": {
+            "ideal_buyer": "Upper-middle-class families prioritizing top-rated schools -- an A-rated K-8 feeding into Arrowhead, ranked #10 in Wisconsin. Lake lifestyle seekers wanting lakefront or lake-adjacent living without resort-town density. Outdoor enthusiasts drawn to the Bugline Trail, Ice Age Trail, Nashotah Park, and multiple lakes. Privacy-minded buyers who want space, large lots, and a community where 98% of housing is owner-occupied.",
+            "commute_to_downtown": "Approximately 40-50 minutes via WI-16 East to I-94 East (~35 miles west of Milwaukee).",
+            "walkability_transportation": "Walk Score 5 (car-dependent). No public transit. However, the Bugline Trail (15.7-mile paved trail from North Lake through Merton to Menomonee Falls) runs directly through the village. The Ice Age National Scenic Trail passes through the Merton/Hartland area for hiking.",
+            "crime_safety": "Safe community consistent with affluent Waukesha County character. Murder rate at 95th percentile for safety. Low-density, owner-occupied residential character contributes to a quiet, secure atmosphere."
+          },
+          "amenities_character": {
+            "community_vibe": "Quiet, close-knit Lake Country village where life revolves around the outdoors, family, and small-town tradition. The old-fashioned Main Street retains original 19th-century buildings alongside a post office, fire department, and two churches -- an authentically unhurried character that newer subdivisions cannot replicate. Residents are drawn to the balance of rural serenity and proximity to amenities in Hartland and Delafield, with lakes, trails, and parkland surrounding them on all sides.",
+            "notable_events": "- **Stone Bank 4th of July Parade** (July 4) -- Longtime tradition in the Town of Merton's Stone Bank area\n- **Merton Community Schools Memorial Day Parade** -- Annual community parade\n- **Family Fall Festival** -- Hosted by Merton Community Schools\n- Nearby Hartland events: **Hometown Celebration** (multi-day with live music, parade, fireworks), **Thursday Night Concert Series** (Nixon Park), **Downtown Tree Lighting** (December)",
+            "proximity_lake_employers": "Heart of Lake Country. The Town/Village of Merton includes or borders North Lake (437 acres, 78 ft deep), Lake Keesus, Moose Lake, Okauchee Lake, Garven Lake, Beaver Lake, and Merton Mill Pond (34 acres). Part of a lake-rich region that also includes nearby Nagawicka Lake, Pine Lake, and Lac La Belle.",
+            "major_employers": "Essential Industries, Inc. (family-owned manufacturer of detergents, waxes, and polymers, founded 1898 -- the longest-running major business in Merton). Most residents commute to GE Healthcare (Waukesha), Kohl's (Menomonee Falls), ProHealth Care (Waukesha), and Milwaukee/Brookfield via I-94.",
+            "parks_attractions": "**Nashotah County Park** -- 444 acres of rolling glacial hills, woodlands, wetlands; trails from 0.1 to 3.3 miles through oak forest, oak savanna, cedar glade, and floating leaf marsh; two lakes; two off-leash dog areas; cross-country skiing\n**Merton Mill Pond** -- 34-acre impoundment on the Bark River with public boat launch; recognized birding hotspot with 136+ species\n**Pollworth Park** -- Ball fields, soccer, pavilion; home of Merton Athletic Association\n**Fireman's Park** -- Playground, baseball/softball, and Bugline Trail corridor\n**Bugline Trail** -- 15.7-mile paved multi-use trail running through the village",
+            "restaurants_dining": "- **The Millstone** (W282 N7149 Main St) -- American gastropub known for smash burgers, unique fries, and phenomenal Friday fish fry\n- **Humdingers Bar & Grill** -- Highly praised fish fry (top-10 in the Waukesha/Milwaukee area); Sunday breakfast burritos; described as a 'hidden gem'\n- **Merton Sub Company** -- Beloved deli open for lunch only; the Italian Sub and 'The Chief' are must-tries; a true local institution\n- **Pink Mocha Cafe** -- Cozy cafe with coffee, homemade food, giant cookies, and waffles"
+          },
+          "real_estate_trends": {
+            "median_sale_price_yoy": "$595,000 median; +164.4% YoY (low volume); (Redfin, period ending 2026-01-31)",
+            "avg_days_on_market": "58 days (down 32 days YoY) (Redfin)",
+            "price_per_sqft": "$251 (+73.2% YoY) (Redfin)",
+            "market_competitiveness": "Low volume market (Redfin). Average sale-to-list ratio: 1.020. 2 homes sold in latest period"
+          },
+          "lifestyle_summary": "If you want your children in an A-rated school system that feeds into Arrowhead -- one of the top 10 public high schools in Wisconsin -- while living in a Lake Country village where 136 bird species visit the mill pond and the Bugline Trail runs past your front door, Merton is the quiet center of it all. You will kayak North Lake on Saturday mornings, grab smash burgers at The Millstone on Friday nights, and hike Nashotah Park's 444 glacial acres on Sunday afternoons. Merton does not chase development; it preserves its 19th-century Main Street character while newer custom homes nestle into wooded lots. If you want Lake Country living with top schools and without the commercial build-up, Merton delivers the authentic version.",
+          "quiz_tags": [
+            "#LakeCountryHeart",
+            "#TopSchools",
+            "#BuglineTrail",
+            "#BirdersParadise",
+            "#QuietLuxury"
+          ],
+          "api_data": {
+            "census": {
+              "population": 3495,
+              "median_age": 40.4,
+              "median_household_income": 168661,
+              "source_year": "2023"
+            },
+            "zillow": {
+              "zhvi": null,
+              "zhvi_yoy_pct": null,
+              "zori": null,
+              "zori_yoy_pct": null
+            },
+            "redfin": {
+              "median_sale_price": 595000.0,
+              "median_sale_price_yoy": 164.4,
+              "median_dom": 58.0,
+              "median_dom_yoy": -32.0,
+              "median_ppsf": 251.465936558,
+              "median_ppsf_yoy": 73.2,
+              "sale_to_list": 1.020456334,
+              "homes_sold": 2.0,
+              "latest_period": "2026-01-31"
+            }
+          }
+        },
+        {
+          "id": "nashotah",
+          "display_name": "Nashotah",
+          "county": "waukesha",
+          "section_number": 22,
+          "quick_snapshot": {
+            "population": "1,272 (2023 est.)",
+            "median_age": "44.0 years",
+            "median_household_income": "$143,750",
+            "median_home_price": "$691,225 (Zillow Home Value Index, +3.2% YoY)",
+            "average_rent": "N/A (very limited rental market; ~84% owner-occupied single-family homes)",
+            "typical_home_style": "Traditional colonials, ranch homes on large wooded lots, custom-built lakefront estates, newer custom construction on 1-3 acre parcels; no dense subdivisions or commercial strips; wide price range from modest ranches to luxury lakefront properties",
+            "school_district": "Lake Country School District (K-8) -- Niche ranked #1 Best Public K-8 School in Wisconsin and #32 in America; 80% proficient in math, 72% in reading. Arrowhead Union High School (9-12) -- Niche grade A, ranked #10 in Wisconsin"
+          },
+          "buyer_lifestyle_fit": {
+            "ideal_buyer": "Families seeking the #1-ranked K-8 school in Wisconsin feeding into a top-10 high school. Nature lovers drawn to 444 acres of Nashotah County Park, the chain of Nashotah/Nemahbin Lakes, and Lake Country trail systems. Milwaukee professionals wanting a rural-suburban retreat with a manageable I-94 commute. Buyers who value privacy, space, and a contemplative community anchored by a 180-year-old seminary.",
+            "commute_to_downtown": "Approximately 35-40 minutes via WI-16 East to I-94 East (~30 miles west of Milwaukee). Waukesha Metro Transit Park & Ride bus service available (~48 minutes).",
+            "walkability_transportation": "Walk Score 3-16 (car-dependent). No local transit. The Lake Country Trail (paved recreational bike trail from Delafield to Oconomowoc) is accessible nearby. Excellent trail connectivity to the Ice Age National Scenic Trail and Glacial Drumlin State Trail.",
+            "crime_safety": "Very safe. Waukesha County is consistently ranked among the safest counties in Wisconsin. The village's small size, residential character, and affluent demographics contribute to virtually no crime. Policed by the Waukesha County Sheriff's Department."
+          },
+          "amenities_character": {
+            "community_vibe": "A quiet, tight-knit village tucked into Lake Country where neighbors know each other and the pace of life is deliberately unhurried. The community blends deep Wisconsin heritage -- anchored by the 180-year-old Nashotah House seminary and Wisconsin's oldest restaurant, the Red Circle Inn (1848) -- with an outdoor-focused lifestyle centered on its lakes, woodlands, and trails. Nashotah is a place for people who value privacy, nature, and community tradition over convenience and commercial development.",
+            "notable_events": "- **Nashotah Day** (summer) -- Village signature festival with live music, craft vendors, kids' activities, and food\n- Nearby: **Oconomowoc Festival of the Arts** (third weekend in August) -- Juried fine art exhibition with 110+ artists; one of the top outdoor art festivals in the Midwest\n- **Oconomowoc Festival Week**, **Fall Fest**, and **Flannel Fest & Chili Cookoff** -- Seasonal celebrations in nearby communities",
+            "proximity_lake_employers": "Heart of Lake Country. Upper Nashotah Lake (131 acres, 53 ft deep, very clear water) and Lower Nashotah Lake (93 acres, 43 ft deep, public boat landing) are within the village. These lakes are part of a chain stretching 3 miles, connected to Upper and Lower Nemahbin Lakes. Grass Lake and Forest Lake are within Nashotah County Park.",
+            "major_employers": "Nashotah House Theological Seminary (founded 1842 -- oldest institution of higher learning in Wisconsin; 365-acre campus). Red Circle Inn (est. 1848 -- Wisconsin's oldest restaurant). Most residents commute to Delafield/Hartland (5-10 min), Waukesha (20 min -- GE Healthcare, ProHealth Care, Generac), and Milwaukee/Brookfield (25-40 min).",
+            "parks_attractions": "**Nashotah County Park** -- 444 acres of rolling glacial hills, woodlands, and grasslands; multiple hiking loops (0.1-3.3 mi); oak forest, oak savanna, cedar glade, floating leaf marsh; boating, fishing, volleyball; two enclosed off-leash dog areas; cross-country skiing, snowshoeing, sledding in winter\n**Nashotah House Seminary campus** -- 365 acres on Upper Nashotah Lake with the Chapel of St. Mary the Virgin (Early English Gothic Revival, begun 1859); on the State Register of Historic Places\n**Lower Nashotah Lake** -- 93 acres with public boat landing; fishing (panfish, bass, northern pike, walleye), kayaking, paddleboarding\n**Lapham Peak State Park** (nearby) -- 1,000+ acres, 45-foot observation tower, Ice Age Trail access",
+            "restaurants_dining": "- **Red Circle Inn** (N44 W33013 Watertown Plank Rd) -- Wisconsin's oldest restaurant (est. 1848); upscale supper club with contemporary American cuisine, steaks, and handcrafted cocktails; originally a Watertown Plank Road stagecoach stop\n- **Nashotah Clubhouse** -- Casual bar and restaurant with wing nights, Friday fish fry, Saturday prime rib, and daily chef specials\n- **Hollywood's Roadhouse Bar & Grill** -- Family bar and grill between Okauchee Lake and Moose Lake\n- Nearby: **Delafield Brewhaus** (award-winning microbrewery, 5 min), **Palmer's Steakhouse** (Hartland, 5 min)"
+          },
+          "real_estate_trends": {
+            "median_sale_price_yoy": "$502,450 median; +6.0% YoY; (Redfin, period ending 2026-01-31)",
+            "avg_days_on_market": "46 days (down 41 days YoY) (Redfin)",
+            "price_per_sqft": "$202 (+5.6% YoY) (Redfin)",
+            "market_competitiveness": "Low volume market (Redfin). Average sale-to-list ratio: 0.991. 2 homes sold in latest period"
+          },
+          "lifestyle_summary": "If you want your children in the #1-ranked K-8 school in Wisconsin, feeding into a top-10 high school, while living where a 180-year-old seminary sits on 365 lakeside acres and Wisconsin's oldest restaurant has been pouring drinks since 1848, Nashotah is a place where heritage and quality of life converge. You will kayak the chain of Nashotah and Nemahbin Lakes, hike 444 acres of glacial parkland in your backyard, and dine at the Red Circle Inn where travelers have gathered for nearly two centuries. This is Lake Country at its most contemplative -- no commercial strips, no big-box stores, just lakes, woodlands, and a community that has deliberately preserved its character since before Wisconsin was a state.",
+          "quiz_tags": [
+            "#LakeCountryHeritage",
+            "#TopSchools",
+            "#SeminaryVillage",
+            "#NatureRetreat",
+            "#HistoricWisconsin"
+          ],
+          "api_data": {
+            "census": {
+              "population": 1272,
+              "median_age": 44.0,
+              "median_household_income": 143750,
+              "source_year": "2023"
+            },
+            "zillow": {
+              "zhvi": 691224.5733855391,
+              "zhvi_yoy_pct": 3.2,
+              "zori": null,
+              "zori_yoy_pct": null
+            },
+            "redfin": {
+              "median_sale_price": 502450.0,
+              "median_sale_price_yoy": 6.0,
+              "median_dom": 46.0,
+              "median_dom_yoy": -41.0,
+              "median_ppsf": 202.014061208,
+              "median_ppsf_yoy": 5.6,
+              "sale_to_list": 0.9905732974,
+              "homes_sold": 2.0,
+              "latest_period": "2026-01-31"
+            }
+          }
+        },
+        {
+          "id": "wales",
+          "display_name": "Wales",
+          "county": "waukesha",
+          "section_number": 23,
+          "quick_snapshot": {
+            "population": "2,915 (2023 est.)",
+            "median_age": "41.9 years",
+            "median_household_income": "$110,804",
+            "median_home_price": "$532,132 (Zillow Home Value Index, +3.4% YoY)",
+            "average_rent": "N/A (very limited rental market; overwhelmingly owner-occupied single-family homes)",
+            "typical_home_style": "Colonial Revival, contemporary/New Traditional builds, ranch and split-level from the 1970s-1980s, custom estate homes in The Legend at Brandybrook; generous lots with rolling terrain and mature trees",
+            "school_district": "Kettle Moraine School District -- Niche grade A, ranked #20 in Wisconsin; innovative charter school model including High School of Health Sciences (Niche grade A+, #1 Charter High School in WI), KM Perform (Arts & Performance), and KM Global (STEM); 59% proficient in math/reading"
+          },
+          "buyer_lifestyle_fit": {
+            "ideal_buyer": "Families seeking an innovative school district with specialized charter options in healthcare, arts, STEM, and global studies. Outdoor enthusiasts drawn to the Glacial Drumlin Trail and Lapham Peak State Forest. Golf and country club lifestyle seekers attracted to The Legend at Brandybrook. Milwaukee professionals wanting a 30-35 minute commute with a rural/suburban feel and Welsh heritage character.",
+            "commute_to_downtown": "Approximately 30-35 minutes via WI-83 North to I-94 East (~28 miles west of Milwaukee). Rush hour adds 10-15 minutes. Waukesha Metro Transit Park & Ride bus service available from Nagawaukee.",
+            "walkability_transportation": "Walk Score approximately 24 (car-dependent). No local transit. However, the Glacial Drumlin State Trail (52-mile paved rail trail) runs directly through Wales with dedicated trailhead parking. The Ice Age National Scenic Trail converges with the Glacial Drumlin near Wales, overlapping for approximately 2 miles -- a rare trail convergence.",
+            "crime_safety": "Safe community. CrimeGrade rating A-; 78th percentile for safety nationally. Low crime rates consistent with the village's affluent, residential character. Violent crime is particularly rare."
+          },
+          "amenities_character": {
+            "community_vibe": "A small, tight-knit village that retains genuine rural charm while offering the conveniences of the greater Waukesha County corridor. Founded by Welsh immigrants in the 1840s, the village flag replicates the Welsh national flag (red dragon on green and white). Neighbors know each other, the pace is slower than suburban sprawl, and proximity to Kettle Moraine's forests and trails gives the community an outdoor-oriented, nature-connected character.",
+            "notable_events": "- **Donna Lexa Memorial Art Fair** (4th Saturday in August) -- Fine arts and crafts fair at Wales Community Park featuring 50+ artists with paintings, pottery, glass, wood, jewelry, photography; live music, children's activities; free admission; has raised over $80,000 for Waukesha County nonprofits\n- **Kettle Moraine High School Band Craft Show** (December) -- Commercial and craft exhibitors, breakfast with Santa\n- Nearby: **Waukesha County Fair** (July) -- Oldest county fair in Wisconsin",
+            "proximity_lake_employers": "Not directly lakefront but in the heart of Lake Country. Kettle Moraine State Forest -- Lapham Peak Unit is directly adjacent. Upper Nemahbin Lake (277 acres, 60 ft deep), Lower Nemahbin Lake, Upper/Middle/Lower Genesee Lakes, and Phantom Lake are all within a few miles.",
+            "major_employers": "Primarily residential. The Legend at Brandybrook (golf/hospitality), Lake Country Fabricators (manufacturing), Wisconsin Wire Works. Most residents commute to GE Healthcare (Waukesha), Generac (Waukesha/Sussex), ProHealth Care/Advocate Aurora, Kohl's (Menomonee Falls), and Milwaukee/Brookfield corridor employers.",
+            "parks_attractions": "**Wales Community Park** -- 75.7 acres; baseball diamonds, soccer fields, basketball court, disc golf course, playgrounds, picnic areas; host of the Donna Lexa Memorial Art Fair\n**Kettle Moraine State Forest -- Lapham Peak Unit** -- 1,000+ acres adjacent to Wales with 17+ miles of trails, 1,223-foot summit with 45-foot observation tower offering 360-degree views, Ice Age Trail access, cross-country skiing\n**Glacial Drumlin State Trail** -- 52-mile paved rail trail with trailhead parking in Wales; connects to Madison area\n**The Legend at Brandybrook** -- Private 54-hole golf club on 428 acres; championship 18-hole course (7,006 yards), two pools, tennis courts, and large clubhouse",
+            "restaurants_dining": "- **Leduc's Frozen Custard** -- Family-friendly institution for burgers, sandwiches, and frozen custard\n- **Sideliners Pub and Grill** -- Popular for lunch and Wisconsin Friday fish fry\n- **Cornerstone Restaurant** -- Local dining staple\n- Nearby: **Belfre Kitchen** (Delafield, 10 min) -- Farm-to-table in a renovated church; **Ella's Public House** (Delafield) -- Craft beer gastropub; **The Union House** (Genesee Depot) -- Historic restaurant with wild game"
+          },
+          "real_estate_trends": {
+            "median_sale_price_yoy": "$509,500 median; -4.8% YoY; (Redfin, period ending 2026-01-31)",
+            "avg_days_on_market": "81 days (down 25 days YoY) (Redfin)",
+            "price_per_sqft": "$270 (+20.2% YoY) (Redfin)",
+            "market_competitiveness": "Moderate (Redfin). Average sale-to-list ratio: 0.964. 6 homes sold in latest period"
+          },
+          "lifestyle_summary": "If you want to live where the Glacial Drumlin Trail and the Ice Age Trail converge, Lapham Peak's observation tower offers 360-degree views of glacial Wisconsin, and your children attend a school district with specialized charter options in health sciences, arts, and STEM, Wales is the Kettle Moraine gateway you have been looking for. You will bike 52 miles of paved trail from your front door, attend an art fair that has raised $80,000 for local nonprofits, and live in a Welsh-heritage village where the flag still flies the red dragon. Wales is for buyers who want forest access, trail culture, and innovative schools without sacrificing the 30-minute commute to Milwaukee.",
+          "quiz_tags": [
+            "#KettleMoraineGateway",
+            "#TrailConvergence",
+            "#InnovativeSchools",
+            "#WelshHeritage",
+            "#GolfAndNature"
+          ],
+          "api_data": {
+            "census": {
+              "population": 2915,
+              "median_age": 41.9,
+              "median_household_income": 110804,
+              "source_year": "2023"
+            },
+            "zillow": {
+              "zhvi": 532132.2698807112,
+              "zhvi_yoy_pct": 3.4,
+              "zori": null,
+              "zori_yoy_pct": null
+            },
+            "redfin": {
+              "median_sale_price": 509500.0,
+              "median_sale_price_yoy": -4.8,
+              "median_dom": 81.0,
+              "median_dom_yoy": -25.0,
+              "median_ppsf": 270.40622111,
+              "median_ppsf_yoy": 20.2,
+              "sale_to_list": 0.9636822075,
+              "homes_sold": 6.0,
+              "latest_period": "2026-01-31"
             }
           }
         }

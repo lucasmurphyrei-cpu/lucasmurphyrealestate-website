@@ -1619,6 +1619,186 @@
         "#AffordableEntry",
         "#CommunitySpirit"
       ]
+    },
+    "cudahy": {
+      "display_name": "Cudahy",
+      "county": "milwaukee",
+      "median_sale_price": 246200,
+      "attributes": {
+        "budget_fit": 5,
+        "home_type_fit": 3,
+        "school_strength": 2,
+        "walkability": 3,
+        "nightlife": 2,
+        "yard_space": 2,
+        "historic_charm": 3,
+        "new_construction": 1,
+        "commute_downtown": 5,
+        "lake_access": 5,
+        "safety_reputation": 3,
+        "price_psf": 5,
+        "tax_sensitivity": 3,
+        "hoa_condo_friendly": 2,
+        "family_friendly": 3,
+        "investor_friendly": 4
+      },
+      "tags": [
+        "#LakefrontValue",
+        "#FirstTimeBuyer",
+        "#BlueCollarPride",
+        "#ShortCommute",
+        "#HiddenGem"
+      ]
+    },
+    "hales_corners": {
+      "display_name": "Hales Corners",
+      "county": "milwaukee",
+      "median_sale_price": 380500,
+      "attributes": {
+        "budget_fit": 3,
+        "home_type_fit": 2,
+        "school_strength": 3,
+        "walkability": 2,
+        "nightlife": 1,
+        "yard_space": 4,
+        "historic_charm": 2,
+        "new_construction": 1,
+        "commute_downtown": 4,
+        "lake_access": 1,
+        "safety_reputation": 4,
+        "price_psf": 3,
+        "tax_sensitivity": 3,
+        "hoa_condo_friendly": 1,
+        "family_friendly": 4,
+        "investor_friendly": 2
+      },
+      "tags": [
+        "#NatureRich",
+        "#BotanicalBeauty",
+        "#FamilySuburb",
+        "#ParkLifestyle",
+        "#AffordableSuburb"
+      ]
+    },
+    "big_bend": {
+      "display_name": "Big Bend",
+      "county": "waukesha",
+      "median_sale_price": 515000,
+      "attributes": {
+        "budget_fit": 2,
+        "home_type_fit": 2,
+        "school_strength": 4,
+        "walkability": 0,
+        "nightlife": 0,
+        "yard_space": 5,
+        "historic_charm": 3,
+        "new_construction": 1,
+        "commute_downtown": 2,
+        "lake_access": 2,
+        "safety_reputation": 5,
+        "price_psf": 2,
+        "tax_sensitivity": 3,
+        "hoa_condo_friendly": 0,
+        "family_friendly": 4,
+        "investor_friendly": 1
+      },
+      "tags": [
+        "#RiverVillage",
+        "#SmallTownAuthentic",
+        "#FoxRiverLife",
+        "#RuralCharm",
+        "#OutdoorAdventurer"
+      ]
+    },
+    "merton": {
+      "display_name": "Merton",
+      "county": "waukesha",
+      "median_sale_price": 595000,
+      "attributes": {
+        "budget_fit": 1,
+        "home_type_fit": 1,
+        "school_strength": 5,
+        "walkability": 0,
+        "nightlife": 0,
+        "yard_space": 5,
+        "historic_charm": 3,
+        "new_construction": 3,
+        "commute_downtown": 2,
+        "lake_access": 4,
+        "safety_reputation": 4,
+        "price_psf": 2,
+        "tax_sensitivity": 2,
+        "hoa_condo_friendly": 0,
+        "family_friendly": 5,
+        "investor_friendly": 0
+      },
+      "tags": [
+        "#LakeCountryHeart",
+        "#TopSchools",
+        "#BuglineTrail",
+        "#BirdersParadise",
+        "#QuietLuxury"
+      ]
+    },
+    "nashotah": {
+      "display_name": "Nashotah",
+      "county": "waukesha",
+      "median_sale_price": 502450,
+      "attributes": {
+        "budget_fit": 1,
+        "home_type_fit": 1,
+        "school_strength": 5,
+        "walkability": 0,
+        "nightlife": 0,
+        "yard_space": 5,
+        "historic_charm": 5,
+        "new_construction": 2,
+        "commute_downtown": 2,
+        "lake_access": 5,
+        "safety_reputation": 5,
+        "price_psf": 3,
+        "tax_sensitivity": 2,
+        "hoa_condo_friendly": 0,
+        "family_friendly": 4,
+        "investor_friendly": 0
+      },
+      "tags": [
+        "#LakeCountryHeritage",
+        "#TopSchools",
+        "#SeminaryVillage",
+        "#NatureRetreat",
+        "#HistoricWisconsin"
+      ]
+    },
+    "wales": {
+      "display_name": "Wales",
+      "county": "waukesha",
+      "median_sale_price": 509500,
+      "attributes": {
+        "budget_fit": 2,
+        "home_type_fit": 2,
+        "school_strength": 4,
+        "walkability": 1,
+        "nightlife": 0,
+        "yard_space": 4,
+        "historic_charm": 3,
+        "new_construction": 3,
+        "commute_downtown": 3,
+        "lake_access": 2,
+        "safety_reputation": 4,
+        "price_psf": 2,
+        "tax_sensitivity": 3,
+        "hoa_condo_friendly": 0,
+        "family_friendly": 4,
+        "investor_friendly": 1
+      },
+      "tags": [
+        "#KettleMoraineGateway",
+        "#TrailConvergence",
+        "#InnovativeSchools",
+        "#WelshHeritage",
+        "#GolfAndNature"
+      ]
     }
   }
 }
