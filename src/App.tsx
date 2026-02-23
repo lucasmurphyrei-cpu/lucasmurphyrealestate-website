@@ -13,6 +13,7 @@ import FirstTimeCondoBuyers from "./pages/guides/FirstTimeCondoBuyers";
 import Relocation from "./pages/guides/Relocation";
 import HouseHacking from "./pages/guides/HouseHacking";
 import Investors from "./pages/guides/Investors";
+import GuidesOverview from "./pages/guides/GuidesOverview";
 import ContractorsPage from "./pages/resources/Contractors";
 import LendersPage from "./pages/resources/Lenders";
 import HomeInspectorsPage from "./pages/resources/HomeInspectors";
@@ -46,6 +47,7 @@ const App = () => (
             <Route element={<LayoutRoute />}>
               <Route path="/" element={<Index />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/guides" element={<GuidesOverview />} />
               <Route path="/guides/first-time-home-buyers" element={<FirstTimeHomeBuyers />} />
               <Route path="/guides/first-time-condo-buyers" element={<FirstTimeCondoBuyers />} />
               <Route path="/guides/relocation" element={<Relocation />} />
