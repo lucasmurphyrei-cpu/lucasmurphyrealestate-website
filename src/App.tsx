@@ -18,6 +18,7 @@ import ContractorsPage from "./pages/resources/Contractors";
 import LendersPage from "./pages/resources/Lenders";
 import HomeInspectorsPage from "./pages/resources/HomeInspectors";
 import HomeInsurancePage from "./pages/resources/HomeInsurance";
+import SeasonalGuidePage from "./pages/resources/SeasonalGuide";
 import MortgageCalculator from "./pages/tools/MortgageCalculator";
 import BudgetSpreadsheet from "./pages/tools/BudgetSpreadsheet";
 import HouseHackCalculator from "./pages/tools/HouseHackCalculator";
@@ -57,6 +58,7 @@ const App = () => (
               <Route path="/resources/lenders" element={<LendersPage />} />
               <Route path="/resources/home-inspectors" element={<HomeInspectorsPage />} />
               <Route path="/resources/home-insurance" element={<HomeInsurancePage />} />
+              <Route path="/resources/seasonal-guide" element={<SeasonalGuidePage />} />
               <Route path="/tools/mortgage-calculator" element={<MortgageCalculator />} />
               <Route path="/tools/budget-spreadsheet" element={<BudgetSpreadsheet />} />
               <Route path="/tools/house-hack-calculator" element={<HouseHackCalculator />} />

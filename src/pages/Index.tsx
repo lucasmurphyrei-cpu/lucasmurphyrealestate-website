@@ -24,6 +24,7 @@ const resources = [
   { icon: Landmark, label: "Lenders", to: "/resources/lenders" },
   { icon: Search, label: "Home Inspectors", to: "/resources/home-inspectors" },
   { icon: Shield, label: "Home Insurance", to: "/resources/home-insurance" },
+  { icon: CalendarDays, label: "Seasonal Guide", to: "/resources/seasonal-guide" },
 ];
 
 const statIconMap: Record<string, React.ElementType> = {
