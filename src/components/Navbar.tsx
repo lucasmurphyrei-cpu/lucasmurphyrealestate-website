@@ -7,7 +7,7 @@ import expLogo from "@/assets/exp-logo.png";
 
 const guides = [
   { label: "First-Time Home Buyers", to: "https://www.lucasmurphyrealestate.com/guide/first-time-homebuyer-metro-milwaukee", newTab: true },
-  { label: "First-Time Condo Buyers", to: "/guides/first-time-condo-buyers" },
+  { label: "First-Time Condo Buyers", to: "https://www.lucasmurphyrealestate.com/guide/condominium-ownership-guide", newTab: true },
   { label: "Relocation Guide", to: "/guides/relocation" },
   { label: "House Hacking", to: "/guides/house-hacking" },
   { label: "Investors", to: "/guides/investors" },

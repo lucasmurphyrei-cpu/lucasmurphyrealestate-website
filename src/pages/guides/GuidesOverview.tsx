@@ -21,8 +21,9 @@ const guides = [
   {
     icon: Building2,
     label: "First-Time Condo Buyers",
-    to: "/guides/first-time-condo-buyers",
+    to: "https://www.lucasmurphyrealestate.com/guide/condominium-ownership-guide",
     desc: "Navigate condo purchasing with confidence — HOA fees, assessments, financing, and what to look for.",
+    external: true,
     status: "available" as const,
   },
   {

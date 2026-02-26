@@ -15,7 +15,7 @@ const Footer = () => (
           <h4 className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">Guides</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li><a href="https://www.lucasmurphyrealestate.com/guide/first-time-homebuyer-metro-milwaukee" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">First-Time Home Buyers</a></li>
-            <li><Link to="/guides/first-time-condo-buyers" className="hover:text-primary transition-colors">First-Time Condo Buyers</Link></li>
+            <li><a href="https://www.lucasmurphyrealestate.com/guide/condominium-ownership-guide" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">First-Time Condo Buyers</a></li>
             <li><Link to="/guides/relocation" className="hover:text-primary transition-colors">Relocation Guide</Link></li>
             <li><Link to="/guides/house-hacking" className="hover:text-primary transition-colors">House Hacking</Link></li>
             <li><Link to="/guides/investors" className="hover:text-primary transition-colors">Investors</Link></li>
