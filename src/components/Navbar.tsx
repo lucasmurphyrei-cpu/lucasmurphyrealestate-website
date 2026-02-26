@@ -54,12 +54,13 @@ const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
-      <nav className="container flex h-24 items-center justify-between">
-        <Link to="/" className="flex flex-col">
-          <span className="font-display text-sm font-bold text-foreground whitespace-nowrap">
-            Lucas Murphy | eXp Realty — Provision Properties Core Team
+      <nav className="container flex h-16 md:h-24 items-center justify-between gap-3">
+        <Link to="/" className="flex min-w-0 flex-col">
+          <span className="font-display text-sm font-bold text-foreground md:whitespace-nowrap">
+            <span className="hidden md:inline">Lucas Murphy | eXp Realty — Provision Properties Core Team</span>
+            <span className="md:hidden">Lucas Murphy | eXp Realty</span>
           </span>
-          <span className="text-xs text-muted-foreground">
+          <span className="hidden text-xs text-muted-foreground md:block">
             Phone: <a href="tel:4144581952" className="hover:text-primary">(414) 458-1952</a> | Email: <a href="mailto:lucasmurphyrei@gmail.com" className="hover:text-primary">lucasmurphyrei@gmail.com</a>
           </span>
         </Link>
@@ -123,7 +124,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile toggle */}
-        <button className="md:hidden text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
+        <button className="md:hidden shrink-0 text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
           {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </nav>
