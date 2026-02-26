@@ -1,7 +1,8 @@
 {
   "redirects": [
     { "source": "/guide/first-time-homebuyer-metro-milwaukee", "destination": "https://lucasmurphyrealestate-main.vercel.app/guide/first-time-homebuyer-metro-milwaukee", "permanent": false },
-    { "source": "/guide/condominium-ownership-guide", "destination": "https://lucasmurphyrealestate-main.vercel.app/guide/condominium-ownership-guide", "permanent": false }
+    { "source": "/guide/condominium-ownership-guide", "destination": "https://lucasmurphyrealestate-main.vercel.app/guide/condominium-ownership-guide", "permanent": false },
+    { "source": "/guide/relocation-guide-metro-milwaukee", "destination": "https://lucasmurphyrealestate-main.vercel.app/guide/relocation-guide-metro-milwaukee", "permanent": false }
   ],
   "rewrites": [
     { "source": "/((?!assets|favicon|robots|sitemap|Your_First).*)", "destination": "/index.html" }
