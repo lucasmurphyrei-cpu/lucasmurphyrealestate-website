@@ -38,9 +38,10 @@ const buyerGuides: Guide[] = [
   {
     icon: MapPin,
     label: "Relocation Guide",
-    to: "/guides/relocation",
+    to: "https://www.lucasmurphyrealestate.com/guide/relocation-guide-metro-milwaukee",
     desc: "Moving to Milwaukee or Waukesha County? Neighborhoods, schools, cost of living, and more.",
-    status: "coming_soon",
+    external: true,
+    status: "available",
   },
 ];
 

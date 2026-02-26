@@ -11,7 +11,7 @@ const guideCategories = [
     items: [
       { label: "First-Time Home Buyers", to: "https://www.lucasmurphyrealestate.com/guide/first-time-homebuyer-metro-milwaukee", newTab: true },
       { label: "First-Time Condo Buyers", to: "https://www.lucasmurphyrealestate.com/guide/condominium-ownership-guide", newTab: true },
-      { label: "Relocation Guide", to: "/guides/relocation" },
+      { label: "Relocation Guide", to: "https://www.lucasmurphyrealestate.com/guide/relocation-guide-metro-milwaukee", newTab: true },
     ],
   },
   {

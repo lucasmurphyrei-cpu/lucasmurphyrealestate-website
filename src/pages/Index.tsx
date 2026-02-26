@@ -17,7 +17,7 @@ const guideCategories = [
     items: [
       { icon: Home, label: "First-Time Home Buyers", to: "https://www.lucasmurphyrealestate.com/guide/first-time-homebuyer-metro-milwaukee", desc: "Your complete roadmap to homeownership", newTab: true },
       { icon: Building2, label: "First-Time Condo Buyers", to: "https://www.lucasmurphyrealestate.com/guide/condominium-ownership-guide", desc: "Navigate condo purchasing with confidence", newTab: true },
-      { icon: MapPin, label: "Relocation Guide", to: "/guides/relocation", desc: "Moving to Milwaukee or Waukesha County" },
+      { icon: MapPin, label: "Relocation Guide", to: "https://www.lucasmurphyrealestate.com/guide/relocation-guide-metro-milwaukee", desc: "Moving to Milwaukee or Waukesha County", newTab: true },
     ],
   },
   {
