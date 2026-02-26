@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, CalendarDays, Flower2, Sun, Leaf, Snowflake, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, CalendarDays, Flower2, Sun, Leaf, Snowflake, CheckCircle2, Download } from "lucide-react";
 import { motion } from "framer-motion";
 
 const fadeUp = {
@@ -122,6 +122,17 @@ const SeasonalGuide = () => (
           Owning a home in southeastern Wisconsin means dealing with everything from spring floods to sub-zero winters. This season-by-season checklist will help you stay ahead of costly repairs and keep your home in top shape year-round.
         </p>
       </header>
+
+      <div className="mb-10 flex items-center gap-4 rounded-lg border border-primary/20 bg-primary/5 p-5">
+        <Download className="h-6 w-6 shrink-0 text-primary" />
+        <div className="flex-1">
+          <p className="font-semibold text-foreground">Download the Full Guide</p>
+          <p className="text-sm text-muted-foreground">Save or print this seasonal checklist as a PDF to keep handy at home.</p>
+        </div>
+        <Button asChild size="sm">
+          <a href="/Seasonal-Home-Maintenance-Guide.pdf" download>Download PDF</a>
+        </Button>
+      </div>
 
       <div className="space-y-8">
         {seasons.map((season, i) => (

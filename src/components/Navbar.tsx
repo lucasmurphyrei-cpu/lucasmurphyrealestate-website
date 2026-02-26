@@ -5,13 +5,31 @@ import { Button } from "@/components/ui/button";
 import provisionLogo from "@/assets/provision-logo.png";
 import expLogo from "@/assets/exp-logo.png";
 
-const guides = [
-  { label: "First-Time Home Buyers", to: "https://www.lucasmurphyrealestate.com/guide/first-time-homebuyer-metro-milwaukee", newTab: true },
-  { label: "First-Time Condo Buyers", to: "https://www.lucasmurphyrealestate.com/guide/condominium-ownership-guide", newTab: true },
-  { label: "Relocation Guide", to: "/guides/relocation" },
-  { label: "House Hacking", to: "/guides/house-hacking" },
-  { label: "Investors", to: "/guides/investors" },
+const guideCategories = [
+  {
+    heading: "Buyer Guides",
+    items: [
+      { label: "First-Time Home Buyers", to: "https://www.lucasmurphyrealestate.com/guide/first-time-homebuyer-metro-milwaukee", newTab: true },
+      { label: "First-Time Condo Buyers", to: "https://www.lucasmurphyrealestate.com/guide/condominium-ownership-guide", newTab: true },
+      { label: "Relocation Guide", to: "/guides/relocation" },
+    ],
+  },
+  {
+    heading: "Investor Guides",
+    items: [
+      { label: "House Hacking", to: "/guides/house-hacking" },
+      { label: "Investors", to: "/guides/investors" },
+    ],
+  },
+  {
+    heading: "Seller Guides",
+    items: [
+      { label: "Seller's Guide", to: "/guides/sellers" },
+    ],
+  },
 ];
+
+const guides = guideCategories.flatMap((c) => c.items);
 
 const resources = [
   { label: "Contractors", to: "/resources/contractors" },
@@ -53,17 +71,23 @@ const Navbar = () => {
               Guides <ChevronDown className="h-3 w-3" />
             </button>
             <div className="invisible absolute left-0 top-full min-w-[220px] rounded-md border border-border bg-card p-2 opacity-0 shadow-lg transition-all group-hover:visible group-hover:opacity-100">
-              {guides.map((g) =>
-                "newTab" in g && g.newTab ? (
-                  <a key={g.to} href={g.to} target="_blank" rel="noopener noreferrer" className="block rounded-sm px-3 py-2 text-sm text-foreground transition-colors hover:bg-secondary hover:text-primary">
-                    {g.label}
-                  </a>
-                ) : (
-                  <Link key={g.to} to={g.to} className="block rounded-sm px-3 py-2 text-sm text-foreground transition-colors hover:bg-secondary hover:text-primary">
-                    {g.label}
-                  </Link>
-                )
-              )}
+              {guideCategories.map((cat, ci) => (
+                <div key={cat.heading}>
+                  {ci > 0 && <div className="my-1.5 border-t border-border" />}
+                  <p className="px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">{cat.heading}</p>
+                  {cat.items.map((g) =>
+                    "newTab" in g && g.newTab ? (
+                      <a key={g.to} href={g.to} target="_blank" rel="noopener noreferrer" className="block rounded-sm px-3 py-2 text-sm text-foreground transition-colors hover:bg-secondary hover:text-primary">
+                        {g.label}
+                      </a>
+                    ) : (
+                      <Link key={g.to} to={g.to} className="block rounded-sm px-3 py-2 text-sm text-foreground transition-colors hover:bg-secondary hover:text-primary">
+                        {g.label}
+                      </Link>
+                    )
+                  )}
+                </div>
+              ))}
             </div>
           </div>
           <div className="group relative">

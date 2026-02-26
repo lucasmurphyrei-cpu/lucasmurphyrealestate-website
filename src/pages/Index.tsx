@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Home, Building2, MapPin, TrendingUp, TrendingDown, Minus as MinusIcon, Hammer, Landmark, Search, Shield, ArrowRight, Clock, Percent, CalendarDays, ClipboardList, PlusCircle } from "lucide-react";
+import { Home, Building2, MapPin, TrendingUp, TrendingDown, Minus as MinusIcon, Hammer, Landmark, DollarSign, Search, Shield, ArrowRight, Clock, Percent, CalendarDays, ClipboardList, PlusCircle } from "lucide-react";
 import countyMarketData from "@/data/countyMarketData";
 import { motion } from "framer-motion";
 import milwaukeeSkyline from "@/assets/milwaukee-skyline.jpg";
@@ -11,12 +11,28 @@ const fadeUp = {
   visible: (i: number) => ({ opacity: 1, y: 0, transition: { delay: i * 0.1, duration: 0.5 } }),
 };
 
-const guides = [
-  { icon: Home, label: "First-Time Home Buyers", to: "https://www.lucasmurphyrealestate.com/guide/first-time-homebuyer-metro-milwaukee", desc: "Your complete roadmap to homeownership", newTab: true },
-  { icon: Building2, label: "First-Time Condo Buyers", to: "https://www.lucasmurphyrealestate.com/guide/condominium-ownership-guide", desc: "Navigate condo purchasing with confidence", newTab: true },
-  { icon: MapPin, label: "Relocation Guide", to: "/guides/relocation", desc: "Moving to Milwaukee or Waukesha County" },
-  { icon: TrendingUp, label: "House Hacking", to: "/guides/house-hacking", desc: "Live for free while building equity" },
-  { icon: Landmark, label: "Investors", to: "/guides/investors", desc: "Grow your real estate portfolio" },
+const guideCategories = [
+  {
+    heading: "Buyer Guides",
+    items: [
+      { icon: Home, label: "First-Time Home Buyers", to: "https://www.lucasmurphyrealestate.com/guide/first-time-homebuyer-metro-milwaukee", desc: "Your complete roadmap to homeownership", newTab: true },
+      { icon: Building2, label: "First-Time Condo Buyers", to: "https://www.lucasmurphyrealestate.com/guide/condominium-ownership-guide", desc: "Navigate condo purchasing with confidence", newTab: true },
+      { icon: MapPin, label: "Relocation Guide", to: "/guides/relocation", desc: "Moving to Milwaukee or Waukesha County" },
+    ],
+  },
+  {
+    heading: "Investor Guides",
+    items: [
+      { icon: TrendingUp, label: "House Hacking", to: "/guides/house-hacking", desc: "Live for free while building equity" },
+      { icon: Landmark, label: "Investors", to: "/guides/investors", desc: "Grow your real estate portfolio" },
+    ],
+  },
+  {
+    heading: "Seller Guides",
+    items: [
+      { icon: DollarSign, label: "Seller's Guide", to: "/guides/sellers", desc: "List, price, stage, and sell your home" },
+    ],
+  },
 ];
 
 const resources = [
@@ -110,35 +126,44 @@ const Index = () => {
 
       {/* Guides */}
       <section className="container py-20">
-        <h2 className="font-display text-3xl font-bold md:text-4xl">Buyer & Investor Guides</h2>
+        <h2 className="font-display text-3xl font-bold md:text-4xl">Real Estate Guides</h2>
         <p className="mt-2 text-muted-foreground">In-depth resources to help you make confident real estate decisions.</p>
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {guides.map((g, i) => {
-            const isExternal = g.to.startsWith("http");
-            const opensNewTab = "newTab" in g && g.newTab;
-            const useAnchor = isExternal || opensNewTab;
-            const Wrapper = useAnchor ? "a" : Link;
-            const wrapperProps = useAnchor
-              ? { href: g.to, target: "_blank" as const, rel: "noopener noreferrer" }
-              : { to: g.to };
-            return (
-              <motion.div key={g.to} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-                <Wrapper {...(wrapperProps as any)}>
-                  <Card className="group h-full transition-colors hover:border-primary/40">
-                    <CardContent className="flex flex-col gap-3 p-6">
-                      <g.icon className="h-8 w-8 text-primary" />
-                      <h3 className="font-display text-lg font-semibold">{g.label}</h3>
-                      <p className="text-sm text-muted-foreground">{g.desc}</p>
-                      <span className="mt-auto inline-flex items-center gap-1 text-sm text-primary opacity-0 transition-opacity group-hover:opacity-100">
-                        Read More <ArrowRight className="h-3 w-3" />
-                      </span>
-                    </CardContent>
-                  </Card>
-                </Wrapper>
-              </motion.div>
-            );
-          })}
-        </div>
+        {guideCategories.map((cat) => {
+          let runningIndex = 0;
+          return (
+            <div key={cat.heading} className="mt-10">
+              <h3 className="mb-4 font-display text-xl font-semibold text-foreground">{cat.heading}</h3>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {cat.items.map((g, i) => {
+                  const idx = runningIndex++;
+                  const isExternal = g.to.startsWith("http");
+                  const opensNewTab = "newTab" in g && g.newTab;
+                  const useAnchor = isExternal || opensNewTab;
+                  const Wrapper = useAnchor ? "a" : Link;
+                  const wrapperProps = useAnchor
+                    ? { href: g.to, target: "_blank" as const, rel: "noopener noreferrer" }
+                    : { to: g.to };
+                  return (
+                    <motion.div key={g.to} custom={idx} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
+                      <Wrapper {...(wrapperProps as any)}>
+                        <Card className="group h-full transition-colors hover:border-primary/40">
+                          <CardContent className="flex flex-col gap-3 p-6">
+                            <g.icon className="h-8 w-8 text-primary" />
+                            <h3 className="font-display text-lg font-semibold">{g.label}</h3>
+                            <p className="text-sm text-muted-foreground">{g.desc}</p>
+                            <span className="mt-auto inline-flex items-center gap-1 text-sm text-primary opacity-0 transition-opacity group-hover:opacity-100">
+                              Read More <ArrowRight className="h-3 w-3" />
+                            </span>
+                          </CardContent>
+                        </Card>
+                      </Wrapper>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })}
       </section>
 
       {/* Service Areas */}
