@@ -59,14 +59,14 @@ const IncomeSection = ({ mode, propertyType, income, derived, onUpdate, highligh
               <Info className="h-3.5 w-3.5" />
             </button>
             {showInfo && (
-              <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-72 max-w-[calc(100vw-2rem)] rounded-lg border border-border bg-popover p-3 text-xs text-popover-foreground shadow-lg z-50">
+              <div className="absolute bottom-full left-0 md:left-1/2 md:-translate-x-1/2 mb-2 w-72 max-w-[calc(100vw-2rem)] rounded-lg border border-border bg-popover p-3 text-xs text-popover-foreground shadow-lg z-50">
                 <p className="leading-relaxed">
                   Not sure how to estimate rent for a unit? Check out <a href="https://www.rentometer.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">Rent-O-Meter</a> for a quick estimate based on location and unit size.
                 </p>
                 <p className="leading-relaxed mt-2">
                   Want more accurate numbers for a specific property? Reach out to me and I'd be happy to pull detailed rental comps for you.
                 </p>
-                <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-px w-2 h-2 bg-popover border-b border-r border-border rotate-45" />
+                <div className="absolute top-full left-2 md:left-1/2 md:-translate-x-1/2 -mt-px w-2 h-2 bg-popover border-b border-r border-border rotate-45" />
               </div>
             )}
           </div>
@@ -79,7 +79,7 @@ const IncomeSection = ({ mode, propertyType, income, derived, onUpdate, highligh
       </CardHeader>
       <CardContent className="space-y-3">
         <div className="grid grid-cols-2 gap-3">
-          {visibleUnits.map(({ field, label, unitNumber }) => {
+          {visibleUnits.map(({ field, label, unitNumber }, index) => {
             const isOwnerUnit = isOwnerOccupied && unitNumber === 1;
             return (
               <InputField
@@ -93,6 +93,7 @@ const IncomeSection = ({ mode, propertyType, income, derived, onUpdate, highligh
                 disabledLabel="Unit 1 — You Live Here"
                 placeholder={isOwnerUnit ? "You live here" : "Enter rent"}
                 highlight={highlightUnits && !isOwnerUnit}
+                infoAlign={index % 2 === 1 ? "right" : "left"}
                 info={
                   isOwnerUnit
                     ? undefined

@@ -124,6 +124,7 @@ const InvestmentSection = ({ investment, derived, onUpdate, selectedCounty, onCo
             onChange={(v) => onUpdate("initialRepairs", v)}
             prefix="$"
             useCommas
+            infoAlign="right"
             info="Estimated cost for any immediate repairs or renovations needed at purchase. Get contractor bids before closing if possible. Common items: paint ($2,000-$5,000), flooring ($3,000-$8,000), appliances ($500-$2,000 each)."
           />
         </div>
@@ -147,6 +148,7 @@ const InvestmentSection = ({ investment, derived, onUpdate, selectedCounty, onCo
                 value={investment.loanTermYears}
                 onChange={(v) => onUpdate("loanTermYears", v)}
                 suffix="yr"
+                infoAlign="right"
                 info="Most investment properties use a 30-year fixed mortgage for the lowest monthly payment. 15-year terms have higher payments but build equity faster and have lower rates."
               />
             </div>

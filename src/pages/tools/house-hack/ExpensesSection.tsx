@@ -84,9 +84,10 @@ const ExpensesSection = ({ mode, expenses, derived, monthlyPITI, purchasePrice, 
   const isOwnerOccupied = mode === "owner-occupied";
   const [inputMode, setInputMode] = useState<ExpenseInputMode>("dollar");
 
-  const renderField = ({ field, label, info }: { field: keyof ExpenseInputs; label: string; info: string }) => {
+  const renderField = ({ field, label, info }: { field: keyof ExpenseInputs; label: string; info: string }, index: number) => {
     const dollarValue = expenses[field] as number;
     const isRentBased = field === "managementDollar" || field === "vacancyDollar";
+    const align = index % 2 === 1 ? "right" as const : "left" as const;
 
     if (inputMode === "percent") {
       const pctValue = isRentBased
@@ -113,6 +114,7 @@ const ExpensesSection = ({ mode, expenses, derived, monthlyPITI, purchasePrice, 
             min={0}
             placeholder="Enter %"
             info={info + "\n\n" + pctHint}
+            infoAlign={align}
           />
           {dollarValue > 0 && (
             <p className="text-[10px] text-muted-foreground/60 mt-0.5 ml-0.5">
@@ -133,11 +135,12 @@ const ExpensesSection = ({ mode, expenses, derived, monthlyPITI, purchasePrice, 
         useCommas
         placeholder="Enter amount"
         info={info}
+        infoAlign={align}
       />
     );
   };
 
-  const renderDollarField = ({ field, label, info }: { field: keyof ExpenseInputs; label: string; info: string }) => (
+  const renderDollarField = ({ field, label, info }: { field: keyof ExpenseInputs; label: string; info: string }, index: number) => (
     <InputField
       key={field}
       label={label}
@@ -147,6 +150,7 @@ const ExpensesSection = ({ mode, expenses, derived, monthlyPITI, purchasePrice, 
       useCommas
       placeholder="Enter amount"
       info={info}
+      infoAlign={index % 2 === 1 ? "right" : "left"}
     />
   );
 

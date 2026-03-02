@@ -382,11 +382,11 @@ const HouseHackVsRentingSection = ({
                         <Info className="h-3.5 w-3.5" />
                       </button>
                       {showAdvantageInfo && (
-                        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 max-w-[calc(100vw-2rem)] rounded-lg border border-border bg-popover p-3 text-xs text-popover-foreground shadow-lg z-50">
+                        <div className="absolute bottom-full left-0 md:left-1/2 md:-translate-x-1/2 mb-2 w-64 max-w-[calc(100vw-2rem)] rounded-lg border border-border bg-popover p-3 text-xs text-popover-foreground shadow-lg z-50">
                           <p className="leading-relaxed">
                             This advantage does not include the upfront costs of purchasing the property (down payment, closing costs) or money spent on initial repairs. It represents how much better off you are compared to renting over this period — factoring in rent savings, appreciation, and principal paydown.
                           </p>
-                          <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-px w-2 h-2 bg-popover border-b border-r border-border rotate-45" />
+                          <div className="absolute top-full left-2 md:left-1/2 md:-translate-x-1/2 -mt-px w-2 h-2 bg-popover border-b border-r border-border rotate-45" />
                         </div>
                       )}
                     </div>
@@ -432,6 +432,7 @@ const HouseHackVsRentingSection = ({
                 onChange={(v) => onUpdateOwnerExtras("appreciationPercent", v)}
                 suffix="%"
                 step={0.5}
+                infoAlign="right"
                 info="Historical average home appreciation is 3-5% annually. The Milwaukee metro has averaged 4-7% in recent years. Conservative estimate: 3%. This is synced with the appreciation input above."
               />
             </div>
@@ -457,11 +458,11 @@ const HouseHackVsRentingSection = ({
                                 <Info className="h-3 w-3" />
                               </button>
                               {showHackCostInfo && (
-                                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 rounded-lg border border-border bg-popover p-2.5 text-xs text-popover-foreground shadow-lg z-50 text-left font-normal">
+                                <div className="absolute bottom-full right-0 md:right-auto md:left-1/2 md:-translate-x-1/2 mb-2 w-56 rounded-lg border border-border bg-popover p-2.5 text-xs text-popover-foreground shadow-lg z-50 text-left font-normal">
                                   <p className="leading-relaxed">
                                     Assumes a fixed-rate mortgage. Does not account for potential increases in property taxes, insurance, or other variable costs over time.
                                   </p>
-                                  <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-px w-2 h-2 bg-popover border-b border-r border-border rotate-45" />
+                                  <div className="absolute top-full right-2 md:right-auto md:left-1/2 md:-translate-x-1/2 -mt-px w-2 h-2 bg-popover border-b border-r border-border rotate-45" />
                                 </div>
                               )}
                             </div>
