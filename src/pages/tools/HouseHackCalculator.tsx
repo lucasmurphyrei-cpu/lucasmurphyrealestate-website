@@ -79,7 +79,7 @@ const HouseHackCalculator = () => {
   }, [highlightUnits]);
 
   return (
-    <main className="container py-12 md:py-16">
+    <main className="container py-12 md:py-16 overflow-x-hidden">
       <h1 className="font-display text-3xl font-bold md:text-5xl">House Hack Deal Analysis</h1>
       <p className="mt-3 max-w-2xl text-muted-foreground">
         Analyze a multi-unit property to see your true housing cost, cash flow, and investment returns.

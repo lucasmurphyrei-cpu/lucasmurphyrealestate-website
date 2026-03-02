@@ -4,18 +4,18 @@ export const DEFAULT_STATE: HouseHackState = {
   propertyType: "duplex",
   mode: "owner-occupied",
   investment: {
-    purchasePrice: 295000,
-    downPaymentPercent: 3.0,
+    purchasePrice: 0,
+    downPaymentPercent: 0,
     financingType: "conventional",
     fhaUpfrontMIPPercent: 1.75,
     downPaymentAssistance: 0,
-    closingCostsPercent: 2.4,
+    closingCostsPercent: 0,
     initialRepairs: 0,
-    interestRate: 6.0,
+    interestRate: 0,
     loanTermYears: 30,
-    monthlyTaxes: 358,
-    monthlyInsurance: 125,
-    monthlyMortgageInsurance: 71,
+    monthlyTaxes: 0,
+    monthlyInsurance: 0,
+    monthlyMortgageInsurance: 0,
   },
   ownerOccupiedIncome: {
     unit1Rent: 0,
@@ -31,7 +31,7 @@ export const DEFAULT_STATE: HouseHackState = {
     unit3Rent: 0,
     unit4Rent: 0,
     otherIncome: 0,
-    vacancyPercent: 5,
+    vacancyPercent: 0,
   },
   ownerOccupiedExpenses: {
     maintenanceDollar: 0,
@@ -55,11 +55,11 @@ export const DEFAULT_STATE: HouseHackState = {
   },
   ownerOccupiedExtras: {
     currentRent: 0,
-    appreciationPercent: 3.0,
-    rentGrowthPercent: 3.0,
+    appreciationPercent: 0,
+    rentGrowthPercent: 0,
   },
   allUnitsExtras: {
-    appreciationPercent: 3.0,
+    appreciationPercent: 0,
   },
 };
 
