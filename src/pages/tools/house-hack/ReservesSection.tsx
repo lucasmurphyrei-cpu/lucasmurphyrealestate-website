@@ -66,7 +66,7 @@ const ReservesSection = ({ reserves, expenses, expensesDerived }: ReservesSectio
                   <Info className="h-3.5 w-3.5" />
                 </button>
                 {showInfo && (
-                  <div className="absolute bottom-full right-0 mb-2 w-72 max-w-[calc(100vw-2rem)] rounded-lg border border-border bg-popover p-3 text-xs text-popover-foreground shadow-lg z-50">
+                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-72 max-w-[calc(100vw-2rem)] rounded-lg border border-border bg-popover p-3 text-xs text-popover-foreground shadow-lg z-50">
                     <p className="leading-relaxed">
                       As a property owner, you're responsible for the major systems — roof, furnace, plumbing, appliances — and things do break over time. Tenants move out, and you may have a month or two of vacancy between leases.
                     </p>
@@ -76,7 +76,7 @@ const ReservesSection = ({ reserves, expenses, expensesDerived }: ReservesSectio
                     <p className="leading-relaxed mt-2">
                       Think of it as paying yourself first. It's not a matter of <em>if</em> something comes up, it's <em>when</em>. Being prepared means a broken water heater is an inconvenience, not a crisis.
                     </p>
-                    <div className="absolute top-full right-2 -mt-px w-2 h-2 bg-popover border-b border-r border-border rotate-45" />
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-px w-2 h-2 bg-popover border-b border-r border-border rotate-45" />
                   </div>
                 )}
               </div>

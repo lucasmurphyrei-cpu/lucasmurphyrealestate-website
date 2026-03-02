@@ -95,9 +95,9 @@ const InputField = ({
               <Info className="h-3.5 w-3.5" />
             </button>
             {showInfo && (
-              <div className="absolute bottom-full right-0 mb-2 w-64 max-w-[calc(100vw-2rem)] rounded-lg border border-border bg-popover p-3 text-xs text-popover-foreground shadow-lg z-50">
+              <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 max-w-[calc(100vw-2rem)] rounded-lg border border-border bg-popover p-3 text-xs text-popover-foreground shadow-lg z-50">
                 <div className="whitespace-pre-line">{info}</div>
-                <div className="absolute top-full right-2 -mt-px w-2 h-2 bg-popover border-b border-r border-border rotate-45" />
+                <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-px w-2 h-2 bg-popover border-b border-r border-border rotate-45" />
               </div>
             )}
           </div>
