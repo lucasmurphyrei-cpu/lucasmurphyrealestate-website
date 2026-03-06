@@ -20,50 +20,47 @@ export interface CountyMarketData {
 
 const countyMarketData: Record<string, CountyMarketData> = {
   "Waukesha County": {
-    dataMonth: "January 2026",
+    dataMonth: "March 2026",
     stats: [
-      { label: "Median Price", value: "$519,900", change: "+4.0% YoY", direction: "up" },
-      { label: "Days on Market", value: "37 days", change: "+5.7% YoY", direction: "up" },
-      { label: "Sale-to-List Ratio", value: "97.9%", change: "+0.3% YoY", direction: "up" },
-      { label: "Months' Supply", value: "2.9 months", change: "+16.5% YoY", direction: "up" },
-      { label: "Inventory", value: "451 homes", change: "+3.2% YoY", direction: "up" },
-      { label: "New Listings", value: "264", change: "+10.9% YoY", direction: "up" },
+      { label: "Median Price", value: "$476,000", change: "+3.5% YoY", direction: "up" },
+      { label: "Days on Market", value: "14 days", change: "+40.0% YoY", direction: "up" },
+      { label: "Sale-to-List Ratio", value: "99.3%", change: "-0.2% YoY", direction: "down" },
+      { label: "Months' Supply", value: "2.9 months", change: "+16.0% YoY", direction: "up" },
+      { label: "Inventory", value: "731 homes", change: "+17.5% YoY", direction: "up" },
+      { label: "New Listings", value: "278", change: "+22.5% YoY", direction: "up" },
     ],
   },
-
   "Milwaukee County": {
-    dataMonth: "January 2026",
+    dataMonth: "March 2026",
     stats: [
-      { label: "Median Price", value: "$282,000", change: "+10.6% YoY", direction: "up" },
-      { label: "Days on Market", value: "31 days", change: "-6.1% YoY", direction: "down" },
-      { label: "Sale-to-List Ratio", value: "97.2%", change: "-0.4% YoY", direction: "down" },
-      { label: "Months' Supply", value: "2.8 months", change: "+25.1% YoY", direction: "up" },
-      { label: "Inventory", value: "809 homes", change: "-1.0% YoY", direction: "down" },
-      { label: "New Listings", value: "512", change: "-1.5% YoY", direction: "down" },
+      { label: "Median Price", value: "$290,000", change: "+6.1% YoY", direction: "up" },
+      { label: "Days on Market", value: "15 days", change: "+66.7% YoY", direction: "up" },
+      { label: "Sale-to-List Ratio", value: "98.9%", change: "+1.0% YoY", direction: "up" },
+      { label: "Months' Supply", value: "2.5 months", change: "+12.3% YoY", direction: "up" },
+      { label: "Inventory", value: "881 homes", change: "+6.0% YoY", direction: "up" },
+      { label: "New Listings", value: "606", change: "+17.3% YoY", direction: "up" },
     ],
   },
-
   "Ozaukee County": {
-    dataMonth: "January 2026",
+    dataMonth: "March 2026",
     stats: [
-      { label: "Median Price", value: "—", change: "—", direction: "flat" },
-      { label: "Days on Market", value: "—", change: "—", direction: "flat" },
-      { label: "Sale-to-List Ratio", value: "—", change: "—", direction: "flat" },
-      { label: "Months' Supply", value: "—", change: "—", direction: "flat" },
-      { label: "Inventory", value: "—", change: "—", direction: "flat" },
+      { label: "Median Price", value: "$490,000", change: "+2.0% YoY", direction: "up" },
+      { label: "Days on Market", value: "16 days", change: "+100.0% YoY", direction: "up" },
+      { label: "Sale-to-List Ratio", value: "99.2%", change: "0% YoY", direction: "flat" },
+      { label: "Months' Supply", value: "2.93 months", change: "-15.8% YoY", direction: "down" },
+      { label: "Inventory", value: "179 homes", change: "+2.9% YoY", direction: "up" },
       { label: "New Listings", value: "—", change: "—", direction: "flat" },
     ],
   },
-
   "Washington County": {
-    dataMonth: "January 2026",
+    dataMonth: "March 2026",
     stats: [
-      { label: "Median Price", value: "—", change: "—", direction: "flat" },
-      { label: "Days on Market", value: "—", change: "—", direction: "flat" },
-      { label: "Sale-to-List Ratio", value: "—", change: "—", direction: "flat" },
-      { label: "Months' Supply", value: "—", change: "—", direction: "flat" },
-      { label: "Inventory", value: "—", change: "—", direction: "flat" },
-      { label: "New Listings", value: "—", change: "—", direction: "flat" },
+      { label: "Median Price", value: "$430,000", change: "+2.4% YoY", direction: "up" },
+      { label: "Days on Market", value: "24 days", change: "+4.3% YoY", direction: "up" },
+      { label: "Sale-to-List Ratio", value: "98.2%", change: "-0.2% YoY", direction: "down" },
+      { label: "Months' Supply", value: "4.3 months", change: "+59.3% YoY", direction: "up" },
+      { label: "Inventory", value: "175 homes", change: "+10.8% YoY", direction: "up" },
+      { label: "New Listings", value: "88", change: "+12.8% YoY", direction: "up" },
     ],
   },
 };
