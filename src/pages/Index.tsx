@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Home, Building2, MapPin, TrendingUp, TrendingDown, Minus as MinusIcon, Hammer, Landmark, DollarSign, Search, Shield, ArrowRight, Clock, Percent, CalendarDays, ClipboardList, PlusCircle } from "lucide-react";
+import { Home, Building2, MapPin, TrendingUp, TrendingDown, Minus as MinusIcon, Hammer, Landmark, DollarSign, Search, Shield, ArrowRight, Clock, Percent, CalendarDays, ClipboardList, PlusCircle, Download, Eye, Compass } from "lucide-react";
 import countyMarketData from "@/data/countyMarketData";
 import { motion } from "framer-motion";
 import milwaukeeSkyline from "@/assets/milwaukee-skyline.jpg";
@@ -223,9 +223,58 @@ const Index = () => {
                       </div>
                     )}
 
-                    <Link to={`/areas/${area.slug}`} className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
-                      View Municipalities <ArrowRight className="h-3 w-3" />
-                    </Link>
+                    <div className="mt-5 grid grid-cols-2 gap-3">
+                      <Link
+                        to={`/areas/${area.slug}`}
+                        className="group flex items-center justify-between rounded-lg border border-primary/20 bg-primary/5 px-4 py-3 text-sm font-medium text-primary transition-colors hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 active:bg-primary/15"
+                      >
+                        <span className="flex items-center gap-1.5">
+                          <MapPin className="h-4 w-4" />
+                          View Municipalities
+                        </span>
+                        <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                      </Link>
+                      <Link
+                        to={`/areas/${area.slug}#quiz`}
+                        className="group flex items-center justify-between rounded-lg border border-primary/20 bg-primary/5 px-4 py-3 text-sm font-medium text-primary transition-colors hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 active:bg-primary/15"
+                      >
+                        <span className="flex items-center gap-1.5">
+                          <Compass className="h-4 w-4" />
+                          Neighborhood Fit Quiz
+                        </span>
+                        <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                      </Link>
+                    </div>
+
+                    {marketData && (
+                      <div className="mt-3 grid grid-cols-2 gap-3">
+                        <a
+                          href={`/market-reports/${marketData.dataMonth.toLowerCase().replace(/\s+/g, "-")}-${area.slug}-market-report.pdf`}
+                          download
+                          className="group flex items-center justify-between rounded-lg border border-primary/20 bg-primary/5 px-4 py-3 text-sm font-medium text-primary transition-colors hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 active:bg-primary/15"
+                        >
+                          <span className="flex items-center gap-1.5">
+                            <Download className="h-4 w-4" />
+                            Download {marketData.dataMonth} Report
+                          </span>
+                          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                        </a>
+                        {marketData.videoUrl && (
+                          <a
+                            href={marketData.videoUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group flex items-center justify-between rounded-lg border border-primary/20 bg-primary/5 px-4 py-3 text-sm font-medium text-primary transition-colors hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 active:bg-primary/15"
+                          >
+                            <span className="flex items-center gap-1.5">
+                              <Eye className="h-4 w-4" />
+                              View {marketData.dataMonth} Report
+                            </span>
+                            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                          </a>
+                        )}
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
               );

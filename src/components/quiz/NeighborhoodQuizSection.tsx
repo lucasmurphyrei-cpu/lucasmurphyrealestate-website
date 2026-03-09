@@ -31,7 +31,7 @@ const NeighborhoodQuizSection = ({
       : "Answer 13 quick questions and discover which neighborhoods in the county best fit your lifestyle.";
 
   return (
-    <section className="my-12 rounded-xl border border-border bg-secondary/30 p-6 md:p-8">
+    <section id="quiz" className="my-12 rounded-xl border border-border bg-secondary/30 p-6 md:p-8">
       <div className="flex items-center gap-3 mb-3">
         <div className="rounded-lg bg-primary/10 p-2">
           <Compass className="h-6 w-6 text-primary" />

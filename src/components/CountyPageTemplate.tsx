@@ -39,9 +39,7 @@ const CountyPage = ({ name, description, municipalities }: CountyPageProps) => {
       </div>
       <p className="max-w-2xl text-lg text-muted-foreground">{description}</p>
 
-      {marketData && (
-        <MarketSnapshot countyName={name} data={marketData} />
-      )}
+      <NeighborhoodQuizSection mode="county" contextCounty={countyKey} />
 
       <h2 className="mt-12 font-display text-2xl font-bold">Municipalities & Neighborhoods</h2>
       <p className="mt-2 text-muted-foreground">Click on a municipality to view its market report.</p>
@@ -63,7 +61,9 @@ const CountyPage = ({ name, description, municipalities }: CountyPageProps) => {
         })}
       </div>
 
-      <NeighborhoodQuizSection mode="county" contextCounty={countyKey} />
+      {marketData && (
+        <MarketSnapshot countyName={name} data={marketData} />
+      )}
 
       <div className="mt-12">
         <Button asChild>

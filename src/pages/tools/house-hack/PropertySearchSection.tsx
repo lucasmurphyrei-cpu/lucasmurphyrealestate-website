@@ -10,10 +10,13 @@ import type { PropertyType } from "./types";
 import { PROPERTY_TYPE_UNITS } from "./defaults";
 import { formatCurrency } from "./calculations";
 import { getAllSlim } from "@/data/municipalityLookup";
+import { getRapidStats } from "@/data/municipalityRapidStats";
 
 const GOOGLE_SHEETS_URL = import.meta.env.VITE_GOOGLE_SHEETS_URL;
 
 function getMedianPrice(muni: ReturnType<typeof getAllSlim>[number]): number | null {
+  const rapidStats = getRapidStats(muni.id);
+  if (rapidStats?.median_sale_price) return rapidStats.median_sale_price;
   return muni.api_data?.redfin?.median_sale_price ?? muni.api_data?.zillow?.zhvi ?? null;
 }
 

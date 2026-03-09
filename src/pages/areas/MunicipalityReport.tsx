@@ -4,7 +4,8 @@ import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import MunicipalityHero from "@/components/municipality/MunicipalityHero";
 import QuickSnapshotGrid from "@/components/municipality/QuickSnapshotGrid";
-import RealEstateTrendsCard from "@/components/municipality/RealEstateTrendsCard";
+import RapidStatsTable from "@/components/municipality/RapidStatsTable";
+import { getRapidStats } from "@/data/municipalityRapidStats";
 import BuyerLifestyleFitSection from "@/components/municipality/BuyerLifestyleFitSection";
 import AmenitiesSection from "@/components/municipality/AmenitiesSection";
 import MunicipalitySkeleton from "@/components/municipality/MunicipalitySkeleton";
@@ -91,8 +92,19 @@ const MunicipalityReport = () => {
       </div>
 
       <MunicipalityHero slim={slim} countyDisplay={countyDisplay} />
-      <QuickSnapshotGrid snapshot={slim.quick_snapshot} />
-      <RealEstateTrendsCard trends={slim.real_estate_trends} apiData={slim.api_data} />
+      {(() => {
+        const rapidStats = getRapidStats(slim.id);
+        return (
+          <>
+            <QuickSnapshotGrid
+              snapshot={slim.quick_snapshot}
+              rapidStatsMedianPrice={rapidStats?.median_sale_price}
+              rapidStatsMonth={rapidStats?.data_month}
+            />
+            <RapidStatsTable data={rapidStats} municipalityName={slim.display_name} />
+          </>
+        );
+      })()}
 
       {loading ? (
         <MunicipalitySkeleton />

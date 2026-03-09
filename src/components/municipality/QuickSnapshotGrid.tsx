@@ -4,6 +4,8 @@ import type { QuickSnapshot } from "@/data/neighborhoodTypes";
 
 interface QuickSnapshotGridProps {
   snapshot: QuickSnapshot;
+  rapidStatsMedianPrice?: number | null;
+  rapidStatsMonth?: string;
 }
 
 const stats = [
@@ -15,7 +17,17 @@ const stats = [
   { key: "school_district" as const, label: "School District", icon: GraduationCap },
 ];
 
-const QuickSnapshotGrid = ({ snapshot }: QuickSnapshotGridProps) => (
+const QuickSnapshotGrid = ({ snapshot, rapidStatsMedianPrice, rapidStatsMonth }: QuickSnapshotGridProps) => {
+  const getDisplayValue = (key: keyof QuickSnapshot) => {
+    if (key === "median_home_price" && rapidStatsMedianPrice != null) {
+      const formatted = `$${rapidStatsMedianPrice.toLocaleString("en-US")}`;
+      const monthLabel = rapidStatsMonth ? `, ${rapidStatsMonth}` : "";
+      return `${formatted} (RapidStats${monthLabel})`;
+    }
+    return snapshot[key];
+  };
+
+  return (
   <section className="mb-10">
     <h2 className="font-display text-2xl font-bold mb-4">Quick Snapshot</h2>
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -30,7 +42,7 @@ const QuickSnapshotGrid = ({ snapshot }: QuickSnapshotGridProps) => (
                 {label}
               </p>
               <p className={`mt-1 font-semibold leading-snug ${key === "school_district" ? "text-sm" : "text-base"}`}>
-                {snapshot[key]}
+                {getDisplayValue(key)}
               </p>
             </div>
           </CardContent>
@@ -38,6 +50,7 @@ const QuickSnapshotGrid = ({ snapshot }: QuickSnapshotGridProps) => (
       ))}
     </div>
   </section>
-);
+  );
+};
 
 export default QuickSnapshotGrid;

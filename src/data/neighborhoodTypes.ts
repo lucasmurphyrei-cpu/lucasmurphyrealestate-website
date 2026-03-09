@@ -1,3 +1,21 @@
+// --- RapidStats municipality data ---
+
+export interface RapidStatsMetric {
+  label: string;
+  prior_year: string;
+  current_year: string;
+  change_pct: number;
+}
+
+export interface RapidStatsMunicipality {
+  data_month: string;
+  data_as_of: string;
+  prior_year_label: string;
+  current_year_label: string;
+  median_sale_price: number;
+  metrics: RapidStatsMetric[];
+}
+
 // --- Shared sub-types ---
 
 export interface QuickSnapshot {
