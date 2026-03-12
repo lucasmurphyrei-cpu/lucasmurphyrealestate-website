@@ -41,7 +41,7 @@ const resources = [
 
 const tools = [
   { label: "Mortgage Calculator", to: "/tools/mortgage-calculator" },
-  { label: "Budget Spreadsheet", to: "/tools/budget-spreadsheet" },
+  { label: "Budget Planner", to: "/tools/budget-planner" },
   { label: "House Hack Calculator", to: "/tools/house-hack-calculator" },
 ];
 

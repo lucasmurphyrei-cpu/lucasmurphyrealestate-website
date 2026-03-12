@@ -21,6 +21,7 @@ import HomeInsurancePage from "./pages/resources/HomeInsurance";
 import SeasonalGuidePage from "./pages/resources/SeasonalGuide";
 import MortgageCalculator from "./pages/tools/MortgageCalculator";
 import BudgetSpreadsheet from "./pages/tools/BudgetSpreadsheet";
+import BudgetPlanner from "./pages/tools/budget-planner/BudgetPlanner";
 import HouseHackCalculator from "./pages/tools/HouseHackCalculator";
 import MilwaukeeCounty from "./pages/areas/MilwaukeeCounty";
 import OzaukeeCounty from "./pages/areas/OzaukeeCounty";
@@ -61,6 +62,7 @@ const App = () => (
               <Route path="/resources/seasonal-guide" element={<SeasonalGuidePage />} />
               <Route path="/tools/mortgage-calculator" element={<MortgageCalculator />} />
               <Route path="/tools/budget-spreadsheet" element={<BudgetSpreadsheet />} />
+              <Route path="/tools/budget-planner" element={<BudgetPlanner />} />
               <Route path="/tools/house-hack-calculator" element={<HouseHackCalculator />} />
               <Route path="/areas/milwaukee-county" element={<MilwaukeeCounty />} />
               <Route path="/areas/ozaukee-county" element={<OzaukeeCounty />} />
