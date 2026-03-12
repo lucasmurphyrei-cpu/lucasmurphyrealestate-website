@@ -27,25 +27,28 @@ const LeadCaptureSection = ({ tab, state, derived }: Props) => {
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
 
+    const userName = formData.get("name") as string;
+
     try {
-      if (!GOOGLE_SHEETS_URL) throw new Error("Form endpoint not configured");
+      // Submit lead to Google Sheets (non-blocking — don't let this prevent PDF download)
+      if (GOOGLE_SHEETS_URL) {
+        const params = new URLSearchParams();
+        params.append("name", userName);
+        params.append("email", formData.get("email") as string);
+        params.append("phone", (formData.get("phone") as string) || "");
+        params.append("source", `budget-planner-${tab}`);
+        params.append("timestamp", new Date().toISOString());
 
-      const params = new URLSearchParams();
-      params.append("name", formData.get("name") as string);
-      params.append("email", formData.get("email") as string);
-      params.append("phone", (formData.get("phone") as string) || "");
-      params.append("source", `budget-planner-${tab}`);
-      params.append("timestamp", new Date().toISOString());
-
-      await fetch(GOOGLE_SHEETS_URL, { method: "POST", mode: "no-cors", body: params });
+        fetch(GOOGLE_SHEETS_URL, { method: "POST", mode: "no-cors", body: params }).catch(() => {});
+      }
 
       // Generate and download PDF
-      const userName = formData.get("name") as string;
       await generateBudgetPDF(state, derived, tab, userName);
 
       setStep("success");
       toast({ title: "Your budget is ready!", description: "Check your downloads folder for the PDF." });
-    } catch {
+    } catch (err) {
+      console.error("PDF generation failed:", err);
       toast({
         title: "Something went wrong",
         description: "Please try again or call us at (414) 458-1952.",

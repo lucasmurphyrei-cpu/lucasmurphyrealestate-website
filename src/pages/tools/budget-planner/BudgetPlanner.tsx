@@ -85,8 +85,8 @@ const BudgetPlanner = () => {
         </TabsList>
 
         {/* ─── Monthly Tab ─── */}
-        <TabsContent value="monthly">
-          <div className="mt-6 grid gap-6 lg:grid-cols-[1fr,380px]">
+        <TabsContent value="monthly" className="overflow-visible">
+          <div className="mt-6 grid gap-6 lg:grid-cols-[1fr,380px] lg:items-start">
             <div className="space-y-6">
               <MonthlyIncomeSection
                 income={state.monthly.income}
@@ -125,8 +125,8 @@ const BudgetPlanner = () => {
         </TabsContent>
 
         {/* ─── Annual Tab ─── */}
-        <TabsContent value="annual">
-          <div className="mt-6 grid gap-6 lg:grid-cols-[1fr,380px]">
+        <TabsContent value="annual" className="overflow-visible">
+          <div className="mt-6 grid gap-6 lg:grid-cols-[1fr,380px] lg:items-start">
             <div className="space-y-6">
               {/* Import from Monthly */}
               {derived.monthly.monthlyNet > 0 && (
