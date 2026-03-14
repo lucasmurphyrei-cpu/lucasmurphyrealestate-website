@@ -46,9 +46,9 @@ const LeadCaptureSection = ({ tab, state, derived }: Props) => {
       await generateBudgetPDF(state, derived, tab, userName);
 
       setStep("success");
-      toast({ title: "Your budget is ready!", description: "Check your downloads folder for the PDF." });
+      toast({ title: "Your budget is ready!", description: "Check your downloads folder for the Excel file." });
     } catch (err) {
-      console.error("PDF generation failed:", err);
+      console.error("Excel generation failed:", err);
       toast({
         title: "Something went wrong",
         description: "Please try again or call us at (414) 458-1952.",
@@ -65,7 +65,7 @@ const LeadCaptureSection = ({ tab, state, derived }: Props) => {
         <CardContent className="py-8 text-center">
           <p className="text-lg font-display font-bold">Your budget has been downloaded!</p>
           <p className="text-sm text-muted-foreground mt-2">
-            Check your downloads folder for the PDF. We'll also reach out to help with your homeownership goals.
+            Check your downloads folder for the Excel file. You can open it in Google Sheets or Excel to customize. We'll also reach out to help with your homeownership goals.
           </p>
         </CardContent>
       </Card>
@@ -73,11 +73,11 @@ const LeadCaptureSection = ({ tab, state, derived }: Props) => {
   }
 
   return (
-    <Card className="border-primary/30">
+    <Card id="lead-capture" className="border-primary/30">
       <CardHeader>
         <CardTitle className="text-lg font-display">Download Your Budget</CardTitle>
         <p className="text-xs text-muted-foreground">
-          Get a branded PDF copy of your {tab === "monthly" ? "monthly cost estimate" : "annual budget"} to keep.
+          Get an Excel spreadsheet with your monthly budget, annual budget, and house affordability analysis — editable in Google Sheets or Excel.
         </p>
       </CardHeader>
       <CardContent>
@@ -106,7 +106,7 @@ const LeadCaptureSection = ({ tab, state, derived }: Props) => {
             </div>
 
             <Button type="submit" className="w-full" disabled={loading}>
-              {loading ? "Generating PDF..." : "Download My Budget"}
+              {loading ? "Generating..." : "Download My Budget"}
             </Button>
             <button
               type="button"

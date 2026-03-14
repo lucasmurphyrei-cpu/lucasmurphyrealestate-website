@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
 import type { AnnualIncome } from "./types";
+import { FormattedNumberInput } from "./FormattedInput";
 
 const FIELDS: { key: keyof AnnualIncome; label: string }[] = [
   { key: "workIncome", label: "Income from Work" },
@@ -24,13 +24,11 @@ const AnnualIncomeSection = ({ income, onUpdate }: Props) => (
           <span className="w-44 shrink-0 text-sm text-muted-foreground">{label}</span>
           <div className="relative flex-1">
             <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground text-sm">$</span>
-            <Input
-              type="number"
-              min={0}
+            <FormattedNumberInput
               className="pl-7 h-9"
-              value={income[key] || ""}
-              onChange={(e) => onUpdate(key, Number(e.target.value))}
-              placeholder="0"
+              value={income[key]}
+              onChange={(v) => onUpdate(key, v)}
+              min={0}
             />
           </div>
         </div>

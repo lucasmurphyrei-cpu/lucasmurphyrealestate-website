@@ -1,9 +1,9 @@
-import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import type { YearlySubscription, MonthlyDerived } from "./types";
 import { formatCurrency } from "./calculations";
+import { FormattedNumberInput } from "./FormattedInput";
 
 interface Props {
   subscriptions: YearlySubscription[];
@@ -14,21 +14,19 @@ interface Props {
 }
 
 const SubscriptionsSection = ({ subscriptions, derived, onAdd, onRemove, onUpdate }: Props) => {
-  const [newName, setNewName] = useState("");
-  const [newCost, setNewCost] = useState("");
-
-  const handleAdd = () => {
-    if (!newName.trim() || !newCost) return;
-    onAdd({ id: crypto.randomUUID(), name: newName.trim(), cost: Number(newCost) });
-    setNewName("");
-    setNewCost("");
+  const handleAddRow = () => {
+    onAdd({ id: crypto.randomUUID(), name: "", cost: 0 });
   };
 
   return (
     <Card>
       <CardHeader>
         <CardTitle className="text-lg font-display">Yearly Subscriptions</CardTitle>
-        <p className="text-xs text-muted-foreground">Track annual subscriptions separately so they don't catch you off guard.</p>
+        <p className="text-xs text-muted-foreground">
+          Track annual subscriptions and recurring costs separately so they don't catch you off guard.
+          Common ones people miss: credit card annual fees, car registration/title, professional memberships,
+          Amazon Prime, gym contracts, software licenses, AAA, identity theft protection, and annual insurance premiums.
+        </p>
       </CardHeader>
       <CardContent className="space-y-3">
         {subscriptions.map((sub) => (
@@ -42,15 +40,15 @@ const SubscriptionsSection = ({ subscriptions, derived, onAdd, onRemove, onUpdat
               />
               <div className="relative w-28">
                 <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground text-sm">$</span>
-                <Input
-                  type="number"
-                  min={0}
+                <FormattedNumberInput
                   className="pl-7 h-9"
-                  value={sub.cost || ""}
-                  onChange={(e) => onUpdate(sub.id, "cost", Number(e.target.value))}
+                  value={sub.cost}
+                  onChange={(v) => onUpdate(sub.id, "cost", v)}
+                  min={0}
                 />
               </div>
               <Button
+                tabIndex={-1}
                 variant="ghost"
                 size="sm"
                 className="h-9 w-9 p-0 text-muted-foreground hover:text-red-500"
@@ -67,38 +65,9 @@ const SubscriptionsSection = ({ subscriptions, derived, onAdd, onRemove, onUpdat
           </div>
         ))}
 
-        {/* Add new row */}
-        <div>
-          <div className="flex items-center gap-2 pt-1">
-            <Input
-              className="flex-1 h-9"
-              value={newName}
-              onChange={(e) => setNewName(e.target.value)}
-              placeholder="New subscription"
-              onKeyDown={(e) => e.key === "Enter" && handleAdd()}
-            />
-            <div className="relative w-28">
-              <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground text-sm">$</span>
-              <Input
-                type="number"
-                min={0}
-                className="pl-7 h-9"
-                value={newCost}
-                onChange={(e) => setNewCost(e.target.value)}
-                placeholder="0"
-                onKeyDown={(e) => e.key === "Enter" && handleAdd()}
-              />
-            </div>
-            <Button variant="outline" size="sm" className="h-9" onClick={handleAdd}>
-              Add
-            </Button>
-          </div>
-          {Number(newCost) > 0 && (
-            <p className="text-[10px] text-muted-foreground text-right pr-16 -mt-0.5">
-              {formatCurrency(Number(newCost) / 12)}/mo
-            </p>
-          )}
-        </div>
+        <Button variant="outline" size="sm" className="w-full" onClick={handleAddRow}>
+          + Add Row
+        </Button>
 
         {subscriptions.length > 0 && (
           <div className="mt-3 rounded-lg bg-muted/50 p-3 space-y-1">

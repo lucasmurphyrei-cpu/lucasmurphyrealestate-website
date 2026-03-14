@@ -64,7 +64,6 @@ export interface AnnualExpenseRow {
   id: string;
   label: string;
   amount: number;
-  splitEligible: boolean; // can be split 50/50
 }
 
 /** Generic row used for guilt-free, debt, and savings sections */
@@ -90,7 +89,6 @@ export interface NetWorthLiabilities {
 export interface AnnualBudgetState {
   income: AnnualIncome;
   fixedExpenses: AnnualExpenseRow[];
-  splitWithSpouse: boolean;
   guiltFree: BudgetRow[];
   debt: BudgetRow[];
   savings: BudgetRow[];
@@ -103,7 +101,6 @@ export interface AnnualDerived {
   totalMonthlyIncome: number;
   totalAnnualIncome: number;
   totalFixedExpenses: number;
-  totalFixedExpensesFull: number;
   totalGuiltFree: number;
   totalDebt: number;
   totalSavings: number;
@@ -115,17 +112,115 @@ export interface AnnualDerived {
   netWorth: number;
 }
 
+// ─── House Affordability ───
+
+export type LoanTerm = 15 | 30;
+
+export interface AffordabilityInputs {
+  annualGrossIncome: number;
+  annualNetIncome: number;
+  monthlyDebtPayments: number;
+  downPaymentPercent: number;
+  downPaymentSaved: number;
+  interestRate: number;
+  loanTerm: LoanTerm;
+  propertyTaxRate: number;
+  homeInsuranceAnnual: number;
+  pmiRate: number;
+  monthlySavingsForHome: number;
+}
+
+export interface PhilosophyResult {
+  label: string;
+  description: string;
+  maxMonthlyPayment: number;
+  maxLoanAmount: number;
+  maxHomePrice: number;
+  downPaymentAmount: number;
+  downPaymentPercent: number;
+  monthlyPI: number;
+  monthlyTaxes: number;
+  monthlyInsurance: number;
+  monthlyPMI: number;
+  totalMonthlyHousing: number;
+  totalCostOverLife: number;
+  totalInterestPaid: number;
+  frontEndDTI: number;
+  backEndDTI: number;
+}
+
+export interface AffordabilityDerived {
+  monthlyGross: number;
+  monthlyNet: number;
+  philosophies: {
+    ramsey: PhilosophyResult;
+    conventional: PhilosophyResult;
+    fha: PhilosophyResult;
+    aggressive: PhilosophyResult;
+  };
+}
+
+// ─── Mortgage Calculator (Step 4) ───
+
+export type MortgageLoanType = "conventional" | "fha";
+export type DownPaymentMode = "percent" | "dollar";
+export type WisconsinCounty = "milwaukee" | "waukesha" | "washington" | "ozaukee" | "custom";
+
+export interface MortgageCalcInputs {
+  purchasePrice: number;
+  downPaymentAmount: number;
+  downPaymentPercent: number;
+  downPaymentMode: DownPaymentMode;
+  loanType: MortgageLoanType;
+  county: WisconsinCounty;
+  interestRate: number;
+  loanTerm: LoanTerm;
+  propertyTaxRate: number;
+  homeInsuranceAnnual: number;
+  pmiRate: number;
+  hoaMonthly: number;
+}
+
+export interface MortgageCalcDerived {
+  loanAmount: number;
+  downPaymentPercent: number;
+  monthlyPI: number;
+  monthlyTaxes: number;
+  monthlyInsurance: number;
+  monthlyPMI: number;
+  monthlyHOA: number;
+  totalMonthlyPayment: number;
+  totalInterestPaid: number;
+  totalCostOverLife: number;
+  // Budget impact (from Steps 1-2)
+  monthlyNetIncome: number;
+  currentFixedCosts: number;
+  currentRent: number;
+  fixedCostsExRent: number;
+  currentGuiltFree: number;
+  currentSavings: number;
+  currentDebt: number;
+  newMonthlyHousing: number;
+  remainingAfterMortgage: number;
+  guiltFreeReduction: number;
+  savingsReduction: number;
+}
+
 // ─── Combined ───
 
-export type BudgetTab = "monthly" | "annual";
+export type BudgetTab = "monthly" | "annual" | "affordability" | "mortgage";
 
 export interface BudgetPlannerState {
   tab: BudgetTab;
   monthly: MonthlyEstimatorState;
   annual: AnnualBudgetState;
+  affordability: AffordabilityInputs;
+  mortgageCalc: MortgageCalcInputs;
 }
 
 export interface BudgetDerived {
   monthly: MonthlyDerived;
   annual: AnnualDerived;
+  affordability: AffordabilityDerived;
+  mortgageCalc: MortgageCalcDerived;
 }

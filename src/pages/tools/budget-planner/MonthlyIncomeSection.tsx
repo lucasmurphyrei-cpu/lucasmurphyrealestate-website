@@ -1,9 +1,23 @@
+import { useState, useCallback } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import type { IncomeSettings, MonthlyDerived, PayFrequency, FilingStatus } from "./types";
 import { formatCurrency, formatPercent, PAY_FREQUENCY_LABELS, estimateEffectiveRate } from "./calculations";
+
+/** Formats a number with commas. Returns "" for 0/NaN. */
+function fmtCommas(value: number): string {
+  if (!value) return "";
+  const parts = value.toString().split(".");
+  parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return parts.join(".");
+}
+
+function stripCommas(value: string): number {
+  const num = parseFloat(value.replace(/,/g, ""));
+  return isNaN(num) ? 0 : num;
+}
 
 const FREQUENCY_OPTIONS: PayFrequency[] = ["weekly", "biweekly", "semimonthly", "monthly"];
 
@@ -26,6 +40,41 @@ interface Props {
 
 const MonthlyIncomeSection = ({ income, derived, onUpdate }: Props) => {
   const hasIncome = derived.annualGross > 0;
+
+  const [focused, setFocused] = useState(false);
+  const [rawValue, setRawValue] = useState("");
+
+  const currentValue = income.inputMode === "annual"
+    ? income.annualAmount
+    : income.inputMode === "paycheck-gross"
+      ? income.grossPaycheckAmount
+      : income.netPaycheckAmount;
+
+  const handleFocus = useCallback(() => {
+    setFocused(true);
+    setRawValue(currentValue ? currentValue.toString() : "");
+  }, [currentValue]);
+
+  const handleBlur = useCallback(() => {
+    setFocused(false);
+    const val = stripCommas(rawValue);
+    if (income.inputMode === "annual") onUpdate("annualAmount", val);
+    else if (income.inputMode === "paycheck-gross") onUpdate("grossPaycheckAmount", val);
+    else onUpdate("netPaycheckAmount", val);
+  }, [rawValue, income.inputMode, onUpdate]);
+
+  const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = e.target.value;
+    if (/^[\d,]*\.?\d*$/.test(val) || val === "") {
+      setRawValue(val.replace(/,/g, ""));
+      const parsed = stripCommas(val);
+      if (income.inputMode === "annual") onUpdate("annualAmount", parsed);
+      else if (income.inputMode === "paycheck-gross") onUpdate("grossPaycheckAmount", parsed);
+      else onUpdate("netPaycheckAmount", parsed);
+    }
+  }, [income.inputMode, onUpdate]);
+
+  const displayValue = focused ? rawValue : fmtCommas(currentValue);
 
   return (
     <Card>
@@ -91,22 +140,13 @@ const MonthlyIncomeSection = ({ income, derived, onUpdate }: Props) => {
           <div className="relative">
             <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground text-sm">$</span>
             <Input
-              type="number"
-              min={0}
+              type="text"
+              inputMode="decimal"
               className="pl-7"
-              value={
-                income.inputMode === "annual"
-                  ? income.annualAmount || ""
-                  : income.inputMode === "paycheck-gross"
-                    ? income.grossPaycheckAmount || ""
-                    : income.netPaycheckAmount || ""
-              }
-              onChange={(e) => {
-                const val = Number(e.target.value);
-                if (income.inputMode === "annual") onUpdate("annualAmount", val);
-                else if (income.inputMode === "paycheck-gross") onUpdate("grossPaycheckAmount", val);
-                else onUpdate("netPaycheckAmount", val);
-              }}
+              value={displayValue}
+              onChange={handleChange}
+              onFocus={handleFocus}
+              onBlur={handleBlur}
               placeholder="0"
             />
           </div>

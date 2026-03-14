@@ -39,11 +39,30 @@ const resources = [
   { label: "Seasonal Guide", to: "/resources/seasonal-guide" },
 ];
 
-const tools = [
-  { label: "Mortgage Calculator", to: "/tools/mortgage-calculator" },
-  { label: "Budget Planner", to: "/tools/budget-planner" },
-  { label: "House Hack Calculator", to: "/tools/house-hack-calculator" },
+const toolCategories = [
+  {
+    heading: "First-Time Home Buyers",
+    items: [
+      { label: "Mortgage Calculator", to: "/tools/mortgage-calculator" },
+      { label: "Budget Planner", to: "/tools/budget-planner" },
+    ],
+  },
+  {
+    heading: "Investors",
+    items: [
+      { label: "House Hack Calculator", to: "/tools/house-hack-calculator" },
+      { label: "Investor Spreadsheets", to: "/tools/investor-spreadsheets" },
+    ],
+  },
+  {
+    heading: "Sellers",
+    items: [
+      { label: "Seller Net Sheet", to: "/tools/investor-spreadsheets" },
+    ],
+  },
 ];
+
+const tools = toolCategories.flatMap((c) => c.items);
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -96,10 +115,16 @@ const Navbar = () => {
               Tools <ChevronDown className="h-3 w-3" />
             </button>
             <div className="invisible absolute left-0 top-full min-w-[220px] rounded-md border border-border bg-card p-2 opacity-0 shadow-lg transition-all group-hover:visible group-hover:opacity-100">
-              {tools.map((t) => (
-                <Link key={t.to} to={t.to} className="block rounded-sm px-3 py-2 text-sm text-foreground transition-colors hover:bg-secondary hover:text-primary">
-                  {t.label}
-                </Link>
+              {toolCategories.map((cat, ci) => (
+                <div key={cat.heading}>
+                  {ci > 0 && <div className="my-1.5 border-t border-border" />}
+                  <p className="px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">{cat.heading}</p>
+                  {cat.items.map((t) => (
+                    <Link key={t.to + t.label} to={t.to} className="block rounded-sm px-3 py-2 text-sm text-foreground transition-colors hover:bg-secondary hover:text-primary">
+                      {t.label}
+                    </Link>
+                  ))}
+                </div>
               ))}
             </div>
           </div>

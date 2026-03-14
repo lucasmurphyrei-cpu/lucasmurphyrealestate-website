@@ -2,17 +2,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import type { AnnualExpenseRow } from "./types";
+import { FormattedNumberInput } from "./FormattedInput";
 
 interface Props {
   expenses: AnnualExpenseRow[];
-  splitWithSpouse: boolean;
-  onUpdateRow: (id: string, field: keyof AnnualExpenseRow, value: string | number | boolean) => void;
+  onUpdateRow: (id: string, field: keyof AnnualExpenseRow, value: string | number) => void;
   onAddRow: () => void;
   onRemoveRow: (id: string) => void;
-  onToggleSplit: () => void;
 }
 
-const AnnualExpensesSection = ({ expenses, splitWithSpouse, onUpdateRow, onAddRow, onRemoveRow, onToggleSplit }: Props) => {
+const AnnualExpensesSection = ({ expenses, onUpdateRow, onAddRow, onRemoveRow }: Props) => {
   const labelBase = 300;
   const amountBase = 400;
 
@@ -21,27 +20,10 @@ const AnnualExpensesSection = ({ expenses, splitWithSpouse, onUpdateRow, onAddRo
       <CardHeader>
         <CardTitle className="text-lg font-display">Monthly Fixed Expenses</CardTitle>
         <p className="text-xs text-muted-foreground">
-          Enter the full monthly amount for each expense. Rename labels or add/remove rows to fit your situation.
-          Press Tab to move down within a column.
+          These are synced from Step 1. You can edit them here — changes will be reflected in your budget summary.
         </p>
       </CardHeader>
       <CardContent className="space-y-4">
-        {/* Spouse split toggle */}
-        <label className="flex items-center gap-2 cursor-pointer select-none rounded-lg bg-muted/50 p-3">
-          <input
-            type="checkbox"
-            checked={splitWithSpouse}
-            onChange={onToggleSplit}
-            className="h-4 w-4 rounded border-border accent-primary"
-          />
-          <div>
-            <span className="text-sm font-medium">Split with spouse (50/50)</span>
-            <p className="text-[10px] text-muted-foreground">
-              Applies to items marked with the split toggle below
-            </p>
-          </div>
-        </label>
-
         <div className="space-y-2">
           {expenses.map((row, i) => (
             <div key={row.id} className="flex items-center gap-2">
@@ -54,33 +36,14 @@ const AnnualExpensesSection = ({ expenses, splitWithSpouse, onUpdateRow, onAddRo
               />
               <div className="relative flex-1">
                 <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground text-sm">$</span>
-                <Input
+                <FormattedNumberInput
                   tabIndex={amountBase + i}
-                  type="number"
-                  min={0}
                   className="pl-7 h-9"
-                  value={row.amount || ""}
-                  onChange={(e) => onUpdateRow(row.id, "amount", Number(e.target.value))}
-                  placeholder="0"
+                  value={row.amount}
+                  onChange={(v) => onUpdateRow(row.id, "amount", v)}
+                  min={0}
                 />
               </div>
-              {/* Split eligible checkbox */}
-              <label className="shrink-0 flex items-center gap-1 cursor-pointer" title="Include in 50/50 split">
-                <input
-                  tabIndex={-1}
-                  type="checkbox"
-                  checked={row.splitEligible}
-                  onChange={(e) => onUpdateRow(row.id, "splitEligible", e.target.checked)}
-                  className="h-3.5 w-3.5 rounded border-border accent-primary"
-                />
-                <span className="text-[10px] text-muted-foreground">50%</span>
-              </label>
-              {/* Show effective amount when split is active */}
-              {splitWithSpouse && row.splitEligible && row.amount > 0 && (
-                <span className="w-16 shrink-0 text-right text-xs tabular-nums text-primary font-medium">
-                  ${(row.amount / 2).toFixed(0)}/mo
-                </span>
-              )}
               <Button
                 tabIndex={-1}
                 variant="ghost"

@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import type { FixedCostRow, MonthlyDerived } from "./types";
 import { formatCurrency, formatPercent } from "./calculations";
+import { FormattedNumberInput } from "./FormattedInput";
 
 interface Props {
   fixedCosts: FixedCostRow[];
@@ -24,6 +25,9 @@ const FixedCostsSection = ({ fixedCosts, derived, onUpdateRow, onAddRow, onRemov
           Enter your actual monthly costs. Rename labels to match your situation, and add or remove rows as needed.
           Percentages are based on your net monthly income. Press Tab to move down within a column.
         </p>
+        <p className="text-[10px] text-primary/80 font-medium">
+          💡 Your <strong>Debt Payments</strong> amount automatically carries over to Step 2.
+        </p>
       </CardHeader>
       <CardContent>
         <div className="space-y-2">
@@ -38,14 +42,12 @@ const FixedCostsSection = ({ fixedCosts, derived, onUpdateRow, onAddRow, onRemov
               />
               <div className="relative flex-1">
                 <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground text-sm">$</span>
-                <Input
+                <FormattedNumberInput
                   tabIndex={amountBase + i}
-                  type="number"
-                  min={0}
                   className="pl-7 h-9"
-                  value={row.amount || ""}
-                  onChange={(e) => onUpdateRow(row.id, "amount", Number(e.target.value))}
-                  placeholder="0"
+                  value={row.amount}
+                  onChange={(v) => onUpdateRow(row.id, "amount", v)}
+                  min={0}
                 />
               </div>
               <span className="w-14 shrink-0 text-right text-xs tabular-nums text-muted-foreground">

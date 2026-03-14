@@ -6,6 +6,11 @@ import type {
   FilingStatus,
   AnnualBudgetState,
   AnnualDerived,
+  AffordabilityInputs,
+  AffordabilityDerived,
+  PhilosophyResult,
+  MortgageCalcInputs,
+  MortgageCalcDerived,
 } from "./types";
 
 // ─── Tax brackets (2025 federal) ───
@@ -180,21 +185,12 @@ export function calcMonthly(state: MonthlyEstimatorState): MonthlyDerived {
 // ─── Annual calculations ───
 
 export function calcAnnual(state: AnnualBudgetState): AnnualDerived {
-  const { income, fixedExpenses, splitWithSpouse, guiltFree, debt, savings, assets, liabilities } = state;
+  const { income, fixedExpenses, guiltFree, debt, savings, assets, liabilities } = state;
 
   const totalMonthlyIncome = income.workIncome + income.miscIncome;
   const totalAnnualIncome = totalMonthlyIncome * 12;
 
-  let totalFixedExpenses = 0;
-  let totalFixedExpensesFull = 0;
-  for (const row of fixedExpenses) {
-    totalFixedExpensesFull += row.amount;
-    if (splitWithSpouse && row.splitEligible) {
-      totalFixedExpenses += row.amount / 2;
-    } else {
-      totalFixedExpenses += row.amount;
-    }
-  }
+  const totalFixedExpenses = fixedExpenses.reduce((s, r) => s + r.amount, 0);
 
   const totalGuiltFree = guiltFree.reduce((s, r) => s + r.amount, 0);
   const totalDebt = debt.reduce((s, r) => s + r.amount, 0);
@@ -212,7 +208,6 @@ export function calcAnnual(state: AnnualBudgetState): AnnualDerived {
     totalMonthlyIncome,
     totalAnnualIncome,
     totalFixedExpenses,
-    totalFixedExpensesFull,
     totalGuiltFree,
     totalDebt,
     totalSavings,
@@ -223,6 +218,297 @@ export function calcAnnual(state: AnnualBudgetState): AnnualDerived {
     totalLiabilities,
     netWorth,
   };
+}
+
+// ─── Affordability calculations ───
+
+/** Monthly principal + interest payment for a given loan amount */
+function calcMonthlyPI(loanAmount: number, annualRate: number, termYears: number): number {
+  if (loanAmount <= 0) return 0;
+  const r = annualRate / 100 / 12;
+  const n = termYears * 12;
+  if (r === 0) return loanAmount / n;
+  return loanAmount * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+}
+
+/** Max loan amount for a given max monthly P&I payment */
+function calcMaxLoan(maxMonthlyPI: number, annualRate: number, termYears: number): number {
+  if (maxMonthlyPI <= 0) return 0;
+  const r = annualRate / 100 / 12;
+  const n = termYears * 12;
+  if (r === 0) return maxMonthlyPI * n;
+  return maxMonthlyPI * (Math.pow(1 + r, n) - 1) / (r * Math.pow(1 + r, n));
+}
+
+/**
+ * Iteratively solve for max home price given a max total housing budget.
+ * Property tax and PMI depend on home price, creating a circular dependency.
+ * Uses downPaymentPercent to compute down payment as a % of the resulting home price.
+ * piOnly = true means the budget covers only P&I (Ramsey approach).
+ */
+function solveMaxHomePrice(
+  maxHousingBudget: number,
+  inputs: AffordabilityInputs,
+  termOverride?: number,
+  piOnly = false,
+): { homePrice: number; loanAmount: number; monthlyPI: number; monthlyTaxes: number; monthlyInsurance: number; monthlyPMI: number; downPaymentAmount: number } {
+  const term = termOverride ?? inputs.loanTerm;
+  const monthlyInsurance = inputs.homeInsuranceAnnual / 12;
+  const dpFraction = Math.min(inputs.downPaymentPercent, 99) / 100; // e.g. 20% → 0.20
+  const loanFraction = 1 - dpFraction; // portion financed
+
+  if (maxHousingBudget <= 0 || loanFraction <= 0) {
+    return { homePrice: 0, loanAmount: 0, monthlyPI: 0, monthlyTaxes: 0, monthlyInsurance: 0, monthlyPMI: 0, downPaymentAmount: 0 };
+  }
+
+  if (piOnly) {
+    // Ramsey: budget is for P&I only. Taxes/insurance/PMI are additional.
+    const maxLoan = calcMaxLoan(maxHousingBudget, inputs.interestRate, term);
+    const homePrice = maxLoan / loanFraction;
+    const loanAmount = homePrice * loanFraction;
+    const downPaymentAmount = homePrice * dpFraction;
+    const monthlyPI = calcMonthlyPI(loanAmount, inputs.interestRate, term);
+    const monthlyTaxes = (homePrice * inputs.propertyTaxRate / 100) / 12;
+    const monthlyPMI = dpFraction < 0.2 ? (loanAmount * inputs.pmiRate / 100) / 12 : 0;
+    return { homePrice: Math.max(0, homePrice), loanAmount: Math.max(0, loanAmount), monthlyPI, monthlyTaxes, monthlyInsurance, monthlyPMI, downPaymentAmount };
+  }
+
+  // Iterative solver: budget must cover P&I + taxes + insurance + PMI
+  let homePrice = 0;
+  for (let i = 0; i < 20; i++) {
+    const monthlyTaxes = (homePrice * inputs.propertyTaxRate / 100) / 12;
+    const loanAmount = homePrice * loanFraction;
+    const monthlyPMI = dpFraction < 0.2 ? (loanAmount * inputs.pmiRate / 100) / 12 : 0;
+
+    const availableForPI = maxHousingBudget - monthlyTaxes - monthlyInsurance - monthlyPMI;
+    if (availableForPI <= 0) {
+      homePrice = 0;
+      break;
+    }
+
+    const maxLoan = calcMaxLoan(availableForPI, inputs.interestRate, term);
+    const newHomePrice = maxLoan / loanFraction;
+
+    if (Math.abs(newHomePrice - homePrice) < 1) {
+      homePrice = newHomePrice;
+      break;
+    }
+    homePrice = newHomePrice;
+  }
+
+  homePrice = Math.max(0, homePrice);
+  const loanAmount = homePrice * loanFraction;
+  const downPaymentAmount = homePrice * dpFraction;
+  const monthlyPI = calcMonthlyPI(loanAmount, inputs.interestRate, term);
+  const monthlyTaxes = (homePrice * inputs.propertyTaxRate / 100) / 12;
+  const monthlyPMI = dpFraction < 0.2 ? (loanAmount * inputs.pmiRate / 100) / 12 : 0;
+
+  return { homePrice, loanAmount, monthlyPI, monthlyTaxes, monthlyInsurance, monthlyPMI, downPaymentAmount };
+}
+
+function buildPhilosophy(
+  label: string,
+  description: string,
+  maxBudget: number,
+  inputs: AffordabilityInputs,
+  monthlyGross: number,
+  termOverride?: number,
+  piOnly = false,
+): PhilosophyResult {
+  const term = termOverride ?? inputs.loanTerm;
+  const result = solveMaxHomePrice(maxBudget, inputs, term, piOnly);
+  const totalMonthlyHousing = result.monthlyPI + result.monthlyTaxes + result.monthlyInsurance + result.monthlyPMI;
+  const totalPayments = result.monthlyPI * term * 12;
+  const totalInterestPaid = totalPayments - result.loanAmount;
+  const totalCostOverLife = totalPayments + (result.monthlyTaxes + result.monthlyInsurance + result.monthlyPMI) * term * 12 + result.downPaymentAmount;
+  const frontEndDTI = monthlyGross > 0 ? (totalMonthlyHousing / monthlyGross) * 100 : 0;
+  const backEndDTI = monthlyGross > 0 ? ((totalMonthlyHousing + inputs.monthlyDebtPayments) / monthlyGross) * 100 : 0;
+
+  return {
+    label,
+    description,
+    maxMonthlyPayment: maxBudget,
+    maxLoanAmount: result.loanAmount,
+    maxHomePrice: result.homePrice,
+    downPaymentAmount: result.downPaymentAmount,
+    downPaymentPercent: inputs.downPaymentPercent,
+    monthlyPI: result.monthlyPI,
+    monthlyTaxes: result.monthlyTaxes,
+    monthlyInsurance: result.monthlyInsurance,
+    monthlyPMI: result.monthlyPMI,
+    totalMonthlyHousing,
+    totalCostOverLife: Math.max(0, totalCostOverLife),
+    totalInterestPaid: Math.max(0, totalInterestPaid),
+    frontEndDTI,
+    backEndDTI,
+  };
+}
+
+export function calcAffordability(inputs: AffordabilityInputs): AffordabilityDerived {
+  const monthlyGross = inputs.annualGrossIncome / 12;
+  const monthlyNet = inputs.annualNetIncome / 12;
+  const debt = inputs.monthlyDebtPayments;
+
+  // Dave Ramsey: 25% of take-home on P&I, 15-year fixed
+  const ramseyBudget = monthlyNet * 0.25;
+  const ramsey = buildPhilosophy(
+    "Dave Ramsey",
+    "25% of take-home pay, 15-year fixed mortgage only",
+    ramseyBudget, inputs, monthlyGross, 15, true,
+  );
+
+  // 28/36 Rule: min(28% gross front-end, 36% gross - debt back-end)
+  const convFront = monthlyGross * 0.28;
+  const convBack = monthlyGross * 0.36 - debt;
+  const conventional = buildPhilosophy(
+    "28/36 Rule",
+    "28% of gross income on housing, 36% max total debt",
+    Math.min(convFront, convBack), inputs, monthlyGross,
+  );
+
+  // FHA: min(31% front-end, 43% back-end)
+  const fhaFront = monthlyGross * 0.31;
+  const fhaBack = monthlyGross * 0.43 - debt;
+  const fha = buildPhilosophy(
+    "FHA Guidelines",
+    "31% of gross income on housing, 43% max total debt",
+    Math.min(fhaFront, fhaBack), inputs, monthlyGross,
+  );
+
+  // Aggressive: min(35% front-end, 50% back-end)
+  const aggFront = monthlyGross * 0.35;
+  const aggBack = monthlyGross * 0.50 - debt;
+  const aggressive = buildPhilosophy(
+    "Aggressive / Stretch",
+    "35% of gross income on housing, 50% max total debt",
+    Math.min(aggFront, aggBack), inputs, monthlyGross,
+  );
+
+  return {
+    monthlyGross,
+    monthlyNet,
+    philosophies: { ramsey, conventional, fha, aggressive },
+  };
+}
+
+// ─── Mortgage Calculator (Step 4) ───
+
+export function calcMortgage(
+  inputs: MortgageCalcInputs,
+  monthlyNetIncome: number,
+  currentFixedCosts: number,
+  currentGuiltFree: number,
+  currentSavings: number,
+  currentDebt: number,
+  currentRent: number,
+): MortgageCalcDerived {
+  // Resolve down payment based on mode
+  let downPaymentAmount: number;
+  let dpPercent: number;
+  if (inputs.downPaymentMode === "percent") {
+    dpPercent = inputs.downPaymentPercent;
+    downPaymentAmount = inputs.purchasePrice * (dpPercent / 100);
+  } else {
+    downPaymentAmount = inputs.downPaymentAmount;
+    dpPercent = inputs.purchasePrice > 0 ? (downPaymentAmount / inputs.purchasePrice) * 100 : 0;
+  }
+
+  const loanAmount = Math.max(0, inputs.purchasePrice - downPaymentAmount);
+
+  // PMI logic: FHA uses MIP (0.55% annual for most), conventional uses user-set PMI if <20% down
+  let pmiRate = inputs.pmiRate;
+  if (inputs.loanType === "fha") {
+    pmiRate = 0.55; // FHA annual MIP for most loan amounts
+  }
+  const monthlyPMI = dpPercent < 20 ? (loanAmount * pmiRate / 100) / 12 : 0;
+
+  const monthlyPI = calcMonthlyPI(loanAmount, inputs.interestRate, inputs.loanTerm);
+  const monthlyTaxes = (inputs.purchasePrice * inputs.propertyTaxRate / 100) / 12;
+  const monthlyInsurance = inputs.homeInsuranceAnnual / 12;
+  const monthlyHOA = inputs.hoaMonthly;
+  const totalMonthlyPayment = monthlyPI + monthlyTaxes + monthlyInsurance + monthlyPMI + monthlyHOA;
+
+  const totalPayments = monthlyPI * inputs.loanTerm * 12;
+  const totalInterestPaid = Math.max(0, totalPayments - loanAmount);
+  const totalCostOverLife = totalPayments
+    + (monthlyTaxes + monthlyInsurance + monthlyPMI + monthlyHOA) * inputs.loanTerm * 12
+    + downPaymentAmount;
+
+  // Budget impact: replace current rent with new mortgage (not double-counted)
+  const fixedCostsExRent = currentFixedCosts - currentRent;
+  const newMonthlyHousing = totalMonthlyPayment;
+  // What's left after fixed costs (minus old rent) + new mortgage + debt
+  const remainingAfterMortgage = monthlyNetIncome - fixedCostsExRent - newMonthlyHousing - currentDebt;
+  // How much guilt-free and savings would need to shrink
+  const currentDiscretionary = currentGuiltFree + currentSavings;
+  const guiltFreeReduction = remainingAfterMortgage < currentDiscretionary
+    ? Math.max(0, currentGuiltFree - Math.max(0, remainingAfterMortgage - currentSavings))
+    : 0;
+  const savingsReduction = remainingAfterMortgage < currentSavings
+    ? Math.max(0, currentSavings - remainingAfterMortgage)
+    : 0;
+
+  return {
+    loanAmount,
+    downPaymentPercent: dpPercent,
+    monthlyPI,
+    monthlyTaxes,
+    monthlyInsurance,
+    monthlyPMI,
+    monthlyHOA,
+    totalMonthlyPayment,
+    totalInterestPaid,
+    totalCostOverLife,
+    monthlyNetIncome,
+    currentFixedCosts,
+    currentRent,
+    fixedCostsExRent,
+    currentGuiltFree,
+    currentSavings,
+    currentDebt,
+    newMonthlyHousing,
+    remainingAfterMortgage,
+    guiltFreeReduction,
+    savingsReduction,
+  };
+}
+
+// ─── Savings timeline ───
+
+export interface DownPaymentMilestone {
+  label: string;
+  percent: number;
+  amountNeeded: number;
+  alreadySaved: number;
+  remaining: number;
+  monthsToGo: number | null; // null = already reached or no savings rate
+}
+
+export function calcSavingsTimeline(
+  targetHomePrice: number,
+  downPaymentSaved: number,
+  monthlySavings: number,
+): DownPaymentMilestone[] {
+  const thresholds = [
+    { label: "3.5% (FHA Minimum)", percent: 3.5 },
+    { label: "5% (Conventional Min)", percent: 5 },
+    { label: "10%", percent: 10 },
+    { label: "20% (No PMI)", percent: 20 },
+  ];
+
+  return thresholds.map(({ label, percent }) => {
+    const amountNeeded = targetHomePrice * (percent / 100);
+    const remaining = Math.max(0, amountNeeded - downPaymentSaved);
+    let monthsToGo: number | null = null;
+
+    if (remaining <= 0) {
+      monthsToGo = 0;
+    } else if (monthlySavings > 0) {
+      monthsToGo = Math.ceil(remaining / monthlySavings);
+    }
+
+    return { label, percent, amountNeeded, alreadySaved: downPaymentSaved, remaining, monthsToGo };
+  });
 }
 
 // ─── Formatting helpers ───

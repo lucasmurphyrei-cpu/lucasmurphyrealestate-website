@@ -23,6 +23,7 @@ import MortgageCalculator from "./pages/tools/MortgageCalculator";
 import BudgetSpreadsheet from "./pages/tools/BudgetSpreadsheet";
 import BudgetPlanner from "./pages/tools/budget-planner/BudgetPlanner";
 import HouseHackCalculator from "./pages/tools/HouseHackCalculator";
+import InvestorSpreadsheets from "./pages/tools/InvestorSpreadsheets";
 import MilwaukeeCounty from "./pages/areas/MilwaukeeCounty";
 import OzaukeeCounty from "./pages/areas/OzaukeeCounty";
 import WaukeshaCounty from "./pages/areas/WaukeshaCounty";
@@ -64,6 +65,7 @@ const App = () => (
               <Route path="/tools/budget-spreadsheet" element={<BudgetSpreadsheet />} />
               <Route path="/tools/budget-planner" element={<BudgetPlanner />} />
               <Route path="/tools/house-hack-calculator" element={<HouseHackCalculator />} />
+              <Route path="/tools/investor-spreadsheets" element={<InvestorSpreadsheets />} />
               <Route path="/areas/milwaukee-county" element={<MilwaukeeCounty />} />
               <Route path="/areas/ozaukee-county" element={<OzaukeeCounty />} />
               <Route path="/areas/waukesha-county" element={<WaukeshaCounty />} />

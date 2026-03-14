@@ -1,4 +1,4 @@
-import type { MonthlyEstimatorState, AnnualBudgetState, BudgetPlannerState, FixedCostRow, AnnualExpenseRow, BudgetRow } from "./types";
+import type { MonthlyEstimatorState, AnnualBudgetState, AffordabilityInputs, MortgageCalcInputs, BudgetPlannerState, FixedCostRow, AnnualExpenseRow, BudgetRow } from "./types";
 
 export const DEFAULT_FIXED_COSTS: FixedCostRow[] = [
   { id: "rent", label: "Rent / Mortgage", amount: 0 },
@@ -13,15 +13,15 @@ export const DEFAULT_FIXED_COSTS: FixedCostRow[] = [
 ];
 
 export const DEFAULT_ANNUAL_EXPENSES: AnnualExpenseRow[] = [
-  { id: "mortgage", label: "Mortgage / Rent", amount: 0, splitEligible: true },
-  { id: "electricity", label: "Electricity", amount: 0, splitEligible: true },
-  { id: "internet", label: "Internet", amount: 0, splitEligible: true },
-  { id: "groceries", label: "Groceries", amount: 0, splitEligible: true },
-  { id: "petCosts", label: "Pets", amount: 0, splitEligible: true },
-  { id: "healthInsurance", label: "Health Insurance", amount: 0, splitEligible: false },
-  { id: "carInsurance", label: "Car Insurance", amount: 0, splitEligible: false },
-  { id: "gas", label: "Gas", amount: 0, splitEligible: false },
-  { id: "subscriptions", label: "Subscriptions", amount: 0, splitEligible: false },
+  { id: "mortgage", label: "Mortgage / Rent", amount: 0 },
+  { id: "electricity", label: "Electricity", amount: 0 },
+  { id: "internet", label: "Internet", amount: 0 },
+  { id: "groceries", label: "Groceries", amount: 0 },
+  { id: "petCosts", label: "Pets", amount: 0 },
+  { id: "healthInsurance", label: "Health Insurance", amount: 0 },
+  { id: "carInsurance", label: "Car Insurance", amount: 0 },
+  { id: "gas", label: "Gas", amount: 0 },
+  { id: "subscriptions", label: "Subscriptions", amount: 0 },
 ];
 
 export const DEFAULT_MONTHLY: MonthlyEstimatorState = {
@@ -43,7 +43,6 @@ export const DEFAULT_MONTHLY: MonthlyEstimatorState = {
 export const DEFAULT_ANNUAL: AnnualBudgetState = {
   income: { workIncome: 0, miscIncome: 0 },
   fixedExpenses: DEFAULT_ANNUAL_EXPENSES,
-  splitWithSpouse: false,
   guiltFree: [
     { id: "restaurants", label: "Restaurants / Fast Food", amount: 0 },
     { id: "entertainment", label: "Entertainment", amount: 0 },
@@ -52,11 +51,10 @@ export const DEFAULT_ANNUAL: AnnualBudgetState = {
     { id: "miscTravel", label: "Misc / Travel", amount: 0 },
   ] as BudgetRow[],
   debt: [
-    { id: "studentLoans", label: "Student Loans", amount: 0 },
     { id: "debtRepayment", label: "Debt Repayment", amount: 0 },
   ] as BudgetRow[],
   savings: [
-    { id: "monthlySavings", label: "Monthly Savings", amount: 0 },
+    { id: "monthlySavings", label: "Monthly Savings (Downpayment)", amount: 0 },
     { id: "monthlyInvesting", label: "Monthly Investing", amount: 0 },
   ] as BudgetRow[],
   showNetWorth: false,
@@ -64,8 +62,39 @@ export const DEFAULT_ANNUAL: AnnualBudgetState = {
   liabilities: { mortgage: 0, studentLoans: 0, otherDebt: 0 },
 };
 
+export const DEFAULT_AFFORDABILITY: AffordabilityInputs = {
+  annualGrossIncome: 0,
+  annualNetIncome: 0,
+  monthlyDebtPayments: 0,
+  downPaymentPercent: 0,
+  downPaymentSaved: 0,
+  interestRate: 6.5,
+  loanTerm: 30,
+  propertyTaxRate: 1.25,
+  homeInsuranceAnnual: 1500,
+  pmiRate: 0.5,
+  monthlySavingsForHome: 0,
+};
+
+export const DEFAULT_MORTGAGE_CALC: MortgageCalcInputs = {
+  purchasePrice: 0,
+  downPaymentAmount: 0,
+  downPaymentPercent: 20,
+  downPaymentMode: "percent",
+  loanType: "conventional",
+  county: "custom",
+  interestRate: 6.5,
+  loanTerm: 30,
+  propertyTaxRate: 1.25,
+  homeInsuranceAnnual: 1500,
+  pmiRate: 0.5,
+  hoaMonthly: 0,
+};
+
 export const DEFAULT_STATE: BudgetPlannerState = {
   tab: "monthly",
   monthly: DEFAULT_MONTHLY,
   annual: DEFAULT_ANNUAL,
+  affordability: DEFAULT_AFFORDABILITY,
+  mortgageCalc: DEFAULT_MORTGAGE_CALC,
 };

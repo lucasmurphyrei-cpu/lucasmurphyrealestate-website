@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Card, CardContent } from "@/components/ui/card";
-import { Home, Building2, MapPin, TrendingUp, Landmark, DollarSign, ArrowRight, ExternalLink, BookOpen, ShoppingBag, LineChart } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Home, Building2, MapPin, TrendingUp, Landmark, DollarSign, ArrowRight, ExternalLink, BookOpen, ShoppingBag, LineChart, Phone, Mail, Calendar } from "lucide-react";
 import { motion } from "framer-motion";
+import lucasHeadshot from "@/assets/lucas-murphy-headshot.jpeg";
+import provisionLogo from "@/assets/provision-logo.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -181,6 +184,65 @@ const GuidesOverview = () => (
       <CategorySection icon={ShoppingBag} title="Buyer Guides" guides={buyerGuides} startIndex={0} />
       <CategorySection icon={LineChart} title="Investor Guides" guides={investorGuides} startIndex={buyerGuides.length} />
       <CategorySection icon={DollarSign} title="Seller Guides" guides={sellerGuides} startIndex={buyerGuides.length + investorGuides.length} />
+    </section>
+
+    {/* Branding / Contact CTA */}
+    <section className="border-t border-border bg-secondary/30">
+      <div className="container py-16 md:py-20">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col items-center gap-10 md:flex-row md:items-start"
+        >
+          <div className="flex-shrink-0">
+            <div className="h-40 w-40 overflow-hidden rounded-full border-4 border-primary/30">
+              <img src={lucasHeadshot} alt="Lucas Murphy, Realtor" className="h-full w-full object-cover" />
+            </div>
+          </div>
+
+          <div className="flex-1 text-center md:text-left">
+            <h2 className="font-display text-2xl font-bold">Lucas Murphy</h2>
+            <p className="mt-1 text-sm font-medium text-muted-foreground">
+              Realtor® — eXp Realty | Provision Properties Core Team
+            </p>
+            <p className="mt-4 max-w-lg text-sm leading-relaxed text-muted-foreground">
+              Have questions about buying, selling, or investing in Metro Milwaukee? I'd love to help — reach out anytime.
+            </p>
+
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <a href="tel:4144581952" className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary">
+                <Phone className="h-4 w-4 text-primary" />
+                (414) 458-1952
+              </a>
+              <a href="mailto:lucas.murphy@exprealty.com" className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary">
+                <Mail className="h-4 w-4 text-primary" />
+                lucas.murphy@exprealty.com
+              </a>
+              <a href="https://calendly.com/lucasmurphyrei" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary">
+                <Calendar className="h-4 w-4 text-primary" />
+                Schedule a Consultation
+              </a>
+            </div>
+
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+              <Button asChild>
+                <Link to="/contact" className="gap-2">
+                  Get In Touch <ArrowRight className="h-4 w-4" />
+                </Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link to="/">Browse All Resources</Link>
+              </Button>
+            </div>
+          </div>
+
+          <div className="flex-shrink-0 self-center md:self-start">
+            <img src={provisionLogo} alt="Provision Properties Core Team logo" className="h-32 w-auto md:h-40" />
+          </div>
+        </motion.div>
+      </div>
     </section>
   </>
 );
