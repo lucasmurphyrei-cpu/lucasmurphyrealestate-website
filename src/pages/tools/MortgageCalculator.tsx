@@ -496,7 +496,7 @@ const MortgageCalculator = () => {
                 </Button>
               </div>
               <p className="text-xs text-muted-foreground">
-                Questions? <strong>Call Lucas Murphy at (414) 458-1952</strong> to discuss your situation.
+                Questions? <strong>Call Lucas Murphy at (414)-269-4909</strong> to discuss your situation.
               </p>
             </CardContent>
           </Card>

@@ -512,7 +512,7 @@ const AffordabilitySection = ({ inputs, derived, onUpdate }: Props) => {
             <p><strong>Aggressive:</strong> Some lenders will approve higher ratios, but this leaves less room for savings, emergencies, and lifestyle. Proceed with caution.</p>
           </div>
           <p className="text-xs text-muted-foreground mt-3">
-            Want personalized advice? <strong>Call Lucas Murphy at (414) 458-1952</strong> to discuss your specific situation and find the right home for your budget.
+            Want personalized advice? <strong>Call Lucas Murphy at (414)-269-4909</strong> to discuss your specific situation and find the right home for your budget.
           </p>
         </CardContent>
       </Card>

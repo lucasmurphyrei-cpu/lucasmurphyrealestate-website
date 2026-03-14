@@ -25,7 +25,7 @@ const WhyFixedCostsSection = () => (
       </p>
       <p className="text-xs border-t border-border pt-3">
         Want help figuring out how much home you can afford? Reach out at{" "}
-        <a href="tel:4144581952" className="text-primary hover:underline font-medium">(414) 458-1952</a> or{" "}
+        <a href="tel:4142694909" className="text-primary hover:underline font-medium">(414)-269-4909</a> or{" "}
         <a href="mailto:lucas.murphy@exprealty.com" className="text-primary hover:underline font-medium">
           lucas.murphy@exprealty.com
         </a>

@@ -212,9 +212,9 @@ const GuidesOverview = () => (
             </p>
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <a href="tel:4144581952" className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary">
+              <a href="tel:4142694909" className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary">
                 <Phone className="h-4 w-4 text-primary" />
-                (414) 458-1952
+                (414)-269-4909
               </a>
               <a href="mailto:lucas.murphy@exprealty.com" className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary">
                 <Mail className="h-4 w-4 text-primary" />

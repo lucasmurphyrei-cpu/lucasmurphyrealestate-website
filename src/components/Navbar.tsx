@@ -80,7 +80,7 @@ const Navbar = () => {
             <span className="md:hidden">Lucas Murphy | eXp Realty</span>
           </span>
           <span className="hidden text-xs text-muted-foreground md:block">
-            Phone: <a href="tel:4144581952" className="hover:text-primary">(414) 458-1952</a> | Email: <a href="mailto:lucasmurphyrei@gmail.com" className="hover:text-primary">lucasmurphyrei@gmail.com</a>
+            Phone: <a href="tel:4142694909" className="hover:text-primary">(414)-269-4909</a> | Email: <a href="mailto:lucasmurphyrei@gmail.com" className="hover:text-primary">lucasmurphyrei@gmail.com</a>
           </span>
         </Link>
 

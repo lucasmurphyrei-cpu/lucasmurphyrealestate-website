@@ -476,7 +476,7 @@ const MortgageSection = ({ inputs, derived, onUpdate }: Props) => {
             </p>
           </div>
           <p className="text-xs text-muted-foreground text-center">
-            In the meantime, <strong>call Lucas Murphy at (414) 458-1952</strong> — I can connect you with a lender who's right for your situation.
+            In the meantime, <strong>call Lucas Murphy at (414)-269-4909</strong> — I can connect you with a lender who's right for your situation.
           </p>
         </CardContent>
       </Card>

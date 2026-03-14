@@ -26,7 +26,7 @@ export const FONT_TINY = 6.5;
 export const CONTACT = {
   name: "Lucas Murphy",
   title: "Real Estate Advisor",
-  phone: "(414) 458-1952",
+  phone: "(414)-269-4909",
   email: "lucas.murphy@exprealty.com",
   calendly: "calendly.com/lucasmurphyrei",
   website: "LucasMurphy.exprealty.com",

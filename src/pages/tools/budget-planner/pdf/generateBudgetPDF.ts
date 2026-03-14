@@ -151,7 +151,7 @@ function buildMonthlySheet(wb: ExcelJS.Workbook, state: BudgetPlannerState, deri
   // Subtitle
   ws.mergeCells(r, 1, r, 7);
   const subCell = ws.getCell(r, 1);
-  subCell.value = `Prepared ${new Date().toLocaleDateString()} | Lucas Murphy, eXp Realty | (414) 458-1952`;
+  subCell.value = `Prepared ${new Date().toLocaleDateString()} | Lucas Murphy, eXp Realty | (414)-269-4909`;
   subCell.fill = navyFill();
   subCell.font = { color: { argb: WHITE }, size: 10 };
   subCell.alignment = { horizontal: "center", vertical: "middle" };
@@ -339,7 +339,7 @@ function buildMonthlySheet(wb: ExcelJS.Workbook, state: BudgetPlannerState, deri
 
   // ─── Footer ───
   ws.mergeCells(r, 1, r, 7);
-  ws.getCell(r, 1).value = "Lucas Murphy  |  eXp Realty  |  (414) 458-1952  |  lucas.murphy@exprealty.com";
+  ws.getCell(r, 1).value = "Lucas Murphy  |  eXp Realty  |  (414)-269-4909  |  lucas.murphy@exprealty.com";
   ws.getCell(r, 1).font = { color: { argb: GOLD }, size: 10, bold: true };
   ws.getCell(r, 1).fill = navyFill();
   ws.getCell(r, 1).alignment = { horizontal: "center" };
@@ -385,7 +385,7 @@ function buildAnnualSheet(wb: ExcelJS.Workbook, state: BudgetPlannerState, deriv
   r++;
 
   ws.mergeCells(r, 1, r, totalCols);
-  ws.getCell(r, 1).value = `Prepared ${new Date().toLocaleDateString()} | Lucas Murphy, eXp Realty | (414) 458-1952`;
+  ws.getCell(r, 1).value = `Prepared ${new Date().toLocaleDateString()} | Lucas Murphy, eXp Realty | (414)-269-4909`;
   ws.getCell(r, 1).fill = navyFill();
   ws.getCell(r, 1).font = { color: { argb: WHITE }, size: 10 };
   ws.getCell(r, 1).alignment = { horizontal: "center" };
@@ -740,7 +740,7 @@ function buildAnnualSheet(wb: ExcelJS.Workbook, state: BudgetPlannerState, deriv
 
   // ─── Footer ───
   ws.mergeCells(r, 1, r, totalCols);
-  ws.getCell(r, 1).value = "Lucas Murphy  |  eXp Realty  |  (414) 458-1952  |  lucas.murphy@exprealty.com";
+  ws.getCell(r, 1).value = "Lucas Murphy  |  eXp Realty  |  (414)-269-4909  |  lucas.murphy@exprealty.com";
   ws.getCell(r, 1).font = { color: { argb: GOLD }, size: 10, bold: true };
   ws.getCell(r, 1).fill = navyFill();
   ws.getCell(r, 1).alignment = { horizontal: "center" };
@@ -781,7 +781,7 @@ function buildAffordabilitySheet(wb: ExcelJS.Workbook, state: BudgetPlannerState
   r++;
 
   ws.mergeCells(r, 1, r, totalCols);
-  ws.getCell(r, 1).value = `Prepared ${new Date().toLocaleDateString()} | Lucas Murphy, eXp Realty | (414) 458-1952`;
+  ws.getCell(r, 1).value = `Prepared ${new Date().toLocaleDateString()} | Lucas Murphy, eXp Realty | (414)-269-4909`;
   ws.getCell(r, 1).fill = navyFill();
   ws.getCell(r, 1).font = { color: { argb: WHITE }, size: 10 };
   ws.getCell(r, 1).alignment = { horizontal: "center", vertical: "middle" };
@@ -964,7 +964,7 @@ function buildAffordabilitySheet(wb: ExcelJS.Workbook, state: BudgetPlannerState
 
   // ─── Footer ───
   ws.mergeCells(r, 1, r, totalCols);
-  ws.getCell(r, 1).value = "Lucas Murphy  |  eXp Realty  |  (414) 458-1952  |  lucas.murphy@exprealty.com";
+  ws.getCell(r, 1).value = "Lucas Murphy  |  eXp Realty  |  (414)-269-4909  |  lucas.murphy@exprealty.com";
   ws.getCell(r, 1).font = { color: { argb: GOLD }, size: 10, bold: true };
   ws.getCell(r, 1).fill = navyFill();
   ws.getCell(r, 1).alignment = { horizontal: "center" };

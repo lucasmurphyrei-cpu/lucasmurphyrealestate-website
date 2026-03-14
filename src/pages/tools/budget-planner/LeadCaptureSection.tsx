@@ -51,7 +51,7 @@ const LeadCaptureSection = ({ tab, state, derived }: Props) => {
       console.error("Excel generation failed:", err);
       toast({
         title: "Something went wrong",
-        description: "Please try again or call us at (414) 458-1952.",
+        description: "Please try again or call us at (414)-269-4909.",
         variant: "destructive",
       });
     } finally {
