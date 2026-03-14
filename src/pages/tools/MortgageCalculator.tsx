@@ -469,7 +469,7 @@ const MortgageCalculator = () => {
               <div className="rounded-md bg-muted/50 p-3 space-y-1.5">
                 <p className="text-xs font-semibold">Helpful Resources</p>
                 <p className="text-xs text-muted-foreground">
-                  <Link to="/tools/budget-planner" className="text-primary hover:underline font-medium">Budget Planner</Link> — Full 4-step tool to understand your spending, savings, and affordability.
+                  <Link to="/tools/budget-planner" className="text-primary hover:underline font-medium">How Much Home Can You Afford?</Link> — Full 4-step tool to understand your spending, savings, and affordability.
                 </p>
                 <p className="text-xs text-muted-foreground">
                   <Link to="/tools/investor-spreadsheets" className="text-primary hover:underline font-medium">CapEx Calculator</Link> — Plan for long-term capital expenditure reserves.
@@ -487,12 +487,12 @@ const MortgageCalculator = () => {
               <h3 className="font-display font-bold text-lg">Want the Full Picture?</h3>
               <p className="text-sm text-muted-foreground leading-relaxed max-w-lg mx-auto">
                 This calculator shows your mortgage payment — but how does it fit with your full budget?
-                Use the <strong className="text-foreground">Budget Planner</strong> to understand your fixed expenses, savings rate,
+                Use <strong className="text-foreground">How Much Home Can You Afford?</strong> to understand your fixed expenses, savings rate,
                 and what you can truly afford before making an offer.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button asChild>
-                  <Link to="/tools/budget-planner">Open Budget Planner</Link>
+                  <Link to="/tools/budget-planner">How Much Home Can You Afford?</Link>
                 </Button>
               </div>
               <p className="text-xs text-muted-foreground">

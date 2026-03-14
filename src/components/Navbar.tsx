@@ -44,7 +44,7 @@ const toolCategories = [
     heading: "First-Time Home Buyers",
     items: [
       { label: "Mortgage Calculator", to: "/tools/mortgage-calculator" },
-      { label: "Budget Planner", to: "/tools/budget-planner" },
+      { label: "How Much Home Can You Afford?", to: "/tools/budget-planner" },
     ],
   },
   {
