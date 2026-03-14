@@ -109,14 +109,14 @@ const Contact = () => {
               <Mail className="mt-1 h-5 w-5 text-primary" />
               <div>
                 <p className="font-medium">Email Us</p>
-                <p className="text-sm text-muted-foreground">Contact us through the form and we'll respond promptly.</p>
+                <a href="mailto:lucas.murphy@exprealty.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">lucas.murphy@exprealty.com</a>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <Phone className="mt-1 h-5 w-5 text-primary" />
               <div>
                 <p className="font-medium">Call Us</p>
-                <p className="text-sm text-muted-foreground">Reach out anytime — we're here to help.</p>
+                <a href="tel:4142694909" className="text-sm text-muted-foreground hover:text-primary transition-colors">(414)-269-4909</a>
               </div>
             </div>
           </div>
