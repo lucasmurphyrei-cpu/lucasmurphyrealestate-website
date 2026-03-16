@@ -25,7 +25,7 @@ const LenderCard = ({ lender }: { lender: Lender }) => (
           <img
             src={lender.image}
             alt={lender.name}
-            className="h-72 w-full object-contain bg-gray-100 sm:h-full sm:object-cover sm:object-center sm:bg-transparent"
+            className="h-72 w-full object-cover object-top bg-gray-100 sm:h-full sm:object-cover sm:object-center sm:bg-transparent"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent sm:bg-gradient-to-r" />
         </div>
