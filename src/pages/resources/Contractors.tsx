@@ -25,7 +25,7 @@ const ContractorCard = ({ contractor }: { contractor: Contractor }) => (
           <img
             src={contractor.image}
             alt={contractor.name}
-            className={contractor.isLogo ? "h-36 w-36 object-contain sm:h-32 sm:w-32" : "h-56 w-full object-cover sm:h-full"}
+            className={contractor.isLogo ? "h-36 w-36 object-contain sm:h-32 sm:w-32" : "h-56 w-full object-cover object-top sm:h-full sm:object-contain sm:object-center sm:bg-[#3a5a2a]"}
           />
           {!contractor.isLogo && (
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent sm:bg-gradient-to-r" />
