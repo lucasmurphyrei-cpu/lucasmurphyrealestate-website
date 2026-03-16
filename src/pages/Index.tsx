@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Home, Building2, MapPin, TrendingUp, TrendingDown, Minus as MinusIcon, Hammer, Landmark, DollarSign, Search, Shield, ArrowRight, Clock, Percent, CalendarDays, ClipboardList, PlusCircle, Download, Eye, Compass } from "lucide-react";
+import { Home, Building2, MapPin, TrendingUp, TrendingDown, Minus as MinusIcon, Hammer, Landmark, DollarSign, Search, Shield, ArrowRight, Clock, Percent, CalendarDays, ClipboardList, PlusCircle, Download, Eye, Compass, Truck } from "lucide-react";
 import countyMarketData from "@/data/countyMarketData";
 import { motion } from "framer-motion";
 import milwaukeeSkyline from "@/assets/milwaukee-skyline.jpg";
@@ -41,6 +41,7 @@ const resources = [
   { icon: Search, label: "Home Inspectors", to: "/resources/home-inspectors" },
   { icon: Shield, label: "Home Insurance", to: "/resources/home-insurance" },
   { icon: CalendarDays, label: "Seasonal Guide", to: "/resources/seasonal-guide" },
+  { icon: Truck, label: "Movers", to: "/resources/movers" },
 ];
 
 const statIconMap: Record<string, React.ElementType> = {

@@ -37,6 +37,7 @@ const resources = [
   { label: "Home Inspectors", to: "/resources/home-inspectors" },
   { label: "Home Insurance", to: "/resources/home-insurance" },
   { label: "Seasonal Guide", to: "/resources/seasonal-guide" },
+  { label: "Movers", to: "/resources/movers" },
 ];
 
 const toolCategories = [

@@ -76,6 +76,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.lucasmurphyrealestate.com/resources/movers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
