@@ -5,6 +5,8 @@ const FirstTimeCondoBuyers = () => (
   <GuidePageTemplate
     title="First-Time Condo Buyers Guide"
     subtitle="A complete walkthrough for purchasing your first condominium in the Milwaukee metro area."
+    metaDescription="Navigate condo purchasing in Metro Milwaukee — HOA fees, financing, assessments, and what to look for during showings."
+    canonicalPath="/guides/first-time-condo-buyers"
   >
     <h2>Why Consider a Condo?</h2>
     <p>

@@ -119,6 +119,7 @@ const Movers = () => (
         name="description"
         content="Reliable moving companies in Milwaukee and Waukesha County to make your transition seamless — personally recommended by Lucas Murphy."
       />
+      <link rel="canonical" href="https://www.lucasmurphyrealestate.com/resources/movers" />
     </Helmet>
 
     <article className="container max-w-3xl py-16">

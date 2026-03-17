@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -58,6 +59,12 @@ const BudgetPlanner = () => {
   } = useBudgetState();
 
   return (
+    <>
+    <Helmet>
+      <title>How Much Home Can You Afford? | Lucas Murphy Real Estate</title>
+      <meta name="description" content="4-step affordability calculator for Metro Milwaukee buyers — understand your expenses, savings rate, and maximum home price." />
+      <link rel="canonical" href="https://www.lucasmurphyrealestate.com/tools/budget-planner" />
+    </Helmet>
     <main className="container px-4 sm:px-6 md:px-8 py-12 md:py-16">
       <h1 className="font-display text-3xl font-bold md:text-5xl">How Much Home Can You Afford?</h1>
       <p className="mt-3 max-w-2xl text-muted-foreground">
@@ -314,6 +321,7 @@ const BudgetPlanner = () => {
         </TabsContent>
       </Tabs>
     </main>
+    </>
   );
 };
 

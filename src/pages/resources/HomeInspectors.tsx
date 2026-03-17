@@ -107,6 +107,7 @@ const HomeInspectors = () => (
         name="description"
         content="Thorough, reliable home inspectors serving Milwaukee County and Waukesha County — personally recommended by Lucas Murphy."
       />
+      <link rel="canonical" href="https://www.lucasmurphyrealestate.com/resources/home-inspectors" />
     </Helmet>
 
     <article className="container max-w-3xl py-16">

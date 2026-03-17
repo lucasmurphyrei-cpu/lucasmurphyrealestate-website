@@ -112,6 +112,7 @@ const Lenders = () => (
         name="description"
         content="Mortgage lenders and loan officers we recommend for home purchases, refinancing, and investment property financing in the Milwaukee area."
       />
+      <link rel="canonical" href="https://www.lucasmurphyrealestate.com/resources/lenders" />
     </Helmet>
 
     <article className="container max-w-3xl py-16">

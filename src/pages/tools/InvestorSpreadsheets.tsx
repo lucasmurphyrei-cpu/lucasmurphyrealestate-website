@@ -166,6 +166,7 @@ const InvestorSpreadsheets = () => (
         name="description"
         content="Free Provision Properties branded Excel tools — BRRRR calculator, flip analysis, rehab budget tracker, CapEx planner, and seller net sheet for Metro Milwaukee real estate."
       />
+      <link rel="canonical" href="https://www.lucasmurphyrealestate.com/tools/investor-spreadsheets" />
     </Helmet>
 
     <section className="border-b border-border bg-secondary/30">

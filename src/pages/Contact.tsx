@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -59,6 +60,12 @@ const Contact = () => {
   };
 
   return (
+    <>
+    <Helmet>
+      <title>Contact Us | Lucas Murphy Real Estate</title>
+      <meta name="description" content="Get in touch with Lucas Murphy and the Provision Properties Core Team. Serving Milwaukee, Waukesha, Washington & Ozaukee Counties." />
+      <link rel="canonical" href="https://www.lucasmurphyrealestate.com/contact" />
+    </Helmet>
     <section className="container max-w-5xl py-16">
       <div className="text-center">
         <h1 className="font-display text-4xl font-bold md:text-5xl">Get In Touch</h1>
@@ -132,6 +139,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

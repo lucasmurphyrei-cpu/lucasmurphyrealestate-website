@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { useHouseHackState } from "./house-hack/useHouseHackState";
@@ -79,6 +80,12 @@ const HouseHackCalculator = () => {
   }, [highlightUnits]);
 
   return (
+    <>
+    <Helmet>
+      <title>House Hack Deal Analysis Calculator | Lucas Murphy Real Estate</title>
+      <meta name="description" content="Analyze multi-unit properties to calculate true housing cost, cash flow, and investment returns for house hacking deals." />
+      <link rel="canonical" href="https://www.lucasmurphyrealestate.com/tools/house-hack-calculator" />
+    </Helmet>
     <main className="container px-4 sm:px-6 md:px-8 py-12 md:py-16 overflow-x-hidden">
       <h1 className="font-display text-3xl font-bold md:text-5xl">House Hack Deal Analysis</h1>
       <p className="mt-3 max-w-2xl text-muted-foreground">
@@ -259,6 +266,7 @@ const HouseHackCalculator = () => {
         </TabsContent>
       </Tabs>
     </main>
+    </>
   );
 };
 

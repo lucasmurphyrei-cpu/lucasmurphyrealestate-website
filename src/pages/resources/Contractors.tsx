@@ -109,6 +109,7 @@ const Contractors = () => (
         name="description"
         content="Reliable contractors in Milwaukee and Waukesha County for renovations, repairs, and home improvement projects — personally recommended by Lucas Murphy."
       />
+      <link rel="canonical" href="https://www.lucasmurphyrealestate.com/resources/contractors" />
     </Helmet>
 
     <article className="container max-w-3xl py-16">

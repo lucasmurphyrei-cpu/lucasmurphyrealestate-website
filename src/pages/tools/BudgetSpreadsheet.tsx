@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -27,6 +28,12 @@ const BudgetSpreadsheet = () => {
   const remaining = income - totalExpenses;
 
   return (
+    <>
+    <Helmet>
+      <title>Budget Spreadsheet | Lucas Murphy Real Estate</title>
+      <meta name="description" content="Plan your monthly homeownership budget. Track income and expenses to see what you can comfortably afford." />
+      <link rel="canonical" href="https://www.lucasmurphyrealestate.com/tools/budget-spreadsheet" />
+    </Helmet>
     <main className="container py-16">
       <h1 className="font-display text-4xl font-bold md:text-5xl">Budget Spreadsheet</h1>
       <p className="mt-4 max-w-2xl text-muted-foreground">Plan your monthly homeownership budget. Enter your income and estimated expenses to see how much you can comfortably afford.</p>
@@ -74,6 +81,7 @@ const BudgetSpreadsheet = () => {
         </Card>
       </div>
     </main>
+    </>
   );
 };
 

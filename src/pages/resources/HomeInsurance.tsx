@@ -92,6 +92,7 @@ const HomeInsurance = () => (
         name="description"
         content="Trusted home insurance providers in Milwaukee, Waukesha, Washington, and Ozaukee Counties — personally recommended by Lucas Murphy."
       />
+      <link rel="canonical" href="https://www.lucasmurphyrealestate.com/resources/home-insurance" />
     </Helmet>
 
     <article className="container max-w-3xl py-16">

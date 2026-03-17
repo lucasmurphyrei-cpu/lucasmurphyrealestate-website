@@ -14,6 +14,7 @@ import Relocation from "./pages/guides/Relocation";
 import HouseHacking from "./pages/guides/HouseHacking";
 import Investors from "./pages/guides/Investors";
 import GuidesOverview from "./pages/guides/GuidesOverview";
+import SellersPage from "./pages/guides/Sellers";
 import ContractorsPage from "./pages/resources/Contractors";
 import LendersPage from "./pages/resources/Lenders";
 import HomeInspectorsPage from "./pages/resources/HomeInspectors";
@@ -57,6 +58,7 @@ const App = () => (
               <Route path="/guides/relocation" element={<Relocation />} />
               <Route path="/guides/house-hacking" element={<HouseHacking />} />
               <Route path="/guides/investors" element={<Investors />} />
+              <Route path="/guides/sellers" element={<SellersPage />} />
               <Route path="/resources/contractors" element={<ContractorsPage />} />
               <Route path="/resources/lenders" element={<LendersPage />} />
               <Route path="/resources/home-inspectors" element={<HomeInspectorsPage />} />

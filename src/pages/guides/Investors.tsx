@@ -4,6 +4,8 @@ const Investors = () => (
   <GuidePageTemplate
     title="Real Estate Investors Guide"
     subtitle="Grow your portfolio in one of the Midwest's strongest rental markets."
+    metaDescription="In-depth guide for real estate investors in Metro Milwaukee — rental analysis, portfolio growth, 1031 exchanges, and market trends."
+    canonicalPath="/guides/investors"
   >
     <h2>Coming Soon</h2>
     <p>

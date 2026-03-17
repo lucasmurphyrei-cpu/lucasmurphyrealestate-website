@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Home, Building2, MapPin, TrendingUp, TrendingDown, Minus as MinusIcon, Hammer, Landmark, DollarSign, Search, Shield, ArrowRight, Clock, Percent, CalendarDays, ClipboardList, PlusCircle, Download, Eye, Compass, Truck } from "lucide-react";
@@ -68,17 +69,43 @@ const directionColor = (dir: "up" | "down" | "flat") => {
 const Index = () => {
   return (
     <>
+      <Helmet>
+        <title>Lucas Murphy Real Estate | Milwaukee Metro Guides, Market Insights & Strategy</title>
+        <meta name="description" content="Expert real estate services in Milwaukee, Waukesha, Washington & Ozaukee Counties. Free guides, market reports, mortgage tools, and trusted professional recommendations." />
+        <link rel="canonical" href="https://www.lucasmurphyrealestate.com" />
+      </Helmet>
+
       {/* JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "RealEstateAgent",
-            name: "Provision Properties Core Team — eXp Realty",
-            description: "Expert real estate services in Milwaukee County and Waukesha County, Wisconsin.",
-            areaServed: ["Milwaukee County, WI", "Waukesha County, WI"],
-            url: window.location.origin,
+            "@graph": [
+              {
+                "@type": "RealEstateAgent",
+                name: "Lucas Murphy",
+                jobTitle: "Realtor",
+                worksFor: {
+                  "@type": "Organization",
+                  name: "Provision Properties Core Team — eXp Realty",
+                },
+                url: "https://www.lucasmurphyrealestate.com",
+                email: "lucas.murphy@exprealty.com",
+                areaServed: [
+                  "Milwaukee County, WI",
+                  "Waukesha County, WI",
+                  "Washington County, WI",
+                  "Ozaukee County, WI",
+                ],
+                description: "Expert real estate services in Milwaukee, Waukesha, Washington & Ozaukee Counties, Wisconsin.",
+              },
+              {
+                "@type": "WebSite",
+                name: "Lucas Murphy Real Estate",
+                url: "https://www.lucasmurphyrealestate.com",
+              },
+            ],
           }),
         }}
       />

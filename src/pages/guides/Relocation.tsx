@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, ExternalLink, MapPin } from "lucide-react";
 
 const Relocation = () => (
+  <>
+  <Helmet>
+    <title>Relocation Guide | Lucas Murphy Real Estate</title>
+    <meta name="description" content="Complete relocation guide for Milwaukee and Waukesha County — neighborhoods, schools, cost of living, and community insights." />
+    <link rel="canonical" href="https://www.lucasmurphyrealestate.com/guides/relocation" />
+  </Helmet>
   <article className="container max-w-3xl py-16">
     <Link to="/" className="mb-8 inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary">
       <ArrowLeft className="h-4 w-4" /> Back to Home
@@ -24,6 +31,7 @@ const Relocation = () => (
       </CardContent>
     </Card>
   </article>
+  </>
 );
 
 export default Relocation;

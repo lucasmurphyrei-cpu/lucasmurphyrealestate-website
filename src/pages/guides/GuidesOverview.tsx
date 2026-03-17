@@ -164,6 +164,7 @@ const GuidesOverview = () => (
         name="description"
         content="Free in-depth real estate guides for Metro Milwaukee — first-time buyers, condo buyers, relocation, house hacking, investors, and sellers."
       />
+      <link rel="canonical" href="https://www.lucasmurphyrealestate.com/guides" />
     </Helmet>
 
     <section className="border-b border-border bg-secondary/30">

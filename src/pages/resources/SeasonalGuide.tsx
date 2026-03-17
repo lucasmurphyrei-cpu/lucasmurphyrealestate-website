@@ -106,6 +106,7 @@ const SeasonalGuide = () => (
         name="description"
         content="A seasonal home maintenance checklist for first-time homeowners in Metro Milwaukee — spring, summer, fall, and winter tasks to protect your investment."
       />
+      <link rel="canonical" href="https://www.lucasmurphyrealestate.com/resources/seasonal-guide" />
     </Helmet>
 
     <article className="container max-w-3xl py-16">
