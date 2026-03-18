@@ -20,22 +20,18 @@ const InspectorCard = ({ inspector }: { inspector: HomeInspector }) => (
   <Card className="overflow-hidden border-primary/20">
     <CardContent className="p-0">
       <div className="flex flex-col sm:flex-row">
-        {/* Photo */}
-        <div className="relative shrink-0 sm:w-48">
+        {/* Logo / Photo */}
+        <div className="relative shrink-0 sm:w-64 flex items-center justify-center bg-white p-6">
           <img
             src={inspector.image}
-            alt={inspector.name}
-            className="h-56 w-full object-contain bg-gray-700 sm:h-full scale-75"
+            alt={inspector.business}
+            className="max-h-40 w-auto object-contain"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent sm:bg-gradient-to-r" />
         </div>
 
         {/* Details */}
         <div className="flex-1 p-6 sm:p-8">
-          <div className="mb-1 text-sm font-medium tracking-wide text-primary">
-            {inspector.business}
-          </div>
-          <h3 className="font-display text-2xl font-bold">{inspector.name}</h3>
+          <h3 className="font-display text-2xl font-bold">{inspector.business}</h3>
 
           {inspector.serviceAreas && inspector.serviceAreas.length > 0 && (
             <div className="mt-2 flex flex-wrap gap-1.5">
@@ -56,13 +52,26 @@ const InspectorCard = ({ inspector }: { inspector: HomeInspector }) => (
 
           {/* Contact Info */}
           <div className="mt-5 grid gap-2 text-sm text-muted-foreground">
-            <a
-              href={`tel:${inspector.phone}`}
-              className="inline-flex items-center gap-2 transition-colors hover:text-primary"
-            >
-              <Phone className="h-4 w-4 shrink-0" />
-              {inspector.phone}
-            </a>
+            {inspector.phones && inspector.phones.length > 0 ? (
+              inspector.phones.map((p) => (
+                <a
+                  key={p.number}
+                  href={`tel:${p.number}`}
+                  className="inline-flex items-center gap-2 transition-colors hover:text-primary"
+                >
+                  <Phone className="h-4 w-4 shrink-0" />
+                  {p.label}: {p.number}
+                </a>
+              ))
+            ) : (
+              <a
+                href={`tel:${inspector.phone}`}
+                className="inline-flex items-center gap-2 transition-colors hover:text-primary"
+              >
+                <Phone className="h-4 w-4 shrink-0" />
+                {inspector.phone}
+              </a>
+            )}
             {inspector.email && (
               <a
                 href={`mailto:${inspector.email}`}
