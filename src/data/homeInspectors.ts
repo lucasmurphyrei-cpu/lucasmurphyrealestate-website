@@ -25,7 +25,7 @@ export const inspectorCategories: InspectorCategory[] = [
       {
         name: "Tri County Inspection & Environmental, LLC",
         business: "Tri County Inspection & Environmental, LLC",
-        website: "https://app.spectora.com/home-inspectors/tri-county-home-inspection-llc",
+        website: "https://tricountyhomeinspectionllc.com/",
         email: "hello@wisconsininspection.com",
         phone: "(262) 716-8364",
         phones: [
