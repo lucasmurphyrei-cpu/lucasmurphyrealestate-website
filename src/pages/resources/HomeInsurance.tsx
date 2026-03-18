@@ -21,13 +21,15 @@ const ProviderCard = ({ provider }: { provider: InsuranceProvider }) => (
     <CardContent className="p-0">
       <div className="flex flex-col sm:flex-row">
         {/* Photo */}
-        <div className="relative shrink-0 sm:w-48">
+        <div className="relative shrink-0 sm:w-72">
           <img
             src={provider.image}
             alt={provider.name}
-            className="h-56 w-full object-cover sm:h-full"
+            className="h-64 w-full object-cover object-top sm:h-full"
+            style={{ imageRendering: "auto", willChange: "auto" }}
+            loading="eager"
+            decoding="sync"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent sm:bg-gradient-to-r" />
         </div>
 
         {/* Details */}
