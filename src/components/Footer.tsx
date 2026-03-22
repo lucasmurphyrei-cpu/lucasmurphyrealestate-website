@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import provisionLogo from "@/assets/provision-logo.png";
-import expLogo from "@/assets/exp-logo.png";
+import expLogo from "@/assets/exp-logo-white.png";
 
 const Footer = () => (
   <footer className="border-t border-border bg-secondary/50">
