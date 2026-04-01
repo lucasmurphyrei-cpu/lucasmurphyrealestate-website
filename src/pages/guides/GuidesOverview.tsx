@@ -52,9 +52,10 @@ const investorGuides: Guide[] = [
   {
     icon: TrendingUp,
     label: "House Hacking",
-    to: "/guides/house-hacking",
+    to: "https://www.lucasmurphyrealestate.com/guide/house-hacking-guide",
     desc: "Live for free while building equity — strategies for duplexes, triplexes, and multi-family investing.",
-    status: "coming_soon",
+    external: true,
+    status: "available",
   },
   {
     icon: Landmark,

@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
@@ -91,6 +92,13 @@ const HouseHackCalculator = () => {
       <p className="mt-3 max-w-2xl text-muted-foreground">
         Analyze a multi-unit property to see your true housing cost, cash flow, and investment returns.
         Enter your deal numbers below — results update in real time.
+      </p>
+      <p className="mt-2 text-sm text-muted-foreground">
+        New to house hacking?{" "}
+        <Link to="/guides/house-hacking" className="text-primary underline-offset-4 hover:underline">
+          Read our House Hacking Guide
+        </Link>{" "}
+        to learn the strategy behind the numbers.
       </p>
 
       {/* Property Type Selector */}
