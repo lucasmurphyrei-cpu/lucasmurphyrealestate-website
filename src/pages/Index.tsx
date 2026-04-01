@@ -24,7 +24,7 @@ const guideCategories = [
   {
     heading: "Investor Guides",
     items: [
-      { icon: TrendingUp, label: "House Hacking", to: "/guides/house-hacking", desc: "Live for free while building equity" },
+      { icon: TrendingUp, label: "House Hacking", to: "https://www.lucasmurphyrealestate.com/guide/house-hacking-guide", desc: "Live for free while building equity", newTab: true },
       { icon: Landmark, label: "Investors", to: "/guides/investors", desc: "Grow your real estate portfolio" },
     ],
   },

@@ -17,7 +17,7 @@ const guideCategories = [
   {
     heading: "Investor Guides",
     items: [
-      { label: "House Hacking", to: "/guides/house-hacking" },
+      { label: "House Hacking", to: "https://www.lucasmurphyrealestate.com/guide/house-hacking-guide", newTab: true },
       { label: "Investors", to: "/guides/investors" },
     ],
   },

@@ -95,9 +95,9 @@ const HouseHackCalculator = () => {
       </p>
       <p className="mt-2 text-sm text-muted-foreground">
         New to house hacking?{" "}
-        <Link to="/guides/house-hacking" className="text-primary underline-offset-4 hover:underline">
+        <a href="https://www.lucasmurphyrealestate.com/guide/house-hacking-guide" target="_blank" rel="noopener noreferrer" className="text-primary underline-offset-4 hover:underline">
           Read our House Hacking Guide
-        </Link>{" "}
+        </a>{" "}
         to learn the strategy behind the numbers.
       </p>
 
