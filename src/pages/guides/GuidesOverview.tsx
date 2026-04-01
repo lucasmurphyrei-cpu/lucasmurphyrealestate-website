@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Home, Building2, MapPin, TrendingUp, Landmark, DollarSign, ArrowRight, ExternalLink, BookOpen, ShoppingBag, LineChart, Phone, Mail, Calendar } from "lucide-react";
+import { Home, Building2, MapPin, TrendingUp, Landmark, DollarSign, ArrowRight, ExternalLink, BookOpen, ShoppingBag, LineChart, Phone, Mail, Calendar, Play } from "lucide-react";
 import { motion } from "framer-motion";
 import lucasHeadshot from "@/assets/lucas-murphy-headshot.jpeg";
 import provisionLogo from "@/assets/provision-logo.png";
@@ -18,6 +18,7 @@ type Guide = {
   to: string;
   desc: string;
   external?: boolean;
+  videoUrl?: string;
   status: "available" | "coming_soon";
 };
 
@@ -55,6 +56,7 @@ const investorGuides: Guide[] = [
     to: "https://www.lucasmurphyrealestate.com/guide/house-hacking-guide",
     desc: "Live for free while building equity — strategies for duplexes, triplexes, and multi-family investing.",
     external: true,
+    videoUrl: "https://www.youtube.com/watch?v=h9F9_Hi2F0w",
     status: "available",
   },
   {
@@ -93,19 +95,33 @@ function GuideCard({ g, i }: { g: Guide; i: number }) {
         </div>
         <h3 className="font-display text-xl font-semibold">{g.label}</h3>
         <p className="text-sm leading-relaxed text-muted-foreground">{g.desc}</p>
-        <span className="mt-auto inline-flex items-center gap-1.5 text-sm font-medium text-primary opacity-0 transition-opacity group-hover:opacity-100">
-          {g.external ? (
-            <>
-              Read on Website <ExternalLink className="h-3.5 w-3.5" />
-            </>
-          ) : isComingSoon ? (
-            <>Preview</>
-          ) : (
-            <>
-              Read Guide <ArrowRight className="h-3.5 w-3.5" />
-            </>
+        <div className="mt-auto flex items-center justify-between">
+          <span className="inline-flex items-center gap-1.5 text-sm font-medium text-primary opacity-0 transition-opacity group-hover:opacity-100">
+            {g.external ? (
+              <>
+                Read on Website <ExternalLink className="h-3.5 w-3.5" />
+              </>
+            ) : isComingSoon ? (
+              <>Preview</>
+            ) : (
+              <>
+                Read Guide <ArrowRight className="h-3.5 w-3.5" />
+              </>
+            )}
+          </span>
+          {g.videoUrl && (
+            <a
+              href={g.videoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-medium text-primary transition-colors hover:bg-primary/15"
+            >
+              <Play className="h-3 w-3" />
+              My House-Hacking Journey
+            </a>
           )}
-        </span>
+        </div>
       </CardContent>
     </Card>
   );
