@@ -2,7 +2,7 @@
   "meta": {
     "version": "1.0",
     "created": "2026-02-22",
-    "description": "Neighborhood Fit Quiz attribute model — 0-5 scores per municipality across 16 lifestyle and market attributes",
+    "description": "Neighborhood Fit Quiz attribute model \u2014 0-5 scores per municipality across 16 lifestyle and market attributes",
     "scale": "0 = lowest / not applicable, 5 = highest / strongest fit",
     "counties_covered": [
       "milwaukee",
@@ -33,7 +33,7 @@
     "milwaukee": {
       "display_name": "Milwaukee (City Proper)",
       "county": "milwaukee",
-      "median_sale_price": 230000,
+      "median_sale_price": 240000,
       "attributes": {
         "budget_fit": 5,
         "home_type_fit": 5,
@@ -63,7 +63,7 @@
     "wauwatosa": {
       "display_name": "Wauwatosa",
       "county": "milwaukee",
-      "median_sale_price": 375000,
+      "median_sale_price": 445000,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 4,
@@ -93,7 +93,7 @@
     "west_allis": {
       "display_name": "West Allis",
       "county": "milwaukee",
-      "median_sale_price": 250000,
+      "median_sale_price": 270000,
       "attributes": {
         "budget_fit": 5,
         "home_type_fit": 4,
@@ -123,7 +123,7 @@
     "shorewood": {
       "display_name": "Shorewood",
       "county": "milwaukee",
-      "median_sale_price": 380000,
+      "median_sale_price": 609950,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 3,
@@ -153,7 +153,7 @@
     "whitefish_bay": {
       "display_name": "Whitefish Bay",
       "county": "milwaukee",
-      "median_sale_price": 465000,
+      "median_sale_price": 640000,
       "attributes": {
         "budget_fit": 2,
         "home_type_fit": 2,
@@ -213,7 +213,7 @@
     "glendale": {
       "display_name": "Glendale",
       "county": "milwaukee",
-      "median_sale_price": 305000,
+      "median_sale_price": 352000,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 3,
@@ -243,7 +243,7 @@
     "greenfield": {
       "display_name": "Greenfield",
       "county": "milwaukee",
-      "median_sale_price": 285000,
+      "median_sale_price": 355000,
       "attributes": {
         "budget_fit": 4,
         "home_type_fit": 3,
@@ -273,7 +273,7 @@
     "greendale": {
       "display_name": "Greendale",
       "county": "milwaukee",
-      "median_sale_price": 320000,
+      "median_sale_price": 379000,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 2,
@@ -303,7 +303,7 @@
     "franklin": {
       "display_name": "Franklin",
       "county": "milwaukee",
-      "median_sale_price": 420000,
+      "median_sale_price": 550000,
       "attributes": {
         "budget_fit": 2,
         "home_type_fit": 3,
@@ -333,7 +333,7 @@
     "oak_creek": {
       "display_name": "Oak Creek",
       "county": "milwaukee",
-      "median_sale_price": 355000,
+      "median_sale_price": 405000,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 3,
@@ -363,7 +363,7 @@
     "south_milwaukee": {
       "display_name": "South Milwaukee",
       "county": "milwaukee",
-      "median_sale_price": 245000,
+      "median_sale_price": 305000,
       "attributes": {
         "budget_fit": 5,
         "home_type_fit": 3,
@@ -393,7 +393,7 @@
     "st_francis": {
       "display_name": "St. Francis",
       "county": "milwaukee",
-      "median_sale_price": 230000,
+      "median_sale_price": 290000,
       "attributes": {
         "budget_fit": 5,
         "home_type_fit": 2,
@@ -423,7 +423,7 @@
     "brown_deer": {
       "display_name": "Brown Deer",
       "county": "milwaukee",
-      "median_sale_price": 260000,
+      "median_sale_price": 295000,
       "attributes": {
         "budget_fit": 4,
         "home_type_fit": 3,
@@ -453,7 +453,7 @@
     "river_hills": {
       "display_name": "River Hills",
       "county": "milwaukee",
-      "median_sale_price": 750000,
+      "median_sale_price": 635000,
       "attributes": {
         "budget_fit": 0,
         "home_type_fit": 1,
@@ -483,7 +483,7 @@
     "fox_point": {
       "display_name": "Fox Point",
       "county": "milwaukee",
-      "median_sale_price": 485000,
+      "median_sale_price": 520000,
       "attributes": {
         "budget_fit": 1,
         "home_type_fit": 1,
@@ -543,7 +543,7 @@
     "brookfield": {
       "display_name": "Brookfield (City)",
       "county": "waukesha",
-      "median_sale_price": 532500,
+      "median_sale_price": 500000,
       "attributes": {
         "budget_fit": 1,
         "home_type_fit": 3,
@@ -573,7 +573,7 @@
     "new_berlin": {
       "display_name": "New Berlin",
       "county": "waukesha",
-      "median_sale_price": 410000,
+      "median_sale_price": 499900,
       "attributes": {
         "budget_fit": 2,
         "home_type_fit": 3,
@@ -603,7 +603,7 @@
     "menomonee_falls": {
       "display_name": "Menomonee Falls",
       "county": "waukesha",
-      "median_sale_price": 390000,
+      "median_sale_price": 510000,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 3,
@@ -663,7 +663,7 @@
     "oconomowoc": {
       "display_name": "Oconomowoc",
       "county": "waukesha",
-      "median_sale_price": 440000,
+      "median_sale_price": 615000,
       "attributes": {
         "budget_fit": 2,
         "home_type_fit": 3,
@@ -693,7 +693,7 @@
     "muskego": {
       "display_name": "Muskego",
       "county": "waukesha",
-      "median_sale_price": 460000,
+      "median_sale_price": 455000,
       "attributes": {
         "budget_fit": 2,
         "home_type_fit": 2,
@@ -723,7 +723,7 @@
     "delafield": {
       "display_name": "Delafield",
       "county": "waukesha",
-      "median_sale_price": 575000,
+      "median_sale_price": 722500,
       "attributes": {
         "budget_fit": 1,
         "home_type_fit": 2,
@@ -753,7 +753,7 @@
     "hartland": {
       "display_name": "Hartland",
       "county": "waukesha",
-      "median_sale_price": 450000,
+      "median_sale_price": 475000,
       "attributes": {
         "budget_fit": 2,
         "home_type_fit": 2,
@@ -783,7 +783,7 @@
     "mukwonago": {
       "display_name": "Mukwonago",
       "county": "waukesha",
-      "median_sale_price": 370000,
+      "median_sale_price": 466000,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 2,
@@ -843,7 +843,7 @@
     "elm_grove": {
       "display_name": "Elm Grove",
       "county": "waukesha",
-      "median_sale_price": 550000,
+      "median_sale_price": 624000,
       "attributes": {
         "budget_fit": 1,
         "home_type_fit": 1,
@@ -873,7 +873,7 @@
     "mequon": {
       "display_name": "Mequon",
       "county": "ozaukee",
-      "median_sale_price": 583000,
+      "median_sale_price": 675000,
       "attributes": {
         "budget_fit": 1,
         "home_type_fit": 2,
@@ -903,7 +903,7 @@
     "cedarburg": {
       "display_name": "Cedarburg",
       "county": "ozaukee",
-      "median_sale_price": 480000,
+      "median_sale_price": 589500,
       "attributes": {
         "budget_fit": 2,
         "home_type_fit": 2,
@@ -933,7 +933,7 @@
     "grafton": {
       "display_name": "Grafton",
       "county": "ozaukee",
-      "median_sale_price": 400000,
+      "median_sale_price": 607450,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 3,
@@ -963,7 +963,7 @@
     "port_washington": {
       "display_name": "Port Washington",
       "county": "ozaukee",
-      "median_sale_price": 380000,
+      "median_sale_price": 397500,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 3,
@@ -993,7 +993,7 @@
     "thiensville": {
       "display_name": "Thiensville",
       "county": "ozaukee",
-      "median_sale_price": 350000,
+      "median_sale_price": 350500,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 2,
@@ -1023,7 +1023,7 @@
     "saukville": {
       "display_name": "Saukville",
       "county": "ozaukee",
-      "median_sale_price": 373000,
+      "median_sale_price": 355000,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 2,
@@ -1083,7 +1083,7 @@
     "germantown": {
       "display_name": "Germantown",
       "county": "washington",
-      "median_sale_price": 430000,
+      "median_sale_price": 550000,
       "attributes": {
         "budget_fit": 2,
         "home_type_fit": 3,
@@ -1113,7 +1113,7 @@
     "west_bend": {
       "display_name": "West Bend",
       "county": "washington",
-      "median_sale_price": 290000,
+      "median_sale_price": 347500,
       "attributes": {
         "budget_fit": 4,
         "home_type_fit": 3,
@@ -1143,7 +1143,7 @@
     "hartford": {
       "display_name": "Hartford",
       "county": "washington",
-      "median_sale_price": 295000,
+      "median_sale_price": 455000,
       "attributes": {
         "budget_fit": 4,
         "home_type_fit": 3,
@@ -1173,7 +1173,7 @@
     "jackson": {
       "display_name": "Jackson",
       "county": "washington",
-      "median_sale_price": 380000,
+      "median_sale_price": 484950,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 2,
@@ -1203,7 +1203,7 @@
     "slinger": {
       "display_name": "Slinger",
       "county": "washington",
-      "median_sale_price": 350000,
+      "median_sale_price": 410000,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 2,
@@ -1233,7 +1233,7 @@
     "kewaskum": {
       "display_name": "Kewaskum",
       "county": "washington",
-      "median_sale_price": 280000,
+      "median_sale_price": 283500,
       "attributes": {
         "budget_fit": 4,
         "home_type_fit": 2,
@@ -1263,7 +1263,7 @@
     "richfield": {
       "display_name": "Richfield",
       "county": "washington",
-      "median_sale_price": 550000,
+      "median_sale_price": 654500,
       "attributes": {
         "budget_fit": 1,
         "home_type_fit": 1,
@@ -1323,7 +1323,7 @@
     "west_milwaukee": {
       "display_name": "West Milwaukee",
       "county": "milwaukee",
-      "median_sale_price": 268000,
+      "median_sale_price": 360000,
       "attributes": {
         "budget_fit": 5,
         "home_type_fit": 3,
@@ -1353,7 +1353,7 @@
     "fredonia": {
       "display_name": "Fredonia",
       "county": "ozaukee",
-      "median_sale_price": 395000,
+      "median_sale_price": 560000,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 2,
@@ -1443,7 +1443,7 @@
     "dousman": {
       "display_name": "Dousman",
       "county": "waukesha",
-      "median_sale_price": 500000,
+      "median_sale_price": 355000,
       "attributes": {
         "budget_fit": 2,
         "home_type_fit": 2,
@@ -1473,7 +1473,7 @@
     "eagle": {
       "display_name": "Eagle",
       "county": "waukesha",
-      "median_sale_price": 405000,
+      "median_sale_price": 448000,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 2,
@@ -1623,7 +1623,7 @@
     "cudahy": {
       "display_name": "Cudahy",
       "county": "milwaukee",
-      "median_sale_price": 246200,
+      "median_sale_price": 300000,
       "attributes": {
         "budget_fit": 5,
         "home_type_fit": 3,
@@ -1683,7 +1683,7 @@
     "big_bend": {
       "display_name": "Big Bend",
       "county": "waukesha",
-      "median_sale_price": 515000,
+      "median_sale_price": 500000,
       "attributes": {
         "budget_fit": 2,
         "home_type_fit": 2,
@@ -1713,7 +1713,7 @@
     "merton": {
       "display_name": "Merton",
       "county": "waukesha",
-      "median_sale_price": 595000,
+      "median_sale_price": 828750,
       "attributes": {
         "budget_fit": 1,
         "home_type_fit": 1,
@@ -1743,7 +1743,7 @@
     "nashotah": {
       "display_name": "Nashotah",
       "county": "waukesha",
-      "median_sale_price": 502450,
+      "median_sale_price": 1171000,
       "attributes": {
         "budget_fit": 1,
         "home_type_fit": 1,
