@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { EmailInput } from "@/components/ui/email-input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { MapPin, Phone, Mail } from "lucide-react";
@@ -83,7 +84,7 @@ const Contact = () => {
           </div>
           <div className="space-y-2">
             <Label htmlFor="email">Email</Label>
-            <Input id="email" name="email" type="email" placeholder="john@example.com" required />
+            <EmailInput id="email" name="email" placeholder="john@example.com" required />
           </div>
           <div className="space-y-2">
             <Label htmlFor="phone">Phone</Label>

@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
+import { EmailInput } from "@/components/ui/email-input";
 import { Button } from "@/components/ui/button";
 import { Shield, ArrowDown } from "lucide-react";
 import { useState } from "react";
@@ -87,8 +88,7 @@ const HeroSection = () => {
               className="bg-white/10 border-white/20 text-white placeholder:text-white/40 h-12 text-base"
               required
             />
-            <Input
-              type="email"
+            <EmailInput
               placeholder="Email Address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}

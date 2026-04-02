@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { EmailInput } from "@/components/ui/email-input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import type { BudgetPlannerState, BudgetDerived, BudgetTab } from "./types";
@@ -97,7 +98,7 @@ const LeadCaptureSection = ({ tab, state, derived }: Props) => {
               </div>
               <div className="space-y-1">
                 <Label className="text-xs">Email</Label>
-                <Input name="email" type="email" placeholder="john@email.com" required />
+                <EmailInput name="email" placeholder="john@email.com" required />
               </div>
             </div>
             <div className="space-y-1">

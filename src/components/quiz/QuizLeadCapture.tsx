@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { EmailInput } from "@/components/ui/email-input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 
@@ -83,10 +84,9 @@ const QuizLeadCapture = ({
         </div>
         <div className="space-y-2">
           <Label htmlFor="quiz-email">Email</Label>
-          <Input
+          <EmailInput
             id="quiz-email"
             name="email"
-            type="email"
             placeholder="jane@example.com"
             required
           />

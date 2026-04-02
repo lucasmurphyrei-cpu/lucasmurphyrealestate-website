@@ -2,6 +2,7 @@ import { useState, useMemo } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { EmailInput } from "@/components/ui/email-input";
 import { Label } from "@/components/ui/label";
 import { MapPin, Search } from "lucide-react";
 import InputField from "./InputField";
@@ -214,7 +215,7 @@ const PropertySearchSection = ({ propertyType, purchasePrice }: PropertySearchSe
                   </div>
                   <div className="space-y-1">
                     <Label className="text-xs">Email</Label>
-                    <Input name="email" type="email" placeholder="john@email.com" required />
+                    <EmailInput name="email" placeholder="john@email.com" required />
                   </div>
                 </div>
                 <div className="space-y-1">

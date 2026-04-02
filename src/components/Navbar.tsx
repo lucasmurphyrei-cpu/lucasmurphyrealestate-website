@@ -59,6 +59,7 @@ const toolCategories = [
     heading: "Sellers",
     items: [
       { label: "Seller Net Sheet", to: "/tools/investor-spreadsheets" },
+      { label: "Free CMA", to: "/tools/cma" },
     ],
   },
 ];
