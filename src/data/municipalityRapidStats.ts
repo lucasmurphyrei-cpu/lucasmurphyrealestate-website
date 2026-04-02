@@ -349,9 +349,14 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     data_as_of: "2026-04-01",
     prior_year_label: "2025",
     current_year_label: "2026",
-    median_sale_price: 0,
+    median_sale_price: 295000,
     metrics: [
-      { label: "Closed Sales", prior_year: "1", current_year: "0", change_pct: -100.0 },
+      { label: "New Listings", prior_year: "14", current_year: "12", change_pct: -14.3 },
+      { label: "Closed Sales", prior_year: "10", current_year: "7", change_pct: -30.0 },
+      { label: "Median Sales Price", prior_year: "$288,000", current_year: "$295,000", change_pct: 2.4 },
+      { label: "Pct of Orig. List Price Received", prior_year: "99.5%", current_year: "100.0%", change_pct: 0.4 },
+      { label: "Days on Market Until Sale", prior_year: "19", current_year: "26", change_pct: 36.8 },
+      { label: "Inventory (SFR)", prior_year: "17", current_year: "11", change_pct: -35.3 },
     ],
   },
   west_milwaukee: {
@@ -493,7 +498,21 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
   newburg: null,
 
   // --- Waukesha County ---
-  waukesha: null,
+  waukesha: {
+    data_month: "March 2026",
+    data_as_of: "2026-04-01",
+    prior_year_label: "2025",
+    current_year_label: "2026",
+    median_sale_price: 385500,
+    metrics: [
+      { label: "New Listings", prior_year: "49", current_year: "78", change_pct: 59.2 },
+      { label: "Closed Sales", prior_year: "42", current_year: "47", change_pct: 11.9 },
+      { label: "Median Sales Price", prior_year: "$425,000", current_year: "$385,500", change_pct: -9.3 },
+      { label: "Pct of Orig. List Price Received", prior_year: "101.2%", current_year: "102.0%", change_pct: 0.8 },
+      { label: "Days on Market Until Sale", prior_year: "22", current_year: "18", change_pct: -18.2 },
+      { label: "Inventory (SFR)", prior_year: "65", current_year: "94", change_pct: 44.6 },
+    ],
+  },
   brookfield: {
     data_month: "March 2026",
     data_as_of: "2026-04-01",
@@ -539,7 +558,21 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
       { label: "Inventory (SFR)", prior_year: "71", current_year: "76", change_pct: 7.0 },
     ],
   },
-  pewaukee: null,
+  pewaukee: {
+    data_month: "March 2026",
+    data_as_of: "2026-04-01",
+    prior_year_label: "2025",
+    current_year_label: "2026",
+    median_sale_price: 599990,
+    metrics: [
+      { label: "New Listings", prior_year: "17", current_year: "25", change_pct: 47.1 },
+      { label: "Closed Sales", prior_year: "13", current_year: "17", change_pct: 30.8 },
+      { label: "Median Sales Price", prior_year: "$480,000", current_year: "$599,990", change_pct: 25.0 },
+      { label: "Pct of Orig. List Price Received", prior_year: "98.5%", current_year: "101.3%", change_pct: 2.8 },
+      { label: "Days on Market Until Sale", prior_year: "31", current_year: "47", change_pct: 51.6 },
+      { label: "Inventory (SFR)", prior_year: "30", current_year: "39", change_pct: 30.0 },
+    ],
+  },
   oconomowoc: {
     data_month: "March 2026",
     data_as_of: "2026-04-01",
@@ -615,7 +648,21 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
       { label: "Inventory (SFR)", prior_year: "20", current_year: "18", change_pct: -10.0 },
     ],
   },
-  sussex: null,
+  sussex: {
+    data_month: "March 2026",
+    data_as_of: "2026-04-01",
+    prior_year_label: "2025",
+    current_year_label: "2026",
+    median_sale_price: 542000,
+    metrics: [
+      { label: "New Listings", prior_year: "10", current_year: "13", change_pct: 30.0 },
+      { label: "Closed Sales", prior_year: "9", current_year: "4", change_pct: -55.6 },
+      { label: "Median Sales Price", prior_year: "$554,900", current_year: "$542,000", change_pct: -2.3 },
+      { label: "Pct of Orig. List Price Received", prior_year: "99.7%", current_year: "101.4%", change_pct: 1.7 },
+      { label: "Days on Market Until Sale", prior_year: "34", current_year: "56", change_pct: 64.7 },
+      { label: "Inventory (SFR)", prior_year: "17", current_year: "24", change_pct: 41.2 },
+    ],
+  },
   elm_grove: {
     data_month: "March 2026",
     data_as_of: "2026-04-01",
@@ -740,7 +787,21 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
       { label: "Inventory (SFR)", prior_year: "1", current_year: "2", change_pct: 100.0 },
     ],
   },
-  wales: null,
+  wales: {
+    data_month: "March 2026",
+    data_as_of: "2026-04-01",
+    prior_year_label: "2025",
+    current_year_label: "2026",
+    median_sale_price: 675000,
+    metrics: [
+      { label: "New Listings", prior_year: "1", current_year: "2", change_pct: 100.0 },
+      { label: "Closed Sales", prior_year: "1", current_year: "1", change_pct: 0.0 },
+      { label: "Median Sales Price", prior_year: "$460,000", current_year: "$675,000", change_pct: 46.7 },
+      { label: "Pct of Orig. List Price Received", prior_year: "100.2%", current_year: "103.9%", change_pct: 3.6 },
+      { label: "Days on Market Until Sale", prior_year: "4", current_year: "4", change_pct: 0.0 },
+      { label: "Inventory (SFR)", prior_year: "3", current_year: "6", change_pct: 100.0 },
+    ],
+  },
 
 };
 

@@ -513,7 +513,7 @@
     "waukesha": {
       "display_name": "City of Waukesha",
       "county": "waukesha",
-      "median_sale_price": 365000,
+      "median_sale_price": 385500,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 4,
@@ -633,7 +633,7 @@
     "pewaukee": {
       "display_name": "Pewaukee (City/Village)",
       "county": "waukesha",
-      "median_sale_price": 475000,
+      "median_sale_price": 599990,
       "attributes": {
         "budget_fit": 2,
         "home_type_fit": 3,
@@ -813,7 +813,7 @@
     "sussex": {
       "display_name": "Sussex",
       "county": "waukesha",
-      "median_sale_price": 400000,
+      "median_sale_price": 542000,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 2,
@@ -1293,7 +1293,7 @@
     "bayside": {
       "display_name": "Bayside",
       "county": "milwaukee",
-      "median_sale_price": 445000,
+      "median_sale_price": 295000,
       "attributes": {
         "budget_fit": 2,
         "home_type_fit": 2,
@@ -1773,7 +1773,7 @@
     "wales": {
       "display_name": "Wales",
       "county": "waukesha",
-      "median_sale_price": 509500,
+      "median_sale_price": 675000,
       "attributes": {
         "budget_fit": 2,
         "home_type_fit": 2,
