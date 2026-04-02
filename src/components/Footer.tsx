@@ -5,7 +5,7 @@ import expLogo from "@/assets/exp-logo-white.png";
 const Footer = () => (
   <footer className="border-t border-border bg-secondary/50">
     <div className="container py-12">
-      <div className="grid items-start gap-x-12 gap-y-8 md:grid-cols-[2fr_1fr_1fr_1fr]">
+      <div className="grid items-start gap-x-12 gap-y-8 md:grid-cols-[2fr_1fr_1fr_1fr_1fr]">
         <div>
           <p className="font-display text-xl font-bold text-foreground">Lucas Murphy</p>
           <h3 className="mt-1 text-sm font-medium text-muted-foreground whitespace-nowrap">eXp Realty — Provision Properties Core Team</h3>
@@ -20,7 +20,6 @@ const Footer = () => (
             <li><a href="https://www.lucasmurphyrealestate.com/guide/house-hacking-guide" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">House Hacking</a></li>
             <li><Link to="/guides/investors" className="hover:text-primary transition-colors">Investors</Link></li>
             <li><Link to="/guides/sellers" className="hover:text-primary transition-colors">Seller's Guide</Link></li>
-            <li><Link to="/tools/cma" className="hover:text-primary transition-colors">Free CMA</Link></li>
           </ul>
         </div>
         <div>
@@ -32,6 +31,16 @@ const Footer = () => (
             <li><Link to="/resources/home-insurance" className="hover:text-primary transition-colors">Home Insurance</Link></li>
             <li><Link to="/resources/seasonal-guide" className="hover:text-primary transition-colors">Seasonal Guide</Link></li>
             <li><Link to="/resources/movers" className="hover:text-primary transition-colors">Movers</Link></li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">Tools</h4>
+          <ul className="space-y-2 text-sm text-muted-foreground">
+            <li><Link to="/tools/mortgage-calculator" className="hover:text-primary transition-colors">Mortgage Calculator</Link></li>
+            <li><Link to="/tools/budget-planner" className="hover:text-primary transition-colors">How Much Home Can You Afford?</Link></li>
+            <li><Link to="/tools/house-hack-calculator" className="hover:text-primary transition-colors">House Hack Calculator</Link></li>
+            <li><Link to="/tools/investor-spreadsheets" className="hover:text-primary transition-colors">Investor Spreadsheets</Link></li>
+            <li><Link to="/tools/cma" className="hover:text-primary transition-colors">Free CMA</Link></li>
           </ul>
         </div>
         <div>
