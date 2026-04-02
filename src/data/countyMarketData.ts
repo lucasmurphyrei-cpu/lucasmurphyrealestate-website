@@ -21,7 +21,7 @@ export interface CountyMarketData {
 
 const countyMarketData: Record<string, CountyMarketData> = {
   "Waukesha County": {
-    dataMonth: "March 2026",
+    dataMonth: "April 2026",
     videoUrl: "https://youtu.be/ihRhS0viuG4",
     stats: [
       { label: "Median Price", value: "$476,000", change: "+3.5% YoY", direction: "up" },
@@ -33,7 +33,7 @@ const countyMarketData: Record<string, CountyMarketData> = {
     ],
   },
   "Milwaukee County": {
-    dataMonth: "March 2026",
+    dataMonth: "April 2026",
     videoUrl: "https://youtu.be/c7Vn4WqsLqU",
     stats: [
       { label: "Median Price", value: "$290,000", change: "+6.1% YoY", direction: "up" },
@@ -45,7 +45,7 @@ const countyMarketData: Record<string, CountyMarketData> = {
     ],
   },
   "Ozaukee County": {
-    dataMonth: "March 2026",
+    dataMonth: "April 2026",
     videoUrl: "https://youtu.be/py1_oN8EufM",
     stats: [
       { label: "Median Price", value: "$490,000", change: "+2.0% YoY", direction: "up" },
@@ -57,7 +57,7 @@ const countyMarketData: Record<string, CountyMarketData> = {
     ],
   },
   "Washington County": {
-    dataMonth: "March 2026",
+    dataMonth: "April 2026",
     videoUrl: "https://youtu.be/42wD7lrU7pM",
     stats: [
       { label: "Median Price", value: "$430,000", change: "+2.4% YoY", direction: "up" },
