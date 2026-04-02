@@ -31,9 +31,9 @@ const RapidStatsTable = ({ data, municipalityName }: RapidStatsTableProps) => {
 
   return (
     <section className="mb-10">
-      <h2 className="font-display text-2xl font-bold mb-1">Real Estate Trends</h2>
+      <h2 className="font-display text-2xl font-bold mb-1">Real Estate Trends — {data.data_month}</h2>
       <p className="text-sm text-muted-foreground mb-4">
-        RapidStats Monthly Local Market — {data.data_month}
+        RapidStats Monthly Local Market
       </p>
 
       <Card>
