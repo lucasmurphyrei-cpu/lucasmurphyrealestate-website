@@ -7,6 +7,20 @@ interface RapidStatsTableProps {
   municipalityName: string;
 }
 
+const MONTH_NAMES = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December",
+];
+
+// "2026-05-01" → "April" (the prior calendar month, since RapidStats data lags by one)
+const priorMonthName = (dataAsOf: string): string | null => {
+  const m = /^(\d{4})-(\d{2})-/.exec(dataAsOf);
+  if (!m) return null;
+  const monthIdx = parseInt(m[2], 10) - 1; // 0-based current month
+  const priorIdx = (monthIdx + 11) % 12;
+  return MONTH_NAMES[priorIdx];
+};
+
 const RapidStatsTable = ({ data, municipalityName }: RapidStatsTableProps) => {
   if (!data) {
     return (
@@ -85,6 +99,7 @@ const RapidStatsTable = ({ data, municipalityName }: RapidStatsTableProps) => {
 
       <p className="mt-2 text-xs text-muted-foreground italic">
         Data as of {data.data_as_of}. Source: Metro MLS via RapidStats. Single Family Residence only.
+        {priorMonthName(data.data_as_of) && ` Data reflects ${priorMonthName(data.data_as_of)} market trends and is the most current data available.`}
       </p>
     </section>
   );

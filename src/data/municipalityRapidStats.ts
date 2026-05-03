@@ -3,7 +3,7 @@ import type { RapidStatsMunicipality } from "./neighborhoodTypes";
 const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
   // --- Ozaukee County ---
   mequon: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -18,7 +18,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   cedarburg: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -33,7 +33,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   grafton: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -48,7 +48,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   port_washington: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -63,7 +63,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   thiensville: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -78,7 +78,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   saukville: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -93,7 +93,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   belgium: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -108,7 +108,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   fredonia: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -125,7 +125,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
 
   // --- Milwaukee County ---
   milwaukee: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -140,7 +140,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   wauwatosa: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -155,7 +155,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   west_allis: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -170,7 +170,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   shorewood: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -185,7 +185,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   whitefish_bay: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -201,7 +201,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
   },
   bay_view: null,
   glendale: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -216,7 +216,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   greenfield: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -231,7 +231,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   greendale: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -246,7 +246,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   franklin: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -261,7 +261,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   oak_creek: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -276,7 +276,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   south_milwaukee: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -291,7 +291,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   st_francis: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -306,7 +306,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   brown_deer: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -321,7 +321,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   river_hills: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -336,7 +336,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   fox_point: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -351,7 +351,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   bayside: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -366,7 +366,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   west_milwaukee: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -380,7 +380,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   cudahy: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -398,7 +398,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
 
   // --- Washington County ---
   germantown: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -413,7 +413,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   west_bend: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -428,7 +428,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   hartford: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -443,7 +443,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   jackson: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -458,7 +458,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   slinger: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -473,7 +473,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   kewaskum: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -488,7 +488,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   richfield: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -506,7 +506,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
 
   // --- Waukesha County ---
   waukesha: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -521,7 +521,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   brookfield: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -536,7 +536,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   new_berlin: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -551,7 +551,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   menomonee_falls: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -566,7 +566,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   pewaukee: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -581,7 +581,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   oconomowoc: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -596,7 +596,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   muskego: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -611,7 +611,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   delafield: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -626,7 +626,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   hartland: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -641,7 +641,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   mukwonago: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -656,7 +656,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   sussex: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -671,7 +671,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   elm_grove: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -686,7 +686,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   butler: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -699,7 +699,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   chenequa: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -710,7 +710,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   dousman: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -725,7 +725,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   eagle: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -735,7 +735,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   lac_la_belle: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -746,7 +746,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   lannon: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -756,7 +756,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   north_prairie: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -771,7 +771,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   big_bend: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -786,7 +786,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   merton: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -801,7 +801,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   nashotah: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
@@ -816,7 +816,7 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   wales: {
-    data_month: "April 2026",
+    data_month: "May 2026",
     data_as_of: "2026-05-01",
     prior_year_label: "2025",
     current_year_label: "2026",
