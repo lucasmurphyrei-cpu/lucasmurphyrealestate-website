@@ -33,15 +33,15 @@ const countyMarketData: Record<string, CountyMarketData> = {
     ],
   },
   "Milwaukee County": {
-    dataMonth: "April 2026",
-    videoUrl: "https://youtu.be/ZjBwg5Kt23w",
+    dataMonth: "May 2026",
+    videoUrl: "https://youtu.be/Ad6EU98kr7U",
     stats: [
-      { label: "Median Price", value: "$300,000", change: "+14.3% YoY", direction: "up" },
-      { label: "Days on Market", value: "7 days", change: "-22.2% YoY", direction: "down" },
-      { label: "Sale-to-List Ratio", value: "101.0%", change: "+1.1% YoY", direction: "up" },
-      { label: "Months' Supply", value: "2.0 months", change: "+4.9% YoY", direction: "up" },
-      { label: "Inventory", value: "950 homes", change: "+12.6% YoY", direction: "up" },
-      { label: "New Listings", value: "754", change: "+20.8% YoY", direction: "up" },
+      { label: "Median Price", value: "$305,000", change: "+1.7% YoY", direction: "up" },
+      { label: "Days on Market", value: "6 days", change: "0% YoY", direction: "flat" },
+      { label: "Sale-to-List Ratio", value: "100.7%", change: "-1.0% YoY", direction: "down" },
+      { label: "Months' Supply", value: "2.0 months", change: "+25.0% YoY", direction: "up" },
+      { label: "Inventory", value: "1,126 homes", change: "+27.2% YoY", direction: "up" },
+      { label: "New Listings", value: "928", change: "+25.6% YoY", direction: "up" },
     ],
   },
   "Ozaukee County": {
