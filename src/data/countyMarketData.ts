@@ -21,14 +21,14 @@ export interface CountyMarketData {
 
 const countyMarketData: Record<string, CountyMarketData> = {
   "Waukesha County": {
-    dataMonth: "April 2026",
-    videoUrl: "https://youtu.be/VaXvDL6OgMU",
+    dataMonth: "May 2026",
+    videoUrl: "https://youtu.be/wP_ujIcORaw",
     stats: [
-      { label: "Median Price", value: "$507,473", change: "+1.5% YoY", direction: "up" },
-      { label: "Days on Market", value: "6 days", change: "0% YoY", direction: "flat" },
-      { label: "Sale-to-List Ratio", value: "101.6%", change: "+2.3% YoY", direction: "up" },
-      { label: "Months' Supply", value: "2.43 months", change: "+15.6% YoY", direction: "up" },
-      { label: "Inventory", value: "807 homes", change: "+24.2% YoY", direction: "up" },
+      { label: "Median Price", value: "$520,000", change: "+6.1% YoY", direction: "up" },
+      { label: "Days on Market", value: "5 days", change: "0% YoY", direction: "flat" },
+      { label: "Sale-to-List Ratio", value: "101.4%", change: "-0.4% YoY", direction: "down" },
+      { label: "Months' Supply", value: "2.2 months", change: "+7.2% YoY", direction: "up" },
+      { label: "Inventory", value: "901 homes", change: "+16.6% YoY", direction: "up" },
       { label: "New Listings", value: "—", change: "—", direction: "flat" },
     ],
   },
