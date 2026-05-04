@@ -58,6 +58,7 @@ const countyMarketData: Record<string, CountyMarketData> = {
   },
   "Washington County": {
     dataMonth: "May 2026",
+    videoUrl: "https://youtu.be/mU-3_xR3rGo",
     stats: [
       { label: "Median Price", value: "$485,000", change: "+19.1% YoY", direction: "up" },
       { label: "Days on Market", value: "20 days", change: "+300.0% YoY", direction: "up" },
