@@ -45,15 +45,15 @@ const countyMarketData: Record<string, CountyMarketData> = {
     ],
   },
   "Ozaukee County": {
-    dataMonth: "April 2026",
-    videoUrl: "https://youtu.be/9XolZYyJHuE",
+    dataMonth: "May 2026",
+    videoUrl: "https://youtu.be/4qsFuyPwcec",
     stats: [
-      { label: "Median Price", value: "$506,000", change: "+83.3% YoY", direction: "up" },
-      { label: "Days on Market", value: "7 days", change: "+40.0% YoY", direction: "up" },
-      { label: "Sale-to-List Ratio", value: "102.0%", change: "+0.7% YoY", direction: "up" },
-      { label: "Months' Supply", value: "2.0 months", change: "-9.1% YoY", direction: "down" },
-      { label: "Inventory", value: "180 homes", change: "+5.9% YoY", direction: "up" },
-      { label: "New Listings", value: "—", change: "—", direction: "flat" },
+      { label: "Median Price", value: "$600,000", change: "+16.5% YoY", direction: "up" },
+      { label: "Days on Market", value: "5 days", change: "-16.7% YoY", direction: "down" },
+      { label: "Sale-to-List Ratio", value: "101.7%", change: "+1.0% YoY", direction: "up" },
+      { label: "Months' Supply", value: "2.2 months", change: "-15.4% YoY", direction: "down" },
+      { label: "Inventory", value: "160 homes", change: "+2.6% YoY", direction: "up" },
+      { label: "New Listings", value: "115", change: "+23.7% YoY", direction: "up" },
     ],
   },
   "Washington County": {
