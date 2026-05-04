@@ -22,7 +22,7 @@ export interface CountyMarketData {
 const countyMarketData: Record<string, CountyMarketData> = {
   "Waukesha County": {
     dataMonth: "May 2026",
-    videoUrl: "https://youtu.be/wP_ujIcORaw",
+    videoUrl: "https://youtu.be/gTxZ4Gb5aqQ",
     stats: [
       { label: "Median Price", value: "$520,000", change: "+6.1% YoY", direction: "up" },
       { label: "Days on Market", value: "5 days", change: "0% YoY", direction: "flat" },
@@ -57,15 +57,14 @@ const countyMarketData: Record<string, CountyMarketData> = {
     ],
   },
   "Washington County": {
-    dataMonth: "April 2026",
-    videoUrl: "https://youtu.be/Li9HgRgckW4",
+    dataMonth: "May 2026",
     stats: [
-      { label: "Median Price", value: "$455,000", change: "-2.6% YoY", direction: "down" },
-      { label: "Days on Market", value: "11 days", change: "-21.4% YoY", direction: "down" },
-      { label: "Sale-to-List Ratio", value: "99.7%", change: "-0.3% YoY", direction: "down" },
-      { label: "Months' Supply", value: "2.8 months", change: "-3.4% YoY", direction: "down" },
-      { label: "Inventory", value: "204 homes", change: "+15.3% YoY", direction: "up" },
-      { label: "New Listings", value: "125", change: "+20.2% YoY", direction: "up" },
+      { label: "Median Price", value: "$485,000", change: "+19.1% YoY", direction: "up" },
+      { label: "Days on Market", value: "20 days", change: "+300.0% YoY", direction: "up" },
+      { label: "Sale-to-List Ratio", value: "101.0%", change: "+0.6% YoY", direction: "up" },
+      { label: "Months' Supply", value: "2.7 months", change: "+42.1% YoY", direction: "up" },
+      { label: "Inventory", value: "239 homes", change: "+27.8% YoY", direction: "up" },
+      { label: "New Listings", value: "—", change: "—", direction: "flat" },
     ],
   },
 };
