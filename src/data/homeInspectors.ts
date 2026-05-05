@@ -45,6 +45,7 @@ export const inspectorCategories: InspectorCategory[] = [
         business: "HomeSight Inspections",
         bookingUrl: "https://inspectionsupport.com/milwaukeehomesight/online-scheduler?t=aDRqRlRZRmJuaGhCLg==&office=a60ac7a4-65c4-5205-99c4-52c3e5f37002",
         phone: "(414) 321-1070",
+        email: "clientcare@myhsight.com",
         location: "3216 S 92nd St #204, Milwaukee, WI 53227",
         image: "/images/inspectors/homesight-logo.webp",
         serviceAreas: ["Milwaukee", "Waukesha", "Greater Milwaukee Area"],
