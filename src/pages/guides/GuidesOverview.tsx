@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Home, Building2, MapPin, TrendingUp, Landmark, DollarSign, ArrowRight, ExternalLink, BookOpen, ShoppingBag, LineChart, Phone, Mail, Calendar, Play, Hammer, ArrowLeftRight } from "lucide-react";
+import { Home, Building2, MapPin, TrendingUp, Landmark, DollarSign, ArrowRight, ExternalLink, BookOpen, ShoppingBag, LineChart, Phone, Mail, Calendar, Play, Hammer, ArrowLeftRight, ClipboardList } from "lucide-react";
 import { motion } from "framer-motion";
 import lucasHeadshot from "@/assets/lucas-murphy-headshot.jpeg";
 import provisionLogo from "@/assets/provision-logo.png";
@@ -76,6 +76,20 @@ const investorGuides: Guide[] = [
 ];
 
 const sellerGuides: Guide[] = [
+  {
+    icon: ClipboardList,
+    label: "Seller Net Sheet",
+    to: "/guides/seller-net-sheet",
+    desc: "Estimate your take-home proceeds at closing — commissions, fees, and payoff calculations.",
+    status: "coming_soon",
+  },
+  {
+    icon: LineChart,
+    label: "CMA",
+    to: "/tools/cma",
+    desc: "Comparative Market Analysis to price your home right — recent sales, active competition, and market trends.",
+    status: "available",
+  },
   {
     icon: ArrowLeftRight,
     label: "Selling and Buying At The Same Time?",

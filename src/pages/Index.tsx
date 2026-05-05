@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Home, Building2, MapPin, TrendingUp, TrendingDown, Minus as MinusIcon, Hammer, Landmark, DollarSign, Search, Shield, ArrowRight, Clock, Percent, CalendarDays, ClipboardList, PlusCircle, Download, Eye, Compass, Truck } from "lucide-react";
+import { Home, Building2, MapPin, TrendingUp, TrendingDown, Minus as MinusIcon, Hammer, Landmark, DollarSign, Search, Shield, ArrowRight, Clock, Percent, CalendarDays, ClipboardList, PlusCircle, Download, Eye, Compass, Truck, ArrowLeftRight, LineChart } from "lucide-react";
 import countyMarketData from "@/data/countyMarketData";
 import { motion } from "framer-motion";
 import milwaukeeSkyline from "@/assets/milwaukee-skyline.jpg";
@@ -22,16 +22,19 @@ const guideCategories = [
     ],
   },
   {
+    heading: "Seller Guides",
+    items: [
+      { icon: ClipboardList, label: "Seller Net Sheet", to: "/guides/seller-net-sheet", desc: "Estimate your take-home proceeds at closing" },
+      { icon: LineChart, label: "CMA", to: "/tools/cma", desc: "Comparative Market Analysis to price your home right" },
+      { icon: ArrowLeftRight, label: "Selling and Buying At The Same Time?", to: "/guides/selling-and-buying", desc: "Coordinate the sale of your current home with your next purchase" },
+    ],
+  },
+  {
     heading: "Investor Guides",
     items: [
       { icon: TrendingUp, label: "House Hacking", to: "https://www.lucasmurphyrealestate.com/guide/house-hacking-guide", desc: "Live for free while building equity", newTab: true },
       { icon: Landmark, label: "Investors", to: "/guides/investors", desc: "Grow your real estate portfolio" },
-    ],
-  },
-  {
-    heading: "Seller Guides",
-    items: [
-      { icon: DollarSign, label: "Seller's Guide", to: "/guides/sellers", desc: "List, price, stage, and sell your home" },
+      { icon: Hammer, label: "House Flipping", to: "/guides/house-flipping", desc: "Find, fund, fix, and flip in Metro Milwaukee" },
     ],
   },
 ];
