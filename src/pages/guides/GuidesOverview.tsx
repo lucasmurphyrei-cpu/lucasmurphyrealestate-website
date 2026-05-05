@@ -77,13 +77,6 @@ const investorGuides: Guide[] = [
 
 const sellerGuides: Guide[] = [
   {
-    icon: DollarSign,
-    label: "Seller's Guide",
-    to: "/guides/sellers",
-    desc: "Everything you need to know about listing, pricing, staging, and selling your home in Metro Milwaukee.",
-    status: "coming_soon",
-  },
-  {
     icon: ArrowLeftRight,
     label: "Selling and Buying At The Same Time?",
     to: "/guides/selling-and-buying",
