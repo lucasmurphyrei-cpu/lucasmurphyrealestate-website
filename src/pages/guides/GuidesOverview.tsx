@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Home, Building2, MapPin, TrendingUp, Landmark, DollarSign, ArrowRight, ExternalLink, BookOpen, ShoppingBag, LineChart, Phone, Mail, Calendar, Play, Hammer } from "lucide-react";
+import { Home, Building2, MapPin, TrendingUp, Landmark, DollarSign, ArrowRight, ExternalLink, BookOpen, ShoppingBag, LineChart, Phone, Mail, Calendar, Play, Hammer, ArrowLeftRight } from "lucide-react";
 import { motion } from "framer-motion";
 import lucasHeadshot from "@/assets/lucas-murphy-headshot.jpeg";
 import provisionLogo from "@/assets/provision-logo.png";
@@ -81,6 +81,13 @@ const sellerGuides: Guide[] = [
     label: "Seller's Guide",
     to: "/guides/sellers",
     desc: "Everything you need to know about listing, pricing, staging, and selling your home in Metro Milwaukee.",
+    status: "coming_soon",
+  },
+  {
+    icon: ArrowLeftRight,
+    label: "Selling and Buying At The Same Time?",
+    to: "/guides/selling-and-buying",
+    desc: "Coordinating the sale of your current home with the purchase of your next — contingencies, bridge loans, and timing strategies.",
     status: "coming_soon",
   },
 ];
@@ -207,8 +214,8 @@ const GuidesOverview = () => (
 
     <section className="container py-16">
       <CategorySection icon={ShoppingBag} title="Buyer Guides" guides={buyerGuides} startIndex={0} />
-      <CategorySection icon={DollarSign} title="Seller Guides" guides={sellerGuides} startIndex={buyerGuides.length} />
-      <CategorySection icon={LineChart} title="Investor Guides" guides={investorGuides} startIndex={buyerGuides.length + sellerGuides.length} />
+      <CategorySection icon={DollarSign} title="Sellers" guides={sellerGuides} startIndex={buyerGuides.length} />
+      <CategorySection icon={LineChart} title="Investors" guides={investorGuides} startIndex={buyerGuides.length + sellerGuides.length} />
     </section>
 
     {/* Branding / Contact CTA */}
