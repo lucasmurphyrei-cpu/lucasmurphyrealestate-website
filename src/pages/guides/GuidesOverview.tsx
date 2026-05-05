@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Home, Building2, MapPin, TrendingUp, Landmark, DollarSign, ArrowRight, ExternalLink, BookOpen, ShoppingBag, LineChart, Phone, Mail, Calendar, Play } from "lucide-react";
+import { Home, Building2, MapPin, TrendingUp, Landmark, DollarSign, ArrowRight, ExternalLink, BookOpen, ShoppingBag, LineChart, Phone, Mail, Calendar, Play, Hammer } from "lucide-react";
 import { motion } from "framer-motion";
 import lucasHeadshot from "@/assets/lucas-murphy-headshot.jpeg";
 import provisionLogo from "@/assets/provision-logo.png";
@@ -64,6 +64,13 @@ const investorGuides: Guide[] = [
     label: "Investors",
     to: "/guides/investors",
     desc: "Grow your real estate portfolio in southeastern Wisconsin — cash flow analysis, deal evaluation, and market insights.",
+    status: "coming_soon",
+  },
+  {
+    icon: Hammer,
+    label: "House Flipping",
+    to: "/guides/house-flipping",
+    desc: "Find, fund, fix, and flip — a complete framework for profitable flips in the Metro Milwaukee market.",
     status: "coming_soon",
   },
 ];
@@ -200,8 +207,8 @@ const GuidesOverview = () => (
 
     <section className="container py-16">
       <CategorySection icon={ShoppingBag} title="Buyer Guides" guides={buyerGuides} startIndex={0} />
-      <CategorySection icon={LineChart} title="Investor Guides" guides={investorGuides} startIndex={buyerGuides.length} />
-      <CategorySection icon={DollarSign} title="Seller Guides" guides={sellerGuides} startIndex={buyerGuides.length + investorGuides.length} />
+      <CategorySection icon={DollarSign} title="Seller Guides" guides={sellerGuides} startIndex={buyerGuides.length} />
+      <CategorySection icon={LineChart} title="Investor Guides" guides={investorGuides} startIndex={buyerGuides.length + sellerGuides.length} />
     </section>
 
     {/* Branding / Contact CTA */}
