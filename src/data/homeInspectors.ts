@@ -44,6 +44,7 @@ export const inspectorCategories: InspectorCategory[] = [
         name: "HomeSight Inspections",
         business: "HomeSight Inspections",
         bookingUrl: "https://inspectionsupport.com/milwaukeehomesight/online-scheduler?t=aDRqRlRZRmJuaGhCLg==&office=a60ac7a4-65c4-5205-99c4-52c3e5f37002",
+        phone: "(414) 321-1070",
         image: "/images/inspectors/homesight-logo.webp",
         serviceAreas: ["Milwaukee", "Waukesha", "Greater Milwaukee Area"],
         bio: "HomeSight Inspections offers a few standout advantages that make them a great choice for buyers. Their contractor quote/bid option provides estimated repair pricing for many of the items uncovered during the inspection — giving you real numbers to bring into negotiations. With a larger team of inspectors on staff, they can often schedule you in sooner than smaller outfits when timing is tight. And rather than paying at the time of the inspection, they let you defer payment until closing, which keeps more cash in your pocket during the offer-to-close window.",
