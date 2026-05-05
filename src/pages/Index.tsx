@@ -33,8 +33,8 @@ const guideCategories = [
     heading: "Investor Guides",
     items: [
       { icon: TrendingUp, label: "House Hacking", to: "https://www.lucasmurphyrealestate.com/guide/house-hacking-guide", desc: "Live for free while building equity", newTab: true },
-      { icon: Landmark, label: "Investors", to: "/guides/investors", desc: "Grow your real estate portfolio" },
       { icon: Hammer, label: "House Flipping", to: "/guides/house-flipping", desc: "Find, fund, fix, and flip in Metro Milwaukee" },
+      { icon: Landmark, label: "Real Estate Investing", to: "/guides/investors", desc: "Grow your real estate portfolio" },
     ],
   },
 ];

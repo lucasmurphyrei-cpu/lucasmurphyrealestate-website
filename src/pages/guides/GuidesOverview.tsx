@@ -60,17 +60,17 @@ const investorGuides: Guide[] = [
     status: "available",
   },
   {
-    icon: Landmark,
-    label: "Investors",
-    to: "/guides/investors",
-    desc: "Grow your real estate portfolio in southeastern Wisconsin — cash flow analysis, deal evaluation, and market insights.",
-    status: "coming_soon",
-  },
-  {
     icon: Hammer,
     label: "House Flipping",
     to: "/guides/house-flipping",
     desc: "Find, fund, fix, and flip — a complete framework for profitable flips in the Metro Milwaukee market.",
+    status: "coming_soon",
+  },
+  {
+    icon: Landmark,
+    label: "Real Estate Investing",
+    to: "/guides/investors",
+    desc: "Grow your real estate portfolio in southeastern Wisconsin — cash flow analysis, deal evaluation, and market insights.",
     status: "coming_soon",
   },
 ];
