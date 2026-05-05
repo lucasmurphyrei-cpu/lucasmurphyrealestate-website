@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ClipboardCheck, Phone, Mail, Globe, MapPin, ExternalLink } from "lucide-react";
+import { ArrowLeft, ClipboardCheck, Phone, Mail, Globe, MapPin, ExternalLink, CalendarCheck } from "lucide-react";
 import { motion } from "framer-motion";
 import { inspectorCategories } from "@/data/homeInspectors";
 import type { HomeInspector } from "@/data/homeInspectors";
@@ -51,56 +51,76 @@ const InspectorCard = ({ inspector }: { inspector: HomeInspector }) => (
           </p>
 
           {/* Contact Info */}
-          <div className="mt-5 grid gap-2 text-sm text-muted-foreground">
-            {inspector.phones && inspector.phones.length > 0 ? (
-              inspector.phones.map((p) => (
+          {(inspector.phone || inspector.phones || inspector.email || inspector.location) && (
+            <div className="mt-5 grid gap-2 text-sm text-muted-foreground">
+              {inspector.phones && inspector.phones.length > 0
+                ? inspector.phones.map((p) => (
+                    <a
+                      key={p.number}
+                      href={`tel:${p.number}`}
+                      className="inline-flex items-center gap-2 transition-colors hover:text-primary"
+                    >
+                      <Phone className="h-4 w-4 shrink-0" />
+                      {p.label}: {p.number}
+                    </a>
+                  ))
+                : inspector.phone && (
+                    <a
+                      href={`tel:${inspector.phone}`}
+                      className="inline-flex items-center gap-2 transition-colors hover:text-primary"
+                    >
+                      <Phone className="h-4 w-4 shrink-0" />
+                      {inspector.phone}
+                    </a>
+                  )}
+              {inspector.email && (
                 <a
-                  key={p.number}
-                  href={`tel:${p.number}`}
+                  href={`mailto:${inspector.email}`}
                   className="inline-flex items-center gap-2 transition-colors hover:text-primary"
                 >
-                  <Phone className="h-4 w-4 shrink-0" />
-                  {p.label}: {p.number}
+                  <Mail className="h-4 w-4 shrink-0" />
+                  {inspector.email}
                 </a>
-              ))
-            ) : (
-              <a
-                href={`tel:${inspector.phone}`}
-                className="inline-flex items-center gap-2 transition-colors hover:text-primary"
-              >
-                <Phone className="h-4 w-4 shrink-0" />
-                {inspector.phone}
-              </a>
-            )}
-            {inspector.email && (
-              <a
-                href={`mailto:${inspector.email}`}
-                className="inline-flex items-center gap-2 transition-colors hover:text-primary"
-              >
-                <Mail className="h-4 w-4 shrink-0" />
-                {inspector.email}
-              </a>
-            )}
-            <span className="inline-flex items-center gap-2">
-              <MapPin className="h-4 w-4 shrink-0" />
-              {inspector.location}
-            </span>
-          </div>
+              )}
+              {inspector.location && (
+                <span className="inline-flex items-center gap-2">
+                  <MapPin className="h-4 w-4 shrink-0" />
+                  {inspector.location}
+                </span>
+              )}
+            </div>
+          )}
 
           {/* CTA */}
-          <div className="mt-6">
-            <Button asChild size="sm">
-              <a
-                href={inspector.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2"
-              >
-                <Globe className="h-4 w-4" />
-                Visit Website
-                <ExternalLink className="h-3 w-3" />
-              </a>
-            </Button>
+          <div className="mt-6 flex flex-wrap gap-3">
+            {inspector.bookingUrl && (
+              <Button asChild size="sm">
+                <a
+                  href={inspector.bookingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2"
+                >
+                  <CalendarCheck className="h-4 w-4" />
+                  Book Inspection Online
+                  <ExternalLink className="h-3 w-3" />
+                </a>
+              </Button>
+            )}
+            {inspector.website && (
+              <Button asChild size="sm" variant={inspector.bookingUrl ? "outline" : "default"}>
+                <a
+                  href={inspector.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2"
+                >
+                  <Globe className="h-4 w-4" />
+                  Visit Website
+                  <ExternalLink className="h-3 w-3" />
+                </a>
+              </Button>
+            )}
           </div>
         </div>
       </div>
