@@ -1,0 +1,1981 @@
+{
+  "month": "June 2026",
+  "counties": {
+    "Milwaukee County": {
+      "median_price": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-04",
+          "value": 300000,
+          "yoy_pct": 14.3
+        },
+        {
+          "month": "2026-05",
+          "value": 305000,
+          "yoy_pct": 1.7
+        },
+        {
+          "month": "2026-06",
+          "value": 312600,
+          "yoy_pct": 5.1
+        }
+      ],
+      "days_on_market": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": 15,
+          "yoy_pct": 66.7
+        },
+        {
+          "month": "2026-04",
+          "value": 7,
+          "yoy_pct": -22.2
+        },
+        {
+          "month": "2026-05",
+          "value": 6,
+          "yoy_pct": 0.0
+        },
+        {
+          "month": "2026-06",
+          "value": 5,
+          "yoy_pct": 0.0
+        }
+      ],
+      "sale_to_list": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-04",
+          "value": 101.0,
+          "yoy_pct": 1.1
+        },
+        {
+          "month": "2026-05",
+          "value": 100.7,
+          "yoy_pct": -1.0
+        },
+        {
+          "month": "2026-06",
+          "value": 102.5,
+          "yoy_pct": 0.1
+        }
+      ],
+      "months_supply": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": 2.5,
+          "yoy_pct": 13.6
+        },
+        {
+          "month": "2026-04",
+          "value": 2.0,
+          "yoy_pct": 4.9
+        },
+        {
+          "month": "2026-05",
+          "value": 2.0,
+          "yoy_pct": 25.0
+        },
+        {
+          "month": "2026-06",
+          "value": 1.8,
+          "yoy_pct": 20.0
+        }
+      ],
+      "inventory": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-04",
+          "value": 950,
+          "yoy_pct": 12.6
+        },
+        {
+          "month": "2026-05",
+          "value": 1126,
+          "yoy_pct": 27.2
+        },
+        {
+          "month": "2026-06",
+          "value": 1181,
+          "yoy_pct": 17.5
+        }
+      ],
+      "new_listings": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-04",
+          "value": 754,
+          "yoy_pct": 20.8
+        },
+        {
+          "month": "2026-05",
+          "value": 928,
+          "yoy_pct": 25.6
+        },
+        {
+          "month": "2026-06",
+          "value": null,
+          "yoy_pct": null
+        }
+      ]
+    },
+    "Waukesha County": {
+      "median_price": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-04",
+          "value": 507473,
+          "yoy_pct": 1.5
+        },
+        {
+          "month": "2026-05",
+          "value": 520000,
+          "yoy_pct": 6.1
+        },
+        {
+          "month": "2026-06",
+          "value": 539950,
+          "yoy_pct": -0.9
+        }
+      ],
+      "days_on_market": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": 14,
+          "yoy_pct": 40.0
+        },
+        {
+          "month": "2026-04",
+          "value": 6,
+          "yoy_pct": 0.0
+        },
+        {
+          "month": "2026-05",
+          "value": 5,
+          "yoy_pct": 0.0
+        },
+        {
+          "month": "2026-06",
+          "value": 5,
+          "yoy_pct": 0.0
+        }
+      ],
+      "sale_to_list": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-04",
+          "value": 101.6,
+          "yoy_pct": 2.3
+        },
+        {
+          "month": "2026-05",
+          "value": 101.4,
+          "yoy_pct": -0.4
+        },
+        {
+          "month": "2026-06",
+          "value": 102.4,
+          "yoy_pct": 0.5
+        }
+      ],
+      "months_supply": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": 2.9,
+          "yoy_pct": 16.0
+        },
+        {
+          "month": "2026-04",
+          "value": 2.43,
+          "yoy_pct": 15.6
+        },
+        {
+          "month": "2026-05",
+          "value": 2.2,
+          "yoy_pct": 7.2
+        },
+        {
+          "month": "2026-06",
+          "value": 1.9,
+          "yoy_pct": 0.0
+        }
+      ],
+      "inventory": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-04",
+          "value": 807,
+          "yoy_pct": 24.2
+        },
+        {
+          "month": "2026-05",
+          "value": 901,
+          "yoy_pct": 16.6
+        },
+        {
+          "month": "2026-06",
+          "value": 755,
+          "yoy_pct": 0.5
+        }
+      ],
+      "new_listings": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-06",
+          "value": null,
+          "yoy_pct": null
+        }
+      ]
+    },
+    "Ozaukee County": {
+      "median_price": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-04",
+          "value": 506000,
+          "yoy_pct": 83.3
+        },
+        {
+          "month": "2026-05",
+          "value": 555000,
+          "yoy_pct": 20.7
+        },
+        {
+          "month": "2026-06",
+          "value": 555000,
+          "yoy_pct": 20.7
+        }
+      ],
+      "days_on_market": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": 16,
+          "yoy_pct": 100.0
+        },
+        {
+          "month": "2026-04",
+          "value": 7,
+          "yoy_pct": 40.0
+        },
+        {
+          "month": "2026-05",
+          "value": 5,
+          "yoy_pct": -37.5
+        },
+        {
+          "month": "2026-06",
+          "value": 5,
+          "yoy_pct": -37.5
+        }
+      ],
+      "sale_to_list": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-04",
+          "value": 102.0,
+          "yoy_pct": 0.7
+        },
+        {
+          "month": "2026-05",
+          "value": 102.1,
+          "yoy_pct": 1.0
+        },
+        {
+          "month": "2026-06",
+          "value": 102.1,
+          "yoy_pct": 1.0
+        }
+      ],
+      "months_supply": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": 2.93,
+          "yoy_pct": -15.8
+        },
+        {
+          "month": "2026-04",
+          "value": 2.0,
+          "yoy_pct": -9.1
+        },
+        {
+          "month": "2026-05",
+          "value": 2.0,
+          "yoy_pct": -13.0
+        },
+        {
+          "month": "2026-06",
+          "value": 2.0,
+          "yoy_pct": -13.0
+        }
+      ],
+      "inventory": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-04",
+          "value": 180,
+          "yoy_pct": 5.9
+        },
+        {
+          "month": "2026-05",
+          "value": 171,
+          "yoy_pct": -6.6
+        },
+        {
+          "month": "2026-06",
+          "value": 171,
+          "yoy_pct": -6.6
+        }
+      ],
+      "new_listings": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-06",
+          "value": null,
+          "yoy_pct": null
+        }
+      ]
+    },
+    "Washington County": {
+      "median_price": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-04",
+          "value": 455000,
+          "yoy_pct": -2.6
+        },
+        {
+          "month": "2026-05",
+          "value": 485000,
+          "yoy_pct": 19.1
+        },
+        {
+          "month": "2026-06",
+          "value": 481000,
+          "yoy_pct": 10.6
+        }
+      ],
+      "days_on_market": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": 24,
+          "yoy_pct": 4.3
+        },
+        {
+          "month": "2026-04",
+          "value": 11,
+          "yoy_pct": -21.4
+        },
+        {
+          "month": "2026-05",
+          "value": 20,
+          "yoy_pct": 300.0
+        },
+        {
+          "month": "2026-06",
+          "value": 5,
+          "yoy_pct": -37.5
+        }
+      ],
+      "sale_to_list": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-04",
+          "value": 99.7,
+          "yoy_pct": -0.3
+        },
+        {
+          "month": "2026-05",
+          "value": 101.0,
+          "yoy_pct": 0.6
+        },
+        {
+          "month": "2026-06",
+          "value": 100.5,
+          "yoy_pct": -0.1
+        }
+      ],
+      "months_supply": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": 4.3,
+          "yoy_pct": 59.3
+        },
+        {
+          "month": "2026-04",
+          "value": 2.8,
+          "yoy_pct": -3.4
+        },
+        {
+          "month": "2026-05",
+          "value": 2.7,
+          "yoy_pct": 42.1
+        },
+        {
+          "month": "2026-06",
+          "value": 2.09,
+          "yoy_pct": -3.2
+        }
+      ],
+      "inventory": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-04",
+          "value": 204,
+          "yoy_pct": 15.3
+        },
+        {
+          "month": "2026-05",
+          "value": 239,
+          "yoy_pct": 27.8
+        },
+        {
+          "month": "2026-06",
+          "value": 377,
+          "yoy_pct": 5.6
+        }
+      ],
+      "new_listings": [
+        {
+          "month": "2025-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-04",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-06",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-07",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-08",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-09",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-10",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-11",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2025-12",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-01",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-02",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-03",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-04",
+          "value": 125,
+          "yoy_pct": 20.2
+        },
+        {
+          "month": "2026-05",
+          "value": null,
+          "yoy_pct": null
+        },
+        {
+          "month": "2026-06",
+          "value": null,
+          "yoy_pct": null
+        }
+      ]
+    }
+  }
+}

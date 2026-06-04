@@ -1,0 +1,4317 @@
+{
+  "month": "June 2026",
+  "municipalities": {
+    "bayside": {
+      "county": "Milwaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 332500,
+            "yoy_pct": -3.6
+          },
+          {
+            "month": "2026-06",
+            "value": 335000,
+            "yoy_pct": 15.5
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 9,
+            "yoy_pct": -57.1
+          },
+          {
+            "month": "2026-06",
+            "value": 16,
+            "yoy_pct": 6.7
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 101,
+            "yoy_pct": 0.2
+          },
+          {
+            "month": "2026-06",
+            "value": 103,
+            "yoy_pct": 2.6
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 14,
+            "yoy_pct": -6.7
+          },
+          {
+            "month": "2026-06",
+            "value": 15,
+            "yoy_pct": 114.3
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 7,
+            "yoy_pct": -36.4
+          },
+          {
+            "month": "2026-06",
+            "value": 11,
+            "yoy_pct": -42.1
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 12,
+            "yoy_pct": -14.3
+          },
+          {
+            "month": "2026-06",
+            "value": 11,
+            "yoy_pct": 22.2
+          }
+        ]
+      }
+    },
+    "belgium": {
+      "county": "Ozaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 675000,
+            "yoy_pct": 65.9
+          },
+          {
+            "month": "2026-06",
+            "value": 440000,
+            "yoy_pct": -18.3
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 47,
+            "yoy_pct": -60.8
+          },
+          {
+            "month": "2026-06",
+            "value": 4,
+            "yoy_pct": -80.0
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 91,
+            "yoy_pct": -5.6
+          },
+          {
+            "month": "2026-06",
+            "value": 97,
+            "yoy_pct": -4.8
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 10,
+            "yoy_pct": 42.9
+          },
+          {
+            "month": "2026-06",
+            "value": 12,
+            "yoy_pct": 50.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 3,
+            "yoy_pct": 0.0
+          },
+          {
+            "month": "2026-06",
+            "value": 1,
+            "yoy_pct": -75.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 3,
+            "yoy_pct": -40.0
+          },
+          {
+            "month": "2026-06",
+            "value": 8,
+            "yoy_pct": 33.3
+          }
+        ]
+      }
+    },
+    "big_bend": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 562500,
+            "yoy_pct": 6.6
+          },
+          {
+            "month": "2026-06",
+            "value": 630000,
+            "yoy_pct": 0.2
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 15,
+            "yoy_pct": 87.5
+          },
+          {
+            "month": "2026-06",
+            "value": 22,
+            "yoy_pct": 4.8
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 101,
+            "yoy_pct": -1.9
+          },
+          {
+            "month": "2026-06",
+            "value": 101,
+            "yoy_pct": 1.0
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 64,
+            "yoy_pct": 28.0
+          },
+          {
+            "month": "2026-06",
+            "value": 78,
+            "yoy_pct": -11.4
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 34,
+            "yoy_pct": 0.0
+          },
+          {
+            "month": "2026-06",
+            "value": 43,
+            "yoy_pct": -2.3
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 56,
+            "yoy_pct": 12.0
+          },
+          {
+            "month": "2026-06",
+            "value": 66,
+            "yoy_pct": -24.1
+          }
+        ]
+      }
+    },
+    "brookfield": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 562500,
+            "yoy_pct": 6.6
+          },
+          {
+            "month": "2026-06",
+            "value": 630000,
+            "yoy_pct": 0.2
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 15,
+            "yoy_pct": 87.5
+          },
+          {
+            "month": "2026-06",
+            "value": 22,
+            "yoy_pct": 4.8
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 101,
+            "yoy_pct": -1.9
+          },
+          {
+            "month": "2026-06",
+            "value": 101,
+            "yoy_pct": 1.0
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 64,
+            "yoy_pct": 28.0
+          },
+          {
+            "month": "2026-06",
+            "value": 78,
+            "yoy_pct": -11.4
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 34,
+            "yoy_pct": 0.0
+          },
+          {
+            "month": "2026-06",
+            "value": 43,
+            "yoy_pct": -2.3
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 56,
+            "yoy_pct": 12.0
+          },
+          {
+            "month": "2026-06",
+            "value": 66,
+            "yoy_pct": -24.1
+          }
+        ]
+      }
+    },
+    "brown_deer": {
+      "county": "Milwaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 332500,
+            "yoy_pct": -3.6
+          },
+          {
+            "month": "2026-06",
+            "value": 335000,
+            "yoy_pct": 15.5
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 9,
+            "yoy_pct": -57.1
+          },
+          {
+            "month": "2026-06",
+            "value": 16,
+            "yoy_pct": 6.7
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 101,
+            "yoy_pct": 0.2
+          },
+          {
+            "month": "2026-06",
+            "value": 103,
+            "yoy_pct": 2.6
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 14,
+            "yoy_pct": -6.7
+          },
+          {
+            "month": "2026-06",
+            "value": 15,
+            "yoy_pct": 114.3
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 7,
+            "yoy_pct": -36.4
+          },
+          {
+            "month": "2026-06",
+            "value": 11,
+            "yoy_pct": -42.1
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 12,
+            "yoy_pct": -14.3
+          },
+          {
+            "month": "2026-06",
+            "value": 11,
+            "yoy_pct": 22.2
+          }
+        ]
+      }
+    },
+    "butler": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 347500,
+            "yoy_pct": 9.9
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 26,
+            "yoy_pct": -21.2
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 105,
+            "yoy_pct": 24.4
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": 3,
+            "yoy_pct": 0.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 4,
+            "yoy_pct": 300.0
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": 4,
+            "yoy_pct": 33.3
+          }
+        ]
+      }
+    },
+    "cedarburg": {
+      "county": "Ozaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 590000,
+            "yoy_pct": 12.4
+          },
+          {
+            "month": "2026-06",
+            "value": 537500,
+            "yoy_pct": 21.5
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 28,
+            "yoy_pct": 154.6
+          },
+          {
+            "month": "2026-06",
+            "value": 16,
+            "yoy_pct": -5.9
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 101,
+            "yoy_pct": 0.7
+          },
+          {
+            "month": "2026-06",
+            "value": 103,
+            "yoy_pct": 2.0
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 25,
+            "yoy_pct": 13.6
+          },
+          {
+            "month": "2026-06",
+            "value": 25,
+            "yoy_pct": 4.2
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 9,
+            "yoy_pct": 50.0
+          },
+          {
+            "month": "2026-06",
+            "value": 16,
+            "yoy_pct": 14.3
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 22,
+            "yoy_pct": 37.5
+          },
+          {
+            "month": "2026-06",
+            "value": 26,
+            "yoy_pct": 30.0
+          }
+        ]
+      }
+    },
+    "chenequa": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 1,
+            "yoy_pct": 0.0
+          },
+          {
+            "month": "2026-06",
+            "value": 2,
+            "yoy_pct": 100.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 0,
+            "yoy_pct": -100.0
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ]
+      }
+    },
+    "cudahy": {
+      "county": "Milwaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 313750,
+            "yoy_pct": 20.7
+          },
+          {
+            "month": "2026-06",
+            "value": 299000,
+            "yoy_pct": -2.4
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 22,
+            "yoy_pct": 37.5
+          },
+          {
+            "month": "2026-06",
+            "value": 8,
+            "yoy_pct": 60.0
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 105,
+            "yoy_pct": 0.5
+          },
+          {
+            "month": "2026-06",
+            "value": 104,
+            "yoy_pct": -1.3
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 18,
+            "yoy_pct": 80.0
+          },
+          {
+            "month": "2026-06",
+            "value": 21,
+            "yoy_pct": 90.9
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 8,
+            "yoy_pct": -11.1
+          },
+          {
+            "month": "2026-06",
+            "value": 15,
+            "yoy_pct": -16.7
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 17,
+            "yoy_pct": 41.7
+          },
+          {
+            "month": "2026-06",
+            "value": 19,
+            "yoy_pct": 5.6
+          }
+        ]
+      }
+    },
+    "delafield": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 875000,
+            "yoy_pct": 7.4
+          },
+          {
+            "month": "2026-06",
+            "value": 1185000,
+            "yoy_pct": 45.0
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 13,
+            "yoy_pct": -48.0
+          },
+          {
+            "month": "2026-06",
+            "value": 6,
+            "yoy_pct": -80.7
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 101,
+            "yoy_pct": -0.4
+          },
+          {
+            "month": "2026-06",
+            "value": 105,
+            "yoy_pct": 5.0
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 25,
+            "yoy_pct": -3.9
+          },
+          {
+            "month": "2026-06",
+            "value": 36,
+            "yoy_pct": -10.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 11,
+            "yoy_pct": 22.2
+          },
+          {
+            "month": "2026-06",
+            "value": 8,
+            "yoy_pct": -33.3
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 23,
+            "yoy_pct": 21.1
+          },
+          {
+            "month": "2026-06",
+            "value": 25,
+            "yoy_pct": -13.8
+          }
+        ]
+      }
+    },
+    "dousman": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 610000,
+            "yoy_pct": 11.2
+          },
+          {
+            "month": "2026-06",
+            "value": 699900,
+            "yoy_pct": 42.8
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 28,
+            "yoy_pct": -79.3
+          },
+          {
+            "month": "2026-06",
+            "value": 48,
+            "yoy_pct": 2300.0
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 99,
+            "yoy_pct": -0.2
+          },
+          {
+            "month": "2026-06",
+            "value": 105,
+            "yoy_pct": -2.1
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 16,
+            "yoy_pct": 700.0
+          },
+          {
+            "month": "2026-06",
+            "value": 16,
+            "yoy_pct": 1500.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 3,
+            "yoy_pct": 50.0
+          },
+          {
+            "month": "2026-06",
+            "value": 3,
+            "yoy_pct": 50.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 4,
+            "yoy_pct": 100.0
+          },
+          {
+            "month": "2026-06",
+            "value": 4,
+            "yoy_pct": 300.0
+          }
+        ]
+      }
+    },
+    "eagle": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": 524500,
+            "yoy_pct": 53.9
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": 15,
+            "yoy_pct": -68.1
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": 95,
+            "yoy_pct": -4.7
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 11,
+            "yoy_pct": 450.0
+          },
+          {
+            "month": "2026-06",
+            "value": 12,
+            "yoy_pct": -25.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": 6,
+            "yoy_pct": 500.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": 10,
+            "yoy_pct": -41.2
+          }
+        ]
+      }
+    },
+    "elm_grove": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 1322500,
+            "yoy_pct": 26.0
+          },
+          {
+            "month": "2026-06",
+            "value": 906000,
+            "yoy_pct": 0.7
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 6,
+            "yoy_pct": -25.0
+          },
+          {
+            "month": "2026-06",
+            "value": 5,
+            "yoy_pct": 0.0
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 100,
+            "yoy_pct": -2.4
+          },
+          {
+            "month": "2026-06",
+            "value": 110,
+            "yoy_pct": 3.7
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 10,
+            "yoy_pct": 100.0
+          },
+          {
+            "month": "2026-06",
+            "value": 18,
+            "yoy_pct": 50.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 4,
+            "yoy_pct": 33.3
+          },
+          {
+            "month": "2026-06",
+            "value": 7,
+            "yoy_pct": 16.7
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 9,
+            "yoy_pct": 28.6
+          },
+          {
+            "month": "2026-06",
+            "value": 16,
+            "yoy_pct": 33.3
+          }
+        ]
+      }
+    },
+    "fox_point": {
+      "county": "Milwaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 791000,
+            "yoy_pct": 9.1
+          },
+          {
+            "month": "2026-06",
+            "value": 677500,
+            "yoy_pct": 13.8
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 11,
+            "yoy_pct": -68.6
+          },
+          {
+            "month": "2026-06",
+            "value": 5,
+            "yoy_pct": -76.2
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 108,
+            "yoy_pct": 9.9
+          },
+          {
+            "month": "2026-06",
+            "value": 103,
+            "yoy_pct": 3.8
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 10,
+            "yoy_pct": -37.5
+          },
+          {
+            "month": "2026-06",
+            "value": 19,
+            "yoy_pct": -9.5
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 3,
+            "yoy_pct": -80.0
+          },
+          {
+            "month": "2026-06",
+            "value": 8,
+            "yoy_pct": -20.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 8,
+            "yoy_pct": -33.3
+          },
+          {
+            "month": "2026-06",
+            "value": 22,
+            "yoy_pct": 46.7
+          }
+        ]
+      }
+    },
+    "franklin": {
+      "county": "Milwaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 472000,
+            "yoy_pct": -14.1
+          },
+          {
+            "month": "2026-06",
+            "value": 587478,
+            "yoy_pct": 12.4
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 18,
+            "yoy_pct": -30.8
+          },
+          {
+            "month": "2026-06",
+            "value": 16,
+            "yoy_pct": 0.0
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 100,
+            "yoy_pct": 1.4
+          },
+          {
+            "month": "2026-06",
+            "value": 101,
+            "yoy_pct": -0.3
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 42,
+            "yoy_pct": 68.0
+          },
+          {
+            "month": "2026-06",
+            "value": 56,
+            "yoy_pct": 30.2
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 19,
+            "yoy_pct": -20.8
+          },
+          {
+            "month": "2026-06",
+            "value": 18,
+            "yoy_pct": -30.8
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 36,
+            "yoy_pct": 89.5
+          },
+          {
+            "month": "2026-06",
+            "value": 47,
+            "yoy_pct": 11.9
+          }
+        ]
+      }
+    },
+    "fredonia": {
+      "county": "Ozaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 567500,
+            "yoy_pct": 70.4
+          },
+          {
+            "month": "2026-06",
+            "value": 330000,
+            "yoy_pct": 88.6
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 58,
+            "yoy_pct": 728.6
+          },
+          {
+            "month": "2026-06",
+            "value": 66,
+            "yoy_pct": 2100.0
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 94,
+            "yoy_pct": -10.5
+          },
+          {
+            "month": "2026-06",
+            "value": 92,
+            "yoy_pct": -9.8
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 4,
+            "yoy_pct": 100.0
+          },
+          {
+            "month": "2026-06",
+            "value": 6,
+            "yoy_pct": 100.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 2,
+            "yoy_pct": 100.0
+          },
+          {
+            "month": "2026-06",
+            "value": 3,
+            "yoy_pct": 200.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 0,
+            "yoy_pct": -100.0
+          },
+          {
+            "month": "2026-06",
+            "value": 5,
+            "yoy_pct": 66.7
+          }
+        ]
+      }
+    },
+    "germantown": {
+      "county": "Washington County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 462500,
+            "yoy_pct": 10.1
+          },
+          {
+            "month": "2026-06",
+            "value": 518000,
+            "yoy_pct": -14.5
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 23,
+            "yoy_pct": 475.0
+          },
+          {
+            "month": "2026-06",
+            "value": 26,
+            "yoy_pct": -36.6
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 101,
+            "yoy_pct": 1.8
+          },
+          {
+            "month": "2026-06",
+            "value": 103,
+            "yoy_pct": 2.6
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 30,
+            "yoy_pct": 15.4
+          },
+          {
+            "month": "2026-06",
+            "value": 31,
+            "yoy_pct": 10.7
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 14,
+            "yoy_pct": 27.3
+          },
+          {
+            "month": "2026-06",
+            "value": 18,
+            "yoy_pct": 28.6
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 21,
+            "yoy_pct": 23.5
+          },
+          {
+            "month": "2026-06",
+            "value": 24,
+            "yoy_pct": 26.3
+          }
+        ]
+      }
+    },
+    "glendale": {
+      "county": "Milwaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 402000,
+            "yoy_pct": 4.6
+          },
+          {
+            "month": "2026-06",
+            "value": 452500,
+            "yoy_pct": 43.0
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 22,
+            "yoy_pct": 144.4
+          },
+          {
+            "month": "2026-06",
+            "value": 4,
+            "yoy_pct": -71.4
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 101,
+            "yoy_pct": -5.1
+          },
+          {
+            "month": "2026-06",
+            "value": 104,
+            "yoy_pct": -0.3
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 23,
+            "yoy_pct": 53.3
+          },
+          {
+            "month": "2026-06",
+            "value": 26,
+            "yoy_pct": -10.3
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 17,
+            "yoy_pct": 6.3
+          },
+          {
+            "month": "2026-06",
+            "value": 16,
+            "yoy_pct": 100.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 21,
+            "yoy_pct": 50.0
+          },
+          {
+            "month": "2026-06",
+            "value": 22,
+            "yoy_pct": -8.3
+          }
+        ]
+      }
+    },
+    "grafton": {
+      "county": "Ozaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 651000,
+            "yoy_pct": 22.9
+          },
+          {
+            "month": "2026-06",
+            "value": 507500,
+            "yoy_pct": 6.1
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 101,
+            "yoy_pct": 197.1
+          },
+          {
+            "month": "2026-06",
+            "value": 18,
+            "yoy_pct": -14.3
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 102,
+            "yoy_pct": 2.2
+          },
+          {
+            "month": "2026-06",
+            "value": 100,
+            "yoy_pct": -2.2
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 40,
+            "yoy_pct": -20.0
+          },
+          {
+            "month": "2026-06",
+            "value": 34,
+            "yoy_pct": -43.3
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 13,
+            "yoy_pct": -18.8
+          },
+          {
+            "month": "2026-06",
+            "value": 16,
+            "yoy_pct": -11.1
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 26,
+            "yoy_pct": 30.0
+          },
+          {
+            "month": "2026-06",
+            "value": 14,
+            "yoy_pct": -51.7
+          }
+        ]
+      }
+    },
+    "greendale": {
+      "county": "Milwaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 381300,
+            "yoy_pct": -1.0
+          },
+          {
+            "month": "2026-06",
+            "value": 435200,
+            "yoy_pct": 21.4
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 4,
+            "yoy_pct": -55.6
+          },
+          {
+            "month": "2026-06",
+            "value": 11,
+            "yoy_pct": 83.3
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 106,
+            "yoy_pct": 4.1
+          },
+          {
+            "month": "2026-06",
+            "value": 105,
+            "yoy_pct": 1.4
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 11,
+            "yoy_pct": -21.4
+          },
+          {
+            "month": "2026-06",
+            "value": 13,
+            "yoy_pct": -13.3
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 7,
+            "yoy_pct": -36.4
+          },
+          {
+            "month": "2026-06",
+            "value": 12,
+            "yoy_pct": 20.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 10,
+            "yoy_pct": -28.6
+          },
+          {
+            "month": "2026-06",
+            "value": 19,
+            "yoy_pct": 35.7
+          }
+        ]
+      }
+    },
+    "greenfield": {
+      "county": "Milwaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 403500,
+            "yoy_pct": 17.0
+          },
+          {
+            "month": "2026-06",
+            "value": 362500,
+            "yoy_pct": 3.6
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 10,
+            "yoy_pct": -9.1
+          },
+          {
+            "month": "2026-06",
+            "value": 7,
+            "yoy_pct": -69.6
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 102,
+            "yoy_pct": 0.1
+          },
+          {
+            "month": "2026-06",
+            "value": 106,
+            "yoy_pct": 5.6
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 27,
+            "yoy_pct": -6.9
+          },
+          {
+            "month": "2026-06",
+            "value": 34,
+            "yoy_pct": 6.3
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 18,
+            "yoy_pct": -5.3
+          },
+          {
+            "month": "2026-06",
+            "value": 18,
+            "yoy_pct": 5.9
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 22,
+            "yoy_pct": -31.3
+          },
+          {
+            "month": "2026-06",
+            "value": 28,
+            "yoy_pct": -3.5
+          }
+        ]
+      }
+    },
+    "hartford": {
+      "county": "Washington County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 448750,
+            "yoy_pct": 32.0
+          },
+          {
+            "month": "2026-06",
+            "value": 430000,
+            "yoy_pct": 20.3
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 5,
+            "yoy_pct": -66.7
+          },
+          {
+            "month": "2026-06",
+            "value": 8,
+            "yoy_pct": 60.0
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 104,
+            "yoy_pct": 3.0
+          },
+          {
+            "month": "2026-06",
+            "value": 103,
+            "yoy_pct": 1.6
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 38,
+            "yoy_pct": 81.0
+          },
+          {
+            "month": "2026-06",
+            "value": 44,
+            "yoy_pct": 76.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 10,
+            "yoy_pct": -28.6
+          },
+          {
+            "month": "2026-06",
+            "value": 18,
+            "yoy_pct": 50.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 31,
+            "yoy_pct": 40.9
+          },
+          {
+            "month": "2026-06",
+            "value": 27,
+            "yoy_pct": 42.1
+          }
+        ]
+      }
+    },
+    "hartland": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 1126000,
+            "yoy_pct": 20.4
+          },
+          {
+            "month": "2026-06",
+            "value": 913750,
+            "yoy_pct": 102.4
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 22,
+            "yoy_pct": -43.6
+          },
+          {
+            "month": "2026-06",
+            "value": 19,
+            "yoy_pct": 171.4
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 97,
+            "yoy_pct": 0.3
+          },
+          {
+            "month": "2026-06",
+            "value": 100,
+            "yoy_pct": -3.4
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 14,
+            "yoy_pct": 0.0
+          },
+          {
+            "month": "2026-06",
+            "value": 13,
+            "yoy_pct": -35.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 11,
+            "yoy_pct": 120.0
+          },
+          {
+            "month": "2026-06",
+            "value": 12,
+            "yoy_pct": 71.4
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 10,
+            "yoy_pct": -23.1
+          },
+          {
+            "month": "2026-06",
+            "value": 8,
+            "yoy_pct": -42.9
+          }
+        ]
+      }
+    },
+    "jackson": {
+      "county": "Washington County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 447450,
+            "yoy_pct": 19.4
+          },
+          {
+            "month": "2026-06",
+            "value": 470000,
+            "yoy_pct": -2.1
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 48,
+            "yoy_pct": 128.6
+          },
+          {
+            "month": "2026-06",
+            "value": 26,
+            "yoy_pct": -3.7
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 99,
+            "yoy_pct": -1.0
+          },
+          {
+            "month": "2026-06",
+            "value": 100,
+            "yoy_pct": 2.0
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 35,
+            "yoy_pct": 2.9
+          },
+          {
+            "month": "2026-06",
+            "value": 28,
+            "yoy_pct": -12.5
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 14,
+            "yoy_pct": 16.7
+          },
+          {
+            "month": "2026-06",
+            "value": 13,
+            "yoy_pct": -13.3
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 19,
+            "yoy_pct": 35.7
+          },
+          {
+            "month": "2026-06",
+            "value": 10,
+            "yoy_pct": -16.7
+          }
+        ]
+      }
+    },
+    "kewaskum": {
+      "county": "Washington County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 327500,
+            "yoy_pct": -19.5
+          },
+          {
+            "month": "2026-06",
+            "value": 367500,
+            "yoy_pct": 1.5
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 31,
+            "yoy_pct": 6.9
+          },
+          {
+            "month": "2026-06",
+            "value": 50,
+            "yoy_pct": 233.3
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 98,
+            "yoy_pct": -2.8
+          },
+          {
+            "month": "2026-06",
+            "value": 98,
+            "yoy_pct": -4.7
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 6,
+            "yoy_pct": 20.0
+          },
+          {
+            "month": "2026-06",
+            "value": 10,
+            "yoy_pct": 150.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 4,
+            "yoy_pct": 33.3
+          },
+          {
+            "month": "2026-06",
+            "value": 5,
+            "yoy_pct": 25.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 7,
+            "yoy_pct": 250.0
+          },
+          {
+            "month": "2026-06",
+            "value": 8,
+            "yoy_pct": 60.0
+          }
+        ]
+      }
+    },
+    "lac_la_belle": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 3,
+            "yoy_pct": 200.0
+          },
+          {
+            "month": "2026-06",
+            "value": 4,
+            "yoy_pct": 100.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 1,
+            "yoy_pct": 0.0
+          },
+          {
+            "month": "2026-06",
+            "value": 3,
+            "yoy_pct": 200.0
+          }
+        ]
+      }
+    },
+    "lannon": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 1,
+            "yoy_pct": 0.0
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": 0,
+            "yoy_pct": -100.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ]
+      }
+    },
+    "menomonee_falls": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 520000,
+            "yoy_pct": 9.0
+          },
+          {
+            "month": "2026-06",
+            "value": 500500,
+            "yoy_pct": 3.6
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 47,
+            "yoy_pct": 123.8
+          },
+          {
+            "month": "2026-06",
+            "value": 36,
+            "yoy_pct": 38.5
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 101,
+            "yoy_pct": -0.3
+          },
+          {
+            "month": "2026-06",
+            "value": 102,
+            "yoy_pct": 0.8
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 89,
+            "yoy_pct": -4.3
+          },
+          {
+            "month": "2026-06",
+            "value": 96,
+            "yoy_pct": -5.9
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 33,
+            "yoy_pct": -28.3
+          },
+          {
+            "month": "2026-06",
+            "value": 56,
+            "yoy_pct": 40.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 62,
+            "yoy_pct": -3.1
+          },
+          {
+            "month": "2026-06",
+            "value": 63,
+            "yoy_pct": 14.6
+          }
+        ]
+      }
+    },
+    "mequon": {
+      "county": "Ozaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 784950,
+            "yoy_pct": 30.8
+          },
+          {
+            "month": "2026-06",
+            "value": 660000,
+            "yoy_pct": -6.7
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 40,
+            "yoy_pct": 5.3
+          },
+          {
+            "month": "2026-06",
+            "value": 22,
+            "yoy_pct": -31.3
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 102,
+            "yoy_pct": 1.7
+          },
+          {
+            "month": "2026-06",
+            "value": 103,
+            "yoy_pct": 4.8
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 48,
+            "yoy_pct": 4.4
+          },
+          {
+            "month": "2026-06",
+            "value": 59,
+            "yoy_pct": 0.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 22,
+            "yoy_pct": 10.0
+          },
+          {
+            "month": "2026-06",
+            "value": 27,
+            "yoy_pct": 35.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 34,
+            "yoy_pct": 25.9
+          },
+          {
+            "month": "2026-06",
+            "value": 42,
+            "yoy_pct": 13.5
+          }
+        ]
+      }
+    },
+    "merton": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 791500,
+            "yoy_pct": -12.1
+          },
+          {
+            "month": "2026-06",
+            "value": 545000,
+            "yoy_pct": -31.1
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 32,
+            "yoy_pct": -27.3
+          },
+          {
+            "month": "2026-06",
+            "value": 28,
+            "yoy_pct": -9.7
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 101,
+            "yoy_pct": -0.4
+          },
+          {
+            "month": "2026-06",
+            "value": 100,
+            "yoy_pct": 6.9
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 16,
+            "yoy_pct": 45.5
+          },
+          {
+            "month": "2026-06",
+            "value": 19,
+            "yoy_pct": -26.9
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 10,
+            "yoy_pct": 42.9
+          },
+          {
+            "month": "2026-06",
+            "value": 11,
+            "yoy_pct": 37.5
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 14,
+            "yoy_pct": 27.3
+          },
+          {
+            "month": "2026-06",
+            "value": 22,
+            "yoy_pct": 0.0
+          }
+        ]
+      }
+    },
+    "milwaukee": {
+      "county": "Milwaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 240000,
+            "yoy_pct": 0.0
+          },
+          {
+            "month": "2026-06",
+            "value": 255000,
+            "yoy_pct": 6.9
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 28,
+            "yoy_pct": 27.3
+          },
+          {
+            "month": "2026-06",
+            "value": 19,
+            "yoy_pct": 5.6
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 98,
+            "yoy_pct": -2.0
+          },
+          {
+            "month": "2026-06",
+            "value": 101,
+            "yoy_pct": 0.1
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 766,
+            "yoy_pct": 38.8
+          },
+          {
+            "month": "2026-06",
+            "value": 742,
+            "yoy_pct": 27.5
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 309,
+            "yoy_pct": 5.5
+          },
+          {
+            "month": "2026-06",
+            "value": 347,
+            "yoy_pct": -0.9
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 570,
+            "yoy_pct": 42.9
+          },
+          {
+            "month": "2026-06",
+            "value": 458,
+            "yoy_pct": 5.8
+          }
+        ]
+      }
+    },
+    "mukwonago": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 540500,
+            "yoy_pct": -4.8
+          },
+          {
+            "month": "2026-06",
+            "value": 550000,
+            "yoy_pct": 22.2
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 47,
+            "yoy_pct": -20.3
+          },
+          {
+            "month": "2026-06",
+            "value": 8,
+            "yoy_pct": -73.3
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 100,
+            "yoy_pct": 3.0
+          },
+          {
+            "month": "2026-06",
+            "value": 102,
+            "yoy_pct": 3.0
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 29,
+            "yoy_pct": 26.1
+          },
+          {
+            "month": "2026-06",
+            "value": 37,
+            "yoy_pct": 54.2
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 9,
+            "yoy_pct": 12.5
+          },
+          {
+            "month": "2026-06",
+            "value": 15,
+            "yoy_pct": -25.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 24,
+            "yoy_pct": 50.0
+          },
+          {
+            "month": "2026-06",
+            "value": 27,
+            "yoy_pct": 42.1
+          }
+        ]
+      }
+    },
+    "muskego": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 520000,
+            "yoy_pct": -7.1
+          },
+          {
+            "month": "2026-06",
+            "value": 475000,
+            "yoy_pct": -15.6
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 14,
+            "yoy_pct": -17.7
+          },
+          {
+            "month": "2026-06",
+            "value": 8,
+            "yoy_pct": 0.0
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 100,
+            "yoy_pct": -0.7
+          },
+          {
+            "month": "2026-06",
+            "value": 102,
+            "yoy_pct": 0.0
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 21,
+            "yoy_pct": -41.7
+          },
+          {
+            "month": "2026-06",
+            "value": 34,
+            "yoy_pct": 13.3
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 11,
+            "yoy_pct": 0.0
+          },
+          {
+            "month": "2026-06",
+            "value": 14,
+            "yoy_pct": -50.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 15,
+            "yoy_pct": -44.4
+          },
+          {
+            "month": "2026-06",
+            "value": 29,
+            "yoy_pct": 26.1
+          }
+        ]
+      }
+    },
+    "nashotah": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 617500,
+            "yoy_pct": 42.0
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 3,
+            "yoy_pct": 50.0
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 103,
+            "yoy_pct": 1.9
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 3,
+            "yoy_pct": 200.0
+          },
+          {
+            "month": "2026-06",
+            "value": 4,
+            "yoy_pct": 100.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 2,
+            "yoy_pct": 100.0
+          },
+          {
+            "month": "2026-06",
+            "value": 0,
+            "yoy_pct": -100.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 3,
+            "yoy_pct": 50.0
+          },
+          {
+            "month": "2026-06",
+            "value": 3,
+            "yoy_pct": 200.0
+          }
+        ]
+      }
+    },
+    "new_berlin": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 457500,
+            "yoy_pct": -2.7
+          },
+          {
+            "month": "2026-06",
+            "value": 475900,
+            "yoy_pct": 12.9
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 7,
+            "yoy_pct": 0.0
+          },
+          {
+            "month": "2026-06",
+            "value": 7,
+            "yoy_pct": -22.2
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 103,
+            "yoy_pct": -0.8
+          },
+          {
+            "month": "2026-06",
+            "value": 102,
+            "yoy_pct": -1.0
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 34,
+            "yoy_pct": 9.7
+          },
+          {
+            "month": "2026-06",
+            "value": 51,
+            "yoy_pct": -1.9
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 20,
+            "yoy_pct": -4.8
+          },
+          {
+            "month": "2026-06",
+            "value": 29,
+            "yoy_pct": 45.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 42,
+            "yoy_pct": 20.0
+          },
+          {
+            "month": "2026-06",
+            "value": 50,
+            "yoy_pct": 8.7
+          }
+        ]
+      }
+    },
+    "north_prairie": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 475000,
+            "yoy_pct": -21.5
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 4,
+            "yoy_pct": 100.0
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 105,
+            "yoy_pct": 3.0
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 1,
+            "yoy_pct": 0.0
+          },
+          {
+            "month": "2026-06",
+            "value": 3,
+            "yoy_pct": 50.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 1,
+            "yoy_pct": 0.0
+          },
+          {
+            "month": "2026-06",
+            "value": null,
+            "yoy_pct": null
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 0,
+            "yoy_pct": -100.0
+          },
+          {
+            "month": "2026-06",
+            "value": 3,
+            "yoy_pct": 200.0
+          }
+        ]
+      }
+    },
+    "oak_creek": {
+      "county": "Milwaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 425000,
+            "yoy_pct": 4.3
+          },
+          {
+            "month": "2026-06",
+            "value": 445500,
+            "yoy_pct": 4.3
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 10,
+            "yoy_pct": 11.1
+          },
+          {
+            "month": "2026-06",
+            "value": 6,
+            "yoy_pct": -45.5
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 103,
+            "yoy_pct": 3.6
+          },
+          {
+            "month": "2026-06",
+            "value": 102,
+            "yoy_pct": -0.2
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 22,
+            "yoy_pct": -21.4
+          },
+          {
+            "month": "2026-06",
+            "value": 36,
+            "yoy_pct": -2.7
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 17,
+            "yoy_pct": -5.6
+          },
+          {
+            "month": "2026-06",
+            "value": 16,
+            "yoy_pct": -27.3
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 18,
+            "yoy_pct": -28.0
+          },
+          {
+            "month": "2026-06",
+            "value": 37,
+            "yoy_pct": 19.4
+          }
+        ]
+      }
+    },
+    "oconomowoc": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 563950,
+            "yoy_pct": 5.4
+          },
+          {
+            "month": "2026-06",
+            "value": 550000,
+            "yoy_pct": -1.0
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 31,
+            "yoy_pct": -31.1
+          },
+          {
+            "month": "2026-06",
+            "value": 19,
+            "yoy_pct": 5.6
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 101,
+            "yoy_pct": 0.6
+          },
+          {
+            "month": "2026-06",
+            "value": 101,
+            "yoy_pct": 1.2
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 80,
+            "yoy_pct": 50.9
+          },
+          {
+            "month": "2026-06",
+            "value": 79,
+            "yoy_pct": 9.7
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 36,
+            "yoy_pct": 44.0
+          },
+          {
+            "month": "2026-06",
+            "value": 35,
+            "yoy_pct": 6.1
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 43,
+            "yoy_pct": 7.5
+          },
+          {
+            "month": "2026-06",
+            "value": 54,
+            "yoy_pct": 28.6
+          }
+        ]
+      }
+    },
+    "pewaukee": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 566000,
+            "yoy_pct": -14.9
+          },
+          {
+            "month": "2026-06",
+            "value": 600000,
+            "yoy_pct": -5.5
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 8,
+            "yoy_pct": -81.0
+          },
+          {
+            "month": "2026-06",
+            "value": 20,
+            "yoy_pct": -60.0
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 102,
+            "yoy_pct": -1.1
+          },
+          {
+            "month": "2026-06",
+            "value": 102,
+            "yoy_pct": -1.2
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 42,
+            "yoy_pct": 16.7
+          },
+          {
+            "month": "2026-06",
+            "value": 40,
+            "yoy_pct": -18.4
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 13,
+            "yoy_pct": -31.6
+          },
+          {
+            "month": "2026-06",
+            "value": 24,
+            "yoy_pct": 33.3
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 22,
+            "yoy_pct": 15.8
+          },
+          {
+            "month": "2026-06",
+            "value": 24,
+            "yoy_pct": -31.4
+          }
+        ]
+      }
+    },
+    "port_washington": {
+      "county": "Ozaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 418000,
+            "yoy_pct": 1.2
+          },
+          {
+            "month": "2026-06",
+            "value": 462500,
+            "yoy_pct": 16.7
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 16,
+            "yoy_pct": -62.8
+          },
+          {
+            "month": "2026-06",
+            "value": 16,
+            "yoy_pct": -64.4
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 102,
+            "yoy_pct": -0.1
+          },
+          {
+            "month": "2026-06",
+            "value": 101,
+            "yoy_pct": 1.2
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 21,
+            "yoy_pct": 40.0
+          },
+          {
+            "month": "2026-06",
+            "value": 26,
+            "yoy_pct": 136.4
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 14,
+            "yoy_pct": 40.0
+          },
+          {
+            "month": "2026-06",
+            "value": 12,
+            "yoy_pct": 0.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 20,
+            "yoy_pct": 53.9
+          },
+          {
+            "month": "2026-06",
+            "value": 19,
+            "yoy_pct": 26.7
+          }
+        ]
+      }
+    },
+    "richfield": {
+      "county": "Washington County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 625000,
+            "yoy_pct": -6.7
+          },
+          {
+            "month": "2026-06",
+            "value": 523800,
+            "yoy_pct": 1.2
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 9,
+            "yoy_pct": -66.7
+          },
+          {
+            "month": "2026-06",
+            "value": 9,
+            "yoy_pct": -74.3
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 104,
+            "yoy_pct": 2.6
+          },
+          {
+            "month": "2026-06",
+            "value": 98,
+            "yoy_pct": -0.7
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 19,
+            "yoy_pct": -17.4
+          },
+          {
+            "month": "2026-06",
+            "value": 18,
+            "yoy_pct": -33.3
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 9,
+            "yoy_pct": -25.0
+          },
+          {
+            "month": "2026-06",
+            "value": 15,
+            "yoy_pct": -31.8
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 12,
+            "yoy_pct": -20.0
+          },
+          {
+            "month": "2026-06",
+            "value": 18,
+            "yoy_pct": -18.2
+          }
+        ]
+      }
+    },
+    "river_hills": {
+      "county": "Milwaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 3749900,
+            "yoy_pct": 194.8
+          },
+          {
+            "month": "2026-06",
+            "value": 1275000,
+            "yoy_pct": 87.5
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 2,
+            "yoy_pct": -81.8
+          },
+          {
+            "month": "2026-06",
+            "value": 66,
+            "yoy_pct": 288.2
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 100,
+            "yoy_pct": -1.2
+          },
+          {
+            "month": "2026-06",
+            "value": 97,
+            "yoy_pct": -0.1
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 5,
+            "yoy_pct": 25.0
+          },
+          {
+            "month": "2026-06",
+            "value": 4,
+            "yoy_pct": -60.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 1,
+            "yoy_pct": -50.0
+          },
+          {
+            "month": "2026-06",
+            "value": 3,
+            "yoy_pct": 50.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 2,
+            "yoy_pct": 100.0
+          },
+          {
+            "month": "2026-06",
+            "value": 3,
+            "yoy_pct": -66.7
+          }
+        ]
+      }
+    },
+    "saukville": {
+      "county": "Ozaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 402500,
+            "yoy_pct": -14.3
+          },
+          {
+            "month": "2026-06",
+            "value": 489950,
+            "yoy_pct": 34.3
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 8,
+            "yoy_pct": 166.7
+          },
+          {
+            "month": "2026-06",
+            "value": 16,
+            "yoy_pct": -30.4
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 97,
+            "yoy_pct": -1.1
+          },
+          {
+            "month": "2026-06",
+            "value": 102,
+            "yoy_pct": 1.4
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 11,
+            "yoy_pct": 37.5
+          },
+          {
+            "month": "2026-06",
+            "value": 8,
+            "yoy_pct": -20.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 4,
+            "yoy_pct": 33.3
+          },
+          {
+            "month": "2026-06",
+            "value": 10,
+            "yoy_pct": 11.1
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 9,
+            "yoy_pct": 50.0
+          },
+          {
+            "month": "2026-06",
+            "value": 7,
+            "yoy_pct": -12.5
+          }
+        ]
+      }
+    },
+    "shorewood": {
+      "county": "Milwaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 607500,
+            "yoy_pct": 11.5
+          },
+          {
+            "month": "2026-06",
+            "value": 658000,
+            "yoy_pct": 7.7
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 14,
+            "yoy_pct": 250.0
+          },
+          {
+            "month": "2026-06",
+            "value": 6,
+            "yoy_pct": -14.3
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 102,
+            "yoy_pct": -3.5
+          },
+          {
+            "month": "2026-06",
+            "value": 105,
+            "yoy_pct": 0.5
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 9,
+            "yoy_pct": -55.0
+          },
+          {
+            "month": "2026-06",
+            "value": 11,
+            "yoy_pct": 10.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 10,
+            "yoy_pct": 66.7
+          },
+          {
+            "month": "2026-06",
+            "value": 7,
+            "yoy_pct": -46.2
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 10,
+            "yoy_pct": -50.0
+          },
+          {
+            "month": "2026-06",
+            "value": 14,
+            "yoy_pct": 55.6
+          }
+        ]
+      }
+    },
+    "slinger": {
+      "county": "Washington County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 556500,
+            "yoy_pct": 6.0
+          },
+          {
+            "month": "2026-06",
+            "value": 559000,
+            "yoy_pct": 5.4
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 52,
+            "yoy_pct": 67.7
+          },
+          {
+            "month": "2026-06",
+            "value": 27,
+            "yoy_pct": -27.0
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 99,
+            "yoy_pct": 0.6
+          },
+          {
+            "month": "2026-06",
+            "value": 96,
+            "yoy_pct": -5.2
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 22,
+            "yoy_pct": 69.2
+          },
+          {
+            "month": "2026-06",
+            "value": 25,
+            "yoy_pct": 38.9
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 6,
+            "yoy_pct": 20.0
+          },
+          {
+            "month": "2026-06",
+            "value": 5,
+            "yoy_pct": 25.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 16,
+            "yoy_pct": 220.0
+          },
+          {
+            "month": "2026-06",
+            "value": 9,
+            "yoy_pct": -30.8
+          }
+        ]
+      }
+    },
+    "south_milwaukee": {
+      "county": "Milwaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 342200,
+            "yoy_pct": 17.0
+          },
+          {
+            "month": "2026-06",
+            "value": 300000,
+            "yoy_pct": -14.3
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 33,
+            "yoy_pct": 725.0
+          },
+          {
+            "month": "2026-06",
+            "value": 13,
+            "yoy_pct": 333.3
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 100,
+            "yoy_pct": -5.2
+          },
+          {
+            "month": "2026-06",
+            "value": 101,
+            "yoy_pct": -3.7
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 17,
+            "yoy_pct": 112.5
+          },
+          {
+            "month": "2026-06",
+            "value": 18,
+            "yoy_pct": -28.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 8,
+            "yoy_pct": -33.3
+          },
+          {
+            "month": "2026-06",
+            "value": 13,
+            "yoy_pct": 85.7
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 14,
+            "yoy_pct": 0.0
+          },
+          {
+            "month": "2026-06",
+            "value": 15,
+            "yoy_pct": -48.3
+          }
+        ]
+      }
+    },
+    "st_francis": {
+      "county": "Milwaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 310000,
+            "yoy_pct": 10.7
+          },
+          {
+            "month": "2026-06",
+            "value": 321000,
+            "yoy_pct": 9.6
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 8,
+            "yoy_pct": -65.2
+          },
+          {
+            "month": "2026-06",
+            "value": 15,
+            "yoy_pct": 36.4
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 102,
+            "yoy_pct": 2.0
+          },
+          {
+            "month": "2026-06",
+            "value": 100,
+            "yoy_pct": -2.5
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 9,
+            "yoy_pct": -18.2
+          },
+          {
+            "month": "2026-06",
+            "value": 8,
+            "yoy_pct": -33.3
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 7,
+            "yoy_pct": 40.0
+          },
+          {
+            "month": "2026-06",
+            "value": 8,
+            "yoy_pct": 0.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 6,
+            "yoy_pct": -14.3
+          },
+          {
+            "month": "2026-06",
+            "value": 12,
+            "yoy_pct": -14.3
+          }
+        ]
+      }
+    },
+    "sussex": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 657620,
+            "yoy_pct": 19.0
+          },
+          {
+            "month": "2026-06",
+            "value": 640000,
+            "yoy_pct": 10.3
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 11,
+            "yoy_pct": -56.0
+          },
+          {
+            "month": "2026-06",
+            "value": 30,
+            "yoy_pct": -9.1
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 102,
+            "yoy_pct": 1.0
+          },
+          {
+            "month": "2026-06",
+            "value": 100,
+            "yoy_pct": -2.4
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 26,
+            "yoy_pct": 23.8
+          },
+          {
+            "month": "2026-06",
+            "value": 21,
+            "yoy_pct": -36.4
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 10,
+            "yoy_pct": -16.7
+          },
+          {
+            "month": "2026-06",
+            "value": 13,
+            "yoy_pct": -23.5
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 11,
+            "yoy_pct": -38.9
+          },
+          {
+            "month": "2026-06",
+            "value": 14,
+            "yoy_pct": -48.2
+          }
+        ]
+      }
+    },
+    "thiensville": {
+      "county": "Ozaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 399900,
+            "yoy_pct": -18.4
+          },
+          {
+            "month": "2026-06",
+            "value": 575000,
+            "yoy_pct": 25.0
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 9,
+            "yoy_pct": -35.7
+          },
+          {
+            "month": "2026-06",
+            "value": 3,
+            "yoy_pct": -78.6
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 105,
+            "yoy_pct": 8.9
+          },
+          {
+            "month": "2026-06",
+            "value": 109,
+            "yoy_pct": 3.8
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 2,
+            "yoy_pct": -66.7
+          },
+          {
+            "month": "2026-06",
+            "value": 1,
+            "yoy_pct": -87.5
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 3,
+            "yoy_pct": 50.0
+          },
+          {
+            "month": "2026-06",
+            "value": 1,
+            "yoy_pct": -66.7
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 1,
+            "yoy_pct": -75.0
+          },
+          {
+            "month": "2026-06",
+            "value": 0,
+            "yoy_pct": -100.0
+          }
+        ]
+      }
+    },
+    "wales": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": 865000,
+            "yoy_pct": 3.6
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": 68,
+            "yoy_pct": -6.9
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": 96,
+            "yoy_pct": 1.5
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 8,
+            "yoy_pct": 100.0
+          },
+          {
+            "month": "2026-06",
+            "value": 6,
+            "yoy_pct": 20.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": 3,
+            "yoy_pct": 50.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 3,
+            "yoy_pct": 200.0
+          },
+          {
+            "month": "2026-06",
+            "value": 1,
+            "yoy_pct": -75.0
+          }
+        ]
+      }
+    },
+    "waukesha": {
+      "county": "Waukesha County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 425000,
+            "yoy_pct": 6.3
+          },
+          {
+            "month": "2026-06",
+            "value": 426500,
+            "yoy_pct": 8.0
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 20,
+            "yoy_pct": 42.9
+          },
+          {
+            "month": "2026-06",
+            "value": 9,
+            "yoy_pct": -47.1
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 103,
+            "yoy_pct": -0.1
+          },
+          {
+            "month": "2026-06",
+            "value": 104,
+            "yoy_pct": 1.1
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 99,
+            "yoy_pct": 35.6
+          },
+          {
+            "month": "2026-06",
+            "value": 109,
+            "yoy_pct": 12.4
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 63,
+            "yoy_pct": 40.0
+          },
+          {
+            "month": "2026-06",
+            "value": 70,
+            "yoy_pct": 7.7
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 75,
+            "yoy_pct": 17.2
+          },
+          {
+            "month": "2026-06",
+            "value": 90,
+            "yoy_pct": -5.3
+          }
+        ]
+      }
+    },
+    "wauwatosa": {
+      "county": "Milwaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 421000,
+            "yoy_pct": -4.3
+          },
+          {
+            "month": "2026-06",
+            "value": 427000,
+            "yoy_pct": -7.2
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 16,
+            "yoy_pct": 100.0
+          },
+          {
+            "month": "2026-06",
+            "value": 7,
+            "yoy_pct": -46.2
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 103,
+            "yoy_pct": -1.7
+          },
+          {
+            "month": "2026-06",
+            "value": 105,
+            "yoy_pct": 0.3
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 60,
+            "yoy_pct": 15.4
+          },
+          {
+            "month": "2026-06",
+            "value": 73,
+            "yoy_pct": 12.3
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 55,
+            "yoy_pct": -9.8
+          },
+          {
+            "month": "2026-06",
+            "value": 57,
+            "yoy_pct": -9.5
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 76,
+            "yoy_pct": 26.7
+          },
+          {
+            "month": "2026-06",
+            "value": 72,
+            "yoy_pct": -14.3
+          }
+        ]
+      }
+    },
+    "west_allis": {
+      "county": "Milwaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 271500,
+            "yoy_pct": 2.8
+          },
+          {
+            "month": "2026-06",
+            "value": 300000,
+            "yoy_pct": 2.7
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 14,
+            "yoy_pct": 40.0
+          },
+          {
+            "month": "2026-06",
+            "value": 7,
+            "yoy_pct": 0.0
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 103,
+            "yoy_pct": 0.8
+          },
+          {
+            "month": "2026-06",
+            "value": 105,
+            "yoy_pct": -0.3
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 54,
+            "yoy_pct": 3.9
+          },
+          {
+            "month": "2026-06",
+            "value": 66,
+            "yoy_pct": 11.9
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 45,
+            "yoy_pct": 18.4
+          },
+          {
+            "month": "2026-06",
+            "value": 42,
+            "yoy_pct": -39.1
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 56,
+            "yoy_pct": -8.2
+          },
+          {
+            "month": "2026-06",
+            "value": 64,
+            "yoy_pct": -13.5
+          }
+        ]
+      }
+    },
+    "west_bend": {
+      "county": "Washington County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 485000,
+            "yoy_pct": 32.0
+          },
+          {
+            "month": "2026-06",
+            "value": 435500,
+            "yoy_pct": 22.7
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 22,
+            "yoy_pct": 69.2
+          },
+          {
+            "month": "2026-06",
+            "value": 28,
+            "yoy_pct": 75.0
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 100,
+            "yoy_pct": -1.9
+          },
+          {
+            "month": "2026-06",
+            "value": 100,
+            "yoy_pct": -2.2
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 46,
+            "yoy_pct": 35.3
+          },
+          {
+            "month": "2026-06",
+            "value": 48,
+            "yoy_pct": -7.7
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 14,
+            "yoy_pct": -41.7
+          },
+          {
+            "month": "2026-06",
+            "value": 34,
+            "yoy_pct": 41.7
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 37,
+            "yoy_pct": 37.0
+          },
+          {
+            "month": "2026-06",
+            "value": 38,
+            "yoy_pct": -11.6
+          }
+        ]
+      }
+    },
+    "west_milwaukee": {
+      "county": "Milwaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 324900,
+            "yoy_pct": 27.4
+          },
+          {
+            "month": "2026-06",
+            "value": 290000,
+            "yoy_pct": 152.2
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 12,
+            "yoy_pct": -75.5
+          },
+          {
+            "month": "2026-06",
+            "value": 3,
+            "yoy_pct": 50.0
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 100,
+            "yoy_pct": -2.0
+          },
+          {
+            "month": "2026-06",
+            "value": 108,
+            "yoy_pct": -24.8
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": null,
+            "yoy_pct": null
+          },
+          {
+            "month": "2026-06",
+            "value": 1,
+            "yoy_pct": 0.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 3,
+            "yoy_pct": 200.0
+          },
+          {
+            "month": "2026-06",
+            "value": 3,
+            "yoy_pct": 200.0
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 5,
+            "yoy_pct": 400.0
+          },
+          {
+            "month": "2026-06",
+            "value": 2,
+            "yoy_pct": 100.0
+          }
+        ]
+      }
+    },
+    "whitefish_bay": {
+      "county": "Milwaukee County",
+      "metrics": {
+        "median_price": [
+          {
+            "month": "2026-05",
+            "value": 645000,
+            "yoy_pct": -19.6
+          },
+          {
+            "month": "2026-06",
+            "value": 882250,
+            "yoy_pct": -4.1
+          }
+        ],
+        "days_on_market": [
+          {
+            "month": "2026-05",
+            "value": 4,
+            "yoy_pct": -79.0
+          },
+          {
+            "month": "2026-06",
+            "value": 8,
+            "yoy_pct": 0.0
+          }
+        ],
+        "sale_to_list": [
+          {
+            "month": "2026-05",
+            "value": 107,
+            "yoy_pct": 7.0
+          },
+          {
+            "month": "2026-06",
+            "value": 104,
+            "yoy_pct": 2.0
+          }
+        ],
+        "inventory": [
+          {
+            "month": "2026-05",
+            "value": 27,
+            "yoy_pct": 35.0
+          },
+          {
+            "month": "2026-06",
+            "value": 29,
+            "yoy_pct": 16.0
+          }
+        ],
+        "closed_sales": [
+          {
+            "month": "2026-05",
+            "value": 20,
+            "yoy_pct": 100.0
+          },
+          {
+            "month": "2026-06",
+            "value": 26,
+            "yoy_pct": 73.3
+          }
+        ],
+        "new_listings": [
+          {
+            "month": "2026-05",
+            "value": 31,
+            "yoy_pct": 55.0
+          },
+          {
+            "month": "2026-06",
+            "value": 31,
+            "yoy_pct": 24.0
+          }
+        ]
+      }
+    }
+  }
+}
