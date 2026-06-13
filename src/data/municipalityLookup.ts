@@ -90,13 +90,53 @@ export interface MunicipalityRoute {
 }
 
 export function getAllMunicipalityRoutes(): MunicipalityRoute[] {
-  const routes: MunicipalityRoute[] = [];
+  // Group candidate (countySlug, muniSlug) pairs by municipality id.
+  // slimBySlug keys have the form "county-slug/muni-slug"; for municipalities
+  // with aliases the same id appears under multiple keys.
+  const candidatesByIdAndCounty = new Map<string, { countySlug: string; muniSlug: string }[]>();
+
   for (const [key, slim] of slimBySlug.entries()) {
     const slashIdx = key.indexOf("/");
     const countySlug = key.slice(0, slashIdx);
     const muniSlug = key.slice(slashIdx + 1);
-    routes.push({ countySlug, muniSlug, displayName: slim.display_name, id: slim.id });
+
+    // Skip any key whose muni portion itself contains a "/" — that would
+    // produce a two-segment URL segment and be unreachable as a route.
+    if (muniSlug.includes("/")) continue;
+
+    const groupKey = `${slim.id}::${countySlug}`;
+    if (!candidatesByIdAndCounty.has(groupKey)) {
+      candidatesByIdAndCounty.set(groupKey, []);
+    }
+    candidatesByIdAndCounty.get(groupKey)!.push({ countySlug, muniSlug });
   }
+
+  const routes: MunicipalityRoute[] = [];
+
+  for (const [groupKey, candidates] of candidatesByIdAndCounty.entries()) {
+    const id = groupKey.split("::")[0];
+    const slim = slimById.get(id)!;
+
+    // Pick the best slug: prefer no parentheses, then shortest.
+    const scored = candidates.map((c) => ({
+      ...c,
+      hasParens: c.muniSlug.includes("(") || c.muniSlug.includes(")"),
+      len: c.muniSlug.length,
+    }));
+    scored.sort((a, b) => {
+      if (a.hasParens !== b.hasParens) return a.hasParens ? 1 : -1;
+      return a.len - b.len;
+    });
+
+    const best = scored[0];
+    routes.push({
+      countySlug: best.countySlug,
+      muniSlug: best.muniSlug,
+      displayName: slim.display_name,
+      id: slim.id,
+    });
+  }
+
   return routes;
 }
 
