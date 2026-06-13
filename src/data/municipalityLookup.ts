@@ -82,6 +82,24 @@ export function countyKeyToSlug(key: string): string {
   return COUNTY_KEY_TO_SLUG[key] ?? key;
 }
 
+export interface MunicipalityRoute {
+  countySlug: string;
+  muniSlug: string;
+  displayName: string;
+  id: string;
+}
+
+export function getAllMunicipalityRoutes(): MunicipalityRoute[] {
+  const routes: MunicipalityRoute[] = [];
+  for (const [key, slim] of slimBySlug.entries()) {
+    const slashIdx = key.indexOf("/");
+    const countySlug = key.slice(0, slashIdx);
+    const muniSlug = key.slice(slashIdx + 1);
+    routes.push({ countySlug, muniSlug, displayName: slim.display_name, id: slim.id });
+  }
+  return routes;
+}
+
 // Lazy-load full profiles (444KB code-split by Vite)
 let fullProfilesCache: ProfilesData | null = null;
 
