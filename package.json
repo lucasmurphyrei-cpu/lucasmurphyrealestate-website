@@ -10,7 +10,11 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "seo:sitemap": "tsx scripts/sitemap.ts",
+    "seo:llms": "tsx scripts/llms.ts",
+    "prebuild": "tsx scripts/sitemap.ts && tsx scripts/llms.ts",
+    "postbuild": "tsx scripts/prerender.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
