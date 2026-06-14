@@ -57,6 +57,12 @@ const PREVIEW_ROUTES: RouteEntry[] = [
   { path: "/preview/v2", changefreq: "monthly", priority: 0.1, noindex: true },
 ];
 
+const MARKET_ROUTES: RouteEntry[] = [
+  { path: "/preview/v1/market", changefreq: "weekly", priority: 0.1, noindex: true },
+  ...COUNTY_SLUGS.map((slug) => ({ path: `/preview/v1/market/${slug}`, changefreq: "weekly" as const, priority: 0.1, noindex: true })),
+  ...getAllMunicipalityRoutes().map((r) => ({ path: `/preview/v1/market/${r.countySlug}/${r.muniSlug}`, changefreq: "monthly" as const, priority: 0.1, noindex: true })),
+];
+
 export function getAllRoutes(): RouteEntry[] {
-  return [...STATIC_ROUTES, ...COUNTY_ROUTES, ...MUNICIPALITY_ROUTES, ...PREVIEW_ROUTES];
+  return [...STATIC_ROUTES, ...COUNTY_ROUTES, ...MUNICIPALITY_ROUTES, ...PREVIEW_ROUTES, ...MARKET_ROUTES];
 }

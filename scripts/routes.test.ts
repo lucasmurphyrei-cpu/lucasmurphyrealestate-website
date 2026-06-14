@@ -29,4 +29,13 @@ describe("route manifest", () => {
       expect(r.priority).toBeLessThanOrEqual(1);
     }
   });
+
+  it("includes market hub + county + municipality routes, all noindex", () => {
+    const routes = getAllRoutes();
+    const market = routes.filter((r) => r.path.startsWith("/preview/v1/market"));
+    expect(market.find((r) => r.path === "/preview/v1/market")).toBeTruthy();
+    expect(market.filter((r) => /^\/preview\/v1\/market\/[a-z-]+-county$/.test(r.path))).toHaveLength(4);
+    expect(market.filter((r) => /^\/preview\/v1\/market\/[a-z-]+-county\/.+/.test(r.path)).length).toBeGreaterThanOrEqual(50);
+    expect(market.every((r) => r.noindex === true)).toBe(true);
+  });
 });
