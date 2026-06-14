@@ -1,6 +1,23 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { ArrowRight, Phone, TrendingUp, TrendingDown, Minus } from "lucide-react";
+import {
+  ArrowRight,
+  Phone,
+  TrendingUp,
+  TrendingDown,
+  Minus,
+  UserCheck,
+  Car,
+  Footprints,
+  ShieldCheck,
+  Heart,
+  CalendarDays,
+  Waves,
+  Briefcase,
+  Trees,
+  UtensilsCrossed,
+  type LucideIcon,
+} from "lucide-react";
 import { motion } from "framer-motion";
 import ParallaxBand from "@/pages/preview/_shared/ParallaxBand";
 import { IMG, VID, SOCIAL } from "@/pages/preview/_shared/tokens";
@@ -17,8 +34,6 @@ import { getSlimBySlug, getFullProfile, countySlugToKey } from "@/data/municipal
 import { getRapidStats } from "@/data/municipalityRapidStats";
 import municipalityImages from "@/data/municipalityImages";
 import type { MunicipalityProfile } from "@/data/neighborhoodTypes";
-import BuyerLifestyleFitSection from "@/components/municipality/BuyerLifestyleFitSection";
-import AmenitiesSection from "@/components/municipality/AmenitiesSection";
 
 /* ------------------------------------------------------------------ */
 /* Constants & helpers                                                  */
@@ -34,6 +49,46 @@ const fadeUp = {
     transition: { duration: 0.6, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] },
   }),
 };
+
+/* Dressed-up, on-brand profile card for the navy/gold market pages.
+   Elevated surface, gold icon chip + hairline, brighter body copy, hover lift. */
+function ProfileCard({
+  icon: Icon,
+  label,
+  value,
+  i,
+}: {
+  icon: LucideIcon;
+  label: string;
+  value: string;
+  i: number;
+}) {
+  if (!value) return null;
+  return (
+    <motion.div
+      custom={i}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={fadeUp}
+      className="group relative overflow-hidden rounded-2xl bg-white/[0.04] p-6 ring-1 ring-white/10 shadow-[0_28px_60px_-32px_rgba(0,0,0,0.75)] transition-all duration-500 hover:-translate-y-1 hover:bg-white/[0.06] hover:ring-white/25"
+    >
+      <span
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-px"
+        style={{ background: `linear-gradient(to right, transparent, ${GOLD}66, transparent)` }}
+      />
+      <div
+        className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl ring-1 ring-white/10"
+        style={{ backgroundColor: "hsl(44 100% 53% / 0.12)" }}
+      >
+        <Icon className="h-5 w-5" style={{ color: GOLD }} />
+      </div>
+      <h4 className="font-display text-lg font-semibold leading-snug text-white">{label}</h4>
+      <p className="mt-2 text-sm leading-relaxed text-white/75">{value}</p>
+    </motion.div>
+  );
+}
 
 function directionFor(pct: number): "up" | "down" | "flat" {
   if (pct > 0.5) return "up";
@@ -211,7 +266,7 @@ export default function MarketMunicipality() {
         {/* ===== 2. Hero ParallaxBand ===== */}
         <ParallaxBand
           src={heroImage}
-          overlay="bg-[#0a1424]/68"
+          overlay="bg-gradient-to-r from-[#0a1424]/95 via-[#0a1424]/80 to-[#0a1424]/40"
           minH="min-h-[72vh]"
         >
           <div className="max-w-3xl">
@@ -244,7 +299,7 @@ export default function MarketMunicipality() {
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
-              className="mb-3 text-sm font-semibold uppercase tracking-[0.22em]"
+              className="mb-3 text-sm font-semibold uppercase tracking-[0.22em] [text-shadow:0_2px_16px_rgba(0,0,0,0.85)]"
               style={{ color: GOLD }}
             >
               {slim.display_name}, WI
@@ -255,7 +310,7 @@ export default function MarketMunicipality() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.65, delay: 0.14, ease: [0.22, 1, 0.36, 1] }}
-              className="font-display text-4xl font-semibold leading-tight tracking-[-0.02em] text-white sm:text-5xl lg:text-6xl"
+              className="font-display text-4xl font-semibold leading-tight tracking-[-0.02em] text-white [text-shadow:0_2px_28px_rgba(0,0,0,0.7)] sm:text-5xl lg:text-6xl"
             >
               {slim.display_name}
             </motion.h1>
@@ -265,7 +320,7 @@ export default function MarketMunicipality() {
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.65, delay: 0.22, ease: [0.22, 1, 0.36, 1] }}
-              className="mt-5 max-w-xl text-base font-medium leading-relaxed text-white/70 sm:text-lg"
+              className="mt-5 max-w-xl text-base font-medium leading-relaxed text-white/80 [text-shadow:0_1px_12px_rgba(0,0,0,0.7)] sm:text-lg"
             >
               {subhead}
             </motion.p>
@@ -419,34 +474,86 @@ export default function MarketMunicipality() {
           </>
         )}
 
-        {/* ===== 5. Profile detail — light band ===== */}
+        {/* ===== 5. Neighborhood profile ===== */}
         <div className="mx-auto h-px max-w-7xl bg-white/8" />
 
-        <section className="bg-background py-16">
-          <div className="mx-auto max-w-5xl px-6">
-            {loading ? (
-              /* Skeleton */
-              <div className="space-y-6 animate-pulse">
-                <div className="h-8 w-48 rounded bg-muted" />
-                <div className="h-4 w-full rounded bg-muted" />
-                <div className="h-4 w-5/6 rounded bg-muted" />
-                <div className="h-4 w-4/6 rounded bg-muted" />
-                <div className="mt-8 h-8 w-48 rounded bg-muted" />
-                <div className="h-4 w-full rounded bg-muted" />
-                <div className="h-4 w-3/4 rounded bg-muted" />
+        <section className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
+          <motion.p
+            custom={0}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeUp}
+            className="mb-2 text-xs font-semibold uppercase tracking-[0.22em] text-white/40"
+          >
+            Neighborhood Profile
+          </motion.p>
+          <motion.h2
+            custom={1}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeUp}
+            className="mb-10 font-display text-2xl font-semibold text-white sm:text-3xl"
+          >
+            Living in {slim.display_name}
+          </motion.h2>
+
+          {loading ? (
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {Array.from({ length: 6 }).map((_, i) => (
+                <div
+                  key={i}
+                  className="h-44 animate-pulse rounded-2xl bg-white/[0.04] ring-1 ring-white/10"
+                />
+              ))}
+            </div>
+          ) : full ? (
+            <div className="space-y-12">
+              <div>
+                <h3
+                  className="mb-5 text-sm font-semibold uppercase tracking-[0.18em]"
+                  style={{ color: GOLD }}
+                >
+                  Buyer &amp; Lifestyle Fit
+                </h3>
+                <div className="grid gap-5 sm:grid-cols-2">
+                  {[
+                    { icon: UserCheck, label: "Ideal Buyer", value: full.buyer_lifestyle_fit.ideal_buyer },
+                    { icon: Car, label: "Commute to Downtown", value: full.buyer_lifestyle_fit.commute_to_downtown },
+                    { icon: Footprints, label: "Walkability & Transit", value: full.buyer_lifestyle_fit.walkability_transportation },
+                    { icon: ShieldCheck, label: "Crime & Safety", value: full.buyer_lifestyle_fit.crime_safety },
+                  ].map((c, i) => (
+                    <ProfileCard key={c.label} icon={c.icon} label={c.label} value={c.value} i={i} />
+                  ))}
+                </div>
               </div>
-            ) : full ? (
-              <>
-                <BuyerLifestyleFitSection data={full.buyer_lifestyle_fit} />
-                <AmenitiesSection data={full.amenities_character} />
-              </>
-            ) : (
-              <p className="text-sm text-muted-foreground">
-                Neighborhood profile details are not yet available for{" "}
-                {slim.display_name}.
-              </p>
-            )}
-          </div>
+              <div>
+                <h3
+                  className="mb-5 text-sm font-semibold uppercase tracking-[0.18em]"
+                  style={{ color: GOLD }}
+                >
+                  Amenities &amp; Community Character
+                </h3>
+                <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                  {[
+                    { icon: Heart, label: "Community Vibe", value: full.amenities_character.community_vibe },
+                    { icon: CalendarDays, label: "Notable Events", value: full.amenities_character.notable_events },
+                    { icon: Waves, label: "Lake & Employer Proximity", value: full.amenities_character.proximity_lake_employers },
+                    { icon: Briefcase, label: "Major Employers", value: full.amenities_character.major_employers },
+                    { icon: Trees, label: "Parks & Attractions", value: full.amenities_character.parks_attractions },
+                    { icon: UtensilsCrossed, label: "Restaurants & Dining", value: full.amenities_character.restaurants_dining },
+                  ].map((c, i) => (
+                    <ProfileCard key={c.label} icon={c.icon} label={c.label} value={c.value} i={i} />
+                  ))}
+                </div>
+              </div>
+            </div>
+          ) : (
+            <p className="text-sm text-white/50">
+              Neighborhood profile details are not yet available for {slim.display_name}.
+            </p>
+          )}
         </section>
 
         {/* ===== 6. CTA Band ===== */}

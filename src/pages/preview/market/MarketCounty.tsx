@@ -193,7 +193,7 @@ export default function MarketCounty() {
         {/* ===== 2. Hero ParallaxBand ===== */}
         <ParallaxBand
           src={heroImg}
-          overlay="bg-[#0a1424]/68"
+          overlay="bg-gradient-to-r from-[#0a1424]/95 via-[#0a1424]/80 to-[#0a1424]/40"
           minH="min-h-[72vh]"
         >
           <div className="max-w-3xl">
@@ -214,7 +214,7 @@ export default function MarketCounty() {
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
-              className="mb-3 text-sm font-semibold uppercase tracking-[0.22em]"
+              className="mb-3 text-sm font-semibold uppercase tracking-[0.22em] [text-shadow:0_2px_16px_rgba(0,0,0,0.85)]"
               style={{ color: GOLD }}
             >
               {display}
@@ -225,7 +225,7 @@ export default function MarketCounty() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.65, delay: 0.14, ease: [0.22, 1, 0.36, 1] }}
-              className="font-display text-4xl font-semibold leading-tight tracking-[-0.02em] text-white sm:text-5xl lg:text-6xl"
+              className="font-display text-4xl font-semibold leading-tight tracking-[-0.02em] text-white [text-shadow:0_2px_28px_rgba(0,0,0,0.7)] sm:text-5xl lg:text-6xl"
             >
               Real Estate Market
             </motion.h1>
@@ -235,7 +235,7 @@ export default function MarketCounty() {
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.65, delay: 0.22, ease: [0.22, 1, 0.36, 1] }}
-              className="mt-5 max-w-2xl text-lg leading-relaxed text-white/80"
+              className="mt-5 max-w-2xl text-lg leading-relaxed text-white/85 [text-shadow:0_1px_12px_rgba(0,0,0,0.7)]"
             >
               {heroSubhead}
             </motion.p>
