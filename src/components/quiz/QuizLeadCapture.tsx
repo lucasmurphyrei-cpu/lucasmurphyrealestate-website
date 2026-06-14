@@ -6,12 +6,14 @@ import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 
 const GOOGLE_SHEETS_URL = import.meta.env.VITE_GOOGLE_SHEETS_URL;
+const GOLD = "hsl(44,100%,53%)";
 
 interface QuizLeadCaptureProps {
   crmTags: string;
   topMatch: string;
   onSubmitted: () => void;
   onSkip: () => void;
+  theme?: "light" | "dark";
 }
 
 const QuizLeadCapture = ({
@@ -19,9 +21,11 @@ const QuizLeadCapture = ({
   topMatch,
   onSubmitted,
   onSkip,
+  theme = "light",
 }: QuizLeadCaptureProps) => {
   const { toast } = useToast();
   const [loading, setLoading] = useState(false);
+  const isDark = theme === "dark";
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -66,48 +70,66 @@ const QuizLeadCapture = ({
 
   return (
     <div className="max-w-md mx-auto">
-      <h3 className="font-display text-xl font-bold mb-2 text-center">
+      <h3 className={`font-display text-xl font-bold mb-2 text-center ${isDark ? "text-white" : ""}`}>
         Almost there!
       </h3>
-      <p className="text-sm text-muted-foreground text-center mb-6">
+      <p className={`text-sm text-center mb-6 ${isDark ? "text-white/60" : "text-muted-foreground"}`}>
         Enter your info to see your personalized results and get neighborhood insights sent to your inbox.
       </p>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="space-y-2">
-          <Label htmlFor="quiz-name">Full Name</Label>
+          <Label htmlFor="quiz-name" className={isDark ? "text-white/80" : ""}>Full Name</Label>
           <Input
             id="quiz-name"
             name="name"
             placeholder="Jane Doe"
             required
+            className={isDark ? "bg-white/[0.07] border-white/15 text-white placeholder:text-white/30 focus-visible:ring-[hsl(44,100%,53%)] focus-visible:border-[hsl(44,100%,53%)]" : ""}
           />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="quiz-email">Email</Label>
+          <Label htmlFor="quiz-email" className={isDark ? "text-white/80" : ""}>Email</Label>
           <EmailInput
             id="quiz-email"
             name="email"
             placeholder="jane@example.com"
             required
+            className={isDark ? "bg-white/[0.07] border-white/15 text-white placeholder:text-white/30 focus-visible:ring-[hsl(44,100%,53%)] focus-visible:border-[hsl(44,100%,53%)]" : ""}
           />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="quiz-phone">Phone (optional)</Label>
+          <Label htmlFor="quiz-phone" className={isDark ? "text-white/80" : ""}>Phone (optional)</Label>
           <Input
             id="quiz-phone"
             name="phone"
             type="tel"
             placeholder="(414) 555-0123"
+            className={isDark ? "bg-white/[0.07] border-white/15 text-white placeholder:text-white/30 focus-visible:ring-[hsl(44,100%,53%)] focus-visible:border-[hsl(44,100%,53%)]" : ""}
           />
         </div>
-        <Button type="submit" className="w-full" disabled={loading}>
-          {loading ? "Submitting..." : "See My Results"}
-        </Button>
+        {isDark ? (
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full rounded-sm py-3 text-sm font-semibold text-[#0a1424] transition-transform duration-300 hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed"
+            style={{ backgroundColor: GOLD }}
+          >
+            {loading ? "Submitting..." : "See My Results"}
+          </button>
+        ) : (
+          <Button type="submit" className="w-full" disabled={loading}>
+            {loading ? "Submitting..." : "See My Results"}
+          </Button>
+        )}
       </form>
       <button
         type="button"
         onClick={onSkip}
-        className="mt-3 block w-full text-center text-sm text-muted-foreground hover:text-primary transition-colors"
+        className={`mt-3 block w-full text-center text-sm transition-colors ${
+          isDark
+            ? "text-white/40 hover:text-white/70"
+            : "text-muted-foreground hover:text-primary"
+        }`}
       >
         Skip and see results
       </button>

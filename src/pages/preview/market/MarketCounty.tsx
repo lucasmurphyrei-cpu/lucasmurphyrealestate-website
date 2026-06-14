@@ -366,12 +366,28 @@ export default function MarketCounty() {
         {/* ===== Divider ===== */}
         <div className="mx-auto h-px max-w-7xl bg-white/8" />
 
-        {/* ===== 5. Neighborhood quiz ===== */}
-        <section className="bg-background py-16">
-          <div className="mx-auto max-w-5xl px-6">
-            <NeighborhoodQuizSection mode="county" contextCounty={countyKey} />
-          </div>
-        </section>
+        {/* ===== 5. Neighborhood quiz (dark-themed parallax) ===== */}
+        {(() => {
+          const countyVideoMap: Record<string, string> = {
+            "milwaukee-county": VID.city,
+            "waukesha-county": VID.lake,
+            "ozaukee-county": VID.sunset,
+            "washington-county": VID.autumn,
+          };
+          const quizVideo = countyVideoMap[county] ?? VID.city;
+          return (
+            <ParallaxBand
+              src={heroImg}
+              video={quizVideo}
+              overlay="bg-[#0a1424]/80"
+              minH="min-h-0"
+            >
+              <div className="mx-auto max-w-5xl">
+                <NeighborhoodQuizSection mode="county" contextCounty={countyKey} theme="dark" />
+              </div>
+            </ParallaxBand>
+          );
+        })()}
 
         {/* ===== 6. Municipality directory ===== */}
         {muniRoutes.length > 0 && (
