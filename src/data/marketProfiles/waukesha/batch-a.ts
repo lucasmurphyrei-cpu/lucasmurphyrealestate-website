@@ -9,10 +9,9 @@ const batch: Record<string, MarketProfile> = {
         routes: ["I-94", "Bluemound Rd", "Hwy 18"],
       },
       safety: {
-        grade: "C+",
-        percentile: 51,
+        grade: "B",
         note:
-          "Overall C+ on CrimeGrade (51st percentile -- about average for US cities). Safer than the Wisconsin state average and the national average. Crime concentrates in the commercial corridors along Bluemound Road; residential neighborhoods to the north earn significantly higher marks.",
+          "Safe. Total crime runs roughly 26 to 29% below the national average and violent crime is about 55% below it (AreaVibes / City-Data). Large retail corridors like The Corners and Bluemound Road add property-crime reports, but overall safety is strong.",
       },
       idealBuyer: {
         tags: ["Affluent families", "Corporate executives", "Elmbrook schools seekers", "Move-up buyers"],

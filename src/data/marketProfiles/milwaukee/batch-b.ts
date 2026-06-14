@@ -13,7 +13,7 @@ const batch: Record<string, MarketProfile> = {
       safety: {
         grade: "D+",
         note:
-          "Overall D+ on CrimeGrade (29th percentile). Property crime pulls the composite down; the community is generally quiet for a near-city suburb.",
+          "Violent crime is low, but property crime runs well above the national average, driven largely by Bayshore Town Center, a regional mall in a city of about 13,000. Residential safety is solid; the elevated rate reflects retail theft concentrated at the mall (AreaVibes / City-Data).",
       },
       idealBuyer: {
         tags: ["Move-up families", "Nature lovers", "Urban-access seekers"],
@@ -115,9 +115,9 @@ const batch: Record<string, MarketProfile> = {
           "MCTS connects Greendale to downtown Milwaukee via Loomis Road. The village's compact layout makes it walkable within its own boundaries.",
       },
       safety: {
-        grade: "D+",
+        grade: "C+",
         note:
-          "Overall D+ on CrimeGrade (24th percentile). Violent crime earns a B+ (76th percentile), running well below the national average. Property crime pulls the composite grade down.",
+          "Excellent violent-crime safety, roughly 59% below the national rate and among the lowest in the metro (City-Data / AreaVibes). Southridge Mall, in a village of about 14,000, inflates the per-capita property-crime rate, but violent crime is very low.",
       },
       idealBuyer: {
         tags: ["History buffs", "Walkable-village seekers", "Nature lovers", "Families"],

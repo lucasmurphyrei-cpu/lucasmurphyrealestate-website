@@ -71,9 +71,9 @@ const batch: Record<string, MarketProfile> = {
           "MCTS bus routes run along Kinnickinnic Avenue (KK), connecting St. Francis to Bay View and downtown Milwaukee. The 6-mile drive north on I-794 is one of the shortest suburb-to-downtown commutes in Milwaukee County.",
       },
       safety: {
-        grade: "D+",
+        grade: "C+",
         note:
-          "Overall D+ on CrimeGrade (30th percentile for safety). Crime rates run modestly above the national average. Residents consider the northwest part of the city the safest. The low population density and tight-knit residential fabric keep actual incident counts low.",
+          "Below the national average on both violent and property crime, and safer than most US cities its size (AreaVibes / City-Data). A modest commercial corridor keeps the per-capita property rate from scoring higher.",
       },
       idealBuyer: {
         tags: ["Value buyers", "Young professionals", "Retirees", "Lake Michigan seekers"],

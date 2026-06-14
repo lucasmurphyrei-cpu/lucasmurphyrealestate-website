@@ -138,9 +138,9 @@ const batch: Record<string, MarketProfile> = {
           "MCTS Route 30 runs Oakland Ave directly into downtown Milwaukee every 10 minutes. Route 31 provides an alternative along Murray Ave. The compact village is also a designated Walk Friendly Community, making errands car-optional for most residents.",
       },
       safety: {
-        grade: "D+",
+        grade: "C+",
         note:
-          "Overall D+ on CrimeGrade (approximately 30th percentile). Property crime — typical of any dense urban-adjacent village — drives the composite; violent crime rates are considerably lower. The east portion of the village, closer to Lake Michigan, is consistently cited as the quietest.",
+          "Low violent crime, about 39% below the national rate (City-Data / AreaVibes). As a dense, walkable village next to Milwaukee, property crime sits near the national average, which is what pulls per-capita ratings down; violent safety is solid.",
       },
       idealBuyer: {
         tags: ["UWM faculty & staff", "Walkability-first buyers", "Young professionals", "Empty nesters"],

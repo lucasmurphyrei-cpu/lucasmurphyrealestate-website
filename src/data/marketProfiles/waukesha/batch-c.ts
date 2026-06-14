@@ -11,10 +11,9 @@ const batch: Record<string, MarketProfile> = {
           "No local bus service in the village. US-45 feeds directly onto I-41/I-894 into Milwaukee.",
       },
       safety: {
-        grade: "D-",
-        percentile: 14,
+        grade: "C+",
         note:
-          "Overall D- on CrimeGrade (14th percentile -- crime rate notably higher than the Wisconsin average). Northeast neighborhoods are the safest area within the village. Statistics reflect a small, dense, industrial community on Waukesha County's eastern edge.",
+          "Safe overall. Total crime is below the national average and violent crime runs about 53% below the national rate (AreaVibes / City-Data). As a very small village of about 1,800, rates swing on just a few incidents year to year; absolute crime is low.",
       },
       idealBuyer: {
         tags: ["Value hunters", "Industrial workers", "First-time buyers"],

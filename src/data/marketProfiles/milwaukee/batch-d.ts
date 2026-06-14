@@ -11,10 +11,9 @@ const batch: Record<string, MarketProfile> = {
           "MCTS Route 143 (Brown Deer) provides bus service toward downtown. Most residents commute by car via I-43 south.",
       },
       safety: {
-        grade: "C",
-        percentile: 46,
+        grade: "A-",
         note:
-          "Overall C on CrimeGrade.org (46th percentile). Cost of crime per resident is $364/year — $100 below the national average — reflecting a low-density, quiet village with minimal commercial density.",
+          "One of the safest communities in metro Milwaukee. Total crime runs roughly 75% below the national average and violent crime is near zero (City-Data / AreaVibes). Its small residential population can make per-resident curve ratings look middling, but the absolute incident counts are very low.",
       },
       idealBuyer: {
         tags: [
@@ -70,7 +69,7 @@ const batch: Record<string, MarketProfile> = {
       safety: {
         grade: "F",
         note:
-          "West Milwaukee earns an F on CrimeGrade.org, with property crime the primary driver. The village's industrial land use concentrates crime targets; residential streets are a small portion of total area.",
+          "Genuinely elevated. Property crime runs several times the national rate and violent crime is above average (AreaVibes). Its dense industrial and commercial footprint and small residential population of about 4,200 both contribute, but the absolute incident counts are high for its size.",
       },
       idealBuyer: {
         tags: [
@@ -186,10 +185,9 @@ const batch: Record<string, MarketProfile> = {
           "Minimal transit — only 0.9% of residents commute by public transportation. The I-894/I-43/Hwy 100 interchange sits at the village edge, making the car commute straightforward.",
       },
       safety: {
-        grade: "D",
-        percentile: 21,
+        grade: "B",
         note:
-          "Overall D on CrimeGrade.org (21st percentile). Cost of crime per resident is $447/year — near the national average. Hales Corners is less safe than the Wisconsin state average; buyers should note the proximity to higher-crime commercial corridors along Hwy 100.",
+          "Very safe. Total crime is roughly 65% below the national average and violent crime runs about half the national rate (AreaVibes / City-Data). Moderate retail nudges the per-capita property rate, but absolute crime is low.",
       },
       idealBuyer: {
         tags: [
