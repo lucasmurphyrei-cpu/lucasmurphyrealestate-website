@@ -34,6 +34,9 @@ import { getSlimBySlug, getFullProfile, countySlugToKey } from "@/data/municipal
 import { getRapidStats } from "@/data/municipalityRapidStats";
 import municipalityImages from "@/data/municipalityImages";
 import type { MunicipalityProfile } from "@/data/neighborhoodTypes";
+import { getMarketProfile } from "@/data/marketProfiles";
+import LifestyleVitals from "@/pages/preview/_shared/lifestyle/LifestyleVitals";
+import AmenitiesFeatured from "@/pages/preview/_shared/amenities/AmenitiesFeatured";
 
 /* ------------------------------------------------------------------ */
 /* Constants & helpers                                                  */
@@ -180,6 +183,7 @@ export default function MarketMunicipality() {
 
   /* ---- Data ---- */
   const rapidStats = getRapidStats(slim.id);
+  const marketProfile = getMarketProfile(slim.id);
   const heroImage = municipalityImages[slim.id]?.src ?? IMG.skyline;
   const heroAlt = municipalityImages[slim.id]?.alt ?? `${slim.display_name}, Wisconsin`;
 
@@ -499,24 +503,40 @@ export default function MarketMunicipality() {
             Living in {slim.display_name}
           </motion.h2>
 
-          {loading ? (
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {Array.from({ length: 6 }).map((_, i) => (
-                <div
-                  key={i}
-                  className="h-44 animate-pulse rounded-2xl bg-white/[0.04] ring-1 ring-white/10"
-                />
-              ))}
-            </div>
-          ) : full ? (
-            <div className="space-y-12">
-              <div>
-                <h3
-                  className="mb-5 text-sm font-semibold uppercase tracking-[0.18em]"
-                  style={{ color: GOLD }}
+          <div className="space-y-12">
+            {/* ---- Buyer & Lifestyle Fit ---- */}
+            <div>
+              <motion.h3
+                custom={2}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeUp}
+                className="mb-5 text-sm font-semibold uppercase tracking-[0.18em]"
+                style={{ color: GOLD }}
+              >
+                Buyer &amp; Lifestyle Fit
+              </motion.h3>
+              {marketProfile?.lifestyle ? (
+                <motion.div
+                  custom={3}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  variants={fadeUp}
                 >
-                  Buyer &amp; Lifestyle Fit
-                </h3>
+                  <LifestyleVitals data={marketProfile.lifestyle} />
+                </motion.div>
+              ) : loading ? (
+                <div className="grid gap-5 sm:grid-cols-2">
+                  {Array.from({ length: 4 }).map((_, i) => (
+                    <div
+                      key={i}
+                      className="h-44 animate-pulse rounded-2xl bg-white/[0.04] ring-1 ring-white/10"
+                    />
+                  ))}
+                </div>
+              ) : full ? (
                 <div className="grid gap-5 sm:grid-cols-2">
                   {[
                     { icon: UserCheck, label: "Ideal Buyer", value: full.buyer_lifestyle_fit.ideal_buyer },
@@ -527,14 +547,46 @@ export default function MarketMunicipality() {
                     <ProfileCard key={c.label} icon={c.icon} label={c.label} value={c.value} i={i} />
                   ))}
                 </div>
-              </div>
-              <div>
-                <h3
-                  className="mb-5 text-sm font-semibold uppercase tracking-[0.18em]"
-                  style={{ color: GOLD }}
+              ) : (
+                <p className="text-sm text-white/50">
+                  Lifestyle details are not yet available for {slim.display_name}.
+                </p>
+              )}
+            </div>
+
+            {/* ---- Amenities & Community Character ---- */}
+            <div>
+              <motion.h3
+                custom={4}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeUp}
+                className="mb-5 text-sm font-semibold uppercase tracking-[0.18em]"
+                style={{ color: GOLD }}
+              >
+                Amenities &amp; Community Character
+              </motion.h3>
+              {marketProfile?.amenities ? (
+                <motion.div
+                  custom={5}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  variants={fadeUp}
                 >
-                  Amenities &amp; Community Character
-                </h3>
+                  <AmenitiesFeatured data={marketProfile.amenities} />
+                </motion.div>
+              ) : loading ? (
+                <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                  {Array.from({ length: 6 }).map((_, i) => (
+                    <div
+                      key={i}
+                      className="h-44 animate-pulse rounded-2xl bg-white/[0.04] ring-1 ring-white/10"
+                    />
+                  ))}
+                </div>
+              ) : full ? (
                 <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                   {[
                     { icon: Heart, label: "Community Vibe", value: full.amenities_character.community_vibe },
@@ -547,13 +599,13 @@ export default function MarketMunicipality() {
                     <ProfileCard key={c.label} icon={c.icon} label={c.label} value={c.value} i={i} />
                   ))}
                 </div>
-              </div>
+              ) : (
+                <p className="text-sm text-white/50">
+                  Amenities details are not yet available for {slim.display_name}.
+                </p>
+              )}
             </div>
-          ) : (
-            <p className="text-sm text-white/50">
-              Neighborhood profile details are not yet available for {slim.display_name}.
-            </p>
-          )}
+          </div>
         </section>
 
         {/* ===== 6. CTA Band ===== */}
