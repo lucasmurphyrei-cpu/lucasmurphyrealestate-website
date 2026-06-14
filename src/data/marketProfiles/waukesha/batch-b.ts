@@ -241,9 +241,9 @@ const batch: Record<string, MarketProfile> = {
           "MCTS Route 10 (Bluemound Road) provides bus service toward downtown Milwaukee. Among the closest Waukesha County communities to the city, making it viable for some transit-connected commuters.",
       },
       safety: {
-        grade: "D+",
+        grade: "A-",
         note:
-          "Overall D+ on CrimeGrade, driven primarily by property crime (D+). Violent crime earns a B+. The lower composite reflects a higher property crime rate relative to similarly sized communities -- likely influenced by Elm Grove's proximity to major retail corridors on Bluemound Road and Brookfield Road. Violent crime remains very low.",
+          "Very safe in absolute terms. The village recorded zero violent crimes in the latest reporting year, and total crime runs roughly 76% below the national average and well below the Wisconsin average (City-Data / FBI UCR). Per-resident 'curve' ratings score Elm Grove lower only because its small residential population is measured against theft reports from the Bluemound Road retail corridor, but the actual incident counts are very low (about 31 property crimes in a year, down 61%).",
       },
       idealBuyer: {
         tags: ["Affluent families", "Milwaukee professionals", "Elmbrook schools seekers", "Empty nesters"],
