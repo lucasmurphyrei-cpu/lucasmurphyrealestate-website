@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import Seo from "@/components/seo/Seo";
+import JsonLd from "@/components/seo/JsonLd";
+import { graph, realEstateAgent, webSite } from "@/lib/seo/schema";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Home, Building2, MapPin, TrendingUp, TrendingDown, Minus as MinusIcon, Hammer, Landmark, DollarSign, Search, Shield, ArrowRight, Clock, Percent, CalendarDays, ClipboardList, PlusCircle, Download, Eye, Compass, Truck, ArrowLeftRight, LineChart } from "lucide-react";
@@ -72,46 +74,12 @@ const directionColor = (dir: "up" | "down" | "flat") => {
 const Index = () => {
   return (
     <>
-      <Helmet>
-        <title>Lucas Murphy Real Estate | Milwaukee Metro Guides, Market Insights & Strategy</title>
-        <meta name="description" content="Expert real estate services in Milwaukee, Waukesha, Washington & Ozaukee Counties. Free guides, market reports, mortgage tools, and trusted professional recommendations." />
-        <link rel="canonical" href="https://www.lucasmurphyrealestate.com" />
-      </Helmet>
-
-      {/* JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@graph": [
-              {
-                "@type": "RealEstateAgent",
-                name: "Lucas Murphy",
-                jobTitle: "Realtor",
-                worksFor: {
-                  "@type": "Organization",
-                  name: "Provision Properties Core Team — eXp Realty",
-                },
-                url: "https://www.lucasmurphyrealestate.com",
-                email: "lucas.murphy@exprealty.com",
-                areaServed: [
-                  "Milwaukee County, WI",
-                  "Waukesha County, WI",
-                  "Washington County, WI",
-                  "Ozaukee County, WI",
-                ],
-                description: "Expert real estate services in Milwaukee, Waukesha, Washington & Ozaukee Counties, Wisconsin.",
-              },
-              {
-                "@type": "WebSite",
-                name: "Lucas Murphy Real Estate",
-                url: "https://www.lucasmurphyrealestate.com",
-              },
-            ],
-          }),
-        }}
+      <Seo
+        title="Milwaukee Metro Guides, Market Insights & Strategy"
+        description="Expert real estate services in Milwaukee, Waukesha, Washington & Ozaukee Counties. Free guides, market reports, mortgage tools, and trusted professional recommendations."
+        canonicalPath="/"
       />
+      <JsonLd data={graph(realEstateAgent(), webSite())} />
 
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-border">
