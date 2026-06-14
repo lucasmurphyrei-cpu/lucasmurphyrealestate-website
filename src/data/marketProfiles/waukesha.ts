@@ -1,6 +1,14 @@
 import type { MarketProfile } from "../marketProfiles";
+import batchA from "./waukesha/batch-a";
+import batchB from "./waukesha/batch-b";
+import batchC from "./waukesha/batch-c";
+import batchD from "./waukesha/batch-d";
 
 const waukeshaProfiles: Record<string, MarketProfile> = {
+  ...batchA,
+  ...batchB,
+  ...batchC,
+  ...batchD,
   waukesha: {
     lifestyle: {
       walkScore: { value: 35, label: "Car-Dependent" },
