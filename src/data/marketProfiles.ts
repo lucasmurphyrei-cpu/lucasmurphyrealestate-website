@@ -80,6 +80,14 @@ const marketProfiles: Record<string, MarketProfile> = {
           category: "Park",
           blurb:
             "A 483-acre Waukesha County preserve of prairies, wetlands, woodlands, and butterfly gardens. Features a learning center, planetarium, all-accessible boardwalk, and restored native prairie -- plus year-round nature education programs.",
+          photo: {
+            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Retzer_Nature_Center_Waukesha_County_Park_System_view_from_northern_observation_tower_-_panoramio.jpg/1280px-Retzer_Nature_Center_Waukesha_County_Park_System_view_from_northern_observation_tower_-_panoramio.jpg",
+            alt: "View over the prairie at Retzer Nature Center from the northern observation tower, Waukesha, Wisconsin",
+            credit: "Photo: Vince Mulhollon / Wikimedia Commons",
+            license: "CC BY-SA 3.0",
+            sourceUrl:
+              "https://commons.wikimedia.org/wiki/File:Retzer_Nature_Center_Waukesha_County_Park_System_view_from_northern_observation_tower_-_panoramio.jpg",
+          },
         },
       ],
       more: [
