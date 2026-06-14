@@ -1,6 +1,14 @@
 import type { MarketProfile } from "../marketProfiles";
+import batchA from "./milwaukee/batch-a";
+import batchB from "./milwaukee/batch-b";
+import batchC from "./milwaukee/batch-c";
+import batchD from "./milwaukee/batch-d";
 
 const milwaukeeProfiles: Record<string, MarketProfile> = {
+  ...batchA,
+  ...batchB,
+  ...batchC,
+  ...batchD,
   wauwatosa: {
     lifestyle: {
       walkScore: { value: 60, label: "Somewhat Walkable" },
