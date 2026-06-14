@@ -33,6 +33,14 @@ const batch: Record<string, MarketProfile> = {
           category: "University",
           blurb:
             "A private Lutheran university on 192 acres along Lake Michigan's shoreline. The campus anchors Mequon's identity, hosts public cultural events, and provides a built-in community of faculty and graduate families.",
+          photo: {
+            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Concordia_Mequon_in_December_2017.jpg/1280px-Concordia_Mequon_in_December_2017.jpg",
+            alt: "Concordia University Wisconsin campus in Mequon",
+            credit: "Photo: Aaron Volkening / Wikimedia Commons",
+            license: "CC BY 2.0",
+            sourceUrl:
+              "https://commons.wikimedia.org/wiki/File:Concordia_Mequon_in_December_2017.jpg",
+          },
         },
         {
           name: "Virmond Park",
@@ -91,6 +99,14 @@ const batch: Record<string, MarketProfile> = {
           category: "Historic District",
           blurb:
             "One of Wisconsin's most intact 19th-century commercial streetscapes: more than 100 limestone and cream-brick buildings lining Washington Avenue, listed on the National Register of Historic Places in 1986. Independent galleries, wine shops, and cafes occupy every storefront.",
+          photo: {
+            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Cedarburg_2018_07_06_%2870%29.jpg/1280px-Cedarburg_2018_07_06_%2870%29.jpg",
+            alt: "Historic downtown Cedarburg, Wisconsin",
+            credit: "Photo: Aaron Volkening / Wikimedia Commons",
+            license: "CC BY 2.0",
+            sourceUrl:
+              "https://commons.wikimedia.org/wiki/File:Cedarburg_2018_07_06_(70).jpg",
+          },
         },
         {
           name: "Cedar Creek Settlement",
@@ -154,6 +170,14 @@ const batch: Record<string, MarketProfile> = {
           category: "Park",
           blurb:
             "A Milwaukee River greenway preserving 19th-century lime kiln ruins on the west bank. Trails connect to the Ozaukee Interurban Trail, and the river bottomlands offer fishing, wildlife watching, and quiet wooded respite from the village.",
+          photo: {
+            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/20140331-Wisconsin-_30413_Lime_Kiln_Park_in_Grafton.jpg/1280px-20140331-Wisconsin-_30413_Lime_Kiln_Park_in_Grafton.jpg",
+            alt: "Lime Kiln Park along the Milwaukee River in Grafton, Wisconsin",
+            credit: "Photo via Wikimedia Commons",
+            license: "CC BY-SA 2.0",
+            sourceUrl:
+              "https://commons.wikimedia.org/wiki/File:20140331-Wisconsin-_30413_Lime_Kiln_Park_in_Grafton.jpg",
+          },
         },
         {
           name: "Grafton on the Bay (Marina District)",
@@ -213,6 +237,14 @@ const batch: Record<string, MarketProfile> = {
           category: "Landmark",
           blurb:
             "Wisconsin's oldest surviving lighthouse complex: a Cream City brick Italianate keeper's house and attached tower built in 1860, now a museum operated by the Port Washington Historical Society. The adjacent 1935 Art Deco breakwater lighthouse is one of the most photographed structures on the Great Lakes.",
+          photo: {
+            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Port_Washington_Lighthouse_Museum_4275.jpg/1280px-Port_Washington_Lighthouse_Museum_4275.jpg",
+            alt: "The 1860 Light Station Museum in Port Washington, Wisconsin",
+            credit: "Photo: Dori / Wikimedia Commons",
+            license: "CC BY-SA 3.0",
+            sourceUrl:
+              "https://commons.wikimedia.org/wiki/File:Port_Washington_Lighthouse_Museum_4275.jpg",
+          },
         },
         {
           name: "Coal Dock Park",
