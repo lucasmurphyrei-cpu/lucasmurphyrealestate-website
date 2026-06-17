@@ -1,6 +1,4 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false,
   "redirects": [
     { "source": "/guide/first-time-homebuyer-metro-milwaukee", "destination": "https://lucasmurphyrealestate-main.vercel.app/guide/first-time-homebuyer-metro-milwaukee", "permanent": false },
     { "source": "/guide/condominium-ownership-guide", "destination": "https://lucasmurphyrealestate-main.vercel.app/guide/condominium-ownership-guide", "permanent": false },
