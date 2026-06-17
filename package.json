@@ -15,7 +15,7 @@
     "seo:sitemap": "tsx scripts/sitemap.ts",
     "seo:llms": "tsx scripts/llms.ts",
     "prebuild": "tsx scripts/sitemap.ts && tsx scripts/llms.ts",
-    "postbuild": "tsx scripts/prerender.ts"
+    "postbuild": "tsx scripts/prerender.ts || echo 'prerender skipped (headless Chrome unavailable in this build env)'"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
