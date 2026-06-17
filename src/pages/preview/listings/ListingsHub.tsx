@@ -31,14 +31,13 @@ export default function ListingsHub() {
       <Seo
         title="Search Active Listings | Metro Milwaukee Homes for Sale"
         description="Search every active home for sale across Milwaukee, Waukesha, Ozaukee, and Washington Counties. Pick a county, set your criteria, and view results on the map."
-        canonicalPath="/preview/v1/listings"
-        noindex
+        canonicalPath="/listings"
       />
       <JsonLd
         data={graph(
           breadcrumbList([
-            { name: "Home", path: "/preview/v1" },
-            { name: "Listings", path: "/preview/v1/listings" },
+            { name: "Home", path: "/" },
+            { name: "Listings", path: "/listings" },
           ])
         )}
       />
@@ -131,7 +130,7 @@ export default function ListingsHub() {
                 return (
                   <motion.div key={c.name} custom={i} variants={fadeUp} initial="hidden" animate="show">
                     <Link
-                      to={`/preview/v1/listings/${slug}`}
+                      to={`/listings/${slug}`}
                       className="group block overflow-hidden rounded-2xl border border-white/10 bg-white/[0.05] transition-all duration-300 hover:-translate-y-1.5 hover:border-white/20 hover:shadow-[0_20px_48px_-16px_rgba(0,0,0,0.6)]"
                     >
                       <div className="relative h-52 overflow-hidden">

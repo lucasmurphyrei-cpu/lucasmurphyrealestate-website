@@ -90,8 +90,7 @@ export default function MortgageCalculator() {
       <Seo
         title="Mortgage Calculator | Metro Milwaukee | Lucas Murphy"
         description="Estimate your monthly mortgage payment for a Metro Milwaukee home. A clean, free mortgage calculator from Lucas Murphy."
-        canonicalPath="/preview/v1/tools/mortgage-calculator"
-        noindex
+        canonicalPath="/tools/mortgage-calculator"
       />
       <PreviewHeader />
 
@@ -259,7 +258,7 @@ export default function MortgageCalculator() {
                 <Handshake className="h-4 w-4" /> See my preferred lenders
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
-              <Link to="/preview/v1/contact"
+              <Link to="/contact"
                 className="inline-flex items-center gap-2 rounded-sm border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:border-white hover:bg-white/10">
                 <MessageSquare className="h-4 w-4" /> Ask a question
               </Link>
@@ -270,7 +269,7 @@ export default function MortgageCalculator() {
         {/* Cross-link */}
         <p className="mt-6 text-center text-sm text-muted-foreground">
           Want the full picture?{" "}
-          <Link to="/preview/v1/tools/budget-planner" className="font-semibold text-foreground underline decoration-accent decoration-2 underline-offset-4 transition-colors hover:text-accent">
+          <Link to="/tools/budget-planner" className="font-semibold text-foreground underline decoration-accent decoration-2 underline-offset-4 transition-colors hover:text-accent">
             See how much home you can afford
           </Link>
           .

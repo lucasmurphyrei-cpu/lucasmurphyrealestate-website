@@ -29,7 +29,7 @@ const GUIDES: Guide[] = [
       "Common mistakes to avoid",
       "How to win in competitive situations",
     ],
-    href: "/preview/v1/guides/first-time-home-buyers",
+    href: "/guides/first-time-home-buyers",
     cta: "Get the guide",
     img: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
@@ -42,7 +42,7 @@ const GUIDES: Guide[] = [
       "Marketing that reaches serious buyers",
       "How to avoid leaving money on the table",
     ],
-    href: "/preview/v1/guides/sellers",
+    href: "/guides/sellers",
     cta: "Reserve a copy",
     img: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
@@ -55,7 +55,7 @@ const GUIDES: Guide[] = [
       "Timing your move",
       "Buying before you arrive",
     ],
-    href: "/preview/v1/guides/relocation",
+    href: "/guides/relocation",
     cta: "Get the guide",
     img: IMG.skyline,
   },
@@ -68,7 +68,7 @@ const GUIDES: Guide[] = [
       "How condo financing works",
       "What's different from buying a house",
     ],
-    href: "/preview/v1/guides/first-time-condo-buyers",
+    href: "/guides/first-time-condo-buyers",
     cta: "Get the guide",
     img: IMG.thirdWard,
   },
@@ -81,7 +81,7 @@ const GUIDES: Guide[] = [
       "Financing options for investors",
       "Building a repeatable system",
     ],
-    href: "/preview/v1/guides/investors",
+    href: "/guides/investors",
     cta: "Reserve a copy",
     img: "https://images.pexels.com/photos/1370704/pexels-photo-1370704.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
@@ -94,18 +94,18 @@ const GUIDES: Guide[] = [
       "Owner-occupied financing",
       "Living for less while building wealth",
     ],
-    href: "/preview/v1/guides/house-hacking",
+    href: "/guides/house-hacking",
     cta: "Get the guide",
     img: IMG.riverwalk,
   },
 ];
 
 const TOOLS = [
-  { title: "Mortgage Calculator", href: "/preview/v1/tools/mortgage-calculator" },
-  { title: "How Much Home Can You Afford?", href: "/preview/v1/tools/budget-planner" },
-  { title: "Free CMA", href: "/preview/v1/tools/cma" },
-  { title: "House Hack Calculator", href: "/preview/v1/tools/house-hack-calculator" },
-  { title: "Investor Spreadsheets", href: "/preview/v1/tools/investor-spreadsheets" },
+  { title: "Mortgage Calculator", href: "/tools/mortgage-calculator" },
+  { title: "How Much Home Can You Afford?", href: "/tools/budget-planner" },
+  { title: "Free CMA", href: "/tools/cma" },
+  { title: "House Hack Calculator", href: "/tools/house-hack-calculator" },
+  { title: "Investor Spreadsheets", href: "/tools/investor-spreadsheets" },
 ];
 
 function GuideCta({ guide, className }: { guide: Guide; className: string }) {
@@ -126,8 +126,7 @@ export default function PreviewGuides() {
       <Seo
         title="Guides & Resources | Metro Milwaukee Real Estate | Lucas Murphy"
         description="Free guides and tools to help you buy, sell, relocate, and invest in Metro Milwaukee real estate. Explore Lucas Murphy's resource center."
-        canonicalPath="/preview/v1/guides"
-        noindex
+        canonicalPath="/guides"
       />
       <PreviewHeader />
 
@@ -175,7 +174,7 @@ export default function PreviewGuides() {
               ))}
             </ul>
             <Link
-              to="/preview/v1/market"
+              to="/market"
               className="group mt-8 inline-flex items-center gap-2 rounded-sm bg-accent px-7 py-3.5 text-sm font-semibold text-accent-foreground shadow-[0_14px_30px_-12px_hsl(44_96%_50%/0.75)] transition-all duration-300 hover:-translate-y-0.5"
             >
               <Compass className="h-4 w-4" /> Explore the market hub
@@ -271,7 +270,7 @@ export default function PreviewGuides() {
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
             <Link
-              to="/preview/v1/contact"
+              to="/contact"
               className="inline-flex items-center gap-2 rounded-sm border border-white/30 px-8 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:border-white hover:bg-white/10"
             >
               <MessageSquare className="h-4 w-4" /> Send a message

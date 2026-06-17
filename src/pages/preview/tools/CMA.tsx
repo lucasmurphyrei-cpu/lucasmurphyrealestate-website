@@ -56,8 +56,7 @@ export default function CMA() {
       <Seo
         title="Free Home Valuation | What's My Home Worth | Lucas Murphy"
         description="Find out what your Metro Milwaukee home is really worth, plus a pricing strategy built around your timeline and goals to net the most money. Not just a Zestimate."
-        canonicalPath="/preview/v1/tools/cma"
-        noindex
+        canonicalPath="/tools/cma"
       />
       <PreviewHeader />
 

@@ -101,8 +101,7 @@ export default function HouseHackCalculator() {
       <Seo
         title="House Hack Calculator | Metro Milwaukee | Lucas Murphy"
         description="Analyze a multi-unit house hack: your true cost of living, cash flow, cash-on-cash return, and long-term wealth versus renting in Metro Milwaukee."
-        canonicalPath="/preview/v1/tools/house-hack-calculator"
-        noindex
+        canonicalPath="/tools/house-hack-calculator"
       />
       <PreviewHeader />
 

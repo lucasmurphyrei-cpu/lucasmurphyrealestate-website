@@ -5,7 +5,12 @@
     { "source": "/guide/first-time-homebuyer-metro-milwaukee", "destination": "https://lucasmurphyrealestate-main.vercel.app/guide/first-time-homebuyer-metro-milwaukee", "permanent": false },
     { "source": "/guide/condominium-ownership-guide", "destination": "https://lucasmurphyrealestate-main.vercel.app/guide/condominium-ownership-guide", "permanent": false },
     { "source": "/guide/relocation-guide-metro-milwaukee", "destination": "https://lucasmurphyrealestate-main.vercel.app/guide/relocation-guide-metro-milwaukee", "permanent": false },
-    { "source": "/guide/house-hacking-guide", "destination": "https://lucasmurphyrealestate-main.vercel.app/guide/house-hacking-guide", "permanent": false }
+    { "source": "/guide/house-hacking-guide", "destination": "https://lucasmurphyrealestate-main.vercel.app/guide/house-hacking-guide", "permanent": false },
+
+    { "source": "/areas", "destination": "/market", "permanent": false },
+    { "source": "/areas/:path*", "destination": "/market/:path*", "permanent": false },
+    { "source": "/preview/v1", "destination": "/", "permanent": false },
+    { "source": "/preview/v1/:path*", "destination": "/:path*", "permanent": false }
   ],
   "rewrites": [
     { "source": "/((?!assets|favicon|robots|sitemap|llms|Your_First).*)", "destination": "/index.html" }

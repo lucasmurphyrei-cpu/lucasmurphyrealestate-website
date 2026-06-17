@@ -52,7 +52,7 @@ const guides = [
     question: "Buying a home in Metro Milwaukee?",
     description:
       "From your first pre-approval conversation to keys in hand, I'll guide you through finding the right neighborhood, writing an offer that wins, and closing with confidence. You'll always know what comes next and why.",
-    href: "/preview/v1/buying",
+    href: "/buying",
     img: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1600",
     panel: "#1b2d49",
   },
@@ -63,7 +63,7 @@ const guides = [
     question: "Selling your home for top dollar?",
     description:
       "I price your home on real local data, market it so the right buyers actually see it, and negotiate hard to net you more. A clear plan, honest expectations, and a partner who sweats every detail from listing photos to the closing table.",
-    href: "/preview/v1/selling",
+    href: "/selling",
     img: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1600",
     panel: "#13233b",
   },
@@ -74,7 +74,7 @@ const guides = [
     question: "Investing in Milwaukee real estate?",
     description:
       "I came up house hacking, so I speak this language fluently. Whether it's your first duplex or your fiftieth door, we'll run the real numbers together, pressure test the deal, and find properties that actually cash flow.",
-    href: "/preview/v1/investing",
+    href: "/investing",
     img: "https://images.pexels.com/photos/1370704/pexels-photo-1370704.jpeg?auto=compress&cs=tinysrgb&w=1600",
     panel: "#0a1424",
   },
@@ -136,11 +136,11 @@ const fadeUp = {
 };
 
 const nav = [
-  { label: "Areas", href: "/preview/v1/market" },
+  { label: "Areas", href: "/market" },
   { label: "About", href: "#about" },
-  { label: "Guides", href: "/preview/v1/guides" },
+  { label: "Guides", href: "/guides" },
   { label: "Reviews", href: "#reviews" },
-  { label: "Contact", href: "/preview/v1/contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const ROTATE_MS = 5000;
@@ -780,7 +780,7 @@ export default function PreviewV1() {
                 <ul className="space-y-2.5">
                   {heroCounties.map((c) => (
                     <li key={c.name}>
-                      <Link to={`/preview/v1/market/${c.path.split("/").pop()}`} className="inline-flex items-center gap-1 transition-colors hover:text-accent">
+                      <Link to={`/market/${c.path.split("/").pop()}`} className="inline-flex items-center gap-1 transition-colors hover:text-accent">
                         {c.name} <ArrowUpRight className="h-3.5 w-3.5" />
                       </Link>
                     </li>

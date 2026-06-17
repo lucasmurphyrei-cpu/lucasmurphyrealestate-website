@@ -10,26 +10,38 @@ export interface RouteEntry {
 
 const STATIC_ROUTES: RouteEntry[] = [
   { path: "/", changefreq: "weekly", priority: 1.0 },
+  { path: "/about", changefreq: "monthly", priority: 0.7 },
+  { path: "/services", changefreq: "monthly", priority: 0.8 },
+  { path: "/buying", changefreq: "monthly", priority: 0.7 },
+  { path: "/selling", changefreq: "monthly", priority: 0.7 },
+  { path: "/investing", changefreq: "monthly", priority: 0.7 },
   { path: "/contact", changefreq: "monthly", priority: 0.8 },
   { path: "/guides", changefreq: "weekly", priority: 0.9 },
   { path: "/guides/first-time-home-buyers", changefreq: "monthly", priority: 0.8 },
-  { path: "/guides/first-time-condo-buyers", changefreq: "monthly", priority: 0.7 },
   { path: "/guides/relocation", changefreq: "monthly", priority: 0.7 },
-  { path: "/guides/investors", changefreq: "monthly", priority: 0.7 },
+  { path: "/guides/first-time-condo-buyers", changefreq: "monthly", priority: 0.7 },
+  { path: "/guides/house-hacking", changefreq: "monthly", priority: 0.7 },
   { path: "/guides/sellers", changefreq: "monthly", priority: 0.7 },
+  { path: "/guides/investors", changefreq: "monthly", priority: 0.7 },
   { path: "/first-time-homebuyers-guide", changefreq: "monthly", priority: 0.9 },
+  { path: "/tools", changefreq: "monthly", priority: 0.8 },
+  { path: "/tools/seller-net-sheet", changefreq: "monthly", priority: 0.6 },
+  { path: "/tools/mortgage-calculator", changefreq: "monthly", priority: 0.7 },
+  { path: "/tools/budget-planner", changefreq: "monthly", priority: 0.6 },
+  { path: "/tools/budget-planner/quick", changefreq: "monthly", priority: 0.5 },
+  { path: "/tools/budget-planner/in-depth", changefreq: "monthly", priority: 0.5 },
+  { path: "/tools/budget-spreadsheet", changefreq: "monthly", priority: 0.6 },
+  { path: "/tools/cma", changefreq: "monthly", priority: 0.6 },
+  { path: "/tools/house-hack-calculator", changefreq: "monthly", priority: 0.7 },
+  { path: "/tools/investor-spreadsheets", changefreq: "monthly", priority: 0.6 },
+  { path: "/vendors", changefreq: "monthly", priority: 0.7 },
+  { path: "/listings", changefreq: "weekly", priority: 0.8 },
   { path: "/resources/contractors", changefreq: "monthly", priority: 0.6 },
   { path: "/resources/lenders", changefreq: "monthly", priority: 0.6 },
   { path: "/resources/home-inspectors", changefreq: "monthly", priority: 0.6 },
   { path: "/resources/home-insurance", changefreq: "monthly", priority: 0.6 },
   { path: "/resources/seasonal-guide", changefreq: "monthly", priority: 0.6 },
   { path: "/resources/movers", changefreq: "monthly", priority: 0.6 },
-  { path: "/tools/mortgage-calculator", changefreq: "monthly", priority: 0.7 },
-  { path: "/tools/budget-spreadsheet", changefreq: "monthly", priority: 0.6 },
-  { path: "/tools/budget-planner", changefreq: "monthly", priority: 0.6 },
-  { path: "/tools/house-hack-calculator", changefreq: "monthly", priority: 0.7 },
-  { path: "/tools/investor-spreadsheets", changefreq: "monthly", priority: 0.6 },
-  { path: "/tools/cma", changefreq: "monthly", priority: 0.6 },
 ];
 
 const COUNTY_SLUGS = [
@@ -39,30 +51,26 @@ const COUNTY_SLUGS = [
   "washington-county",
 ];
 
-const COUNTY_ROUTES: RouteEntry[] = COUNTY_SLUGS.map((slug) => ({
-  path: `/areas/${slug}`,
+const LISTINGS_ROUTES: RouteEntry[] = COUNTY_SLUGS.map((slug) => ({
+  path: `/listings/${slug}`,
   changefreq: "weekly",
-  priority: 0.8,
+  priority: 0.7,
 }));
-
-const MUNICIPALITY_ROUTES: RouteEntry[] = getAllMunicipalityRoutes().map((r) => ({
-  path: `/areas/${r.countySlug}/${r.muniSlug}`,
-  changefreq: "monthly",
-  priority: 0.6,
-}));
-
-// Preview routes: prerendered for QA but excluded from the sitemap (noindex).
-const PREVIEW_ROUTES: RouteEntry[] = [
-  { path: "/preview/v1", changefreq: "monthly", priority: 0.1, noindex: true },
-  { path: "/preview/v2", changefreq: "monthly", priority: 0.1, noindex: true },
-];
 
 const MARKET_ROUTES: RouteEntry[] = [
-  { path: "/preview/v1/market", changefreq: "weekly", priority: 0.1, noindex: true },
-  ...COUNTY_SLUGS.map((slug) => ({ path: `/preview/v1/market/${slug}`, changefreq: "weekly" as const, priority: 0.1, noindex: true })),
-  ...getAllMunicipalityRoutes().map((r) => ({ path: `/preview/v1/market/${r.countySlug}/${r.muniSlug}`, changefreq: "monthly" as const, priority: 0.1, noindex: true })),
+  { path: "/market", changefreq: "weekly", priority: 0.9 },
+  ...COUNTY_SLUGS.map((slug) => ({
+    path: `/market/${slug}`,
+    changefreq: "weekly" as const,
+    priority: 0.8,
+  })),
+  ...getAllMunicipalityRoutes().map((r) => ({
+    path: `/market/${r.countySlug}/${r.muniSlug}`,
+    changefreq: "monthly" as const,
+    priority: 0.6,
+  })),
 ];
 
 export function getAllRoutes(): RouteEntry[] {
-  return [...STATIC_ROUTES, ...COUNTY_ROUTES, ...MUNICIPALITY_ROUTES, ...PREVIEW_ROUTES, ...MARKET_ROUTES];
+  return [...STATIC_ROUTES, ...LISTINGS_ROUTES, ...MARKET_ROUTES];
 }

@@ -23,7 +23,7 @@ describe("Seo", () => {
   });
 
   it("emits robots noindex when noindex is set", async () => {
-    renderSeo({ title: "Preview", canonicalPath: "/preview/v1", noindex: true });
+    renderSeo({ title: "Preview", canonicalPath: "/", noindex: true });
     await waitFor(() => {
       const robots = document.querySelector('meta[name="robots"]');
       expect(robots?.getAttribute("content")).toBe("noindex, nofollow");

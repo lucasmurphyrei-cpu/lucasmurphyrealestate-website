@@ -11,29 +11,29 @@ const CALENDLY = "https://calendly.com/lucasmurphyrei";
 export type NavItem = { label: string; href: string; children?: NavItem[] };
 
 const DEFAULT_NAV: NavItem[] = [
-  { label: "About", href: "/preview/v1/about" },
+  { label: "About", href: "/about" },
   {
     label: "Services",
-    href: "/preview/v1/services",
+    href: "/services",
     children: [
-      { label: "Home Buyers", href: "/preview/v1/buying" },
-      { label: "Home Sellers", href: "/preview/v1/selling" },
-      { label: "Real Estate Investing", href: "/preview/v1/investing" },
-      { label: "Relocation", href: "/preview/v1/market" },
+      { label: "Home Buyers", href: "/buying" },
+      { label: "Home Sellers", href: "/selling" },
+      { label: "Real Estate Investing", href: "/investing" },
+      { label: "Relocation", href: "/market" },
     ],
   },
-  { label: "Listings", href: "/preview/v1/listings" },
-  { label: "Areas", href: "/preview/v1/market" },
+  { label: "Listings", href: "/listings" },
+  { label: "Areas", href: "/market" },
   {
     label: "Free Resources",
-    href: "/preview/v1/guides",
+    href: "/guides",
     children: [
-      { label: "All Guides", href: "/preview/v1/guides" },
-      { label: "All Tools", href: "/preview/v1/tools" },
-      { label: "All Vendors", href: "/preview/v1/vendors" },
+      { label: "All Guides", href: "/guides" },
+      { label: "All Tools", href: "/tools" },
+      { label: "All Vendors", href: "/vendors" },
     ],
   },
-  { label: "Contact", href: "/preview/v1/contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const linkBase =
@@ -80,7 +80,7 @@ export default function PreviewHeader({ nav = DEFAULT_NAV }: { nav?: NavItem[] }
       >
         {/* Logo lockup — scales with screen, glyph stays aligned to the content edge */}
         <Link
-          to="/preview/v1"
+          to="/"
           onClick={() => setOpen(false)}
           className={`flex shrink-0 items-center gap-2 transition-all duration-300 sm:gap-3 lg:gap-3 xl:gap-4 ${
             scrolled ? "" : "-ml-3 sm:-ml-4 md:-ml-5 lg:-ml-4 xl:-ml-6 2xl:-ml-[34px]"

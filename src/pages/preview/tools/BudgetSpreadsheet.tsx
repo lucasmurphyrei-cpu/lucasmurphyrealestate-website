@@ -63,8 +63,7 @@ export default function BudgetSpreadsheet() {
       <Seo
         title="My Budget Spreadsheet & How It Works | Metro Milwaukee | Lucas Murphy"
         description="See exactly how my homebuying budget works, monthly costs side by side with their yearly averages, a quick walkthrough video, and a free copy to download and use."
-        canonicalPath="/preview/v1/tools/budget-spreadsheet"
-        noindex
+        canonicalPath="/tools/budget-spreadsheet"
       />
       <PreviewHeader />
 
@@ -261,10 +260,10 @@ export default function BudgetSpreadsheet() {
             <p className="mt-1 text-sm text-muted-foreground">Turn them into a comfortable home payment and price range.</p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <Link to="/preview/v1/tools/budget-planner/in-depth" className="group inline-flex items-center gap-2 rounded-sm bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:-translate-y-0.5">
+            <Link to="/tools/budget-planner/in-depth" className="group inline-flex items-center gap-2 rounded-sm bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:-translate-y-0.5">
               How much home can you afford? <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
-            <Link to="/preview/v1/contact" className="inline-flex items-center gap-2 rounded-sm border border-border px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-accent hover:text-accent">
+            <Link to="/contact" className="inline-flex items-center gap-2 rounded-sm border border-border px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-accent hover:text-accent">
               <MessageSquare className="h-4 w-4" /> Ask a question
             </Link>
           </div>

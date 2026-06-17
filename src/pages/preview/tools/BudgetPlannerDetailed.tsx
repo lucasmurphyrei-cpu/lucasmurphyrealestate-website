@@ -424,14 +424,13 @@ export default function BudgetPlannerDetailed() {
       <Seo
         title="How Much Home Can You Afford? In Depth | Metro Milwaukee | Lucas Murphy"
         description="A step-by-step affordability breakdown: fixed expenses, spending and savings, affordability, and the mortgage."
-        canonicalPath="/preview/v1/tools/budget-planner/in-depth"
-        noindex
+        canonicalPath="/tools/budget-planner/in-depth"
       />
       <PreviewHeader />
 
       <section className="relative overflow-hidden bg-[#0a1424] pt-28 pb-16 lg:pt-36 lg:pb-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
-          <Link to="/preview/v1/tools/budget-planner" className="inline-flex items-center gap-2 text-sm font-medium text-white/60 transition-colors hover:text-accent">
+          <Link to="/tools/budget-planner" className="inline-flex items-center gap-2 text-sm font-medium text-white/60 transition-colors hover:text-accent">
             <ArrowLeft className="h-4 w-4" /> Back to all options
           </Link>
           <p className="mt-6 flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.24em] text-accent">
@@ -651,7 +650,7 @@ export default function BudgetPlannerDetailed() {
                 <div className="rounded-sm border border-accent/30 bg-accent/[0.06] p-6 sm:p-8">
                   <p className="font-display text-lg font-semibold">These are the costs you've already committed to</p>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground"><strong className="text-foreground">Fixed costs are your foundation.</strong> They're the bills that show up every month no matter what, your current rent or mortgage, debt payments, utilities, groceries, and insurance. Everything that comes later, your savings, your fun money, and one day a house payment, gets built on top of what's left after these. The more honest and complete you are here, the more real every number in the next steps becomes.</p>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">If a cost swings month to month, enter a typical average. Don't know your real numbers yet?{" "}<Link to="/preview/v1/tools/budget-spreadsheet" className="font-semibold text-foreground underline decoration-accent decoration-2 underline-offset-2 hover:text-accent">Use my budget spreadsheet</Link>{" "}to track one to three months, then come back and pick up right here.</p>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">If a cost swings month to month, enter a typical average. Don't know your real numbers yet?{" "}<Link to="/tools/budget-spreadsheet" className="font-semibold text-foreground underline decoration-accent decoration-2 underline-offset-2 hover:text-accent">Use my budget spreadsheet</Link>{" "}to track one to three months, then come back and pick up right here.</p>
                   <button type="button" onClick={() => goStep(1)} className="group mt-5 inline-flex items-center gap-2 rounded-sm bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:-translate-y-0.5">Continue to Step 2 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" /></button>
                 </div>
               </>
@@ -967,7 +966,7 @@ export default function BudgetPlannerDetailed() {
                 <h3 className="mt-2 font-display text-xl font-semibold">Write these numbers down</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Screenshot this page or jot down your comfortable payment (<strong className="text-foreground">{usd(comfortTarget)}/mo</strong>) and the home price it supports (<strong className="text-foreground">{usd(price)}</strong>). Heads up: this tool resets if you leave or refresh the page, so capture your numbers now.</p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Then take them into the <strong className="text-foreground">mortgage calculator</strong> to adjust your down payment, interest rate, taxes, and insurance against real listings you're considering.</p>
-                <Link to="/preview/v1/tools/mortgage-calculator" className="group mt-4 inline-flex items-center gap-2 rounded-sm bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:-translate-y-0.5">Open the mortgage calculator <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" /></Link>
+                <Link to="/tools/mortgage-calculator" className="group mt-4 inline-flex items-center gap-2 rounded-sm bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:-translate-y-0.5">Open the mortgage calculator <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" /></Link>
                 <p className="mt-4 border-t border-accent/20 pt-4 text-[11px] leading-relaxed text-muted-foreground"><strong className="text-foreground">Heads up:</strong> these are estimates to set your budget, not a quote for any specific home. You and I should re-run the numbers on every property before you make an offer. <strong className="text-foreground">Property taxes</strong> vary home to home depending on the municipality and assessment, and <strong className="text-foreground">interest rates</strong> change daily, so the real monthly payment will shift from house to house.</p>
               </div>
               </>

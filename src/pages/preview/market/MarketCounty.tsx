@@ -80,7 +80,7 @@ function MuniCard({ id, displayName, countySlug, muniSlug, index }: MuniCardProp
       variants={cardFade}
     >
       <Link
-        to={`/preview/v1/market/${countySlug}/${muniSlug}`}
+        to={`/market/${countySlug}/${muniSlug}`}
         className="group block rounded-xl overflow-hidden border border-white/10 bg-white/[0.03] transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_12px_36px_-12px_rgba(0,0,0,0.6)]"
       >
         {/* Image */}
@@ -134,7 +134,7 @@ export default function MarketCounty() {
           We don't have market data for "{display}" yet. Check back soon or browse our available counties.
         </p>
         <Link
-          to="/preview/v1/market"
+          to="/market"
           className="inline-flex items-center gap-2 rounded-sm px-6 py-3 text-sm font-semibold text-[#0a1424] transition-transform duration-300 hover:-translate-y-0.5"
           style={{ backgroundColor: GOLD }}
         >
@@ -164,15 +164,14 @@ export default function MarketCounty() {
       <Seo
         title={`${display} Real Estate Market`}
         description={`Median home price, days on market, and market trends for ${display}, Wisconsin, updated ${snapshot.dataMonth}.`}
-        canonicalPath={`/preview/v1/market/${county}`}
-        noindex
+        canonicalPath={`/market/${county}`}
       />
       <JsonLd
         data={graph(
           breadcrumbList([
-            { name: "Home", path: "/preview/v1" },
-            { name: "Market", path: "/preview/v1/market" },
-            { name: display, path: `/preview/v1/market/${county}` },
+            { name: "Home", path: "/" },
+            { name: "Market", path: "/market" },
+            { name: display, path: `/market/${county}` },
           ]),
           place(display),
           dataset({
@@ -181,7 +180,7 @@ export default function MarketCounty() {
             spatial: `${display}, WI`,
             dateModified: "2026-06-01",
             temporalCoverage: "2025-03/2026-06",
-            url: `/preview/v1/market/${county}`,
+            url: `/market/${county}`,
           })
         )}
       />
@@ -204,7 +203,7 @@ export default function MarketCounty() {
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className="mb-4 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/50"
             >
-              <Link to="/preview/v1/market" className="transition-colors hover:text-white/80">Market</Link>
+              <Link to="/market" className="transition-colors hover:text-white/80">Market</Link>
               <span>/</span>
               <span style={{ color: GOLD }}>{display}</span>
             </motion.div>

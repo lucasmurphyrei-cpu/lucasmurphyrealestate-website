@@ -77,8 +77,7 @@ export default function SellerNetSheet() {
       <Seo
         title="Seller Net Sheet Calculator | Metro Milwaukee | Lucas Murphy"
         description="Estimate your take-home proceeds when selling your Metro Milwaukee home, with closing-date tax and payoff proration. A free seller net sheet calculator from Lucas Murphy."
-        canonicalPath="/preview/v1/tools/seller-net-sheet"
-        noindex
+        canonicalPath="/tools/seller-net-sheet"
       />
       <PreviewHeader />
 
@@ -259,7 +258,7 @@ export default function SellerNetSheet() {
                 className="inline-flex items-center gap-2 rounded-sm border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:border-white hover:bg-white/10">
                 <Printer className="h-4 w-4" /> Print
               </button>
-              <Link to="/preview/v1/contact"
+              <Link to="/contact"
                 className="inline-flex items-center gap-2 rounded-sm border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:border-white hover:bg-white/10">
                 <MessageSquare className="h-4 w-4" /> Ask a question
               </Link>

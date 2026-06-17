@@ -64,8 +64,7 @@ export default function GuideLeadLanding({ slug }: { slug: string }) {
       <Seo
         title={`${g.kicker} | Metro Milwaukee | Lucas Murphy`}
         description={g.heroSub}
-        canonicalPath={`/preview/v1/guides/${g.slug}`}
-        noindex
+        canonicalPath={`/guides/${g.slug}`}
       />
       <PreviewHeader />
 

@@ -81,7 +81,7 @@ export default function ListingsCounty() {
         <PreviewHeader />
         <div className="mx-auto max-w-3xl px-6 py-40 text-center">
           <h1 className="font-display text-3xl font-semibold">County not found</h1>
-          <Link to="/preview/v1/listings" className="mt-6 inline-block text-accent underline-offset-4 hover:underline">
+          <Link to="/listings" className="mt-6 inline-block text-accent underline-offset-4 hover:underline">
             Back to all counties
           </Link>
         </div>
@@ -95,15 +95,14 @@ export default function ListingsCounty() {
       <Seo
         title={`Search ${countyDisplay} Homes for Sale`}
         description={`Search active listings in ${countyDisplay}, Wisconsin. Filter by community, price, beds, baths, garage, and property type, then view results on the map.`}
-        canonicalPath={`/preview/v1/listings/${county}`}
-        noindex
+        canonicalPath={`/listings/${county}`}
       />
       <JsonLd
         data={graph(
           breadcrumbList([
-            { name: "Home", path: "/preview/v1" },
-            { name: "Listings", path: "/preview/v1/listings" },
-            { name: countyDisplay, path: `/preview/v1/listings/${county}` },
+            { name: "Home", path: "/" },
+            { name: "Listings", path: "/listings" },
+            { name: countyDisplay, path: `/listings/${county}` },
           ])
         )}
       />
@@ -117,7 +116,7 @@ export default function ListingsCounty() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a1424] via-[#0a1424]/80 to-[#0a1424]/55" />
           <div className="relative mx-auto max-w-5xl px-6 pb-12 pt-10 lg:px-10">
             <Link
-              to="/preview/v1/listings"
+              to="/listings"
               className="inline-flex items-center gap-1.5 text-sm font-semibold text-white/70 transition-colors hover:text-white"
             >
               <ArrowLeft className="h-4 w-4" /> All counties

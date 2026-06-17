@@ -23,23 +23,23 @@ const CONFIGS: Record<"tools" | "vendors", Config> = {
       {
         label: "For Buyers",
         items: [
-          { title: "Mortgage Calculator", desc: "Estimate your monthly payment, taxes, and insurance.", href: "/preview/v1/tools/mortgage-calculator" },
-          { title: "How Much Home Can You Afford?", desc: "A budget planner that works backward from your life.", href: "/preview/v1/tools/budget-planner" },
-          { title: "Budget Spreadsheet", desc: "Map your full cost of ownership in one place.", href: "/preview/v1/tools/budget-spreadsheet" },
+          { title: "Mortgage Calculator", desc: "Estimate your monthly payment, taxes, and insurance.", href: "/tools/mortgage-calculator" },
+          { title: "How Much Home Can You Afford?", desc: "A budget planner that works backward from your life.", href: "/tools/budget-planner" },
+          { title: "Budget Spreadsheet", desc: "Map your full cost of ownership in one place.", href: "/tools/budget-spreadsheet" },
         ],
       },
       {
         label: "For Sellers",
         items: [
-          { title: "Free CMA", desc: "A real valuation of what your home is worth today.", href: "/preview/v1/tools/cma" },
-          { title: "Seller Net Sheet", desc: "Estimate your take-home proceeds at closing.", href: "/preview/v1/tools/seller-net-sheet" },
+          { title: "Free CMA", desc: "A real valuation of what your home is worth today.", href: "/tools/cma" },
+          { title: "Seller Net Sheet", desc: "Estimate your take-home proceeds at closing.", href: "/tools/seller-net-sheet" },
         ],
       },
       {
         label: "For Investors",
         items: [
-          { title: "House Hack Calculator", desc: "See if a duplex can cover your mortgage.", href: "/preview/v1/tools/house-hack-calculator" },
-          { title: "Investor Spreadsheets", desc: "Underwrite deals like a pro.", href: "/preview/v1/tools/investor-spreadsheets" },
+          { title: "House Hack Calculator", desc: "See if a duplex can cover your mortgage.", href: "/tools/house-hack-calculator" },
+          { title: "Investor Spreadsheets", desc: "Underwrite deals like a pro.", href: "/tools/investor-spreadsheets" },
         ],
       },
     ],
@@ -85,8 +85,7 @@ export default function ResourceListing({ variant }: { variant: "tools" | "vendo
       <Seo
         title={`${cfg.kicker} | Metro Milwaukee | Lucas Murphy`}
         description={cfg.subtitle}
-        canonicalPath={`/preview/v1/${variant}`}
-        noindex
+        canonicalPath={`/${variant}`}
       />
       <PreviewHeader />
 
@@ -156,7 +155,7 @@ export default function ResourceListing({ variant }: { variant: "tools" | "vendo
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
             <Link
-              to="/preview/v1/contact"
+              to="/contact"
               className="inline-flex items-center gap-2 rounded-sm border border-white/30 px-8 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:border-white hover:bg-white/10"
             >
               Get in touch

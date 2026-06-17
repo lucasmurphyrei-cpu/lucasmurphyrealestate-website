@@ -13,8 +13,7 @@ export default function BudgetPlannerStart() {
       <Seo
         title="How Much Home Can You Afford? | Metro Milwaukee | Lucas Murphy"
         description="Two ways to find out how much home you can afford: a quick ballpark estimate, or an in-depth walkthrough that builds your real budget into a true comfortable monthly payment range."
-        canonicalPath="/preview/v1/tools/budget-planner"
-        noindex
+        canonicalPath="/tools/budget-planner"
       />
       <PreviewHeader />
 
@@ -59,7 +58,7 @@ export default function BudgetPlannerStart() {
               ))}
             </ul>
             <Link
-              to="/preview/v1/tools/budget-planner/quick"
+              to="/tools/budget-planner/quick"
               className="mt-7 inline-flex w-full items-center justify-center gap-2 rounded-sm border border-accent/50 px-6 py-3.5 text-sm font-semibold text-foreground transition-all duration-300 hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/40"
             >
               Start the quick estimate <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -91,14 +90,14 @@ export default function BudgetPlannerStart() {
               ))}
             </ul>
             <Link
-              to="/preview/v1/tools/budget-planner/in-depth"
+              to="/tools/budget-planner/in-depth"
               className="mt-7 inline-flex w-full items-center justify-center gap-2 rounded-sm bg-accent px-6 py-3.5 text-sm font-semibold text-accent-foreground shadow-[0_14px_30px_-12px_hsl(44_96%_50%/0.75)] transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/40"
             >
               Start the in-depth version <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
             <p className="mt-3 text-center text-xs text-muted-foreground">
               Want to prep first?{" "}
-              <Link to="/preview/v1/tools/budget-spreadsheet" className="font-semibold text-foreground underline decoration-accent decoration-2 underline-offset-2 transition-colors hover:text-accent">
+              <Link to="/tools/budget-spreadsheet" className="font-semibold text-foreground underline decoration-accent decoration-2 underline-offset-2 transition-colors hover:text-accent">
                 Grab my budget spreadsheet
               </Link>
             </p>

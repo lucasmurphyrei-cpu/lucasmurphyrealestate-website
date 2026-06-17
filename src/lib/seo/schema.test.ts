@@ -28,13 +28,13 @@ describe("schema builders", () => {
 
   it("breadcrumbList numbers positions from 1 and builds absolute item URLs", () => {
     const s = breadcrumbList([
-      { name: "Market", path: "/preview/v1/market" },
-      { name: "Waukesha County", path: "/preview/v1/market/waukesha-county" },
+      { name: "Market", path: "/market" },
+      { name: "Waukesha County", path: "/market/waukesha-county" },
     ]);
     expect(s["@type"]).toBe("BreadcrumbList");
     expect(s.itemListElement[0].position).toBe(1);
     expect(s.itemListElement[1].item).toBe(
-      "https://www.lucasmurphyrealestate.com/preview/v1/market/waukesha-county"
+      "https://www.lucasmurphyrealestate.com/market/waukesha-county"
     );
   });
 
@@ -51,13 +51,13 @@ describe("schema builders", () => {
       spatial: "Waukesha County, WI",
       dateModified: "2026-06-01",
       temporalCoverage: "2025-03/2026-06",
-      url: "/preview/v1/market/waukesha-county",
+      url: "/market/waukesha-county",
     });
     expect(s["@type"]).toBe("Dataset");
     expect(s.spatialCoverage).toBe("Waukesha County, WI");
     expect(s.temporalCoverage).toBe("2025-03/2026-06");
     expect(s.url).toBe(
-      "https://www.lucasmurphyrealestate.com/preview/v1/market/waukesha-county"
+      "https://www.lucasmurphyrealestate.com/market/waukesha-county"
     );
   });
 

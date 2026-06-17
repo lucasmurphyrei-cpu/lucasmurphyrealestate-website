@@ -14,25 +14,25 @@ const SERVICES: Service[] = [
   {
     title: "Home Buyers",
     body: "Finding your dream home should be exciting, not daunting. I blend expert guidance with personal service to make your home-buying journey as smooth and joyful as possible, from your first pre-approval to keys in hand. From cozy starter homes to lakefront retreats, my tailored approach makes sure your next home fits your life. Let's turn your dream into an address.",
-    href: "/preview/v1/buying",
+    href: "/buying",
     img: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
   {
     title: "Home Sellers",
     body: "Partner with me for a selling experience that is as rewarding as it is efficient. Strategic pricing built on real local data, marketing that reaches the right buyers, and dedicated support from listing photos to the closing table. I am here to make sure your home sells quickly and for the best price.",
-    href: "/preview/v1/selling",
+    href: "/selling",
     img: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
   {
     title: "Real Estate Investing",
     body: "Whether it is your first duplex or your fiftieth door, we run the real numbers together, pressure test the deal, and find properties that actually cash flow. I came up house hacking, so I speak this language fluently and I will help you build a portfolio that compounds.",
-    href: "/preview/v1/investing",
+    href: "/investing",
     img: "https://images.pexels.com/photos/1370704/pexels-photo-1370704.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
   {
     title: "Relocation",
     body: "Embrace your new beginning with guidance through every part of the move. From choosing the right community to navigating commute, schools, and cost of living, I make relocating to Metro Milwaukee smooth and stress-free. Let's find the place where you truly belong.",
-    href: "/preview/v1/market",
+    href: "/market",
     img: IMG.skyline,
   },
 ];
@@ -43,8 +43,7 @@ export default function PreviewServices() {
       <Seo
         title="Our Services | Metro Milwaukee Real Estate | Lucas Murphy"
         description="Ways to work with Lucas Murphy: home buyers, home sellers, real estate investing, and relocation across Metro Milwaukee."
-        canonicalPath="/preview/v1/services"
-        noindex
+        canonicalPath="/services"
       />
       <PreviewHeader />
 
@@ -132,7 +131,7 @@ export default function PreviewServices() {
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
             <Link
-              to="/preview/v1/contact"
+              to="/contact"
               className="inline-flex items-center gap-2 rounded-sm border border-white/30 px-8 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:border-white hover:bg-white/10"
             >
               Get in touch

@@ -163,7 +163,7 @@ export default function MarketMunicipality() {
         <div className="flex flex-wrap items-center justify-center gap-4">
           {county && (
             <Link
-              to={`/preview/v1/market/${county}`}
+              to={`/market/${county}`}
               className="inline-flex items-center gap-1.5 text-sm font-semibold underline-offset-4 hover:underline"
               style={{ color: GOLD }}
             >
@@ -171,7 +171,7 @@ export default function MarketMunicipality() {
             </Link>
           )}
           <Link
-            to="/preview/v1/market"
+            to="/market"
             className="inline-flex items-center gap-1.5 text-sm font-semibold text-white/70 underline-offset-4 hover:text-white hover:underline"
           >
             Market Home
@@ -237,18 +237,17 @@ export default function MarketMunicipality() {
       <Seo
         title={`${slim.display_name}, WI Home Prices & Market Data`}
         description={`Median sale price, market trends, and neighborhood profile for ${slim.display_name} in ${countyDisplay}, Wisconsin.`}
-        canonicalPath={`/preview/v1/market/${county}/${municipality}`}
-        noindex
+        canonicalPath={`/market/${county}/${municipality}`}
       />
       <JsonLd
         data={graph(
           breadcrumbList([
-            { name: "Home", path: "/preview/v1" },
-            { name: "Market", path: "/preview/v1/market" },
-            { name: countyDisplay, path: `/preview/v1/market/${county}` },
+            { name: "Home", path: "/" },
+            { name: "Market", path: "/market" },
+            { name: countyDisplay, path: `/market/${county}` },
             {
               name: slim.display_name,
-              path: `/preview/v1/market/${county}/${municipality}`,
+              path: `/market/${county}/${municipality}`,
             },
           ]),
           place(slim.display_name),
@@ -258,7 +257,7 @@ export default function MarketMunicipality() {
             spatial: `${slim.display_name}, WI`,
             dateModified: "2026-06-01",
             temporalCoverage: "2026-05/2026-06",
-            url: `/preview/v1/market/${county}/${municipality}`,
+            url: `/market/${county}/${municipality}`,
           }),
         )}
       />
@@ -282,14 +281,14 @@ export default function MarketMunicipality() {
               className="mb-4 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/50"
             >
               <Link
-                to="/preview/v1/market"
+                to="/market"
                 className="transition-colors hover:text-white/80"
               >
                 Market
               </Link>
               <span>/</span>
               <Link
-                to={`/preview/v1/market/${county}`}
+                to={`/market/${county}`}
                 className="transition-colors hover:text-white/80"
               >
                 {countyDisplay}

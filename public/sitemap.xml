@@ -2,422 +2,507 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.lucasmurphyrealestate.com/</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-06-17</lastmod><changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.lucasmurphyrealestate.com/about</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/services</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/buying</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/selling</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/investing</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.lucasmurphyrealestate.com/contact</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.lucasmurphyrealestate.com/guides</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-06-17</lastmod><changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.lucasmurphyrealestate.com/guides/first-time-home-buyers</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/guides/first-time-condo-buyers</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.lucasmurphyrealestate.com/guides/relocation</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/guides/investors</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/guides/first-time-condo-buyers</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/guides/house-hacking</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.lucasmurphyrealestate.com/guides/sellers</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/guides/investors</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.lucasmurphyrealestate.com/first-time-homebuyers-guide</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/resources/contractors</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://www.lucasmurphyrealestate.com/tools</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/resources/lenders</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.lucasmurphyrealestate.com/resources/home-inspectors</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.lucasmurphyrealestate.com/resources/home-insurance</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.lucasmurphyrealestate.com/resources/seasonal-guide</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.lucasmurphyrealestate.com/resources/movers</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/tools/seller-net-sheet</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.lucasmurphyrealestate.com/tools/mortgage-calculator</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.lucasmurphyrealestate.com/tools/budget-spreadsheet</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.lucasmurphyrealestate.com/tools/budget-planner</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/tools/house-hack-calculator</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.lucasmurphyrealestate.com/tools/budget-planner/quick</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/tools/investor-spreadsheets</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/tools/budget-planner/in-depth</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/tools/budget-spreadsheet</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.lucasmurphyrealestate.com/tools/cma</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>weekly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/tools/house-hack-calculator</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/tools/investor-spreadsheets</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/vendors</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/listings</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>weekly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/resources/contractors</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/resources/lenders</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/resources/home-inspectors</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/resources/home-insurance</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/resources/seasonal-guide</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/resources/movers</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/listings/milwaukee-county</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/listings/waukesha-county</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/listings/ozaukee-county</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/listings/washington-county</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/market</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/ozaukee-county</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>weekly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/washington-county</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>weekly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/ozaukee-county</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/ozaukee-county/mequon</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/washington-county</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/market/ozaukee-county/mequon</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/ozaukee-county/cedarburg</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/ozaukee-county/cedarburg</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/ozaukee-county/grafton</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/ozaukee-county/grafton</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/ozaukee-county/port-washington</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/ozaukee-county/port-washington</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/ozaukee-county/thiensville</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/ozaukee-county/thiensville</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/ozaukee-county/saukville</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/ozaukee-county/saukville</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/ozaukee-county/belgium</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/ozaukee-county/belgium</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/milwaukee</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/milwaukee</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/wauwatosa</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/wauwatosa</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/west-allis</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/west-allis</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/shorewood</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/shorewood</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/whitefish-bay</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/whitefish-bay</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/bay-view-(within-milwaukee)</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/bay-view-(within-milwaukee)</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/glendale</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/glendale</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/greenfield</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/greenfield</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/greendale</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/greendale</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/franklin</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/franklin</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/oak-creek</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/oak-creek</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/south-milwaukee</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/south-milwaukee</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/st-francis</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/st-francis</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/brown-deer</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/brown-deer</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/river-hills</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/river-hills</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/fox-point</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/fox-point</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/washington-county/germantown</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/washington-county/germantown</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/washington-county/west-bend</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/washington-county/west-bend</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/washington-county/hartford</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/washington-county/hartford</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/washington-county/jackson</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/washington-county/jackson</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/washington-county/slinger</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/washington-county/slinger</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/washington-county/kewaskum</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/washington-county/kewaskum</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/washington-county/richfield</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/washington-county/richfield</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/waukesha</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/waukesha</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/brookfield</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/brookfield</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/new-berlin</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/new-berlin</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/menomonee-falls</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/menomonee-falls</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/oconomowoc</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/oconomowoc</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/muskego</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/muskego</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/delafield</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/delafield</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/hartland</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/hartland</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/mukwonago</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/mukwonago</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/sussex</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/sussex</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/elm-grove</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/elm-grove</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/bayside</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/bayside</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/west-milwaukee</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/west-milwaukee</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/ozaukee-county/fredonia</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/ozaukee-county/fredonia</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/butler</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/butler</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/chenequa</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/chenequa</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/dousman</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/dousman</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/eagle</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/eagle</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/lac-la-belle</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/lac-la-belle</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/lannon</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/lannon</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/north-prairie</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/north-prairie</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/washington-county/newburg</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/washington-county/newburg</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/cudahy</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/cudahy</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/milwaukee-county/hales-corners</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/hales-corners</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/big-bend</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/big-bend</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/merton</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/merton</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/nashotah</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/nashotah</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/wales</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/wales</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/areas/waukesha-county/pewaukee</loc>
-    <lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/pewaukee</loc>
+    <lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 </urlset>

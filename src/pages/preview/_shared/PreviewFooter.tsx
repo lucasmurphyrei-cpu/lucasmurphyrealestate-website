@@ -5,9 +5,9 @@ import expWhite from "@/assets/exp-logo-white.png";
 import { SOCIAL, heroCounties } from "@/pages/preview/_shared/tokens";
 
 const guides = [
-  { title: "Buying a Home", href: "/preview/v1/guides/first-time-home-buyers" },
-  { title: "Selling Your Home", href: "/preview/v1/guides/sellers" },
-  { title: "Investing & House Hacking", href: "/preview/v1/guides/house-hacking" },
+  { title: "Buying a Home", href: "/guides/first-time-home-buyers" },
+  { title: "Selling Your Home", href: "/guides/sellers" },
+  { title: "Investing & House Hacking", href: "/guides/house-hacking" },
 ];
 
 export default function PreviewFooter() {
@@ -39,7 +39,7 @@ export default function PreviewFooter() {
               <ul className="space-y-2.5">
                 {heroCounties.map((c) => (
                   <li key={c.name}>
-                    <Link to={`/preview/v1/market/${c.path.split("/").pop()}`} className="inline-flex items-center gap-1 transition-colors hover:text-accent">
+                    <Link to={`/market/${c.path.split("/").pop()}`} className="inline-flex items-center gap-1 transition-colors hover:text-accent">
                       {c.name} <ArrowUpRight className="h-3.5 w-3.5" />
                     </Link>
                   </li>

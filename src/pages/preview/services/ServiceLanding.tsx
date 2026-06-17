@@ -40,8 +40,7 @@ export default function ServiceLanding({ service }: { service: ServiceSlug }) {
       <Seo
         title={`${cfg.title} in Metro Milwaukee | Lucas Murphy`}
         description={cfg.lead}
-        canonicalPath={`/preview/v1/${cfg.slug}`}
-        noindex
+        canonicalPath={`/${cfg.slug}`}
       />
       <PreviewHeader />
 
@@ -70,7 +69,7 @@ export default function ServiceLanding({ service }: { service: ServiceSlug }) {
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
             <Link
-              to="/preview/v1/contact"
+              to="/contact"
               className="inline-flex items-center gap-2 rounded-sm border border-white/30 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:border-white hover:bg-white/10"
             >
               <MessageSquare className="h-4 w-4" /> Send a message
@@ -173,7 +172,7 @@ export default function ServiceLanding({ service }: { service: ServiceSlug }) {
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-white/75">{cfg.marketBlurb}</p>
           <Link
-            to="/preview/v1/market"
+            to="/market"
             className="group mt-7 inline-flex items-center gap-2 rounded-sm bg-accent px-7 py-3.5 text-sm font-semibold text-accent-foreground shadow-[0_14px_30px_-12px_hsl(44_96%_50%/0.75)] transition-all duration-300 hover:-translate-y-0.5"
           >
             Explore the market hub
@@ -202,7 +201,7 @@ export default function ServiceLanding({ service }: { service: ServiceSlug }) {
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
             <Link
-              to="/preview/v1/contact"
+              to="/contact"
               className="inline-flex items-center gap-2 rounded-sm border border-white/30 px-8 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:border-white hover:bg-white/10"
             >
               <MessageSquare className="h-4 w-4" /> Send a message

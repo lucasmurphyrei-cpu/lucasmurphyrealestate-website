@@ -82,8 +82,7 @@ export default function PreviewContact() {
       <Seo
         title="Contact Lucas Murphy | Metro Milwaukee Real Estate"
         description="Get in touch with Lucas Murphy and the Provision Properties Core Team at eXp Realty. Tell me how you'd like to connect and I'll reach out within one business day."
-        canonicalPath="/preview/v1/contact"
-        noindex
+        canonicalPath="/contact"
       />
       <PreviewHeader />
 

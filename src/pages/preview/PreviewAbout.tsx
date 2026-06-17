@@ -35,8 +35,7 @@ export default function PreviewAbout() {
       <Seo
         title="About Lucas Murphy | Metro Milwaukee Real Estate"
         description="Meet Lucas Murphy of the Provision Properties Core Team at eXp Realty, serving Milwaukee, Waukesha, Ozaukee, and Washington counties."
-        canonicalPath="/preview/v1/about"
-        noindex
+        canonicalPath="/about"
       />
       <PreviewHeader />
 
@@ -181,7 +180,7 @@ export default function PreviewAbout() {
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
             <Link
-              to="/preview/v1/contact"
+              to="/contact"
               className="inline-flex items-center gap-2 rounded-sm border border-white/30 px-8 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:border-white hover:bg-white/10"
             >
               Get in touch

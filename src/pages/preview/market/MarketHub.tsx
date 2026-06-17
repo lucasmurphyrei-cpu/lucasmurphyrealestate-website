@@ -103,7 +103,7 @@ function CountyCard({ slug, index }: CountyCardProps) {
       animate="show"
     >
       <Link
-        to={`/preview/v1/market/${slug}`}
+        to={`/market/${slug}`}
         className="group block overflow-hidden rounded-2xl border border-white/10 bg-white/[0.05] transition-all duration-300 hover:-translate-y-1.5 hover:border-white/20 hover:shadow-[0_20px_48px_-16px_rgba(0,0,0,0.6)]"
       >
         {/* Image */}
@@ -187,14 +187,13 @@ export default function MarketHub() {
       <Seo
         title="Metro Milwaukee Real Estate Market"
         description="Median home prices, days on market, and trends across Milwaukee, Waukesha, Ozaukee, and Washington Counties, updated monthly."
-        canonicalPath="/preview/v1/market"
-        noindex
+        canonicalPath="/market"
       />
       <JsonLd
         data={graph(
           breadcrumbList([
-            { name: "Home", path: "/preview/v1" },
-            { name: "Market", path: "/preview/v1/market" },
+            { name: "Home", path: "/" },
+            { name: "Market", path: "/market" },
           ])
         )}
       />
@@ -319,7 +318,7 @@ export default function MarketHub() {
                 arrive. Everything you need to land confidently in the right community.
               </p>
               <Link
-                to="/preview/v1/guides/relocation"
+                to="/guides/relocation"
                 className="group mt-7 inline-flex items-center gap-2 rounded-sm bg-[hsl(44,96%,50%)] px-7 py-3.5 text-sm font-semibold text-[#0a1424] shadow-[0_14px_30px_-12px_hsl(44_96%_50%/0.6)] transition-all duration-300 hover:-translate-y-0.5"
               >
                 Get the relocation guide

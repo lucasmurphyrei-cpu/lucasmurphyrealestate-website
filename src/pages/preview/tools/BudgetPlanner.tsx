@@ -80,8 +80,7 @@ export default function BudgetPlanner() {
       <Seo
         title="How Much Home Can You Afford? | Metro Milwaukee | Lucas Murphy"
         description="Estimate the home price your budget supports in Metro Milwaukee, based on your income, debts, and down payment."
-        canonicalPath="/preview/v1/tools/budget-planner/quick"
-        noindex
+        canonicalPath="/tools/budget-planner/quick"
       />
       <PreviewHeader />
 
@@ -238,7 +237,7 @@ export default function BudgetPlanner() {
                 <Handshake className="h-4 w-4" /> See my preferred lenders
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
-              <Link to="/preview/v1/contact"
+              <Link to="/contact"
                 className="inline-flex items-center gap-2 rounded-sm border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:border-white hover:bg-white/10">
                 <MessageSquare className="h-4 w-4" /> Ask a question
               </Link>
@@ -266,7 +265,7 @@ export default function BudgetPlanner() {
               </ol>
             </div>
             <Link
-              to="/preview/v1/tools/budget-planner/in-depth"
+              to="/tools/budget-planner/in-depth"
               className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-sm bg-accent px-7 py-3.5 text-sm font-semibold text-accent-foreground shadow-[0_14px_30px_-12px_hsl(44_96%_50%/0.75)] transition-all duration-300 hover:-translate-y-0.5"
             >
               Open the in-depth version

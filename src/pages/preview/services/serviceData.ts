@@ -57,14 +57,14 @@ export const SERVICES: Record<ServiceSlug, ServiceConfig> = {
       },
     ],
     guides: [
-      { title: "First-Time Home Buyers", desc: "The full Metro Milwaukee starter playbook.", href: "/preview/v1/guides/first-time-home-buyers" },
-      { title: "First-Time Condo Buyers", desc: "What is different about buying a condo.", href: "/preview/v1/guides/first-time-condo-buyers" },
-      { title: "Relocating to Metro Milwaukee", desc: "Moving to the area from out of town.", href: "/preview/v1/guides/relocation" },
+      { title: "First-Time Home Buyers", desc: "The full Metro Milwaukee starter playbook.", href: "/guides/first-time-home-buyers" },
+      { title: "First-Time Condo Buyers", desc: "What is different about buying a condo.", href: "/guides/first-time-condo-buyers" },
+      { title: "Relocating to Metro Milwaukee", desc: "Moving to the area from out of town.", href: "/guides/relocation" },
     ],
     tools: [
-      { title: "Mortgage Calculator", desc: "Estimate your monthly payment.", href: "/preview/v1/tools/mortgage-calculator" },
-      { title: "How Much Home Can You Afford?", desc: "Budget planner that works backward from your life.", href: "/preview/v1/tools/budget-planner" },
-      { title: "Budget Spreadsheet", desc: "Map your full cost of ownership.", href: "/preview/v1/tools/budget-spreadsheet" },
+      { title: "Mortgage Calculator", desc: "Estimate your monthly payment.", href: "/tools/mortgage-calculator" },
+      { title: "How Much Home Can You Afford?", desc: "Budget planner that works backward from your life.", href: "/tools/budget-planner" },
+      { title: "Budget Spreadsheet", desc: "Map your full cost of ownership.", href: "/tools/budget-spreadsheet" },
     ],
     resources: [
       { title: "Lenders", href: "/resources/lenders" },
@@ -109,13 +109,13 @@ export const SERVICES: Record<ServiceSlug, ServiceConfig> = {
       },
     ],
     guides: [
-      { title: "Seller's Guide", desc: "Everything that goes into a strong sale.", href: "/preview/v1/guides/sellers" },
+      { title: "Seller's Guide", desc: "Everything that goes into a strong sale.", href: "/guides/sellers" },
       { title: "Seasonal Home Guide", desc: "Keep your home market-ready year round.", href: "/resources/seasonal-guide" },
     ],
     tools: [
-      { title: "Free CMA", desc: "A real valuation of what your home is worth today.", href: "/preview/v1/tools/cma" },
-      { title: "Seller Net Sheet", desc: "Estimate your take-home proceeds at closing.", href: "/preview/v1/tools/seller-net-sheet" },
-      { title: "Mortgage Calculator", desc: "Plan the payment on your next home.", href: "/preview/v1/tools/mortgage-calculator" },
+      { title: "Free CMA", desc: "A real valuation of what your home is worth today.", href: "/tools/cma" },
+      { title: "Seller Net Sheet", desc: "Estimate your take-home proceeds at closing.", href: "/tools/seller-net-sheet" },
+      { title: "Mortgage Calculator", desc: "Plan the payment on your next home.", href: "/tools/mortgage-calculator" },
     ],
     resources: [
       { title: "Contractors", href: "/resources/contractors" },
@@ -158,13 +158,13 @@ export const SERVICES: Record<ServiceSlug, ServiceConfig> = {
       },
     ],
     guides: [
-      { title: "Investor's Guide", desc: "How I underwrite and find deals locally.", href: "/preview/v1/guides/investors" },
-      { title: "House Hacking Guide", desc: "Live for less and build equity at once.", href: "/preview/v1/guides/house-hacking" },
+      { title: "Investor's Guide", desc: "How I underwrite and find deals locally.", href: "/guides/investors" },
+      { title: "House Hacking Guide", desc: "Live for less and build equity at once.", href: "/guides/house-hacking" },
     ],
     tools: [
-      { title: "House Hack Calculator", desc: "See if a duplex covers your mortgage.", href: "/preview/v1/tools/house-hack-calculator" },
-      { title: "Investor Spreadsheets", desc: "Underwrite deals like a pro.", href: "/preview/v1/tools/investor-spreadsheets" },
-      { title: "Mortgage Calculator", desc: "Model financing on any property.", href: "/preview/v1/tools/mortgage-calculator" },
+      { title: "House Hack Calculator", desc: "See if a duplex covers your mortgage.", href: "/tools/house-hack-calculator" },
+      { title: "Investor Spreadsheets", desc: "Underwrite deals like a pro.", href: "/tools/investor-spreadsheets" },
+      { title: "Mortgage Calculator", desc: "Model financing on any property.", href: "/tools/mortgage-calculator" },
     ],
     resources: [
       { title: "Lenders", href: "/resources/lenders" },

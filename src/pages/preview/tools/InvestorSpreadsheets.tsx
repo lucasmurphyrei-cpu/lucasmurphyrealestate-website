@@ -45,14 +45,14 @@ const SHEETS: Sheet[] = [
     icon: ReceiptText,
     label: "House Hack Calculator",
     desc: "Run a multi-unit deal: true cost of living, cash flow, and cash-on-cash return, right in your browser.",
-    href: "/preview/v1/tools/house-hack-calculator",
+    href: "/tools/house-hack-calculator",
     cta: "Open the calculator",
   },
   {
     icon: ReceiptText,
     label: "Seller Net Sheet",
     desc: "Estimate your net proceeds after commissions, closing costs, and payoffs.",
-    href: "/preview/v1/tools/seller-net-sheet",
+    href: "/tools/seller-net-sheet",
     cta: "Open the tool",
   },
 ];
@@ -63,8 +63,7 @@ export default function InvestorSpreadsheets() {
       <Seo
         title="Investor Spreadsheets | Metro Milwaukee | Lucas Murphy"
         description="Free Provision Properties Excel tools: BRRRR calculator, flip analysis, rehab budget tracker, CapEx planner, and more."
-        canonicalPath="/preview/v1/tools/investor-spreadsheets"
-        noindex
+        canonicalPath="/tools/investor-spreadsheets"
       />
       <PreviewHeader />
 
@@ -127,7 +126,7 @@ export default function InvestorSpreadsheets() {
               Schedule a consultation
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
-            <Link to="/preview/v1/contact"
+            <Link to="/contact"
               className="inline-flex items-center gap-2 rounded-sm border border-white/30 px-8 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:border-white hover:bg-white/10">
               Get in touch
             </Link>
