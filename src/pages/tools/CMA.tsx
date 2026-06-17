@@ -89,7 +89,7 @@ const CMA = () => {
       toast({
         title: "Something went wrong",
         description:
-          "Please try again or call us directly at (414)-269-4909.",
+          "Please try again or call us directly at (414)-458-1952.",
         variant: "destructive",
       });
     } finally {
@@ -565,11 +565,11 @@ const CMA = () => {
 
               <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a
-                  href="tel:4142694909"
+                  href="tel:4144581952"
                   className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
                 >
                   <Phone className="h-4 w-4 text-primary" />
-                  (414)-269-4909
+                  (414)-458-1952
                 </a>
                 <a
                   href="mailto:lucas.murphy@exprealty.com"

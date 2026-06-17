@@ -60,7 +60,7 @@ const QuizLeadCapture = ({
     } catch {
       toast({
         title: "Something went wrong",
-        description: "Please try again or call us at (414)-269-4909.",
+        description: "Please try again or call us at (414)-458-1952.",
         variant: "destructive",
       });
     } finally {
@@ -98,11 +98,12 @@ const QuizLeadCapture = ({
           />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="quiz-phone" className={isDark ? "text-white/80" : ""}>Phone (optional)</Label>
+          <Label htmlFor="quiz-phone" className={isDark ? "text-white/80" : ""}>Phone</Label>
           <Input
             id="quiz-phone"
             name="phone"
             type="tel"
+            required
             placeholder="(414) 555-0123"
             className={isDark ? "bg-white/[0.07] border-white/15 text-white placeholder:text-white/30 focus-visible:ring-[hsl(44,100%,53%)] focus-visible:border-[hsl(44,100%,53%)]" : ""}
           />

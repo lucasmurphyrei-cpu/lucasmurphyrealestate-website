@@ -23,6 +23,9 @@ export const IMG = {
   // Clarence Peck Residence, Oconomowoc (Waukesha County) — CC BY-SA 3.0 (attribute: Shadowe / Wikimedia Commons).
   waukeshaHome:
     "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Clarence_Peck_Residence.JPG/1920px-Clarence_Peck_Residence.JPG",
+  // Fox River & River Walk through downtown Waukesha — Wikimedia Commons (File:Waukesha June 2023 022 (Fox River and River Walk).jpg).
+  waukeshaDowntown:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Waukesha_June_2023_022_%28Fox_River_and_River_Walk%29.jpg/1920px-Waukesha_June_2023_022_%28Fox_River_and_River_Walk%29.jpg",
 };
 
 // TEMP generic stock video (Pexels, free) — wired in only to FEEL the motion/parallax.
@@ -54,9 +57,9 @@ export const heroCounties = [
   },
   {
     name: "Waukesha County",
-    place: "Pewaukee Lake & Lake Country",
+    place: "Historic downtown Waukesha & the Fox Riverwalk",
     path: "/areas/waukesha-county",
-    img: IMG.pewaukee,
+    img: IMG.waukeshaDowntown,
     video: VID.lake,
   },
   {

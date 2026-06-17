@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&family=Caveat:wght@600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -80,6 +80,71 @@
     --border: 214 32% 91%;
     --input: 214 32% 91%;
     --ring: 216 48% 13%;
+  }
+
+  /* ============================================================= */
+  /* REDESIGN PREVIEW THEMES — scoped, additive, non-destructive.  */
+  /* Applied only inside /preview/v1 and /preview/v2 wrappers.      */
+  /* Mirrors the .landing-page pattern above. Do NOT touch :root.   */
+  /* ============================================================= */
+
+  /* Direction 1 — "Local Guide": light, editorial, navy + gold */
+  .preview-v1 {
+    --background: 40 33% 98%;
+    --foreground: 216 52% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 216 52% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 216 52% 11%;
+    --primary: 216 52% 11%;
+    --primary-foreground: 40 33% 98%;
+    --secondary: 40 24% 94%;
+    --secondary-foreground: 216 52% 11%;
+    --muted: 40 20% 93%;
+    --muted-foreground: 215 14% 40%;
+    --accent: 44 96% 50%;
+    --accent-foreground: 216 52% 11%;
+    --destructive: 0 72% 48%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 40 18% 88%;
+    --input: 40 18% 88%;
+    --ring: 44 96% 50%;
+    --radius: 0.25rem;
+  }
+
+  /* Direction 2 — "Feels Like Family": warm cream + charcoal + antique gold */
+  .preview-v2 {
+    --background: 36 30% 95%;
+    --foreground: 28 18% 16%;
+    --card: 36 33% 97%;
+    --card-foreground: 28 18% 16%;
+    --popover: 36 33% 97%;
+    --popover-foreground: 28 18% 16%;
+    --primary: 28 24% 17%;
+    --primary-foreground: 36 30% 96%;
+    --secondary: 36 22% 90%;
+    --secondary-foreground: 28 18% 16%;
+    --muted: 36 20% 90%;
+    --muted-foreground: 30 10% 38%;
+    --accent: 38 62% 45%;
+    --accent-foreground: 36 33% 97%;
+    --destructive: 0 72% 48%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 34 18% 84%;
+    --input: 34 18% 84%;
+    --ring: 38 62% 45%;
+    --radius: 0.125rem;
+  }
+
+  /* Shared preview helper: subtle film-grain overlay for depth on hero/dark bands */
+  .preview-grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
 }
 

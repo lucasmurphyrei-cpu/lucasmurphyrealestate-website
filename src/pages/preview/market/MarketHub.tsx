@@ -104,7 +104,7 @@ function CountyCard({ slug, index }: CountyCardProps) {
     >
       <Link
         to={`/preview/v1/market/${slug}`}
-        className="group block overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] transition-all duration-300 hover:-translate-y-1.5 hover:border-white/20 hover:shadow-[0_20px_48px_-16px_rgba(0,0,0,0.6)]"
+        className="group block overflow-hidden rounded-2xl border border-white/10 bg-white/[0.05] transition-all duration-300 hover:-translate-y-1.5 hover:border-white/20 hover:shadow-[0_20px_48px_-16px_rgba(0,0,0,0.6)]"
       >
         {/* Image */}
         <div className="relative h-52 overflow-hidden">
@@ -271,7 +271,7 @@ export default function MarketHub() {
         </ParallaxBand>
 
         {/* ===== County cards ===== */}
-        <section id="counties" className="bg-[#0a1424] py-20 lg:py-28">
+        <section id="counties" className="bg-gradient-to-b from-[#0a1424] via-[#101d31] to-[#0a1424] py-20 lg:py-28">
           <div className="mx-auto max-w-7xl px-6 lg:px-10">
             {/* Section header */}
             <motion.div
@@ -305,6 +305,33 @@ export default function MarketHub() {
 
         {/* ===== Thin divider band ===== */}
         <div className="h-px bg-white/8 mx-auto max-w-7xl" />
+
+        {/* Relocation guide — easy to find for people moving to the area */}
+        <section className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-20">
+          <div className="grid items-center overflow-hidden rounded-2xl border border-white/10 bg-white/[0.05] lg:grid-cols-[1fr_0.9fr]">
+            <div className="p-8 sm:p-10 lg:p-12">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[hsl(44,96%,50%)]">Moving to the area?</p>
+              <h2 className="mt-3 font-display text-3xl font-medium tracking-[-0.02em] text-white sm:text-4xl">
+                Get the free Metro Milwaukee Relocation Guide
+              </h2>
+              <p className="mt-4 text-lg leading-relaxed text-white/70">
+                Neighborhood and commute breakdowns, cost of living, schools, and how to buy before you
+                arrive. Everything you need to land confidently in the right community.
+              </p>
+              <Link
+                to="/preview/v1/guides/relocation"
+                className="group mt-7 inline-flex items-center gap-2 rounded-sm bg-[hsl(44,96%,50%)] px-7 py-3.5 text-sm font-semibold text-[#0a1424] shadow-[0_14px_30px_-12px_hsl(44_96%_50%/0.6)] transition-all duration-300 hover:-translate-y-0.5"
+              >
+                Get the relocation guide
+                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
+            </div>
+            <div className="relative hidden min-h-[280px] lg:block">
+              <img src={IMG.skyline} alt="Metro Milwaukee skyline" className="absolute inset-0 h-full w-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#0a1424] via-[#0a1424]/30 to-transparent" />
+            </div>
+          </div>
+        </section>
 
         {/* ===== Get started CTA ===== */}
         <ParallaxBand

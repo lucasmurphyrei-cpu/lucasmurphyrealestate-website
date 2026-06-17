@@ -32,6 +32,29 @@ import WaukeshaCounty from "./pages/areas/WaukeshaCounty";
 import WashingtonCounty from "./pages/areas/WashingtonCounty";
 import MunicipalityReport from "./pages/areas/MunicipalityReport";
 import FirstTimeHomeBuyersGuide from "./pages/FirstTimeHomeBuyersGuide";
+import PreviewV1 from "./pages/preview/PreviewV1";
+import PreviewV2 from "./pages/preview/PreviewV2";
+import MarketHub from "./pages/preview/market/MarketHub";
+import MarketCounty from "./pages/preview/market/MarketCounty";
+import MarketMunicipality from "./pages/preview/market/MarketMunicipality";
+import ListingsHub from "./pages/preview/listings/ListingsHub";
+import ListingsCounty from "./pages/preview/listings/ListingsCounty";
+import PreviewContact from "./pages/preview/PreviewContact";
+import PreviewAbout from "./pages/preview/PreviewAbout";
+import PreviewServices from "./pages/preview/PreviewServices";
+import PreviewGuides from "./pages/preview/PreviewGuides";
+import GuideLeadLanding from "./pages/preview/guides/GuideLeadLanding";
+import ResourceListing from "./pages/preview/ResourceListing";
+import SellerNetSheet from "./pages/preview/tools/SellerNetSheet";
+import PreviewMortgageCalculator from "./pages/preview/tools/MortgageCalculator";
+import PreviewBudgetPlanner from "./pages/preview/tools/BudgetPlanner";
+import PreviewBudgetPlannerDetailed from "./pages/preview/tools/BudgetPlannerDetailed";
+import PreviewBudgetPlannerStart from "./pages/preview/tools/BudgetPlannerStart";
+import PreviewBudgetSpreadsheet from "./pages/preview/tools/BudgetSpreadsheet";
+import PreviewCMA from "./pages/preview/tools/CMA";
+import PreviewHouseHack from "./pages/preview/tools/HouseHackCalculator";
+import PreviewInvestorSpreadsheets from "./pages/preview/tools/InvestorSpreadsheets";
+import ServiceLanding from "./pages/preview/services/ServiceLanding";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -47,6 +70,39 @@ const App = () => (
           <Routes>
             {/* Standalone landing page — no main site navbar/footer */}
             <Route path="/first-time-homebuyers-guide" element={<FirstTimeHomeBuyersGuide />} />
+
+            {/* Redesign previews — standalone, additive, non-destructive (not linked in nav) */}
+            <Route path="/preview/v1" element={<PreviewV1 />} />
+            <Route path="/preview/v2" element={<PreviewV2 />} />
+            <Route path="/preview/v1/contact" element={<PreviewContact />} />
+            <Route path="/preview/v1/about" element={<PreviewAbout />} />
+            <Route path="/preview/v1/services" element={<PreviewServices />} />
+            <Route path="/preview/v1/guides" element={<PreviewGuides />} />
+            <Route path="/preview/v1/guides/first-time-home-buyers" element={<GuideLeadLanding slug="first-time-home-buyers" />} />
+            <Route path="/preview/v1/guides/relocation" element={<GuideLeadLanding slug="relocation" />} />
+            <Route path="/preview/v1/guides/first-time-condo-buyers" element={<GuideLeadLanding slug="first-time-condo-buyers" />} />
+            <Route path="/preview/v1/guides/house-hacking" element={<GuideLeadLanding slug="house-hacking" />} />
+            <Route path="/preview/v1/guides/sellers" element={<GuideLeadLanding slug="sellers" />} />
+            <Route path="/preview/v1/guides/investors" element={<GuideLeadLanding slug="investors" />} />
+            <Route path="/preview/v1/tools" element={<ResourceListing variant="tools" />} />
+            <Route path="/preview/v1/vendors" element={<ResourceListing variant="vendors" />} />
+            <Route path="/preview/v1/tools/seller-net-sheet" element={<SellerNetSheet />} />
+            <Route path="/preview/v1/tools/mortgage-calculator" element={<PreviewMortgageCalculator />} />
+            <Route path="/preview/v1/tools/budget-planner" element={<PreviewBudgetPlannerStart />} />
+            <Route path="/preview/v1/tools/budget-planner/quick" element={<PreviewBudgetPlanner />} />
+            <Route path="/preview/v1/tools/budget-planner/in-depth" element={<PreviewBudgetPlannerDetailed />} />
+            <Route path="/preview/v1/tools/budget-spreadsheet" element={<PreviewBudgetSpreadsheet />} />
+            <Route path="/preview/v1/tools/cma" element={<PreviewCMA />} />
+            <Route path="/preview/v1/tools/house-hack-calculator" element={<PreviewHouseHack />} />
+            <Route path="/preview/v1/tools/investor-spreadsheets" element={<PreviewInvestorSpreadsheets />} />
+            <Route path="/preview/v1/buying" element={<ServiceLanding service="buying" />} />
+            <Route path="/preview/v1/selling" element={<ServiceLanding service="selling" />} />
+            <Route path="/preview/v1/investing" element={<ServiceLanding service="investing" />} />
+            <Route path="/preview/v1/listings" element={<ListingsHub />} />
+            <Route path="/preview/v1/listings/:county" element={<ListingsCounty />} />
+            <Route path="/preview/v1/market" element={<MarketHub />} />
+            <Route path="/preview/v1/market/:county" element={<MarketCounty />} />
+            <Route path="/preview/v1/market/:county/:municipality" element={<MarketMunicipality />} />
 
             {/* All other pages use the main site Layout (navbar + footer) */}
             <Route element={<LayoutRoute />}>

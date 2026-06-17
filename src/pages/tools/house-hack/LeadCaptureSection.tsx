@@ -63,7 +63,7 @@ const LeadCaptureSection = ({ propertyType, investment, state, derived }: LeadCa
     } catch {
       toast({
         title: "Something went wrong",
-        description: "Please try again or call us at (414)-269-4909.",
+        description: "Please try again or call us at (414)-458-1952.",
         variant: "destructive",
       });
     } finally {

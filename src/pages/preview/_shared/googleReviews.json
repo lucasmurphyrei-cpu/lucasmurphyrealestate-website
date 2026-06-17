@@ -1,0 +1,55 @@
+{
+  "rating": 5.0,
+  "total": 6,
+  "fetchedAt": null,
+  "reviews": [
+    {
+      "name": "Courtney Peterson",
+      "initial": "C",
+      "photo": null,
+      "rating": 5,
+      "relativeTime": "",
+      "text": "As first-time homebuyers, we didn't have much experience with the process. Lucas was incredibly knowledgeable and informative from start to finish, his organization and prompt communication made our search smooth and timely. We're so excited to be in our first home, and we have Lucas to thank!"
+    },
+    {
+      "name": "Richard Painter",
+      "initial": "R",
+      "photo": null,
+      "rating": 5,
+      "relativeTime": "",
+      "text": "We were relocating from Michigan and met Lucas at an open house. His system and attention to detail in understanding what we wanted helped us get an offer accepted on a beautiful home that had multiple offers. Our Michigan realtor was a top-selling agent in the state, Lucas's service matched and even exceeded it."
+    },
+    {
+      "name": "Noah Graebel",
+      "initial": "N",
+      "photo": null,
+      "rating": 5,
+      "relativeTime": "",
+      "text": "We were referred to Lucas when buying in the Waukesha area and didn't know where to start. What stood out most was his hard work, responsiveness, and patience, he got us answers fast and never made us feel rushed. When we needed to move quickly on an offer, he'd stay up late with us to give us the best chance. Professional, dedicated, and he truly cares."
+    },
+    {
+      "name": "Linda & Tom Wetzel",
+      "initial": "L",
+      "photo": null,
+      "rating": 5,
+      "relativeTime": "",
+      "text": "We weren't sure how to begin selling our Waukesha home. Lucas and Jacob outlined every option with zero pressure, when to list, what to update, how to stage. He lined up a contractor, a power washer, and the photographer, and put in tremendous effort. The marketing worked and we had a strong offer in just four days. He may be new to real estate, but it never showed."
+    },
+    {
+      "name": "Pres Kinee",
+      "initial": "P",
+      "photo": null,
+      "rating": 5,
+      "relativeTime": "",
+      "text": "I was referred to Lucas by a coworker when searching for our first home, and right away he made us feel comfortable, informed, and supported. My favorite part was how responsive and down-to-earth he was, no matter how many questions we had, he explained everything clearly and never made us feel pressured. He truly had our best interests in mind."
+    },
+    {
+      "name": "Sara Rodríguez Mora",
+      "initial": "S",
+      "photo": null,
+      "rating": 5,
+      "relativeTime": "",
+      "text": "Lucas was always available, always professional, and understood exactly what we were looking for. His communication was clear and timely, scheduling showings, negotiating offers, working through paperwork. I'm thankful to have known Lucas since we were babies, which made him an even better choice to help find our dream home!"
+    }
+  ]
+}

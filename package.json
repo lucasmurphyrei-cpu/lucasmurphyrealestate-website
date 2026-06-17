@@ -11,6 +11,7 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
+    "reviews:fetch": "node scripts/fetch-google-reviews.mjs",
     "seo:sitemap": "tsx scripts/sitemap.ts",
     "seo:llms": "tsx scripts/llms.ts",
     "prebuild": "tsx scripts/sitemap.ts && tsx scripts/llms.ts",

@@ -52,7 +52,7 @@ const Contact = () => {
     } catch {
       toast({
         title: "Something went wrong",
-        description: "Please try again or call us directly at (414)-269-4909.",
+        description: "Please try again or call us directly at (414)-458-1952.",
         variant: "destructive",
       });
     } finally {
@@ -124,7 +124,7 @@ const Contact = () => {
               <Phone className="mt-1 h-5 w-5 text-primary" />
               <div>
                 <p className="font-medium">Call Us</p>
-                <a href="tel:4142694909" className="text-sm text-muted-foreground hover:text-primary transition-colors">(414)-269-4909</a>
+                <a href="tel:4144581952" className="text-sm text-muted-foreground hover:text-primary transition-colors">(414)-458-1952</a>
               </div>
             </div>
           </div>
