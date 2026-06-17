@@ -562,7 +562,7 @@ export default function BudgetPlannerDetailed() {
                     {fixedCosts.map((row, i) => (
                       <div key={row.id} className={`flex items-center gap-2 ${row.id === "loanPayments" ? "relative z-20" : ""}`}>
                         {row.id === "loanPayments" ? (
-                          <div className="relative w-32 shrink-0 sm:w-40">
+                          <div className="relative w-24 shrink-0 sm:w-40">
                             <input id={`fc-label-${i}`} onKeyDown={colTab("fc-label", i, fixedCosts.length)} value={row.label} onChange={(e) => updateRow(row.id, "label", e.target.value)} placeholder="Expense name" className={`${rowInputCls} w-full px-3 pr-8 font-semibold !border-accent/60 !text-accent`} />
                             <span className="group absolute right-2 top-1/2 -translate-y-1/2">
                               <Info className="h-4 w-4 cursor-help text-accent" />
@@ -574,9 +574,9 @@ export default function BudgetPlannerDetailed() {
                             </span>
                           </div>
                         ) : (
-                          <input id={`fc-label-${i}`} onKeyDown={colTab("fc-label", i, fixedCosts.length)} value={row.label} onChange={(e) => updateRow(row.id, "label", e.target.value)} placeholder="Expense name" className={`${rowInputCls} w-32 shrink-0 px-3 sm:w-40`} />
+                          <input id={`fc-label-${i}`} onKeyDown={colTab("fc-label", i, fixedCosts.length)} value={row.label} onChange={(e) => updateRow(row.id, "label", e.target.value)} placeholder="Expense name" className={`${rowInputCls} w-24 shrink-0 px-3 sm:w-40`} />
                         )}
-                        <div className="relative flex-1">
+                        <div className="relative flex-1 min-w-0">
                           <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-muted-foreground">$</span>
                           <MoneyInput id={`fc-amount-${i}`} onKeyDown={colTab("fc-amount", i, fixedCosts.length)} value={row.amount} onChange={(v) => updateRow(row.id, "amount", v)} placeholder={row.hint} className={`${rowInputCls} pl-7 pr-3`} />
                         </div>
@@ -586,7 +586,7 @@ export default function BudgetPlannerDetailed() {
                     ))}
                   </div>
                   <div className="mt-3 flex items-center gap-2 border-t border-border pt-3">
-                    <span className="w-32 shrink-0 text-sm font-semibold sm:w-40">Total</span>
+                    <span className="w-24 shrink-0 text-sm font-semibold sm:w-40">Total</span>
                     <span className="flex-1 text-sm font-semibold">{usd(fixedTotal)}</span>
                     <span className="w-10 shrink-0 text-right text-xs font-semibold tabular-nums">{pctOf(fixedTotal)}%</span>
                     <span className="h-9 w-8 shrink-0" />
@@ -602,7 +602,7 @@ export default function BudgetPlannerDetailed() {
                     {subs.map((s, i) => (
                       <div key={s.id}>
                         <div className="flex items-center gap-2">
-                          <input id={`sub-name-${i}`} onKeyDown={colTab("sub-name", i, subs.length)} value={s.name} onChange={(e) => updateSub(s.id, "name", e.target.value)} placeholder="Subscription name" className={`${rowInputCls} flex-1 px-3`} />
+                          <input id={`sub-name-${i}`} onKeyDown={colTab("sub-name", i, subs.length)} value={s.name} onChange={(e) => updateSub(s.id, "name", e.target.value)} placeholder="Subscription name" className={`${rowInputCls} flex-1 min-w-0 px-3`} />
                           <div className="relative w-28 shrink-0">
                             <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-muted-foreground">$</span>
                             <MoneyInput id={`sub-cost-${i}`} onKeyDown={colTab("sub-cost", i, subs.length)} value={s.cost} onChange={(v) => updateSub(s.id, "cost", v)} placeholder={s.hint} className={`${rowInputCls} pl-7 pr-3`} />
@@ -665,7 +665,7 @@ export default function BudgetPlannerDetailed() {
                   <div className="mt-4 space-y-2">
                     {guiltFree.map((row, i) => (
                       <div key={row.id} className="flex items-center gap-2">
-                        <input id={`gf-label-${i}`} onKeyDown={colTab("gf-label", i, guiltFree.length)} value={row.label} onChange={(e) => updateGf(row.id, "label", e.target.value)} placeholder="Category name" className={`${rowInputCls} w-40 shrink-0 px-3 sm:w-48`} />
+                        <input id={`gf-label-${i}`} onKeyDown={colTab("gf-label", i, guiltFree.length)} value={row.label} onChange={(e) => updateGf(row.id, "label", e.target.value)} placeholder="Category name" className={`${rowInputCls} w-28 shrink-0 px-3 sm:w-48`} />
                         <div className="relative flex-1">
                           <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-muted-foreground">$</span>
                           <MoneyInput id={`gf-amount-${i}`} onKeyDown={colTab("gf-amount", i, guiltFree.length)} value={row.amount} onChange={(v) => updateGf(row.id, "amount", v)} placeholder={row.hint} className={`${rowInputCls} pl-7 pr-3`} />
@@ -704,7 +704,7 @@ export default function BudgetPlannerDetailed() {
                     {savingsRows.map((row, i) => (
                       <div key={row.id}>
                         <div className="flex items-center gap-2">
-                          <input id={`sv-label-${i}`} onKeyDown={colTab("sv-label", i, savingsRows.length)} value={row.label} onChange={(e) => updateSav(row.id, "label", e.target.value)} placeholder="Savings category" className={`${rowInputCls} flex-1 px-3`} />
+                          <input id={`sv-label-${i}`} onKeyDown={colTab("sv-label", i, savingsRows.length)} value={row.label} onChange={(e) => updateSav(row.id, "label", e.target.value)} placeholder="Savings category" className={`${rowInputCls} flex-1 min-w-0 px-3`} />
                           <div className="relative w-28 shrink-0">
                             <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-muted-foreground">$</span>
                             <MoneyInput id={`sv-amount-${i}`} onKeyDown={colTab("sv-amount", i, savingsRows.length)} value={row.amount} onChange={(v) => updateSav(row.id, "amount", v)} placeholder={row.hint} className={`${rowInputCls} pl-7 pr-3`} />
