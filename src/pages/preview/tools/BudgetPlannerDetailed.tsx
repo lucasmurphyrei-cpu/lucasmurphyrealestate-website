@@ -402,6 +402,11 @@ export default function BudgetPlannerDetailed() {
   const leftForSaving = Math.max(0, housingCapacity - comfortTarget); // money to deploy after the comfortable payment (gap + savings residual)
   const afterHousingLeftover = leftover + rentMortgage - comfortTarget; // truly unspent after the new payment + current savings + lifestyle (can go negative)
   const comfortableVsApprovedGap = Math.max(0, rangeHigh - comfortTarget); // lender ceiling minus your comfortable number
+  // Step 5 "Now vs After" — the snapshot (taken on entering Step 5) is the "Now" column; live values are "After".
+  const snap = snapshotRef.current;
+  const snapGf = snap ? snap.guiltFree.reduce((a, r) => a + r.amount, 0) : gfTotal;
+  const snapSavings = snap ? snap.savingsRows.reduce((a, r) => a + r.amount, 0) : savingsTotal;
+  const snapLeftover = leftAfterFixed - snapGf - snapSavings; // current unspent at the current rent
   const gauge: "green" | "yellow" | "red" =
     comfortTarget <= range.conservativePayment + 1 ? "green" : comfortTarget <= range.stretchPayment + 1 ? "yellow" : "red";
 
@@ -1107,23 +1112,49 @@ export default function BudgetPlannerDetailed() {
                 <h2 className="mt-2 font-display text-2xl font-medium tracking-[-0.02em]">Deploy what's left after the house</h2>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">With your payment set, you'd have about <strong className="text-foreground">{usd(leftForSaving)}/mo</strong> left each month. This is the money to deploy: more into saving and investing, more lifestyle, or a bigger down payment. If you're saving for a down payment now, that money frees up once you buy, so it can flow anywhere. Edit the boxes below and watch your number move.</p>
 
+                {/* Editable comfortable payment — lower it to free up more */}
                 <div className="mt-5 rounded-sm bg-card p-4 ring-1 ring-accent/20">
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">Right now</p>
-                  <p className="mt-1 font-display text-2xl font-semibold tracking-[-0.02em]">{usd(comfortTarget)}/mo <span className="text-base font-normal text-muted-foreground">&rarr; ~{usd(price)} home</span></p>
-                  <span className={`mt-2 inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold ${gauge === "green" ? "bg-emerald-500/15 text-emerald-600" : gauge === "yellow" ? "bg-amber-500/15 text-amber-600" : "bg-red-500/15 text-red-600"}`}>
-                    <span className={`h-2 w-2 rounded-full ${gauge === "green" ? "bg-emerald-500" : gauge === "yellow" ? "bg-amber-500" : "bg-red-500"}`} />
-                    {gauge === "green" ? "Within budget" : gauge === "yellow" ? "Stretch" : "Over budget"}
-                  </span>
+                  <div className="grid gap-4 sm:grid-cols-2 sm:items-center">
+                    <div>
+                      <label className={labelCls}>Your comfortable payment / month</label>
+                      <div className="relative">
+                        <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-base text-muted-foreground">$</span>
+                        <MoneyInput value={comfortTarget} onChange={setComfortPayment} className={`${fieldCls} pl-8 text-lg font-semibold`} />
+                      </div>
+                      <p className="mt-1.5 text-[11px] text-muted-foreground">Want more for a category below? <strong className="text-foreground">Lower this</strong> to free it up. {comfortPayment > 0 && <button type="button" onClick={() => setComfortPayment(0)} className="font-semibold text-accent hover:underline">Reset</button>}</p>
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">Supports about</p>
+                      <p className="mt-1 font-display text-2xl font-semibold tracking-[-0.02em]">{usd(price)}</p>
+                      <span className={`mt-2 inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold ${gauge === "green" ? "bg-emerald-500/15 text-emerald-600" : gauge === "yellow" ? "bg-amber-500/15 text-amber-600" : "bg-red-500/15 text-red-600"}`}>
+                        <span className={`h-2 w-2 rounded-full ${gauge === "green" ? "bg-emerald-500" : gauge === "yellow" ? "bg-amber-500" : "bg-red-500"}`} />
+                        {gauge === "green" ? "Within budget" : gauge === "yellow" ? "Stretch" : "Over budget"}
+                      </span>
+                    </div>
+                  </div>
                 </div>
 
-                {/* Live deploy / stress indicator */}
-                <div className="mt-3 rounded-sm bg-card/60 p-3 text-xs leading-relaxed">
-                  <p className="text-muted-foreground">After your <strong className="text-foreground">{usd(comfortTarget)}/mo</strong> payment, your saving &amp; investing (<strong className="text-foreground">{usd(savingsTotal)}/mo</strong>) and lifestyle (<strong className="text-foreground">{usd(gfTotal)}/mo</strong>), you'd have {afterHousingLeftover >= 0 ? <><strong className="text-emerald-600">{usd(afterHousingLeftover)}/mo unspent</strong>. Room to invest more, add lifestyle, or grow your down payment.</> : <><strong className="text-red-600">{usd(Math.abs(afterHousingLeftover))}/mo over</strong> your income. Trim a category below or lower your payment.</>}</p>
+                {/* Now vs. After you buy — the contrast */}
+                <div className="mt-5 overflow-hidden rounded-sm border border-border">
+                  <div className="grid grid-cols-[1.3fr,1fr,1fr] bg-secondary/50 text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
+                    <span className="px-3 py-2">Monthly</span>
+                    <span className="px-3 py-2 text-right">Now</span>
+                    <span className="px-3 py-2 text-right text-accent">After you buy</span>
+                  </div>
+                  {([
+                    ["Housing payment", rentMortgage, comfortTarget, false],
+                    ["Lifestyle (guilt-free)", snapGf, gfTotal, false],
+                    ["Saving & investing", snapSavings, savingsTotal, false],
+                    ["Left unspent", snapLeftover, afterHousingLeftover, true],
+                  ] as [string, number, number, boolean][]).map(([label, now, after, isTotal]) => (
+                    <div key={label} className={`grid grid-cols-[1.3fr,1fr,1fr] text-xs ${isTotal ? "border-t-2 border-border font-semibold" : "border-t border-border"}`}>
+                      <span className="min-w-0 px-3 py-2 text-muted-foreground">{label}</span>
+                      <span className="px-3 py-2 text-right tabular-nums">{usd(now)}</span>
+                      <span className={`px-3 py-2 text-right tabular-nums ${isTotal && after < 0 ? "text-red-600" : "text-foreground"}`}>{usd(after)}</span>
+                    </div>
+                  ))}
                 </div>
-
-                {comfortPayment > 0 && comfortPayment > range.tuned(redirectPct) + 1 && (
-                  <p className="mt-3 rounded-sm bg-red-500/10 p-3 text-xs leading-relaxed text-red-700">Your <strong>{usd(comfortPayment)}/mo</strong> is <strong>{usd(comfortPayment - range.tuned(redirectPct))}/mo above</strong> what your plan supports. Trim lifestyle or saving below, or lower your payment, so this number stays sustainable. Keep retirement and emergency protected.</p>
-                )}
+                <p className="mt-2 text-[11px] leading-relaxed text-muted-foreground">Your housing payment goes from <strong className="text-foreground">{usd(rentMortgage)}</strong> to <strong className="text-foreground">{usd(comfortTarget)}</strong>, leaving {comfortTarget - rentMortgage >= 0 ? <><strong className="text-foreground">{usd(comfortTarget - rentMortgage)} less</strong></> : <><strong className="text-foreground">{usd(rentMortgage - comfortTarget)} more</strong></>} for everything else. {afterHousingLeftover >= 0 ? <>Redeploy the remaining <strong className="text-accent">{usd(afterHousingLeftover)}/mo</strong> into the boxes below.</> : <>You're <strong className="text-red-600">{usd(Math.abs(afterHousingLeftover))}/mo over</strong>, trim a box below or lower your payment.</>}</p>
 
                 {/* Editable lifestyle (guilt-free) — updates the number live */}
                 <div className="mt-5 rounded-sm border border-border bg-card p-4">
