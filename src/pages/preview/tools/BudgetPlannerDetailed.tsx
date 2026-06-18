@@ -5,6 +5,7 @@ import PreviewHeader from "@/pages/preview/_shared/PreviewHeader";
 import PreviewFooter from "@/pages/preview/_shared/PreviewFooter";
 import MoneyInput from "@/pages/preview/_shared/MoneyInput";
 import Seo from "@/components/seo/Seo";
+import { bucketSavings, isProtectedByDefault, paymentRange, solveAllInPrice, cashPicture, rateSensitivity, type SavingsLine } from "./budget-planner/affordabilityModel";
 
 const usd = (n: number) =>
   new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(
@@ -281,6 +282,19 @@ export default function BudgetPlannerDetailed() {
   const [showAdvAfford, setShowAdvAfford] = useState(false);
   const [timelinePhil, setTimelinePhil] = useState<"ramsey" | "conventional" | "fha" | "aggressive">("conventional");
 
+  // Step 4/5 tuning state
+  const [protectedIds, setProtectedIds] = useState<Set<string>>(new Set()); // empty = label heuristic
+  const [downMode, setDownMode] = useState<"percent" | "dollar">("percent");
+  const [hoaMonthly, setHoaMonthly] = useState(0);
+  const [maintenanceOn, setMaintenanceOn] = useState(true);
+  const [maintenancePct, setMaintenancePct] = useState(1.0);
+  const [closingOn, setClosingOn] = useState(true);
+  const [closingPct, setClosingPct] = useState(3.0);
+  const [rateSensOn, setRateSensOn] = useState(true);
+  const [capitalAvailable, setCapitalAvailable] = useState(0); // dollars they can deploy
+  const [redirectPct, setRedirectPct] = useState(0); // 0..1 flexible-investing redirect (Step 5)
+  const snapshotRef = useRef<{ guiltFree: FixedRow[]; savingsRows: FixedRow[] } | null>(null);
+
   // ── Income derived ──
   const filingStatus: Filing = showTax ? filing : "single";
   let annualGross: number, effectiveTaxRate: number, annualNet: number;
@@ -353,38 +367,48 @@ export default function BudgetPlannerDetailed() {
   const dpNeeded = timeline.downPaymentAmount;
   const dpRemaining = Math.max(0, dpNeeded - down);
   const monthsToGoal = monthlySavingsForHome > 0 ? Math.ceil(dpRemaining / monthlySavingsForHome) : null;
-  const budgetHousing = Math.max(0, leftover + rentMortgage);
-  const ruleHousing = Math.max(0, Math.min(0.28 * monthlyGross, 0.36 * monthlyGross - debts));
-  const recommended = Math.min(budgetHousing, ruleHousing);
-  // Step 4 works backward from the payment the buyer is actually comfortable with.
-  // Defaults to the recommended housing budget until they set their own number.
-  const comfortTarget = comfortPayment > 0 ? comfortPayment : Math.round(recommended);
-  const likelyLeftover = availableForSavings; // net - (fixed + subs) - guilt-free
-  const housingCapacity = Math.max(0, likelyLeftover + rentMortgage); // current rent converts into the new payment
-  const rangeHigh = Math.round(ruleHousing); // 28/36 ceiling = suggested housing payment
-  const rangeLow = Math.round(Math.min(rangeHigh, monthlyGross * 0.25)); // conservative 25%-of-gross floor
-  const paymentDelta = rangeHigh - rentMortgage; // change vs. current rent/mortgage
-  const leftForSaving = Math.max(0, housingCapacity - rangeHigh); // left for saving/investing after the new payment
+  // ----- Step 4/5 affordability via the pure, tested model -----
+  const savingsLines: SavingsLine[] = savingsRows.map((r) => ({
+    label: r.label,
+    amount: r.amount,
+    isDownPayment: r.id === "monthlySavings",
+    protectedFlag: protectedIds.size ? protectedIds.has(r.id) : isProtectedByDefault(r.label),
+  }));
+  const buckets = bucketSavings(savingsLines);
+  const range = paymentRange({
+    monthlyNet, monthlyGross, debts, fixedTotal, subsMonthly, gfTotal,
+    protectedTotal: buckets.protectedTotal, flexibleTotal: buckets.flexibleTotal,
+    downPaymentSavings: buckets.downPaymentSavings, rentMortgage,
+  });
+  const recommended = range.conservativePayment;
+  const likelyLeftover = availableForSavings; // net - (fixed + subs) - guilt-free (pre-savings)
+  const comfortTarget = comfortPayment > 0 ? comfortPayment : Math.round(range.tuned(redirectPct));
+  const housingCapacity = Math.max(0, range.leftover + rentMortgage + buckets.downPaymentSavings + buckets.flexibleTotal);
+  const rangeHigh = Math.round(range.lenderMaxPayment); // 28/36 ceiling = what a lender approves
+  const rangeLow = Math.round(Math.min(rangeHigh, monthlyGross * 0.25));
+  const paymentDelta = rangeHigh - rentMortgage;
+  const leftForSaving = Math.max(0, housingCapacity - comfortTarget); // flexibility kept if they don't max out
 
-  const factor = piPerDollar(rate, term);
-  let price = down;
-  for (let i = 0; i < 10; i++) {
-    const mTax = (price * (taxRate / 100)) / 12;
-    const mIns = (price * 0.004) / 12;
-    const loanG = Math.max(0, price - down);
-    const dpP = price > 0 ? (down / price) * 100 : 100;
-    const mPMI = dpP < 20 ? (loanG * 0.005) / 12 : 0;
-    const piB = Math.max(0, comfortTarget - mTax - mIns - mPMI);
-    const ln = factor > 0 ? piB / factor : 0;
-    price = ln + down;
-  }
-  const loan = Math.max(0, price - down);
-  const pi = loan * factor;
-  const tax = (price * (taxRate / 100)) / 12;
-  const ins = (price * 0.004) / 12;
-  const mortDpPct = price > 0 ? (down / price) * 100 : 0;
-  const pmi = mortDpPct < 20 ? (loan * 0.005) / 12 : 0;
-  const payment = pi + tax + ins + pmi;
+  // Loan inputs — maintenance/closing are rule-of-thumb toggles (0 when off)
+  const pmiRateEff = loanType === "fha" ? 0.55 : pmiRate;
+  const effMaintPct = maintenanceOn ? maintenancePct : 0;
+  const effClosingPct = closingOn ? closingPct : 0;
+  const allInInputs = {
+    targetPayment: comfortTarget, downAmount: down, rate, term,
+    taxRatePct: taxRate, homeInsAnnual: homeIns, pmiRatePct: pmiRateEff,
+    hoaMonthly, maintenancePctPerYear: effMaintPct,
+  };
+  const allIn = solveAllInPrice(allInInputs);
+  const price = allIn.price;
+  const payment = allIn.allInPayment;
+  const loan = allIn.loan;
+  const pi = allIn.pi;
+  const tax = allIn.taxMonthly;
+  const ins = allIn.insMonthly;
+  const pmi = allIn.pmiMonthly;
+  const mortDpPct = allIn.downPctResolved;
+  const cash = cashPicture({ price, downAmount: down, closingPct: effClosingPct, capitalAvailable: capitalAvailable > 0 ? capitalAvailable : down, allInPayment: payment });
+  const sens = rateSensitivity(allInInputs, 1.0);
 
   const downloadBudget = () => {
     const rows: [string, number | string][] = [
