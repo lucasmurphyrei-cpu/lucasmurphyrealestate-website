@@ -394,7 +394,7 @@ export default function BudgetPlannerDetailed() {
   const effMaintPct = maintenanceOn ? maintenancePct : 0;
   const effClosingPct = closingOn ? closingPct : 0;
   const allInInputs = {
-    targetPayment: comfortTarget, downAmount: down, rate, term,
+    targetPayment: comfortTarget, downAmount: down, downMode, downPct: dpPct, rate, term,
     taxRatePct: taxRate, homeInsAnnual: homeIns, pmiRatePct: pmiRateEff,
     hoaMonthly, maintenancePctPerYear: effMaintPct,
   };
@@ -813,22 +813,43 @@ export default function BudgetPlannerDetailed() {
 
                 {/* 3 · Down payment */}
                 <div className={cardCls}>
-                  <h2 className="font-display text-xl font-semibold">How much are you planning to put down?</h2>
-                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">Your down payment percentage directly affects your max home price, monthly payment, and whether you'll pay PMI. All affordability numbers below are based on this.</p>
-                  <div className="mt-4 grid grid-cols-4 gap-2">
-                    {[{ v: 3.5, note: "FHA min" }, { v: 5, note: "Conv. min" }, { v: 10, note: "" }, { v: 20, note: "No PMI" }].map((d) => (
-                      <button key={d.v} type="button" onClick={() => setDpPct(d.v)} className={`rounded-sm border p-3 text-center transition-all ${dpPct === d.v ? "border-accent bg-accent/10 ring-1 ring-accent" : "border-border hover:border-accent/40"}`}>
-                        <p className="font-display text-lg font-bold">{d.v}%</p>
-                        {d.note && <p className="mt-0.5 text-[10px] text-muted-foreground">{d.note}</p>}
-                      </button>
-                    ))}
+                  <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
+                    <h2 className="font-display text-xl font-semibold">How much are you putting down?</h2>
+                    <div className="flex shrink-0 overflow-hidden rounded-sm border border-border text-xs">
+                      {(["percent", "dollar"] as const).map((m) => (
+                        <button key={m} type="button" onClick={() => setDownMode(m)}
+                          className={`px-3 py-1.5 font-semibold transition-colors ${downMode === m ? "bg-accent text-accent-foreground" : "bg-white text-muted-foreground hover:text-foreground"}`}>
+                          {m === "percent" ? "%" : "$"}
+                        </button>
+                      ))}
+                    </div>
                   </div>
-                  <div className="mt-4 max-w-xs">
-                    <label className={labelCls}>Or enter a custom %</label>
-                    <input type="number" min={0} max={99} step={0.5} value={dpPct} onChange={(e) => setDpPct(Math.min(+e.target.value, 99))} className={fieldCls} />
-                  </div>
+                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">Your down payment drives your max home price, monthly payment, and whether you'll pay PMI. Use <strong className="text-foreground">$</strong> if you have a set amount of capital to deploy.</p>
+                  {downMode === "percent" ? (
+                    <>
+                      <div className="mt-4 grid grid-cols-4 gap-2">
+                        {[{ v: 3.5, note: "FHA min" }, { v: 5, note: "Conv. min" }, { v: 10, note: "" }, { v: 20, note: "No PMI" }].map((d) => (
+                          <button key={d.v} type="button" onClick={() => setDpPct(d.v)} className={`rounded-sm border p-3 text-center transition-all ${dpPct === d.v ? "border-accent bg-accent/10 ring-1 ring-accent" : "border-border hover:border-accent/40"}`}>
+                            <p className="font-display text-lg font-bold">{d.v}%</p>
+                            {d.note && <p className="mt-0.5 text-[10px] text-muted-foreground">{d.note}</p>}
+                          </button>
+                        ))}
+                      </div>
+                      <div className="mt-4 max-w-xs">
+                        <label className={labelCls}>Or enter a custom %</label>
+                        <input type="number" min={0} max={99} step={0.5} value={dpPct} onChange={(e) => setDpPct(Math.min(+e.target.value, 99))} className={fieldCls} />
+                      </div>
+                      <p className="mt-2 text-xs text-muted-foreground">≈ <strong className="text-foreground">{usd(allIn.downResolved)}</strong> on a {usd(price)} home.</p>
+                    </>
+                  ) : (
+                    <div className="mt-4 max-w-xs">
+                      <label className={labelCls}>Amount you'll put down</label>
+                      <div className="relative"><span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-muted-foreground">$</span><MoneyInput value={down} onChange={setDown} placeholder="60,000" className={`${fieldCls} pl-7`} /></div>
+                      <p className="mt-2 text-xs text-muted-foreground"><strong className="text-foreground">{allIn.downPctResolved.toFixed(0)}%</strong> down on a {usd(price)} home.</p>
+                    </div>
+                  )}
                   <p className="mt-3 rounded-sm bg-secondary/50 p-3 text-xs leading-relaxed text-muted-foreground">
-                    At <strong className="text-foreground">{dpPct}% down</strong>,{dpPct < 20 ? " you'll pay PMI until you reach 20% equity (typically 0.3 to 1.5% of the loan annually)." : " you won't pay PMI, the ideal threshold for keeping monthly costs lower."}
+                    {allIn.pmiApplies ? "Under 20% down — you'll pay PMI until you reach 20% equity (typically 0.3 to 1.5% of the loan annually)." : "At 20%+ down, you won't pay PMI — the ideal threshold for keeping monthly costs lower."}
                   </p>
                 </div>
 

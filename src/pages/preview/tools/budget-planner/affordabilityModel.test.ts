@@ -90,6 +90,13 @@ describe("solveAllInPrice", () => {
     expect(noMaint.price).toBeGreaterThan(withMaint.price);
     expect(noMaint.maintenanceMonthly).toBe(0);
   });
+  it("percent mode: down scales with price and resolves to the entered %", () => {
+    const r = solveAllInPrice({ ...inputs, downMode: "percent", downPct: 20, downAmount: 0 });
+    expect(Math.abs(r.allInPayment - 2400)).toBeLessThan(15);
+    expect(r.downPctResolved).toBeCloseTo(20, 0);
+    expect(r.downResolved).toBeCloseTo(r.price * 0.2, 0);
+    expect(r.pmiApplies).toBe(false); // 20% down → no PMI
+  });
 });
 
 describe("cashPicture + rateSensitivity", () => {

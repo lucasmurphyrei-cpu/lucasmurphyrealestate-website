@@ -90,7 +90,12 @@ export function piPerDollar(annualRatePct: number, years: number): number {
 
 export interface AllInInputs {
   targetPayment: number;
+  /** fixed down payment in dollars (used when downMode is "dollar" or omitted) */
   downAmount: number;
+  /** "dollar" (fixed $) or "percent" (down scales with price). Defaults to "dollar". */
+  downMode?: "dollar" | "percent";
+  /** down payment % of price, used when downMode is "percent" */
+  downPct?: number;
   rate: number;
   term: number;
   taxRatePct: number;
@@ -103,35 +108,41 @@ export interface AllInInputs {
 
 export function solveAllInPrice(i: AllInInputs) {
   const factor = piPerDollar(i.rate, i.term);
-  let price = i.downAmount;
-  for (let k = 0; k < 24; k++) {
+  const isPct = i.downMode === "percent";
+  const pct = isPct ? Math.max(0, Math.min(99, i.downPct ?? 0)) / 100 : 0;
+  // seed positive for both modes; the iteration is a contraction and converges fast
+  let price = Math.max(i.downAmount, i.targetPayment * 150, 1);
+  for (let k = 0; k < 32; k++) {
+    const dn = isPct ? price * pct : i.downAmount;
     const mTax = (price * (i.taxRatePct / 100)) / 12;
     const mIns = i.homeInsAnnual / 12;
     const mMaint = (price * (i.maintenancePctPerYear / 100)) / 12;
-    const loanG = Math.max(0, price - i.downAmount);
-    const dpP = price > 0 ? (i.downAmount / price) * 100 : 100;
+    const loanG = Math.max(0, price - dn);
+    const dpP = isPct ? pct * 100 : price > 0 ? (dn / price) * 100 : 100;
     const mPMI = dpP < 20 ? (loanG * (i.pmiRatePct / 100)) / 12 : 0;
     const piBudget = Math.max(0, i.targetPayment - mTax - mIns - mMaint - mPMI - i.hoaMonthly);
     const loan = factor > 0 ? piBudget / factor : 0;
-    const next = loan + i.downAmount;
+    const next = isPct ? (pct < 1 ? loan / (1 - pct) : dn) : loan + i.downAmount;
     if (Math.abs(next - price) < 1) {
       price = next;
       break;
     }
     price = next;
   }
-  const loan = Math.max(0, price - i.downAmount);
+  const downResolved = isPct ? price * pct : i.downAmount;
+  const loan = Math.max(0, price - downResolved);
   const pi = loan * factor;
   const taxMonthly = (price * (i.taxRatePct / 100)) / 12;
   const insMonthly = i.homeInsAnnual / 12;
   const maintenanceMonthly = (price * (i.maintenancePctPerYear / 100)) / 12;
-  const downPctResolved = price > 0 ? (i.downAmount / price) * 100 : 0;
+  const downPctResolved = price > 0 ? (downResolved / price) * 100 : 0;
   const pmiApplies = downPctResolved < 20;
   const pmiMonthly = pmiApplies ? (loan * (i.pmiRatePct / 100)) / 12 : 0;
   const allInPayment = pi + taxMonthly + insMonthly + maintenanceMonthly + pmiMonthly + i.hoaMonthly;
   return {
     price,
     loan,
+    downResolved,
     pi,
     taxMonthly,
     insMonthly,
