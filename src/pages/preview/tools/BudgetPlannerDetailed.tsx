@@ -298,7 +298,7 @@ export default function BudgetPlannerDetailed() {
   const [protectedIds, setProtectedIds] = useState<Set<string>>(new Set()); // empty = label heuristic
   const [downMode, setDownMode] = useState<"percent" | "dollar">("percent");
   const [hoaMonthly, setHoaMonthly] = useState(0);
-  const [maintenanceOn, setMaintenanceOn] = useState(true);
+  const [maintenanceOn, setMaintenanceOn] = useState(false);
   const [maintenancePct, setMaintenancePct] = useState(1.0);
   const [closingOn, setClosingOn] = useState(true);
   const [closingPct, setClosingPct] = useState(3.0);
@@ -395,11 +395,12 @@ export default function BudgetPlannerDetailed() {
   const recommended = range.conservativePayment;
   const likelyLeftover = availableForSavings; // net - (fixed + subs) - guilt-free (pre-savings)
   const comfortTarget = comfortPayment > 0 ? comfortPayment : Math.round(range.tuned(redirectPct));
-  const housingCapacity = Math.max(0, range.leftover + rentMortgage + buckets.downPaymentSavings + buckets.flexibleTotal);
+  const housingCapacity = Math.max(0, availableForSavings + rentMortgage); // money available for housing + savings (rent converts into the payment)
   const rangeHigh = Math.round(range.lenderMaxPayment); // 28/36 ceiling = what a lender approves
   const rangeLow = Math.round(Math.min(rangeHigh, monthlyGross * 0.25));
   const paymentDelta = rangeHigh - rentMortgage;
-  const leftForSaving = Math.max(0, housingCapacity - comfortTarget); // flexibility kept if they don't max out
+  const leftForSaving = Math.max(0, housingCapacity - rangeHigh); // left for saving/investing after the suggested payment
+  const comfortableVsApprovedGap = Math.max(0, rangeHigh - comfortTarget); // lender ceiling minus your comfortable number
   const gauge: "green" | "yellow" | "red" =
     comfortTarget <= range.conservativePayment + 1 ? "green" : comfortTarget <= range.stretchPayment + 1 ? "yellow" : "red";
 
@@ -977,7 +978,7 @@ export default function BudgetPlannerDetailed() {
                 </div>
 
                 {/* Comfortable vs. approved — the gap is yours */}
-                <p className="mt-3 rounded-sm bg-card/60 p-3 text-xs leading-relaxed text-muted-foreground">A lender will likely approve you for around <strong className="text-foreground">{usd(rangeHigh)}/mo</strong>. Your comfortable number is <strong className="text-foreground">{usd(comfortTarget)}/mo</strong>. That <strong className="text-accent">{usd(range.comfortableVsApprovedGapAt(redirectPct))}/mo</strong> gap is yours — for travel, investing, or just breathing room.</p>
+                <p className="mt-3 rounded-sm bg-card/60 p-3 text-xs leading-relaxed text-muted-foreground">A lender will likely approve you for around <strong className="text-foreground">{usd(rangeHigh)}/mo</strong>. Your comfortable number is <strong className="text-foreground">{usd(comfortTarget)}/mo</strong>. That <strong className="text-accent">{usd(comfortableVsApprovedGap)}/mo</strong> gap is yours — for travel, investing, or just breathing room.</p>
 
                 {/* All-in monthly breakdown + rule-of-thumb adjusters */}
                 <div className="mt-4 rounded-sm border border-border bg-card p-4">
@@ -993,7 +994,7 @@ export default function BudgetPlannerDetailed() {
                     {hoaMonthly > 0 && <Line l="HOA dues" v={usd(hoaMonthly)} />}
                     {maintenanceOn && <Line l={`Maintenance reserve (${maintenancePct}%/yr)`} v={usd(allIn.maintenanceMonthly)} />}
                   </div>
-                  <p className="mt-2 text-[11px] leading-relaxed text-muted-foreground">Includes the upkeep renters never pay. <strong className="text-foreground">Rules of thumb — adjust or turn off.</strong> The 1% maintenance rule overstates on pricier homes and understates on very cheap or older ones.</p>
+                  <p className="mt-2 text-[11px] leading-relaxed text-muted-foreground"><strong className="text-foreground">Maintenance is off by default — turn it on</strong> to reserve for the upkeep renters never pay (it'll make your number more honest, and a bit lower). These are rules of thumb you can adjust: the ~1%/yr maintenance rule overstates on pricier homes and understates on cheap or older ones.</p>
                   <div className="mt-3 grid gap-3 sm:grid-cols-3">
                     <label className="flex flex-col gap-1">
                       <span className="flex items-center justify-between text-[11px]"><span className="font-semibold text-muted-foreground">Maintenance %/yr</span><button type="button" onClick={() => setMaintenanceOn((v) => !v)} className={`text-[10px] font-semibold ${maintenanceOn ? "text-accent" : "text-muted-foreground"}`}>{maintenanceOn ? "On" : "Off"}</button></span>
@@ -1113,46 +1114,39 @@ export default function BudgetPlannerDetailed() {
                   <p className="mt-3 rounded-sm bg-red-500/10 p-3 text-xs leading-relaxed text-red-700">Your <strong>{usd(comfortPayment)}/mo</strong> is <strong>{usd(comfortPayment - range.tuned(redirectPct))}/mo above</strong> what your plan supports. Trim lifestyle spending or redirect more investing below — or this number won't be sustainable. Retirement &amp; emergency stay protected.</p>
                 )}
 
-                {buckets.flexibleTotal > 0 && (
-                  <div className="mt-5">
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="font-semibold text-muted-foreground">Redirect flexible investing &rarr; the home</span>
-                      <span className="font-semibold">{Math.round(redirectPct * 100)}% of {usd(buckets.flexibleTotal)}/mo</span>
-                    </div>
-                    <input type="range" min={0} max={100} step={5} value={Math.round(redirectPct * 100)} onChange={(e) => { setRedirectPct(+e.target.value / 100); setComfortPayment(0); }} className="mt-2 w-full accent-[hsl(44,96%,50%)]" />
-                    <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground">A bigger payment builds equity instead of a separate brokerage balance. Early on, some of it is interest, and equity is less liquid, so it's a real tradeoff, not free money.</p>
+                {/* Editable lifestyle (guilt-free) — updates the number live */}
+                <div className="mt-5 rounded-sm border border-border bg-card p-4">
+                  <div className="flex items-center justify-between">
+                    <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">Lifestyle (guilt-free) spending</p>
+                    <span className="text-xs font-semibold">{usd(gfTotal)}/mo</span>
                   </div>
-                )}
-
-                <div className="mt-5 flex flex-wrap items-center justify-between gap-x-3 gap-y-1 text-xs">
-                  <span className="font-semibold text-muted-foreground">Monthly lifestyle (guilt-free) spending</span>
-                  <span className="font-semibold">{usd(gfTotal)}/mo</span>
+                  <div className="mt-2 space-y-2">
+                    {guiltFree.map((row) => (
+                      <div key={row.id} className="flex items-center gap-2">
+                        <input value={row.label} onChange={(e) => updateGf(row.id, "label", e.target.value)} placeholder="Category" className={`${rowInputCls} flex-1 min-w-0 px-3`} />
+                        <div className="relative w-28 shrink-0"><span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-muted-foreground">$</span><MoneyInput value={row.amount} onChange={(v) => updateGf(row.id, "amount", v)} className={`${rowInputCls} pl-7 pr-3`} /></div>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="mt-2 text-[11px] leading-relaxed text-muted-foreground">Edit these to match the life you actually want after you move. <strong className="text-foreground">More lifestyle = a smaller payment; less = bigger.</strong> Your number above moves as you type.</p>
                 </div>
-                <p className="mt-1 text-[11px] text-muted-foreground">Less lifestyle spending frees up more for the payment, and vice versa. Edit those categories in <button type="button" onClick={() => goStep(1)} className="font-semibold text-accent hover:underline">Step 2</button>.</p>
 
-                {savingsRows.length > 0 && (
-                  <div className="mt-5 rounded-sm border border-border bg-card p-4">
-                    <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">Your savings &mdash; tap to protect or free up</p>
-                    <div className="mt-2 space-y-1">
-                      {savingsRows.map((r) => {
-                        const isProt = protectedIds.size ? protectedIds.has(r.id) : isProtectedByDefault(r.label);
-                        return (
-                          <button key={r.id} type="button"
-                            onClick={() => setProtectedIds((prev) => {
-                              const base = prev.size ? prev : new Set(savingsRows.filter((x) => isProtectedByDefault(x.label)).map((x) => x.id));
-                              const n = new Set(base);
-                              if (n.has(r.id)) n.delete(r.id); else n.add(r.id);
-                              return n;
-                            })}
-                            className="flex w-full items-center justify-between gap-2 rounded-sm px-2 py-1.5 text-left text-xs transition-colors hover:bg-secondary/50">
-                            <span className="min-w-0 truncate">{r.label || "Savings"} &middot; {usd(r.amount)}/mo</span>
-                            <span className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-semibold ${isProt ? "bg-secondary text-muted-foreground" : "bg-accent/15 text-accent"}`}>{isProt ? "Protected" : "Flexible"}</span>
-                          </button>
-                        );
-                      })}
-                    </div>
+                {/* Editable saving & investing — updates the number live */}
+                <div className="mt-5 rounded-sm border border-border bg-card p-4">
+                  <div className="flex items-center justify-between">
+                    <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">Saving &amp; investing</p>
+                    <span className="text-xs font-semibold">{usd(savingsTotal)}/mo</span>
                   </div>
-                )}
+                  <div className="mt-2 space-y-2">
+                    {savingsRows.map((row) => (
+                      <div key={row.id} className="flex items-center gap-2">
+                        <input value={row.label} onChange={(e) => updateSav(row.id, "label", e.target.value)} placeholder="Category" className={`${rowInputCls} flex-1 min-w-0 px-3`} />
+                        <div className="relative w-28 shrink-0"><span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-muted-foreground">$</span><MoneyInput value={row.amount} onChange={(v) => updateSav(row.id, "amount", v)} className={`${rowInputCls} pl-7 pr-3`} /></div>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="mt-2 text-[11px] leading-relaxed text-muted-foreground"><strong className="text-foreground">Lower a number to put more toward the home</strong> (equity is wealth-building too); raise it to keep more invested and liquid. Just keep retirement &amp; emergency funded — that's your safety net.</p>
+                </div>
 
                 <p className="mt-5 rounded-sm bg-secondary/50 p-3 text-xs leading-relaxed text-muted-foreground">Is your guilt-free spending realistic for life <em>after</em> you move? Add the trips, dining, and hobbies you want to keep doing, so this number reflects the life you actually want. <button type="button" onClick={() => goStep(1)} className="font-semibold text-accent hover:underline">Add them in Step 2 &rarr;</button></p>
 
