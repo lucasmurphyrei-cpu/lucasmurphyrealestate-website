@@ -399,7 +399,8 @@ export default function BudgetPlannerDetailed() {
   const rangeHigh = Math.round(range.lenderMaxPayment); // 28/36 ceiling = what a lender approves
   const rangeLow = Math.round(Math.min(rangeHigh, monthlyGross * 0.25));
   const paymentDelta = rangeHigh - rentMortgage;
-  const leftForSaving = Math.max(0, housingCapacity - rangeHigh); // left for saving/investing after the suggested payment
+  const leftForSaving = Math.max(0, housingCapacity - comfortTarget); // money to deploy after the comfortable payment (gap + savings residual)
+  const afterHousingLeftover = leftover + rentMortgage - comfortTarget; // truly unspent after the new payment + current savings + lifestyle (can go negative)
   const comfortableVsApprovedGap = Math.max(0, rangeHigh - comfortTarget); // lender ceiling minus your comfortable number
   const gauge: "green" | "yellow" | "red" =
     comfortTarget <= range.conservativePayment + 1 ? "green" : comfortTarget <= range.stretchPayment + 1 ? "yellow" : "red";
@@ -932,7 +933,7 @@ export default function BudgetPlannerDetailed() {
                   <div className="flex justify-between border-t border-border pt-2 font-semibold"><span>Likely left over each month</span><span className={likelyLeftover >= 0 ? "text-accent" : "text-red-500"}>{usd(likelyLeftover)}</span></div>
                 </div>
 
-                <p className="mt-3 rounded-sm bg-card p-3 text-xs leading-relaxed text-muted-foreground">You currently pay <strong className="text-foreground">{usd(rentMortgage)}/mo</strong> toward rent or a mortgage. The 28/36 rule suggests a housing payment of about <strong className="text-foreground">{usd(rangeHigh)}/mo</strong> &mdash; {paymentDelta >= 0 ? <>roughly <strong className="text-foreground">{usd(paymentDelta)}/mo more</strong></> : <>roughly <strong className="text-foreground">{usd(Math.abs(paymentDelta))}/mo less</strong></>} than you pay now. At that payment you'd have about <strong className="text-foreground">{usd(leftForSaving)}/mo</strong> left for saving and investing &mdash; anything not already in your fixed expenses or guilt-free spending.</p>
+                <p className="mt-3 rounded-sm bg-card p-3 text-xs leading-relaxed text-muted-foreground">You currently pay <strong className="text-foreground">{usd(rentMortgage)}/mo</strong> toward housing. At your comfortable payment of <strong className="text-foreground">{usd(comfortTarget)}/mo</strong> ({comfortTarget - rentMortgage >= 0 ? <>about <strong className="text-foreground">{usd(comfortTarget - rentMortgage)}/mo more</strong></> : <>about <strong className="text-foreground">{usd(rentMortgage - comfortTarget)}/mo less</strong></>} than now), you'd still have about <strong className="text-foreground">{usd(leftForSaving)}/mo</strong> each month to put toward saving, investing, more lifestyle, or a bigger down payment, anything beyond your fixed costs and guilt-free spending. You'll decide how to deploy it in Step 5.</p>
 
                 <div className="mt-4 rounded-sm border border-accent/30 bg-accent/[0.06] p-4">
                   <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-accent">Recommended range &mdash; 28/36 rule</p>
@@ -978,7 +979,12 @@ export default function BudgetPlannerDetailed() {
                 </div>
 
                 {/* Comfortable vs. approved — the gap is yours */}
-                <p className="mt-3 rounded-sm bg-card/60 p-3 text-xs leading-relaxed text-muted-foreground">A lender will likely approve you for around <strong className="text-foreground">{usd(rangeHigh)}/mo</strong>. Your comfortable number is <strong className="text-foreground">{usd(comfortTarget)}/mo</strong>. That <strong className="text-accent">{usd(comfortableVsApprovedGap)}/mo</strong> gap is yours — for travel, investing, or just breathing room.</p>
+                <p className="mt-3 rounded-sm bg-card/60 p-3 text-xs leading-relaxed text-muted-foreground">A lender will likely approve you for around <strong className="text-foreground">{usd(rangeHigh)}/mo</strong>. Your comfortable number is <strong className="text-foreground">{usd(comfortTarget)}/mo</strong>. That <strong className="text-accent">{usd(comfortableVsApprovedGap)}/mo</strong> gap is yours, for travel, investing, or just breathing room.</p>
+
+                {/* Deployable total -> Step 5 */}
+                <div className="mt-3 rounded-sm border border-accent/30 bg-accent/[0.06] p-3">
+                  <p className="text-xs leading-relaxed text-muted-foreground">After this payment you'd have about <strong className="text-accent">{usd(leftForSaving)}/mo</strong> left each month, yours to put toward investing, more lifestyle, or a bigger down payment. <button type="button" onClick={() => goStep(4)} className="font-semibold text-accent hover:underline">Head to Step 5 to deploy it &rarr;</button></p>
+                </div>
 
                 {/* All-in monthly breakdown + rule-of-thumb adjusters */}
                 <div className="mt-4 rounded-sm border border-border bg-card p-4">
@@ -1098,8 +1104,8 @@ export default function BudgetPlannerDetailed() {
               {/* Step 5 — tune the levers */}
               <div className="rounded-sm border-2 border-accent/40 bg-accent/[0.06] p-6 sm:p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">Make it yours</p>
-                <h2 className="mt-2 font-display text-2xl font-medium tracking-[-0.02em]">Tune the levers, watch your number move</h2>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Your safety net (retirement &amp; emergency) stays locked. Everything else is yours to trade off against a bigger home — building equity is wealth-building too.</p>
+                <h2 className="mt-2 font-display text-2xl font-medium tracking-[-0.02em]">Deploy what's left after the house</h2>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">With your payment set, you'd have about <strong className="text-foreground">{usd(leftForSaving)}/mo</strong> left each month. This is the money to deploy: more into saving and investing, more lifestyle, or a bigger down payment. If you're saving for a down payment now, that money frees up once you buy, so it can flow anywhere. Edit the boxes below and watch your number move.</p>
 
                 <div className="mt-5 rounded-sm bg-card p-4 ring-1 ring-accent/20">
                   <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">Right now</p>
@@ -1110,8 +1116,13 @@ export default function BudgetPlannerDetailed() {
                   </span>
                 </div>
 
+                {/* Live deploy / stress indicator */}
+                <div className="mt-3 rounded-sm bg-card/60 p-3 text-xs leading-relaxed">
+                  <p className="text-muted-foreground">After your <strong className="text-foreground">{usd(comfortTarget)}/mo</strong> payment, your saving &amp; investing (<strong className="text-foreground">{usd(savingsTotal)}/mo</strong>) and lifestyle (<strong className="text-foreground">{usd(gfTotal)}/mo</strong>), you'd have {afterHousingLeftover >= 0 ? <><strong className="text-emerald-600">{usd(afterHousingLeftover)}/mo unspent</strong>. Room to invest more, add lifestyle, or grow your down payment.</> : <><strong className="text-red-600">{usd(Math.abs(afterHousingLeftover))}/mo over</strong> your income. Trim a category below or lower your payment.</>}</p>
+                </div>
+
                 {comfortPayment > 0 && comfortPayment > range.tuned(redirectPct) + 1 && (
-                  <p className="mt-3 rounded-sm bg-red-500/10 p-3 text-xs leading-relaxed text-red-700">Your <strong>{usd(comfortPayment)}/mo</strong> is <strong>{usd(comfortPayment - range.tuned(redirectPct))}/mo above</strong> what your plan supports. Trim lifestyle spending or redirect more investing below — or this number won't be sustainable. Retirement &amp; emergency stay protected.</p>
+                  <p className="mt-3 rounded-sm bg-red-500/10 p-3 text-xs leading-relaxed text-red-700">Your <strong>{usd(comfortPayment)}/mo</strong> is <strong>{usd(comfortPayment - range.tuned(redirectPct))}/mo above</strong> what your plan supports. Trim lifestyle or saving below, or lower your payment, so this number stays sustainable. Keep retirement and emergency protected.</p>
                 )}
 
                 {/* Editable lifestyle (guilt-free) — updates the number live */}
@@ -1128,7 +1139,7 @@ export default function BudgetPlannerDetailed() {
                       </div>
                     ))}
                   </div>
-                  <p className="mt-2 text-[11px] leading-relaxed text-muted-foreground">Edit these to match the life you actually want after you move. <strong className="text-foreground">More lifestyle = a smaller payment; less = bigger.</strong> Your number above moves as you type.</p>
+                  <p className="mt-2 text-[11px] leading-relaxed text-muted-foreground">How much of your income goes to lifestyle (dining, travel, hobbies) after you move. <strong className="text-foreground">More lifestyle leaves less for saving and investing</strong>, and vice versa. Add what you'll actually spend so this is honest.</p>
                 </div>
 
                 {/* Editable saving & investing — updates the number live */}
@@ -1145,7 +1156,7 @@ export default function BudgetPlannerDetailed() {
                       </div>
                     ))}
                   </div>
-                  <p className="mt-2 text-[11px] leading-relaxed text-muted-foreground"><strong className="text-foreground">Lower a number to put more toward the home</strong> (equity is wealth-building too); raise it to keep more invested and liquid. Just keep retirement &amp; emergency funded — that's your safety net.</p>
+                  <p className="mt-2 text-[11px] leading-relaxed text-muted-foreground"><strong className="text-foreground">This is where your leftover income lands once the house is covered.</strong> More into investing builds liquid wealth; less here frees it up for lifestyle or a bigger down payment. Keep retirement and emergency funded, that's your safety net.</p>
                 </div>
 
                 <p className="mt-5 rounded-sm bg-secondary/50 p-3 text-xs leading-relaxed text-muted-foreground">Is your guilt-free spending realistic for life <em>after</em> you move? Add the trips, dining, and hobbies you want to keep doing, so this number reflects the life you actually want. <button type="button" onClick={() => goStep(1)} className="font-semibold text-accent hover:underline">Add them in Step 2 &rarr;</button></p>
