@@ -19,7 +19,7 @@ const rowInputCls =
   "h-10 w-full min-w-0 rounded-sm border border-border bg-white text-sm text-foreground outline-none transition-colors focus:border-accent focus:ring-2 focus:ring-accent/25";
 const cardCls = "rounded-sm border border-border bg-card p-6 shadow-[0_18px_44px_-32px_hsl(216_52%_11%/0.4)] sm:p-8";
 
-const STEPS = ["Fixed expenses", "Spending & savings", "Affordability", "Your number"];
+const STEPS = ["Fixed expenses", "Spending & savings", "Affordability", "Your number", "Tune & stress-test"];
 
 type Freq = "weekly" | "biweekly" | "semimonthly" | "monthly";
 type Filing = "single" | "married";
@@ -238,9 +238,21 @@ export default function BudgetPlannerDetailed() {
   const [step, setStep] = useState(0);
   const sectionRef = useRef<HTMLElement>(null);
   const goStep = (n: number) => {
+    if (n === 4 && !snapshotRef.current) {
+      snapshotRef.current = { guiltFree: guiltFree.map((r) => ({ ...r })), savingsRows: savingsRows.map((r) => ({ ...r })) };
+    }
     setStep(n);
     const el = sectionRef.current;
     if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 88, behavior: "smooth" });
+  };
+  const resetTuning = () => {
+    if (snapshotRef.current) {
+      setGuiltFree(snapshotRef.current.guiltFree.map((r) => ({ ...r })));
+      setSavingsRows(snapshotRef.current.savingsRows.map((r) => ({ ...r })));
+    }
+    setRedirectPct(0);
+    setComfortPayment(0);
+    setProtectedIds(new Set());
   };
 
   // Income module
@@ -388,6 +400,8 @@ export default function BudgetPlannerDetailed() {
   const rangeLow = Math.round(Math.min(rangeHigh, monthlyGross * 0.25));
   const paymentDelta = rangeHigh - rentMortgage;
   const leftForSaving = Math.max(0, housingCapacity - comfortTarget); // flexibility kept if they don't max out
+  const gauge: "green" | "yellow" | "red" =
+    comfortTarget <= range.conservativePayment + 1 ? "green" : comfortTarget <= range.stretchPayment + 1 ? "yellow" : "red";
 
   // Loan inputs — maintenance/closing are rule-of-thumb toggles (0 when off)
   const pmiRateEff = loanType === "fha" ? 0.55 : pmiRate;
@@ -950,10 +964,71 @@ export default function BudgetPlannerDetailed() {
                   <div className="rounded-sm bg-card p-4 ring-1 ring-accent/20">
                     <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">That payment supports about</p>
                     <p className="mt-1 font-display text-3xl font-semibold tracking-[-0.02em]">{usd(price)}</p>
-                    <p className="mt-0.5 text-xs text-muted-foreground">home price at {dpPct}% down, {rate}% / {term}-yr</p>
+                    <p className="mt-0.5 text-xs text-muted-foreground">all-in at {downMode === "dollar" ? `${usd(down)} down` : `${dpPct}% down`}, {rate}% / {term}-yr</p>
                   </div>
                 </div>
-                <p className="mt-4 rounded-sm bg-card/60 p-3 text-[11px] leading-relaxed text-muted-foreground">Head back to <button type="button" onClick={() => goStep(2)} className="font-semibold text-accent underline-offset-2 hover:underline">Step 3</button> to adjust your down payment, interest rate, or loan term and see how it changes the home price your comfortable payment can buy.</p>
+
+                {/* Comfort gauge */}
+                <div className="mt-5 flex flex-wrap items-center gap-3">
+                  <span className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold ${gauge === "green" ? "bg-emerald-500/15 text-emerald-600" : gauge === "yellow" ? "bg-amber-500/15 text-amber-600" : "bg-red-500/15 text-red-600"}`}>
+                    <span className={`h-2 w-2 rounded-full ${gauge === "green" ? "bg-emerald-500" : gauge === "yellow" ? "bg-amber-500" : "bg-red-500"}`} />
+                    {gauge === "green" ? "Comfortably within your budget" : gauge === "yellow" ? "A stretch — redirecting some investing" : "Above what your budget supports"}
+                  </span>
+                </div>
+
+                {/* Comfortable vs. approved — the gap is yours */}
+                <p className="mt-3 rounded-sm bg-card/60 p-3 text-xs leading-relaxed text-muted-foreground">A lender will likely approve you for around <strong className="text-foreground">{usd(rangeHigh)}/mo</strong>. Your comfortable number is <strong className="text-foreground">{usd(comfortTarget)}/mo</strong>. That <strong className="text-accent">{usd(range.comfortableVsApprovedGapAt(redirectPct))}/mo</strong> gap is yours — for travel, investing, or just breathing room.</p>
+
+                {/* All-in monthly breakdown + rule-of-thumb adjusters */}
+                <div className="mt-4 rounded-sm border border-border bg-card p-4">
+                  <div className="flex items-center justify-between">
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">What's in that payment</p>
+                    <p className="text-sm font-semibold">{usd(payment)}/mo all-in</p>
+                  </div>
+                  <div className="mt-3 space-y-1.5">
+                    <Line l="Principal &amp; interest" v={usd(pi)} />
+                    <Line l="Property tax" v={usd(tax)} />
+                    <Line l="Home insurance" v={usd(ins)} />
+                    {allIn.pmiApplies && <Line l="PMI" v={usd(allIn.pmiMonthly)} />}
+                    {hoaMonthly > 0 && <Line l="HOA dues" v={usd(hoaMonthly)} />}
+                    {maintenanceOn && <Line l={`Maintenance reserve (${maintenancePct}%/yr)`} v={usd(allIn.maintenanceMonthly)} />}
+                  </div>
+                  <p className="mt-2 text-[11px] leading-relaxed text-muted-foreground">Includes the upkeep renters never pay. <strong className="text-foreground">Rules of thumb — adjust or turn off.</strong> The 1% maintenance rule overstates on pricier homes and understates on very cheap or older ones.</p>
+                  <div className="mt-3 grid gap-3 sm:grid-cols-3">
+                    <label className="flex flex-col gap-1">
+                      <span className="flex items-center justify-between text-[11px]"><span className="font-semibold text-muted-foreground">Maintenance %/yr</span><button type="button" onClick={() => setMaintenanceOn((v) => !v)} className={`text-[10px] font-semibold ${maintenanceOn ? "text-accent" : "text-muted-foreground"}`}>{maintenanceOn ? "On" : "Off"}</button></span>
+                      <input type="number" min={0} step={0.25} value={maintenancePct} disabled={!maintenanceOn} onChange={(e) => setMaintenancePct(+e.target.value)} className={`${fieldCls} ${!maintenanceOn ? "opacity-40" : ""}`} />
+                    </label>
+                    <label className="flex flex-col gap-1">
+                      <span className="text-[11px] font-semibold text-muted-foreground">HOA $/mo</span>
+                      <div className="relative"><span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-muted-foreground">$</span><MoneyInput value={hoaMonthly} onChange={setHoaMonthly} placeholder="0" className={`${fieldCls} pl-7`} /></div>
+                    </label>
+                    <label className="flex flex-col gap-1">
+                      <span className="flex items-center justify-between text-[11px]"><span className="font-semibold text-muted-foreground">Closing %</span><button type="button" onClick={() => setClosingOn((v) => !v)} className={`text-[10px] font-semibold ${closingOn ? "text-accent" : "text-muted-foreground"}`}>{closingOn ? "On" : "Off"}</button></span>
+                      <input type="number" min={0} step={0.5} value={closingPct} disabled={!closingOn} onChange={(e) => setClosingPct(+e.target.value)} className={`${fieldCls} ${!closingOn ? "opacity-40" : ""}`} />
+                    </label>
+                  </div>
+                </div>
+
+                {/* Rate sensitivity */}
+                {rateSensOn && (
+                  <div className="mt-4 flex flex-wrap items-center justify-between gap-2 rounded-sm bg-card/60 p-3 text-xs text-muted-foreground">
+                    <span>At {rate}% you're near <strong className="text-foreground">{usd(sens.base.price)}</strong>. If rates rise 1% the same payment buys ~{usd(sens.up.price)}; down 1%, ~{usd(sens.down.price)}.</span>
+                    <button type="button" onClick={() => setRateSensOn(false)} className="shrink-0 text-[10px] font-semibold text-accent hover:underline">Hide</button>
+                  </div>
+                )}
+
+                {/* Reserves / cash-to-close */}
+                <div className="mt-4 rounded-sm bg-card/60 p-3 text-xs">
+                  <p className="text-muted-foreground">Cash to close ~<strong className="text-foreground">{usd(cash.cashToClose)}</strong>{capitalAvailable > 0 && (<> → ~<strong className={cash.reserveMonths < 2 ? "text-red-600" : "text-foreground"}>{usd(Math.max(0, cash.reservesAfter))}</strong> left ({cash.reserveMonths.toFixed(1)} mo of payments)</>)}</p>
+                  <p className="mt-1 text-[11px] text-muted-foreground">Most lenders want 2–6 months of reserves after closing.{cash.reserveMonths < 2 && capitalAvailable > 0 ? <strong className="text-red-600"> Yours is thin — don't drain every dollar into the down payment.</strong> : ""}</p>
+                  <div className="mt-2 max-w-[220px]">
+                    <label className="text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">Total capital you can deploy</label>
+                    <div className="relative"><span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-muted-foreground">$</span><MoneyInput value={capitalAvailable} onChange={setCapitalAvailable} placeholder={String(down || 60000)} className={`${fieldCls} pl-7`} /></div>
+                  </div>
+                </div>
+
+                <button type="button" onClick={() => goStep(4)} className="group mt-5 inline-flex items-center gap-2 rounded-sm bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:-translate-y-0.5">Tune these numbers <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" /></button>
               </div>
 
               {/* Down payment progress / timeline */}
@@ -1017,11 +1092,95 @@ export default function BudgetPlannerDetailed() {
               </>
             )}
 
+            {step === 4 && (
+              <>
+              {/* Step 5 — tune the levers */}
+              <div className="rounded-sm border-2 border-accent/40 bg-accent/[0.06] p-6 sm:p-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">Make it yours</p>
+                <h2 className="mt-2 font-display text-2xl font-medium tracking-[-0.02em]">Tune the levers, watch your number move</h2>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Your safety net (retirement &amp; emergency) stays locked. Everything else is yours to trade off against a bigger home — building equity is wealth-building too.</p>
+
+                <div className="mt-5 rounded-sm bg-card p-4 ring-1 ring-accent/20">
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">Right now</p>
+                  <p className="mt-1 font-display text-2xl font-semibold tracking-[-0.02em]">{usd(comfortTarget)}/mo <span className="text-base font-normal text-muted-foreground">&rarr; ~{usd(price)} home</span></p>
+                  <span className={`mt-2 inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold ${gauge === "green" ? "bg-emerald-500/15 text-emerald-600" : gauge === "yellow" ? "bg-amber-500/15 text-amber-600" : "bg-red-500/15 text-red-600"}`}>
+                    <span className={`h-2 w-2 rounded-full ${gauge === "green" ? "bg-emerald-500" : gauge === "yellow" ? "bg-amber-500" : "bg-red-500"}`} />
+                    {gauge === "green" ? "Within budget" : gauge === "yellow" ? "Stretch" : "Over budget"}
+                  </span>
+                </div>
+
+                {comfortPayment > 0 && comfortPayment > range.tuned(redirectPct) + 1 && (
+                  <p className="mt-3 rounded-sm bg-red-500/10 p-3 text-xs leading-relaxed text-red-700">Your <strong>{usd(comfortPayment)}/mo</strong> is <strong>{usd(comfortPayment - range.tuned(redirectPct))}/mo above</strong> what your plan supports. Trim lifestyle spending or redirect more investing below — or this number won't be sustainable. Retirement &amp; emergency stay protected.</p>
+                )}
+
+                {buckets.flexibleTotal > 0 && (
+                  <div className="mt-5">
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="font-semibold text-muted-foreground">Redirect flexible investing &rarr; the home</span>
+                      <span className="font-semibold">{Math.round(redirectPct * 100)}% of {usd(buckets.flexibleTotal)}/mo</span>
+                    </div>
+                    <input type="range" min={0} max={100} step={5} value={Math.round(redirectPct * 100)} onChange={(e) => { setRedirectPct(+e.target.value / 100); setComfortPayment(0); }} className="mt-2 w-full accent-[hsl(44,96%,50%)]" />
+                    <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground">A bigger payment builds equity instead of a separate brokerage balance. Early on, some of it is interest, and equity is less liquid, so it's a real tradeoff, not free money.</p>
+                  </div>
+                )}
+
+                <div className="mt-5 flex flex-wrap items-center justify-between gap-x-3 gap-y-1 text-xs">
+                  <span className="font-semibold text-muted-foreground">Monthly lifestyle (guilt-free) spending</span>
+                  <span className="font-semibold">{usd(gfTotal)}/mo</span>
+                </div>
+                <p className="mt-1 text-[11px] text-muted-foreground">Less lifestyle spending frees up more for the payment, and vice versa. Edit those categories in <button type="button" onClick={() => goStep(1)} className="font-semibold text-accent hover:underline">Step 2</button>.</p>
+
+                {savingsRows.length > 0 && (
+                  <div className="mt-5 rounded-sm border border-border bg-card p-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">Your savings &mdash; tap to protect or free up</p>
+                    <div className="mt-2 space-y-1">
+                      {savingsRows.map((r) => {
+                        const isProt = protectedIds.size ? protectedIds.has(r.id) : isProtectedByDefault(r.label);
+                        return (
+                          <button key={r.id} type="button"
+                            onClick={() => setProtectedIds((prev) => {
+                              const base = prev.size ? prev : new Set(savingsRows.filter((x) => isProtectedByDefault(x.label)).map((x) => x.id));
+                              const n = new Set(base);
+                              if (n.has(r.id)) n.delete(r.id); else n.add(r.id);
+                              return n;
+                            })}
+                            className="flex w-full items-center justify-between gap-2 rounded-sm px-2 py-1.5 text-left text-xs transition-colors hover:bg-secondary/50">
+                            <span className="min-w-0 truncate">{r.label || "Savings"} &middot; {usd(r.amount)}/mo</span>
+                            <span className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-semibold ${isProt ? "bg-secondary text-muted-foreground" : "bg-accent/15 text-accent"}`}>{isProt ? "Protected" : "Flexible"}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+
+                <p className="mt-5 rounded-sm bg-secondary/50 p-3 text-xs leading-relaxed text-muted-foreground">Is your guilt-free spending realistic for life <em>after</em> you move? Add the trips, dining, and hobbies you want to keep doing, so this number reflects the life you actually want. <button type="button" onClick={() => goStep(1)} className="font-semibold text-accent hover:underline">Add them in Step 2 &rarr;</button></p>
+
+                <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2">
+                  <button type="button" onClick={resetTuning} className="rounded-sm border border-border px-4 py-2 text-xs font-semibold text-foreground transition-colors hover:border-accent hover:text-accent">Reset to my actual budget</button>
+                  {comfortPayment > 0 && <button type="button" onClick={() => setComfortPayment(0)} className="text-xs font-semibold text-accent hover:underline">Reset payment to recommended</button>}
+                </div>
+              </div>
+
+              {/* Close the loop */}
+              <div className="rounded-sm border-2 border-accent/40 bg-accent/[0.06] p-6 sm:p-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">Your next step</p>
+                <h3 className="mt-2 font-display text-xl font-semibold">See homes near {usd(price)}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">A lender confirms your <em>approved</em> number; I help you find the home you'll actually want. Let's look at what's available in your range.</p>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  <Link to="/listings" className="group inline-flex items-center gap-2 rounded-sm bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:-translate-y-0.5">See active homes <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" /></Link>
+                  <Link to="/contact" className="inline-flex items-center gap-2 rounded-sm border border-accent/40 px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-accent hover:text-accent-foreground"><Handshake className="h-4 w-4" /> Talk to Lucas</Link>
+                </div>
+                <p className="mt-4 text-[11px] leading-relaxed text-muted-foreground"><strong className="text-foreground">Heads up:</strong> this tool resets on refresh, so screenshot your comfortable payment (<strong className="text-foreground">{usd(comfortTarget)}/mo</strong>) and the home price it supports (<strong className="text-foreground">{usd(price)}</strong>) first. You can also download it below.</p>
+              </div>
+              </>
+            )}
+
             {/* Nav */}
             <div className="flex items-center justify-between gap-4">
               <button type="button" onClick={() => goStep(Math.max(0, step - 1))} disabled={step === 0} className="inline-flex items-center gap-2 text-sm font-semibold text-foreground transition-colors hover:text-accent disabled:opacity-30"><ArrowLeft className="h-4 w-4" /> Back</button>
-              {step < 3 ? (
-                <button type="button" onClick={() => goStep(Math.min(3, step + 1))} className="group inline-flex items-center gap-2 rounded-sm bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:-translate-y-0.5">Next <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" /></button>
+              {step < 4 ? (
+                <button type="button" onClick={() => goStep(Math.min(4, step + 1))} className="group inline-flex items-center gap-2 rounded-sm bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:-translate-y-0.5">Next <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" /></button>
               ) : (
                 <Link to="/resources/lenders" className="group inline-flex items-center gap-2 rounded-sm bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:-translate-y-0.5"><Handshake className="h-4 w-4" /> Get pre-approved</Link>
               )}
@@ -1086,11 +1245,11 @@ export default function BudgetPlannerDetailed() {
                   </div>
                 </>
               )}
-              {step === 3 && (
+              {(step === 3 || step === 4) && (
                 <>
                   <p className="text-xs font-semibold uppercase tracking-[0.24em] text-accent">Home you can afford</p>
                   <p className="mt-3 font-display text-4xl font-semibold tracking-[-0.02em] text-white">{usd(price)}</p>
-                  <p className="mt-2 text-sm text-white/55">at about {usd(payment)}/mo</p>
+                  <p className="mt-2 text-sm text-white/55">at about {usd(payment)}/mo all-in</p>
                   <div className="mt-7 space-y-3 border-t border-white/10 pt-5 text-sm">
                     <SRow label="Principal & interest" value={`${usd(pi)}/mo`} />
                     <SRow label="Property taxes" value={`${usd(tax)}/mo`} />
