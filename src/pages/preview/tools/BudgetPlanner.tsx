@@ -109,7 +109,7 @@ export default function BudgetPlanner() {
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">These fields start with example numbers so you can see how it works, just edit them to match your own.</p>
             <div className="mt-8 space-y-6">
               <div>
-                <div className="mb-1.5 flex items-center justify-between gap-3">
+                <div className="mb-1.5 flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
                   <span className="text-xs font-semibold uppercase tracking-[0.12em] text-muted-foreground">Annual household income</span>
                   <div className="flex overflow-hidden rounded-sm border border-border text-xs">
                     {(["gross", "net"] as const).map((b) => (

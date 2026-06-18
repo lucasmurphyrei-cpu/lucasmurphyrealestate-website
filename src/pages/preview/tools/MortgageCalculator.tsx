@@ -188,7 +188,7 @@ export default function MortgageCalculator() {
 
               {/* Home insurance — estimate or exact */}
               <div>
-                <div className="mb-2 flex items-center justify-between gap-3">
+                <div className="mb-2 flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
                   <span className={tagCls}>Home insurance (annual)</span>
                   <Toggle value={insMode} onChange={setInsMode} options={[["estimate", "Estimate"], ["exact", "Exact"]]} />
                 </div>

@@ -15,7 +15,7 @@ const fieldCls =
   "w-full rounded-sm border border-border bg-white px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-accent focus:ring-2 focus:ring-accent/25";
 const labelCls = "mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-muted-foreground";
 const rowInputCls =
-  "h-10 w-full rounded-sm border border-border bg-white text-sm text-foreground outline-none transition-colors focus:border-accent focus:ring-2 focus:ring-accent/25";
+  "h-10 w-full min-w-0 rounded-sm border border-border bg-white text-sm text-foreground outline-none transition-colors focus:border-accent focus:ring-2 focus:ring-accent/25";
 const cardCls = "rounded-sm border border-border bg-card p-6 shadow-[0_18px_44px_-32px_hsl(216_52%_11%/0.4)] sm:p-8";
 
 const STEPS = ["Fixed expenses", "Spending & savings", "Affordability", "Your number"];
@@ -461,9 +461,9 @@ export default function BudgetPlannerDetailed() {
           </div>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-[1fr,360px] lg:items-start">
+        <div className="grid min-w-0 gap-6 lg:grid-cols-[1fr,360px] lg:items-start">
           {/* Left — step content */}
-          <div className="space-y-6">
+          <div className="min-w-0 space-y-6">
             {step === 0 && (
               <>
                 {/* Income */}
@@ -574,7 +574,7 @@ export default function BudgetPlannerDetailed() {
                             </span>
                           </div>
                         ) : (
-                          <input id={`fc-label-${i}`} onKeyDown={colTab("fc-label", i, fixedCosts.length)} value={row.label} onChange={(e) => updateRow(row.id, "label", e.target.value)} placeholder="Expense name" className={`${rowInputCls} w-24 shrink-0 px-3 sm:w-40`} />
+                          <input id={`fc-label-${i}`} onKeyDown={colTab("fc-label", i, fixedCosts.length)} value={row.label} onChange={(e) => updateRow(row.id, "label", e.target.value)} placeholder="Expense name" className={`${rowInputCls} !w-24 shrink-0 px-3 sm:!w-40`} />
                         )}
                         <div className="relative flex-1 min-w-0">
                           <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-muted-foreground">$</span>
@@ -665,7 +665,7 @@ export default function BudgetPlannerDetailed() {
                   <div className="mt-4 space-y-2">
                     {guiltFree.map((row, i) => (
                       <div key={row.id} className="flex items-center gap-2">
-                        <input id={`gf-label-${i}`} onKeyDown={colTab("gf-label", i, guiltFree.length)} value={row.label} onChange={(e) => updateGf(row.id, "label", e.target.value)} placeholder="Category name" className={`${rowInputCls} w-28 shrink-0 px-3 sm:w-48`} />
+                        <input id={`gf-label-${i}`} onKeyDown={colTab("gf-label", i, guiltFree.length)} value={row.label} onChange={(e) => updateGf(row.id, "label", e.target.value)} placeholder="Category name" className={`${rowInputCls} !w-28 shrink-0 px-3 sm:!w-48`} />
                         <div className="relative flex-1">
                           <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-muted-foreground">$</span>
                           <MoneyInput id={`gf-amount-${i}`} onKeyDown={colTab("gf-amount", i, guiltFree.length)} value={row.amount} onChange={(v) => updateGf(row.id, "amount", v)} placeholder={row.hint} className={`${rowInputCls} pl-7 pr-3`} />

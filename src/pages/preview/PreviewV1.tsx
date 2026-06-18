@@ -224,7 +224,7 @@ function ReviewsPanel() {
           </blockquote>
           <figcaption className="mt-6">
             <p className="font-semibold text-white">{r.name}</p>
-            <p className="text-sm text-white/55">{r.detail}</p>
+            <p className="text-sm text-white/70">{r.detail}</p>
           </figcaption>
         </motion.div>
       </AnimatePresence>
@@ -246,7 +246,7 @@ function ReviewsPanel() {
           >
             <ChevronRight className="h-5 w-5" />
           </button>
-          <span className="ml-1 text-xs font-medium text-white/55">
+          <span className="ml-1 text-xs font-medium text-white/70">
             {paused ? "Paused · browse with the arrows" : "Hover to pause"}
           </span>
         </div>
@@ -451,7 +451,7 @@ export default function PreviewV1() {
                 >
                   <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/60">Now exploring</p>
                   <p className="font-display text-2xl text-white sm:text-3xl">
-                    {current.name} <span className="text-white/55">— {current.place}</span>
+                    {current.name} <span className="text-white/70">— {current.place}</span>
                   </p>
                 </motion.div>
               </AnimatePresence>
@@ -492,7 +492,7 @@ export default function PreviewV1() {
               >
                 <span
                   className={`block text-sm font-semibold transition-colors duration-300 ${
-                    i === active ? "text-accent" : "text-white/55 group-hover:text-white/80"
+                    i === active ? "text-accent" : "text-white/70 group-hover:text-white/80"
                   }`}
                 >
                   {c.name.replace(" County", "")}
