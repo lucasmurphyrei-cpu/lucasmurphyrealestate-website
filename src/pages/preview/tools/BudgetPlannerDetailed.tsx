@@ -238,7 +238,10 @@ export default function BudgetPlannerDetailed() {
   const [step, setStep] = useState(0);
   const sectionRef = useRef<HTMLElement>(null);
   const goStep = (n: number) => {
-    if (n === 4 && !snapshotRef.current) {
+    // Snapshot the current plan as the "Now" baseline ONLY when arriving at Step 5
+    // from another step — captures the latest entered guilt-free/savings, but stays
+    // frozen while editing the boxes on Step 5 (step is already 4, so no recapture).
+    if (n === 4 && step !== 4) {
       snapshotRef.current = { guiltFree: guiltFree.map((r) => ({ ...r })), savingsRows: savingsRows.map((r) => ({ ...r })) };
     }
     setStep(n);
