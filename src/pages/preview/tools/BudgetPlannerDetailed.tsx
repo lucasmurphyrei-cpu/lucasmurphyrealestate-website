@@ -1110,7 +1110,7 @@ export default function BudgetPlannerDetailed() {
               <div className="rounded-sm border-2 border-accent/40 bg-accent/[0.06] p-6 sm:p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">Make it yours</p>
                 <h2 className="mt-2 font-display text-2xl font-medium tracking-[-0.02em]">Deploy what's left after the house</h2>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">With your payment set, you'd have about <strong className="text-foreground">{usd(leftForSaving)}/mo</strong> left each month. This is the money to deploy: more into saving and investing, more lifestyle, or a bigger down payment. If you're saving for a down payment now, that money frees up once you buy, so it can flow anywhere. Edit the boxes below and watch your number move.</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">With your payment set, you'd have about <strong className="text-foreground">{usd(leftForSaving)}/mo</strong> left each month. This is the money to deploy: more into saving and investing, more lifestyle, or a bigger monthly payment for more house. If you're saving for a down payment now, that money frees up once you buy and can flow anywhere too. Edit the boxes below and watch your number move.</p>
 
                 {/* Editable comfortable payment — lower it to free up more */}
                 <div className="mt-5 rounded-sm bg-card p-4 ring-1 ring-accent/20">
@@ -1157,7 +1157,7 @@ export default function BudgetPlannerDetailed() {
                 <p className="mt-2 text-[11px] leading-relaxed text-muted-foreground">Your housing payment goes from <strong className="text-foreground">{usd(rentMortgage)}</strong> to <strong className="text-foreground">{usd(comfortTarget)}</strong>, leaving {comfortTarget - rentMortgage >= 0 ? <><strong className="text-foreground">{usd(comfortTarget - rentMortgage)} less</strong></> : <><strong className="text-foreground">{usd(rentMortgage - comfortTarget)} more</strong></>} for everything else. {afterHousingLeftover >= 0 ? <>Redeploy the remaining <strong className="text-accent">{usd(afterHousingLeftover)}/mo</strong> into the boxes below.</> : <>You're <strong className="text-red-600">{usd(Math.abs(afterHousingLeftover))}/mo over</strong>, trim a box below or lower your payment.</>}</p>
 
                 {/* Sticky live 'left to deploy' — stays visible while editing the boxes below */}
-                <div className="sticky top-16 z-20 mt-5">
+                <div className="sticky top-[164px] z-10 mt-5">
                   <div className="flex items-center justify-between gap-3 rounded-sm border border-accent/50 bg-card px-4 py-3 shadow-[0_12px_30px_-10px_rgba(0,0,0,0.35)]">
                     <span className="text-xs font-semibold uppercase tracking-[0.12em] text-muted-foreground">{afterHousingLeftover >= 0 ? "Left to deploy" : "Over your income by"}</span>
                     <span className={`font-display text-2xl font-semibold tabular-nums ${afterHousingLeftover >= 0 ? "text-accent" : "text-red-600"}`}>{usd(Math.abs(afterHousingLeftover))}<span className="text-sm font-normal text-muted-foreground">/mo</span></span>
@@ -1195,7 +1195,7 @@ export default function BudgetPlannerDetailed() {
                       </div>
                     ))}
                   </div>
-                  <p className="mt-2 text-[11px] leading-relaxed text-muted-foreground"><strong className="text-foreground">This is where your leftover income lands once the house is covered.</strong> More into investing builds liquid wealth; less here frees it up for lifestyle or a bigger down payment. Keep retirement and emergency funded, that's your safety net.</p>
+                  <p className="mt-2 text-[11px] leading-relaxed text-muted-foreground"><strong className="text-foreground">This is where your leftover income lands once the house is covered.</strong> More into investing builds liquid wealth; less here frees it up for lifestyle or a bigger monthly payment. Keep retirement and emergency funded, that's your safety net.</p>
                 </div>
 
                 <p className="mt-5 rounded-sm bg-secondary/50 p-3 text-xs leading-relaxed text-muted-foreground">Is your guilt-free spending realistic for life <em>after</em> you move? Add the trips, dining, and hobbies you want to keep doing, so this number reflects the life you actually want. <button type="button" onClick={() => goStep(1)} className="font-semibold text-accent hover:underline">Add them in Step 2 &rarr;</button></p>
