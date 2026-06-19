@@ -205,9 +205,9 @@ export default function MarketHub() {
         {/* ===== Hero — four county photos as an angled "slash grid" ===== */}
         <CountySlashGrid
           strips={[
-            { img: IMG.artMuseum, label: "Milwaukee" },
-            { img: IMG.waukeshaDowntown, label: "Waukesha" },
             { img: IMG.portWashington, label: "Ozaukee" },
+            { img: IMG.waukeshaDowntown, label: "Waukesha" },
+            { img: IMG.artMuseum, label: "Milwaukee" },
             { img: IMG.holyHill, label: "Washington" },
           ]}
           overlay="bg-gradient-to-r from-[#0a1424]/90 via-[#0a1424]/55 to-[#0a1424]/30"
