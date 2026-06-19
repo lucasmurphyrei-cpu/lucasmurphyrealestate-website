@@ -151,12 +151,14 @@ export const PROPERTY_TYPES: { label: string; codes: number[] }[] = [
 ];
 
 const DEFAULT_TYPE_CODES = [...new Set(PROPERTY_TYPES.flatMap((t) => t.codes))];
-const MAX_GARAGE = 4; // garage filter expands "N+" into options[]=Ngarage ... MAX
 
 /**
  * Build a fully filtered IDX map-view URL from the on-site form.
  * `area` may be null (no location code) — then it searches all areas with the
- * other filters applied. Garage "N+" expands to options[]=Ngarage..MAX_GARAGE.
+ * other filters applied. Garage "N+" emits a SINGLE options[]=Ngarage (the eXp
+ * IDX treats this as a minimum). Do NOT expand it into a range of options[] —
+ * the IDX ANDs repeated params, so 2garage+3garage+4garage demands all at once
+ * and returns zero results.
  */
 export function buildFilteredSearchUrl(area: Area | null, f: SearchFilters): string {
   const p: string[] = ["advanced=1"];
@@ -169,7 +171,7 @@ export function buildFilteredSearchUrl(area: Area | null, f: SearchFilters): str
   for (const t of types) p.push(`types[]=${t}`);
   p.push("statuses[]=0", "statuses[]=57");
   if (f.minGarage > 0) {
-    for (let g = f.minGarage; g <= MAX_GARAGE; g++) p.push(`options[]=${g}garage`);
+    p.push(`options[]=${f.minGarage}garage`); // single value = "N or more" garage spaces
   }
   if (area) p.push(`pak=${encodeURIComponent(area.pak)}`);
   p.push("rtype=map");
