@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, ArrowUpRight, Phone, TrendingUp, TrendingDown, Minus } from "lucide-react";
 import { motion } from "framer-motion";
 import ParallaxBand from "@/pages/preview/_shared/ParallaxBand";
+import CountySlashGrid from "@/pages/preview/_shared/CountySlashGrid";
 import { IMG, VID, SOCIAL, heroCounties } from "@/pages/preview/_shared/tokens";
 import PreviewHeader from "@/pages/preview/_shared/PreviewHeader";
 import PreviewFooter from "@/pages/preview/_shared/PreviewFooter";
@@ -201,10 +202,15 @@ export default function MarketHub() {
       <div className="min-h-screen bg-[#0a1424] text-white">
         <PreviewHeader />
 
-        {/* ===== Hero ===== */}
-        <ParallaxBand
-          src={IMG.skyline}
-          overlay="bg-[#0a1424]/65"
+        {/* ===== Hero — four county photos as an angled "slash grid" ===== */}
+        <CountySlashGrid
+          strips={[
+            { img: IMG.artMuseum, label: "Milwaukee" },
+            { img: IMG.waukeshaDowntown, label: "Waukesha" },
+            { img: IMG.portWashington, label: "Ozaukee" },
+            { img: IMG.holyHill, label: "Washington" },
+          ]}
+          overlay="bg-gradient-to-r from-[#0a1424]/90 via-[#0a1424]/55 to-[#0a1424]/30"
           minH="min-h-screen"
         >
           <div className="max-w-3xl py-32">
@@ -267,7 +273,7 @@ export default function MarketHub() {
               </a>
             </motion.div>
           </div>
-        </ParallaxBand>
+        </CountySlashGrid>
 
         {/* ===== County cards ===== */}
         <section id="counties" className="bg-gradient-to-b from-[#0a1424] via-[#101d31] to-[#0a1424] py-20 lg:py-28">
