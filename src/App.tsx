@@ -114,14 +114,16 @@ const App = () => (
             {/* Secondary preview kept reachable */}
             <Route path="/preview/v2" element={<PreviewV2 />} />
 
-            {/* ===== Legacy resource pages kept live (old layout) until redesigned ===== */}
+            {/* ===== Vendor directories (new aesthetic, bring their own header/footer) ===== */}
+            <Route path="/resources/contractors" element={<ContractorsPage />} />
+            <Route path="/resources/lenders" element={<LendersPage />} />
+            <Route path="/resources/home-inspectors" element={<HomeInspectorsPage />} />
+            <Route path="/resources/home-insurance" element={<HomeInsurancePage />} />
+            <Route path="/resources/movers" element={<MoversPage />} />
+
+            {/* ===== Legacy resource pages kept on old layout until redesigned ===== */}
             <Route element={<LayoutRoute />}>
-              <Route path="/resources/contractors" element={<ContractorsPage />} />
-              <Route path="/resources/lenders" element={<LendersPage />} />
-              <Route path="/resources/home-inspectors" element={<HomeInspectorsPage />} />
-              <Route path="/resources/home-insurance" element={<HomeInsurancePage />} />
               <Route path="/resources/seasonal-guide" element={<SeasonalGuidePage />} />
-              <Route path="/resources/movers" element={<MoversPage />} />
             </Route>
 
             <Route path="*" element={<NotFound />} />
