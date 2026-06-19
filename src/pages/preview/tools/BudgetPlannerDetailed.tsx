@@ -1156,8 +1156,16 @@ export default function BudgetPlannerDetailed() {
                 </div>
                 <p className="mt-2 text-[11px] leading-relaxed text-muted-foreground">Your housing payment goes from <strong className="text-foreground">{usd(rentMortgage)}</strong> to <strong className="text-foreground">{usd(comfortTarget)}</strong>, leaving {comfortTarget - rentMortgage >= 0 ? <><strong className="text-foreground">{usd(comfortTarget - rentMortgage)} less</strong></> : <><strong className="text-foreground">{usd(rentMortgage - comfortTarget)} more</strong></>} for everything else. {afterHousingLeftover >= 0 ? <>Redeploy the remaining <strong className="text-accent">{usd(afterHousingLeftover)}/mo</strong> into the boxes below.</> : <>You're <strong className="text-red-600">{usd(Math.abs(afterHousingLeftover))}/mo over</strong>, trim a box below or lower your payment.</>}</p>
 
+                {/* Sticky live 'left to deploy' — stays visible while editing the boxes below */}
+                <div className="sticky top-16 z-20 mt-5">
+                  <div className="flex items-center justify-between gap-3 rounded-sm border border-accent/50 bg-card px-4 py-3 shadow-[0_12px_30px_-10px_rgba(0,0,0,0.35)]">
+                    <span className="text-xs font-semibold uppercase tracking-[0.12em] text-muted-foreground">{afterHousingLeftover >= 0 ? "Left to deploy" : "Over your income by"}</span>
+                    <span className={`font-display text-2xl font-semibold tabular-nums ${afterHousingLeftover >= 0 ? "text-accent" : "text-red-600"}`}>{usd(Math.abs(afterHousingLeftover))}<span className="text-sm font-normal text-muted-foreground">/mo</span></span>
+                  </div>
+                </div>
+
                 {/* Editable lifestyle (guilt-free) — updates the number live */}
-                <div className="mt-5 rounded-sm border border-border bg-card p-4">
+                <div className="mt-4 rounded-sm border border-border bg-card p-4">
                   <div className="flex items-center justify-between">
                     <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">Lifestyle (guilt-free) spending</p>
                     <span className="text-xs font-semibold">{usd(gfTotal)}/mo</span>
