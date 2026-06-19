@@ -4,7 +4,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import LayoutRoute from "@/components/LayoutRoute";
 import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 import Contact from "./pages/Contact";
@@ -114,17 +113,13 @@ const App = () => (
             {/* Secondary preview kept reachable */}
             <Route path="/preview/v2" element={<PreviewV2 />} />
 
-            {/* ===== Vendor directories (new aesthetic, bring their own header/footer) ===== */}
+            {/* ===== Resource pages (new aesthetic, bring their own header/footer) ===== */}
             <Route path="/resources/contractors" element={<ContractorsPage />} />
             <Route path="/resources/lenders" element={<LendersPage />} />
             <Route path="/resources/home-inspectors" element={<HomeInspectorsPage />} />
             <Route path="/resources/home-insurance" element={<HomeInsurancePage />} />
             <Route path="/resources/movers" element={<MoversPage />} />
-
-            {/* ===== Legacy resource pages kept on old layout until redesigned ===== */}
-            <Route element={<LayoutRoute />}>
-              <Route path="/resources/seasonal-guide" element={<SeasonalGuidePage />} />
-            </Route>
+            <Route path="/resources/seasonal-guide" element={<SeasonalGuidePage />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>

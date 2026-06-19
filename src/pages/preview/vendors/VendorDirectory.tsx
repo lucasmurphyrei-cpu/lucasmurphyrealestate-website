@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Calendar, Globe, Mail, MapPin, Phone, type LucideIcon } from "lucide-react";
+import { ArrowLeft, ArrowRight, Calendar, Globe, Mail, MapPin, Phone, type LucideIcon } from "lucide-react";
 import ParallaxBand from "@/pages/preview/_shared/ParallaxBand";
 import PreviewHeader from "@/pages/preview/_shared/PreviewHeader";
 import PreviewFooter from "@/pages/preview/_shared/PreviewFooter";
@@ -49,25 +49,15 @@ function VendorCard({ v }: { v: Vendor }) {
   return (
     <div className="overflow-hidden rounded-sm border border-border bg-card shadow-[0_18px_44px_-30px_hsl(216_52%_11%/0.45)] transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-[0_28px_60px_-32px_hsl(216_52%_11%/0.5)]">
       <div className="flex flex-col sm:flex-row">
-        {/* Photo / logo */}
+        {/* Photo / logo — contained so nothing (logos or headshots) gets cropped or over-zoomed */}
         {v.image && (
-          <div
-            className={`relative shrink-0 sm:w-52 ${
-              v.isLogo ? "flex items-center justify-center bg-secondary/40 p-6" : ""
-            }`}
-          >
+          <div className="flex shrink-0 items-center justify-center bg-secondary/30 p-4 sm:w-52 sm:p-5">
             <img
               src={v.image}
               alt={v.name}
-              className={
-                v.isLogo
-                  ? "h-32 w-32 object-contain"
-                  : "h-60 w-full object-cover object-top sm:h-full sm:object-center"
-              }
+              loading="lazy"
+              className="max-h-40 w-full object-contain sm:max-h-52"
             />
-            {!v.isLogo && (
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0a1424]/45 to-transparent sm:bg-gradient-to-r sm:from-transparent sm:to-[#0a1424]/15" />
-            )}
           </div>
         )}
 
@@ -171,6 +161,12 @@ export default function VendorDirectory({
 
       {/* ===== Directory ===== */}
       <section className="mx-auto max-w-5xl px-6 py-16 lg:px-10 lg:py-24">
+        <Link
+          to="/vendors"
+          className="group mb-10 inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground transition-colors hover:text-accent"
+        >
+          <ArrowLeft className="h-4 w-4 transition-transform duration-300 group-hover:-translate-x-0.5" /> Back to all vendors
+        </Link>
         <div className="space-y-14 lg:space-y-16">
           {categories.map((cat) => (
             <div key={cat.name}>
