@@ -518,6 +518,7 @@ export default function BudgetPlannerDetailed() {
                 <div className={cardCls}>
                   <h2 className="font-display text-xl font-semibold">Income</h2>
                   <p className="mt-2 text-xs text-muted-foreground">Enter your income using your annual salary or a typical paycheck.</p>
+                  <p className="mt-3 rounded-sm border border-accent/30 bg-accent/[0.06] p-3 text-[11px] leading-relaxed text-muted-foreground"><strong className="text-foreground">Buying with a partner or spouse?</strong> Combine both of your incomes here, and include both partners' real expenses, debts, and savings throughout the rest of the planner, so every number reflects your full household.</p>
                   <div className="mt-4 flex flex-wrap gap-2">
                     <Pill active={mode === "annual"} onClick={() => setMode("annual")}>Annual salary</Pill>
                     <Pill active={mode === "paycheck-gross"} onClick={() => setMode("paycheck-gross")}>Paycheck (gross)</Pill>
