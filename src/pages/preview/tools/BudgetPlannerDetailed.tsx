@@ -713,18 +713,21 @@ export default function BudgetPlannerDetailed() {
                   <p className="mt-2 text-xs leading-relaxed text-muted-foreground">Everything that is not a fixed obligation: restaurants, entertainment, shopping, travel, hobbies. The less you spend here, the more you can save toward a down payment.</p>
                   <div className="mt-4 space-y-2">
                     {guiltFree.map((row, i) => (
-                      <div key={row.id} className="flex items-center gap-2">
-                        <input id={`gf-label-${i}`} onKeyDown={colTab("gf-label", i, guiltFree.length)} value={row.label} onChange={(e) => updateGf(row.id, "label", e.target.value)} placeholder="Category name" className={`${rowInputCls} !w-28 shrink-0 px-3 sm:!w-48`} />
-                        <div className="relative flex-1">
-                          <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-muted-foreground">$</span>
-                          <MoneyInput id={`gf-amount-${i}`} onKeyDown={colTab("gf-amount", i, guiltFree.length)} value={row.amount} onChange={(v) => updateGf(row.id, "amount", v)} placeholder={row.hint} className={`${rowInputCls} pl-7 pr-3`} />
+                      <div key={row.id}>
+                        <div className="flex items-center gap-2">
+                          <input id={`gf-label-${i}`} onKeyDown={colTab("gf-label", i, guiltFree.length)} value={row.label} onChange={(e) => updateGf(row.id, "label", e.target.value)} placeholder="Category name" className={`${rowInputCls} !w-28 shrink-0 px-3 sm:!w-48`} />
+                          <div className="relative flex-1">
+                            <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-muted-foreground">$</span>
+                            <MoneyInput id={`gf-amount-${i}`} onKeyDown={colTab("gf-amount", i, guiltFree.length)} value={row.amount} onChange={(v) => updateGf(row.id, "amount", v)} placeholder={row.hint} className={`${rowInputCls} pl-7 pr-3`} />
+                          </div>
+                          <button type="button" onClick={() => removeGf(row.id)} aria-label="Remove row" className="flex h-9 w-8 shrink-0 items-center justify-center rounded-sm text-muted-foreground transition-colors hover:text-red-500"><X className="h-4 w-4" /></button>
                         </div>
-                        <button type="button" onClick={() => removeGf(row.id)} aria-label="Remove row" className="flex h-9 w-8 shrink-0 items-center justify-center rounded-sm text-muted-foreground transition-colors hover:text-red-500"><X className="h-4 w-4" /></button>
+                        {row.amount > 0 && <p className="mt-0.5 pr-10 text-right text-[10px] text-muted-foreground">{usd(row.amount * 12)}/yr</p>}
                       </div>
                     ))}
                   </div>
                   <button type="button" onClick={addGf} className="mt-3 flex w-full items-center justify-center gap-2 rounded-sm border border-border py-2.5 text-sm font-semibold text-foreground transition-colors hover:border-accent hover:text-accent"><Plus className="h-4 w-4" /> Add row</button>
-                  <div className="mt-3 flex justify-between rounded-sm bg-secondary/50 p-3 text-sm"><span className="text-muted-foreground">Total / mo</span><span className="font-semibold">{usd(gfTotal)}</span></div>
+                  <div className="mt-3 flex justify-between rounded-sm bg-secondary/50 p-3 text-sm"><span className="text-muted-foreground">Total / mo</span><span className="font-semibold">{usd(gfTotal)}<span className="ml-2 text-xs font-normal text-muted-foreground">{usd(gfTotal * 12)}/yr</span></span></div>
                 </div>
 
                 {/* Debt repayment */}
