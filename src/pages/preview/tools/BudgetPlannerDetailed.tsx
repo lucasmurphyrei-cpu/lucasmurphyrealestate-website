@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, ArrowRight, Check, Download, Handshake, Info, Plus, Wallet, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, Calculator, Check, Download, Handshake, Info, Plus, Wallet, X } from "lucide-react";
 import PreviewHeader from "@/pages/preview/_shared/PreviewHeader";
 import PreviewFooter from "@/pages/preview/_shared/PreviewFooter";
 import MoneyInput from "@/pages/preview/_shared/MoneyInput";
@@ -941,7 +941,7 @@ export default function BudgetPlannerDetailed() {
                   <div className="flex justify-between border-t border-border pt-2 font-semibold"><span>Likely left over each month</span><span className={likelyLeftover >= 0 ? "text-accent" : "text-red-500"}>{usd(likelyLeftover)}</span></div>
                 </div>
 
-                <p className="mt-3 rounded-sm bg-card p-3 text-xs leading-relaxed text-muted-foreground">You currently pay <strong className="text-foreground">{usd(rentMortgage)}/mo</strong> toward housing. At your comfortable payment of <strong className="text-foreground">{usd(comfortTarget)}/mo</strong> ({comfortTarget - rentMortgage >= 0 ? <>about <strong className="text-foreground">{usd(comfortTarget - rentMortgage)}/mo more</strong></> : <>about <strong className="text-foreground">{usd(rentMortgage - comfortTarget)}/mo less</strong></>} than now), you'd still have about <strong className="text-foreground">{usd(leftForSaving)}/mo</strong> each month to put toward saving, investing, more lifestyle, or a bigger down payment, anything beyond your fixed costs and guilt-free spending. You'll decide how to deploy it in Step 5.</p>
+                <p className="mt-3 rounded-sm bg-card p-3 text-xs leading-relaxed text-muted-foreground">You currently pay <strong className="text-foreground">{usd(rentMortgage)}/mo</strong> toward housing. At your comfortable payment of <strong className="text-foreground">{usd(comfortTarget)}/mo</strong> ({comfortTarget - rentMortgage >= 0 ? <>about <strong className="text-foreground">{usd(comfortTarget - rentMortgage)}/mo more</strong></> : <>about <strong className="text-foreground">{usd(rentMortgage - comfortTarget)}/mo less</strong></>} than now), you'd still have about <strong className="text-foreground">{usd(leftForSaving)}/mo</strong> each month to put toward saving, investing, more lifestyle, or a bigger monthly payment for more house, anything beyond your fixed costs and guilt-free spending. You'll decide how to deploy it in Step 5.</p>
 
                 <div className="mt-4 rounded-sm border border-accent/30 bg-accent/[0.06] p-4">
                   <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-accent">Recommended range &mdash; 28/36 rule</p>
@@ -967,8 +967,11 @@ export default function BudgetPlannerDetailed() {
                       <MoneyInput value={comfortTarget} onChange={setComfortPayment} placeholder="2,500" className={`${fieldCls} pl-8 text-lg font-semibold`} />
                     </div>
                     <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] text-muted-foreground">
-                      <span>Recommended budget: {usd(Math.round(recommended))}/mo</span>
-                      {comfortPayment > 0 && <button type="button" onClick={() => setComfortPayment(0)} className="font-semibold text-accent hover:underline">Reset to recommended</button>}
+                      {comfortPayment > 0 ? (
+                        <button type="button" onClick={() => setComfortPayment(0)} className="font-semibold text-accent hover:underline">Reset to our recommendation</button>
+                      ) : (
+                        <span>Prefilled with our recommendation. Type your own number to override.</span>
+                      )}
                     </div>
                   </div>
                   <div className="rounded-sm bg-card p-4 ring-1 ring-accent/20">
@@ -991,7 +994,7 @@ export default function BudgetPlannerDetailed() {
 
                 {/* Deployable total -> Step 5 */}
                 <div className="mt-3 rounded-sm border border-accent/30 bg-accent/[0.06] p-3">
-                  <p className="text-xs leading-relaxed text-muted-foreground">After this payment you'd have about <strong className="text-accent">{usd(leftForSaving)}/mo</strong> left each month, yours to put toward investing, more lifestyle, or a bigger down payment. <button type="button" onClick={() => goStep(4)} className="font-semibold text-accent hover:underline">Head to Step 5 to deploy it &rarr;</button></p>
+                  <p className="text-xs leading-relaxed text-muted-foreground">After this payment you'd have about <strong className="text-accent">{usd(leftForSaving)}/mo</strong> left each month, yours to put toward investing, more lifestyle, or a bigger monthly payment for more house. <button type="button" onClick={() => goStep(4)} className="font-semibold text-accent hover:underline">Head to Step 5 to deploy it &rarr;</button></p>
                 </div>
 
                 {/* All-in monthly breakdown + rule-of-thumb adjusters */}
@@ -1199,6 +1202,9 @@ export default function BudgetPlannerDetailed() {
                     ))}
                   </div>
                   <p className="mt-2 text-[11px] leading-relaxed text-muted-foreground"><strong className="text-foreground">This is where your leftover income lands once the house is covered.</strong> More into investing builds liquid wealth; less here frees it up for lifestyle or a bigger monthly payment. Keep retirement and emergency funded, that's your safety net.</p>
+                  {monthlySavingsForHome > 0 && (
+                    <p className="mt-3 rounded-sm border border-accent/30 bg-accent/[0.06] p-3 text-[11px] leading-relaxed text-muted-foreground"><strong className="text-foreground">No longer saving for a down payment?</strong> You're setting aside <strong className="text-foreground">{usd(monthlySavingsForHome)}/mo</strong> toward it now. Once you close, that goal is funded, so redeploy the full <strong className="text-accent">{usd(monthlySavingsForHome)}/mo</strong> anywhere you like: other savings or investing, more guilt-free spending, or a bigger monthly payment.</p>
+                  )}
                 </div>
 
                 <p className="mt-5 rounded-sm bg-secondary/50 p-3 text-xs leading-relaxed text-muted-foreground">Is your guilt-free spending realistic for life <em>after</em> you move? Add the trips, dining, and hobbies you want to keep doing, so this number reflects the life you actually want. <button type="button" onClick={() => goStep(1)} className="font-semibold text-accent hover:underline">Add them in Step 2 &rarr;</button></p>
@@ -1224,12 +1230,15 @@ export default function BudgetPlannerDetailed() {
             )}
 
             {/* Nav */}
-            <div className="flex items-center justify-between gap-4">
+            <div className="flex flex-wrap items-center justify-between gap-3">
               <button type="button" onClick={() => goStep(Math.max(0, step - 1))} disabled={step === 0} className="inline-flex items-center gap-2 text-sm font-semibold text-foreground transition-colors hover:text-accent disabled:opacity-30"><ArrowLeft className="h-4 w-4" /> Back</button>
               {step < 4 ? (
                 <button type="button" onClick={() => goStep(Math.min(4, step + 1))} className="group inline-flex items-center gap-2 rounded-sm bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:-translate-y-0.5">Next <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" /></button>
               ) : (
-                <Link to="/resources/lenders" className="group inline-flex items-center gap-2 rounded-sm bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:-translate-y-0.5"><Handshake className="h-4 w-4" /> Get pre-approved</Link>
+                <div className="flex flex-wrap items-center justify-end gap-2 sm:gap-3">
+                  <Link to="/tools/mortgage-calculator" className="group inline-flex items-center gap-2 rounded-sm border border-accent/40 px-4 py-3 text-sm font-semibold text-foreground transition-all duration-300 hover:-translate-y-0.5 hover:border-accent hover:bg-accent/10"><Calculator className="h-4 w-4 text-accent" /> Run a specific house</Link>
+                  <Link to="/resources/lenders" className="group inline-flex items-center gap-2 rounded-sm bg-accent px-5 py-3 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:-translate-y-0.5"><Handshake className="h-4 w-4" /> Get pre-approved</Link>
+                </div>
               )}
             </div>
           </div>
