@@ -36,16 +36,33 @@ const webSite = () => ({
   publisher: { "@id": `${ORIGIN}/#agent` },
   potentialAction: { "@type": "SearchAction", target: `${ORIGIN}/?q={search_term_string}`, "query-input": "required name=search_term_string" },
 });
-const realEstateAgent = () => ({
-  "@type": "RealEstateAgent",
-  "@id": `${ORIGIN}/#agent`,
+// The HUMAN (Person) — the entity AI engines must disambiguate from other "Lucas Murphy"s.
+const person = () => ({
+  "@type": "Person",
+  "@id": `${ORIGIN}/#person`,
   name: siteConfig.agent.name,
-  jobTitle: siteConfig.agent.jobTitle,
+  jobTitle: `${siteConfig.agent.jobTitle}, ${siteConfig.brokerage}`,
   worksFor: { "@id": `${ORIGIN}/#brokerage` },
   url: ORIGIN,
   image: `${ORIGIN}${siteConfig.defaultOgImage}`,
   email: siteConfig.email,
   telephone: siteConfig.phoneE164,
+  address: { "@type": "PostalAddress", addressLocality: siteConfig.locality, addressRegion: siteConfig.region, addressCountry: "US" },
+  knowsAbout: [...siteConfig.agent.knowsAbout],
+  sameAs: sameAsProfiles,
+  description: siteConfig.agent.description,
+});
+// The PRACTICE (RealEstateAgent is a LocalBusiness subtype) — linked back to the Person.
+const realEstateAgent = () => ({
+  "@type": "RealEstateAgent",
+  "@id": `${ORIGIN}/#agent`,
+  name: `${siteConfig.agent.name} — ${siteConfig.brokerage}`,
+  url: ORIGIN,
+  image: `${ORIGIN}${siteConfig.defaultOgImage}`,
+  email: siteConfig.email,
+  telephone: siteConfig.phoneE164,
+  employee: { "@id": `${ORIGIN}/#person` },
+  parentOrganization: { "@id": `${ORIGIN}/#brokerage` },
   address: { "@type": "PostalAddress", addressLocality: siteConfig.locality, addressRegion: siteConfig.region, addressCountry: "US" },
   areaServed: siteConfig.counties.map((c) => ({ "@type": "AdministrativeArea", name: `${c} County, Wisconsin` })),
   knowsAbout: [...siteConfig.agent.knowsAbout],
@@ -133,7 +150,7 @@ function metaFor(path: string): Meta {
 
 /* ----------------------------- render ----------------------------- */
 function jsonLd(path: string, meta: Meta): string {
-  const nodes: object[] = [organization(), webSite(), realEstateAgent()];
+  const nodes: object[] = [organization(), webSite(), person(), realEstateAgent()];
   if (path !== "/") nodes.push(breadcrumb(path));
   if (meta.faq) nodes.push(faqPage(meta.faq));
   const doc = { "@context": "https://schema.org", "@graph": nodes };
