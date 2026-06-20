@@ -1,10 +1,12 @@
-import { siteConfig, absoluteUrl } from "@/lib/siteConfig";
+import { siteConfig, sameAsProfiles, absoluteUrl } from "@/lib/siteConfig";
 
-const areaServed = () => siteConfig.counties.map((c) => `${c} County, WI`);
+const areaServed = () =>
+  siteConfig.counties.map((c) => ({ "@type": "AdministrativeArea", name: `${c} County, Wisconsin` }));
 
 export function organization() {
   return {
     "@type": "Organization",
+    "@id": `${siteConfig.url}/#brokerage`,
     name: siteConfig.brokerage,
     url: siteConfig.url,
   };
@@ -13,16 +15,24 @@ export function organization() {
 export function realEstateAgent() {
   return {
     "@type": "RealEstateAgent",
+    "@id": `${siteConfig.url}/#agent`,
     name: siteConfig.agent.name,
     jobTitle: siteConfig.agent.jobTitle,
     worksFor: organization(),
     url: siteConfig.url,
+    image: absoluteUrl(siteConfig.defaultOgImage),
     email: siteConfig.email,
     telephone: siteConfig.phoneE164,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: siteConfig.locality,
+      addressRegion: siteConfig.region,
+      addressCountry: "US",
+    },
     areaServed: areaServed(),
-    sameAs: [siteConfig.social.facebook, siteConfig.social.youtube, siteConfig.social.google],
-    description:
-      "Expert real estate services in Milwaukee, Waukesha, Washington & Ozaukee Counties, Wisconsin.",
+    knowsAbout: [...siteConfig.agent.knowsAbout],
+    sameAs: sameAsProfiles,
+    description: siteConfig.agent.description,
   };
 }
 
