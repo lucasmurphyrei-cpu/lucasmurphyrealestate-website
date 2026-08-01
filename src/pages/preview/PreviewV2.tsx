@@ -14,7 +14,7 @@ import {
 import provisionLogo from "@/assets/provision-logo.png";
 import expWhite from "@/assets/exp-logo-white.png";
 import headshot from "@/assets/lucas-murphy-headshot.jpeg";
-import teamBanner from "@/assets/team-banner.png";
+import milwaukeeSkyline from "@/assets/milwaukee-skyline.jpg";
 
 /*
  * REDESIGN PREVIEW — Direction 2: "Feels Like Family"
@@ -106,7 +106,7 @@ export default function PreviewV2() {
 
       {/* ===== Hero ===== */}
       <section className="preview-grain relative flex min-h-[94vh] items-center justify-center overflow-hidden text-center">
-        <img src={teamBanner} alt="Lucas Murphy and the Provision Properties team" className="absolute inset-0 h-full w-full object-cover" />
+        <img src={milwaukeeSkyline} alt="The Milwaukee skyline at dusk" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-[#1b1712]/65" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#1b1712]/70 via-transparent to-[#1b1712]/80" />
         <motion.div
@@ -336,7 +336,7 @@ export default function PreviewV2() {
 
       {/* ===== Final CTA ===== */}
       <section className="preview-grain relative overflow-hidden">
-        <img src={teamBanner} alt="" className="absolute inset-0 h-full w-full object-cover" />
+        <img src={milwaukeeSkyline} alt="" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-[#1b1712]/80" />
         <div className="relative z-10 mx-auto max-w-3xl px-6 py-28 text-center lg:py-36">
           <h2 className="font-display text-4xl font-medium leading-tight text-white sm:text-5xl">

@@ -8,7 +8,6 @@ import { Home, Building2, MapPin, TrendingUp, TrendingDown, Minus as MinusIcon, 
 import countyMarketData from "@/data/countyMarketData";
 import { motion } from "framer-motion";
 import milwaukeeSkyline from "@/assets/milwaukee-skyline.jpg";
-import teamBanner from "@/assets/team-banner.png";
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
   visible: (i: number) => ({ opacity: 1, y: 0, transition: { delay: i * 0.1, duration: 0.5 } }),
@@ -303,16 +302,12 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About / Team */}
+      {/* About */}
       <section className="relative border-t border-border">
-        <div className="absolute inset-0">
-          <img src={teamBanner} alt="Provision Properties Core Team banner" className="h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-background/70 backdrop-blur-[2px]" />
-        </div>
         <div className="container relative py-20 text-center">
-          <h2 className="font-display text-3xl font-bold md:text-4xl">About Our Team</h2>
+          <h2 className="font-display text-3xl font-bold md:text-4xl">About Lucas</h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            The Provision Properties Core Team at eXp Realty brings unmatched market knowledge and a client-first approach to every transaction in Milwaukee and Waukesha County. We're committed to making your real estate goals a reality — whether you're a first-time buyer, seasoned investor, or relocating to Wisconsin.
+            I'm Lucas Murphy, a Realtor with eXp Realty serving Milwaukee and Waukesha County. I bring deep local market knowledge and a client-first approach to every transaction — whether you're a first-time buyer, a seasoned investor, or relocating to Wisconsin.
           </p>
           <Button asChild size="lg" className="mt-8">
             <Link to="/contact">Get In Touch</Link>
