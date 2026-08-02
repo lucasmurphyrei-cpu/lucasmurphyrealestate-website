@@ -33,7 +33,7 @@ create policy "anon may submit leads"
   );
 
 -- ---------------------------------------------------------------------------
--- public.buyer_intakes -- from buyer_intake_schema.json v1.0.0 (52 fields)
+-- public.buyer_intakes -- from buyer_intake_schema.json v1.0.0 (53 fields)
 -- PII boundary: preapproval_amount, down_payment_amount, down_payment_source, credit_range
 -- must stay out of the Google Sheet mirror; Supabase + local markdown only.
 -- ---------------------------------------------------------------------------
@@ -72,6 +72,7 @@ create table if not exists public.buyer_intakes (
   commute_to                       text,
   max_commute_minutes              integer,
   property_types                   text[],
+  home_style                       text[],
   beds_min                         integer,
   baths_min                        numeric(6,1),
   sqft_min                         integer,
@@ -128,6 +129,7 @@ create policy "anon may submit buyer_intakes"
     (school_district is null or char_length(school_district) <= 300) and
     (commute_to is null or char_length(commute_to) <= 300) and
     (property_types is null or array_length(property_types, 1) <= 40) and
+    (home_style is null or array_length(home_style, 1) <= 40) and
     (basement_preference is null or char_length(basement_preference) <= 300) and
     (condition_tolerance is null or char_length(condition_tolerance) <= 300) and
     (must_haves is null or char_length(must_haves) <= 4000) and
