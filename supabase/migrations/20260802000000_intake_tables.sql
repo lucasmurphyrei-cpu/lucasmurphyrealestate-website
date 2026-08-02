@@ -5,14 +5,32 @@
 begin;
 
 -- ---------------------------------------------------------------------------
--- public.leads -- restate the posture verified live on 2026-08-01.
--- Anonymous SELECT already returns zero rows and anonymous DELETE affects zero
--- rows; this makes that explicit and version-controlled rather than dashboard
--- state nobody can review. Safe to re-run.
+-- public.leads
+-- Created here too, so this file stands alone in a FRESH project. The original
+-- leads table lives in a Lovable-provisioned project Lucas does not own; when
+-- the site is repointed at his own project the table has to exist on arrival or
+-- the guide-download form starts throwing on every submission.
+-- `if not exists` keeps it safe to run against the old project too.
 -- ---------------------------------------------------------------------------
+create table if not exists public.leads (
+  id          uuid primary key default gen_random_uuid(),
+  created_at  timestamptz not null default now(),
+  full_name   text not null,
+  email       text not null,
+  timeline    text
+);
+
 alter table public.leads enable row level security;
 revoke all on public.leads from anon, authenticated;
 grant insert on public.leads to anon;
+
+drop policy if exists "anon may submit leads" on public.leads;
+create policy "anon may submit leads"
+  on public.leads for insert to anon
+  with check (
+    char_length(full_name) <= 300 and char_length(email) <= 300
+    and (timeline is null or char_length(timeline) <= 300)
+  );
 
 -- ---------------------------------------------------------------------------
 -- public.buyer_intakes -- from buyer_intake_schema.json v1.0.0 (52 fields)
