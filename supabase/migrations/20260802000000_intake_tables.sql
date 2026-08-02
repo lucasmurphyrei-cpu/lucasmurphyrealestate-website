@@ -15,7 +15,7 @@ revoke all on public.leads from anon, authenticated;
 grant insert on public.leads to anon;
 
 -- ---------------------------------------------------------------------------
--- public.buyer_intakes -- from buyer_intake_schema.json v1.0.0 (50 fields)
+-- public.buyer_intakes -- from buyer_intake_schema.json v1.0.0 (52 fields)
 -- PII boundary: preapproval_amount, down_payment_amount, down_payment_source, credit_range
 -- must stay out of the Google Sheet mirror; Supabase + local markdown only.
 -- ---------------------------------------------------------------------------
@@ -23,15 +23,17 @@ create table if not exists public.buyer_intakes (
   id          uuid primary key default gen_random_uuid(),
   created_at  timestamptz not null default now(),
   full_name                        text,
+  cobuyer_name                     text,
   email                            text,
+  cobuyer_email                    text,
   phone                            text,
+  cobuyer_phone                    text,
   current_address                  text,
+  cobuyer_relationship             text,
   preferred_contact                text,
   best_contact_time                text[],
-  cobuyer_name                     text,
-  cobuyer_email                    text,
-  cobuyer_phone                    text,
-  cobuyer_relationship             text,
+  employment_status                text,
+  years_employed                   text,
   financing_type                   text,
   preapproval_status               text,
   lender_name                      text,
@@ -86,15 +88,17 @@ create policy "anon may submit buyer_intakes"
   on public.buyer_intakes for insert to anon
   with check (
     (full_name is null or char_length(full_name) <= 300) and
+    (cobuyer_name is null or char_length(cobuyer_name) <= 300) and
     (email is null or char_length(email) <= 300) and
+    (cobuyer_email is null or char_length(cobuyer_email) <= 300) and
     (phone is null or char_length(phone) <= 300) and
+    (cobuyer_phone is null or char_length(cobuyer_phone) <= 300) and
     (current_address is null or char_length(current_address) <= 300) and
+    (cobuyer_relationship is null or char_length(cobuyer_relationship) <= 300) and
     (preferred_contact is null or char_length(preferred_contact) <= 300) and
     (best_contact_time is null or array_length(best_contact_time, 1) <= 40) and
-    (cobuyer_name is null or char_length(cobuyer_name) <= 300) and
-    (cobuyer_email is null or char_length(cobuyer_email) <= 300) and
-    (cobuyer_phone is null or char_length(cobuyer_phone) <= 300) and
-    (cobuyer_relationship is null or char_length(cobuyer_relationship) <= 300) and
+    (employment_status is null or char_length(employment_status) <= 300) and
+    (years_employed is null or char_length(years_employed) <= 300) and
     (financing_type is null or char_length(financing_type) <= 300) and
     (preapproval_status is null or char_length(preapproval_status) <= 300) and
     (lender_name is null or char_length(lender_name) <= 300) and
