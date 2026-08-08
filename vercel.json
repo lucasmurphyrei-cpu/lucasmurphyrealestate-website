@@ -5,6 +5,8 @@
     { "source": "/guide/relocation-guide-metro-milwaukee", "destination": "https://lucasmurphyrealestate-main.vercel.app/guide/relocation-guide-metro-milwaukee", "permanent": false },
     { "source": "/guide/house-hacking-guide", "destination": "https://lucasmurphyrealestate-main.vercel.app/guide/house-hacking-guide", "permanent": false },
 
+    { "source": "/first-time-homebuyers-guide", "destination": "/guides/first-time-home-buyers", "permanent": true },
+
     { "source": "/areas", "destination": "/market", "permanent": false },
     { "source": "/areas/:path*", "destination": "/market/:path*", "permanent": false },
     { "source": "/preview/v1", "destination": "/", "permanent": false },

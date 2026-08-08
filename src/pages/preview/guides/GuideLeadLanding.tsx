@@ -6,6 +6,7 @@ import Seo from "@/components/seo/Seo";
 import { useToast } from "@/hooks/use-toast";
 import { GUIDE_LEADS } from "@/pages/preview/guides/guidesData";
 import lucasHeadshot from "@/assets/lucas-murphy-headshot.jpeg";
+import { supabase } from "@/integrations/supabase/client";
 
 const GOOGLE_SHEETS_URL = import.meta.env.VITE_GOOGLE_SHEETS_URL;
 
@@ -36,22 +37,48 @@ export default function GuideLeadLanding({ slug }: { slug: string }) {
     setLoading(true);
     const fd = new FormData(e.target as HTMLFormElement);
     const name = `${(fd.get("firstName") as string) || ""} ${(fd.get("lastName") as string) || ""}`.trim();
+    const email = (fd.get("email") as string) || "";
+    const phone = (fd.get("phone") as string) || "";
+    const source = `${g.comingSoon ? "guide-waitlist" : "guide"}:${g.slug}`;
+
     try {
-      if (!GOOGLE_SHEETS_URL) throw new Error("Form endpoint not configured");
-      const params = new URLSearchParams();
-      params.append("name", name);
-      params.append("email", (fd.get("email") as string) || "");
-      params.append("phone", (fd.get("phone") as string) || "");
-      params.append("guide", g.heroHeadline);
-      params.append("source", `${g.comingSoon ? "guide-waitlist" : "guide"}:${g.slug}`);
-      params.append("timestamp", new Date().toISOString());
-      await fetch(GOOGLE_SHEETS_URL, { method: "POST", mode: "no-cors", body: params });
+      // Supabase is the durable record and the ONLY channel that can report failure.
+      // The Sheet POST below is mode:"no-cors", so its response is opaque by design --
+      // it cannot tell us whether a row landed. Relying on it alone is how leads were
+      // lost silently while a Vercel env var was misnamed.
+      if (supabase) {
+        const { error } = await supabase.from("leads").insert({
+          full_name: name,
+          email,
+          phone,
+          guide: g.heroHeadline,
+          source,
+          consent: true, // the form cannot submit without the consent box ticked
+        });
+        if (error) throw error;
+      }
+
+      // Mirror to the Google Sheet: unchanged param shape, so the existing Apps Script
+      // and every column in the sheet keep working. Fire-and-forget on purpose -- a
+      // Sheet outage must not cost us a lead we have already stored.
+      if (GOOGLE_SHEETS_URL) {
+        const params = new URLSearchParams();
+        params.append("name", name);
+        params.append("email", email);
+        params.append("phone", phone);
+        params.append("guide", g.heroHeadline);
+        params.append("source", source);
+        params.append("timestamp", new Date().toISOString());
+        void fetch(GOOGLE_SHEETS_URL, { method: "POST", mode: "no-cors", body: params })
+          .catch(() => {/* mirror only; the row is already safe in Supabase */});
+      }
+
       setDone(true);
       if (g.downloadUrl) window.open(g.downloadUrl, "_blank", "noopener");
     } catch {
       toast({
         title: "Something went wrong",
-        description: "Please try again or reach out and I'll send it over directly.",
+        description: "Please try again, or text me on 414-458-1952 and I'll send it over directly.",
         variant: "destructive",
       });
     } finally {

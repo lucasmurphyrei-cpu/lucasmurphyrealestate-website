@@ -30,7 +30,6 @@ import OzaukeeCounty from "./pages/areas/OzaukeeCounty";
 import WaukeshaCounty from "./pages/areas/WaukeshaCounty";
 import WashingtonCounty from "./pages/areas/WashingtonCounty";
 import MunicipalityReport from "./pages/areas/MunicipalityReport";
-import FirstTimeHomeBuyersGuide from "./pages/FirstTimeHomeBuyersGuide";
 import PreviewV1 from "./pages/preview/PreviewV1";
 import PreviewV2 from "./pages/preview/PreviewV2";
 import MarketHub from "./pages/preview/market/MarketHub";
@@ -68,7 +67,6 @@ const App = () => (
           <ScrollToTop />
           <Routes>
             {/* Standalone landing page — no main site navbar/footer */}
-            <Route path="/first-time-homebuyers-guide" element={<FirstTimeHomeBuyersGuide />} />
 
             {/* ===== Primary site — promoted redesign, standalone header/footer ===== */}
             <Route path="/" element={<PreviewV1 />} />

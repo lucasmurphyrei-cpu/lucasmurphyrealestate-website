@@ -23,7 +23,6 @@ const STATIC_ROUTES: RouteEntry[] = [
   { path: "/guides/house-hacking", changefreq: "monthly", priority: 0.7 },
   { path: "/guides/sellers", changefreq: "monthly", priority: 0.7 },
   { path: "/guides/investors", changefreq: "monthly", priority: 0.7 },
-  { path: "/first-time-homebuyers-guide", changefreq: "monthly", priority: 0.9 },
   { path: "/tools", changefreq: "monthly", priority: 0.8 },
   { path: "/tools/seller-net-sheet", changefreq: "monthly", priority: 0.6 },
   { path: "/tools/mortgage-calculator", changefreq: "monthly", priority: 0.7 },

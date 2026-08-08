@@ -20,6 +20,13 @@ create table if not exists public.leads (
   timeline    text
 );
 
+-- The six guide landing pages collect more than the original two fields. Added
+-- separately so this block still applies cleanly to an already-created table.
+alter table public.leads add column if not exists phone   text;
+alter table public.leads add column if not exists guide   text;
+alter table public.leads add column if not exists source  text;
+alter table public.leads add column if not exists consent boolean;
+
 alter table public.leads enable row level security;
 revoke all on public.leads from anon, authenticated;
 grant insert on public.leads to anon;
@@ -30,6 +37,9 @@ create policy "anon may submit leads"
   with check (
     char_length(full_name) <= 300 and char_length(email) <= 300
     and (timeline is null or char_length(timeline) <= 300)
+    and (phone is null or char_length(phone) <= 300)
+    and (guide is null or char_length(guide) <= 300)
+    and (source is null or char_length(source) <= 300)
   );
 
 -- ---------------------------------------------------------------------------
@@ -40,11 +50,11 @@ create policy "anon may submit leads"
 create table if not exists public.buyer_intakes (
   id          uuid primary key default gen_random_uuid(),
   created_at  timestamptz not null default now(),
-  full_name                        text,
+  full_name                        text not null,
   cobuyer_name                     text,
-  email                            text,
+  email                            text not null,
   cobuyer_email                    text,
-  phone                            text,
+  phone                            text not null,
   cobuyer_phone                    text,
   current_address                  text,
   cobuyer_relationship             text,
@@ -91,9 +101,16 @@ create table if not exists public.buyer_intakes (
   what_matters_most                text,
   referral_source                  text,
   referred_by                      text,
-  agency_ack                       boolean,
-  contact_consent                  boolean
+  agency_ack                       boolean not null,
+  contact_consent                  boolean not null
 );
+
+-- required fields, enforced server-side: agency_ack, contact_consent, email, full_name, phone
+alter table public.buyer_intakes alter column agency_ack set not null;
+alter table public.buyer_intakes alter column contact_consent set not null;
+alter table public.buyer_intakes alter column email set not null;
+alter table public.buyer_intakes alter column full_name set not null;
+alter table public.buyer_intakes alter column phone set not null;
 
 comment on table public.buyer_intakes is
   'Write-only intake capture. Generated from buyer_intake_schema.json. No SELECT policy by design.';
@@ -155,16 +172,16 @@ create policy "anon may submit buyer_intakes"
 create table if not exists public.seller_intakes (
   id          uuid primary key default gen_random_uuid(),
   created_at  timestamptz not null default now(),
-  property_address              text,
+  property_address              text not null,
   home_type                     text,
   approx_sqft                   integer,
   bedrooms                      integer,
   bathrooms                     numeric(6,1),
   garage_spaces                 integer,
   year_built                    integer,
-  seller_one_name               text,
-  seller_one_email              text,
-  seller_one_cell               text,
+  seller_one_name               text not null,
+  seller_one_email              text not null,
+  seller_one_cell               text not null,
   seller_one_work               text,
   seller_one_preferred_contact  text,
   seller_one_best_time          text[],
@@ -223,9 +240,17 @@ create table if not exists public.seller_intakes (
   ideal_move_out                date,
   buy_before_moving             text,
   occupancy_needed              boolean,
-  agency_ack                    boolean,
-  contact_consent               boolean
+  agency_ack                    boolean not null,
+  contact_consent               boolean not null
 );
+
+-- required fields, enforced server-side: agency_ack, contact_consent, property_address, seller_one_cell, seller_one_email, seller_one_name
+alter table public.seller_intakes alter column agency_ack set not null;
+alter table public.seller_intakes alter column contact_consent set not null;
+alter table public.seller_intakes alter column property_address set not null;
+alter table public.seller_intakes alter column seller_one_cell set not null;
+alter table public.seller_intakes alter column seller_one_email set not null;
+alter table public.seller_intakes alter column seller_one_name set not null;
 
 comment on table public.seller_intakes is
   'Write-only intake capture. Generated from seller_intake_schema.json. No SELECT policy by design.';
@@ -293,13 +318,13 @@ create policy "anon may submit seller_intakes"
 create table if not exists public.tenant_intakes (
   id          uuid primary key default gen_random_uuid(),
   created_at  timestamptz not null default now(),
-  full_name                 text,
-  email                     text,
-  phone                     text,
+  full_name                 text not null,
+  email                     text not null,
+  phone                     text not null,
   current_address           text,
   preferred_contact         text,
   best_contact_time         text[],
-  occupant_count            integer,
+  occupant_count            integer not null,
   coapplicant_name          text,
   coapplicant_email         text,
   coapplicant_phone         text,
@@ -307,9 +332,9 @@ create table if not exists public.tenant_intakes (
   target_areas              text,
   commute_to                text,
   max_commute_minutes       integer,
-  max_monthly_rent          numeric(12,2),
+  max_monthly_rent          numeric(12,2) not null,
   rent_includes_utilities   text,
-  move_in_date              date,
+  move_in_date              date not null,
   date_flexibility          text,
   lease_length              text,
   property_types            text[],
@@ -353,9 +378,19 @@ create table if not exists public.tenant_intakes (
   must_haves                text,
   deal_breakers             text,
   other_notes               text,
-  agency_ack                boolean,
-  contact_consent           boolean
+  agency_ack                boolean not null,
+  contact_consent           boolean not null
 );
+
+-- required fields, enforced server-side: agency_ack, contact_consent, email, full_name, max_monthly_rent, move_in_date, occupant_count, phone
+alter table public.tenant_intakes alter column agency_ack set not null;
+alter table public.tenant_intakes alter column contact_consent set not null;
+alter table public.tenant_intakes alter column email set not null;
+alter table public.tenant_intakes alter column full_name set not null;
+alter table public.tenant_intakes alter column max_monthly_rent set not null;
+alter table public.tenant_intakes alter column move_in_date set not null;
+alter table public.tenant_intakes alter column occupant_count set not null;
+alter table public.tenant_intakes alter column phone set not null;
 
 comment on table public.tenant_intakes is
   'Write-only intake capture. Generated from tenant_intake_schema.json. No SELECT policy by design.';
