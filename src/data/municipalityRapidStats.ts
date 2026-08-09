@@ -497,6 +497,92 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
   newburg: null,
+  addison: {
+    data_month: "August 2026",
+    data_as_of: "2026-08-01",
+    prior_year_label: "2025",
+    current_year_label: "2026",
+    median_sale_price: 636225,
+    metrics: [
+      { label: "New Listings", prior_year: "2", current_year: "2", change_pct: 0.0 },
+      { label: "Closed Sales", prior_year: "2", current_year: "2", change_pct: 0.0 },
+      { label: "Median Sales Price", prior_year: "$470,000", current_year: "$636,225", change_pct: 35.4 },
+      { label: "Pct of Orig. List Price Received", prior_year: "91.7%", current_year: "98.3%", change_pct: 7.1 },
+      { label: "Days on Market Until Sale", prior_year: "25", current_year: "54", change_pct: 116.0 },
+      { label: "Inventory (SFR)", prior_year: "5", current_year: "5", change_pct: 0.0 },
+    ],
+  },
+  barton: {
+    data_month: "August 2026",
+    data_as_of: "2026-08-01",
+    prior_year_label: "2025",
+    current_year_label: "2026",
+    median_sale_price: 582000,
+    metrics: [
+      { label: "New Listings", prior_year: "2", current_year: "4", change_pct: 100.0 },
+      { label: "Closed Sales", prior_year: "2", current_year: "2", change_pct: 0.0 },
+      { label: "Median Sales Price", prior_year: "$612,000", current_year: "$582,000", change_pct: -4.9 },
+      { label: "Pct of Orig. List Price Received", prior_year: "96.6%", current_year: "106.2%", change_pct: 9.9 },
+      { label: "Days on Market Until Sale", prior_year: "7", current_year: "3", change_pct: -57.1 },
+      { label: "Inventory (SFR)", prior_year: "2", current_year: "3", change_pct: 50.0 },
+    ],
+  },
+  farmington: {
+    data_month: "August 2026",
+    data_as_of: "2026-08-01",
+    prior_year_label: "2025",
+    current_year_label: "2026",
+    median_sale_price: 490000,
+    metrics: [
+      { label: "New Listings", prior_year: "3", current_year: "4", change_pct: 33.3 },
+      { label: "Closed Sales", prior_year: "4", current_year: "1", change_pct: -75.0 },
+      { label: "Median Sales Price", prior_year: "$556,500", current_year: "$490,000", change_pct: -12.0 },
+      { label: "Pct of Orig. List Price Received", prior_year: "100.5%", current_year: "93.3%", change_pct: -7.1 },
+      { label: "Days on Market Until Sale", prior_year: "11", current_year: "83", change_pct: 654.6 },
+      { label: "Inventory (SFR)", prior_year: "9", current_year: "9", change_pct: 0.0 },
+    ],
+  },
+  polk: {
+    data_month: "August 2026",
+    data_as_of: "2026-08-01",
+    prior_year_label: "2025",
+    current_year_label: "2026",
+    median_sale_price: 0,
+    metrics: [
+      { label: "New Listings", prior_year: "2", current_year: "3", change_pct: 50.0 },
+      { label: "Inventory (SFR)", prior_year: "7", current_year: "13", change_pct: 85.7 },
+    ],
+  },
+  trenton: {
+    data_month: "August 2026",
+    data_as_of: "2026-08-01",
+    prior_year_label: "2025",
+    current_year_label: "2026",
+    median_sale_price: 426000,
+    metrics: [
+      { label: "New Listings", prior_year: "4", current_year: "4", change_pct: 0.0 },
+      { label: "Closed Sales", prior_year: "4", current_year: "5", change_pct: 25.0 },
+      { label: "Median Sales Price", prior_year: "$383,000", current_year: "$426,000", change_pct: 11.2 },
+      { label: "Pct of Orig. List Price Received", prior_year: "106.4%", current_year: "104.7%", change_pct: -1.6 },
+      { label: "Days on Market Until Sale", prior_year: "5", current_year: "7", change_pct: 40.0 },
+      { label: "Inventory (SFR)", prior_year: "8", current_year: "8", change_pct: 0.0 },
+    ],
+  },
+  wayne: {
+    data_month: "August 2026",
+    data_as_of: "2026-08-01",
+    prior_year_label: "2025",
+    current_year_label: "2026",
+    median_sale_price: 340000,
+    metrics: [
+      { label: "New Listings", prior_year: "3", current_year: "1", change_pct: -66.7 },
+      { label: "Closed Sales", prior_year: "2", current_year: "4", change_pct: 100.0 },
+      { label: "Median Sales Price", prior_year: "$467,500", current_year: "$340,000", change_pct: -27.3 },
+      { label: "Pct of Orig. List Price Received", prior_year: "101.7%", current_year: "89.8%", change_pct: -11.7 },
+      { label: "Days on Market Until Sale", prior_year: "5", current_year: "31", change_pct: 520.0 },
+      { label: "Inventory (SFR)", prior_year: "5", current_year: "3", change_pct: -40.0 },
+    ],
+  },
 
   // --- Waukesha County ---
   waukesha: {
@@ -829,29 +915,66 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
       { label: "Inventory (SFR)", prior_year: "9", current_year: "7", change_pct: -22.2 },
     ],
   },
-
-  // Added August 2026 alongside the 59 -> 69 municipality expansion.
-  //
-  // These ten are explicitly null rather than absent: getRapidStats() returns
-  // null either way, but listing them records that they were checked, not
-  // forgotten. They render the "Coming Soon" card and fall back to the
-  // profile's Zillow-derived median in the Quick Snapshot grid.
-  //
-  // There is NO RapidStats coverage for them — verified against 182 report
-  // emails since 2026-07-01, zero of which name any of these ten. Seven are
-  // civil Towns, which the MLS reports do not break out. They will NOT
-  // populate automatically next month: each needs to be added as a saved
-  // report in the RapidStats portal first.
-  addison: null,
-  barton: null,
-  farmington: null,
-  polk: null,
-  trenton: null,
-  wayne: null,
-  genesee: null,
-  lisbon: null,
-  summit: null,
-  vernon: null,
+  genesee: {
+    data_month: "August 2026",
+    data_as_of: "2026-08-01",
+    prior_year_label: "2025",
+    current_year_label: "2026",
+    median_sale_price: 739500,
+    metrics: [
+      { label: "New Listings", prior_year: "1", current_year: "11", change_pct: 1000.0 },
+      { label: "Closed Sales", prior_year: "7", current_year: "6", change_pct: -14.3 },
+      { label: "Median Sales Price", prior_year: "$701,000", current_year: "$739,500", change_pct: 5.5 },
+      { label: "Pct of Orig. List Price Received", prior_year: "97.3%", current_year: "100.1%", change_pct: 2.9 },
+      { label: "Days on Market Until Sale", prior_year: "29", current_year: "18", change_pct: -37.9 },
+      { label: "Inventory (SFR)", prior_year: "13", current_year: "16", change_pct: 23.1 },
+    ],
+  },
+  lisbon: {
+    data_month: "August 2026",
+    data_as_of: "2026-08-01",
+    prior_year_label: "2025",
+    current_year_label: "2026",
+    median_sale_price: 500000,
+    metrics: [
+      { label: "New Listings", prior_year: "16", current_year: "18", change_pct: 12.5 },
+      { label: "Closed Sales", prior_year: "12", current_year: "9", change_pct: -25.0 },
+      { label: "Median Sales Price", prior_year: "$747,500", current_year: "$500,000", change_pct: -33.1 },
+      { label: "Pct of Orig. List Price Received", prior_year: "99.8%", current_year: "100.4%", change_pct: 0.6 },
+      { label: "Days on Market Until Sale", prior_year: "17", current_year: "19", change_pct: 11.8 },
+      { label: "Inventory (SFR)", prior_year: "31", current_year: "32", change_pct: 3.2 },
+    ],
+  },
+  summit: {
+    data_month: "August 2026",
+    data_as_of: "2026-08-01",
+    prior_year_label: "2025",
+    current_year_label: "2026",
+    median_sale_price: 779900,
+    metrics: [
+      { label: "New Listings", prior_year: "7", current_year: "13", change_pct: 85.7 },
+      { label: "Closed Sales", prior_year: "4", current_year: "8", change_pct: 100.0 },
+      { label: "Median Sales Price", prior_year: "$678,750", current_year: "$779,900", change_pct: 14.9 },
+      { label: "Pct of Orig. List Price Received", prior_year: "97.7%", current_year: "100.8%", change_pct: 3.2 },
+      { label: "Days on Market Until Sale", prior_year: "17", current_year: "11", change_pct: -35.3 },
+      { label: "Inventory (SFR)", prior_year: "13", current_year: "26", change_pct: 100.0 },
+    ],
+  },
+  vernon: {
+    data_month: "August 2026",
+    data_as_of: "2026-08-01",
+    prior_year_label: "2025",
+    current_year_label: "2026",
+    median_sale_price: 518750,
+    metrics: [
+      { label: "New Listings", prior_year: "9", current_year: "14", change_pct: 55.6 },
+      { label: "Closed Sales", prior_year: "5", current_year: "6", change_pct: 20.0 },
+      { label: "Median Sales Price", prior_year: "$516,000", current_year: "$518,750", change_pct: 0.5 },
+      { label: "Pct of Orig. List Price Received", prior_year: "101.7%", current_year: "99.0%", change_pct: -2.7 },
+      { label: "Days on Market Until Sale", prior_year: "34", current_year: "16", change_pct: -52.9 },
+      { label: "Inventory (SFR)", prior_year: "12", current_year: "21", change_pct: 75.0 },
+    ],
+  },
 
 };
 

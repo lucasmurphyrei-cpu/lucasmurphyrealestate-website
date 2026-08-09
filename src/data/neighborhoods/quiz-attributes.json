@@ -2,7 +2,7 @@
   "meta": {
     "version": "1.0",
     "created": "2026-02-22",
-    "description": "Neighborhood Fit Quiz attribute model — 0-5 scores per municipality across 16 lifestyle and market attributes",
+    "description": "Neighborhood Fit Quiz attribute model \u2014 0-5 scores per municipality across 16 lifestyle and market attributes",
     "scale": "0 = lowest / not applicable, 5 = highest / strongest fit",
     "counties_covered": [
       "milwaukee",
@@ -1803,7 +1803,7 @@
     "addison": {
       "display_name": "Addison (Town)",
       "county": "washington",
-      "median_sale_price": 419036,
+      "median_sale_price": 636225,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 1,
@@ -1833,7 +1833,7 @@
     "barton": {
       "display_name": "Barton (Town)",
       "county": "washington",
-      "median_sale_price": 446093,
+      "median_sale_price": 582000,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 1,
@@ -1863,7 +1863,7 @@
     "farmington": {
       "display_name": "Farmington (Town)",
       "county": "washington",
-      "median_sale_price": 468544,
+      "median_sale_price": 490000,
       "attributes": {
         "budget_fit": 2,
         "home_type_fit": 2,
@@ -1923,7 +1923,7 @@
     "trenton": {
       "display_name": "Trenton (Town)",
       "county": "washington",
-      "median_sale_price": 449641,
+      "median_sale_price": 426000,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 2,
@@ -1953,7 +1953,7 @@
     "wayne": {
       "display_name": "Wayne (Town)",
       "county": "washington",
-      "median_sale_price": 478966,
+      "median_sale_price": 340000,
       "attributes": {
         "budget_fit": 2,
         "home_type_fit": 1,
@@ -1983,7 +1983,7 @@
     "genesee": {
       "display_name": "Genesee (Town)",
       "county": "waukesha",
-      "median_sale_price": 581252,
+      "median_sale_price": 739500,
       "attributes": {
         "budget_fit": 2,
         "home_type_fit": 1,
@@ -2013,7 +2013,7 @@
     "lisbon": {
       "display_name": "Lisbon",
       "county": "waukesha",
-      "median_sale_price": 535000,
+      "median_sale_price": 500000,
       "attributes": {
         "budget_fit": 2,
         "home_type_fit": 2,
@@ -2043,7 +2043,7 @@
     "summit": {
       "display_name": "Summit",
       "county": "waukesha",
-      "median_sale_price": 750000,
+      "median_sale_price": 779900,
       "attributes": {
         "budget_fit": 1,
         "home_type_fit": 2,
@@ -2073,7 +2073,7 @@
     "vernon": {
       "display_name": "Vernon",
       "county": "waukesha",
-      "median_sale_price": 550000,
+      "median_sale_price": 518750,
       "attributes": {
         "budget_fit": 3,
         "home_type_fit": 1,
