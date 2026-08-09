@@ -678,7 +678,10 @@ export default function PreviewV1() {
           <h2 className="mx-auto mt-4 max-w-3xl font-display text-3xl font-medium leading-tight text-white sm:text-4xl">
             Wherever home is in southeastern Wisconsin, you've got a guide.
           </h2>
-          <div className="mx-auto mt-10 grid max-w-2xl grid-cols-3 gap-6">
+          {/* Flex-centred rather than a fixed 3-column grid: dropping the unsubstantiable
+              "100+" stat left the grid with an empty third column, pushing the remaining
+              two off-centre. This stays centred at any count. */}
+          <div className="mx-auto mt-10 flex max-w-2xl flex-wrap items-start justify-center gap-x-16 gap-y-8 text-center">
             {stats.map(([n, l]) => (
               <div key={l}>
                 <p className="font-display text-4xl font-semibold text-accent sm:text-5xl">{n}</p>
