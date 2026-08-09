@@ -8,7 +8,7 @@ const Footer = () => (
       <div className="grid items-start gap-x-12 gap-y-8 md:grid-cols-[2fr_1fr_1fr_1fr_1fr]">
         <div>
           <p className="font-display text-xl font-bold text-foreground">Lucas Murphy</p>
-          <h3 className="mt-1 text-sm font-medium text-muted-foreground whitespace-nowrap">eXp Realty — Provision Properties Core Team</h3>
+          <h3 className="mt-1 text-sm font-medium text-muted-foreground whitespace-nowrap">eXp Realty</h3>
           <p className="mt-4 text-sm text-muted-foreground">Serving Milwaukee, Waukesha, Washington & Ozaukee Counties with expert real estate guidance.</p>
         </div>
         <div>
@@ -52,11 +52,11 @@ const Footer = () => (
         </div>
       </div>
       <div className="mt-10 flex items-center justify-center gap-6">
-        <img src={provisionLogo} alt="Provision Properties Core Team logo" className="h-48 w-auto" />
+        <img src={provisionLogo} alt="eXp Realty logo" className="h-48 w-auto" />
         <img src={expLogo} alt="eXp Realty logo" className="h-12 w-auto" />
       </div>
       <div className="mt-10 border-t border-border pt-6 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Provision Properties Core Team — eXp Realty. All rights reserved.
+        © {new Date().getFullYear()} Lucas Murphy — eXp Realty. All rights reserved.
       </div>
     </div>
   </footer>

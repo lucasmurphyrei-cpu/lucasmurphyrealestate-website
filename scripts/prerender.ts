@@ -103,7 +103,7 @@ const META: Record<string, Meta> = {
   },
   "/about": {
     title: "About Lucas Murphy | Metro Milwaukee Realtor (eXp Realty)",
-    description: "Meet Lucas Murphy, a licensed Realtor with the Provision Properties Core Team at eXp Realty serving buyers, sellers, and investors across metro Milwaukee, Wisconsin.",
+    description: "Meet Lucas Murphy, a licensed Realtor with eXp Realty serving buyers, sellers, and investors across metro Milwaukee, Wisconsin.",
     h1: "About Lucas Murphy",
     intro: siteConfig.agent.description,
     faq: AGENT_FAQ,

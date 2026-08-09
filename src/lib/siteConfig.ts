@@ -5,7 +5,7 @@ export const siteConfig = {
     name: "Lucas Murphy",
     jobTitle: "Realtor",
     description:
-      "Lucas Murphy is a licensed Realtor with the Provision Properties Core Team at eXp Realty, helping home buyers, sellers, and investors across Milwaukee, Waukesha, Ozaukee, and Washington counties in metro Milwaukee, Wisconsin.",
+      "Lucas Murphy is a licensed Realtor with eXp Realty, helping home buyers, sellers, and investors across Milwaukee, Waukesha, Ozaukee, and Washington counties in metro Milwaukee, Wisconsin.",
     knowsAbout: [
       "Residential real estate",
       "First-time home buying",
@@ -16,7 +16,12 @@ export const siteConfig = {
       "Metro Milwaukee housing market",
     ] as const,
   },
-  brokerage: "Provision Properties Core Team — eXp Realty",
+  // The brokerage of record. Feeds the JSON-LD Organization node, worksFor, publisher,
+  // author and jobTitle across every prerendered route — so this one string is what
+  // Google and the AI answer engines cite as the firm Lucas is licensed under.
+  // Left the team name behind 2026-07-17; broker confirmed 2026-08-07 that an
+  // advertising name may not contain "Real Estate" or "Realty".
+  brokerage: "eXp Realty",
   locality: "Milwaukee",
   region: "WI",
   phone: "(414) 458-1952",

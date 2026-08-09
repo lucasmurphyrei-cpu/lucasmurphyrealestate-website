@@ -1,12 +1,41 @@
 # Lucas Murphy Real Estate
 
-> Lucas Murphy, Realtor with Provision Properties Core Team — eXp Realty. Real estate services across Milwaukee, Waukesha, Ozaukee, Washington Counties in metro Milwaukee, Wisconsin. Free buyer/seller/investor guides, monthly county and municipality market data, and home-buying tools.
+> Lucas Murphy is a licensed Realtor with eXp Realty, helping home buyers, sellers, and investors across Milwaukee, Waukesha, Ozaukee, and Washington counties in metro Milwaukee, Wisconsin.
+
+Lucas Murphy provides free buyer, seller, relocation, condo, and house-hacking guides; monthly county and municipality market data; and free calculators (mortgage, budget, CMA, seller net sheet, house hack) for Milwaukee, Waukesha, Ozaukee, Washington Counties, Wisconsin.
 
 ## Key pages
 - [Home](https://www.lucasmurphyrealestate.com/)
-- [Guides overview](https://www.lucasmurphyrealestate.com/guides)
+- [About Lucas Murphy](https://www.lucasmurphyrealestate.com/about)
 - [Contact](https://www.lucasmurphyrealestate.com/contact)
+- [Metro Milwaukee market data](https://www.lucasmurphyrealestate.com/market)
+- [Search homes for sale](https://www.lucasmurphyrealestate.com/listings)
+- [Real estate guides](https://www.lucasmurphyrealestate.com/guides)
+- [Free calculators and tools](https://www.lucasmurphyrealestate.com/tools)
+- [Trusted local vendors](https://www.lucasmurphyrealestate.com/vendors)
 
 ## Market data by county
+- [Milwaukee County market data](https://www.lucasmurphyrealestate.com/market/milwaukee-county)
+- [Waukesha County market data](https://www.lucasmurphyrealestate.com/market/waukesha-county)
+- [Ozaukee County market data](https://www.lucasmurphyrealestate.com/market/ozaukee-county)
+- [Washington County market data](https://www.lucasmurphyrealestate.com/market/washington-county)
 
-Contact: (414) 458-1952 · lucas.murphy@exprealty.com
+## Guides
+- [First Time Home Buyers guide](https://www.lucasmurphyrealestate.com/guides/first-time-home-buyers)
+- [Relocation guide](https://www.lucasmurphyrealestate.com/guides/relocation)
+- [First Time Condo Buyers guide](https://www.lucasmurphyrealestate.com/guides/first-time-condo-buyers)
+- [House Hacking guide](https://www.lucasmurphyrealestate.com/guides/house-hacking)
+- [Sellers guide](https://www.lucasmurphyrealestate.com/guides/sellers)
+- [Investors guide](https://www.lucasmurphyrealestate.com/guides/investors)
+
+## Tools
+- [Seller Net Sheet](https://www.lucasmurphyrealestate.com/tools/seller-net-sheet)
+- [Mortgage Calculator](https://www.lucasmurphyrealestate.com/tools/mortgage-calculator)
+- [Budget Planner](https://www.lucasmurphyrealestate.com/tools/budget-planner)
+- [Budget Spreadsheet](https://www.lucasmurphyrealestate.com/tools/budget-spreadsheet)
+- [Cma](https://www.lucasmurphyrealestate.com/tools/cma)
+- [House Hack Calculator](https://www.lucasmurphyrealestate.com/tools/house-hack-calculator)
+- [Investor Spreadsheets](https://www.lucasmurphyrealestate.com/tools/investor-spreadsheets)
+
+## Contact
+Lucas Murphy, Realtor — eXp Realty. Phone: (414) 458-1952. Email: lucas.murphy@exprealty.com. Web: https://www.lucasmurphyrealestate.com.

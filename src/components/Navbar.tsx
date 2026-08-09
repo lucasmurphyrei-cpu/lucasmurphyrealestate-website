@@ -78,7 +78,7 @@ const Navbar = () => {
       <nav className="container flex h-16 md:h-24 items-center justify-between gap-3">
         <Link to="/" className="flex min-w-0 flex-col">
           <span className="font-display text-sm font-bold text-foreground md:whitespace-nowrap">
-            <span className="hidden md:inline">Lucas Murphy | eXp Realty — Provision Properties Core Team</span>
+            <span className="hidden md:inline">Lucas Murphy | eXp Realty</span>
             <span className="md:hidden">Lucas Murphy | eXp Realty</span>
           </span>
           <span className="hidden text-xs text-muted-foreground md:block">
