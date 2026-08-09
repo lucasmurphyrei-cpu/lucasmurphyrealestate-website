@@ -830,6 +830,29 @@ const municipalityRapidStats: Record<string, RapidStatsMunicipality | null> = {
     ],
   },
 
+  // Added August 2026 alongside the 59 -> 69 municipality expansion.
+  //
+  // These ten are explicitly null rather than absent: getRapidStats() returns
+  // null either way, but listing them records that they were checked, not
+  // forgotten. They render the "Coming Soon" card and fall back to the
+  // profile's Zillow-derived median in the Quick Snapshot grid.
+  //
+  // There is NO RapidStats coverage for them — verified against 182 report
+  // emails since 2026-07-01, zero of which name any of these ten. Seven are
+  // civil Towns, which the MLS reports do not break out. They will NOT
+  // populate automatically next month: each needs to be added as a saved
+  // report in the RapidStats portal first.
+  addison: null,
+  barton: null,
+  farmington: null,
+  polk: null,
+  trenton: null,
+  wayne: null,
+  genesee: null,
+  lisbon: null,
+  summit: null,
+  vernon: null,
+
 };
 
 export function getRapidStats(muniId: string): RapidStatsMunicipality | null {

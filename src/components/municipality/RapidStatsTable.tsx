@@ -34,7 +34,9 @@ const RapidStatsTable = ({ data, municipalityName }: RapidStatsTableProps) => {
             <div>
               <p className="font-semibold text-foreground">Coming Soon</p>
               <p className="mt-1 text-sm text-muted-foreground">
-                RapidStats market data for {municipalityName} is coming soon. Check back in April 2026.
+                {/* Deliberately undated — this previously read "Check back in
+                    April 2026" and was still on the live site in August. */}
+                Detailed market data for {municipalityName} isn't available yet. Check back soon.
               </p>
             </div>
           </CardContent>

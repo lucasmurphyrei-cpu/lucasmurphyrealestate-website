@@ -1,8 +1,9 @@
 import CountyPage from "@/components/CountyPageTemplate";
 
 const municipalities = [
-  "Germantown", "Hartford", "Jackson", "Kewaskum",
-  "Newburg", "Richfield", "Slinger", "West Bend",
+  "Addison", "Barton", "Farmington", "Germantown", "Hartford",
+  "Jackson", "Kewaskum", "Newburg", "Polk", "Richfield",
+  "Slinger", "Trenton", "Wayne", "West Bend",
 ];
 
 const WashingtonCounty = () => (

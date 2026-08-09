@@ -241,6 +241,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.lucasmurphyrealestate.com/market/ozaukee-county/fredonia</loc>
+    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/milwaukee</loc>
     <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -321,6 +326,26 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/bayside</loc>
+    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/west-milwaukee</loc>
+    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/cudahy</loc>
+    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/hales-corners</loc>
+    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.lucasmurphyrealestate.com/market/washington-county/germantown</loc>
     <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -352,6 +377,41 @@
   </url>
   <url>
     <loc>https://www.lucasmurphyrealestate.com/market/washington-county/richfield</loc>
+    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/market/washington-county/newburg</loc>
+    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/market/washington-county/addison</loc>
+    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/market/washington-county/barton</loc>
+    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/market/washington-county/farmington</loc>
+    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/market/washington-county/polk</loc>
+    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/market/washington-county/trenton</loc>
+    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/market/washington-county/wayne</loc>
     <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -411,21 +471,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/bayside</loc>
-    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/west-milwaukee</loc>
-    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.lucasmurphyrealestate.com/market/ozaukee-county/fredonia</loc>
-    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/butler</loc>
     <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -461,21 +506,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.lucasmurphyrealestate.com/market/washington-county/newburg</loc>
-    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/cudahy</loc>
-    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.lucasmurphyrealestate.com/market/milwaukee-county/hales-corners</loc>
-    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/big-bend</loc>
     <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -492,6 +522,26 @@
   </url>
   <url>
     <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/wales</loc>
+    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/genesee</loc>
+    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/lisbon</loc>
+    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/summit</loc>
+    <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lucasmurphyrealestate.com/market/waukesha-county/vernon</loc>
     <lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

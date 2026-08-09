@@ -32,6 +32,18 @@ const SLUG_ALIASES: Record<string, string> = {
   "waukesha-county/brookfield": "brookfield",          // display_name: "Brookfield (City)"
   "waukesha-county/pewaukee": "pewaukee",               // display_name: "Pewaukee (City/Village)"
   "waukesha-county/waukesha": "waukesha",              // display_name: "City of Waukesha"
+  // Civil Towns. Washington County has both a Village and a Town of Jackson,
+  // Kewaskum, Hartford and West Bend, so the "(Town)" qualifier is real
+  // disambiguation. slugify() strips periods but not parentheses, so without
+  // these the county-page link /addison misses "addison-(town)" and the page
+  // falls through to the "profile not yet available" placeholder.
+  "washington-county/addison": "addison",              // display_name: "Addison (Town)"
+  "washington-county/barton": "barton",                // display_name: "Barton (Town)"
+  "washington-county/farmington": "farmington",        // display_name: "Farmington (Town)"
+  "washington-county/polk": "polk",                    // display_name: "Polk (Town)"
+  "washington-county/trenton": "trenton",              // display_name: "Trenton (Town)"
+  "washington-county/wayne": "wayne",                  // display_name: "Wayne (Town)"
+  "waukesha-county/genesee": "genesee",                // display_name: "Genesee (Town)"
 };
 
 // Pre-build lookup maps at module load
