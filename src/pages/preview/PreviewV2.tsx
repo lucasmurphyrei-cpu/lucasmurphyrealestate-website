@@ -385,7 +385,7 @@ export default function PreviewV2() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-between gap-4 pt-8 text-xs sm:flex-row">
-            <p>© 2026 Lucas Murphy Real Estate. Preview design — not the live site.</p>
+            <p>© 2026 Lucas Murphy · eXp Realty. Preview design — not the live site.</p>
             <img src={expWhite} alt="eXp Realty" className="h-6 w-auto opacity-80" />
           </div>
         </div>
