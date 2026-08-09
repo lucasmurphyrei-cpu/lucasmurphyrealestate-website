@@ -120,9 +120,10 @@ const reviews = [
   },
 ];
 
+// "100+ Local moves guided" removed 2026-08-09: that figure counted team production and
+// is not substantiable now Lucas is solo. Only claims he can stand behind personally.
 const stats: [string, string][] = [
   ["4", "Counties served"],
-  ["100+", "Local moves guided"],
   ["5★", "Average client rating"],
 ];
 
@@ -814,7 +815,7 @@ export default function PreviewV1() {
             <img src={expWhite} alt="eXp Realty logo" className="h-12 w-auto" />
           </div>
           <div className="mt-8 border-t border-white/10 pt-6 text-center text-xs">
-            © 2026 Lucas Murphy · eXp Realty. Preview design, not the live site.
+            © 2026 Lucas Murphy · eXp Realty. All rights reserved.
           </div>
         </div>
       </footer>

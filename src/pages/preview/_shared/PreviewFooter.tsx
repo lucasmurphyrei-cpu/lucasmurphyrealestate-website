@@ -73,7 +73,7 @@ export default function PreviewFooter() {
           <img src={expWhite} alt="eXp Realty logo" className="h-12 w-auto" />
         </div>
         <div className="mt-8 border-t border-white/10 pt-6 text-center text-xs">
-          © 2026 Lucas Murphy · eXp Realty. Preview design, not the live site.
+          © 2026 Lucas Murphy · eXp Realty. All rights reserved.
         </div>
       </div>
     </footer>
