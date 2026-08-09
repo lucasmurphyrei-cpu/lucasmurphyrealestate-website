@@ -19,7 +19,6 @@ import {
   Youtube,
 } from "lucide-react";
 import expLogo from "@/assets/exp-logo-white.png";
-import expWhite from "@/assets/exp-logo-white.png";
 import headshot from "@/assets/lucas-murphy-headshot.jpeg";
 import skyline from "@/assets/milwaukee-skyline.jpg";
 import property1 from "@/assets/property-1.jpg";
@@ -812,8 +811,7 @@ export default function PreviewV1() {
           </div>
           <div className="mt-10 flex items-center justify-center gap-6">
             <img src={expLogo} alt="eXp Realty logo" className="h-20 w-auto" />
-            <img src={expWhite} alt="eXp Realty logo" className="h-12 w-auto" />
-          </div>
+            </div>
           <div className="mt-8 border-t border-white/10 pt-6 text-center text-xs">
             © 2026 Lucas Murphy · eXp Realty. All rights reserved.
           </div>

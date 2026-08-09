@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown, Facebook, Menu, Phone, X, Youtube } from "lucide-react";
 import expLogo from "@/assets/exp-logo-white.png";
-import expWhite from "@/assets/exp-logo-white.png";
 import { SOCIAL } from "@/pages/preview/_shared/tokens";
 import GoogleReviewsBadge from "@/pages/preview/_shared/GoogleReviewsBadge";
 
@@ -91,19 +90,6 @@ export default function PreviewHeader({ nav = DEFAULT_NAV }: { nav?: NavItem[] }
             alt="eXp Realty"
             className={`w-auto transition-all duration-300 ${
               scrolled ? "h-7 sm:h-8 lg:h-8 xl:h-10 2xl:h-12" : "h-9 sm:h-12 md:h-14 lg:h-8 xl:h-14 2xl:h-20"
-            }`}
-          />
-          <span
-            className={`w-px bg-white/25 transition-all duration-300 ${
-              scrolled ? "h-6 sm:h-7 lg:h-8 xl:h-12 2xl:h-14" : "h-8 sm:h-10 md:h-12 lg:h-8 xl:h-14 2xl:h-16"
-            }`}
-            aria-hidden="true"
-          />
-          <img
-            src={expWhite}
-            alt="eXp Realty"
-            className={`w-auto transition-all duration-300 ${
-              scrolled ? "h-5 sm:h-6 lg:h-7 xl:h-9 2xl:h-11" : "h-6 sm:h-8 md:h-10 lg:h-7 xl:h-11 2xl:h-14"
             }`}
           />
         </Link>

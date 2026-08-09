@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 import expLogo from "@/assets/exp-logo-white.png";
-import expWhite from "@/assets/exp-logo-white.png";
 import { SOCIAL, heroCounties } from "@/pages/preview/_shared/tokens";
 
 const guides = [
@@ -70,7 +69,6 @@ export default function PreviewFooter() {
         </div>
         <div className="mt-10 flex items-center justify-center gap-6">
           <img src={expLogo} alt="eXp Realty logo" className="h-20 w-auto" />
-          <img src={expWhite} alt="eXp Realty logo" className="h-12 w-auto" />
         </div>
         <div className="mt-8 border-t border-white/10 pt-6 text-center text-xs">
           © 2026 Lucas Murphy · eXp Realty. All rights reserved.
