@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import provisionLogo from "@/assets/provision-logo.png";
 import expLogo from "@/assets/exp-logo.png";
 
 const guideCategories = [

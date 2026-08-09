@@ -19,7 +19,7 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import lucasHeadshot from "@/assets/lucas-murphy-headshot.jpeg";
-import provisionLogo from "@/assets/provision-logo.png";
+import expLogo from "@/assets/exp-logo.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -42,7 +42,7 @@ const firstTimeBuyerTools: Spreadsheet[] = [
   {
     icon: Calculator,
     label: "CapEx Reserve Calculator",
-    file: "Provision_Properties_CapEx_First_Time_Home_Buyers.xlsx",
+    file: "Lucas_Murphy_CapEx_First_Time_Home_Buyers.xlsx",
     desc: "A simplified 13-item capital expenditure planner — budget for major repairs and replacements like roofing, HVAC, and appliances before they surprise you.",
     status: "available",
   },
@@ -52,21 +52,21 @@ const investorTools: Spreadsheet[] = [
   {
     icon: TrendingUp,
     label: "BRRRR Calculator",
-    file: "Provision_Properties_BRRRR_Calculator.xlsx",
+    file: "Lucas_Murphy_BRRRR_Calculator.xlsx",
     desc: "Analyze Buy, Rehab, Rent, Refinance, Repeat deals — estimate cash-on-cash return, equity position, and refinance proceeds for rental investment properties.",
     status: "available",
   },
   {
     icon: DollarSign,
     label: "Flip Calculator",
-    file: "Provision_Properties_Flip_Calculator.xlsx",
+    file: "Lucas_Murphy_Flip_Calculator.xlsx",
     desc: "Project fix & flip profits with detailed purchase, rehab, and selling cost breakdowns. Includes tax estimation and built-in stress testing for conservative underwriting.",
     status: "available",
   },
   {
     icon: ClipboardList,
     label: "Rehab Budget Tracker",
-    file: "Provision_Properties_Rehab_Budget.xlsx",
+    file: "Lucas_Murphy_Rehab_Budget.xlsx",
     desc: "Track renovation budgets across 22 categories and 179 line items. Compare estimates to actuals with automatic variance calculations to keep projects on budget.",
     status: "available",
   },
@@ -164,7 +164,7 @@ const InvestorSpreadsheets = () => (
       </title>
       <meta
         name="description"
-        content="Free Provision Properties branded Excel tools — BRRRR calculator, flip analysis, rehab budget tracker, CapEx planner, and seller net sheet for Metro Milwaukee real estate."
+        content="Free Excel tools — BRRRR calculator, flip analysis, rehab budget tracker, CapEx planner, and seller net sheet for Metro Milwaukee real estate."
       />
       <link rel="canonical" href="https://www.lucasmurphyrealestate.com/tools/investor-spreadsheets" />
     </Helmet>
@@ -235,7 +235,7 @@ const InvestorSpreadsheets = () => (
           <div className="flex-1 text-center md:text-left">
             <h2 className="font-display text-2xl font-bold">Lucas Murphy</h2>
             <p className="mt-1 text-sm font-medium text-muted-foreground">
-              Realtor® — eXp Realty | Provision Properties Core Team
+              Realtor® — eXp Realty
             </p>
             <p className="mt-4 max-w-lg text-sm leading-relaxed text-muted-foreground">
               Have questions about a deal or need help running your numbers? I
@@ -284,9 +284,9 @@ const InvestorSpreadsheets = () => (
           {/* Logo */}
           <div className="flex-shrink-0 self-center md:self-start">
             <img
-              src={provisionLogo}
-              alt="Provision Properties Core Team logo"
-              className="h-32 w-auto md:h-40"
+              src={expLogo}
+              alt="eXp Realty logo"
+              className="h-14 w-auto md:h-16"
             />
           </div>
         </motion.div>

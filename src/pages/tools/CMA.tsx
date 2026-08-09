@@ -23,7 +23,7 @@ import {
 import { motion } from "framer-motion";
 import { useToast } from "@/hooks/use-toast";
 import lucasHeadshot from "@/assets/lucas-murphy-headshot.jpeg";
-import provisionLogo from "@/assets/provision-logo.png";
+import expLogo from "@/assets/exp-logo.png";
 
 const GOOGLE_SHEETS_URL = import.meta.env.VITE_GOOGLE_SHEETS_URL;
 
@@ -535,7 +535,7 @@ const CMA = () => {
                 Lucas Murphy
               </h2>
               <p className="mt-1 text-sm font-medium text-muted-foreground">
-                Realtor® — eXp Realty | Provision Properties Core Team
+                Realtor® — eXp Realty
               </p>
 
               <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5">
@@ -603,9 +603,9 @@ const CMA = () => {
 
             <div className="flex-shrink-0 self-center md:self-start">
               <img
-                src={provisionLogo}
-                alt="Provision Properties Core Team logo"
-                className="h-32 w-auto md:h-40"
+                src={expLogo}
+                alt="eXp Realty logo"
+                className="h-14 w-auto md:h-16"
               />
             </div>
           </motion.div>

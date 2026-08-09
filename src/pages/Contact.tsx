@@ -64,7 +64,7 @@ const Contact = () => {
     <>
     <Helmet>
       <title>Contact Us | Lucas Murphy Real Estate</title>
-      <meta name="description" content="Get in touch with Lucas Murphy and the Provision Properties Core Team. Serving Milwaukee, Waukesha, Washington & Ozaukee Counties." />
+      <meta name="description" content="Get in touch with Lucas Murphy, Realtor with eXp Realty. Serving Milwaukee, Waukesha, Washington & Ozaukee Counties." />
       <link rel="canonical" href="https://www.lucasmurphyrealestate.com/contact" />
     </Helmet>
     <section className="container max-w-5xl py-16">
@@ -102,7 +102,7 @@ const Contact = () => {
         {/* Info */}
         <div className="space-y-8">
           <div>
-            <h3 className="font-display text-xl font-bold">Provision Properties Core Team</h3>
+            <h3 className="font-display text-xl font-bold">eXp Realty</h3>
             <p className="text-sm text-muted-foreground">eXp Realty</p>
           </div>
           <div className="space-y-4">

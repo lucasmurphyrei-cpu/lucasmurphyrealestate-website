@@ -81,7 +81,7 @@ export default function PreviewContact() {
     <div className="preview-v1 min-h-screen bg-background font-body text-foreground antialiased">
       <Seo
         title="Contact Lucas Murphy | Metro Milwaukee Real Estate"
-        description="Get in touch with Lucas Murphy and the Provision Properties Core Team at eXp Realty. Tell me how you'd like to connect and I'll reach out within one business day."
+        description="Get in touch with Lucas Murphy, Realtor with eXp Realty. Tell me how you'd like to connect and I'll reach out within one business day."
         canonicalPath="/contact"
       />
       <PreviewHeader />
@@ -233,7 +233,7 @@ export default function PreviewContact() {
           <div className="relative bg-[#0a1424] p-8 text-white/75 sm:p-10 lg:p-12">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent">Reach me directly</p>
             <h2 className="mt-3 font-display text-2xl font-medium text-white">Lucas Murphy</h2>
-            <p className="mt-1 text-sm text-white/60">eXp Realty &middot; Provision Properties Core Team</p>
+            <p className="mt-1 text-sm text-white/60">eXp Realty</p>
 
             <div className="mt-8 space-y-5">
               <a href={SOCIAL.phoneHref} className="group flex items-start gap-4">

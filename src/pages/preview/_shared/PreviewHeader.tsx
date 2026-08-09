@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown, Facebook, Menu, Phone, X, Youtube } from "lucide-react";
-import provisionLogo from "@/assets/provision-logo.png";
+import expLogo from "@/assets/exp-logo-white.png";
 import expWhite from "@/assets/exp-logo-white.png";
 import { SOCIAL } from "@/pages/preview/_shared/tokens";
 import GoogleReviewsBadge from "@/pages/preview/_shared/GoogleReviewsBadge";
@@ -87,10 +87,10 @@ export default function PreviewHeader({ nav = DEFAULT_NAV }: { nav?: NavItem[] }
           }`}
         >
           <img
-            src={provisionLogo}
-            alt="Provision Properties"
-            className={`w-auto brightness-0 invert transition-all duration-300 ${
-              scrolled ? "h-10 sm:h-11 lg:h-12 xl:h-16 2xl:h-20" : "h-14 sm:h-20 md:h-24 lg:h-12 xl:h-24 2xl:h-32"
+            src={expLogo}
+            alt="eXp Realty"
+            className={`w-auto transition-all duration-300 ${
+              scrolled ? "h-7 sm:h-8 lg:h-8 xl:h-10 2xl:h-12" : "h-9 sm:h-12 md:h-14 lg:h-8 xl:h-14 2xl:h-20"
             }`}
           />
           <span

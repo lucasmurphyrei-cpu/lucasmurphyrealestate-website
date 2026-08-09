@@ -21,7 +21,6 @@ import { addSectionHeading, addDivider, colorForValue, ensureSpace } from "./pdf
 // ─── Header ────────────────────────────────────────────────
 
 interface Logos {
-  provision: string;
   exp: string;
 }
 
@@ -39,9 +38,6 @@ export function renderHeader(
   doc.rect(0, 0, PAGE_WIDTH, headerHeight, "F");
 
   // Logos
-  try {
-    doc.addImage(logos.provision, "PNG", MARGIN, 8, 32, 32);
-  } catch { /* logo load failed, skip */ }
   try {
     doc.addImage(logos.exp, "PNG", PAGE_WIDTH - MARGIN - 28, 14, 28, 20);
   } catch { /* logo load failed, skip */ }

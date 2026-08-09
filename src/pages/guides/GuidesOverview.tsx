@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Home, Building2, MapPin, TrendingUp, Landmark, DollarSign, ArrowRight, ExternalLink, BookOpen, ShoppingBag, LineChart, Phone, Mail, Calendar, Play, Hammer, ArrowLeftRight, ClipboardList } from "lucide-react";
 import { motion } from "framer-motion";
 import lucasHeadshot from "@/assets/lucas-murphy-headshot.jpeg";
-import provisionLogo from "@/assets/provision-logo.png";
+import expLogo from "@/assets/exp-logo.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -244,7 +244,7 @@ const GuidesOverview = () => (
           <div className="flex-1 text-center md:text-left">
             <h2 className="font-display text-2xl font-bold">Lucas Murphy</h2>
             <p className="mt-1 text-sm font-medium text-muted-foreground">
-              Realtor® — eXp Realty | Provision Properties Core Team
+              Realtor® — eXp Realty
             </p>
             <p className="mt-4 max-w-lg text-sm leading-relaxed text-muted-foreground">
               Have questions about buying, selling, or investing in Metro Milwaukee? I'd love to help — reach out anytime.
@@ -278,7 +278,7 @@ const GuidesOverview = () => (
           </div>
 
           <div className="flex-shrink-0 self-center md:self-start">
-            <img src={provisionLogo} alt="Provision Properties Core Team logo" className="h-32 w-auto md:h-40" />
+            <img src={expLogo} alt="eXp Realty logo" className="h-14 w-auto md:h-16" />
           </div>
         </motion.div>
       </div>

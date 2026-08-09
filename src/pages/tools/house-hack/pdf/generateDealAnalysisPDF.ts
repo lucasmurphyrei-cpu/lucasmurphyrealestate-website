@@ -1,7 +1,6 @@
 import { jsPDF } from "jspdf";
 import "jspdf-autotable";
 import type { HouseHackState, DerivedValues } from "../types";
-import provisionLogoUrl from "@/assets/provision-logo.png";
 import expLogoUrl from "@/assets/exp-logo.png";
 import { imageToBase64 } from "./pdfUtils";
 import {
@@ -22,13 +21,10 @@ export async function generateDealAnalysisPDF(
   const doc = new jsPDF("portrait", "mm", "letter");
 
   // Load logos (parallel)
-  const [provisionLogo, expLogo] = await Promise.all([
-    imageToBase64(provisionLogoUrl).catch(() => ""),
-    imageToBase64(expLogoUrl).catch(() => ""),
-  ]);
+  const expLogo = await imageToBase64(expLogoUrl).catch(() => "");
 
   // Page 1: Header
-  let y = renderHeader(doc, { provision: provisionLogo, exp: expLogo }, state.propertyType, state.mode, userName);
+  let y = renderHeader(doc, { exp: expLogo }, state.propertyType, state.mode, userName);
 
   // Investment
   y = renderInvestmentSection(doc, state, derived);

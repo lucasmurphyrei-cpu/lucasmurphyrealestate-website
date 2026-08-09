@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import provisionLogo from "@/assets/provision-logo.png";
+import expLogo from "@/assets/exp-logo.png";
 import expLogo from "@/assets/exp-logo-white.png";
 
 const Footer = () => (
@@ -52,7 +52,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="mt-10 flex items-center justify-center gap-6">
-        <img src={provisionLogo} alt="eXp Realty logo" className="h-48 w-auto" />
+        <img src={expLogo} alt="eXp Realty logo" className="h-20 w-auto" />
         <img src={expLogo} alt="eXp Realty logo" className="h-12 w-auto" />
       </div>
       <div className="mt-10 border-t border-border pt-6 text-center text-xs text-muted-foreground">

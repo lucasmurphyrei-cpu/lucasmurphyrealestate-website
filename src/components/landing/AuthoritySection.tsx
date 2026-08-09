@@ -3,7 +3,7 @@ import lucasHeadshot from "@/assets/lucas-murphy-headshot.jpeg";
 
 const credentials = [
   { icon: Building2, label: "eXp Realty" },
-  { icon: Users, label: "Provision Properties Core Team" },
+  { icon: Users, label: "eXp Realty" },
   { icon: BarChart3, label: "Local market data from Metro MLS" },
   { icon: MapPin, label: "Specializing in Milwaukee Metro counties" },
 ];

@@ -13,7 +13,7 @@ const SHEETS: Sheet[] = [
     icon: TrendingUp,
     label: "BRRRR Calculator",
     desc: "Analyze Buy, Rehab, Rent, Refinance, Repeat deals. Estimate cash-on-cash return, equity, and refinance proceeds.",
-    href: "/tools/Provision_Properties_BRRRR_Calculator.xlsx",
+    href: "/tools/Lucas_Murphy_BRRRR_Calculator.xlsx",
     download: true,
     cta: "Download .xlsx",
   },
@@ -21,7 +21,7 @@ const SHEETS: Sheet[] = [
     icon: DollarSign,
     label: "Flip Calculator",
     desc: "Project fix and flip profits with purchase, rehab, and selling cost breakdowns, plus built-in stress testing.",
-    href: "/tools/Provision_Properties_Flip_Calculator.xlsx",
+    href: "/tools/Lucas_Murphy_Flip_Calculator.xlsx",
     download: true,
     cta: "Download .xlsx",
   },
@@ -29,7 +29,7 @@ const SHEETS: Sheet[] = [
     icon: ClipboardList,
     label: "Rehab Budget Tracker",
     desc: "Track renovation budgets across 22 categories and 179 line items, comparing estimates to actuals automatically.",
-    href: "/tools/Provision_Properties_Rehab_Budget.xlsx",
+    href: "/tools/Lucas_Murphy_Rehab_Budget.xlsx",
     download: true,
     cta: "Download .xlsx",
   },
@@ -37,7 +37,7 @@ const SHEETS: Sheet[] = [
     icon: ReceiptText,
     label: "CapEx Reserve Calculator",
     desc: "A 13-item capital expenditure planner. Budget for roofing, HVAC, and appliances before they surprise you.",
-    href: "/tools/Provision_Properties_CapEx_First_Time_Home_Buyers.xlsx",
+    href: "/tools/Lucas_Murphy_CapEx_First_Time_Home_Buyers.xlsx",
     download: true,
     cta: "Download .xlsx",
   },
@@ -62,7 +62,7 @@ export default function InvestorSpreadsheets() {
     <div className="preview-v1 min-h-screen bg-background font-body text-foreground antialiased">
       <Seo
         title="Investor Spreadsheets | Metro Milwaukee | Lucas Murphy"
-        description="Free Provision Properties Excel tools: BRRRR calculator, flip analysis, rehab budget tracker, CapEx planner, and more."
+        description="Free Excel tools: BRRRR calculator, flip analysis, rehab budget tracker, CapEx planner, and more."
         canonicalPath="/tools/investor-spreadsheets"
       />
       <PreviewHeader />
@@ -80,7 +80,7 @@ export default function InvestorSpreadsheets() {
             Underwrite deals like a pro
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/75">
-            Free, Provision Properties branded spreadsheets and calculators to analyze rentals, flips, and
+            Free spreadsheets and calculators to analyze rentals, flips, and
             rehabs across Metro Milwaukee.
           </p>
         </div>

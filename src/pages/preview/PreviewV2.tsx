@@ -11,7 +11,7 @@ import {
   Star,
   Truck,
 } from "lucide-react";
-import provisionLogo from "@/assets/provision-logo.png";
+import expLogo from "@/assets/exp-logo-white.png";
 import expWhite from "@/assets/exp-logo-white.png";
 import headshot from "@/assets/lucas-murphy-headshot.jpeg";
 import milwaukeeSkyline from "@/assets/milwaukee-skyline.jpg";
@@ -85,7 +85,7 @@ export default function PreviewV2() {
       {/* ===== Header ===== */}
       <header className="absolute inset-x-0 top-0 z-30">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
-          <img src={provisionLogo} alt="Provision Properties" className="h-11 w-auto brightness-0 invert" />
+          <img src={expLogo} alt="eXp Realty" className="h-8 w-auto" />
           <nav className="hidden items-center gap-9 text-sm font-medium tracking-wide text-white/90 lg:flex">
             {nav.map((n) => (
               <a key={n.label} href={n.href} className="transition-colors hover:text-white">
@@ -157,8 +157,7 @@ export default function PreviewV2() {
             </h2>
             <div className="mt-7 space-y-5 text-lg leading-relaxed text-muted-foreground">
               <p>
-                I'm Lucas Murphy — a Metro Milwaukee agent with eXp Realty's Provision Properties Core
-                Team. For years I've helped buyers, sellers, and investors move through Milwaukee,
+                I'm Lucas Murphy — a Metro Milwaukee agent with eXp Realty. For years I've helped buyers, sellers, and investors move through Milwaukee,
                 Waukesha, Ozaukee, and Washington Counties with honest advice and zero pressure.
               </p>
               <p>
@@ -169,7 +168,7 @@ export default function PreviewV2() {
             </div>
             <div className="mt-8">
               <p className="font-display text-2xl italic text-foreground">Lucas Murphy</p>
-              <p className="text-sm text-muted-foreground">eXp Realty · Provision Properties Core Team</p>
+              <p className="text-sm text-muted-foreground">eXp Realty</p>
             </div>
           </div>
           <div className="relative">
@@ -367,9 +366,9 @@ export default function PreviewV2() {
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
           <div className="flex flex-col items-start justify-between gap-10 border-b border-white/10 pb-12 md:flex-row md:items-center">
             <div className="max-w-sm">
-              <img src={provisionLogo} alt="Provision Properties" className="h-11 w-auto brightness-0 invert" />
+              <img src={expLogo} alt="eXp Realty" className="h-8 w-auto" />
               <p className="mt-5 text-sm leading-relaxed">
-                Lucas Murphy · eXp Realty — Provision Properties Core Team. An honest, personal approach
+                Lucas Murphy · eXp Realty. An honest, personal approach
                 to Metro Milwaukee real estate.
               </p>
             </div>

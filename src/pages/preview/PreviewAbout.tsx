@@ -34,7 +34,7 @@ export default function PreviewAbout() {
     <div className="preview-v1 min-h-screen bg-background font-body text-foreground antialiased">
       <Seo
         title="About Lucas Murphy | Metro Milwaukee Real Estate"
-        description="Meet Lucas Murphy of the Provision Properties Core Team at eXp Realty, serving Milwaukee, Waukesha, Ozaukee, and Washington counties."
+        description="Meet Lucas Murphy, Realtor with eXp Realty, serving Milwaukee, Waukesha, Ozaukee, and Washington counties."
         canonicalPath="/about"
       />
       <PreviewHeader />
@@ -76,8 +76,8 @@ export default function PreviewAbout() {
             <div className="mt-7 space-y-5 text-lg leading-relaxed text-muted-foreground">
               <p>
                 I grew up in Milwaukee and have spent the last six years working in Waukesha, so I know these
-                communities firsthand. I specialize in Milwaukee and Waukesha counties, and alongside my team,
-                the Provision Properties Core Team at eXp Realty, I now serve buyers and sellers across Ozaukee
+                communities firsthand. I specialize in Milwaukee and Waukesha counties, and alongside eXp Realty,
+                I now serve buyers and sellers across Ozaukee
                 and Washington counties too.
               </p>
               <p>

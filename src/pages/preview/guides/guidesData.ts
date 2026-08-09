@@ -342,7 +342,7 @@ export const GUIDE_LEADS: Record<string, GuideLead> = {
     whyQuote:
       "I house hacked my first duplex and turned $18,368 into $89,000 in equity in three years, while paying $610 less per month than I would have renting. I created this guide because house hacking changed my financial trajectory, and I want to show other people exactly how to do it with real numbers, not theory.",
     whyName: "Lucas Murphy",
-    whyCredentials: ["Realtor® · eXp Realty · Milwaukee, WI", "Provision Properties Core Team", "Active house hacker & duplex owner"],
+    whyCredentials: ["Realtor® · eXp Realty · Milwaukee, WI", "Active house hacker & duplex owner"],
     journeyHeading: "My House-Hacking Journey",
     journeyBody: "Watch how I went from renter to duplex owner: the real numbers, the process, and what I learned along the way.",
     journeyVideo: "https://www.youtube.com/embed/h9F9_Hi2F0w",
