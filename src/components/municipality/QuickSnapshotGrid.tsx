@@ -19,7 +19,11 @@ const stats = [
 
 const QuickSnapshotGrid = ({ snapshot, rapidStatsMedianPrice, rapidStatsMonth }: QuickSnapshotGridProps) => {
   const getDisplayValue = (key: keyof QuickSnapshot) => {
-    if (key === "median_home_price" && rapidStatsMedianPrice != null) {
+    // Truthy, not `!= null`. MLS suppresses the median in small municipalities and the
+    // feed encodes that as 0, which `!= null` lets through -- rendering "$0 (RapidStats)"
+    // as the median home price. Falling through to the snapshot value is correct: zero
+    // never means "free", it means "not reported this month".
+    if (key === "median_home_price" && rapidStatsMedianPrice) {
       const formatted = `$${rapidStatsMedianPrice.toLocaleString("en-US")}`;
       const monthLabel = rapidStatsMonth ? `, ${rapidStatsMonth}` : "";
       return `${formatted} (RapidStats${monthLabel})`;
