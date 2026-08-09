@@ -40,6 +40,11 @@ export default function GuideLeadLanding({ slug }: { slug: string }) {
     const email = (fd.get("email") as string) || "";
     const phone = (fd.get("phone") as string) || "";
     const source = `${g.comingSoon ? "guide-waitlist" : "guide"}:${g.slug}`;
+    // kicker ("Free Buyer's Playbook"), not heroHeadline. The headline is marketing copy
+    // that changes when the hero is reworded or A/B tested, which would leave historical
+    // lead rows disagreeing about which guide they came from. Computed once so the
+    // Supabase row and the Sheet row can never describe the same lead differently.
+    const guideName = g.kicker;
 
     try {
       // Supabase is the durable record and the ONLY channel that can report failure.
@@ -51,7 +56,7 @@ export default function GuideLeadLanding({ slug }: { slug: string }) {
           full_name: name,
           email,
           phone,
-          guide: g.heroHeadline,
+          guide: guideName,
           source,
           consent: true, // the form cannot submit without the consent box ticked
         });
@@ -66,7 +71,7 @@ export default function GuideLeadLanding({ slug }: { slug: string }) {
         params.append("name", name);
         params.append("email", email);
         params.append("phone", phone);
-        params.append("guide", g.heroHeadline);
+        params.append("guide", guideName);
         params.append("source", source);
         params.append("timestamp", new Date().toISOString());
         void fetch(GOOGLE_SHEETS_URL, { method: "POST", mode: "no-cors", body: params })
