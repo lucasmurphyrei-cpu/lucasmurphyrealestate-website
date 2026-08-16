@@ -85,7 +85,19 @@ const faqPage = (qas: { q: string; a: string }[]) => ({
 });
 
 /* ----------------------------- per-route copy ----------------------------- */
-type Meta = { title: string; description: string; h1: string; intro: string; faq?: { q: string; a: string }[] };
+type Meta = {
+  title: string;
+  description: string;
+  h1: string;
+  intro: string;
+  faq?: { q: string; a: string }[];
+  /**
+   * A PDF the page exists to hand out. The React page renders the download
+   * button, but crawlers that do not run JS would never see the asset at all,
+   * so guide routes repeat it here as a plain anchor.
+   */
+  pdf?: { href: string; label: string };
+};
 
 const AGENT_FAQ = [
   { q: "Who is Lucas Murphy?", a: siteConfig.agent.description },
@@ -122,10 +134,54 @@ const META: Record<string, Meta> = {
   "/tools": { title: "Free Real Estate Calculators & Tools | Lucas Murphy", description: "Free mortgage, budget, CMA, seller net sheet, and house-hack calculators for metro Milwaukee buyers, sellers, and investors.", h1: "Real Estate Tools & Calculators", intro: "Free calculators to plan a budget, value a home, and analyze a deal across metro Milwaukee, from Lucas Murphy." },
   "/listings": { title: "Search Homes for Sale in Metro Milwaukee | Lucas Murphy", description: "Search active listings across Milwaukee, Waukesha, Ozaukee, and Washington counties with Realtor Lucas Murphy.", h1: "Search Metro Milwaukee Homes", intro: "Browse active homes for sale across metro Milwaukee by county and community with Lucas Murphy." },
   "/market": { title: "Metro Milwaukee Real Estate Market Data | Lucas Murphy", description: "Live real estate market data and trends for Milwaukee, Waukesha, Ozaukee, and Washington counties, by Realtor Lucas Murphy.", h1: "Metro Milwaukee Market Data", intro: "Explore current real estate market data and trends across metro Milwaukee, county by county, with Lucas Murphy." },
+  "/resources/seasonal-guide": {
+    title: "Seasonal Home Maintenance Guide | Wisconsin | Lucas Murphy",
+    description: "A free season-by-season home maintenance checklist built for Wisconsin winters — what to do each quarter to protect your home's value and avoid the repairs that surprise sellers.",
+    h1: "Seasonal Home Maintenance Guide",
+    intro: "A season-by-season checklist for Wisconsin homeowners — what to inspect, service and winterize each quarter so small problems never become the expensive ones a buyer's inspector finds.",
+    pdf: { href: "/Seasonal-Home-Maintenance-Guide.pdf", label: "Download the Seasonal Home Maintenance Guide" },
+  },
   "/vendors": { title: "Trusted Local Vendors | Metro Milwaukee | Lucas Murphy", description: "A vetted network of metro Milwaukee lenders, inspectors, contractors, insurance agents, and movers recommended by Lucas Murphy.", h1: "Trusted Metro Milwaukee Vendors", intro: "A vetted network of local pros — lenders, inspectors, contractors, insurance, and movers — recommended by Lucas Murphy." },
+  "/guides/first-time-condo-buyers": {
+    title: "First-Time Condo Buyer Guide | Metro Milwaukee | Lucas Murphy",
+    description: "A free first-time condo buyer guide for Metro Milwaukee — HOA fees, reserves and special assessments, condo financing, and how to read the documents before your review period ends.",
+    h1: "First-Time Condo Buyer Guide",
+    intro: "What the monthly fee actually covers, how to read the reserve study and budget, why condo financing differs from a single-family loan, and the questions to ask before the document review period closes.",
+    pdf: { href: "/First_Time_Condo_Buyers_Guide_Metro_Milwaukee.pdf", label: "Download the First-Time Condo Buyer Guide" },
+    faq: [
+      { q: "What do condo association fees cover in Milwaukee?", a: "Typically the building exterior, roof, common areas, master insurance, snow and lawn care, and a contribution to reserves. Water, heat and parking vary by association, so compare what is included before comparing two fees against each other." },
+      { q: "What is a special assessment?", a: "A one-time charge levied on owners when the association needs money the reserve fund does not cover — a roof, parking deck or elevator, for example. A thin reserve fund is the leading predictor of one, which is why the reserve study matters more than the fee itself." },
+      { q: "Is it harder to get a mortgage on a condo?", a: "It can be. The lender underwrites the association as well as you — owner-occupancy ratio, budget, reserves, litigation and the share of units owned by any single entity. A project that fails review can require a larger down payment or a different loan product." },
+    ],
+  },
+  "/guides/first-time-home-buyers": {
+    pdf: { href: "/Your_First_Time_Home_Buyers_Guide_to_The_Milwaukee_Metro_Area.pdf", label: "Download the First-Time Home Buyer Guide" },
+    title: "First-Time Home Buyer Guide | Metro Milwaukee | Lucas Murphy",
+    description: "A free first-time home buyer guide for Metro Milwaukee — what you can afford, how much cash you actually need, down payment assistance, and current county market data.",
+    h1: "Your First-Time Home Buyer Guide to Milwaukee Metro",
+    intro: "What you can afford, how much cash you need, which loan programs fit, and what the Milwaukee, Waukesha, Ozaukee and Washington county markets are doing right now.",
+    faq: [
+      { q: "How much do I need for a down payment in Milwaukee?", a: "Most first-time buyers put down 3-5%, not 20%. Against Milwaukee County's August 2026 median of $325,000, 3% down is $9,750 and 5% is $16,250, with closing costs typically adding another 2-4%. VA and USDA loans require no down payment at all." },
+      { q: "What is the median home price in Metro Milwaukee?", a: "As of August 2026: $325,000 in Milwaukee County, $525,000 in Waukesha and Ozaukee counties, and $481,000 in Washington County. Every county is currently selling above asking price and within about two weeks." },
+      { q: "What credit score do I need to buy a house in Wisconsin?", a: "FHA loans accept scores from 580, conventional from 620, and WHEDA programs from 620-640. VA loans have no set minimum. A higher score improves your rate rather than deciding whether you qualify at all." },
+    ],
+  },
+  "/guides/relocation": {
+    pdf: { href: "/Relocating_to_Metro_Milwaukee_Guide.pdf", label: "Download the Move to Milwaukee relocation guide" },
+    title: "Move to Milwaukee | Relocation Guide | Lucas Murphy",
+    description: "A free relocation guide for Metro Milwaukee — cost of living against Chicago, neighbourhoods and medians, schools, the job market, and buying from out of state.",
+    h1: "Move to Milwaukee",
+    intro: "Cost of living against Chicago, neighbourhood-by-neighbourhood medians, schools, employers, and a six-step plan built for buyers purchasing from out of state.",
+    faq: [
+      { q: "Is Milwaukee cheaper than Chicago?", a: "Yes. Milwaukee runs roughly 27.8% cheaper overall and 47% cheaper on rent, with homes at about $179 per square foot against Chicago's $338. A $400,000 home in Milwaukee would cost roughly $700,000 in Chicago for comparable features and location." },
+      { q: "What are the best neighbourhoods to move to in Milwaukee?", a: "It depends on what you're after. As of August 2026, Wauwatosa's median is $427,500, Shorewood $590,000 and Brookfield $550,000. Bay View and the East Side sit within the City of Milwaukee, whose median is $252,000." },
+      { q: "Can I buy a home in Milwaukee from out of state?", a: "Yes. Video walkthroughs, remote inspection coordination and electronic closing make it routine. Many out-of-state buyers combine virtual touring with a single discovery weekend to confirm a shortlist." },
+    ],
+  },
   // Explicit entry so this does not fall through to the generic /guides/<slug>
   // template, which titled it "Sellers Guide" and described nothing specific.
   "/guides/sellers": {
+    pdf: { href: "/What_to_Fix_Before_You_List_Seller_Guide.pdf", label: "Download What to Fix Before You List" },
     title: "What to Fix Before You List | Seller's Guide | Lucas Murphy",
     description: "Which pre-listing projects actually pay you back in metro Milwaukee — cost-vs-value figures for Milwaukee specifically, what lenders require, and what Wisconsin's condition report means for repairs you choose not to make.",
     h1: "What to Fix Before You List",
@@ -187,6 +243,9 @@ function contentBlock(path: string, meta: Meta): string {
     `<p>${esc(siteConfig.agent.name)}, ${esc(siteConfig.agent.jobTitle)} — ${esc(siteConfig.brokerage)}. `,
     `Phone: <a href="tel:${siteConfig.phoneE164}">${esc(siteConfig.phone)}</a>. `,
     `Email: <a href="mailto:${siteConfig.email}">${esc(siteConfig.email)}</a>.</p>`,
+    meta.pdf
+      ? `<p><a href="${meta.pdf.href}" download>${esc(meta.pdf.label)}</a> (PDF)</p>`
+      : "",
     faqHtml,
     `<nav>${links}</nav>`,
     `</div>`,

@@ -1,5 +1,5 @@
 import GuidePageTemplate from "@/components/GuidePageTemplate";
-import { Download } from "lucide-react";
+import GuideDownloadCallout from "@/components/GuideDownloadCallout";
 
 const Sellers = () => (
   <GuidePageTemplate
@@ -8,25 +8,10 @@ const Sellers = () => (
     metaDescription="Which pre-listing projects actually pay you back in Metro Milwaukee — cost-vs-value figures for Milwaukee specifically, what lenders require, and what Wisconsin's condition report means for repairs you choose not to make."
     canonicalPath="/guides/sellers"
   >
-    {/* Download callout — same pattern as the seasonal maintenance guide. */}
-    <div className="mb-12 flex flex-col items-start gap-4 rounded-sm border border-accent/30 bg-accent/[0.06] p-5 not-prose sm:flex-row sm:items-center sm:gap-5">
-      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-sm bg-accent/12 text-accent">
-        <Download className="h-5 w-5" />
-      </div>
-      <div className="flex-1">
-        <p className="font-display text-lg font-semibold">Download the full guide</p>
-        <p className="text-sm text-muted-foreground">
-          Twenty pages, including the Milwaukee cost-vs-value figures and the Wisconsin disclosure section.
-        </p>
-      </div>
-      <a
-        href="/What_to_Fix_Before_You_List_Seller_Guide.pdf"
-        download
-        className="group inline-flex items-center gap-2 rounded-sm bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:-translate-y-0.5"
-      >
-        <Download className="h-4 w-4" /> Download PDF
-      </a>
-    </div>
+    <GuideDownloadCallout
+      href="/What_to_Fix_Before_You_List_Seller_Guide.pdf"
+      description="Twenty pages, including the Milwaukee cost-vs-value figures and the Wisconsin disclosure section."
+    />
 
     <h2>Cost and value are two different things</h2>
     <p>

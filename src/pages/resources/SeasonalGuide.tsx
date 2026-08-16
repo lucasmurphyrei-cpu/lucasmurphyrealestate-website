@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import GuideDownloadCallout from "@/components/GuideDownloadCallout";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, CalendarDays, CheckCircle2, Download, Flower2, Leaf, Snowflake, Sun } from "lucide-react";
 import ParallaxBand from "@/pages/preview/_shared/ParallaxBand";
@@ -138,23 +139,10 @@ export default function SeasonalGuide() {
           <ArrowLeft className="h-4 w-4 transition-transform duration-300 group-hover:-translate-x-0.5" /> Back to all vendors
         </Link>
 
-        {/* Download callout */}
-        <div className="mb-12 flex flex-col items-start gap-4 rounded-sm border border-accent/30 bg-accent/[0.06] p-5 sm:flex-row sm:items-center sm:gap-5">
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-sm bg-accent/12 text-accent">
-            <Download className="h-5 w-5" />
-          </div>
-          <div className="flex-1">
-            <p className="font-display text-lg font-semibold">Download the full guide</p>
-            <p className="text-sm text-muted-foreground">Save or print this seasonal checklist as a PDF to keep handy at home.</p>
-          </div>
-          <a
-            href="/Seasonal-Home-Maintenance-Guide.pdf"
-            download
-            className="group inline-flex items-center gap-2 rounded-sm bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:-translate-y-0.5"
-          >
-            <Download className="h-4 w-4" /> Download PDF
-          </a>
-        </div>
+        <GuideDownloadCallout
+          href="/Seasonal-Home-Maintenance-Guide.pdf"
+          description="Save or print the seasonal checklist to keep handy at home."
+        />
 
         <div className="space-y-8">
           {seasons.map((season, i) => (
