@@ -123,6 +123,20 @@ const META: Record<string, Meta> = {
   "/listings": { title: "Search Homes for Sale in Metro Milwaukee | Lucas Murphy", description: "Search active listings across Milwaukee, Waukesha, Ozaukee, and Washington counties with Realtor Lucas Murphy.", h1: "Search Metro Milwaukee Homes", intro: "Browse active homes for sale across metro Milwaukee by county and community with Lucas Murphy." },
   "/market": { title: "Metro Milwaukee Real Estate Market Data | Lucas Murphy", description: "Live real estate market data and trends for Milwaukee, Waukesha, Ozaukee, and Washington counties, by Realtor Lucas Murphy.", h1: "Metro Milwaukee Market Data", intro: "Explore current real estate market data and trends across metro Milwaukee, county by county, with Lucas Murphy." },
   "/vendors": { title: "Trusted Local Vendors | Metro Milwaukee | Lucas Murphy", description: "A vetted network of metro Milwaukee lenders, inspectors, contractors, insurance agents, and movers recommended by Lucas Murphy.", h1: "Trusted Metro Milwaukee Vendors", intro: "A vetted network of local pros — lenders, inspectors, contractors, insurance, and movers — recommended by Lucas Murphy." },
+  // Explicit entry so this does not fall through to the generic /guides/<slug>
+  // template, which titled it "Sellers Guide" and described nothing specific.
+  "/guides/sellers": {
+    title: "What to Fix Before You List | Seller's Guide | Lucas Murphy",
+    description: "Which pre-listing projects actually pay you back in metro Milwaukee — cost-vs-value figures for Milwaukee specifically, what lenders require, and what Wisconsin's condition report means for repairs you choose not to make.",
+    h1: "What to Fix Before You List",
+    intro: "A seller's guide to what pays, what breaks even, and what to leave alone — with Milwaukee cost-vs-value figures, the repairs lenders and insurers actually require, and how Wisconsin's condition report treats a defect you disclose but do not fix.",
+    faq: [
+      { q: "What should I fix before selling my house?", a: "Fix anything a lender or insurer will stop the sale over — a roof with under two years of life left, defective paint on a pre-1978 home, no working heat source, exposed wiring, a wet basement, or non-functioning plumbing. After that, the highest-return work is the cheapest: decluttering, deep cleaning, paint, and basic lawn care." },
+      { q: "Do home improvements pay for themselves when you sell?", a: "Usually not in full. In the Milwaukee cost-vs-value figures, small exterior work such as a garage door or entry door returns more than it cost, while large interior projects like a full kitchen gut or a primary suite addition return roughly a third to a half of what they cost." },
+      { q: "Is it better to refresh a kitchen or gut it before selling?", a: "Refreshing generally wins. In the same 200-square-foot kitchen, keeping the cabinet boxes and replacing doors, fronts, counters and hardware recoups near or above its cost, while gutting the room costs roughly three times as much and recoups about half." },
+      { q: "Do I have to repair a defect I disclose in Wisconsin?", a: "No. Wisconsin's Chapter 709 requires a seller to disclose what they know; it does not require repairs. A disclosed but unrepaired defect is an ordinary outcome under the statute. Whether a particular item counts as a defect is a question for you and your attorney — a real estate licensee is barred from giving that opinion." },
+    ],
+  },
 };
 
 function metaFor(path: string): Meta {
