@@ -368,8 +368,6 @@ export const GUIDE_LEADS: Record<string, GuideLead> = {
     cover: "https://images.pexels.com/photos/164516/pexels-photo-164516.jpeg?auto=compress&cs=tinysrgb&w=1200",
     heroVideo: VID.homes,
     heroVideoRate: 0.5,
-    comingSoon: true,
-    goLiveDate: "August 1, 2026",
 
     heroHeadline: "Sell your Metro Milwaukee home for more, with less stress",
     heroLede: "Most sellers leave money on the table before they ever list.",
@@ -380,8 +378,8 @@ export const GUIDE_LEADS: Record<string, GuideLead> = {
       "Timing the listing to the market",
       "Keeping more of their proceeds at closing",
     ],
-    heroSub: "Reserve your copy of the exact roadmap sellers use to net more.",
-    ctaLabel: "Reserve my copy",
+    heroSub: "Download the exact roadmap sellers use to net more.",
+    ctaLabel: "Download my guide",
 
     shiftHeading: "The market has shifted. Pricing and prep matter more than ever.",
     shiftAssumeLede: "Many sellers assume they just need to:",
@@ -413,7 +411,7 @@ export const GUIDE_LEADS: Record<string, GuideLead> = {
     concernsResolve:
       "Confident sellers are informed sellers. This playbook removes the guesswork and gives you a clear plan from prep to closing.",
 
-    formHeading: "Reserve your free Seller's Playbook",
+    formHeading: "Tell me where to send your free playbook",
 
     testimonialsHeading: "Trusted by Metro Milwaukee sellers",
     testimonials: [
@@ -423,7 +421,8 @@ export const GUIDE_LEADS: Record<string, GuideLead> = {
     ],
 
     finalHeading: "Ready to sell for more?",
-    finalBody: "Reserve your free Seller's Playbook and be first in line when it launches.",
+    finalBody: "Get your free Seller's Playbook and list with a plan.",
+    downloadUrl: "/What_to_Fix_Before_You_List_Seller_Guide.pdf",
   },
 
   investors: {
