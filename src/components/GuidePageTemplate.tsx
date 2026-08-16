@@ -32,7 +32,7 @@ const GuidePageTemplate = ({ title, subtitle, children, metaDescription, canonic
       </div>
       <div className="mt-16 rounded-lg border border-border bg-secondary/50 p-8 text-center">
         <h3 className="font-display text-2xl font-bold">Ready to Take the Next Step?</h3>
-        <p className="mt-2 text-muted-foreground">Our team is here to guide you through every step of the process.</p>
+        <p className="mt-2 text-muted-foreground">I'll walk you through every step of the process.</p>
         <Button asChild size="lg" className="mt-6">
           <Link to="/contact">Schedule a Consultation</Link>
         </Button>
