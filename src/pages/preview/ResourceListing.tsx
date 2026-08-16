@@ -5,11 +5,18 @@ import PreviewHeader from "@/pages/preview/_shared/PreviewHeader";
 import PreviewFooter from "@/pages/preview/_shared/PreviewFooter";
 import { IMG } from "@/pages/preview/_shared/tokens";
 import Seo from "@/components/seo/Seo";
+import GuideDownloadCallout from "@/components/GuideDownloadCallout";
 
 const CALENDLY = "https://calendly.com/lucasmurphyrei";
 
 type Item = { title: string; desc: string; href: string };
-type Group = { label: string; items: Item[] };
+type GroupDownload = {
+  href: string;
+  label: string;
+  description: string;
+  secondary?: { to: string; label: string };
+};
+type Group = { label: string; items: Item[]; download?: GroupDownload };
 type Config = { kicker: string; title: string; subtitle: string; heroImg: string; items?: Item[]; groups?: Group[] };
 
 const CONFIGS: Record<"tools" | "vendors", Config> = {
@@ -34,6 +41,13 @@ const CONFIGS: Record<"tools" | "vendors", Config> = {
           { title: "Free CMA", desc: "A real valuation of what your home is worth today.", href: "/tools/cma" },
           { title: "Seller Net Sheet", desc: "Estimate your take-home proceeds at closing.", href: "/tools/seller-net-sheet" },
         ],
+        download: {
+          href: "/Seller_Prep_Which_Projects_Pay_You_Back.pdf",
+          label: "Which projects pay you back",
+          description:
+            "Every pre-listing project ranked by how much of its cost comes back in the sale price, plus five things you can do yourself. Two sides, no email needed.",
+          secondary: { to: "/guides/sellers", label: "Want the detail? Get the full Seller's Playbook" },
+        },
       },
       {
         label: "For Investors",
@@ -123,6 +137,15 @@ export default function ResourceListing({ variant }: { variant: "tools" | "vendo
                     <ResourceCard key={it.title} it={it} />
                   ))}
                 </div>
+                {g.download && (
+                  <GuideDownloadCallout
+                    className="mt-5 mb-0"
+                    href={g.download.href}
+                    label={g.download.label}
+                    description={g.download.description}
+                    secondary={g.download.secondary}
+                  />
+                )}
               </div>
             ))}
           </div>
