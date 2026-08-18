@@ -179,6 +179,16 @@ const META: Record<string, Meta> = {
       { q: "Can I buy a home in Milwaukee from out of state?", a: "Yes. Video walkthroughs, remote inspection coordination and electronic closing make it routine. Many out-of-state buyers combine virtual touring with a single discovery weekend to confirm a shortlist." },
     ],
   },
+  // Explicit entry only so the guide's PDF gets a crawlable anchor; the title,
+  // description, h1 and intro repeat what the generic /guides/<slug> template
+  // already produced, so the page's meta is unchanged.
+  "/guides/house-hacking": {
+    pdf: [{ href: "/House_Hacking_Guide_Metro_Milwaukee.pdf", label: "Download the House Hacking Guide" }],
+    title: "House Hacking Guide | Metro Milwaukee | Lucas Murphy",
+    description: "A free house hacking guide for metro Milwaukee from Realtor Lucas Murphy, eXp Realty.",
+    h1: "House Hacking Guide",
+    intro: "A practical house hacking guide for the Milwaukee, Waukesha, Ozaukee, and Washington county area from Lucas Murphy.",
+  },
   // Explicit entry so this does not fall through to the generic /guides/<slug>
   // template, which titled it "Sellers Guide" and described nothing specific.
   "/guides/sellers": {
