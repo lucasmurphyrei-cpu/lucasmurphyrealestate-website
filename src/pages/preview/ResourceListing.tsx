@@ -1,22 +1,16 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, ArrowUpRight, Calculator, Calendar, Handshake } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Calculator, Calendar, Download, Handshake } from "lucide-react";
 import ParallaxBand from "@/pages/preview/_shared/ParallaxBand";
 import PreviewHeader from "@/pages/preview/_shared/PreviewHeader";
 import PreviewFooter from "@/pages/preview/_shared/PreviewFooter";
 import { IMG } from "@/pages/preview/_shared/tokens";
 import Seo from "@/components/seo/Seo";
-import GuideDownloadCallout from "@/components/GuideDownloadCallout";
 
 const CALENDLY = "https://calendly.com/lucasmurphyrei";
 
-type Item = { title: string; desc: string; href: string };
-type GroupDownload = {
-  href: string;
-  label: string;
-  description: string;
-  secondary?: { to: string; label: string };
-};
-type Group = { label: string; items: Item[]; download?: GroupDownload };
+/** `download` marks a card that hands over a file from /public rather than routing. */
+type Item = { title: string; desc: string; href: string; download?: boolean };
+type Group = { label: string; items: Item[] };
 type Config = { kicker: string; title: string; subtitle: string; heroImg: string; items?: Item[]; groups?: Group[] };
 
 const CONFIGS: Record<"tools" | "vendors", Config> = {
@@ -40,14 +34,8 @@ const CONFIGS: Record<"tools" | "vendors", Config> = {
         items: [
           { title: "Free CMA", desc: "A real valuation of what your home is worth today.", href: "/tools/cma" },
           { title: "Seller Net Sheet", desc: "Estimate your take-home proceeds at closing.", href: "/tools/seller-net-sheet" },
+          { title: "Which Projects Pay You Back", desc: "Every pre-listing project ranked by what it returns at resale. Free PDF.", href: "/Seller_Prep_Which_Projects_Pay_You_Back.pdf", download: true },
         ],
-        download: {
-          href: "/Seller_Prep_Which_Projects_Pay_You_Back.pdf",
-          label: "Which projects pay you back",
-          description:
-            "Every pre-listing project ranked by how much of its cost comes back in the sale price, plus five things you can do yourself. Two sides, no email needed.",
-          secondary: { to: "/guides/sellers", label: "Want the detail? Get the full Seller's Playbook" },
-        },
       },
       {
         label: "For Investors",
@@ -75,17 +63,35 @@ const CONFIGS: Record<"tools" | "vendors", Config> = {
   },
 };
 
+const CARD_CLASS =
+  "group block rounded-sm border border-border bg-card p-6 shadow-[0_18px_44px_-30px_hsl(216_52%_11%/0.45)] transition-all duration-300 hover:-translate-y-1 hover:border-accent/50 hover:shadow-[0_28px_60px_-32px_hsl(216_52%_11%/0.5)]";
+
 function ResourceCard({ it }: { it: Item }) {
-  return (
-    <Link
-      to={it.href}
-      className="group block rounded-sm border border-border bg-card p-6 shadow-[0_18px_44px_-30px_hsl(216_52%_11%/0.45)] transition-all duration-300 hover:-translate-y-1 hover:border-accent/50 hover:shadow-[0_28px_60px_-32px_hsl(216_52%_11%/0.5)]"
-    >
+  const body = (
+    <>
       <div className="flex items-start justify-between gap-3">
         <h3 className="font-display text-lg font-semibold leading-tight text-foreground">{it.title}</h3>
-        <ArrowUpRight className="h-4 w-4 shrink-0 text-accent transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+        {/* Same glyph slot, different promise: an arrow navigates, a download hands over
+            a file. Keeping the arrow here would misreport what the card does. */}
+        {it.download ? (
+          <Download className="h-4 w-4 shrink-0 text-accent transition-transform duration-300 group-hover:translate-y-0.5" />
+        ) : (
+          <ArrowUpRight className="h-4 w-4 shrink-0 text-accent transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+        )}
       </div>
       <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{it.desc}</p>
+    </>
+  );
+
+  // A <Link> would route through React Router and 404 into the SPA catch-all
+  // instead of fetching the asset.
+  return it.download ? (
+    <a href={it.href} download className={CARD_CLASS}>
+      {body}
+    </a>
+  ) : (
+    <Link to={it.href} className={CARD_CLASS}>
+      {body}
     </Link>
   );
 }
@@ -137,15 +143,6 @@ export default function ResourceListing({ variant }: { variant: "tools" | "vendo
                     <ResourceCard key={it.title} it={it} />
                   ))}
                 </div>
-                {g.download && (
-                  <GuideDownloadCallout
-                    className="mt-5 mb-0"
-                    href={g.download.href}
-                    label={g.download.label}
-                    description={g.download.description}
-                    secondary={g.download.secondary}
-                  />
-                )}
               </div>
             ))}
           </div>
