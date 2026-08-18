@@ -4,7 +4,7 @@ import PreviewHeader from "@/pages/preview/_shared/PreviewHeader";
 import PreviewFooter from "@/pages/preview/_shared/PreviewFooter";
 import Seo from "@/components/seo/Seo";
 import { useToast } from "@/hooks/use-toast";
-import { GUIDE_LEADS } from "@/pages/preview/guides/guidesData";
+import { GUIDE_LEADS, type GuideLead } from "@/pages/preview/guides/guidesData";
 import lucasHeadshot from "@/assets/lucas-murphy-headshot.jpeg";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -13,6 +13,29 @@ const GOOGLE_SHEETS_URL = import.meta.env.VITE_GOOGLE_SHEETS_URL;
 const fieldCls =
   "w-full rounded-sm border border-border bg-white px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/60 focus:border-accent focus:ring-2 focus:ring-accent/25";
 const labelCls = "mb-1.5 block text-xs font-semibold uppercase tracking-[0.12em] text-muted-foreground";
+
+function FreebieButton({ freebie }: { freebie: NonNullable<GuideLead["freebie"]> }) {
+  return (
+    <a
+      href={freebie.href}
+      download
+      onClick={() => {
+        // `download` hands over the file without navigating, so this page is still
+        // here to scroll. Landing them on the form is the whole point of the
+        // ungated sheet: they get something now, and the next step is in view.
+        // The delay lets the browser start the file before the page moves.
+        window.setTimeout(
+          () => document.getElementById("get-the-guide")?.scrollIntoView({ behavior: "smooth" }),
+          400,
+        );
+      }}
+      className="group inline-flex items-center gap-2 rounded-sm border border-white/30 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white/55 hover:bg-white/10"
+    >
+      <Download className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5" />
+      {freebie.label}
+    </a>
+  );
+}
 
 function CtaButton({ label }: { label: string }) {
   return (
@@ -144,9 +167,13 @@ export default function GuideLeadLanding({ slug }: { slug: string }) {
             ))}
           </ul>
           <p className="mx-auto mt-7 max-w-xl text-base text-white/70">{g.heroSub}</p>
-          <div className="mt-8 flex justify-center">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <CtaButton label={g.ctaLabel} />
+            {g.freebie && <FreebieButton freebie={g.freebie} />}
           </div>
+          {g.freebie && (
+            <p className="mx-auto mt-4 max-w-md text-sm text-white/60">{g.freebie.desc}</p>
+          )}
         </div>
       </section>
 

@@ -92,11 +92,12 @@ type Meta = {
   intro: string;
   faq?: { q: string; a: string }[];
   /**
-   * A PDF the page exists to hand out. The React page renders the download
-   * button, but crawlers that do not run JS would never see the asset at all,
-   * so guide routes repeat it here as a plain anchor.
+   * PDFs the page exists to hand out. The React page renders the download
+   * buttons, but crawlers that do not run JS would never see the assets at all,
+   * so guide routes repeat them here as plain anchors. A list because a page can
+   * offer both an ungated sheet and the gated guide it leads into.
    */
-  pdf?: { href: string; label: string };
+  pdf?: { href: string; label: string }[];
 };
 
 const AGENT_FAQ = [
@@ -139,7 +140,7 @@ const META: Record<string, Meta> = {
     description: "A free season-by-season home maintenance checklist built for Wisconsin winters — what to do each quarter to protect your home's value and avoid the repairs that surprise sellers.",
     h1: "Seasonal Home Maintenance Guide",
     intro: "A season-by-season checklist for Wisconsin homeowners — what to inspect, service and winterize each quarter so small problems never become the expensive ones a buyer's inspector finds.",
-    pdf: { href: "/Seasonal-Home-Maintenance-Guide.pdf", label: "Download the Seasonal Home Maintenance Guide" },
+    pdf: [{ href: "/Seasonal-Home-Maintenance-Guide.pdf", label: "Download the Seasonal Home Maintenance Guide" }],
   },
   "/vendors": { title: "Trusted Local Vendors | Metro Milwaukee | Lucas Murphy", description: "A vetted network of metro Milwaukee lenders, inspectors, contractors, insurance agents, and movers recommended by Lucas Murphy.", h1: "Trusted Metro Milwaukee Vendors", intro: "A vetted network of local pros — lenders, inspectors, contractors, insurance, and movers — recommended by Lucas Murphy." },
   "/guides/first-time-condo-buyers": {
@@ -147,7 +148,7 @@ const META: Record<string, Meta> = {
     description: "A free first-time condo buyer guide for Metro Milwaukee — HOA fees, reserves and special assessments, condo financing, and how to read the documents before your review period ends.",
     h1: "First-Time Condo Buyer Guide",
     intro: "What the monthly fee actually covers, how to read the reserve study and budget, why condo financing differs from a single-family loan, and the questions to ask before the document review period closes.",
-    pdf: { href: "/First_Time_Condo_Buyers_Guide_Metro_Milwaukee.pdf", label: "Download the First-Time Condo Buyer Guide" },
+    pdf: [{ href: "/First_Time_Condo_Buyers_Guide_Metro_Milwaukee.pdf", label: "Download the First-Time Condo Buyer Guide" }],
     faq: [
       { q: "What do condo association fees cover in Milwaukee?", a: "Typically the building exterior, roof, common areas, master insurance, snow and lawn care, and a contribution to reserves. Water, heat and parking vary by association, so compare what is included before comparing two fees against each other." },
       { q: "What is a special assessment?", a: "A one-time charge levied on owners when the association needs money the reserve fund does not cover — a roof, parking deck or elevator, for example. A thin reserve fund is the leading predictor of one, which is why the reserve study matters more than the fee itself." },
@@ -155,7 +156,7 @@ const META: Record<string, Meta> = {
     ],
   },
   "/guides/first-time-home-buyers": {
-    pdf: { href: "/Your_First_Time_Home_Buyers_Guide_to_The_Milwaukee_Metro_Area.pdf", label: "Download the First-Time Home Buyer Guide" },
+    pdf: [{ href: "/Your_First_Time_Home_Buyers_Guide_to_The_Milwaukee_Metro_Area.pdf", label: "Download the First-Time Home Buyer Guide" }],
     title: "First-Time Home Buyer Guide | Metro Milwaukee | Lucas Murphy",
     description: "A free first-time home buyer guide for Metro Milwaukee — what you can afford, how much cash you actually need, down payment assistance, and current county market data.",
     h1: "Your First-Time Home Buyer Guide to Milwaukee Metro",
@@ -167,7 +168,7 @@ const META: Record<string, Meta> = {
     ],
   },
   "/guides/relocation": {
-    pdf: { href: "/Relocating_to_Metro_Milwaukee_Guide.pdf", label: "Download the Move to Milwaukee relocation guide" },
+    pdf: [{ href: "/Relocating_to_Metro_Milwaukee_Guide.pdf", label: "Download the Move to Milwaukee relocation guide" }],
     title: "Move to Milwaukee | Relocation Guide | Lucas Murphy",
     description: "A free relocation guide for Metro Milwaukee — cost of living against Chicago, neighbourhoods and medians, schools, the job market, and buying from out of state.",
     h1: "Move to Milwaukee",
@@ -181,7 +182,10 @@ const META: Record<string, Meta> = {
   // Explicit entry so this does not fall through to the generic /guides/<slug>
   // template, which titled it "Sellers Guide" and described nothing specific.
   "/guides/sellers": {
-    pdf: { href: "/What_to_Fix_Before_You_List_Seller_Guide.pdf", label: "Download What to Fix Before You List" },
+    pdf: [
+      { href: "/Seller_Prep_Which_Projects_Pay_You_Back.pdf", label: "Download the free one-pager: Which Projects Pay You Back" },
+      { href: "/What_to_Fix_Before_You_List_Seller_Guide.pdf", label: "Download What to Fix Before You List" },
+    ],
     title: "What to Fix Before You List | Seller's Guide | Lucas Murphy",
     description: "Which pre-listing projects actually pay you back in metro Milwaukee — cost-vs-value figures for Milwaukee specifically, what lenders require, and what Wisconsin's condition report means for repairs you choose not to make.",
     h1: "What to Fix Before You List",
@@ -243,9 +247,9 @@ function contentBlock(path: string, meta: Meta): string {
     `<p>${esc(siteConfig.agent.name)}, ${esc(siteConfig.agent.jobTitle)} — ${esc(siteConfig.brokerage)}. `,
     `Phone: <a href="tel:${siteConfig.phoneE164}">${esc(siteConfig.phone)}</a>. `,
     `Email: <a href="mailto:${siteConfig.email}">${esc(siteConfig.email)}</a>.</p>`,
-    meta.pdf
-      ? `<p><a href="${meta.pdf.href}" download>${esc(meta.pdf.label)}</a> (PDF)</p>`
-      : "",
+    ...(meta.pdf ?? []).map(
+      (f) => `<p><a href="${f.href}" download>${esc(f.label)}</a> (PDF)</p>`,
+    ),
     faqHtml,
     `<nav>${links}</nav>`,
     `</div>`,

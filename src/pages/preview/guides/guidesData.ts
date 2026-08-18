@@ -19,6 +19,12 @@ export type GuideLead = {
   // Playback speed for the hero video (1 = normal). Lower = slower/calmer background.
   heroVideoRate?: number;
   downloadUrl?: string;
+  /**
+   * An ungated companion asset: downloads on one click, no form. It exists to
+   * give someone something immediately and land them next to the form for the
+   * full guide, which `downloadUrl` still gates.
+   */
+  freebie?: { href: string; label: string; desc: string };
   // When true, the guide isn't published yet: the page captures a reservation (waitlist)
   // instead of downloading, and shows the go-live date.
   comingSoon?: boolean;
@@ -368,6 +374,11 @@ export const GUIDE_LEADS: Record<string, GuideLead> = {
     cover: "https://images.pexels.com/photos/164516/pexels-photo-164516.jpeg?auto=compress&cs=tinysrgb&w=1200",
     heroVideo: VID.homes,
     heroVideoRate: 0.5,
+    freebie: {
+      href: "/Seller_Prep_Which_Projects_Pay_You_Back.pdf",
+      label: "Which projects pay you back",
+      desc: "A two-sided sheet ranking every pre-listing project by what it returns at resale. Free, no email.",
+    },
 
     heroHeadline: "Sell your Metro Milwaukee home for more, with less stress",
     heroLede: "Most sellers leave money on the table before they ever list.",
