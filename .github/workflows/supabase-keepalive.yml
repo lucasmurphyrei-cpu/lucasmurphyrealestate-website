@@ -3,8 +3,12 @@ name: Supabase keep-alive
 # Supabase pauses a free project after ~7 days of inactivity, and a paused
 # project's subdomain stops resolving entirely. The guide-download form is the
 # only thing that writes to Supabase, and it does not fire often enough to keep
-# the project awake on its own. Mon + Thu leaves a wide margin: two missed runs
-# in a row still land inside the 7-day window.
+# the project awake on its own.
+#
+# Mon/Wed/Fri, not twice a week. GitHub drops scheduled runs during high load, so
+# the cadence has to survive a miss. At 2-3 day gaps, one skipped run leaves a
+# 5-day worst case and two consecutive skips leave 7 -- still at the line. Twice
+# a week would put a *single* miss at exactly 7 days, with no margin at all.
 #
 # This doubles as a monitor. A non-200 fails the job, which sends the repo owner
 # a GitHub notification -- so a future pause surfaces here instead of surfacing
@@ -12,7 +16,7 @@ name: Supabase keep-alive
 
 on:
   schedule:
-    - cron: '0 13 * * 1,4' # 13:00 UTC Mon/Thu = 08:00 CDT
+    - cron: '0 13 * * 1,3,5' # 13:00 UTC Mon/Wed/Fri = 08:00 CDT
   workflow_dispatch: # lets you run it by hand from the Actions tab
 
 # GitHub disables scheduled workflows in a repo with 60 days of no activity.

@@ -143,8 +143,8 @@ the browser through the three dashboard tasks that finish the Supabase keep-aliv
 
 ## After it's green
 
-The ping runs itself every Monday and Thursday at 8am CDT. You do not need to
-touch it again. If the project ever pauses anyway, the workflow fails and GitHub
+The ping runs itself every Monday, Wednesday and Friday at 8am CDT. You do not
+need to touch it again. If the project ever pauses anyway, the workflow fails and GitHub
 emails you — that alert is the whole point, so don't mute Actions notifications
 for this repo.
 

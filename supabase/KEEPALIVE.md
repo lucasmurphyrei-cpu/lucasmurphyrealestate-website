@@ -46,8 +46,12 @@ repo → **Actions → Supabase keep-alive → Run workflow**. A green run print
 
 ## Cadence
 
-Mondays and Thursdays, 13:00 UTC (08:00 CDT). Two consecutive missed runs still
-land inside the 7-day window.
+Mondays, Wednesdays and Fridays, 13:00 UTC (08:00 CDT).
+
+Three times a week rather than two, because GitHub drops scheduled runs under
+load and the cadence has to survive a miss. Gaps of 2-3 days mean one skipped run
+leaves a 5-day worst case. A twice-weekly schedule would put a *single* miss at
+exactly 7 days — on the pause threshold with no margin.
 
 ## It is also a monitor
 
