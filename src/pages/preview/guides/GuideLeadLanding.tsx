@@ -10,6 +10,21 @@ import { supabase } from "@/integrations/supabase/client";
 
 const GOOGLE_SHEETS_URL = import.meta.env.VITE_GOOGLE_SHEETS_URL;
 
+// Bound a lead-capture request so a sick backend cannot stall the form. A paused
+// Supabase project stops resolving in DNS, and that failure can hang for a long
+// time before it surfaces -- long enough that a window.open() issued afterwards is
+// far enough from the click to be eaten by the popup blocker, costing the visitor
+// their download. The underlying request is not cancelled, so a row that lands late
+// still lands; we simply stop waiting for it.
+// PromiseLike, not Promise: a PostgrestFilterBuilder is a thenable that only becomes
+// a real promise once awaited, so it does not satisfy Promise<T>.
+function bounded<T>(p: PromiseLike<T>, ms = 8000): Promise<T> {
+  return Promise.race([
+    p,
+    new Promise<T>((_, reject) => setTimeout(() => reject(new Error("timeout")), ms)),
+  ]);
+}
+
 const fieldCls =
   "w-full rounded-sm border border-border bg-white px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/60 focus:border-accent focus:ring-2 focus:ring-accent/25";
 const labelCls = "mb-1.5 block text-xs font-semibold uppercase tracking-[0.12em] text-muted-foreground";
@@ -69,49 +84,89 @@ export default function GuideLeadLanding({ slug }: { slug: string }) {
     // Supabase row and the Sheet row can never describe the same lead differently.
     const guideName = g.kicker;
 
-    try {
-      // Supabase is the durable record and the ONLY channel that can report failure.
-      // The Sheet POST below is mode:"no-cors", so its response is opaque by design --
-      // it cannot tell us whether a row landed. Relying on it alone is how leads were
-      // lost silently while a Vercel env var was misnamed.
-      if (supabase) {
-        const { error } = await supabase.from("leads").insert({
-          full_name: name,
-          email,
-          phone,
-          guide: guideName,
-          source,
-          consent: true, // the form cannot submit without the consent box ticked
-        });
-        if (error) throw error;
-      }
+    // Both channels are dispatched together and settled independently. Neither is
+    // allowed to stop the other from running. An earlier version awaited Supabase
+    // first and threw on failure, which skipped the Sheet POST entirely -- so when
+    // the Supabase project was paused for inactivity a submission was lost from
+    // BOTH destinations and the visitor was denied the download they had just handed
+    // over their email for. One backend being down must cost us the redundant copy,
+    // never the lead and never the guide.
+    const sheetConfigured = Boolean(GOOGLE_SHEETS_URL);
+    const dbConfigured = Boolean(supabase);
 
-      // Mirror to the Google Sheet: unchanged param shape, so the existing Apps Script
-      // and every column in the sheet keep working. Fire-and-forget on purpose -- a
-      // Sheet outage must not cost us a lead we have already stored.
-      if (GOOGLE_SHEETS_URL) {
-        const params = new URLSearchParams();
-        params.append("name", name);
-        params.append("email", email);
-        params.append("phone", phone);
-        params.append("guide", guideName);
-        params.append("source", source);
-        params.append("timestamp", new Date().toISOString());
-        void fetch(GOOGLE_SHEETS_URL, { method: "POST", mode: "no-cors", body: params })
-          .catch(() => {/* mirror only; the row is already safe in Supabase */});
-      }
+    // Unchanged param shape, so the existing Apps Script and every sheet column keep
+    // working untouched. mode:"no-cors" makes the response opaque, so resolving here
+    // proves the request left the browser -- not that a row was written. That is a
+    // weak signal, but combined with Supabase it is enough to tell "everything is
+    // down" apart from "one thing is down", which is the distinction that matters.
+    let sheetPost: Promise<unknown> | null = null;
+    if (GOOGLE_SHEETS_URL) {
+      const params = new URLSearchParams();
+      params.append("name", name);
+      params.append("email", email);
+      params.append("phone", phone);
+      params.append("guide", guideName);
+      params.append("source", source);
+      params.append("timestamp", new Date().toISOString());
+      sheetPost = bounded(fetch(GOOGLE_SHEETS_URL, { method: "POST", mode: "no-cors", body: params }));
+    }
 
+    // The durable record, and the only channel that can report a real failure.
+    const dbInsert = supabase
+      ? bounded(
+          supabase
+            .from("leads")
+            .insert({
+              full_name: name,
+              email,
+              phone,
+              guide: guideName,
+              source,
+              consent: true, // the form cannot submit without the consent box ticked
+            })
+            .then(({ error }) => {
+              if (error) throw error;
+            }),
+        )
+      : null;
+
+    const [sheet, db] = await Promise.allSettled([sheetPost, dbInsert]);
+    // An unconfigured channel resolves as a fulfilled `null`, so the configured flag
+    // is what separates "succeeded" from "was never attempted".
+    const sheetOk = sheetConfigured && sheet.status === "fulfilled";
+    const dbOk = dbConfigured && db.status === "fulfilled";
+
+    setLoading(false);
+
+    if (sheetOk || dbOk) {
+      // Partial failure is still a captured lead. Log the dead channel so it can be
+      // diagnosed, but never make the visitor pay for it.
+      if (dbConfigured && db.status === "rejected") {
+        console.error("[guide-lead] Supabase write failed; lead survives in the Sheet", db.reason);
+      }
+      if (sheetConfigured && sheet.status === "rejected") {
+        console.error("[guide-lead] Sheet mirror failed; lead survives in Supabase", sheet.reason);
+      }
       setDone(true);
       if (g.downloadUrl) window.open(g.downloadUrl, "_blank", "noopener");
-    } catch {
-      toast({
-        title: "Something went wrong",
-        description: "Please try again, or text me on 414-458-1952 and I'll send it over directly.",
-        variant: "destructive",
-      });
-    } finally {
-      setLoading(false);
+      return;
     }
+
+    // Nothing accepted the submission, so the lead genuinely is not recorded anywhere.
+    // Say so and offer the direct route rather than handing over the guide and quietly
+    // losing the contact -- silent loss is the failure mode this whole path exists to
+    // prevent.
+    console.error("[guide-lead] No channel accepted the submission", {
+      sheetConfigured,
+      dbConfigured,
+      sheetError: sheet.status === "rejected" ? sheet.reason : null,
+      dbError: db.status === "rejected" ? db.reason : null,
+    });
+    toast({
+      title: "Something went wrong",
+      description: "Please try again, or text me on 414-458-1952 and I'll send it over directly.",
+      variant: "destructive",
+    });
   };
 
   return (
