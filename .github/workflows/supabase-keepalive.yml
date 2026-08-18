@@ -1,0 +1,66 @@
+name: Supabase keep-alive
+
+# Supabase pauses a free project after ~7 days of inactivity, and a paused
+# project's subdomain stops resolving entirely. The guide-download form is the
+# only thing that writes to Supabase, and it does not fire often enough to keep
+# the project awake on its own. Mon + Thu leaves a wide margin: two missed runs
+# in a row still land inside the 7-day window.
+#
+# This doubles as a monitor. A non-200 fails the job, which sends the repo owner
+# a GitHub notification -- so a future pause surfaces here instead of surfacing
+# as a broken guide download that nobody notices.
+
+on:
+  schedule:
+    - cron: '0 13 * * 1,4' # 13:00 UTC Mon/Thu = 08:00 CDT
+  workflow_dispatch: # lets you run it by hand from the Actions tab
+
+# GitHub disables scheduled workflows in a repo with 60 days of no activity.
+# This repo is committed to regularly, but if it ever goes quiet for two months,
+# re-enable the schedule from the Actions tab or the pings stop silently.
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Ping Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        run: |
+          set -uo pipefail
+
+          if [ -z "${SUPABASE_URL}" ] || [ -z "${SUPABASE_ANON_KEY}" ]; then
+            echo "::error::Missing secret. Set SUPABASE_URL and SUPABASE_ANON_KEY in Settings > Secrets and variables > Actions."
+            exit 1
+          fi
+
+          # Strip a trailing slash so the URL joins cleanly either way.
+          base="${SUPABASE_URL%/}"
+
+          # || true: a paused project fails DNS resolution and curl exits non-zero
+          # before writing a status code. Capture that as 000 and report it as a
+          # pause rather than dying on an opaque curl exit.
+          code=$(curl -sS -o response.txt -w '%{http_code}' \
+            --max-time 30 --retry 3 --retry-delay 10 \
+            -X POST "${base}/rest/v1/rpc/keepalive" \
+            -H "apikey: ${SUPABASE_ANON_KEY}" \
+            -H "Authorization: Bearer ${SUPABASE_ANON_KEY}" \
+            -H "Content-Type: application/json" \
+            -d '{}' 2>curl_err.txt) || true
+          code="${code:-000}"
+
+          if [ "${code}" = "200" ]; then
+            echo "Keep-alive OK. Project last pinged: $(cat response.txt)"
+            exit 0
+          fi
+
+          if [ "${code}" = "000" ]; then
+            echo "::error::Could not reach Supabase at all -- the project is almost certainly PAUSED. Restore it at https://supabase.com/dashboard, then re-run this workflow."
+          else
+            echo "::error::Supabase keep-alive failed with HTTP ${code}."
+          fi
+          echo "--- curl stderr ---"; cat curl_err.txt || true
+          echo "--- response body ---"; cat response.txt || true
+          exit 1
