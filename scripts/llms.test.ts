@@ -4,7 +4,7 @@ import { buildLlmsTxt } from "./llms";
 describe("buildLlmsTxt", () => {
   it("starts with an H1 brand heading and lists the service area", () => {
     const txt = buildLlmsTxt();
-    expect(txt.startsWith("# Lucas Murphy Real Estate")).toBe(true);
+    expect(txt.startsWith("# Lucas Murphy | eXp Realty")).toBe(true);
     expect(txt).toContain("Waukesha");
     expect(txt).toContain("Milwaukee");
   });

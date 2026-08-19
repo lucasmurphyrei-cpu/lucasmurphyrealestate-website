@@ -1,0 +1,143 @@
+Title:
+Milwaukee County Neighborhood Fit Quiz — Question Logic, Scoring, and Output Mapping
+
+⸻
+
+Prompt:
+
+Act as a real estate data analyst and quiz logic designer.
+Use the Milwaukee County neighborhood research report you previously created as the foundation.
+Build a complete, working interactive “Neighborhood Fit Quiz” that helps relocation buyers identify which area best fits their lifestyle, budget, and home preferences.
+
+⸻
+
+1️⃣ Objective
+
+Transform the neighborhood data into a structured quiz engine with:
+	•	Lifestyle-based questions
+	•	Weighted scoring logic
+	•	Area-attribute matching
+	•	Result copy and tags for CRM/lead capture
+
+The quiz will be embedded on a real estate website (KVCore or Typeform) and needs to output the top 3 neighborhood matches.
+
+⸻
+
+2️⃣ Neighborhoods to Include
+
+Milwaukee County municipalities and key sub-areas:
+Milwaukee (city), Bay View, East Side, Wauwatosa, Shorewood, Whitefish Bay, Glendale, Fox Point, River Hills, Brown Deer, West Allis, Greenfield, Greendale, Franklin, Oak Creek, South Milwaukee, St. Francis.
+
+⸻
+
+3️⃣ Deliverables
+
+A. Question Bank (10–14 Questions)
+Create multiple-choice questions covering:
+	•	Budget
+	•	Home type (SFH/condo/townhome)
+	•	Beds/baths
+	•	Schools importance
+	•	Commute time preference
+	•	Lifestyle vibe (urban/suburban/luxury/budget)
+	•	Historic vs. new homes
+	•	Proximity to lake
+	•	Nightlife & dining
+	•	Yard/garage priority
+	•	HOA/condo comfort
+	•	Timeline to move
+	•	Must-have amenities
+
+For each question:
+	•	Include id, question_text, and 3–4 choices (A/B/C/D).
+	•	Assign each choice attribute boosts (e.g., A = walkability +5, lake access +3).
+	•	Add a weight (1–5) for importance; Budget, Schools, and Commute should be highest (5).
+
+⸻
+
+B. Attribute Model
+Define and use these attributes for scoring (0–5 per area):
+budget_fit, home_type_fit, school_strength, walkability, nightlife, yard_space, historic_charm, new_construction, commute_downtown, lake_access, safety_reputation, price_psf, tax_sensitivity, hoa_condo_friendly, family_friendly, investor_friendly.
+
+For each area:
+	•	Provide 0–5 scores for each attribute with brief justification.
+	•	Include median sale price, home style, school summary, commute time, and key lifestyle tags (e.g. #FamilyFriendly #LakeLife #Walkable).
+
+⸻
+
+C. Scoring Logic
+	•	Translate each answer into attribute boosts.
+	•	Example:
+	•	Q: “How important are top-rated schools?”
+	•	A: “Very important” → school_strength +5, family_friendly +3.
+	•	Total Score = Σ(attribute_score × weighted_answer_boost).
+	•	Normalize so the top area’s score ≈ 100.
+
+⸻
+
+D. Tie-Breakers and Guardrails
+	•	If top two areas are within 3 points:
+	1.	Prioritize budget fit, then school_strength, then commute_downtown.
+	•	If budget < median of area by >20% → downrank 8 pts.
+	•	If “condo/low-maintenance” selected → uprank condo-friendly areas +6 pts.
+	•	If “must have lake proximity” → exclude inland-only areas unless no match.
+
+⸻
+
+E. Output Formats
+	1.	JSON (for KVCore/Typeform)
+Include:
+	•	"questions" with weights and attribute boosts.
+	•	"areas" with attributes, tags, and median price.
+	•	"scoring" with rules, tie-break logic, and exclusions.
+	2.	Markdown Summary (for Website/Notion/Gamma)
+	•	Show top 3 matches with badges and short blurbs.
+	•	Table format: Area | Why It Fits | Median Price | Commute | Vibe.
+	•	CTA placeholders like: “Schedule a Relocation Fit Call.”
+
+⸻
+
+F. Results Copy Templates (Per Area)
+For each area, write:
+	•	Short version (80–120 words) and Extended version (200–250 words).
+	•	Tone: friendly, professional, and relocation-focused.
+	•	Include: lifestyle fit, price range, schools, commute, and a friendly CTA.
+	•	Example:
+“If you love walkable neighborhoods and lake views, Shorewood might be your perfect fit. Expect charming homes, strong schools, and a quick commute downtown.”
+	•	Add a cross-suggestion: “Love Shorewood? You may also like Whitefish Bay.”
+
+⸻
+
+G. Lead Capture + CRM Tagging
+Provide KVCore-ready tags:
+Relocation|MilwaukeeCounty|TopMatch_[Neighborhood]|BudgetRange|LifestyleTag.
+
+Write 5 example email subject lines and a short follow-up email (150–200 words) inviting the user to schedule a Relocation Fit Call.
+
+⸻
+
+H. Validation Examples
+Show 3 sample personas with:
+	•	Answers → Attribute Boosts → Final Top 3 Results.
+	•	Example personas:
+	1.	Chicago family prioritizing schools.
+	2.	Remote worker wanting walkability and nightlife.
+	3.	Downsizer wanting lake proximity and low maintenance.
+
+⸻
+
+I. Final Output Package
+Return:
+	•	(1) JSON quiz spec (questions, weights, areas, scoring rules)
+	•	(2) Markdown summary for website and follow-up emails
+	•	(3) Optional CSV of area attributes for easy tuning
+
+⸻
+
+Include this CTA in every result:
+
+“Let’s dial this in — tell me your must-haves and I’ll send a hand-picked list of homes in your top area plus two smart alternates. Schedule your 15-minute Relocation Fit Call with Lucas Murphy (eXp Realty).”
+
+⸻
+
+End of Prompt
