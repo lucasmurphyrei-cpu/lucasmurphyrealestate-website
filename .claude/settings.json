@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"/Users/macbook/Desktop/Realtor OS/Engines/Ops/tools/ops_brief.py\" 2>/dev/null || true",
+            "timeout": 10,
+            "statusMessage": "Reading ops status\u2026"
+          }
+        ]
+      }
+    ]
+  }
+}
