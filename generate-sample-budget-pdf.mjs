@@ -22,7 +22,7 @@ const COL_RIGHT = PAGE_WIDTH - MARGIN;
 const CONTACT = {
   name: "Lucas Murphy",
   title: "Real Estate Advisor",
-  phone: "(414)-269-4909",
+  phone: "(414)-458-1952",
   email: "lucas.murphy@exprealty.com",
   calendly: "calendly.com/lucasmurphyrei",
   website: "LucasMurphy.exprealty.com",

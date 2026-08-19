@@ -1,3 +1,5 @@
+import { siteConfig } from "@/lib/siteConfig";
+
 // RGB color arrays for jsPDF
 export const NAVY: [number, number, number] = [17, 34, 64];
 export const GOLD: [number, number, number] = [255, 204, 0];
@@ -22,12 +24,17 @@ export const FONT_BODY = 9;
 export const FONT_SMALL = 7.5;
 export const FONT_TINY = 6.5;
 
-// Contact info
+// Contact info — derived, not retyped.
+//
+// This block used to be a second, independent identity for the whole site. It carried
+// title: "Real Estate Advisor", which is not a licensed title and appears in no other
+// file, and website: "LucasMurphy.exprealty.com", the legacy eXp IDX address. A PDF a
+// lead downloads is the last place a stale identity should survive.
 export const CONTACT = {
-  name: "Lucas Murphy",
-  title: "Real Estate Advisor",
-  phone: "(414)-458-1952",
-  email: "lucas.murphy@exprealty.com",
-  calendly: "calendly.com/lucasmurphyrei",
-  website: "LucasMurphy.exprealty.com",
+  name: siteConfig.agent.name,
+  title: siteConfig.agent.jobTitle,
+  phone: siteConfig.phone,
+  email: siteConfig.email,
+  calendly: siteConfig.calendly.replace(/^https?:\/\//, ""),
+  website: siteConfig.url.replace(/^https?:\/\/(www\.)?/, ""),
 };

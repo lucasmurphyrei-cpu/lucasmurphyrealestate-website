@@ -83,7 +83,7 @@ const HouseHackCalculator = () => {
   return (
     <>
     <Helmet>
-      <title>House Hack Deal Analysis Calculator | Lucas Murphy Real Estate</title>
+      <title>House Hack Deal Analysis Calculator — Lucas Murphy, eXp Realty</title>
       <meta name="description" content="Analyze multi-unit properties to calculate true housing cost, cash flow, and investment returns for house hacking deals." />
       <link rel="canonical" href="https://www.lucasmurphyrealestate.com/tools/house-hack-calculator" />
     </Helmet>

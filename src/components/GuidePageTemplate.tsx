@@ -15,7 +15,7 @@ interface GuidePageProps {
 const GuidePageTemplate = ({ title, subtitle, children, metaDescription, canonicalPath }: GuidePageProps) => (
   <>
     <Helmet>
-      <title>{title} | Lucas Murphy Real Estate</title>
+      <title>{title} — Lucas Murphy, eXp Realty</title>
       {metaDescription && <meta name="description" content={metaDescription} />}
       {canonicalPath && <link rel="canonical" href={`https://www.lucasmurphyrealestate.com${canonicalPath}`} />}
     </Helmet>

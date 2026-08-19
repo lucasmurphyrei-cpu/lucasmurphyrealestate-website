@@ -102,7 +102,7 @@ export default function SeasonalGuide() {
   return (
     <div className="preview-v1 min-h-screen bg-background font-body text-foreground antialiased">
       <Seo
-        title="Seasonal Home Maintenance Guide | Metro Milwaukee | Lucas Murphy Real Estate"
+        title="Seasonal Home Maintenance Guide | Metro Milwaukee — Lucas Murphy, eXp Realty"
         description="A season-by-season home maintenance checklist for Metro Milwaukee homeowners — spring, summer, fall, and winter tasks to protect your investment."
         canonicalPath="/resources/seasonal-guide"
       />

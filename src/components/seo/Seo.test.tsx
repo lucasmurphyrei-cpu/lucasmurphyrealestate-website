@@ -14,7 +14,7 @@ describe("Seo", () => {
   it("sets the title and self-referential canonical", async () => {
     renderSeo({ title: "Waukesha County Market", canonicalPath: "/areas/waukesha-county" });
     await waitFor(() =>
-      expect(document.title).toBe("Waukesha County Market | Lucas Murphy Real Estate")
+      expect(document.title).toBe("Waukesha County Market | Lucas Murphy | eXp Realty")
     );
     const canon = document.querySelector('link[rel="canonical"]');
     expect(canon?.getAttribute("href")).toBe(

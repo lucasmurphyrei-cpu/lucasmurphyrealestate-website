@@ -1,6 +1,11 @@
 export const siteConfig = {
   url: "https://www.lucasmurphyrealestate.com",
-  name: "Lucas Murphy Real Estate",
+  // The advertising name. Per the eXp WI broker ruling of 2026-08-07 this may not
+  // contain "Real Estate" or "Realty" without a DSPS-registered DBA, and a consumer
+  // must be able to identify eXp Realty as the brokerage. It feeds og:site_name,
+  // every page <title>, the JSON-LD Organization node and llms.txt — so this one
+  // string is the business name search engines and answer engines cite.
+  name: "Lucas Murphy | eXp Realty",
   agent: {
     name: "Lucas Murphy",
     jobTitle: "Realtor",

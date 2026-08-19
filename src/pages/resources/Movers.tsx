@@ -17,7 +17,7 @@ export default function Movers() {
       intro="Reliable, background-checked moving crews who treat your belongings like their own, for local moves across Metro Milwaukee and beyond."
       heroImg={IMG.lacLaBelle}
       canonicalPath="/resources/movers"
-      metaTitle="Trusted Moving Companies | Metro Milwaukee | Lucas Murphy Real Estate"
+      metaTitle="Trusted Moving Companies | Metro Milwaukee — Lucas Murphy, eXp Realty"
       metaDescription="Reliable, background-checked moving companies serving Milwaukee and Waukesha County. Personally recommended by Lucas Murphy."
       categories={categories}
       ctaTitle="Know a great mover?"

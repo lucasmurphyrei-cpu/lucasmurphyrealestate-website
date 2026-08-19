@@ -63,7 +63,7 @@ const Contact = () => {
   return (
     <>
     <Helmet>
-      <title>Contact Us | Lucas Murphy Real Estate</title>
+      <title>Contact Us — Lucas Murphy, eXp Realty</title>
       <meta name="description" content="Get in touch with Lucas Murphy, Realtor with eXp Realty. Serving Milwaukee, Waukesha, Washington & Ozaukee Counties." />
       <link rel="canonical" href="https://www.lucasmurphyrealestate.com/contact" />
     </Helmet>

@@ -17,7 +17,7 @@ export default function HomeInspectors() {
       intro="Thorough, detail-driven inspectors who give you the full picture of a home, so you can negotiate and buy with confidence."
       heroImg={IMG.foxRiver}
       canonicalPath="/resources/home-inspectors"
-      metaTitle="Trusted Home Inspectors | Metro Milwaukee | Lucas Murphy Real Estate"
+      metaTitle="Trusted Home Inspectors | Metro Milwaukee — Lucas Murphy, eXp Realty"
       metaDescription="Thorough, honest home inspectors serving Milwaukee, Waukesha, and the surrounding counties. Personally recommended by Lucas Murphy."
       categories={categories}
       ctaTitle="Know a great inspector?"

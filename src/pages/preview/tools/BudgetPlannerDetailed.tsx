@@ -436,7 +436,7 @@ export default function BudgetPlannerDetailed() {
 
   const downloadBudget = () => {
     const rows: [string, number | string][] = [
-      ["My Budget — Lucas Murphy Real Estate", ""],
+      ["My Budget — Lucas Murphy | eXp Realty", ""],
       ["Generated", new Date().toLocaleDateString()],
       ["", ""],
       ["Annual gross income", Math.round(annualGross)],

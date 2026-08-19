@@ -22,7 +22,7 @@ const CountyPage = ({ name, description, municipalities }: CountyPageProps) => {
   return (
     <main className="container py-16">
       <Helmet>
-        <title>{name} | Municipality Profiles & Market Data | Lucas Murphy Real Estate</title>
+        <title>{name} | Municipality Profiles & Market Data — Lucas Murphy, eXp Realty</title>
         <meta name="description" content={description} />
         <link rel="canonical" href={`https://www.lucasmurphyrealestate.com/areas/${countySlug}`} />
       </Helmet>

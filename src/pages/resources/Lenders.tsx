@@ -17,7 +17,7 @@ export default function Lenders() {
       intro="Local loan officers who communicate clearly, structure the right loan for your situation, and get you to the closing table on schedule."
       heroImg={IMG.riverwalk}
       canonicalPath="/resources/lenders"
-      metaTitle="Trusted Mortgage Lenders | Metro Milwaukee | Lucas Murphy Real Estate"
+      metaTitle="Trusted Mortgage Lenders | Metro Milwaukee — Lucas Murphy, eXp Realty"
       metaDescription="Local Milwaukee and Waukesha County mortgage lenders who close on time and communicate every step. Personally recommended by Lucas Murphy."
       categories={categories}
       ctaTitle="Know a great lender?"

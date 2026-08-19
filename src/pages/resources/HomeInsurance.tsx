@@ -17,7 +17,7 @@ export default function HomeInsurance() {
       intro="Local agents who right-size your homeowners coverage to your property and budget, and are there when you actually need to file a claim."
       heroImg={IMG.pewaukee}
       canonicalPath="/resources/home-insurance"
-      metaTitle="Trusted Home Insurance Agents | Metro Milwaukee | Lucas Murphy Real Estate"
+      metaTitle="Trusted Home Insurance Agents | Metro Milwaukee — Lucas Murphy, eXp Realty"
       metaDescription="Local home insurance agents serving Milwaukee and Waukesha County who right-size coverage to your home and budget. Personally recommended by Lucas Murphy."
       categories={categories}
       ctaTitle="Know a great insurance agent?"

@@ -30,7 +30,7 @@ const BudgetSpreadsheet = () => {
   return (
     <>
     <Helmet>
-      <title>Budget Spreadsheet | Lucas Murphy Real Estate</title>
+      <title>Budget Spreadsheet — Lucas Murphy, eXp Realty</title>
       <meta name="description" content="Plan your monthly homeownership budget. Track income and expenses to see what you can comfortably afford." />
       <link rel="canonical" href="https://www.lucasmurphyrealestate.com/tools/budget-spreadsheet" />
     </Helmet>
