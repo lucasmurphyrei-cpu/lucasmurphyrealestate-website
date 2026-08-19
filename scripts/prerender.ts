@@ -179,15 +179,22 @@ const META: Record<string, Meta> = {
       { q: "Can I buy a home in Milwaukee from out of state?", a: "Yes. Video walkthroughs, remote inspection coordination and electronic closing make it routine. Many out-of-state buyers combine virtual touring with a single discovery weekend to confirm a shortlist." },
     ],
   },
-  // Explicit entry only so the guide's PDF gets a crawlable anchor; the title,
-  // description, h1 and intro repeat what the generic /guides/<slug> template
-  // already produced, so the page's meta is unchanged.
+  // Explicit entry so this does not fall through to the generic /guides/<slug>
+  // template, which described nothing specific and gave the PDF no crawlable
+  // anchor. Every figure below comes from the guide itself, which sources each
+  // one to a closing statement, a lease, a servicer statement or a market
+  // source, so the answers stay true to the document they are advertising.
   "/guides/house-hacking": {
     pdf: [{ href: "/House_Hacking_Guide_Metro_Milwaukee.pdf", label: "Download the House Hacking Guide" }],
     title: "House Hacking Guide | Metro Milwaukee | Lucas Murphy",
-    description: "A free house hacking guide for metro Milwaukee from Realtor Lucas Murphy, eXp Realty.",
+    description: "A free house hacking guide for Metro Milwaukee. Buying a duplex with 3.5% down, qualifying on rental income, the real cash to close, and what a Milwaukee duplex actually cash flows.",
     h1: "House Hacking Guide",
-    intro: "A practical house hacking guide for the Milwaukee, Waukesha, Ozaukee, and Washington county area from Lucas Murphy.",
+    intro: "One Milwaukee duplex, every figure sourced to a closing statement, a lease or a servicer statement: the financing, the cash it took to get in, where the duplexes are, the landlord rules, and what the building really cash flows.",
+    faq: [
+      { q: "What is house hacking?", a: "You buy a building with two to four units, live in one of them, and lease the rest, so somebody else's rent covers part of your payment. Because you live there you can use the loan programs meant for a home rather than the ones meant for an investment, which is where most of the advantage comes from. Your tenant does not pay your mortgage. They pay a large part of it." },
+      { q: "How much do you need down to buy a duplex you live in?", a: "Less than most people expect, but the down payment is not the whole number. FHA is 3.5% down on one to four units, conventional 5%, and VA 0% for eligible veterans. Lenders will usually also let part of the expected rent count toward your income: roughly three quarters of the lease rent on a unit that is already leased, or the appraiser's market rent opinion on one sitting empty. On my own $234,000 Milwaukee duplex in May 2022 the down payment was $11,750, but total cash to close was $18,368 once lender, title and escrow costs were in, and about $8,977 of that left my account before closing day for earnest money, the inspection and the appraisal." },
+      { q: "Does a duplex in Milwaukee actually cash flow?", a: "Thinly, once you are honest about set-asides. With both units of my duplex leased at $2,600 a month against a $2,050 payment, holding back the conventional 15% of gross rent for vacancy and repairs leaves about $160 a month. That is $1,920 a year, and a single vacant month costs $1,500, so roughly 1.3 months of vacancy erases the entire year. Cash flow is thin on a duplex, and anyone telling you otherwise is selling something." },
+    ],
   },
   // Explicit entry so this does not fall through to the generic /guides/<slug>
   // template, which titled it "Sellers Guide" and described nothing specific.
