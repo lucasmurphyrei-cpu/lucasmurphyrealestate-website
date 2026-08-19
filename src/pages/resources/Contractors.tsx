@@ -17,7 +17,7 @@ export default function Contractors() {
       intro="Reliable trades across Milwaukee and Waukesha County for renovations, repairs, and getting a home ready to sell. Everyone here comes personally recommended."
       heroImg={IMG.thirdWard}
       canonicalPath="/resources/contractors"
-      metaTitle="Trusted Contractors | Metro Milwaukee — Lucas Murphy, eXp Realty"
+      metaTitle="Trusted Contractors | Metro Milwaukee | Lucas Murphy Real Estate"
       metaDescription="Reliable, personally recommended contractors in Milwaukee and Waukesha County for renovations, repairs, and home improvement projects."
       categories={categories}
       ctaTitle="Know a great contractor?"

@@ -160,7 +160,7 @@ const InvestorSpreadsheets = () => (
   <>
     <Helmet>
       <title>
-        Free Real Estate Spreadsheets — Lucas Murphy, eXp Realty
+        Free Real Estate Spreadsheets | Lucas Murphy Real Estate
       </title>
       <meta
         name="description"

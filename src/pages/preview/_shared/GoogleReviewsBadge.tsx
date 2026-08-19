@@ -83,7 +83,7 @@ export default function GoogleReviewsBadge() {
               <div className="flex items-center gap-3">
                 <GoogleG className="h-9 w-9" />
                 <div>
-                  <p className="text-sm font-semibold leading-tight">Lucas Murphy | eXp Realty</p>
+                  <p className="text-sm font-semibold leading-tight">Lucas Murphy Real Estate</p>
                   <div className="mt-0.5 flex items-center gap-1.5">
                     <span className="text-sm font-bold text-[#e7711b]">{RATING_LABEL}</span>
                     <Stars />

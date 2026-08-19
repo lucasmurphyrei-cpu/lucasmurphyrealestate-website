@@ -61,7 +61,7 @@ const BudgetPlanner = () => {
   return (
     <>
     <Helmet>
-      <title>How Much Home Can You Afford? — Lucas Murphy, eXp Realty</title>
+      <title>How Much Home Can You Afford? | Lucas Murphy Real Estate</title>
       <meta name="description" content="4-step affordability calculator for Metro Milwaukee buyers — understand your expenses, savings rate, and maximum home price." />
       <link rel="canonical" href="https://www.lucasmurphyrealestate.com/tools/budget-planner" />
     </Helmet>

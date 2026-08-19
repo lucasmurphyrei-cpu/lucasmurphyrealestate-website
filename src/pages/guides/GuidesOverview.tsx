@@ -197,7 +197,7 @@ function CategorySection({
 const GuidesOverview = () => (
   <>
     <Helmet>
-      <title>Buyer, Investor & Seller Guides — Lucas Murphy, eXp Realty</title>
+      <title>Buyer, Investor & Seller Guides | Lucas Murphy Real Estate</title>
       <meta
         name="description"
         content="Free in-depth real estate guides for Metro Milwaukee — first-time buyers, condo buyers, relocation, house hacking, investors, and sellers."

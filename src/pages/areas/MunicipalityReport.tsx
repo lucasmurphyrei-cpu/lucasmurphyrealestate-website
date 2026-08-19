@@ -71,7 +71,7 @@ const MunicipalityReport = () => {
   return (
     <main className="container py-16">
       <Helmet>
-        <title>{slim.display_name}, {countyDisplay} | Neighborhood Profile — Lucas Murphy, eXp Realty</title>
+        <title>{slim.display_name}, {countyDisplay} | Neighborhood Profile | Lucas Murphy Real Estate</title>
         <meta
           name="description"
           content={`Explore ${slim.display_name} in ${countyDisplay}, WI. Home prices, school districts, commute times, lifestyle fit, and more. ${slim.lifestyle_summary.slice(0, 120)}`}

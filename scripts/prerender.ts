@@ -108,7 +108,7 @@ const AGENT_FAQ = [
 
 const META: Record<string, Meta> = {
   "/": {
-    title: "Lucas Murphy | eXp Realty | Milwaukee Metro Homes, Market Data & Guides",
+    title: "Lucas Murphy Real Estate | Milwaukee Metro Homes, Market Data & Guides",
     description: "Lucas Murphy, Realtor with eXp Realty, helps buyers, sellers, and investors across Milwaukee, Waukesha, Ozaukee & Washington counties with live market data, free guides, and tools.",
     h1: "Lucas Murphy - Metro Milwaukee Real Estate",
     intro: siteConfig.agent.description,
@@ -236,7 +236,7 @@ function metaFor(path: string): Meta {
   }
   // /tools/<slug>, /resources/<slug>, fallback
   const name = title(path.split("/").pop()!);
-  return { title: `${name} — Lucas Murphy, eXp Realty`, description: `${name} for metro Milwaukee buyers, sellers, and investors from Realtor Lucas Murphy.`, h1: name, intro: `${name} for the Milwaukee, Waukesha, Ozaukee, and Washington county area, from Lucas Murphy.` };
+  return { title: `${name} | Lucas Murphy Real Estate`, description: `${name} for metro Milwaukee buyers, sellers, and investors from Realtor Lucas Murphy.`, h1: name, intro: `${name} for the Milwaukee, Waukesha, Ozaukee, and Washington county area, from Lucas Murphy.` };
 }
 
 /* ----------------------------- render ----------------------------- */

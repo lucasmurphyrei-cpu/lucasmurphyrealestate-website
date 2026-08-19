@@ -12,7 +12,7 @@ const NotFound = () => {
   return (
     <>
     <Helmet>
-      <title>Page Not Found — Lucas Murphy, eXp Realty</title>
+      <title>Page Not Found | Lucas Murphy Real Estate</title>
       <meta name="description" content="The page you're looking for could not be found." />
     </Helmet>
     <div className="flex min-h-screen items-center justify-center bg-muted">

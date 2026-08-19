@@ -101,7 +101,7 @@ const CMA = () => {
     <>
       <Helmet>
         <title>
-          Free Comparative Market Analysis (CMA) — Lucas Murphy, eXp Realty
+          Free Comparative Market Analysis (CMA) | Lucas Murphy Real Estate
         </title>
         <meta
           name="description"
