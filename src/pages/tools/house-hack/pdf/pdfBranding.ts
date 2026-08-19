@@ -1,12 +1,22 @@
 import { siteConfig } from "@/lib/siteConfig";
 
-// RGB color arrays for jsPDF
-export const NAVY: [number, number, number] = [17, 34, 64];
-export const GOLD: [number, number, number] = [255, 204, 0];
+// RGB color arrays for jsPDF.
+//
+// This is a DOWNLOADABLE, so it carries the rebrand (~/brand/BRAND.md) rather than the
+// site's navy/gold. The split is deliberate: the site keeps its own look, everything a
+// client downloads or is handed matches the guides, the consultation decks and the seller
+// collateral.
+//
+// NAVY is kept as the exported name so no call site has to change; the value is now Ink.
+// Gold is only ever set as text on an Ink fill here (8.38:1). It measures 1.97:1 on a
+// light ground — if you ever need gold text on ivory, use GOLD_DEEP.
+export const NAVY: [number, number, number] = [18, 17, 16];        // Ink   #121110
+export const GOLD: [number, number, number] = [200, 169, 106];     // Gold  #C8A96A
+export const GOLD_DEEP: [number, number, number] = [128, 106, 67]; // #806A43, for light grounds
 export const WHITE: [number, number, number] = [255, 255, 255];
-export const LIGHT_GRAY: [number, number, number] = [240, 242, 245];
-export const TEXT_DARK: [number, number, number] = [30, 41, 59];
-export const TEXT_MUTED: [number, number, number] = [100, 116, 139];
+export const LIGHT_GRAY: [number, number, number] = [247, 239, 224];  // Ivory #F7EFE0
+export const TEXT_DARK: [number, number, number] = [18, 17, 16];      // Ink
+export const TEXT_MUTED: [number, number, number] = [107, 102, 97];   // Muted #6B6661
 export const GREEN: [number, number, number] = [52, 211, 153];
 export const RED: [number, number, number] = [248, 113, 113];
 

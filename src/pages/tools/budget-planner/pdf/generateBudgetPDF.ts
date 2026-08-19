@@ -2,10 +2,13 @@ import type ExcelJS from "exceljs";
 import type { BudgetPlannerState, BudgetDerived, BudgetTab } from "../types";
 
 // ─── Brand colors ───
-const NAVY = "1B2A4A";
-const GOLD = "C9A96E";
+// A downloadable workbook, so it carries the rebrand (~/brand/BRAND.md), not the site's
+// navy/gold. NAVY keeps its name so no call site changes; the value is Ink. Every gold
+// here is text on an Ink fill, which is the strongest pairing in the palette.
+const NAVY = "121110";   // Ink
+const GOLD = "C8A96A";   // Gold
 const WHITE = "FFFFFF";
-const LIGHT_BG = "F0EDE8";
+const LIGHT_BG = "F7EFE0";  // Ivory
 const GREEN = "16A34A";
 const RED = "DC2626";
 const TEXT_DARK = "1A1A1A";
