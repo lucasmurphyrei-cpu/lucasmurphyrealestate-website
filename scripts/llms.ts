@@ -47,7 +47,7 @@ export function buildLlmsTxt(): string {
   lines.push("");
 
   lines.push(
-    `## Contact\n${siteConfig.agent.name}, ${siteConfig.agent.jobTitle} — ${siteConfig.brokerage}. ` +
+    `## Contact\n${siteConfig.agent.name}, ${siteConfig.agent.jobTitle} - ${siteConfig.brokerage}. ` +
       `Phone: ${siteConfig.phone}. Email: ${siteConfig.email}. Web: ${siteConfig.url}.`
   );
   lines.push("");

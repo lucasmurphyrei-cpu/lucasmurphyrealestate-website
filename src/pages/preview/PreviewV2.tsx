@@ -157,7 +157,7 @@ export default function PreviewV2() {
             </h2>
             <div className="mt-7 space-y-5 text-lg leading-relaxed text-muted-foreground">
               <p>
-                I'm Lucas Murphy — a Metro Milwaukee agent with eXp Realty. For years I've helped buyers, sellers, and investors move through Milwaukee,
+                I'm Lucas Murphy, a Metro Milwaukee agent with eXp Realty. For years I've helped buyers, sellers, and investors move through Milwaukee,
                 Waukesha, Ozaukee, and Washington Counties with honest advice and zero pressure.
               </p>
               <p>
