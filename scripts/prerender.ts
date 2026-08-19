@@ -145,20 +145,20 @@ const META: Record<string, Meta> = {
   "/vendors": { title: "Trusted Local Vendors | Metro Milwaukee | Lucas Murphy", description: "A vetted network of metro Milwaukee lenders, inspectors, contractors, insurance agents, and movers recommended by Lucas Murphy.", h1: "Trusted Metro Milwaukee Vendors", intro: "A vetted network of local pros — lenders, inspectors, contractors, insurance, and movers — recommended by Lucas Murphy." },
   "/guides/first-time-condo-buyers": {
     title: "First-Time Condo Buyer Guide | Metro Milwaukee | Lucas Murphy",
-    description: "A free first-time condo buyer guide for Metro Milwaukee — HOA fees, reserves and special assessments, condo financing, and how to read the documents before your review period ends.",
+    description: "A free first-time condo buyer guide for Metro Milwaukee. HOA fees, reserves and special assessments, condo financing, and how to read the documents before your review period ends.",
     h1: "First-Time Condo Buyer Guide",
     intro: "What the monthly fee actually covers, how to read the reserve study and budget, why condo financing differs from a single-family loan, and the questions to ask before the document review period closes.",
     pdf: [{ href: "/First_Time_Condo_Buyers_Guide_Metro_Milwaukee.pdf", label: "Download the First-Time Condo Buyer Guide" }],
     faq: [
       { q: "What do condo association fees cover in Milwaukee?", a: "Typically the building exterior, roof, common areas, master insurance, snow and lawn care, and a contribution to reserves. Water, heat and parking vary by association, so compare what is included before comparing two fees against each other." },
-      { q: "What is a special assessment?", a: "A one-time charge levied on owners when the association needs money the reserve fund does not cover — a roof, parking deck or elevator, for example. A thin reserve fund is the leading predictor of one, which is why the reserve study matters more than the fee itself." },
-      { q: "Is it harder to get a mortgage on a condo?", a: "It can be. The lender underwrites the association as well as you — owner-occupancy ratio, budget, reserves, litigation and the share of units owned by any single entity. A project that fails review can require a larger down payment or a different loan product." },
+      { q: "What is a special assessment?", a: "A one-time charge levied on owners when the association needs money the reserve fund does not cover, such as a roof, parking deck or elevator. A thin reserve fund is the leading predictor of one, which is why the reserve study matters more than the fee itself." },
+      { q: "Is it harder to get a mortgage on a condo?", a: "It can be. The lender underwrites the association as well as you: owner-occupancy ratio, budget, reserves, litigation and the share of units owned by any single entity. A project that fails review can require a larger down payment or a different loan product." },
     ],
   },
   "/guides/first-time-home-buyers": {
     pdf: [{ href: "/Your_First_Time_Home_Buyers_Guide_to_The_Milwaukee_Metro_Area.pdf", label: "Download the First-Time Home Buyer Guide" }],
     title: "First-Time Home Buyer Guide | Metro Milwaukee | Lucas Murphy",
-    description: "A free first-time home buyer guide for Metro Milwaukee — what you can afford, how much cash you actually need, down payment assistance, and current county market data.",
+    description: "A free first-time home buyer guide for Metro Milwaukee. What you can afford, how much cash you actually need, down payment assistance, and current county market data.",
     h1: "Your First-Time Home Buyer Guide to Milwaukee Metro",
     intro: "What you can afford, how much cash you need, which loan programs fit, and what the Milwaukee, Waukesha, Ozaukee and Washington county markets are doing right now.",
     faq: [
@@ -170,7 +170,7 @@ const META: Record<string, Meta> = {
   "/guides/relocation": {
     pdf: [{ href: "/Relocating_to_Metro_Milwaukee_Guide.pdf", label: "Download the Move to Milwaukee relocation guide" }],
     title: "Move to Milwaukee | Relocation Guide | Lucas Murphy",
-    description: "A free relocation guide for Metro Milwaukee — cost of living against Chicago, neighbourhoods and medians, schools, the job market, and buying from out of state.",
+    description: "A free relocation guide for Metro Milwaukee. Cost of living against Chicago, neighbourhoods and medians, schools, the job market, and buying from out of state.",
     h1: "Move to Milwaukee",
     intro: "Cost of living against Chicago, neighbourhood-by-neighbourhood medians, schools, employers, and a six-step plan built for buyers purchasing from out of state.",
     faq: [
@@ -204,14 +204,14 @@ const META: Record<string, Meta> = {
       { href: "/What_to_Fix_Before_You_List_Seller_Guide.pdf", label: "Download What to Fix Before You List" },
     ],
     title: "What to Fix Before You List | Seller's Guide | Lucas Murphy",
-    description: "Which pre-listing projects actually pay you back in metro Milwaukee — cost-vs-value figures for Milwaukee specifically, what lenders require, and what Wisconsin's condition report means for repairs you choose not to make.",
+    description: "Which pre-listing projects actually pay you back in metro Milwaukee. Cost-vs-value figures for Milwaukee specifically, what lenders require, and what Wisconsin's condition report means for repairs you choose not to make.",
     h1: "What to Fix Before You List",
-    intro: "A seller's guide to what pays, what breaks even, and what to leave alone — with Milwaukee cost-vs-value figures, the repairs lenders and insurers actually require, and how Wisconsin's condition report treats a defect you disclose but do not fix.",
+    intro: "A seller's guide to what pays, what breaks even, and what to leave alone, with Milwaukee cost-vs-value figures, the repairs lenders and insurers actually require, and how Wisconsin's condition report treats a defect you disclose but do not fix.",
     faq: [
-      { q: "What should I fix before selling my house?", a: "Fix anything a lender or insurer will stop the sale over — a roof with under two years of life left, defective paint on a pre-1978 home, no working heat source, exposed wiring, a wet basement, or non-functioning plumbing. After that, the highest-return work is the cheapest: decluttering, deep cleaning, paint, and basic lawn care." },
+      { q: "What should I fix before selling my house?", a: "Fix anything a lender or insurer will stop the sale over: a roof with under two years of life left, defective paint on a pre-1978 home, no working heat source, exposed wiring, a wet basement, or non-functioning plumbing. After that, the highest-return work is the cheapest: decluttering, deep cleaning, paint, and basic lawn care." },
       { q: "Do home improvements pay for themselves when you sell?", a: "Usually not in full. In the Milwaukee cost-vs-value figures, small exterior work such as a garage door or entry door returns more than it cost, while large interior projects like a full kitchen gut or a primary suite addition return roughly a third to a half of what they cost." },
       { q: "Is it better to refresh a kitchen or gut it before selling?", a: "Refreshing generally wins. In the same 200-square-foot kitchen, keeping the cabinet boxes and replacing doors, fronts, counters and hardware recoups near or above its cost, while gutting the room costs roughly three times as much and recoups about half." },
-      { q: "Do I have to repair a defect I disclose in Wisconsin?", a: "No. Wisconsin's Chapter 709 requires a seller to disclose what they know; it does not require repairs. A disclosed but unrepaired defect is an ordinary outcome under the statute. Whether a particular item counts as a defect is a question for you and your attorney — a real estate licensee is barred from giving that opinion." },
+      { q: "Do I have to repair a defect I disclose in Wisconsin?", a: "No. Wisconsin's Chapter 709 requires a seller to disclose what they know; it does not require repairs. A disclosed but unrepaired defect is an ordinary outcome under the statute. Whether a particular item counts as a defect is a question for you and your attorney. A real estate licensee is barred from giving that opinion." },
     ],
   },
 };
