@@ -7,18 +7,13 @@ import type { MortgageCalcInputs, MortgageCalcDerived, LoanTerm, MortgageLoanTyp
 import { formatCurrency, formatPercent } from "./calculations";
 import { FormattedCurrencyInput, FormattedPercentInput } from "./FormattedInput";
 
+import { COUNTY_TAX_RATES } from "@/lib/countyTaxRates";
 interface Props {
   inputs: MortgageCalcInputs;
   derived: MortgageCalcDerived;
   onUpdate: <K extends keyof MortgageCalcInputs>(key: K, value: MortgageCalcInputs[K]) => void;
 }
 
-const COUNTY_TAX_RATES: Record<Exclude<WisconsinCounty, "custom">, { label: string; rate: number }> = {
-  milwaukee: { label: "Milwaukee County", rate: 2.27 },
-  waukesha: { label: "Waukesha County", rate: 1.72 },
-  washington: { label: "Washington County", rate: 1.76 },
-  ozaukee: { label: "Ozaukee County", rate: 1.85 },
-};
 
 const MortgageSection = ({ inputs, derived, onUpdate }: Props) => {
   const [showAdvanced, setShowAdvanced] = useState(false);

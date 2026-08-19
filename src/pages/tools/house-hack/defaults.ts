@@ -63,12 +63,9 @@ export const DEFAULT_STATE: HouseHackState = {
   },
 };
 
-export const COUNTY_TAX_RATES = {
-  milwaukee: { name: "Milwaukee County", rate: 2.58 },
-  waukesha: { name: "Waukesha County", rate: 1.856 },
-  ozaukee: { name: "Ozaukee County", rate: 1.58 },
-  washington: { name: "Washington County", rate: 1.76 },
-} as const;
+// Re-exported from the single table in src/lib/countyTaxRates.ts. These values used to
+// live here, which made a page component the de facto owner of a business fact.
+export { COUNTY_TAX_RATES } from "@/lib/countyTaxRates";
 
 export const PROPERTY_TYPE_UNITS = {
   duplex: 2,

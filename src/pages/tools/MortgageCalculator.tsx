@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Link } from "react-router-dom";
 import { FormattedCurrencyInput, FormattedPercentInput } from "./budget-planner/FormattedInput";
 
+import { COUNTY_TAX_RATES } from "@/lib/countyTaxRates";
 // ─── Types ───
 
 type LoanType = "conventional" | "fha";
@@ -30,12 +31,6 @@ interface MortgageInputs {
 
 // ─── Constants ───
 
-const COUNTY_TAX_RATES: Record<Exclude<WisconsinCounty, "custom">, { label: string; rate: number }> = {
-  milwaukee: { label: "Milwaukee County", rate: 2.27 },
-  waukesha: { label: "Waukesha County", rate: 1.72 },
-  washington: { label: "Washington County", rate: 1.76 },
-  ozaukee: { label: "Ozaukee County", rate: 1.85 },
-};
 
 const DEFAULT_INPUTS: MortgageInputs = {
   purchasePrice: 0,
@@ -163,7 +158,7 @@ const MortgageCalculator = () => {
   return (
     <>
     <Helmet>
-      <title>Mortgage Calculator | Lucas Murphy Real Estate</title>
+      <title>Mortgage Calculator — Lucas Murphy, eXp Realty</title>
       <meta name="description" content="Calculate your monthly mortgage payment with real-time scenarios for Metro Milwaukee properties." />
       <link rel="canonical" href="https://www.lucasmurphyrealestate.com/tools/mortgage-calculator" />
     </Helmet>

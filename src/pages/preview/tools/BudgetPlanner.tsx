@@ -6,16 +6,12 @@ import PreviewFooter from "@/pages/preview/_shared/PreviewFooter";
 import Seo from "@/components/seo/Seo";
 import MoneyInput from "@/pages/preview/_shared/MoneyInput";
 
+import { COUNTY_TAX_LIST as COUNTY_TAX } from "@/lib/countyTaxRates";
 const RATE_TRACKER = "https://www.freddiemac.com/pmms";
 // Approximate average EFFECTIVE property tax rates (% of home value / yr) for Metro Milwaukee.
 // Published public estimates; they vary by municipality and reassessment, so treat as a starting point.
 const TAX_RATES_URL = "https://smartasset.com/taxes/wisconsin-property-tax-calculator";
-const COUNTY_TAX: { label: string; rate: number }[] = [
-  { label: "Milwaukee County", rate: 2.35 },
-  { label: "Waukesha County", rate: 1.45 },
-  { label: "Ozaukee County", rate: 1.65 },
-  { label: "Washington County", rate: 1.6 },
-];
+
 const usd = (n: number) =>
   new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(
     Number.isFinite(n) ? n : 0

@@ -9,8 +9,12 @@ describe("market counties", () => {
   });
   it("returns snapshot stats for a known county", () => {
     const snap = getCountySnapshot("waukesha-county");
-    expect(snap?.dataMonth).toBe("June 2026");
-    expect(snap?.stats.find((s) => s.label === "Median Price")?.value).toBe("$539,950");
+    // dataMonth and the median both advance every time RapidStats lands, so pinning
+    // literals here guaranteed a failing suite within weeks of every refresh. Assert
+    // the SHAPE instead: a real month-year, and a formatted dollar figure.
+    expect(snap?.dataMonth).toMatch(/^[A-Z][a-z]+ 20\d{2}$/);
+    const median = snap?.stats.find((s) => s.label === "Median Price")?.value;
+    expect(median).toMatch(/^\$[\d,]+$/);
   });
   it("returns null for an unknown county slug", () => {
     expect(getCountySnapshot("dane-county")).toBeNull();
