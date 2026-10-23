@@ -76,6 +76,8 @@ export default function OpenHouseSignIn() {
   const address = slug ? slugToAddress(slug) : "";
   const homeKey = slug || "unspecified";
   const pdfHref = slug ? `/open-house/${slug}.pdf` : "";
+  // Drop public/open-house/<slug>.jpg in to show the home above the header.
+  const photoSrc = slug ? `/open-house/${slug}.jpg` : "";
 
   const [first, setFirst] = useState("");
   const [last, setLast] = useState("");
@@ -88,6 +90,9 @@ export default function OpenHouseSignIn() {
   const [loading, setLoading] = useState(false);
   const [done, setDone] = useState(false);
   const [hasPdf, setHasPdf] = useState(false);
+  // A missing photo comes back as index.html, which fails to decode and fires
+  // onError, so the image only ever shows when the file is really there.
+  const [photoOk, setPhotoOk] = useState(false);
 
   // The site's SPA rewrite answers a missing file with index.html and a 200, so a
   // 404 alone is not enough: the response must actually be a PDF.
@@ -262,12 +267,25 @@ export default function OpenHouseSignIn() {
         </main>
       ) : (
         <>
+          {photoSrc && (
+            // Listing photos are licensed unaltered (no overlays, no color work), so
+            // the full frame is shown as delivered.
+            <div className={photoOk ? "" : "hidden"} style={{ background: BRAND.ink }}>
+              <img
+                src={photoSrc}
+                alt={`Front of ${address}`}
+                onLoad={() => setPhotoOk(true)}
+                onError={() => setPhotoOk(false)}
+                className="mx-auto block aspect-[3/2] w-full max-w-2xl object-contain"
+              />
+            </div>
+          )}
           <header
             className="px-6 pb-6 text-center"
             style={{
               background: BRAND.ink,
               borderBottom: `4px solid ${BRAND.gold}`,
-              paddingTop: "max(2.5rem, calc(env(safe-area-inset-top, 0px) + 1.5rem))",
+              paddingTop: photoOk ? "1rem" : "max(2.5rem, calc(env(safe-area-inset-top, 0px) + 1.5rem))",
             }}
           >
             <img src="/open-house/exp-logo-white.png" alt="eXp Realty" className="mx-auto h-7 w-auto" />
