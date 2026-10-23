@@ -53,6 +53,7 @@ import PreviewCMA from "./pages/preview/tools/CMA";
 import PreviewHouseHack from "./pages/preview/tools/HouseHackCalculator";
 import PreviewInvestorSpreadsheets from "./pages/preview/tools/InvestorSpreadsheets";
 import ServiceLanding from "./pages/preview/services/ServiceLanding";
+import OpenHouseSignIn from "./pages/open-house/OpenHouseSignIn";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -118,6 +119,10 @@ const App = () => (
             <Route path="/resources/home-insurance" element={<HomeInsurancePage />} />
             <Route path="/resources/movers" element={<MoversPage />} />
             <Route path="/resources/seasonal-guide" element={<SeasonalGuidePage />} />
+
+            {/* Hidden: reached only from the open-house sign QR code. Never link it,
+                and keep it out of scripts/routes.ts and the sitemap. */}
+            <Route path="/open-house" element={<OpenHouseSignIn />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>
