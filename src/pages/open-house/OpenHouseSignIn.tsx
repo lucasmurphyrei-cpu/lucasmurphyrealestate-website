@@ -241,6 +241,13 @@ export default function OpenHouseSignIn() {
             <a href={CALENDLY} target="_blank" rel="noopener noreferrer" className="oh-outline-btn">
               Book a buyer consult
             </a>
+            <a href="/market" className="oh-outline-btn flex-col" style={{ padding: "0.75rem 1rem" }}>
+              View my website
+              <span className="mt-1 text-[13px] font-normal leading-snug tracking-normal" style={{ color: BRAND.muted }}>
+                Local market data and insights: median prices, days on market and monthly trends, town by town
+                across Milwaukee, Waukesha, Ozaukee and Washington counties.
+              </span>
+            </a>
           </div>
 
           <footer className="mt-auto flex items-center justify-center gap-3 pt-14">
